@@ -1,0 +1,34 @@
+{
+  "name": "buffer-style",
+  "author": "Sunil Sadasivan",
+  "description": "The Buffer Style and Guide",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bufferapp/buffer-style.git"
+  },
+  "main": "public/js/app.js",
+  "version": "0.0.1",
+  "dependencies": {
+    "async": "^1.2.0",
+    "express": "^4.13.3",
+    "react": "^0.13.3"
+  },
+  "devDependencies": {
+    "browserify": "^10.2.4",
+    "envify": "^3.0.0",
+    "reactify": "^0.15.2",
+    "uglify-js": "~2.4.15",
+    "watchify": "^2.1.1"
+  },
+  "scripts": {
+    "start": "npm run watch & NODE_PATH=./config:./app/controllers:./app/views NODE_ENV=development nodemon server.js",
+    "watch": "watchify -o public/js/bundle.js -v -d public/js/app.js",
+    "build": "NODE_ENV=production browserify . > public/js/bundle.js"
+  },
+  "browserify": {
+    "transform": [
+      "reactify",
+      "envify"
+    ]
+  }
+}
