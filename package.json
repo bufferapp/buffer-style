@@ -6,12 +6,13 @@
     "type": "git",
     "url": "git://github.com/bufferapp/buffer-style.git"
   },
-  "main": "public/js/app.js",
+  "main": "src/js/app.js",
   "version": "0.0.1",
   "dependencies": {
     "async": "^1.2.0",
     "express": "^4.13.3",
-    "react": "^0.13.3"
+    "react": "^0.13.3",
+    "node-sass": "^3.2.0"
   },
   "devDependencies": {
     "browserify": "^10.2.4",
@@ -21,9 +22,10 @@
     "watchify": "^2.1.1"
   },
   "scripts": {
-    "start": "npm run watch & NODE_PATH=./config:./app/controllers:./app/views NODE_ENV=development nodemon server.js",
-    "watch": "watchify -o public/js/bundle.js -v -d public/js/app.js",
-    "build": "NODE_ENV=production browserify . > public/js/bundle.js"
+    "start": "npm run watch & NODE_PATH=./src/js: NODE_ENV=development nodemon server.js",
+    "watch": "watchify -o public/js/bundle.js -v -d src/js/app.js && npm run build-css",
+    "build-css": "node-sass --output-style compressed src/scss/style.scss dist/buffer-style.min.css && cp dist/buffer-style.min.css public/css/buffer-style.min.css",
+    "build": "NODE_ENV=production browserify src/js/app.js > public/js/bundle.js && npm run build-css"
   },
   "browserify": {
     "transform": [

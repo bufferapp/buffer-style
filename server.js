@@ -3,7 +3,7 @@ http = require('http');
 app = express();
 
 app.get('/', function (req, res) {
-    res.send('Hello World!');
+    res.redirect('/index.html');
 });
 app.use(express.static(__dirname + '/public'))
 var server = app.listen(3000, function () {
