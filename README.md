@@ -5,7 +5,7 @@ A unified style and components to use across Buffer applications and services
 # Installing
 
 ```
-$ git clone git clone git@github.com:bufferapp/buffer-hq.git
+$ git clone git@github.com:bufferapp/buffer-style.git
 $ npm install
 ```
 
