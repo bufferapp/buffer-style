@@ -7,7 +7,7 @@
     "url": "git://github.com/bufferapp/buffer-style.git"
   },
   "main": "src/js/app.js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "dependencies": {
     "async": "^1.2.0",
     "express": "^4.13.3",
