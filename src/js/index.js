@@ -1,1 +1,3 @@
-modules.exports = require('./BufferAvatar')
+module.exports = {
+  BufferAvatar: require('./BufferAvatar')
+}
