@@ -1,0 +1,86 @@
+/* Key Colors */
+@white: 					#fff;
+@lightFill: 				#fbfcfd;
+@lightGray: 				#eaeff2;
+@green:						#76b852;
+@blue:						#168eea;
+@lightBlue:   				#329ced;
+@red: 						#ee4f4f;
+@yellow:					#fff9ea;
+@twitter: 					#55acee;
+@facebook: 					#3B5998;
+@googleplus: 				#dd4b39;
+@linkedin: 					#007bb6;
+@appnet: 					#4a484c;
+@pinterest:					#bd081c;
+
+@primaryColor:    			@blue;
+
+/* Typography */
+@greenLink: 				@green;
+@blueLink: 					@blue;
+@headingColor: 				#323b43;
+@bodyColor: 				#59626a;
+@borderColor: 				#ced7df;
+@lightBorderColor: 			#eff3f6;
+@fillColor: 				#f4f7f9;
+@errorColor: 				@red;
+@warningColor: 				@yellow;
+@successColor: 				@green;
+
+@baseFontSize:     			14px;
+@baseFontFamily:   			"Open Sans", Helvetica, Arial, sans-serif;
+@baseLineHeight:   			1.42857143;
+@baseFontWeight:   			400;
+
+/* Buttons */
+@button: 				    @white;
+@primaryButton: 		    @blue;
+@businessPrimaryButton: 	@blue;
+@disabledButton: 		    @lightGray;
+@businessButton: 		    @blue;
+@errorButton: 			    @red;
+@twitterButton: 		    @twitter;
+@facebookButton: 		    @facebook;
+@googlePlusButton: 	    	@googleplus;
+@linkedinButton: 		    @linkedin;
+@appnetButton: 			    @appnet;
+@pinterestButton: 			@pinterest;
+
+/* Notifications */
+@notificationyellow: 		@yellow;
+@notificationred: 			#FFD3D3;
+@notificationblue: 			#f4f7f9;
+@notificationgreen: 		#D8F1CA;
+
+/* Depths */
+@depthTipsy:       			100000;
+@depthLoading:				10000;
+@depthLightbox:     		1000;
+@depthModal:		     	901;
+@depthModalBg:	  			900;
+@depthWelcome:	  			801;
+@depthWelcomeBg:  			800;
+@depthDropdownParent:		701;
+@depthDropdown:	  			700;
+@depthSelectBoxes:			300;
+@depthTooltip:		   		200;
+@depthInstalledArrow:  		3;
+@depthFooter:     			2;
+@depthBase:             	0;
+
+/* Overlay */
+
+@sidebarWidth: 				85px;
+@overlayWidth: 				518px;
+@overlayHeight: 			380px;
+@sectionWidth: 				@overlayWidth - @sidebarWidth - 1;
+@sectionInner: 				@sectionWidth - 40;
+@rolledHeight: 				@overlayHeight - 66;
+@pickerHeight: 				80px;
+
+@depthMessage: 				100;
+@depthProfiles: 			4;
+@depthCount: 				3;
+@depthPicture: 				2;
+@depthPicker: 				1;

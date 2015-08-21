@@ -2,12 +2,50 @@
   <head>
     <title>Buffer Style Guide</title>
     <link rel="stylesheet" href="/css/buffer-style.min.css">
+    <link rel="stylesheet" href="/css/style-guide-public.css">
   </head>
   <body>
-    <div id="main"></div>
     <script defer src="/js/bundle.js"></script>
-    <div id='avatarsmall'></div>
-    <div id='avatarmedium'></div>
-    <div id='avatarlarge'></div>
+
+    <div class="flex-container">
+
+      <header>
+        <nav class='buffer-nav-horizontal'>
+          <ul>
+            <li>Atoms - Design Elements</li>
+            <li>Molecules - UI Components</li>
+            <li>About the Buffer Style Guide</li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="flex-container">
+
+        <nav class="atom-list">
+          <ul>
+            <li>Grid</li>
+            <li>Colors</li>
+          </ul>
+        </nav>
+
+        <section class="content">
+
+          <h2>Grid</h2>
+
+          <h2>Colors</h2>
+
+          <h2>Avatars</h2>
+          <div id='avatarsmall'></div>
+          <div id='avatarmedium'></div>
+          <div id='avatarlarge'></div>
+
+        </section>
+
+      </main>
+
+      <footer></footer>
+
+    </div>
+
   </body>
 </html>
