@@ -1,5 +1,7 @@
 # buffer-style-guide
 
+[![NPM Version](https://img.shields.io/npm/v/buffer-style.svg)](https://www.npmjs.com/package/buffer-style)
+
 A unified style and components to use across Buffer applications and services
 
 ## Usage
