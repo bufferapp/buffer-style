@@ -1,0 +1,12 @@
+{
+  "browser": true,
+  "node": true,
+  "esnext": true,
+  "devel": true,
+  "curly": false,
+  "undef": true,
+  "globals": {
+    "React": true
+  },
+  "-W030": true
+}
