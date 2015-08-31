@@ -1,3 +1,5 @@
+import Card from './components/Card';
+
 module.exports = {
-  BufferAvatar: require('./BufferAvatar')
-}
+  Card: Card
+};
