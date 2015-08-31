@@ -6,7 +6,7 @@
     "type": "git",
     "url": "git://github.com/bufferapp/buffer-style.git"
   },
-  "main": "src/js/index.js",
+  "main": "dist/js/index.js",
   "version": "0.0.4",
   "dependencies": {
     "async": "^1.2.0",
@@ -16,12 +16,17 @@
   },
   "devDependencies": {
     "browserify": "^10.2.4",
+    "del": "^2.0.0",
     "envify": "^3.0.0",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.2.1",
+    "gulp-sass": "^2.0.4",
     "reactify": "^0.15.2",
     "uglify-js": "~2.4.15",
     "watchify": "^2.1.1"
   },
   "scripts": {
+    "prepublish": "gulp prepublish",
     "start": "npm run watch & NODE_PATH=./src/js: NODE_ENV=development nodemon server.js",
     "watch": "watchify -o public/js/bundle.js -v -d src/js/app.js && npm run build-css",
     "build-css": "node-sass --output-style compressed src/scss/style.scss dist/buffer-style.min.css && cp dist/buffer-style.min.css public/css/buffer-style.min.css",
