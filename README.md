@@ -27,6 +27,7 @@ import { Card } from 'buffer-style'
 ```
 $ git clone git@github.com:bufferapp/buffer-style.git
 $ npm install
+$ npm install -g gulp
 ```
 
 ### Building
@@ -42,6 +43,15 @@ $ npm start
 This will run a local web server where the index.html is the style guide
 
 Head over to: http://localhost:3000 to view the style guide.  
+
+### Publishing
+
+To publish the style guide for consumption on npm, first run the prepublish task.
+
+```
+$ npm run prepublish
+$ npm publish
+```
 
 ### Directory Structure
 ```bash
