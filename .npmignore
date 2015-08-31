@@ -1,0 +1,9 @@
+.git*
+src/
+public/
+
+.editorconfig
+.jshintrc
+.gitignore
+Gulpfile.js
+server.js
