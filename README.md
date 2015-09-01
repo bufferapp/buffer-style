@@ -13,12 +13,24 @@ to build your project:
 $ npm install --save buffer-style
 ```
 
+### React components
+
 ```javascript
 // ES5
 var Card = require('buffer-style').Card;
 // ES2015
 import { Card } from 'buffer-style'
 ```
+
+### CSS
+
+To use the css in your project copy the stylesheet from your `node_modules`
+directory. Example:
+
+```
+$ cp ./node_modules/buffer-style/dist/css/style.css ./my-app/assets/style-code.css
+```
+
 
 ## Development
 
