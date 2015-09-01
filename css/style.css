@@ -1,0 +1,23 @@
+/**
+ * Buffer style guide root file
+ *
+ * Only imports of SCSS files at this level. These files are meant to be
+ * consumed by other projects. Do not include SCSS meant for the presentation
+ * of the style guide website itself.
+ */
+body {
+  color: #59626a;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5; }
+
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+.Card {
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3); }
