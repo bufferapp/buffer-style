@@ -101,9 +101,14 @@ gulp.task('sass-all', createSassTask([ './src/scss/*.scss'], paths.guide));
 
 gulp.task('watch', function() {
   gulp.watch('./src/scss/**/*.scss', ['sass-all']);
+  gulp.watch(['./src/js/**/*.js', './src/js/**/*.jsx'], ['webpack']);
 });
 
-gulp.task('dev', ['webpack-dev-server', 'watch']);
+gulp.task('watch:sass', function() {
+  gulp.watch('./src/scss/**/*.scss', ['sass-all']);
+});
+
+gulp.task('dev', ['webpack-dev-server', 'watch:sass']);
 
 gulp.task('prepublish', ['clean', 'babel', 'sass-dist']);
 

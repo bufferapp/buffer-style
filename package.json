@@ -31,7 +31,7 @@
   },
   "scripts": {
     "prepublish": "gulp prepublish",
-    "start": "NODE_ENV=development node server.js & gulp dev"
+    "start": "NODE_ENV=development node server.js & gulp watch"
   },
   "browserify": {
     "transform": [
