@@ -1,60 +1,76 @@
-// Buffer Colors
-$white:                        #fff;
-$lightFill:                    #fbfcfd;
-$lightGray:                    #eaeff2;
-$green:                        #76b852;
-$blue:                         #168eea;
-$lightBlue:                    #329ced;
-$red:                          #ee4f4f;
-$yellow:                       #fff9ea;
+/* Global
+-------------------------------------------------- */
 
-$primaryColor:                 $blue;
+$Global--margin             : 8px;
 
-// Social Network Colors
-$twitter:                      #55acee;
-$facebook:                     #3B5998;
-$googleplus:                   #dd4b39;
-$linkedin:                     #007bb6;
-$appnet:                       #4a484c;
-$pinterest:                    #bd081c;
+/* Gray Palette
+-------------------------------------------------- */
 
-// Typography
-$bodyColor:                    #59626a;
-$headingColor:                 #323b43;
-$blueLink:                     $blue;
+$Color--gray-100            : rgba(98, 119, 133, 1);
+$Color--gray-75             : rgba(98, 119, 133, 0.75);
+$Color--gray-50             : rgba(98, 119, 133, 0.5);
+$Color--gray-25             : rgba(98, 119, 133, 0.25);
+$Color--gray-10             : rgba(98, 119, 133, 0.1);
+$Color--gray-5              : rgba(98, 119, 133, 0.05);
 
-// Elements
-$fillColor:                    #f4f7f9;
-$errorColor:                   $red;
-$warningColor:                 $yellow;
-$successColor:                 $green;
+$Color--gray-100-solid      : #627785;
+$Color--gray-75-solid       : #8a99a4;
+$Color--gray-50-solid       : #b0bbc2;
+$Color--gray-25-solid       : #d8dde0;
+$Color--gray-10-solid       : #eff1f2;
+$Color--gray-5-solid        : #f7f8f9;
 
-$baseFontSize:                 14px;
-$baseFontFamily:               "Open Sans", Helvetica, Arial, sans-serif;
-$baseLineHeight:               1.5;
+/* Primary Palette
+-------------------------------------------------- */
 
-// Borders
-$borderRadius:                 3px;
-$borderColor:                  #ced7df;
-$lightBorderColor:             #eff3f6;
+$Color--black               : #000;
+$Color--blue                : #168eea;
+$Color--green               : #8dd068;
+$Color--red                 : #ee4f4f;
+$Color--white               : #fff;
+$Color--yellow              : #efbe40;
 
-// Buttons
-$button:                       $white;
-$primaryButton:                $blue;
-$disabledButton:               $lightGray;
-$businessButton:               $blue;
-$errorButton:                  $primaryColor;
+/* Brand Palette
+-------------------------------------------------- */
 
-// Notifications
-$notificationyellow:           $yellow;
-$notificationred:              #FFD3D3;
-$notificationblue:             #f4f7f9;
-$notificationgreen:            #D8F1CA;
+$Color--brand-app-net       : #4a484c;
+$Color--brand-facebook      : #3b5998;
+$Color--brand-google-plus   : #dd4b39;
+$Color--brand-linkedin      : #007bb6;
+$Color--brand-pinterest     : #bd081c;
+$Color--brand-twitter       : #55acee;
 
-// Depths (z-indexs)
-$depthDropdown:                1000;
-$depthBase:                    0;
+/* Typography
+-------------------------------------------------- */
 
-// Shadows
-$shadowDepth-1:                0px 1px 2px rgba(0,0,0,0.3);
-$shadowDropdown:               $shadowDepth-1;
+$Type--body                 : $Color--gray-50-solid;
+$Type--heading              : $Color--gray-100-solid;
+$Type--link                 : $Color--blue;
+
+/* Font
+-------------------------------------------------- */
+
+$Font--base-family          : "Open Sans", sans-serif;
+$Font--base-size            : $Global--margin * 2;
+$Font--base-line-height     : $Font--base-size * 1.5;
+
+/* Elements
+-------------------------------------------------- */
+
+$Element--color-error       : $Color--red;
+$Element--color-success     : $Color--green;
+$Element--color-warning     : $Color--yellow;
+$Element--border-color      : $Color--gray-10;
+$Element--border-radius     : $Global--margin / 2;
+
+/* Depths (z-indexs)
+-------------------------------------------------- */
+
+$Depth--dropdown            : 1000;
+$Depth--base                : 0;
+
+/* Shadows
+-------------------------------------------------- */
+
+$Shadow-depth-1             : 0 ($Global--margin / 8) ($Global--margin / 4) $Color--gray-25;
+$Shadow-dropdown            : $Shadow-depth-1;
