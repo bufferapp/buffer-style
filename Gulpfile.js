@@ -110,4 +110,6 @@ gulp.task('dev', ['webpack-dev-server', 'watch:sass']);
 
 gulp.task('prepublish', ['clean', 'babel', 'sass-dist']);
 
+gulp.task('github-pages', ['clean', 'webpack', 'sass-all']);
+
 gulp.task('default', ['publish']);

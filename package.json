@@ -31,6 +31,7 @@
   },
   "scripts": {
     "prepublish": "gulp prepublish",
+    "github-pages": "./scripts/publish-github-pages.sh",
     "start": "NODE_ENV=development node server.js & gulp watch"
   },
   "browserify": {

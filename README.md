@@ -64,6 +64,12 @@ $ npm run prepublish
 $ npm publish
 ```
 
+To publish on [Github pages](http://bufferapp.github.io/buffer-style/) run:
+
+```
+$ npm run github-pages
+```
+
 ### Directory Structure
 ```bash
 /src  - all source files for react components and scss files
