@@ -1,8 +1,8 @@
 @import "variables";
 
 body {
-  color: $bodyColor;
-  font-family: $baseFontFamily;
-  font-size: $baseFontSize;
-  line-height: $baseLineHeight;
+  color: $Type--body;
+  font-family: $Font--base-family;
+  font-size: $Font--base-size;
+  line-height: $Font--base-line-height;
 }

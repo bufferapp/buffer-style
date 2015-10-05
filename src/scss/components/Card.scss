@@ -2,6 +2,6 @@
 
 .Card {
   background: #fff;
-  border-radius: $borderRadius;
-  box-shadow: $shadowDepth-1;
+  border-radius: $Global--margin / 2; // TODO This may need it's own variable
+  box-shadow: $Shadow-depth-1;
 }
