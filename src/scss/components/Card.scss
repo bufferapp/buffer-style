@@ -1,7 +1,8 @@
 @import "../base/variables";
 
 .Card {
-  background: #fff;
-  border-radius: $Global--margin / 2; // TODO This may need it's own variable
   box-shadow: $Shadow-depth-1;
+  
+  background-color: $Color--white;
+  border-radius: $Global--margin / 2; // TODO This may need it's own variable
 }

@@ -1,8 +1,61 @@
 @import "variables";
 
+/* Body
+-------------------------------------------------- */
+
 body {
   font-family: $Font--base-family;
   font-size: $Font--base-size;
   line-height: $Font--base-line-height;
   color: $Color--body;
+}
+
+/* Headings
+-------------------------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $Color--heading;
+}
+
+h1 {
+  font-size: $Global--margin * 4; // 32
+  font-weight: 100;
+  line-height: ($Global--margin * 4) * 1.5;
+}
+
+h2,
+h3,
+h4 {
+  font-weight: 600;
+}
+
+h2 {
+  font-size: $Global--margin * 3; // 24
+  line-height: ($Global--margin * 3) * 1.5;
+}
+
+h3 {
+  font-size: ($Global--margin * 3)-($Global--margin / 2); // 20
+  line-height: (($Global--margin * 3)-($Global--margin / 2)) * 1.5;
+}
+
+h4 {
+  font-size: (($Global--margin * 2) + ($Global--margin / 4)); // 18
+  line-height: ((($Global--margin * 2) + ($Global--margin / 4))) * 1.5;
+}
+
+h5 {
+  font-size: $Global--margin * 2; // 16
+  line-height: ($Global--margin * 2) * 1.5;
+}
+
+h6 {
+  font-size: $Global--margin * 1.5;
+  font-weight: 400;
+  line-height: ($Global--margin * 1.5) * 1.5;
+  text-transform: uppercase;
 }
