@@ -1,0 +1,14 @@
+@import "../base/variables";
+
+.Header {
+  background-color: $white;
+  border-bottom-color: $grayBorder;
+  border-style: solid;
+  border-width: 1px;
+  padding: ($spacing * 2);
+
+  h1 {
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+  }
+}
