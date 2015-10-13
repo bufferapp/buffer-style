@@ -9,38 +9,71 @@
 
     <div class="flex-container">
 
-      <header>
-
-        <h1>buffer Style Guide</h1>
-
-        <nav class='buffer-nav-horizontal'>
-          <ul>
-            <li>Atoms - Design Elements</li>
-            <li>Molecules - UI Components</li>
-            <li>About the Buffer Style Guide</li>
-          </ul>
-        </nav>
-
+      <header class="header-primary">
+        <h1>Buffer Style Guide</h1>
       </header>
 
       <main class="flex-container">
 
         <nav class="atom-list">
-          <ul>
-            <li>Grid</li>
-            <li>Colors</li>
+          <ul class="Card lists">
+            <li class="section-header"><h5>Design</h5></li>
+            <li><a href="#">Color Palette</a></li>
+            <li class="last"><a href="#">Typography</a></li>
+          </ul>
+          <ul class="Card lists last">
+            <li class="section-header"><h5>Icons</h5></li>
+            <li><a href="#">Web</a></li>
+            <li><a href="#">iOS</a></li>
+            <li class="last"><a href="#">Android</a></li>
           </ul>
         </nav>
 
         <section class="content">
-
-          <h2>Grid</h2>
-
-          <h2>Colors</h2>
-
-          <h2>Cards</h2>
-
-          <div id='js-card'></div>
+          <h1 class="Spacing mb32">Color Palette</h1>
+          <div class="Card regular">
+            <h2 class="Spacing mb16">Black &amp; White Palette</h2>
+            <div class="Card regular">
+              <p class="last">Cards here.</p>
+            </div>
+          </div>
+          <div class="Card regular">
+            <h2 class="Spacing mb16">Primary Palette</h2>
+            <p class="last">Cards here.</p>
+          </div>
+          <div class="Card regular">
+            <h2 class="Spacing mb16">Brand Palette</h2>
+            <p class="last">Cards here.</p>
+          </div>
+          <h1 class="Spacing mt64 mb32">Typography</h1>
+          <div class="Card regular">
+            <h2 class="Spacing mb16">Headings</h2>
+            <p class="Spacing mb16">Nullam in tincidunt tortor, a pulvinar dui. Vestibulum vel dui eu nulla lacinia hendrerit. Vivamus molestie quis arcu eu auctor. Nunc pellentesque metus vel mattis feugiat.</p>
+            <div class="Block example">
+            <h6 class="Spacing mb16">Example</h6>
+              <ul class="Lists style-none type-bordered">
+                <li><h1>Choose positivity (32px)<code class="Spacing ml16 pull-right">h1</code></h1></li>
+                <li><h2>Default to transparency (24px)<code class="Spacing ml16 pull-right">h2</code></h2></li>
+                <li><h3>Focus on self-improvement (20px)<code class="Spacing ml16 pull-right">h3</code></h3></li>
+                <li><h4>Be a no-ego doer (18px)<code class="Spacing ml16 pull-right">h4</code></h4></li>
+                <li><h5>Listen first, then listen more (16px)<code class="Spacing ml16 pull-right">h5</code></h5></li>
+                <li class="last"><h6>Communicate with clarity (12px)<code class="Spacing ml16 pull-right">h6</code></h6></li>
+              </ul>
+            </div>
+          </div>
+          <div class="Card regular">
+            <h2 class="Spacing mb16">Paragraphs</h2>
+            <p class="Spacing mb16">Discuss body copy.</p>
+            <div class="Block example">
+              <h6 class="Spacing mb16">Example</h6><code class="Spacing ml16 pull-right">p</code>
+              <p>Nullam in tincidunt tortor, a pulvinar dui. Vestibulum vel dui eu nulla lacinia hendrerit. Vivamus molestie quis arcu eu auctor. Nunc pellentesque metus vel mattis feugiat.</p>
+              </ul>
+            </div>
+          </div>
+          <div class="Card regular">
+            <h2 class="Spacing mb16">Misc.</h2>
+            <p>Highlight misc. typography elements here such as leading paragraphs, etc.</p>
+          </div>
 
         </section>
 

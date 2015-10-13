@@ -1,7 +1,125 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+a {
+  color: $Color--primary-100;
+  text-decoration: none;
+
+  &:hover {
+    color: $Color--primary-hover;
+  }
+}
+
+body {
+  background-color: $Color--fill;
+}
+
+code {
+  padding: ($Global--spacing / 4) ($Global--spacing / 2);
+
+  background-color: $Color--fill;
+  border: 1px solid $Color--border;
+  border-radius: $BorderRadius--level-2;
+}
 
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
-  box-sizing: inherit;
+
+.Lists {
+  li {
+    padding-top: $Global--spacing * 2;
+    padding-bottom: $Global--spacing * 2;
+  }
+
+  &.style-none {
+    list-style: none;
+  }
+
+  &.type-bordered {
+    li {
+      border-bottom: 1px solid $Color--border;
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin: 0;
+      }
+
+      &.last {
+        border-bottom: 0;
+      }
+    }
+  }
+}
+
+.pull-right {
+  float: right;
+}
+
+.Spacing {
+  &.pt64 {
+    padding-top: $Global--spacing * 8;
+  }
+  &.pt32 {
+    padding-top: $Global--spacing * 4;
+  }
+  &.pt16 {
+    padding-top: $Global--spacing * 2;
+  }
+  &.pt8 {
+    padding-top: $Global--spacing;
+  }
+  &.pb64 {
+    padding-bottom: $Global--spacing * 8;
+  }
+  &.pb32 {
+    padding-bottom: $Global--spacing * 4;
+  }
+  &.pb16 {
+    padding-bottom: $Global--spacing * 2;
+  }
+  &.pb8 {
+    padding-bottom: $Global--spacing;
+  }
+  &.mt64 {
+    margin-top: $Global--spacing * 8;
+  }
+  &.mt32 {
+    margin-top: $Global--spacing * 4;
+  }
+  &.mt16 {
+    margin-top: $Global--spacing * 2;
+  }
+  &.mt8 {
+    margin-top: $Global--spacing;
+  }
+  &.mb64 {
+    margin-bottom: $Global--spacing * 8;
+  }
+  &.mb32 {
+    margin-bottom: $Global--spacing * 4;
+  }
+  &.mb16 {
+    margin-bottom: $Global--spacing * 2;
+  }
+  &.mb8 {
+    margin-bottom: $Global--spacing;
+  }
+  &.ml64 {
+    margin-left: $Global--spacing * 8;
+  }
+  &.ml32 {
+    margin-left: $Global--spacing * 4;
+  }
+  &.ml16 {
+    margin-left: $Global--spacing * 2;
+  }
+  &.ml8 {
+    margin-left: $Global--spacing;
+  }
 }

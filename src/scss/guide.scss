@@ -1,3 +1,5 @@
+@import "base/variables";
+
 .flex-container,
 .flex-container header,
 .flex-container footer {
@@ -10,7 +12,9 @@
 
 div.flex-container {
   flex-direction: column;
+  justify-content: center;
 }
+
 main.flex-container {
   flex-direction: row;
 }
@@ -18,11 +22,63 @@ main.flex-container {
 .atom-list {
   flex-basis: 20%;
 }
+
 .content {
   flex-basis: 80%;
+
+  .Card {
+    &.regular {
+      margin-bottom: $Global--spacing * 2;
+
+      .Card {
+        border-radius: $BorderRadius--level-3;
+
+        &.regular {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
 }
+
 .flex-container header,
 .flex-container footer {
   width: 100%;
-  height: 5rem;
+}
+
+/* To be made in to components
+-------------------------------------------------- */
+.header-primary {
+  margin-bottom: $Global--spacing * 8;
+  padding: ($Global--spacing * 2) 0;
+
+  background-color: $Color--white;
+  border-bottom: 1px solid $Color--border;
+}
+
+.atom-list {
+  ul {
+    margin-bottom: $Global--spacing * 2;
+    li {
+      height: $Global--spacing * 4;
+
+      line-height: $Global--spacing * 4;
+
+      border-bottom: 1px solid $Color--border-light;
+      &.section-header{
+        padding-left: $Global--spacing * 2;
+        padding-right: $Global--spacing * 2;
+
+        line-height: $Global--spacing * 4;
+
+        border-bottom: 1px solid $Color--border;
+      }
+      &.last {
+        border-bottom: 0;
+      }
+    }
+    &.last {
+      margin-bottom: 0;
+    }
+  }
 }

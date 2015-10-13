@@ -7,13 +7,13 @@
  */
 /* Global
 -------------------------------------------------- */
-/* Global Reset // We'll pull in a common reset here.
+/* Global Reset // We'll pull in a common reset here, perhaps in another file!
 -------------------------------------------------- */
 * {
   margin: 0;
   padding: 0; }
 
-/* Gray Palette
+/* Black & White Palette
 -------------------------------------------------- */
 /* Primary Palette
 -------------------------------------------------- */
@@ -24,16 +24,18 @@
 /* Depths (z-indexs)
 -------------------------------------------------- */
 /* Shadows
+-------------------------------------------------- */
+/* Border Radii
 -------------------------------------------------- */
 /* Global
 -------------------------------------------------- */
-/* Global Reset // We'll pull in a common reset here.
+/* Global Reset // We'll pull in a common reset here, perhaps in another file!
 -------------------------------------------------- */
 * {
   margin: 0;
   padding: 0; }
 
-/* Gray Palette
+/* Black & White Palette
 -------------------------------------------------- */
 /* Primary Palette
 -------------------------------------------------- */
@@ -44,6 +46,8 @@
 /* Depths (z-indexs)
 -------------------------------------------------- */
 /* Shadows
+-------------------------------------------------- */
+/* Border Radii
 -------------------------------------------------- */
 /* Body
 -------------------------------------------------- */
@@ -70,8 +74,9 @@ h1 {
 
 h2,
 h3,
-h4 {
-  font-weight: 600; }
+h4,
+h5 {
+  font-weight: 400; }
 
 h2 {
   font-size: 24px;
@@ -91,25 +96,135 @@ h5 {
 
 h6 {
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 18px;
   text-transform: uppercase; }
 
-html {
-  box-sizing: border-box; }
+/* Paragraphs
+-------------------------------------------------- */
+p.lead {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px; }
+
+code {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: lowercase; }
 
 *, *:before, *:after {
   box-sizing: inherit; }
 
+a {
+  color: #168eea;
+  text-decoration: none; }
+  a:hover {
+    color: #106aaf; }
+
+body {
+  background-color: #f4f7f9; }
+
+code {
+  padding: 2px 4px;
+  background-color: #f4f7f9;
+  border: 1px solid #ced7df;
+  border-radius: 2px; }
+
+html {
+  box-sizing: border-box; }
+
+.Lists li {
+  padding-top: 16px;
+  padding-bottom: 16px; }
+
+.Lists.style-none {
+  list-style: none; }
+
+.Lists.type-bordered li {
+  border-bottom: 1px solid #ced7df; }
+  .Lists.type-bordered li h1,
+  .Lists.type-bordered li h2,
+  .Lists.type-bordered li h3,
+  .Lists.type-bordered li h4,
+  .Lists.type-bordered li h5,
+  .Lists.type-bordered li h6 {
+    margin: 0; }
+  .Lists.type-bordered li.last {
+    border-bottom: 0; }
+
+.pull-right {
+  float: right; }
+
+.Spacing.pt64 {
+  padding-top: 64px; }
+
+.Spacing.pt32 {
+  padding-top: 32px; }
+
+.Spacing.pt16 {
+  padding-top: 16px; }
+
+.Spacing.pt8 {
+  padding-top: 8px; }
+
+.Spacing.pb64 {
+  padding-bottom: 64px; }
+
+.Spacing.pb32 {
+  padding-bottom: 32px; }
+
+.Spacing.pb16 {
+  padding-bottom: 16px; }
+
+.Spacing.pb8 {
+  padding-bottom: 8px; }
+
+.Spacing.mt64 {
+  margin-top: 64px; }
+
+.Spacing.mt32 {
+  margin-top: 32px; }
+
+.Spacing.mt16 {
+  margin-top: 16px; }
+
+.Spacing.mt8 {
+  margin-top: 8px; }
+
+.Spacing.mb64 {
+  margin-bottom: 64px; }
+
+.Spacing.mb32 {
+  margin-bottom: 32px; }
+
+.Spacing.mb16 {
+  margin-bottom: 16px; }
+
+.Spacing.mb8 {
+  margin-bottom: 8px; }
+
+.Spacing.ml64 {
+  margin-left: 64px; }
+
+.Spacing.ml32 {
+  margin-left: 32px; }
+
+.Spacing.ml16 {
+  margin-left: 16px; }
+
+.Spacing.ml8 {
+  margin-left: 8px; }
+
 /* Global
 -------------------------------------------------- */
-/* Global Reset // We'll pull in a common reset here.
+/* Global Reset // We'll pull in a common reset here, perhaps in another file!
 -------------------------------------------------- */
 * {
   margin: 0;
   padding: 0; }
 
-/* Gray Palette
+/* Black & White Palette
 -------------------------------------------------- */
 /* Primary Palette
 -------------------------------------------------- */
@@ -121,7 +236,30 @@ html {
 -------------------------------------------------- */
 /* Shadows
 -------------------------------------------------- */
+/* Border Radii
+-------------------------------------------------- */
 .Card {
-  background: #fff;
-  border-radius: 4px;
-  box-shadow: 0 1px 2px rgba(98, 119, 133, 0.25); }
+  background-color: #fff;
+  border: 1px solid #ced7df;
+  border-radius: 8px; }
+  .Card.lists li a {
+    display: block;
+    padding-left: 16px;
+    padding-right: 16px; }
+    .Card.lists li a:hover {
+      background-color: rgba(22, 142, 234, 0.05); }
+  .Card.regular {
+    padding: 16px; }
+  .Card p.last {
+    margin-bottom: 0; }
+  .Card .Block.example {
+    margin-top: 16px;
+    margin-left: -16px;
+    margin-right: -16px;
+    padding: 16px;
+    background-color: #f4f7f9;
+    border-top: 1px solid #ced7df;
+    border-bottom: 1px solid #ced7df; }
+  .Card .Block .Lists {
+    margin-top: -16px;
+    margin-bottom: -16px; }

@@ -1,9 +1,11 @@
 /* Global
 -------------------------------------------------- */
 
-$Global--margin: 8px;
+$Global--margin-center: 0 auto;
+$Global--site-width: 960px;
+$Global--spacing: 8px;
 
-/* Global Reset // We'll pull in a common reset here.
+/* Global Reset // We'll pull in a common reset here, perhaps in another file!
 -------------------------------------------------- */
 * {
     margin: 0;
@@ -25,9 +27,11 @@ $Color--white: #fff;
 /* Primary Palette
 -------------------------------------------------- */
 
-$Color--primary-100: rgba(50, 59, 67, 1);
-$Color--primary-20: rgba(50, 59, 67, 0.2);
-$Color--heading: #323b43;
+$Color--primary-100: rgba(22, 142, 234, 1);
+$Color--primary-5: rgba(22, 142, 234, 0.05);
+$Color--primary-hover: #106aaf;
+$Color--heading-100: rgba(50, 59, 67, 1);
+$Color--heading-20: rgba(50, 59, 67, 0.2);
 $Color--body: #59626a;
 $Color--border: #ced7df;
 $Color--border-light: #eff3f6;
@@ -50,7 +54,7 @@ $Color--brand-twitter: #55acee;
 -------------------------------------------------- */
 
 $Font--base-family: "Open Sans", sans-serif;
-$Font--base-size: $Global--margin * 2 - ($Global--margin / 4);
+$Font--base-size: $Global--spacing * 2 - ($Global--spacing / 4);
 $Font--base-line-height: $Font--base-size * 1.5;
 
 /* Depths (z-indexs)
@@ -62,5 +66,17 @@ $Depth--base: 0;
 /* Shadows
 -------------------------------------------------- */
 
-$Shadow-depth-1: 0 ($Global--margin / 8) ($Global--margin / 4) $Color--gray-25;
-$Shadow-dropdown: $Shadow-depth-1;
+$DropShadow--level-1: 0 2px 4px $Color--heading-20;
+$DropShadow--level-2: 0 4px 6px $Color--heading-20;
+$DropShadow--level-3: 0 6px 8px $Color--heading-20;
+$DropShadow--level-4: 0 8px 10px $Color--heading-20;
+
+/* Border Radii
+-------------------------------------------------- */
+
+$BorderRadius--final: $Global--spacing; // Never use this. Always use *--level-X.
+
+$BorderRadius--level-4: $BorderRadius--final;
+$BorderRadius--level-3: $BorderRadius--final / 2;
+$BorderRadius--level-2: $BorderRadius--final / 4;
+$BorderRadius--level-1: $BorderRadius--final / $BorderRadius--final;
