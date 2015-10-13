@@ -1,3 +1,25 @@
+/* Global
+-------------------------------------------------- */
+/* Global Reset // We'll pull in a common reset here, perhaps in another file!
+-------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0; }
+
+/* Black & White Palette
+-------------------------------------------------- */
+/* Primary Palette
+-------------------------------------------------- */
+/* Brand Palette
+-------------------------------------------------- */
+/* Font
+-------------------------------------------------- */
+/* Depths (z-indexs)
+-------------------------------------------------- */
+/* Shadows
+-------------------------------------------------- */
+/* Border Radii
+-------------------------------------------------- */
 .flex-container,
 .flex-container header,
 .flex-container footer {
@@ -8,7 +30,8 @@
   display: flex; }
 
 div.flex-container {
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: center; }
 
 main.flex-container {
   flex-direction: row; }
@@ -18,8 +41,37 @@ main.flex-container {
 
 .content {
   flex-basis: 80%; }
+  .content .Card.regular {
+    margin-bottom: 16px; }
+    .content .Card.regular .Card {
+      border-radius: 4px; }
+      .content .Card.regular .Card.regular {
+        margin-bottom: 0; }
 
 .flex-container header,
 .flex-container footer {
-  width: 100%;
-  height: 5rem; }
+  width: 100%; }
+
+/* To be made in to components
+-------------------------------------------------- */
+.header-primary {
+  margin-bottom: 64px;
+  padding: 16px 0;
+  background-color: #fff;
+  border-bottom: 1px solid #ced7df; }
+
+.atom-list ul {
+  margin-bottom: 16px; }
+  .atom-list ul li {
+    height: 32px;
+    line-height: 32px;
+    border-bottom: 1px solid #eff3f6; }
+    .atom-list ul li.section-header {
+      padding-left: 16px;
+      padding-right: 16px;
+      line-height: 32px;
+      border-bottom: 1px solid #ced7df; }
+    .atom-list ul li.last {
+      border-bottom: 0; }
+  .atom-list ul.last {
+    margin-bottom: 0; }
