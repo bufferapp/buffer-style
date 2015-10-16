@@ -11,7 +11,8 @@
 -------------------------------------------------- */
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 /* Black & White Palette
 -------------------------------------------------- */
@@ -33,7 +34,8 @@
 -------------------------------------------------- */
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 /* Black & White Palette
 -------------------------------------------------- */
@@ -216,13 +218,41 @@ html {
 .Spacing.ml8 {
   margin-left: 8px; }
 
+.Spacing.mr64 {
+  margin-right: 64px; }
+
+.Spacing.mr32 {
+  margin-right: 32px; }
+
+.Spacing.mr16 {
+  margin-right: 16px; }
+
+.Spacing.mr8 {
+  margin-right: 8px; }
+
+.Button {
+  display: inline-block;
+  background-color: #168eea;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding-left: 16px;
+  padding-right: 16px; }
+  .Button:hover {
+    background-color: #106aaf; }
+  .Button.primary {
+    color: #fff;
+    border-radius: 16px; }
+  .Button.regular {
+    height: 32px;
+    line-height: 30px; }
+
 /* Global
 -------------------------------------------------- */
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 -------------------------------------------------- */
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 /* Black & White Palette
 -------------------------------------------------- */

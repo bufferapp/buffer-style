@@ -65,61 +65,121 @@ html {
   &.pt64 {
     padding-top: $Global--spacing * 8;
   }
+
   &.pt32 {
     padding-top: $Global--spacing * 4;
   }
+
   &.pt16 {
     padding-top: $Global--spacing * 2;
   }
+
   &.pt8 {
     padding-top: $Global--spacing;
   }
+
   &.pb64 {
     padding-bottom: $Global--spacing * 8;
   }
+
   &.pb32 {
     padding-bottom: $Global--spacing * 4;
   }
+
   &.pb16 {
     padding-bottom: $Global--spacing * 2;
   }
+
   &.pb8 {
     padding-bottom: $Global--spacing;
   }
+
   &.mt64 {
     margin-top: $Global--spacing * 8;
   }
+
   &.mt32 {
     margin-top: $Global--spacing * 4;
   }
+
   &.mt16 {
     margin-top: $Global--spacing * 2;
   }
+
   &.mt8 {
     margin-top: $Global--spacing;
   }
+
   &.mb64 {
     margin-bottom: $Global--spacing * 8;
   }
+
   &.mb32 {
     margin-bottom: $Global--spacing * 4;
   }
+
   &.mb16 {
     margin-bottom: $Global--spacing * 2;
   }
+
   &.mb8 {
     margin-bottom: $Global--spacing;
   }
+
   &.ml64 {
     margin-left: $Global--spacing * 8;
   }
+
   &.ml32 {
     margin-left: $Global--spacing * 4;
   }
+
   &.ml16 {
     margin-left: $Global--spacing * 2;
   }
+
   &.ml8 {
     margin-left: $Global--spacing;
+  }
+
+  &.mr64 {
+    margin-right: $Global--spacing * 8;
+  }
+
+  &.mr32 {
+    margin-right: $Global--spacing * 4;
+  }
+
+  &.mr16 {
+    margin-right: $Global--spacing * 2;
+  }
+
+  &.mr8 {
+    margin-right: $Global--spacing;
+  }
+}
+
+.Button {
+  display: inline-block;
+
+  background-color: $Color--primary-100;
+  border: 1px solid $Color--black-20;
+
+  padding-left: $Global--spacing * 2;
+  padding-right: $Global--spacing * 2;
+  &:hover {
+    background-color: $Color--primary-hover;
+  }
+
+  &.primary {
+    color: $Color--white;
+
+    border-radius: 16px;
+  }
+
+  &.regular {
+    height: $Global--spacing * 4;
+
+    line-height: ($Global--spacing * 4) - 2;
   }
 }
