@@ -21,31 +21,31 @@ h6 {
 }
 
 h1 {
-  font-size: $Global--spacing * 4; // 32
+  font-size: $Global--spacing * 6; // 48
   font-weight: 100;
   line-height: ($Global--spacing * 4) * 1.5;
 }
 
-h2,
-h3,
+h2 {
+  font-size: $Global--spacing * 5; // 40
+  font-weight: 400;
+  line-height: ($Global--spacing * 5) * 1.5;
+}
+
+h3 {
+  font-size: $Global--spacing * 4; // 32
+  font-weight: 600;
+  line-height: ($Global--spacing * 4) * 1.5;
+}
+
 h4,
 h5 {
   font-weight: 400;
 }
 
-h2 {
+h4 {
   font-size: $Global--spacing * 3; // 24
   line-height: ($Global--spacing * 3) * 1.5;
-}
-
-h3 {
-  font-size: ($Global--spacing * 3)-($Global--spacing / 2); // 20
-  line-height: (($Global--spacing * 3)-($Global--spacing / 2)) * 1.5;
-}
-
-h4 {
-  font-size: (($Global--spacing * 2) + ($Global--spacing / 4)); // 18
-  line-height: ((($Global--spacing * 2) + ($Global--spacing / 4))) * 1.5;
 }
 
 h5 {
@@ -55,24 +55,23 @@ h5 {
 
 h6 {
   font-size: $Global--spacing * 1.5; // 12
-  font-weight: 600;
+  font-weight: 700;
   line-height: ($Global--spacing * 1.5) * 1.5;
   text-transform: uppercase;
 }
 
 /* Paragraphs
 -------------------------------------------------- */
-p {
-  &.lead {
-    font-size: ($Global--spacing * 3)-($Global--spacing / 2); // 20
-    font-weight: 300;
-    line-height: (($Global--spacing * 3)-($Global--spacing / 2)) * 1.5;
-  }
-}
-
 code {
   font-size: $Global--spacing * 1.5; // 12
   font-weight: 400;
   line-height: ($Global--spacing * 1.5) * 1.5;
   text-transform: lowercase;
+}
+
+p {
+  &.lead {
+    font-size: $Global--spacing * 3; // 24
+    line-height: ($Global--spacing * 3) * 1.5;
+  }
 }
