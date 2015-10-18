@@ -76,3 +76,201 @@ main.flex-container {
       border-bottom: 0; }
   .atom-list ul.last {
     margin-bottom: 0; }
+
+a {
+  color: #168eea;
+  text-decoration: none; }
+  a:hover {
+    color: #106aaf; }
+
+body {
+  background-color: #fff; }
+
+code {
+  padding: 2px 4px;
+  background-color: #f4f7f9;
+  border: 1px solid #ced7df;
+  border-radius: 2px; }
+
+html {
+  box-sizing: border-box; }
+
+.Lists li {
+  padding-top: 16px;
+  padding-bottom: 16px; }
+
+.Lists.style-none {
+  list-style: none; }
+
+.Lists.type-bordered li {
+  border-bottom: 1px dotted #ced7df; }
+  .Lists.type-bordered li h1,
+  .Lists.type-bordered li h2,
+  .Lists.type-bordered li h3,
+  .Lists.type-bordered li h4,
+  .Lists.type-bordered li h5,
+  .Lists.type-bordered li h6 {
+    margin: 0; }
+
+.pull-left {
+  float: left; }
+
+.pull-right {
+  float: right; }
+
+.Spacing.pt64 {
+  padding-top: 64px; }
+
+.Spacing.pt32 {
+  padding-top: 32px; }
+
+.Spacing.pt16 {
+  padding-top: 16px; }
+
+.Spacing.pt8 {
+  padding-top: 8px; }
+
+.Spacing.pb64 {
+  padding-bottom: 64px; }
+
+.Spacing.pb32 {
+  padding-bottom: 32px; }
+
+.Spacing.pb16 {
+  padding-bottom: 16px; }
+
+.Spacing.pb8 {
+  padding-bottom: 8px; }
+
+.Spacing.mt64 {
+  margin-top: 64px; }
+
+.Spacing.mt32 {
+  margin-top: 32px; }
+
+.Spacing.mt16 {
+  margin-top: 16px; }
+
+.Spacing.mt8 {
+  margin-top: 8px; }
+
+.Spacing.mb64 {
+  margin-bottom: 64px; }
+
+.Spacing.mb32 {
+  margin-bottom: 32px; }
+
+.Spacing.mb16 {
+  margin-bottom: 16px; }
+
+.Spacing.mb8 {
+  margin-bottom: 8px; }
+
+.Spacing.ml64 {
+  margin-left: 64px; }
+
+.Spacing.ml32 {
+  margin-left: 32px; }
+
+.Spacing.ml16 {
+  margin-left: 16px; }
+
+.Spacing.ml8 {
+  margin-left: 8px; }
+
+.Spacing.mr64 {
+  margin-right: 64px; }
+
+.Spacing.mr32 {
+  margin-right: 32px; }
+
+.Spacing.mr16 {
+  margin-right: 16px; }
+
+.Spacing.mr8 {
+  margin-right: 8px; }
+
+.Button {
+  display: inline-block;
+  color: #fff;
+  background-color: #168eea;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding-left: 16px;
+  padding-right: 16px;
+  /* Type
+  ---------- */
+  /* Kind
+  ---------- */
+  /* Size
+  ---------- */ }
+  .Button:hover,
+  .Button.hover-show {
+    color: #fff;
+    background-color: #106aaf; }
+  .Button.hover-cancel:hover,
+  .Button.cancel:hover:hover {
+    background-color: #ee4f4f; }
+  .Button.primary {
+    border-radius: 64px; }
+    .Button.primary.medium {
+      border-radius: 24px; }
+  .Button.icon-text .icon,
+  .Button.icon-text-menu .icon {
+    margin-right: 8px; }
+  .Button.text-menu,
+  .Button.icon-text-menu {
+    border-radius: 16px 0 0 16px; }
+  .Button.text-menu-menu,
+  .Button.icon-text-menu-menu {
+    border-left: 0;
+    border-radius: 0 16px 16px 0; }
+  .Button.cancel {
+    color: #168eea;
+    background-color: #fff;
+    border: 1px solid #168eea; }
+    .Button.cancel:hover {
+      color: #fff;
+      border: 1px solid rgba(0, 0, 0, 0.2); }
+  .Button.inactive {
+    color: #ced7df;
+    background-color: #fff;
+    border: 1px solid #ced7df; }
+  .Button.small {
+    height: 24px;
+    font-size: 12px;
+    line-height: 22px; }
+  .Button.regular {
+    height: 32px;
+    line-height: 30px; }
+  .Button.medium {
+    height: 48px;
+    font-size: 16px;
+    line-height: 46px;
+    padding-left: 32px;
+    padding-right: 32px; }
+  .Button.large {
+    height: 64px;
+    font-size: 18px;
+    line-height: 62px;
+    padding-left: 48px;
+    padding-right: 48px; }
+    .Button.large.icon-text .icon,
+    .Button.large.icon-text-menu .icon {
+      margin-right: 16px; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+.clearfix {
+  display: inline-block; }
+
+* html .clearfix {
+  height: 1%; }
+
+.clearfix {
+  display: block; }
