@@ -60,6 +60,7 @@ $Color--brand-twitter: #55acee;
 
 $Font--base-family: "Open Sans", sans-serif;
 $Font--base-size: $Global--spacing * 2 - ($Global--spacing / 4);
+$Font--base-weight: 400;
 $Font--base-line-height: $Font--base-size * 1.5;
 
 /* Depths (z-indexs)
@@ -81,7 +82,7 @@ $DropShadow--level-4: 0 8px 10px $Color--heading-20;
 
 $BorderRadius--final: $Global--spacing; // Never use this. Always use *--level-X.
 
-$BorderRadius--level-4: $BorderRadius--final;
-$BorderRadius--level-3: $BorderRadius--final / 2;
-$BorderRadius--level-2: $BorderRadius--final / 4;
-$BorderRadius--level-1: $BorderRadius--final / $BorderRadius--final;
+$BorderRadius--level-1: $BorderRadius--final;
+$BorderRadius--level-2: $BorderRadius--final / 2;
+$BorderRadius--level-3: $BorderRadius--final / 4;
+$BorderRadius--level-4: $BorderRadius--final / $BorderRadius--final;

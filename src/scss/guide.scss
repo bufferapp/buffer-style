@@ -25,20 +25,6 @@ main.flex-container {
 
 .content {
   flex-basis: 80%;
-
-  .Card {
-    &.regular {
-      margin-bottom: $Global--spacing * 2;
-
-      .Card {
-        border-radius: $BorderRadius--level-3;
-
-        &.regular {
-          margin-bottom: 0;
-        }
-      }
-    }
-  }
 }
 
 .flex-container header,
@@ -54,35 +40,13 @@ main.flex-container {
 
   background-color: $Color--white;
   border-bottom: 1px solid $Color--border;
-}
 
-.atom-list {
-  ul {
-    margin-bottom: $Global--spacing * 2;
-    li {
-      height: $Global--spacing * 4;
-
-      line-height: $Global--spacing * 4;
-
-      border-bottom: 1px solid $Color--border-light;
-      &.section-header{
-        padding-left: $Global--spacing * 2;
-        padding-right: $Global--spacing * 2;
-
-        line-height: $Global--spacing * 4;
-
-        border-bottom: 1px solid $Color--border;
-      }
-      &.last {
-        border-bottom: 0;
-      }
-    }
-    &.last {
-      margin-bottom: 0;
-    }
+  h1 {
+    font-size: $Font--base-size;
+    font-weight: 600;
+    line-height: $Font--base-line-height;
   }
 }
-
 
 a {
   color: $Color--primary-100;
@@ -109,27 +73,54 @@ html {
   box-sizing: border-box;
 }
 
-.Lists {
+ul {
   li {
-    padding-top: $Global--spacing * 2;
-    padding-bottom: $Global--spacing * 2;
+    padding-top: $Global--spacing;
+    padding-bottom: $Global--spacing;
   }
+}
 
-  &.style-none {
-    list-style: none;
-  }
+.Card {
+  margin-bottom: $Global--spacing * 2;
+  padding: $Global--spacing * 2;
 
-  &.type-bordered {
-    li {
-      border-bottom: 1px dotted $Color--border;
+  background-color: $Color--white;
+  border: 1px solid $Color--border;
+  border-radius: $BorderRadius--level-1;
 
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        margin: 0;
+  &.navigation {
+    ul {
+      margin: -($Global--spacing * 2);
+
+      list-style: none;
+
+      li {
+        padding: 0;
+
+        border-bottom: 1px solid $Color--border-light;
+
+        a {
+          display: block;
+          height: $Global--spacing * 4;
+
+          padding-left: $Global--spacing * 2;
+          padding-right: $Global--spacing * 2;
+
+          line-height: $Global--spacing * 4;
+
+          &:hover {
+            background-color: $Color--primary-5;
+          }
+        }
+
+        &.section-header {
+          padding: ($Global--spacing) ($Global--spacing * 2);
+          border-bottom: 1px solid $Color--border;
+        }        
+
+        &.last {
+          border-bottom: 0;
+        }
       }
     }
   }

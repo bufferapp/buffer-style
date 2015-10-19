@@ -56,6 +56,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
+  font-weight: 400;
   line-height: 21px;
   color: #59626a; }
 
@@ -72,7 +73,7 @@ h6 {
 h1 {
   font-size: 48px;
   font-weight: 100;
-  line-height: 48px; }
+  line-height: 72px; }
 
 h2 {
   font-size: 40px;
@@ -140,28 +141,3 @@ p.lead {
 -------------------------------------------------- */
 /* Border Radii
 -------------------------------------------------- */
-.Card {
-  background-color: #fff;
-  border: 1px solid #ced7df;
-  border-radius: 8px; }
-  .Card.lists li a {
-    display: block;
-    padding-left: 16px;
-    padding-right: 16px; }
-    .Card.lists li a:hover {
-      background-color: rgba(22, 142, 234, 0.05); }
-  .Card.regular {
-    padding: 16px; }
-  .Card p.last {
-    margin-bottom: 0; }
-  .Card .Block.example {
-    margin-top: 16px;
-    margin-left: -16px;
-    margin-right: -16px;
-    padding: 16px;
-    background-color: #f4f7f9;
-    border-top: 1px solid #ced7df;
-    border-bottom: 1px solid #ced7df; }
-  .Card .Block .Lists {
-    margin-top: -16px;
-    margin-bottom: -16px; }

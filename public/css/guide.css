@@ -42,12 +42,6 @@ main.flex-container {
 
 .content {
   flex-basis: 80%; }
-  .content .Card.regular {
-    margin-bottom: 16px; }
-    .content .Card.regular .Card {
-      border-radius: 4px; }
-      .content .Card.regular .Card.regular {
-        margin-bottom: 0; }
 
 .flex-container header,
 .flex-container footer {
@@ -60,22 +54,10 @@ main.flex-container {
   padding: 16px 0;
   background-color: #fff;
   border-bottom: 1px solid #ced7df; }
-
-.atom-list ul {
-  margin-bottom: 16px; }
-  .atom-list ul li {
-    height: 32px;
-    line-height: 32px;
-    border-bottom: 1px solid #eff3f6; }
-    .atom-list ul li.section-header {
-      padding-left: 16px;
-      padding-right: 16px;
-      line-height: 32px;
-      border-bottom: 1px solid #ced7df; }
-    .atom-list ul li.last {
-      border-bottom: 0; }
-  .atom-list ul.last {
-    margin-bottom: 0; }
+  .header-primary h1 {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px; }
 
 a {
   color: #168eea;
@@ -90,27 +72,40 @@ code {
   padding: 2px 4px;
   background-color: #f4f7f9;
   border: 1px solid #ced7df;
-  border-radius: 2px; }
+  border-radius: 4px; }
 
 html {
   box-sizing: border-box; }
 
-.Lists li {
-  padding-top: 16px;
-  padding-bottom: 16px; }
+ul li {
+  padding-top: 8px;
+  padding-bottom: 8px; }
 
-.Lists.style-none {
-  list-style: none; }
-
-.Lists.type-bordered li {
-  border-bottom: 1px dotted #ced7df; }
-  .Lists.type-bordered li h1,
-  .Lists.type-bordered li h2,
-  .Lists.type-bordered li h3,
-  .Lists.type-bordered li h4,
-  .Lists.type-bordered li h5,
-  .Lists.type-bordered li h6 {
-    margin: 0; }
+.Card {
+  margin-bottom: 16px;
+  padding: 16px;
+  background-color: #fff;
+  border: 1px solid #ced7df;
+  border-radius: 8px; }
+  .Card.navigation ul {
+    margin: -16px;
+    list-style: none; }
+    .Card.navigation ul li {
+      padding: 0;
+      border-bottom: 1px solid #eff3f6; }
+      .Card.navigation ul li a {
+        display: block;
+        height: 32px;
+        padding-left: 16px;
+        padding-right: 16px;
+        line-height: 32px; }
+        .Card.navigation ul li a:hover {
+          background-color: rgba(22, 142, 234, 0.05); }
+      .Card.navigation ul li.section-header {
+        padding: 8px 16px;
+        border-bottom: 1px solid #ced7df; }
+      .Card.navigation ul li.last {
+        border-bottom: 0; }
 
 .pull-left {
   float: left; }
