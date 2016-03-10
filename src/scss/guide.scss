@@ -87,3 +87,26 @@ main.flex-container {
 .section--last {
   border-bottom: 0;
 }
+
+.section-title,
+.section-secondary-title {
+  margin-top: 0;
+}
+
+.section-secondary {
+  margin-bottom: $globalSpacing * 8;
+  padding: ($globalSpacing) 0 ($globalSpacing * 8) 0;
+
+  border-bottom: 1px solid $borderLightColor;
+}
+
+.section-secondary--last {
+  margin: 0;
+  padding-bottom: 0;
+
+  border-bottom: 0;
+}
+
+.twitter {
+  background-color: $twitterColor;
+}
