@@ -1,5 +1,42 @@
 @import "base/variables";
 
+a {
+  color: $actionableColor;
+  text-decoration: none;
+
+  &:hover {
+    color: $actionableHoverColor;
+  }
+}
+
+body {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+  color: $bodyColor;
+
+  background-color: $whiteColor;
+}
+
+code {
+  padding: ($globalSpacing / 4) ($globalSpacing / 2);
+
+  background-color: $backgroundFillColor;
+  border: 1px solid $borderColor;
+  border-radius: $globalSpacing / 2;
+}
+
+html {
+}
+
+ul {
+  li {
+    padding-top: $globalSpacing;
+    padding-bottom: $globalSpacing;
+  }
+}
+
 .flex-container,
 .flex-container header,
 .flex-container footer {
@@ -32,343 +69,21 @@ main.flex-container {
   width: 100%;
 }
 
-/* To be made in to components
--------------------------------------------------- */
-.header-primary {
-  margin-bottom: $Global--spacing * 8;
-  padding: ($Global--spacing * 2) 0;
-
-  background-color: $Color--white;
-  border-bottom: 1px solid $Color--border;
-
-  h1 {
-    font-size: $Font--base-size;
-    font-weight: 600;
-    line-height: $Font--base-line-height;
-  }
-}
-
-a {
-  color: $Color--primary-100;
-  text-decoration: none;
-
-  &:hover {
-    color: $Color--primary-hover;
-  }
-}
-
-body {
-  background-color: $Color--white;
-}
-
-code {
-  padding: ($Global--spacing / 4) ($Global--spacing / 2);
-
-  background-color: $Color--fill;
-  border: 1px solid $Color--border;
-  border-radius: $BorderRadius--level-2;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-ul {
-  li {
-    padding-top: $Global--spacing;
-    padding-bottom: $Global--spacing;
-  }
-}
-
-.Card {
-  margin-bottom: $Global--spacing * 2;
-  padding: $Global--spacing * 2;
-
-  background-color: $Color--white;
-  border: 1px solid $Color--border;
-  border-radius: $BorderRadius--level-1;
-
-  &.navigation {
-    ul {
-      margin: -($Global--spacing * 2);
-
-      list-style: none;
-
-      li {
-        padding: 0;
-
-        border-bottom: 1px solid $Color--border-light;
-
-        a {
-          display: block;
-          height: $Global--spacing * 4;
-
-          padding-left: $Global--spacing * 2;
-          padding-right: $Global--spacing * 2;
-
-          line-height: $Global--spacing * 4;
-
-          &:hover {
-            background-color: $Color--primary-5;
-          }
-        }
-
-        &.section-header {
-          padding: ($Global--spacing) ($Global--spacing * 2);
-          border-bottom: 1px solid $Color--border;
-        }        
-
-        &.last {
-          border-bottom: 0;
-        }
-      }
-    }
-  }
-}
-
-.pull-left {
-  float: left;
-}
-
-.pull-right {
-  float: right;
-}
-
-.Spacing {
-  &.pt64 {
-    padding-top: $Global--spacing * 8;
-  }
-
-  &.pt32 {
-    padding-top: $Global--spacing * 4;
-  }
-
-  &.pt16 {
-    padding-top: $Global--spacing * 2;
-  }
-
-  &.pt8 {
-    padding-top: $Global--spacing;
-  }
-
-  &.pb64 {
-    padding-bottom: $Global--spacing * 8;
-  }
-
-  &.pb32 {
-    padding-bottom: $Global--spacing * 4;
-  }
-
-  &.pb16 {
-    padding-bottom: $Global--spacing * 2;
-  }
-
-  &.pb8 {
-    padding-bottom: $Global--spacing;
-  }
-
-  &.mt64 {
-    margin-top: $Global--spacing * 8;
-  }
-
-  &.mt32 {
-    margin-top: $Global--spacing * 4;
-  }
-
-  &.mt16 {
-    margin-top: $Global--spacing * 2;
-  }
-
-  &.mt8 {
-    margin-top: $Global--spacing;
-  }
-
-  &.mb64 {
-    margin-bottom: $Global--spacing * 8;
-  }
-
-  &.mb32 {
-    margin-bottom: $Global--spacing * 4;
-  }
-
-  &.mb16 {
-    margin-bottom: $Global--spacing * 2;
-  }
-
-  &.mb8 {
-    margin-bottom: $Global--spacing;
-  }
-
-  &.ml64 {
-    margin-left: $Global--spacing * 8;
-  }
-
-  &.ml32 {
-    margin-left: $Global--spacing * 4;
-  }
-
-  &.ml16 {
-    margin-left: $Global--spacing * 2;
-  }
-
-  &.ml8 {
-    margin-left: $Global--spacing;
-  }
-
-  &.mr64 {
-    margin-right: $Global--spacing * 8;
-  }
-
-  &.mr32 {
-    margin-right: $Global--spacing * 4;
-  }
-
-  &.mr16 {
-    margin-right: $Global--spacing * 2;
-  }
-
-  &.mr8 {
-    margin-right: $Global--spacing;
-  }
-}
-
-.Button {
+.icon {
   display: inline-block;
+  width: $globalSpacing * 2;
+  height: $globalSpacing * 2;
 
-  color: $Color--white;
-
-  background-color: $Color--primary-100;
-  border: 1px solid $Color--black-20;
-
-  padding-left: $Global--spacing * 2;
-  padding-right: $Global--spacing * 2;
-
-  &:hover,
-  &.hover-show {
-    color: $Color--white;
-
-    background-color: $Color--primary-hover;
-  }
-
-  &.hover-cancel,
-  &.cancel:hover {
-    &:hover {
-      background-color: $Color--error;
-    }
-  }
-
-  &.primary {
-    border-radius: $Global--spacing * 8;
-
-    &.medium {
-      border-radius: $Global--spacing * 3;
-    }
-  }
-
-  /* Type
-  ---------- */
-  &.icon-text,
-  &.icon-text-menu {
-    .icon {
-      margin-right: $Global--spacing;
-    }
-  }
-
-  &.text-menu,
-  &.icon-text-menu {
-    border-radius: ($Global--spacing * 2) 0 0 ($Global--spacing * 2);
-  }
-
-  &.text-menu-menu,
-  &.icon-text-menu-menu {
-    border-left: 0;
-    border-radius: 0 ($Global--spacing * 2) ($Global--spacing * 2) 0;
-  }
-
-  /* Kind
-  ---------- */
-  &.cancel {
-    color: $Color--primary-100;
-
-    background-color: $Color--white;
-    border: 1px solid $Color--primary-100;
-
-    &:hover {
-      color: $Color--white;
-
-      border: 1px solid $Color--black-20;
-    }
-  }
-
-  &.inactive {
-    color: $Color--border;
-
-    background-color: $Color--white;
-    border: 1px solid $Color--border;
-  }
-
-  /* Size
-  ---------- */
-  &.small {
-    height: $Global--spacing * 3;
-
-    font-size: $Global--spacing * 1.5;
-    line-height: ($Global--spacing * 3) - 2;
-  }
-
-  &.regular {
-    height: $Global--spacing * 4;
-
-    line-height: ($Global--spacing * 4) - 2;
-  }
-
-  &.medium {
-    height: $Global--spacing * 6;
-
-    font-size: $Global--spacing * 2;
-    line-height: ($Global--spacing * 6) - 2;
-
-    padding-left: $Global--spacing * 4;
-    padding-right: $Global--spacing * 4;
-
-    
-  }
-
-  &.large {
-    height: $Global--spacing * 8;
-
-    font-size: ($Global--spacing * 2) + 2;
-    line-height: ($Global--spacing * 8) - 2;
-
-    padding-left: $Global--spacing * 6;
-    padding-right: $Global--spacing * 6;
-
-    &.icon-text,
-    &.icon-text-menu {
-      .icon {
-        margin-right: $Global--spacing * 2;
-      }
-    }
-  }
+  background-color: $whiteColor;
 }
 
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
+.section {
+  margin-bottom: $globalSpacing * 8;
+  padding: 0 ($globalSpacing * 4) ($globalSpacing * 8) ($globalSpacing * 4);
+
+  border-bottom: 1px solid $borderColor;
 }
 
-.clearfix {
-  display: inline-block;
-}
-
-* html .clearfix {
-  height: 1%;
-}
-
-.clearfix {
-  display: block;
+.section--last {
+  border-bottom: 0;
 }

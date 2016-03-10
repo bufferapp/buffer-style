@@ -1,88 +1,61 @@
-/* Global
--------------------------------------------------- */
-
-$Global--margin-center: 0 auto;
-$Global--site-width: 960px;
-$Global--spacing: 8px;
+/* Global Variables
+------------------------------------------------------------ */
+$globalSpacing: 8px;
 
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
--------------------------------------------------- */
+------------------------------------------------------------ */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Black & White Palette
--------------------------------------------------- */
-
-$Color--black-100: rgba(0, 0, 0, 1);
-$Color--black-90: rgba(0, 0, 0, 0.9);
-$Color--black-80: rgba(0, 0, 0, 0.8);
-$Color--black-70: rgba(0, 0, 0, 0.7);
-$Color--black-60: rgba(0, 0, 0, 0.6);
-$Color--black-50: rgba(0, 0, 0, 0.5);
-$Color--black-40: rgba(0, 0, 0, 0.4);
-$Color--black-30: rgba(0, 0, 0, 0.3);
-$Color--black-20: rgba(0, 0, 0, 0.2);
-$Color--black-10: rgba(0, 0, 0, 0.1);
-
-$Color--white: #fff;
-
 /* Primary Palette
--------------------------------------------------- */
+------------------------------------------------------------ */
 
-$Color--primary-100: rgba(22, 142, 234, 1);
-$Color--primary-5: rgba(22, 142, 234, 0.05);
-$Color--primary-hover: #106aaf;
-$Color--heading-100: rgba(50, 59, 67, 1);
-$Color--heading-20: rgba(50, 59, 67, 0.2);
-$Color--body: #59626a;
-$Color--border: #ced7df;
-$Color--border-light: #eff3f6;
-$Color--fill: #f4f7f9;
-$Color--error: #ee4f4f;
-$Color--warning: #fff9ea;
-$Color--success: #76b852;
+$actionableColor: #168eea;
+$actionableHoverColor: #106aaf;
+$actionableBorderColor: rgba(0, 0, 0, 0.2);
+$titleColor: #323b43;
+$bodyColor: #59626a;
+$borderColor: #ced7df;
+$borderLightColor: #eff3f6;
+$backgroundFillColor: #f4f7f9;
+$successColor: #76b852;
+$errorColor: #ee4f4f;
+$warningColor: #fff9ea;
+$blackColor: #000;
+$whiteColor: #fff;
 
-/* Brand Palette
--------------------------------------------------- */
+/* Brands Palette
+------------------------------------------------------------ */
 
-$Color--brand-app-net: #4a484c;
-$Color--brand-facebook: #3b5998;
-$Color--brand-google-plus: #dd4b39;
-$Color--brand-linkedin: #007bb6;
-$Color--brand-pinterest: #bd081c;
-$Color--brand-twitter: #55acee;
+$facebook: #3b5998;
+$linkedin: #007bb6;
+$twitter: #55acee;
+$appNet: #4a484c;
+$googlePlus: #dd4b39;
+$pinterest: #bd081c;
 
 /* Font
--------------------------------------------------- */
+------------------------------------------------------------ */
 
-$Font--base-family: "Open Sans", sans-serif;
-$Font--base-size: $Global--spacing * 2 - ($Global--spacing / 4);
-$Font--base-weight: 400;
-$Font--base-line-height: $Font--base-size * 1.5;
-
-/* Depths (z-indexs)
--------------------------------------------------- */
-
-$Depth--dropdown: 1000;
-$Depth--base: 0;
-
-/* Shadows
--------------------------------------------------- */
-
-$DropShadow--level-1: 0 2px 4px $Color--heading-20;
-$DropShadow--level-2: 0 4px 6px $Color--heading-20;
-$DropShadow--level-3: 0 6px 8px $Color--heading-20;
-$DropShadow--level-4: 0 8px 10px $Color--heading-20;
+$fontFamily: 'open sans', sans-serif;
+$fontSize: 14px;
+$fontWeight: 400;
+$lineHeight: $fontSize * 1.5;
 
 /* Border Radii
--------------------------------------------------- */
+------------------------------------------------------------ */
 
-$BorderRadius--final: $Global--spacing; // Never use this. Always use *--level-X.
+$borderRadiusLevel1: $globalSpacing;      // 8px
+$borderRadiusLevel2: $globalSpacing / 2;  // 4px
+$borderRadiusLevel3: $globalSpacing / 4;  // 2px
 
-$BorderRadius--level-1: $BorderRadius--final;
-$BorderRadius--level-2: $BorderRadius--final / 2;
-$BorderRadius--level-3: $BorderRadius--final / 4;
-$BorderRadius--level-4: $BorderRadius--final / $BorderRadius--final;
+/* Box Shadows
+------------------------------------------------------------ */
+
+$boxShadowLevel1: 0 2px 4px rgba(50, 59, 67, 0.2);
+$boxShadowLevel2: 0 4px 6px rgba(50, 59, 67, 0.2);
+$boxShadowLevel3: 0 6px 8px rgba(50, 59, 67, 0.2);
+$boxShadowLevel4: 0 8px 10px rgba(50, 59, 67, 0.2);
