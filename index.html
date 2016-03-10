@@ -7,148 +7,164 @@
   </head>
   <body>
 
-    <div class="flex-container">
+    <header class="navbar">
+      <div class="navbar-title">Buffer Style Guide</div>
+    </header>
 
-      <header class="header-primary">
-        <h1>Buffer Style Guide</h1>
-      </header>
+    <section class="section">
+      <h2>Headings</h2>
 
-      <main class="flex-container">
+      <p>We exclusively use Open Sans as the base typeface across the entire Buffer suite of products. Maintaining typographic clarity and hierarchy is important; here is a showcase of different ways to structure content:</p>
 
-        <nav>
-          <div class="Card navigation">
+      <h1>Heading Level 1</h1>
+
+      <h2>Heading Level 2</h2>
+
+      <h3>Heading Level 3</h3>
+
+      <h4>Heading Level 4</h4>
+
+      <h5>Heading Level 5</h5>
+
+      <h6>Heading Level 6</h6>
+    </section>
+
+    <section class="section">
+      <h2>Cards</h2>
+
+      <p>Cards are general-use containers that hold different parts of the UI.</p>
+
+      <h3>Card</h3>
+
+      <div class="card">
+        Testing
+      </div>
+
+      <h3>Card - Post</h3>
+
+      <div class="card card-post">
+        <div class="card-post-content">What is a Product Designer? An awesome story by <a href="#">@jgadapee</a> over on Medium! <a href="#">http://buff.ly/1LTbUqv</a></div>
+        <div class="card-post-meta">
+          <div class="card-post-meta-data">
+            <span class="card-post-meta-time">12:57 <span class="card-post-meta-time-zone">(GMT)</span></span><span class="card-post-meta-via">via Extension</span>
+          </div>
+          <div class="card-post-meta-user">
+            <span class="card-post-meta-user-profile-picture">
+              <img class="profile-picture profile-picture--small" height="16" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg" width="16px">
+            </span>
+            <span class="card-post-meta-user-name">
+              steve@buffer.com
+            </span>
+          </div>
+          <div class="card-post-meta-menu">
             <ul>
-              <li class="section-header"><h5>Design</h5></li>
-              <li><a href="#">Color Palette</a></li>
-              <li><a href="#">Typography</a></li>
-              <li class="last"><a href="#">Buttons</a></li>
+              <li class="card-post-meta-menu-item"><a href="#">Delete</a></li>
+              <li class="card-post-meta-menu-item"><a href="#">Edit</a></li>
+              <li class="card-post-meta-menu-item"><a href="#">Move to Top</a></li>
+              <li class="card-post-meta-menu-item"><a href="#">Share Now</a></li>
             </ul>
           </div>
-          <div class="Card navigation">
+        </div>
+      </div>
+
+      <h3>Card - Pinned Post</h3>
+
+      <div class="card card-post">
+        <div class="card-post-content">What is a Product Designer? An awesome story by <a href="#">@jgadapee</a> over on Medium! <a href="#">http://buff.ly/1LTbUqv</a></div>
+        <div class="card-post-meta">
+          <div class="card-post-meta-data card-post-meta-data-pinned">
+            <span class="card-post-meta-time card-post-meta-time--pinned">12:57 <span class="card-post-meta-time-zone">(GMT)</span></span><span class="card-post-meta-via">via Extension</span><span class="card-post-meta-data-pinned-arrow"></span>
+          </div>
+          <div class="card-post-meta-user">
+            <span class="card-post-meta-user-profile-picture">
+              <img class="profile-picture profile-picture--small" height="16" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg" width="16px">
+            </span>
+            <span class="card-post-meta-user-name">
+              steve@buffer.com
+            </span>
+          </div>
+          <div class="card-post-meta-menu">
             <ul>
-              <li class="section-header"><h5>Icons</h5></li>
-              <li><a href="#">Web</a></li>
-              <li><a href="#">iOS</a></li>
-              <li class="last"><a href="#">Android</a></li>
+              <li class="card-post-meta-menu-item"><a href="#">Delete</a></li>
+              <li class="card-post-meta-menu-item"><a href="#">Edit</a></li>
+              <li class="card-post-meta-menu-item"><a href="#">Move to Top</a></li>
+              <li class="card-post-meta-menu-item"><a href="#">Share Now</a></li>
             </ul>
           </div>
-        </nav>
+        </div>
+      </div>
 
-        <section class="content">
+      <h3>Card - Pinned Post - Repeat</h3>
 
-          <h3 class="Spacing mb32">Color Palette</h3>
-          <h4 class="Spacing mb32">Black &amp; White Palette</h4>
-          <div class="Card">
-            <p>Colors here.</p>
+      <div class="card card-post">
+        <div class="card-post-content">What is a Product Designer? An awesome story by <a href="#">@jgadapee</a> over on Medium! <a href="#">http://buff.ly/1LTbUqv</a></div>
+        <div class="card-post-meta">
+          <div class="card-post-meta-data card-post-meta-data-pinned">
+            <span class="card-post-meta-recurring"><i class="icon card-post-meta-recurring-icon"></i>On Repeat</span><span class="card-post-meta-time card-post-meta-time--pinned">12:57 <span class="card-post-meta-time-zone">(GMT)</span></span><span class="card-post-meta-via">via Extension</span><span class="card-post-meta-data-pinned-arrow"></span>
           </div>
-          <h4 class="Spacing mt32 mb32">Primary Palette</h4>
-          <p>Colors here.</p>
-          <h4 class="Spacing mt32 mb32">Brand Palette</h4>
-          <p>Cards here.</p>
-
-          <h3 class="Spacing mt64">Typography</h3>
-          <h4 class="Spacing mt32 mb32">Headings</h4>
-          <ul class="List style-none type-border-dotted">
-            <li><h1>48 pixels, weight 100</h1></li>
-            <li><h2>Heading 2</h2></li>
-            <li><h3>Heading 3</h3></li>
-            <li><h4>Heading 4</h4></li>
-            <li><h5>Heading 5</h5></li>
-            <li><h6>Heading 6</h6></li>
-          </ul>
-          <h4 class="Spacing mt32 mb32">Paragraphs</h4>
-          <h5 class="Spacing mb16">Default text</h5>
-          <p>Blah.</p>
-          <h5 class="Spacing mt32 mb16">Leading text</h5>
-          <p class="lead">Highlight misc. typography elements here such as leading paragraphs, etc.</p>
-
-          <h3 class="Spacing mt64">Buttons</h3>
-          <h4 class="Spacing mt32 mb32">State</h4>
-          <div class="clearfix">
-            <div class="pull-left Spacing mr16">
-              <h6 class="Spacing mb8">Active</h6>
-              <a class="Button primary text regular" href="#">Button</a>
-            </div>
-            <div class="pull-left Spacing mr16">
-              <h6 class="Spacing mb8">Hover</h6>
-              <a class="Button hover-show primary text regular" href="#">Button</a>
-            </div>
-            <div class="pull-left">
-              <h6 class="Spacing mb8">Hover - Cancel</h6>
-              <a class="Button hover-cancel primary text regular" href="#">Button</a>
-            </div>
+          <div class="card-post-meta-user">
+            <span class="card-post-meta-user-profile-picture">
+              <img class="profile-picture profile-picture--small" height="16" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg" width="16px">
+            </span>
+            <span class="card-post-meta-user-name">
+              steve@buffer.com
+            </span>
           </div>
-          <h4 class="Spacing mt32 mb32">Type</h4>
-          <div class="clearfix">
-            <div class="pull-left Spacing mr16">
-              <h6 class="Spacing mb8">Text</h6>
-              <a class="Button primary regular" href="#">Button</a>
-            </div>
-            <div class="pull-left Spacing mr16">
-              <h6 class="Spacing mb8">Text - Menu</h6>
-              <a class="Button primary text-menu regular" href="#">Button</a><a class="Button primary text-menu-menu regular" href="#">v</a>
-            </div>
-            <div class="pull-left Spacing mr16">
-              <h6 class="Spacing mb8">Icon - Text</h6>
-              <a class="Button primary icon-text regular" href="#"><span class="icon">[i]</span>Button</a>
-            </div>
-            <div class="pull-left Spacing mr16">
-              <h6 class="Spacing mb8">Icon - Text - Menu</h6>
-              <a class="Button primary icon-text-menu regular" href="#"><span class="icon">[i]</span>Button</a><a class="Button primary icon-text-menu-menu regular">v</a>
-            </div>
+          <div class="card-post-meta-menu">
+            <ul>
+              <li class="card-post-meta-menu-item"><a href="#">Delete</a></li>
+              <li class="card-post-meta-menu-item"><a href="#">Edit</a></li>
+              <li class="card-post-meta-menu-item"><a href="#">Move to Top</a></li>
+              <li class="card-post-meta-menu-item"><a href="#">Share Now</a></li>
+            </ul>
           </div>
-          <h4 class="Spacing mt32 mb32">Kind</h4>
-          <div class="clearfix">
-            <div class="pull-left Spacing mr16">
-              <h6 class="Spacing mb8">Cancel</h6>
-              <a class="Button primary cancel text regular" href="#">Button</a>
-            </div>
-            <div class="pull-left">
-              <h6 class="Spacing mb8">Inactive</h6>
-              <a class="Button primary inactive icon regular" href="#">Button</a>
-            </div>
+        </div>
+      </div>
+
+      <h3>Card - Post - Empty</h3>
+
+      <div class="card card--empty">
+        Testing
+      </div>
+
+      <h3>Card - Post - Analytics</h3>
+
+      <div class="card card-analytics">
+        <div class="card-analytics-content">
+          What is a Product Designer? An awesome story by <a href="#">@jgadapee</a> over on Medium! <a href="#">http://buff.ly/1LTbUqv</a>
+        </div>
+        <div class="card-analytics-meta">
+          <div class="card-analytics-meta-data-time">
+            <span class="card-analytics-meta-time">12:57 <span class="card-analytics-meta-time-zone">(GMT)</span></span> <span class="card-analytics-meta-via">via Extension</span>
           </div>
-          <h4 class="Spacing mt32 mb32">Size</h4>
-          <div class="clearfix">
-            <div class="pull-left Spacing mr16">
-              <h6 class="Spacing mb8">Small</h6>
-              <a class="Button primary text small" href="#">Button</a>
-            </div>
-            <div class="pull-left Spacing mr16">
-              <h6 class="Spacing mb8">Small - Icon</h6>
-              <a class="Button primary icon-text small" href="#"><span class="icon">[i]</span>Button</a>
-            </div>
-            <div class="pull-left Spacing mr16">
-              <h6 class="Spacing mb8">Regular</h6>
-              <a class="Button primary text regular" href="#">Button</a>
-            </div>
-            <div class="pull-left Spacing mr16">
-              <h6 class="Spacing mb8">Medium</h6>
-              <a class="Button primary text medium" href="#">Button</a>
-            </div>
-            <div class="pull-left Spacing mr16">
-              <h6 class="Spacing mb8">Medium - Icon</h6>
-              <a class="Button primary icon-text medium" href="#"><span class="icon">[i]</span>Button</a>
-            </div>
-            <div class="pull-left Spacing mr16">
-              <h6 class="Spacing mb8">Large</h6>
-              <a class="Button primary text large" href="#">Button</a>
-            </div>
-            <div class="pull-left Spacing mr16">
-              <h6 class="Spacing mb8">Large - Icon</h6>
-              <a class="Button primary icon-text large" href="#"><span class="icon">[i]</span>Button</a>
-            </div>
+          <div class="card-analytics-meta-data-stats">
+            <span class="card-analytics-meta-data-stat"><span class="card-analytics-meta-data-stat-amount">0</span> retweets</span><span class="card-analytics-meta-data-stat"><span class="card-analytics-meta-data-stat-amount">2</span> likes</span><span class="card-analytics-meta-data-stat"><span class="card-analytics-meta-data-stat-amount">0</span> mentions</span><span class="card-analytics-meta-data-stat"><span class="card-analytics-meta-data-stat-amount">6</span> clicks</span><span class="card-analytics-meta-data-stat"><span class="card-analytics-meta-data-stat-amount">843</span> potential</span>
           </div>
+        </div>
+      </div>
+    </section>
 
-        </section>
+    <section class="section">
+      <h2>NavBars</h2>
 
-      </main>
+      <p>NavBars are a component that serve as navigation headers for the Buffer application or site.</p>
 
-      <footer></footer>
+      <h3>NavBar</h3>
 
-    </div>
-
+      <div class="navbar">
+        <div class="navbar-title">Title</div>
+        <ul class="navbar-menu-left">
+          <li class="navbar-menu-item">Menu Item 1</li>
+          <li class="navbar-menu-item">Menu Item 2</li>
+          <li class="navbar-menu-item navbar-menu-item--last">Menu Item 3</li>
+        </ul>
+        <ul class="navbar-menu-right">
+          <li class="navbar-menu-item">Menu Item 1</li>
+          <li class="navbar-menu-item navbar-menu-item--last">Menu Item 2</li>
+        </ul>
+      </div>
+    </section>
+    
     <script src="js/bundle.js"></script>
-
   </body>
 </html>

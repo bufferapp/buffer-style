@@ -5,63 +5,55 @@
  * consumed by other projects. Do not include SCSS meant for the presentation
  * of the style guide website itself.
  */
-/* Global
--------------------------------------------------- */
+/* Global Variables
+------------------------------------------------------------ */
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
--------------------------------------------------- */
+------------------------------------------------------------ */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
-/* Black & White Palette
--------------------------------------------------- */
 /* Primary Palette
--------------------------------------------------- */
-/* Brand Palette
--------------------------------------------------- */
+------------------------------------------------------------ */
+/* Brands Palette
+------------------------------------------------------------ */
 /* Font
--------------------------------------------------- */
-/* Depths (z-indexs)
--------------------------------------------------- */
-/* Shadows
--------------------------------------------------- */
+------------------------------------------------------------ */
 /* Border Radii
--------------------------------------------------- */
-/* Global
--------------------------------------------------- */
+------------------------------------------------------------ */
+/* Box Shadows
+------------------------------------------------------------ */
+/* Global Variables
+------------------------------------------------------------ */
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
--------------------------------------------------- */
+------------------------------------------------------------ */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
-/* Black & White Palette
--------------------------------------------------- */
 /* Primary Palette
--------------------------------------------------- */
-/* Brand Palette
--------------------------------------------------- */
+------------------------------------------------------------ */
+/* Brands Palette
+------------------------------------------------------------ */
 /* Font
--------------------------------------------------- */
-/* Depths (z-indexs)
--------------------------------------------------- */
-/* Shadows
--------------------------------------------------- */
+------------------------------------------------------------ */
 /* Border Radii
--------------------------------------------------- */
+------------------------------------------------------------ */
+/* Box Shadows
+------------------------------------------------------------ */
 /* Body
--------------------------------------------------- */
+------------------------------------------------------------ */
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "open sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
   color: #59626a; }
 
 /* Headings
--------------------------------------------------- */
+------------------------------------------------------------ */
 h1,
 h2,
 h3,
@@ -71,73 +63,286 @@ h6 {
   color: #323b43; }
 
 h1 {
-  font-size: 48px;
-  font-weight: 100;
-  line-height: 72px; }
-
-h2 {
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 60px; }
-
-h3 {
+  margin: 32px 0;
   font-size: 32px;
-  font-weight: 600;
+  font-weight: 100;
   line-height: 48px; }
 
-h4,
-h5 {
-  font-weight: 400; }
-
-h4 {
+h2 {
+  margin: 24px 0;
   font-size: 24px;
+  font-weight: 100;
   line-height: 36px; }
 
-h5 {
+h3 {
   font-size: 16px;
   line-height: 24px; }
 
+h3,
+h4,
+h5,
 h6 {
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 18px;
-  text-transform: uppercase; }
+  margin: 16px 0;
+  font-weight: 600; }
+
+h4,
+h5,
+h6 {
+  font-size: 14px;
+  line-height: 21px; }
 
 /* Paragraphs
 -------------------------------------------------- */
 code {
   font-size: 12px;
   font-weight: 400;
-  line-height: 18px;
-  text-transform: lowercase; }
+  line-height: 18px; }
 
-p.lead {
-  font-size: 24px;
-  line-height: 36px; }
+p {
+  margin: 16px 0; }
 
 *, *:before, *:after {
   box-sizing: inherit; }
 
-/* Global
--------------------------------------------------- */
+/* Global Variables
+------------------------------------------------------------ */
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
--------------------------------------------------- */
+------------------------------------------------------------ */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
-/* Black & White Palette
--------------------------------------------------- */
 /* Primary Palette
--------------------------------------------------- */
-/* Brand Palette
--------------------------------------------------- */
+------------------------------------------------------------ */
+/* Brands Palette
+------------------------------------------------------------ */
 /* Font
--------------------------------------------------- */
-/* Depths (z-indexs)
--------------------------------------------------- */
-/* Shadows
--------------------------------------------------- */
+------------------------------------------------------------ */
 /* Border Radii
--------------------------------------------------- */
+------------------------------------------------------------ */
+/* Box Shadows
+------------------------------------------------------------ */
+.card {
+  padding: 16px;
+  background-color: #fff;
+  border: 1px solid #ced7df;
+  border-radius: 8px; }
+
+.card--empty {
+  border: 1px dashed #ced7df; }
+
+.card-post,
+.card-analytics {
+  margin-bottom: 16px;
+  padding: 0; }
+
+.card-post-content,
+.card-analytics-content {
+  padding: 16px; }
+
+.card-post-meta,
+.card-analytics-meta {
+  padding: 0 16px;
+  font-size: 10px; }
+
+.card-post-meta {
+  height: 32px;
+  line-height: 32px;
+  background-color: #f4f7f9;
+  border-top: 1px solid #ced7df;
+  border-radius: 0 0 7px 7px; }
+  .card-post-meta::after {
+    clear: both; }
+
+.card-post-meta-data {
+  float: left; }
+
+.card-post-meta-data-pinned {
+  position: relative;
+  margin: 2px 0 2px -18px;
+  padding: 0 8px 0 16px;
+  height: 27px;
+  line-height: 27px;
+  color: #fff;
+  background-color: #168eea;
+  border-right: 0; }
+
+.card-post-meta-data-pinned-arrow {
+  position: absolute;
+  right: -8px;
+  width: 0;
+  height: 0;
+  border-top: 13.5px solid transparent;
+  border-bottom: 13.5px solid transparent;
+  border-left: 8px solid #168eea; }
+
+.card-post-meta-recurring {
+  margin-right: 8px;
+  font-weight: 600; }
+
+.card-post-meta-recurring-icon {
+  float: left;
+  margin-top: 5.5px;
+  margin-right: 4px; }
+  .card-post-meta-recurring-icon::after {
+    clear: both; }
+
+.card-post-meta-time,
+.card-analytics-meta-time {
+  font-weight: 600;
+  color: #323b43; }
+
+.card-post-meta-time {
+  margin-right: 8px; }
+
+.card-post-meta-time--pinned {
+  color: #fff; }
+
+.card-post-meta-time-zone,
+.card-analytics-meta-time-zone {
+  font-weight: normal; }
+
+.card-post-meta-user {
+  display: inline-block;
+  margin: 4px 0 4px 16px;
+  padding: 4px 0; }
+  .card-post-meta-user::after {
+    clear: both; }
+
+.card-post-meta-user-profile-picture {
+  float: left; }
+
+.card-post-meta-user-name {
+  margin-left: 8px;
+  float: left;
+  font-weight: 600;
+  line-height: normal; }
+
+.card-post-meta-menu {
+  float: right; }
+
+.card-post-meta-menu-item {
+  display: inline;
+  margin: 0 16px 0 0; }
+  .card-post-meta-menu-item a {
+    color: #323b43; }
+    .card-post-meta-menu-item a:hover {
+      color: #000; }
+
+.card-analytics {
+  padding-bottom: 0; }
+
+.card-analytics-meta-data-time {
+  margin-bottom: 16px;
+  font-size: 10px;
+  color: #ced7df; }
+
+.card-analytics-meta-data-stats {
+  margin-right: -16px;
+  margin-left: -16px;
+  padding: 0 16px;
+  display: block;
+  height: 32px;
+  line-height: 32px;
+  background-color: #f4f7f9;
+  border-top: 1px solid #ced7df;
+  border-radius: 0 0 7px 7px; }
+  .card-analytics-meta-data-stats::after {
+    clear: both; }
+
+.card-analytics-meta-data-stat {
+  display: inline-block;
+  width: 20%;
+  text-align: center; }
+
+.card-analytics-meta-data-stat-amount {
+  font-weight: bold;
+  color: #323b43; }
+
+/* Global Variables
+------------------------------------------------------------ */
+/* Global Reset // We'll pull in a common reset here, perhaps in another file!
+------------------------------------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* Primary Palette
+------------------------------------------------------------ */
+/* Brands Palette
+------------------------------------------------------------ */
+/* Font
+------------------------------------------------------------ */
+/* Border Radii
+------------------------------------------------------------ */
+/* Box Shadows
+------------------------------------------------------------ */
+.navbar {
+  margin-bottom: 32px;
+  padding: 0 16px;
+  height: 64px;
+  font-size: 14px;
+  line-height: 64px;
+  border-bottom: 1px solid #ced7df; }
+  .navbar::after {
+    clear: both; }
+
+.navbar-title {
+  float: left;
+  width: 10%;
+  font-weight: 600; }
+
+.navbar-menu-left {
+  float: left;
+  width: 45%; }
+
+.navbar-menu-right {
+  float: right;
+  width: 45%;
+  text-align: right; }
+
+.navbar-menu-item {
+  display: inline;
+  margin: 0 16px 0 0; }
+
+.navbar-menu-item--last {
+  margin: 0; }
+
+/* Global Variables
+------------------------------------------------------------ */
+/* Global Reset // We'll pull in a common reset here, perhaps in another file!
+------------------------------------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* Primary Palette
+------------------------------------------------------------ */
+/* Brands Palette
+------------------------------------------------------------ */
+/* Font
+------------------------------------------------------------ */
+/* Border Radii
+------------------------------------------------------------ */
+/* Box Shadows
+------------------------------------------------------------ */
+.profile-picture {
+  position: relative;
+  display: block;
+  width: 32px;
+  height: 32px; }
+
+.profile-picture--small {
+  width: 16px;
+  height: 16px;
+  border-radius: 8px; }
+
+.profile-picture-icon {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 16px;
+  height: 16px; }
