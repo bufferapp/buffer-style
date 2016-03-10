@@ -80,3 +80,20 @@ main.flex-container {
 
 .section--last {
   border-bottom: 0; }
+
+.section-title,
+.section-secondary-title {
+  margin-top: 0; }
+
+.section-secondary {
+  margin-bottom: 64px;
+  padding: 8px 0 64px 0;
+  border-bottom: 1px solid #eff3f6; }
+
+.section-secondary--last {
+  margin: 0;
+  padding-bottom: 0;
+  border-bottom: 0; }
+
+.twitter {
+  background-color: #55acee; }
