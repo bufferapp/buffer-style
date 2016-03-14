@@ -33,7 +33,6 @@ h2 {
   margin: ($globalSpacing * 3) 0;
 
   font-size: $globalSpacing * 3; // 24
-  font-weight: 100;
   line-height: ($globalSpacing * 3) * 1.5;
 }
 
@@ -42,6 +41,7 @@ h3 {
   line-height: ($globalSpacing * 2) * 1.5;
 }
 
+h2,
 h3,
 h4,
 h5,
@@ -51,19 +51,21 @@ h6 {
   font-weight: 600;
 }
 
-h4,
+h4 {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+}
+
 h5,
 h6 {
-  font-size: $fontSize;
+  font-size: $fontSize - ($globalSpacing / 4);
   line-height: $lineHeight;
 }
 
 /* Paragraphs
 -------------------------------------------------- */
 code {
-  font-size: $globalSpacing * 1.5; // 12
-  font-weight: 400;
-  line-height: ($globalSpacing * 1.5) * 1.5;
+  color: $blackColor;
 }
 
 p {

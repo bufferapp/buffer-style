@@ -6,225 +6,464 @@
     <link rel="stylesheet" href="css/guide.css">
   </head>
   <body>
-
     <header class="navbar">
       <div class="navbar-title">Buffer Style Guide</div>
     </header>
-
     <section class="section">
-      <section class="section-secondary">
-        <h1 class="section-secondary-title">Headings</h1>
-        <p>We exclusively use Open Sans as the base typeface across the entire Buffer suite of products. Maintaining typographic clarity and hierarchy is important; here is a showcase of different ways to structure content:</p>
-      </section>
-
-      <section class="section-secondary">
-        <h2 class="section-secondary-title">Heading Level 1</h2>
-        <p>Heading Level 1 is used for the primary heading of a page.</p>
-        <h1>Heading Level 1</h1>
-      </section>
-
-      <section class="section-secondary">
-        <h2 class="section-secondary-title">Heading Level 2</h2>
-        <p>Heading Level 2 is used for the secondary headings of a page.</p>
-        <h2>Heading Level 2</h2>
-      </section>
-
-      <section class="section-secondary">
-        <h2 class="section-secondary-title">Heading Level 3</h2>
-        <p>Heading Level 3 is used for the tertiary headings of a page.</p>
-        <h3>Heading Level 3</h3>
-      </section>
-
-      <section class="section-secondary--last">
-        <h2 class="section-secondary-title">Heading Level 4, 5, and 6</h2>
-        <p>Heading Level 4, 5, and 6 are used for various headings of a page.</p>
-        <h4>Heading Level 4</h4>
-        <h5>Heading Level 5</h5>
-        <h6>Heading Level 6</h6>
+      <section class="card card--last">
+          <section class="section-secondary">
+            <h1 class="section-secondary-title">Typography</h1>
+            <p>We exclusively use Open Sans as the base typeface for the Buffer product.</p>
+          </section>
+          <section class="section-secondary">
+            <h2>Heading Level 1</h2>
+            <p>Heading Level 1 is used for the primary heading of a page.</p>
+            <div class="code-block">
+              <div class="code-block-title">
+                Example:
+              </div>
+              <div class="code-block-render">
+                <h1>Heading Level 1</h1>
+              </div>
+              <div class="code-block-code">
+                <pre>&lt;h1&gt;Heading Level 1&lt;/h1&gt;</pre>
+              </div>
+            </div>
+          </section>
+          <section class="section-secondary">
+            <h2>Heading Level 2</h2>
+            <p>Heading Level 2 is used for the secondary headings of a page.</p>
+            <div class="code-block">
+              <div class="code-block-title">
+                Example:
+              </div>
+              <div class="code-block-render">
+                <h2>Heading Level 2</h2>
+              </div>
+              <div class="code-block-code">
+                <pre>&lt;h2&gt;Heading Level 2&lt;/h2&gt;</pre>
+              </div>
+            </div>
+          </section>
+          <section class="section-secondary">
+            <h2>Heading Level 3</h2>
+            <p>Heading Level 3 is used for the tertiary headings of a page.</p>
+            <div class="code-block">
+              <div class="code-block-title">
+                Example:
+              </div>
+              <div class="code-block-render">
+                <h3>Heading Level 3</h3>
+              </div>
+              <div class="code-block-code">
+  <pre>&lt;h3&gt;Heading Level 3&lt;/h3&gt;</pre>
+              </div>
+            </div>
+          </section>
+          <section class="section-secondary section-secondary--last">
+            <h2>Heading Level 4, 5, and 6</h2>
+            <p>Heading Level 4, 5, and 6 are used for various headings of a page.</p>
+            <div class="code-block">
+              <div class="code-block-title">
+                Example:
+              </div>
+              <div class="code-block-render">
+                <h4>Heading Level 4</h4>
+              </div>
+              <div class="code-block-code">
+  <pre>&lt;h4&gt;Heading Level 4&lt;/h4&gt;</pre>
+              </div>
+            </div>
+            <div class="code-block">
+              <div class="code-block-title">
+                Example:
+              </div>
+              <div class="code-block-render">
+                <h5>Heading Level 5</h5>
+              </div>
+              <div class="code-block-code">
+  <pre>&lt;h5&gt;Heading Level 5&lt;/h5&gt;</pre>
+              </div>
+            </div>
+            <div class="code-block code-block--last">
+              <div class="code-block-title">
+                Example:
+              </div>
+              <div class="code-block-render">
+                <h6>Heading Level 6</h6>
+              </div>
+              <div class="code-block-code">
+  <pre>&lt;h6&gt;Heading Level 6&lt;/h6&gt;</pre>
+              </div>
+            </div>
+          </section>
       </section>
     </section>
-
     <section class="section">
-      <section class="section-secondary">
-        <h1 class="section-secondary-title">Cards</h1>
-        <p>Cards are general-use containers that hold different parts of the UI.</p>
-      </section>
-
-      <section class="section-secondary">
-        <h2 class="section-secondary-title">Card</h2>
-        <p>This is the default UI for a card.</p>
-        <div class="card">
-          Testing
-        </div>
-      </section>
-
-      <section class="section-secondary">
-        <h2 class="section-secondary-title">Card - Post</h2>
-        <p>This is the default UI for a post in the queue.</p>
-        <div class="card card-post">
-          <div class="card-post-content">What is a Product Designer? An awesome story by <a href="#">@jgadapee</a> over on Medium! <a href="#">http://buff.ly/1LTbUqv</a></div>
-          <div class="card-post-meta">
-            <div class="card-post-meta-data">
-              <span class="card-post-meta-time">12:57 <span class="card-post-meta-time-zone">(GMT)</span></span><span class="card-post-meta-via">via Extension</span>
+      <section class="card">
+        <section class="section-secondary">
+          <h1 class="section-secondary-title">Cards</h1>
+          <p>Cards are general-use containers that hold different parts of the UI.</p>
+        </section>
+        <section class="section-secondary">
+          <h2 class="section-secondary-title">Card</h2>
+          <p>This is the default UI for a card.</p>
+          <div class="code-block code-block--last">
+            <div class="code-block-title">
+              Example:
             </div>
-            <div class="card-post-meta-user">
-              <span class="card-post-meta-user-profile-picture">
-                <img class="profile-picture profile-picture--small" height="16" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg" width="16px">
-              </span>
-              <span class="card-post-meta-user-name">
-                steve@buffer.com
-              </span>
+            <div class="code-block-render">
+              <div class="card">
+                Testing
+              </div>
             </div>
-            <div class="card-post-meta-menu">
-              <ul>
+            <div class="code-block-code">
+<pre>&lt;div class="card">
+  Testing
+&lt;/div></pre>
+            </div>
+          </div>
+        </section>
+        <section class="section-secondary">
+          <h2 class="section-secondary-title">Card - Post</h2>
+          <p>This is the default UI for a post in the queue.</p>
+          <div class="code-block code-block--last">
+            <div class="code-block-title">
+              Example:
+            </div>
+            <div class="code-block-render">
+              <div class="card card-post">
+                <div class="card-post-content">What is a Product Designer? An awesome story by <a href="#">@jgadapee</a> over on Medium! <a href="#">http://buff.ly/1LTbUqv</a></div>
+                <div class="card-post-meta">
+                  <div class="card-post-meta-data">
+                    <span class="card-post-meta-time">12:57 <span class="card-post-meta-time-zone">(GMT)</span></span><span class="card-post-meta-via">via Extension</span>
+                  </div>
+                  <div class="card-post-meta-user">
+                    <span class="card-post-meta-user-profile-picture">
+                      <img class="profile-picture profile-picture--small" height="16" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg" width="16px">
+                    </span>
+                    <span class="card-post-meta-user-name">
+                      steve@buffer.com
+                    </span>
+                  </div>
+                  <ul class="card-post-meta-menu">
+                    <li class="card-post-meta-menu-item"><a href="#">Delete</a></li>
+                    <li class="card-post-meta-menu-item"><a href="#">Edit</a></li>
+                    <li class="card-post-meta-menu-item"><a href="#">Move to Top</a></li>
+                    <li class="card-post-meta-menu-item card-post-meta-menu-item--last"><a href="#">Share Now</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="code-block-code">
+<pre>&lt;div class="card card-post">
+
+  &lt;div class="card-post-content">
+    What is a Product Designer? An awesome story by &lt;a href="#">@jgadapee&lt;/a> over on Medium! &lt;a href="#">http://buff.ly/1LTbUqv&lt;/a>
+  &lt;/div>
+
+  &lt;div class="card-post-meta">
+
+    &lt;div class="card-post-meta-data">
+      &lt;span class="card-post-meta-time">12:57 &lt;span class="card-post-meta-time-zone">(GMT)&lt;/span>&lt;/span>
+      &lt;span class="card-post-meta-via">via Extension&lt;/span>
+    &lt;/div>
+
+    &lt;div class="card-post-meta-user">
+      &lt;span class="card-post-meta-user-profile-picture">
+        &lt;img class="profile-picture profile-picture--small" height="16" src="#" width="16px">
+      &lt;/span>
+      &lt;span class="card-post-meta-user-name">
+        steve@buffer.com
+      &lt;/span>
+    &lt;/div>
+
+    &lt;ul class="card-post-meta-menu">
+      &lt;li class="card-post-meta-menu-item">
+        &lt;a href="#">Delete&lt;/a>
+      &lt;/li>
+      &lt;li class="card-post-meta-menu-item">
+        &lt;a href="#">Edit&lt;/a>
+      &lt;/li>
+      &lt;li class="card-post-meta-menu-item">
+        &lt;a href="#">Move to Top&lt;/a>
+      &lt;/li>
+      &lt;li class="card-post-meta-menu-item card-post-meta-menu-item--last">
+        &lt;a href="#">Share Now&lt;/a>
+      &lt;/li>
+    &lt;/ul>
+
+  &lt;/div>
+
+&lt;/div></pre>
+            </div>
+          </div>
+        </section>
+        <section class="section-secondary">
+          <h2 class="section-secondary-title">Card - Pinned Post</h2>
+          <p>A post becomes a Pinned Post once a user has specified a time for that post to occur.</p>
+          <div class="card card-post">
+            <div class="card-post-content">What is a Product Designer? An awesome story by <a href="#">@jgadapee</a> over on Medium! <a href="#">http://buff.ly/1LTbUqv</a></div>
+            <div class="card-post-meta">
+              <div class="card-post-meta-data card-post-meta-data-pinned">
+                <span class="card-post-meta-time card-post-meta-time--pinned">12:57 <span class="card-post-meta-time-zone">(GMT)</span></span><span class="card-post-meta-via">via Extension</span><span class="card-post-meta-data-pinned-arrow"></span>
+              </div>
+              <div class="card-post-meta-user">
+                <span class="card-post-meta-user-profile-picture">
+                  <img class="profile-picture profile-picture--small" height="16" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg" width="16px">
+                </span>
+                <span class="card-post-meta-user-name">
+                  steve@buffer.com
+                </span>
+              </div>
+              <ul class="card-post-meta-menu">
                 <li class="card-post-meta-menu-item"><a href="#">Delete</a></li>
                 <li class="card-post-meta-menu-item"><a href="#">Edit</a></li>
                 <li class="card-post-meta-menu-item"><a href="#">Move to Top</a></li>
-                <li class="card-post-meta-menu-item"><a href="#">Share Now</a></li>
+                <li class="card-post-meta-menu-item card-post-meta-menu-item--last"><a href="#">Share Now</a></li>
               </ul>
             </div>
           </div>
-        </div>
+        </section>
       </section>
-
-      <section class="section-secondary">
-        <h2 class="section-secondary-title">Card - Pinned Post</h2>
-        <p>A post becomes a Pinned Post once a user has specified a time for that post to occur.</p>
-        <div class="card card-post">
-          <div class="card-post-content">What is a Product Designer? An awesome story by <a href="#">@jgadapee</a> over on Medium! <a href="#">http://buff.ly/1LTbUqv</a></div>
-          <div class="card-post-meta">
-            <div class="card-post-meta-data card-post-meta-data-pinned">
-              <span class="card-post-meta-time card-post-meta-time--pinned">12:57 <span class="card-post-meta-time-zone">(GMT)</span></span><span class="card-post-meta-via">via Extension</span><span class="card-post-meta-data-pinned-arrow"></span>
-            </div>
-            <div class="card-post-meta-user">
-              <span class="card-post-meta-user-profile-picture">
-                <img class="profile-picture profile-picture--small" height="16" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg" width="16px">
-              </span>
-              <span class="card-post-meta-user-name">
-                steve@buffer.com
-              </span>
-            </div>
-            <div class="card-post-meta-menu">
-              <ul>
+        <section class="section-secondary">
+          <h2 class="section-secondary-title">Card - Pinned Post - Repeat</h2>
+          <p>Whenever a post has been set to repeat, it automatically gets "pinned" to the Future Queue.</p>
+          <div class="card card-post">
+            <div class="card-post-content">What is a Product Designer? An awesome story by <a href="#">@jgadapee</a> over on Medium! <a href="#">http://buff.ly/1LTbUqv</a></div>
+            <div class="card-post-meta">
+              <div class="card-post-meta-data card-post-meta-data-pinned">
+                <span class="card-post-meta-recurring"><i class="icon card-post-meta-recurring-icon"></i>On Repeat</span><span class="card-post-meta-time card-post-meta-time--pinned">12:57 <span class="card-post-meta-time-zone">(GMT)</span></span><span class="card-post-meta-via">via Extension</span><span class="card-post-meta-data-pinned-arrow"></span>
+              </div>
+              <div class="card-post-meta-user">
+                <span class="card-post-meta-user-profile-picture">
+                  <img class="profile-picture profile-picture--small" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
+                </span>
+                <span class="card-post-meta-user-name">
+                  steve@buffer.com
+                </span>
+              </div>
+              <ul class="card-post-meta-menu">
                 <li class="card-post-meta-menu-item"><a href="#">Delete</a></li>
                 <li class="card-post-meta-menu-item"><a href="#">Edit</a></li>
                 <li class="card-post-meta-menu-item"><a href="#">Move to Top</a></li>
-                <li class="card-post-meta-menu-item"><a href="#">Share Now</a></li>
+                <li class="card-post-meta-menu-item card-post-meta-menu-item--last"><a href="#">Share Now</a></li>
               </ul>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section class="section-secondary">
-        <h2 class="section-secondary-title">Card - Pinned Post - Repeat</h2>
-        <p>Whenever a post has been set to repeat, it automatically gets "pinned" to the Future Queue.</p>
-        <div class="card card-post">
-          <div class="card-post-content">What is a Product Designer? An awesome story by <a href="#">@jgadapee</a> over on Medium! <a href="#">http://buff.ly/1LTbUqv</a></div>
-          <div class="card-post-meta">
-            <div class="card-post-meta-data card-post-meta-data-pinned">
-              <span class="card-post-meta-recurring"><i class="icon card-post-meta-recurring-icon"></i>On Repeat</span><span class="card-post-meta-time card-post-meta-time--pinned">12:57 <span class="card-post-meta-time-zone">(GMT)</span></span><span class="card-post-meta-via">via Extension</span><span class="card-post-meta-data-pinned-arrow"></span>
-            </div>
-            <div class="card-post-meta-user">
-              <span class="card-post-meta-user-profile-picture">
-                <img class="profile-picture profile-picture--small" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
-              </span>
-              <span class="card-post-meta-user-name">
-                steve@buffer.com
-              </span>
-            </div>
-            <div class="card-post-meta-menu">
-              <ul>
-                <li class="card-post-meta-menu-item"><a href="#">Delete</a></li>
-                <li class="card-post-meta-menu-item"><a href="#">Edit</a></li>
-                <li class="card-post-meta-menu-item"><a href="#">Move to Top</a></li>
-                <li class="card-post-meta-menu-item"><a href="#">Share Now</a></li>
-              </ul>
-            </div>
+        </section>
+        <section class="section-secondary">
+          <h2 class="section-secondary-title">Card - Post - Empty</h2>
+          <p>Used in Future Queue.</p>
+          <div class="card card--empty">
+            Testing
           </div>
-        </div>
-      </section>
-
-      <section class="section-secondary">
-        <h2 class="section-secondary-title">Card - Post - Empty</h2>
-        <p>Used in Future Queue.</p>
-        <div class="card card--empty">
-          Testing
-        </div>
-      </section>
-
-      <section class="section-secondary section-secondary--last">
-        <h2 class="section-secondary-title">Card - Post - Analytics</h2>
-        <p>Used only in the analytics feed.</p>
-        <div class="card card-analytics">
-          <div class="card-analytics-content">
-            What is a Product Designer? An awesome story by <a href="#">@jgadapee</a> over on Medium! <a href="#">http://buff.ly/1LTbUqv</a>
-          </div>
-          <div class="card-analytics-meta">
-            <div class="card-analytics-meta-data-time">
-              <span class="card-analytics-meta-time">12:57 <span class="card-analytics-meta-time-zone">(GMT)</span></span> <span class="card-analytics-meta-via">via Extension</span>
+        </section>
+        <section class="card">
+          <section class="section-secondary">
+            <h2 class="section-secondary-title">Card - Post - Analytics</h2>
+            <p>Used only in the analytics feed.</p>
+          </section>
+          <section class="section-secondary section-secondary--last">
+            <h3>Rendered</h3>
+            <div class="card card-analytics">
+              <div class="card-analytics-content">
+                What is a Product Designer? An awesome story by <a href="#">@jgadapee</a> over on Medium! <a href="#">http://buff.ly/1LTbUqv</a>
+              </div>
+              <div class="card-analytics-meta">
+                <div class="card-analytics-meta-data-time">
+                  <span class="card-analytics-meta-time">12:57 <span class="card-analytics-meta-time-zone">(GMT)</span></span> <span class="card-analytics-meta-via">via Extension</span>
+                </div>
+                <div class="card-analytics-meta-data-stats">
+                  <span class="card-analytics-meta-data-stat"><span class="card-analytics-meta-data-stat-amount">0</span> retweets</span><span class="card-analytics-meta-data-stat"><span class="card-analytics-meta-data-stat-amount">2</span> likes</span><span class="card-analytics-meta-data-stat"><span class="card-analytics-meta-data-stat-amount">0</span> mentions</span><span class="card-analytics-meta-data-stat"><span class="card-analytics-meta-data-stat-amount">6</span> clicks</span><span class="card-analytics-meta-data-stat"><span class="card-analytics-meta-data-stat-amount">843</span> potential</span>
+                </div>
+              </div>
             </div>
-            <div class="card-analytics-meta-data-stats">
-              <span class="card-analytics-meta-data-stat"><span class="card-analytics-meta-data-stat-amount">0</span> retweets</span><span class="card-analytics-meta-data-stat"><span class="card-analytics-meta-data-stat-amount">2</span> likes</span><span class="card-analytics-meta-data-stat"><span class="card-analytics-meta-data-stat-amount">0</span> mentions</span><span class="card-analytics-meta-data-stat"><span class="card-analytics-meta-data-stat-amount">6</span> clicks</span><span class="card-analytics-meta-data-stat"><span class="card-analytics-meta-data-stat-amount">843</span> potential</span>
-            </div>
-          </div>
-        </div>
+        </section>
       </section>
-
     </section>
-
     <section class="section">
-      <section class="section-secondary">
-        <h2 class="section-secondary-title">NavBars</h2>
-        <p>NavBars are a component that serve as navigation headers for the Buffer application or site.</p>
+      <section class="card">
+        <h1 class="section-secondary-title">NavBars</h1>
+        <p>NavBars are a template made up of different organisms and molecules that serve as navigational headers for the Buffer application.</p>
       </section>
-
-      <section class="section-secondary section-secondary--last">
-        <h3 class="section-secondary-title">NavBar</h3>
-        <p>The primary Buffer app navbar.</p>
-        <div class="navbar">
-          <div class="navbar-title">Title</div>
-          <ul class="navbar-menu-left">
-            <li class="navbar-menu-item"><a href="#">Menu Item 1</a></li>
-            <li class="navbar-menu-item"><a href="#">Menu Item 2</a></li>
-            <li class="navbar-menu-item navbar-menu-item--last"><a href="#">Menu Item 3</a></li>
+      <section class="card">
+        <section class="section-secondary">
+          <h2 class="section-secondary-title">NavBar</h2>
+          <p>A brief description of the NavBar component.</p>
+        </section>
+        <section class="section-secondary">
+          <h5>Class Name</h5>
+          <h4><code>navbar</code></h4>
+          <h5>Description</h5>
+          <p>This template is the primary navigational header for the Buffer application.</p>
+          <h5>Contents</h5>
+          <p>It's comprised of two molecules:</p>
+          <ul>
+            <li><code>navbar-title</code></li>
+            <li><code>navbar-menu-left</code></li>
           </ul>
-          <ul class="navbar-menu-right">
-            <li class="navbar-menu-item"><a href="#">Menu Item 1</a></li>
-            <li class="navbar-menu-item navbar-menu-item--last"><a href="#">Menu Item 2</a></li>
+          <p>and one organism:</p>
+          <ul>
+            <li><code>navbar-menu-right</code></li>
           </ul>
-        </div>
+        </section>
+        <section class="section-secondary">
+          <h5>Class Name</h5>
+          <h4><code>navbar-title</code></h4>
+          <h5>Description</h5>
+          <p>The <code>navbar-title</code> atom typically holds an image or text depicting the title of the page or product.</p>
+          <h5>Contents</h5>
+          <ul>
+            <li>logo atom</li>
+          </ul>
+        </section>
+        <section class="section-secondary">
+          <h5>Class Name</h5>
+          <h4><code>navbar-menu-left</code></h4>
+          <h5>Description</h5>
+          <p>This molecule contains several atoms of which are list items.</p>
+          <p>The <code>navbar-menu-left</code> molecule may evolve to become an organism if it itself contains a molecule like the drop-down list in the <code>navbar-menu-right</code> molecule.</p>
+        </section>
+        <section class="section-secondary">
+          <h5>Class Name</h5>
+          <h4><code>navbar-menu-right</code></h4>
+          <h5>Description</h5>
+          <p>This organism contains an atom and a molecule.</p>
+        </section>
+        <section class="section-secondary">
+          <h5>Class Name</h5>
+          <h4><code>navbar-menu-item</code></h4>
+          <h5>Description</h5>
+          <p><code>navbar-menu-item</code> remains an atom while holding a single item such as an image or a string of text. It evolves into a molecule if holding more multiple images or strings of text. It evolves into an organism it holds a molecule.</p>
+        </section>
+        <section class="section-secondary section-secondary--last">
+          <h3>Rendered</h3>
+          <section class="section-secondary-rendered">
+            <div class="navbar">
+              <div class="navbar-title">Buffer</div>
+              <ul class="navbar-menu-left">
+                <li class="navbar-menu-item"><a class="navbar-menu-item--active" href="#">Queue</a></li>
+                <li class="navbar-menu-item"><a href="#">Library</a></li>
+                <li class="navbar-menu-item navbar-menu-item--last"><a href="#">Analytics</a></li>
+              </ul>
+              <ul class="navbar-menu-right">
+                <li class="navbar-menu-item"><a href="#">Help</a></li>
+                <li class="navbar-menu-item navbar-menu-item--last"><a href="#"><img class="navbar-menu-item-profile-picture profile-picture" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">Account</a></li>
+              </ul>
+            </div>
+          </section>
+        </section>
       </section>
     </section>
-
     <section class="section">
-      <section class="section-secondary">
-        <h2 class="section-secondary-title">Profile Picture</h2>
+      <section class="card">
+        <h1 class="section-secondary-title">Profile Pictures</h1>
         <p>A blurb about profile pictures!</p>
       </section>
+      <section class="card">
+        <section class="section-secondary">
+          <h2 class="section-secondary-title">Profile Picture - Regular</h2>
+          <h5>Class Name</h5>
+          <h4><code>profile-picture</code></h4>
+          <h5>Description</h5>
+          <p>An atom used with a social network icon.</p>
+          <h5>CSS</h5>
+<pre>.profile-picture {
+  display: block;
+  width: $globalSpacing * 4;
+  height: $globalSpacing * 4;
 
-      <section class="section-secondary">
-        <h3 class="section-secondary-title">Profile Picture - Regular</h3>
-        <p>Perhaps used in account settings or where a user's profile isn't necessarily attached to a social network.</p>
-        <img class="profile-picture" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
+  border-radius: $globalSpacing * 2;
+}</pre>
+        </section>
+        <section class="section-secondary">
+          <h3>Markup</h3>
+  <pre>&lt;img class="profile-picture" src="#"></pre>
+        </section>
+        <section class="section-secondary section-secondary--last">
+          <h3>Rendered</h3>
+          <section class="section-secondary-rendered">
+            <img class="profile-picture" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
+          </section>
+        </section>
       </section>
+      <section class="card">
+        <section class="section-secondary">
+          <h2 class="section-secondary-title">Profile Picture with Icon</h2>
+          <h5>Class Name</h5>
+          <h4><code>profile-picture-with-icon</code></h4>
+          <h5>Description</h5>
+          <p>A profile picture with a social network icon.</p>
+          <h5>Contents</h5>
+          <p><code>profile-picture-with-icon</code> is a molecule made up of two atoms:</p>
+          <ul>
+            <li><code><a href="#">profile-picture</a></code></li>
+            <li><code>icon</code></li>
+          </ul>
+          <h5>CSS</h5>
+<pre>.profile-picture-with-icon {
+  position: relative;
+}
 
-      <section class="section-secondary">
-        <h3 class="section-secondary-title">Profile Picture - Regular - Icon</h3>
-        <p>Used in the header, sidebar, composer and extension!</p>
-        <div class="profile-picture-with-icon">
-          <img class="profile-picture" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
-          <i class="icon profile-picture-icon twitter"></i>
-        </div>
+.profile-picture-icon {
+  position: absolute;
+  top: $globalSpacing * 2;
+  left: $globalSpacing * 2;
+
+  width: $globalSpacing * 2; // 16px
+  height: $globalSpacing * 2; // 16px
+
+  border-radius: $globalSpacing;
+}</pre>
+        </section>
+        <section class="section-secondary">
+          <h3>Markup</h3>
+<pre>&lt;div class="profile-picture-with-icon">
+  &lt;img class="profile-picture" src="#">
+  &lt;i class="icon icon-twitter profile-picture-icon"></i>
+&lt;/div></pre>
+        </section>
+        <section class="section-secondary section-secondary--last">
+          <h3>Rendered</h3>
+          <section class="section-secondary-rendered">
+            <div class="profile-picture-with-icon">
+              <img class="profile-picture" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
+              <i class="icon icon-twitter profile-picture-icon"></i>
+            </div>
+          </section>
+        </section>
       </section>
+        <section class="card">
+          <section class="section-secondary">
+            <h2 class="section-secondary-title">Profile Picture -- Small</h2>
+            <h5>Class Name</h5>
+            <h4><code>profile-picture--small</code></h4>
+            <h5>Description</h5>
+            <p>This atom is the <code><a href="#">profile-picture</a></code> atom with a <code>--small</code> modifier.</p>
+            <h5>CSS</h5>
+<pre>.profile-picture--small {
+  width: $globalSpacing * 2; // 16px
+  height: $globalSpacing * 2; // 16px
 
-      <section class="section-secondary section-secondary--last">
-        <h3 class="section-secondary-title">Profile Picture - Small</h3>
-        <p>Used in the meta bar.</p>
-        <img class="profile-picture profile-picture--small" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
+  border-radius: $globalSpacing;
+}</pre>
+          </section>
+          <section class="section-secondary">
+            <h3>Markup</h3>
+<pre>&lt;img class="profile-picture profile-picture--small" src="#"></pre>
+          </section>
+          <section class="section-secondary section-secondary--last">
+            <h3>Rendered</h3>
+            <section class="section-secondary-rendered">
+              <img class="profile-picture profile-picture--small" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
+            </section>
+          </section>
+        </section>
       </section>
     </section>
 
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
     <script src="js/bundle.js"></script>
   </body>
 </html>

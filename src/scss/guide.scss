@@ -7,6 +7,10 @@ a {
   &:hover {
     color: $actionableHoverColor;
   }
+
+  img {
+    outline: none;
+  }
 }
 
 body {
@@ -16,24 +20,18 @@ body {
   line-height: $lineHeight;
   color: $bodyColor;
 
-  background-color: $whiteColor;
-}
-
-code {
-  padding: ($globalSpacing / 4) ($globalSpacing / 2);
-
   background-color: $backgroundFillColor;
-  border: 1px solid $borderColor;
-  border-radius: $globalSpacing / 2;
 }
 
 html {
 }
 
 ul {
+  margin: ($globalSpacing * 2) ($globalSpacing * 2);
+
   li {
-    padding-top: $globalSpacing;
-    padding-bottom: $globalSpacing;
+    margin-top: $globalSpacing;
+    margin-bottom: $globalSpacing;
   }
 }
 
@@ -94,19 +92,62 @@ main.flex-container {
 }
 
 .section-secondary {
-  margin-bottom: $globalSpacing * 8;
-  padding: ($globalSpacing) 0 ($globalSpacing * 8) 0;
+  padding: ($globalSpacing * 2) 0;
 
   border-bottom: 1px solid $borderLightColor;
 }
 
+.section-secondary-rendered {
+  margin-bottom: $globalSpacing * 3;
+  padding: $globalSpacing * 2;
+
+  background-color: $backgroundFillColor;
+  border: 1px solid $borderColor;
+  border-radius: $borderRadiusLevel2;
+}
 .section-secondary--last {
-  margin: 0;
   padding-bottom: 0;
 
   border-bottom: 0;
 }
 
-.twitter {
+.icon-twitter {
   background-color: $twitterColor;
+}
+
+.code-block {
+  margin: ($globalSpacing * 4) 0;
+}
+
+.code-block-title {
+  padding: $globalSpacing ($globalSpacing * 2);
+
+  font-size: 12px;
+  font-weight: 600;
+  color: $titleColor;
+  text-transform: uppercase;
+
+  background-color: $borderColor;
+  border-radius: $borderRadiusLevel2 $borderRadiusLevel2 0 0;
+}
+
+.code-block-render,
+.code-block-code {
+  padding: $globalSpacing ($globalSpacing * 2);
+
+  border: 1px solid $borderColor;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.code-block-code {
+  padding: $globalSpacing ($globalSpacing * 2);
+
+  background-color: $backgroundFillColor;
+  border: 1px solid $borderColor;
+  border-radius: 0 0 $borderRadiusLevel2 $borderRadiusLevel2;
+}
+
+.pre--last {
+  margin-bottom: (-$globalSpacing * 2);
 }

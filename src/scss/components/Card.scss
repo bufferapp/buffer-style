@@ -8,13 +8,22 @@
   border-radius: $borderRadiusLevel1;
 }
 
+.card,
+.card-post,
+.card-analytics {
+  margin-bottom: $globalSpacing * 2;
+}
+
+.card--last {
+  margin-bottom: 0;
+}
+
 .card--empty {
   border: 1px dashed $borderColor;
 }
 
 .card-post,
 .card-analytics {
-  margin-bottom: $globalSpacing * 2;
   padding: 0;
 }
 
@@ -132,6 +141,7 @@
 }
 
 .card-post-meta-menu {
+  margin: 0;
   float: right;
 }
 
@@ -146,6 +156,10 @@
       color: $blackColor;
     }
   }
+}
+
+.card-post-meta-menu-item--last {
+  margin-right: 0;
 }
 
 .card-analytics {

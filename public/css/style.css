@@ -71,13 +71,13 @@ h1 {
 h2 {
   margin: 24px 0;
   font-size: 24px;
-  font-weight: 100;
   line-height: 36px; }
 
 h3 {
   font-size: 16px;
   line-height: 24px; }
 
+h2,
 h3,
 h4,
 h5,
@@ -85,18 +85,19 @@ h6 {
   margin: 16px 0;
   font-weight: 600; }
 
-h4,
+h4 {
+  font-size: 14px;
+  line-height: 21px; }
+
 h5,
 h6 {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 21px; }
 
 /* Paragraphs
 -------------------------------------------------- */
 code {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 18px; }
+  color: #000; }
 
 p {
   margin: 16px 0; }
@@ -129,12 +130,19 @@ p {
   border: 1px solid #ced7df;
   border-radius: 8px; }
 
+.card,
+.card-post,
+.card-analytics {
+  margin-bottom: 16px; }
+
+.card--last {
+  margin-bottom: 0; }
+
 .card--empty {
   border: 1px dashed #ced7df; }
 
 .card-post,
 .card-analytics {
-  margin-bottom: 16px;
   padding: 0; }
 
 .card-post-content,
@@ -220,6 +228,7 @@ p {
   line-height: normal; }
 
 .card-post-meta-menu {
+  margin: 0;
   float: right; }
 
 .card-post-meta-menu-item {
@@ -229,6 +238,9 @@ p {
     color: #323b43; }
     .card-post-meta-menu-item a:hover {
       color: #000; }
+
+.card-post-meta-menu-item--last {
+  margin-right: 0; }
 
 .card-analytics {
   padding-bottom: 0; }
@@ -285,6 +297,7 @@ p {
   height: 64px;
   font-size: 14px;
   line-height: 64px;
+  background-color: #fff;
   border-bottom: 1px solid #ced7df; }
   .navbar::after {
     clear: both; }
@@ -293,6 +306,10 @@ p {
   float: left;
   width: 10%;
   font-weight: 600; }
+
+.navbar-menu-left,
+.navbar-menu-right {
+  margin: 0; }
 
 .navbar-menu-left {
   float: left;
@@ -306,9 +323,17 @@ p {
 .navbar-menu-item {
   display: inline;
   margin: 0 16px 0 0; }
+  .navbar-menu-item a {
+    display: inline-block; }
+    .navbar-menu-item a.navbar-menu-item--active {
+      box-shadow: inset 0 -2px #323b43; }
 
 .navbar-menu-item--last {
-  margin: 0; }
+  margin-right: 0; }
+
+.navbar-menu-item-profile-picture {
+  float: left;
+  margin: 16px 8px -12px 0; }
 
 /* Global Variables
 ------------------------------------------------------------ */
