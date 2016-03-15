@@ -84,7 +84,8 @@ main.flex-container {
   margin-top: 0; }
 
 .section-secondary {
-  padding: 16px 0;
+  margin-bottom: 16px;
+  padding: 16px;
   border-bottom: 1px solid #eff3f6; }
 
 .section-secondary-rendered {
@@ -113,9 +114,14 @@ main.flex-container {
   background-color: #ced7df;
   border-radius: 4px 4px 0 0; }
 
+.code-block-render-example {
+  margin: 0; }
+
+.code-block-render {
+  padding: 32px 16px; }
+
 .code-block-render,
 .code-block-code {
-  padding: 8px 16px;
   border: 1px solid #ced7df;
   border-top: 0;
   border-bottom: 0; }
