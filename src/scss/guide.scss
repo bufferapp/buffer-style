@@ -92,7 +92,8 @@ main.flex-container {
 }
 
 .section-secondary {
-  padding: ($globalSpacing * 2) 0;
+  margin-bottom: $globalSpacing * 2;
+  padding: $globalSpacing * 2;
 
   border-bottom: 1px solid $borderLightColor;
 }
@@ -131,10 +132,16 @@ main.flex-container {
   border-radius: $borderRadiusLevel2 $borderRadiusLevel2 0 0;
 }
 
+.code-block-render-example {
+  margin: 0;
+}
+
+.code-block-render {
+  padding: ($globalSpacing * 4) ($globalSpacing * 2);
+}
+
 .code-block-render,
 .code-block-code {
-  padding: $globalSpacing ($globalSpacing * 2);
-
   border: 1px solid $borderColor;
   border-top: 0;
   border-bottom: 0;
