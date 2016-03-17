@@ -1,3 +1,41 @@
+@import "base/variables";
+
+a {
+  color: $actionableColor;
+  text-decoration: none;
+
+  &:hover {
+    color: $actionableHoverColor;
+  }
+
+  img {
+    outline: none;
+  }
+}
+
+body {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+  color: $bodyColor;
+
+  background-color: $backgroundFillColor;
+}
+
+html {
+}
+
+ol,
+ul {
+  margin: ($globalSpacing * 2) ($globalSpacing * 2);
+
+  li {
+    margin-top: $globalSpacing;
+    margin-bottom: $globalSpacing;
+  }
+}
+
 .flex-container,
 .flex-container header,
 .flex-container footer {
@@ -10,7 +48,9 @@
 
 div.flex-container {
   flex-direction: column;
+  justify-content: center;
 }
+
 main.flex-container {
   flex-direction: row;
 }
@@ -18,11 +58,104 @@ main.flex-container {
 .atom-list {
   flex-basis: 20%;
 }
+
 .content {
   flex-basis: 80%;
 }
+
 .flex-container header,
 .flex-container footer {
   width: 100%;
-  height: 5rem;
+}
+
+.icon {
+  display: inline-block;
+  width: $globalSpacing * 2;
+  height: $globalSpacing * 2;
+
+  background-color: $whiteColor;
+}
+
+.section {
+  margin-bottom: $globalSpacing * 8;
+  padding: 0 ($globalSpacing * 4) ($globalSpacing * 8) ($globalSpacing * 4);
+
+  border-bottom: 1px solid $borderColor;
+}
+
+.section--last {
+  border-bottom: 0;
+}
+
+.section-title,
+.section-secondary-title {
+  margin-top: 0;
+}
+
+.section-secondary {
+  margin-bottom: $globalSpacing * 2;
+  padding: $globalSpacing * 2;
+
+  border-bottom: 1px solid $borderLightColor;
+}
+
+.section-secondary-rendered {
+  margin-bottom: $globalSpacing * 3;
+  padding: $globalSpacing * 2;
+
+  background-color: $backgroundFillColor;
+  border: 1px solid $borderColor;
+  border-radius: $borderRadiusLevel2;
+}
+.section-secondary--last {
+  padding-bottom: 0;
+
+  border-bottom: 0;
+}
+
+.icon-twitter {
+  background-color: $twitterColor;
+}
+
+.code-block {
+  margin: ($globalSpacing * 4) 0;
+}
+
+.code-block-title {
+  padding: $globalSpacing ($globalSpacing * 2);
+
+  font-size: 12px;
+  font-weight: 600;
+  color: $titleColor;
+  text-transform: uppercase;
+
+  background-color: $borderColor;
+  border-radius: $borderRadiusLevel2 $borderRadiusLevel2 0 0;
+}
+
+.code-block-render-example {
+  margin: 0;
+}
+
+.code-block-render {
+  padding: ($globalSpacing * 4) ($globalSpacing * 2);
+}
+
+.code-block-render,
+.code-block-code {
+  border: 1px solid $borderColor;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.code-block-code {
+  padding: $globalSpacing ($globalSpacing * 2);
+
+  background-color: $backgroundFillColor;
+  border: 1px solid $borderColor;
+  border-radius: 0 0 $borderRadiusLevel2 $borderRadiusLevel2;
+}
+
+.pre--last {
+  margin-bottom: (-$globalSpacing * 2);
 }

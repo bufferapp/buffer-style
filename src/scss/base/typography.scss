@@ -1,8 +1,73 @@
 @import "variables";
 
+/* Body
+------------------------------------------------------------ */
 body {
-  color: $Type--body;
-  font-family: $Font--base-family;
-  font-size: $Font--base-size;
-  line-height: $Font--base-line-height;
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+  color: $bodyColor;
+}
+
+/* Headings
+------------------------------------------------------------ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $titleColor;
+}
+
+h1 {
+  margin: ($globalSpacing * 4) 0;
+
+  font-size: $globalSpacing * 4; // 48
+  font-weight: 100;
+  line-height: ($globalSpacing * 4) * 1.5;
+}
+
+h2 {
+  margin: ($globalSpacing * 3) 0;
+
+  font-size: $globalSpacing * 3; // 24
+  line-height: ($globalSpacing * 3) * 1.5;
+}
+
+h3 {
+  font-size: $globalSpacing * 2; // 16
+  line-height: ($globalSpacing * 2) * 1.5;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: ($globalSpacing * 2) 0;
+
+  font-weight: 600;
+}
+
+h4 {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+}
+
+h5,
+h6 {
+  font-size: $fontSize - ($globalSpacing / 4);
+  line-height: $lineHeight;
+}
+
+/* Paragraphs
+-------------------------------------------------- */
+code {
+  color: $blackColor;
+}
+
+p {
+  margin: ($globalSpacing * 2) 0;
 }

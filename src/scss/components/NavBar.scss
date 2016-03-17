@@ -1,0 +1,63 @@
+@import "../base/variables";
+
+.navbar {
+  margin-bottom: $globalSpacing * 4;
+  padding: 0 $globalSpacing * 2;
+  height: $globalSpacing * 8;
+
+  font-size: $fontSize;
+  line-height: $globalSpacing * 8;
+
+  background-color: $whiteColor;
+  border-bottom: 1px solid $borderColor;
+
+  &::after {
+    clear: both;
+  }
+}
+
+.navbar-title {
+  float: left;
+  width: 10%;
+
+  font-weight: 600;
+}
+
+.navbar-menu-left,
+.navbar-menu-right {
+  margin: 0;
+}
+
+.navbar-menu-left {
+  float: left;
+  width: 45%;
+}
+
+.navbar-menu-right {
+  float: right;
+  width: 45%;
+
+  text-align: right;
+}
+
+.navbar-menu-item {
+  display: inline;
+  margin: 0 ($globalSpacing * 2) 0 0;
+
+  a {
+    display: inline-block;
+
+    &.navbar-menu-item--active {
+      box-shadow: inset 0 -2px $titleColor;
+    }
+  }
+}
+
+.navbar-menu-item--last {
+  margin-right: 0;
+}
+
+.navbar-menu-item-profile-picture {
+  float: left;
+  margin: ($globalSpacing * 2) $globalSpacing ((-$globalSpacing * 2) - (-$globalSpacing / 2)) 0; // 0 8px -12px 0
+}

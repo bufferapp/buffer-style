@@ -1,0 +1,31 @@
+@import "../base/variables";
+
+.profile-picture {
+  display: block;
+  width: $globalSpacing * 4; // 32px
+  height: $globalSpacing * 4; // 32px
+
+  border-radius: $globalSpacing * 2;
+}
+
+.profile-picture--small {
+  width: $globalSpacing * 2; // 16px
+  height: $globalSpacing * 2; // 16px
+
+  border-radius: $globalSpacing;
+}
+
+.profile-picture-with-icon {
+  position: relative;
+}
+
+.profile-picture-icon {
+  position: absolute;
+  top: $globalSpacing * 2;
+  left: $globalSpacing * 2;
+
+  width: $globalSpacing * 2; // 16px
+  height: $globalSpacing * 2; // 16px
+
+  border-radius: $globalSpacing;
+}
