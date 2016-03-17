@@ -33,8 +33,10 @@ body {
   color: #59626a;
   background-color: #f4f7f9; }
 
+ol,
 ul {
   margin: 16px 16px; }
+  ol li,
   ul li {
     margin-top: 8px;
     margin-bottom: 8px; }

@@ -11,13 +11,44 @@
     </header>
     <section class="section">
       <section class="card card--last">
+        <section class="section-secondary">
+          <h1 class="section-secondary-title">The Buffer Style Guide</h1>
+          <p>The Buffer Style Guide defines a set of base components. The Buffer Style Guide is designed with these goals in mind:</p>
+          <ul>
+            <li>Provide a set of core components that are currently used within the product and to allow new components to be built from those.</li>
+            <li>Introduce a level of thinking when building and designing.</li>
+            <li>Make software development easier.</li>
+          </ul>
+        </section>
+        <section class="section-secondary">
+          <h2 class="section-secondary-title">Engineering Buffer</h2>
+          <h3>How we think of Buffer</h3>
+          <p>We think of Buffer as a collection of base objects that when put together, create the Buffer product. When we explore new ideas, we default to what base objects are already available to us and if required, reuse and modify them to our needs. In some cases, these ideas lead to brand new objects that become base objects and are then added to the Buffer Style Guide.</p>
+          <p>To help frame this thinking, we think of design at Buffer as object-oriented design and utilise a variation of the <a href="http://getbem.com/introduction/">BEM methodology</a>, replacing "blocks" for "objects" and categorising "elements" as objects too. This could be thought of as the OM methodology.</p>
+          <h4>Objects</h4>
+          <p>Objects are standalone entities that are meaningful on their own. Examples of objects could be <code>card</code>, <code>navbar</code>, and <code>button</code>. These can be used together has part of a larger object or individually.</p>
+          <h4>Modifiers</h4>
+          <p>Modifiers are flags on objects. They modify the appearance or behaviour of objects. For example, <code>--hidden</code> would be a modifier that would set an object to be hidden. Modifiers are always prefixed with a double-dash: <code>--</code>.</p>
+        </section>
+        <section class="section-secondary section-secondary--last">
+          <h2 class="section-secondary-title">Designing Buffer</h2>
+          <h4>Sketch and File Names</h4>
+          <p>Our primary tool of choice for design in <a href="https://www.sketchapp.com">Sketch</a>. When working on a new idea or modifying an existing idea, we begin with the base file for that particular task. For example, updating how posts are displayed within the Content tab could be achieved by duplicating the <code>buffer-web-v1.0</code> Sketch document and updating its file name. Depending on the level of the change we're looking to make determines what we will increment the version number by. For example, a slight copy change might only increment the file version by <code>.X.X</code>, or perhaps a new page in the document might increment by <code>.X</code>. For any larger work or complete overhauls, we would increase the version number by a whole number completely.</p>
+          <p>To help determine who last worked on the file in case we might need some advice, we affix our initials to the end of the file name, such as <code>buffer-web-v1.0-sd</code>.</p>
+          <h4>Layers, Groups and Symbols</h4>
+          <p>Sketch is such an amazing product with fantastic layer and symbol functionality. We're super passionate about keeping the cohesion between design and engineering that we strive to keep the names of our layers and symbols the same as we would our code. In all cases, we strive to construct objects with how they might be constructed in code by using groups and symbols. For example, when using a <code>button</code> object in our Sketch files, we might name that button's group <code>.button .button--primary</code>. This way, any engineers that open our Sketch files have complete knowledge of what that object is and what they need to look for/modify when coding.</p>
+        </section>
+      </section>
+    </section>
+    <section class="section">
+      <section class="card card--last">
           <section class="section-secondary">
             <h1 class="section-secondary-title">Typography</h1>
-            <p>We exclusively use Open Sans as the base typeface for the Buffer product.</p>
+            <p>We exclusively use <a href="https://www.google.com/fonts/specimen/Open+Sans">Open Sans</a> as the base typeface for the Buffer product.</p>
           </section>
           <section class="section-secondary">
             <h2 class="section-secondary-title">Heading Level 1</h2>
-            <p>Heading Level 1 is used for the primary heading of a page.</p>
+            <p>The Heading Level 1 object is used for the primary heading of a page. Semantically, a <code>h1</code> might not always be styled below i.e. if using a <code>h1</code> in a <code>navbar</code>, it will appear differently than in the example below. The example below shows an unaltered, base style for our <code>h1</code> object.</p>
             <div class="code-block">
               <div class="code-block-title">
                 Example:
@@ -32,7 +63,7 @@
           </section>
           <section class="section-secondary">
             <h2 class="section-secondary-title">Heading Level 2</h2>
-            <p>Heading Level 2 is used for the secondary headings of a page.</p>
+            <p>The Heading Level 2 object is used for the secondary headings of a page.</p>
             <div class="code-block">
               <div class="code-block-title">
                 Example:
@@ -47,7 +78,7 @@
           </section>
           <section class="section-secondary">
             <h2 class="section-secondary-title">Heading Level 3</h2>
-            <p>Heading Level 3 is used for the tertiary headings of a page.</p>
+            <p>The Heading Level 3 object is used for the tertiary headings of a page.</p>
             <div class="code-block">
               <div class="code-block-title">
                 Example:
@@ -62,7 +93,7 @@
           </section>
           <section class="section-secondary section-secondary--last">
             <h2 class="section-secondary-title">Heading Level 4, 5, and 6</h2>
-            <p>Heading Level 4, 5, and 6 are used for various headings of a page.</p>
+            <p>The Heading Level 4, 5, and 6 objects are used for various headings of a page.</p>
             <div class="code-block">
               <div class="code-block-title">
                 Example:
@@ -103,11 +134,11 @@
       <section class="card">
         <section class="section-secondary">
           <h1 class="section-secondary-title">Cards</h1>
-          <p>Cards are general-use containers that hold different parts of the UI.</p>
+          <p>Cards are a general-use object that hold different parts of the UI.</p>
         </section>
         <section class="section-secondary">
           <h2 class="section-secondary-title">Card</h2>
-          <p>This is the default UI for a card.</p>
+          <p>This is the base object for the <code>card</code> object.</p>
           <div class="code-block code-block--last">
             <div class="code-block-title">
               Example:
@@ -126,7 +157,7 @@
         </section>
         <section class="section-secondary">
           <h2 class="section-secondary-title">Card - Post</h2>
-          <p>This is the default UI for a post in the queue.</p>
+          <p>The <code>card-post</code> object inherits from the base <code>card</code> object and adds further functionality and UI. This object is used when a post is displayed.</p>
           <div class="code-block code-block--last">
             <div class="code-block-title">
               Example:
@@ -201,7 +232,7 @@
         </section>
         <section class="section-secondary">
           <h2 class="section-secondary-title">Card - Pinned Post</h2>
-          <p>A post becomes a Pinned Post once a user has specified a time for that post to occur.</p>
+          <p>This object is a modified <code>card-post</code> object that inherits from the base <code>card</code> object and adds further functionality and UI. This object is used when a "pinned" post is to be displayed. Pinned posts occur once a user has specified a time for that post to be shared.</p>
           <div class="code-block code-block--last">
             <div class="code-block-title">
               Example:
@@ -262,7 +293,7 @@
         </section>
         <section class="section-secondary">
           <h2 class="section-secondary-title">Card - Pinned Post - Repeat</h2>
-          <p>Whenever a post has been set to repeat, it automatically gets "pinned" to the Future Queue.</p>
+          <p>This object is a modified <code>card-post</code> object that inherits from the base <code>card</code> object and adds further functionality and UI. This object is used when a user has scheduled this post to be repeated. It automatically gets "pinned".</p>
 
           <div class="code-block code-block--last">
             <div class="code-block-title">
@@ -326,7 +357,7 @@
         </section>
         <section class="section-secondary">
           <h2 class="section-secondary-title">Card - Post - Empty</h2>
-          <p>Used in Future Queue.</p>
+          <p>This is a modified <code>card</code> object. It doesn't introduce any new functionality nor UI. It simply modifies the <code>card</code> object's <code>border-style</code>.</p>
           <div class="code-block code-block--last">
             <div class="code-block-title">
               Example:
@@ -345,7 +376,7 @@
         </section>
         <section class="section-secondary section-secondary--last">
           <h2 class="section-secondary-title">Card - Post - Analytics</h2>
-          <p>Used only in the analytics feed.</p>
+          <p>The <code>card-analytics</code> object inherets from the base <code>card</code> object and adds further functionality and UI. This object is used when a post is displayed within the Analytics tab.</p>
           <div class="code-block code-block--last">
             <div class="code-block-title">
               Example:
@@ -393,11 +424,11 @@
       <section class="card">
         <section class="section-secondary">
           <h1 class="section-secondary-title">NavBars</h1>
-          <p>NavBars are a template made up of different organisms and molecules that serve as navigational headers for the Buffer application.</p>
+          <p>NavBars are an object solely designed to hold navigational objects and typically stick to the top of the viewport.</p>
         </section>
         <section class="section-secondary section-secondary--last">
           <h2 class="section-secondary-title">NavBar</h2>
-          <p>A brief description of the NavBar component.</p>
+          <p>This is the base object for the <code>navbar</code> object.</p>
           <div class="code-block code-block--last">
             <div class="code-block-title">
               Example:
@@ -440,11 +471,11 @@
       <section class="card">
         <section class="section-secondary">
           <h1 class="section-secondary-title">Profile Pictures</h1>
-          <p>A blurb about profile pictures!</p>
+          <p>Profile Pictures are objects designed to display a user's profile picture.</p>
         </section>
         <section class="section-secondary">
-          <h2 class="section-secondary-title">Profile Picture - Regular</h2>
-          <p>An atom used with a social network icon.</p>
+          <h2 class="section-secondary-title">Profile Picture</h2>
+          <p>This is the base object for the <code>profile-picture</code> object.</p>
           <div class="code-block code-block--last">
             <div class="code-block-title">
               Example:
@@ -459,7 +490,7 @@
         </section>
         <section class="section-secondary">
           <h2 class="section-secondary-title">Profile Picture with Icon</h2>
-          <p>A profile picture with a social network icon.</p>
+          <p>This is the base object for the <code>profile-picture-with-icon</code> object that includes a profile picture and a social network icon. It includes two separate objects (<code>profile-picture</code> and <code>icon</code>) that each inherit from their own base objects.</p>
           <div class="code-block code-block--last">
             <div class="code-block-title">
               Example:
@@ -480,7 +511,7 @@
         </section>
         <section class="section-secondary section-secondary--last">
           <h2 class="section-secondary-title">Profile Picture -- Small</h2>
-          <p>This atom is the <code><a href="#">profile-picture</a></code> atom with a <code>--small</code> modifier.</p>
+          <p>This is a modified <code>profile-picture</code> object. It doesn't introduce any new functionality nor UI. It simply modifies the <code>profile-picture</code> object's <code>width</code> and <code>height</code>.</p>
           <div class="code-block code-block--last">
             <div class="code-block-title">
               Example:
