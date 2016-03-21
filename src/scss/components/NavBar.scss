@@ -2,8 +2,12 @@
 
 .navbar {
   margin-bottom: $globalSpacing * 4;
+  position: fixed;
+  top: 0;
   padding: 0 $globalSpacing * 2;
+  width: 100%;
   height: $globalSpacing * 8;
+  z-index: 1;
 
   font-size: $fontSize;
   line-height: $globalSpacing * 8;

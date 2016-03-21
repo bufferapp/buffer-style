@@ -8,7 +8,6 @@
   border-radius: $borderRadiusLevel1;
 }
 
-.card,
 .card-post,
 .card-analytics {
   margin-bottom: $globalSpacing * 2;
@@ -69,6 +68,7 @@
 
   background-color: $actionableColor;
   border-right: 0;
+  border-radius: ($globalSpacing / 4) 0 0 ($globalSpacing / 4);
 }
 
 .card-post-meta-data-pinned-arrow {
