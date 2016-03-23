@@ -66,6 +66,9 @@ $ npm publish
 
 To publish on [Github pages](http://bufferapp.github.io/buffer-style/) run:
 
+**WARNING!**
+Commit all changes! 😅👍
+
 ```
 $ npm run github-pages
 ```
