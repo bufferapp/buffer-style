@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-comment</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Style-Guide-/-Assets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Elements" transform="translate(-515.000000, -1057.000000)" fill="#323B43">
+            <g id="Icons" transform="translate(27.000000, 840.000000)">
+                <g id="UI-Icons">
+                    <g id="icon-comment" transform="translate(488.000000, 217.000000)">
+                        <path d="M0,3.99582624 C0,1.78899235 1.78883037,0 3.99620271,0 L12.0037973,0 C14.2108391,0 16,1.79652125 16,3.99582624 L16,8.00417376 C16,10.2110077 14.2046438,12 12,12 L8,12 L4,16 L4,12 L4,12 C1.790861,12 0,10.2034788 0,8.00417376 L0,3.99582624 Z"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

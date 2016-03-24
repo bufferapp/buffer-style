@@ -130,7 +130,6 @@ p {
   border: 1px solid #ced7df;
   border-radius: 8px; }
 
-.card,
 .card-post,
 .card-analytics {
   margin-bottom: 16px; }
@@ -174,7 +173,8 @@ p {
   line-height: 27px;
   color: #fff;
   background-color: #168eea;
-  border-right: 0; }
+  border-right: 0;
+  border-radius: 2px 0 0 2px; }
 
 .card-post-meta-data-pinned-arrow {
   position: absolute;
@@ -291,10 +291,178 @@ p {
 ------------------------------------------------------------ */
 /* Box Shadows
 ------------------------------------------------------------ */
+.icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.icon-analytics {
+  background-image: url(/img/icon-analytics.svg); }
+
+.icon-arrow-down,
+.icon-arrow-left,
+.icon-arrow-right,
+.icon-arrow-up,
+.icon-checkmark,
+.icon-export,
+.icon-image,
+.icon-like,
+.icon-multiply,
+.icon-pricing,
+.icon-retweet,
+.icon-view {
+  background-position: center center;
+  background-size: auto; }
+
+.icon-arrow-down {
+  background-image: url(/img/icon-arrow-down.svg); }
+
+.icon-arrow-left {
+  background-image: url(/img/icon-arrow-left.svg); }
+
+.icon-arrow-right {
+  background-image: url(/img/icon-arrow-right.svg); }
+
+.icon-arrow-up {
+  background-image: url(/img/icon-arrow-up.svg); }
+
+.icon-calendar {
+  background-image: url(/img/icon-calendar.svg); }
+
+.icon-checkmark {
+  background-image: url(/img/icon-checkmark.svg); }
+
+.icon-circle-facebook {
+  background-image: url(/img/icon-circle-facebook.svg); }
+
+.icon-circle-google-plus {
+  background-image: url(/img/icon-circle-google-plus.svg); }
+
+.icon-circle-linkedin {
+  background-image: url(/img/icon-circle-linkedin.svg); }
+
+.icon-circle-multiply {
+  background-image: url(/img/icon-circle-multiply.svg); }
+
+.icon-circle-pinterest {
+  background-image: url(/img/icon-circle-pinterest.svg); }
+
+.icon-circle-plus {
+  background-image: url(/img/icon-circle-plus.svg); }
+
+.icon-circle-twitter {
+  background-image: url(/img/icon-circle-twitter.svg); }
+
+.icon-click {
+  background-image: url(/img/icon-click.svg); }
+
+.icon-comment {
+  background-image: url(/img/icon-comment.svg); }
+
+.icon-edit {
+  background-image: url(/img/icon-edit.svg); }
+
+.icon-export {
+  background-image: url(/img/icon-export.svg); }
+
+.icon-image {
+  background-image: url(/img/icon-image.svg); }
+
+.icon-like {
+  background-image: url(/img/icon-like.svg); }
+
+.icon-link {
+  background-image: url(/img/icon-link.svg); }
+
+.icon-multiply {
+  background-image: url(/img/icon-multiply.svg); }
+
+.icon-plus {
+  background-image: url(/img/icon-plus.svg); }
+
+.icon-pricing {
+  background-image: url(/img/icon-pricing.svg); }
+
+.icon-retweet {
+  background-image: url(/img/icon-retweet.svg); }
+
+.icon-settings {
+  background-image: url(/img/icon-settings.svg); }
+
+.icon-view {
+  background-image: url(/img/icon-view.svg); }
+
+/* Global Variables
+------------------------------------------------------------ */
+/* Global Reset // We'll pull in a common reset here, perhaps in another file!
+------------------------------------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* Primary Palette
+------------------------------------------------------------ */
+/* Brands Palette
+------------------------------------------------------------ */
+/* Font
+------------------------------------------------------------ */
+/* Border Radii
+------------------------------------------------------------ */
+/* Box Shadows
+------------------------------------------------------------ */
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  background-color: rgba(244, 247, 249, 0.9);
+  opacity: 0;
+  pointer-events: none; }
+  .modal:target {
+    opacity: 1;
+    pointer-events: auto; }
+
+.modal .card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 100px;
+  box-shadow: 0 2px 4px rgba(50, 59, 67, 0.2);
+  transform: translate(-50%, -50%); }
+
+/* Global Variables
+------------------------------------------------------------ */
+/* Global Reset // We'll pull in a common reset here, perhaps in another file!
+------------------------------------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* Primary Palette
+------------------------------------------------------------ */
+/* Brands Palette
+------------------------------------------------------------ */
+/* Font
+------------------------------------------------------------ */
+/* Border Radii
+------------------------------------------------------------ */
+/* Box Shadows
+------------------------------------------------------------ */
 .navbar {
   margin-bottom: 32px;
+  position: fixed;
+  top: 0;
   padding: 0 16px;
+  width: 100%;
   height: 64px;
+  z-index: 1;
   font-size: 14px;
   line-height: 64px;
   background-color: #fff;

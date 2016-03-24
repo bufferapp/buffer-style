@@ -1,0 +1,33 @@
+@import "../base/variables";
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+
+  background-color: rgba($backgroundFillColor, 0.9);
+
+  opacity: 0;
+  pointer-events: none;
+
+  &:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+.modal .card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 200px;
+  height: 100px;
+
+  box-shadow: $boxShadowLevel1;
+
+  transform: translate(-50%, -50%);
+}

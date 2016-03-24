@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="17px" viewBox="0 0 16 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-edit</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Style-Guide-/-Assets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Elements" transform="translate(-835.000000, -1055.000000)" fill="#323B43">
+            <g id="Icons" transform="translate(27.000000, 840.000000)">
+                <g id="UI-Icons">
+                    <g id="icon-edit" transform="translate(808.000000, 215.000000)">
+                        <path d="M1.02662776,13.3351735 L12.3195332,2.04226808 L14.3727887,4.09552361 L3.07988329,15.388429 L0,16.4150568 L1.02662776,13.3351735 Z M13.3461609,1.01564032 L13.6709924,0.690808874 C14.0585838,0.303217467 14.6936099,0.309833727 15.0794028,0.695626626 L15.7194302,1.335654 C16.1096823,1.72590618 16.1124437,2.35586863 15.7242479,2.7440644 L15.3994165,3.06889584 L13.3461609,1.01564032 Z"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
