@@ -1,0 +1,25 @@
+@import "../base/variables";
+
+/* Base Object
+------------------------------------------------------------ */
+.tag {
+  margin: 7px 8px 7px 0;
+  padding: 0 4px;
+  height: 18px;
+
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 18px;
+  color: $bodyColor;
+
+  background-color: $borderColor;
+  border-radius: $borderRadiusLevel3;
+}
+
+/* Base Object - Modifiers
+------------------------------ */
+.tag--blue {
+  color: $whiteColor;
+
+  background-color: $actionableColor;
+}

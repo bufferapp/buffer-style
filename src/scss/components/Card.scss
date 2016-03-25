@@ -10,6 +10,10 @@
   border-radius: $borderRadiusLevel1;
 }
 
+.card p {
+  margin: 0;
+}
+
 /* Base Object - Modifiers
 ------------------------------ */
 .card--last {
@@ -44,12 +48,6 @@
   font-size: 10px;
 }
 
-.card-post-meta-time,
-.card-post-analytics-meta-time {
-  font-weight: 600;
-  color: $titleColor;
-}
-
 .card-post-meta-time-zone,
 .card-post-analytics-meta-time-zone {
   font-weight: normal;
@@ -57,6 +55,12 @@
 
 /* Post Objects
 ------------------------------------------------------------ */
+.card-post-stat {
+  font-weight: bold;
+
+  color: $titleColor;
+}
+
 .card-post-meta {
   height: 32px;
 
@@ -66,19 +70,31 @@
   border-top: 1px solid $borderColor;
   border-radius: 0 0 7px 7px;
 
+  &:hover {
+    .card-post-meta-menu {
+      opacity: 1;
+    }
+  }
   &::after {
     clear: both;
   }
 }
 
-.card-post-meta-data {
+.card-post-meta-tag,
+.card-post-meta-time,
+.card-post-meta-time-pinned,
+.card-post-meta-time-pinned-arrow,
+.card-post-meta-via,
+.card-post-meta-user,
+.card-post-meta-user-profile-picture,
+.card-post-meta-user-name {
   float: left;
 }
 
-.card-post-meta-data-pinned {
+.card-post-meta-time-pinned {
   position: relative;
 
-  margin: 2px 0 2px -18px;
+  margin: 2px 16px 2px -18px;
   padding: 0 8px 0 16px;
   height: 27px;
 
@@ -90,8 +106,13 @@
   border-radius: 2px 0 0 2px;
 }
 
-.card-post-meta-data-pinned-arrow {
+.card-post-meta-time-pinned .card-post-meta-time {
+  color: $whiteColor;
+}
+
+ .card-post-meta-time-pinned-arrow {
   position: absolute;
+  top: 0;
   right: -8px;
 
   width: 0;
@@ -102,43 +123,17 @@
   border-left: 8px solid $actionableColor;
 }
 
-.card-post-meta-recurring {
-  margin-right: 8px;
-
-  font-weight: 600;
-}
-
-.card-post-meta-recurring-icon {
-  float: left;
-  margin-top: 5.5px;
-  margin-right: 4px;
-
-  &::after {
-    clear: both;
-  }
-}
-
 .card-post-meta-time {
   margin-right: 8px;
 }
 
 .card-post-meta-user {
-  display: inline-block;
   margin: 4px 0 4px 16px;
   padding: 4px 0;
-
-  &::after {
-    clear: both;
-  }
-}
-
-.card-post-meta-user-profile-picture {
-  float: left;
 }
 
 .card-post-meta-user-name {
   margin-left: 8px;
-  float: left;
 
   font-weight: 600;
   line-height: normal;
@@ -147,6 +142,8 @@
 .card-post-meta-menu {
   margin: 0;
   float: right;
+
+  opacity: 0;
 }
 
 .card-post-meta-menu-item {
@@ -178,11 +175,20 @@
   padding-bottom: 0;
 }
 
-.card-post-analytics-meta-data-time {
-  margin-bottom: 16px;
+.card-post-analytics-posted {
+  margin-top: 8px;
+  height: 21px;
 
   font-size: 10px;
-  color: $borderColor;
+}
+
+.card-post-analytics-posted-time,
+.card-post-analytics-posted-via {
+  float: left;
+}
+
+.card-post-analytics-posted-via {
+  margin-left: 8px;
 }
 
 .card-post-analytics-meta-data-stats {
@@ -204,14 +210,8 @@
 }
 
 .card-post-analytics-meta-data-stat {
-  display: inline-block;
+  float: left;
   width: 20%;
 
   text-align: center;
-}
-
-.card-post-analytics-meta-data-stat-amount {
-  font-weight: bold;
-
-  color: $titleColor;
 }
