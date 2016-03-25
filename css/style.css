@@ -126,9 +126,6 @@ p {
   border: 1px solid #ced7df;
   border-radius: 8px; }
 
-.card p {
-  margin: 0; }
-
 /* Base Object - Modifiers
 ------------------------------ */
 .card--last {
@@ -150,6 +147,10 @@ p {
 .card-post-content,
 .card-post-analytics-content {
   padding: 16px; }
+
+.card-post-content p,
+.card-post-analytics-content p {
+  margin: 0; }
 
 .card-post-meta,
 .card-post-analytics-meta {
