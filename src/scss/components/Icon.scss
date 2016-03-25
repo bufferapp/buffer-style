@@ -3,3 +3,48 @@
 /* Base Object
 ------------------------------------------------------------ */
 .icon {}
+
+.bi {
+  margin-right: 4px;
+}
+
+.bi-circle-appdotnet,
+.bi-circle-facebook,
+.bi-circle-google-plus,
+.bi-circle-linkedin,
+.bi-circle-pinterest,
+.bi-circle-twitter {
+  &[class*="bi-"] {
+    font-size: 16px;
+    border: none;
+  }
+
+  &[class*="bi-"]::before {
+    background-color: $whiteColor;
+    border-radius: 50%;
+  }
+}
+
+.bi-circle-appdotnet {
+  color: $colorAppDotNet;
+}
+
+.bi-circle-facebook {
+  color: $facebookColor;
+}
+
+.bi-circle-google-plus {
+  color: $googlePlusColor;
+}
+
+.bi-circle-linkedin {
+  color: $linkedInColor;
+}
+
+.bi-circle-pinterest {
+  color: $pinterestColor;
+}
+
+.bi-circle-twitter {
+  color: $twitterColor;
+}
