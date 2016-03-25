@@ -298,6 +298,18 @@ p {
 ------------------------------------------------------------ */
 /* Base Object
 ------------------------------------------------------------ */
+.bi {
+  margin-right: 4px; }
+
+.bi-circle-twitter {
+  color: #55acee; }
+  .bi-circle-twitter[class*="bi-"] {
+    font-size: 16px;
+    border: none; }
+  .bi-circle-twitter[class*="bi-"]::before {
+    background-color: #fff;
+    border-radius: 50%; }
+
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
 * {
@@ -449,11 +461,10 @@ p {
 
 .profile-picture-icon {
   position: absolute;
-  top: 16px;
+  top: 12px;
   left: 16px;
-  width: 16px;
-  height: 16px;
-  border-radius: 8px; }
+  margin-right: 0;
+  font-size: 16px; }
 
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
