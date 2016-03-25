@@ -487,6 +487,12 @@ p {
 
 /* Base Object - Modifiers
 ------------------------------ */
+.tag--blue,
+.tag--error {
+  color: #fff; }
+
 .tag--blue {
-  color: #fff;
   background-color: #168eea; }
+
+.tag--error {
+  background-color: #ee4f4f; }

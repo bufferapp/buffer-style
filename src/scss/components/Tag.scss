@@ -18,8 +18,15 @@
 
 /* Base Object - Modifiers
 ------------------------------ */
-.tag--blue {
+.tag--blue,
+.tag--error {
   color: $whiteColor;
+}
 
+.tag--blue {
   background-color: $actionableColor;
+}
+
+.tag--error {
+  background-color: $errorColor;
 }
