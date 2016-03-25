@@ -4,10 +4,13 @@
     <title>Buffer Style Guide</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/guide.css">
+    <link rel="stylesheet" href="//s3.amazonaws.com/buffer-icons/0.1.0/buffer-icons.css" type="text/css" />
   </head>
   <body>
     <header class="navbar">
-      <div class="navbar-title">Buffer Style Guide</div>
+      <div class="navbar-title">
+        <i class="bi bi-buffer"></i>Buffer Style Guide
+      </div>
     </header>
 
     <section class="section">
@@ -148,29 +151,47 @@
             </div>
             <div class="code-block-render">
               <div class="card code-block-render-example">
-                Testing
               </div>
             </div>
             <div class="code-block-code">
 <pre>&lt;div class="card">
-  Testing
 &lt;/div></pre>
             </div>
           </div>
-        </section>
-        <section class="section-secondary">
-          <h2 class="section-secondary-title">Card - Post</h2>
-          <p>The <code>card-post</code> object inherits from the base <code>card</code> object and adds further functionality and UI. This object is used when a post is displayed.</p>
+          <h2>Card -- Empty</h2>
+          <p>This is a modified <code>card</code> object. It doesn't introduce any new functionality nor UI. It simply modifies the <code>card</code> object's <code>border-style</code>.</p>
           <div class="code-block code-block--last">
             <div class="code-block-title">
               Example:
             </div>
             <div class="code-block-render">
+              <div class="card card--empty code-block-render-example">
+              </div>
+            </div>
+            <div class="code-block-code">
+<pre>&lt;div class="card card--empty">
+&lt;/div></pre>
+            </div>
+          </div>
+        </section>
+        <section class="section-secondary section-secondary--last">
+          <h2 class="section-secondary-title">Card - Post</h2>
+          <p>The <code>card-post</code> object inherits from the base <code>card</code> object and adds further functionality and UI. This object is used when a post is displayed.</p>
+          <div class="code-block">
+            <div class="code-block-title">
+              Example:
+            </div>
+            <div class="code-block-render">
               <div class="card card-post code-block-render-example">
-                <div class="card-post-content">What is a Product Designer? An awesome story by <a href="#">@jgadapee</a> over on Medium! <a href="#">http://buff.ly/1LTbUqv</a></div>
+                <div class="card-post-content">
+                  <p>What is a Product Designer? An awesome story by <a href="#">@jgadapee</a> over on Medium! <a href="#">http://buff.ly/1LTbUqv</a></p>
+                </div>
                 <div class="card-post-meta">
-                  <div class="card-post-meta-data">
-                    <span class="card-post-meta-time">12:57 <span class="card-post-meta-time-zone">(GMT)</span></span><span class="card-post-meta-via">via Extension</span>
+                  <div class="card-post-meta-time">
+                    <span class="card-post-stat">09:42</span> <span class="card-post-meta-time-zone">(GMT)</span>
+                  </div>
+                  <div class="card-post-meta-via">
+                    via Extension
                   </div>
                   <div class="card-post-meta-user">
                     <span class="card-post-meta-user-profile-picture">
@@ -181,243 +202,216 @@
                     </span>
                   </div>
                   <ul class="card-post-meta-menu">
-                    <li class="card-post-meta-menu-item"><a href="#">Delete</a></li>
-                    <li class="card-post-meta-menu-item"><a href="#">Edit</a></li>
-                    <li class="card-post-meta-menu-item"><a href="#">Move to Top</a></li>
-                    <li class="card-post-meta-menu-item card-post-meta-menu-item--last"><a href="#">Share Now</a></li>
+                    <li class="card-post-meta-menu-item">
+                      <a href="#"><i class="bi bi-x"></i>Delete</a>
+                    </li>
+                    <li class="card-post-meta-menu-item">
+                      <a href="#"><i class="bi bi-edit"></i>Edit</a>
+                    </li>
+                    <li class="card-post-meta-menu-item">
+                      <a href="#"><i class="bi bi-arrow-up"></i>Move to Top</a>
+                    </li>
+                    <li class="card-post-meta-menu-item card-post-meta-menu-item--last">
+                      <a href="#"><i class="bi bi-arrow-right"></i>Share Now</a>
+                    </li>
                   </ul>
                 </div>
               </div>
             </div>
             <div class="code-block-code">
-<pre>&lt;div class="card card-post">
-
-  &lt;div class="card-post-content">
-    What is a Product Designer? An awesome story by &lt;a href="#">@jgadapee&lt;/a> over on Medium! &lt;a href="#">http://buff.ly/1LTbUqv&lt;/a>
-  &lt;/div>
-
-  &lt;div class="card-post-meta">
-
-    &lt;div class="card-post-meta-data">
-      &lt;span class="card-post-meta-time">12:57 &lt;span class="card-post-meta-time-zone">(GMT)&lt;/span>&lt;/span>
-      &lt;span class="card-post-meta-via">via Extension&lt;/span>
-    &lt;/div>
-
-    &lt;div class="card-post-meta-user">
-      &lt;span class="card-post-meta-user-profile-picture">
-        &lt;img class="profile-picture profile-picture--small" height="16" src="#" width="16px">
-      &lt;/span>
-      &lt;span class="card-post-meta-user-name">
-        steve@buffer.com
-      &lt;/span>
-    &lt;/div>
-
-    &lt;ul class="card-post-meta-menu">
-      &lt;li class="card-post-meta-menu-item">
-        &lt;a href="#">Delete&lt;/a>
-      &lt;/li>
-      &lt;li class="card-post-meta-menu-item">
-        &lt;a href="#">Edit&lt;/a>
-      &lt;/li>
-      &lt;li class="card-post-meta-menu-item">
-        &lt;a href="#">Move to Top&lt;/a>
-      &lt;/li>
-      &lt;li class="card-post-meta-menu-item card-post-meta-menu-item--last">
-        &lt;a href="#">Share Now&lt;/a>
-      &lt;/li>
-    &lt;/ul>
-
-  &lt;/div>
-
-&lt;/div></pre>
+<pre>Code here.</pre>
             </div>
           </div>
-        </section>
-        <section class="section-secondary">
-          <h2 class="section-secondary-title">Card - Pinned Post</h2>
-          <p>This object is a modified <code>card-post</code> object that inherits from the base <code>card</code> object and adds further functionality and UI. This object is used when a "pinned" post is to be displayed. Pinned posts occur once a user has specified a time for that post to be shared.</p>
+          <h2>Card - Post -- Pinned</h2>
+          <p>This object is a modified <code>card-post</code> object that adds extra UI. A pinned post occurs once a user has specified a time for that post to be shared.</p>
           <div class="code-block code-block--last">
             <div class="code-block-title">
               Example:
             </div>
             <div class="code-block-render">
               <div class="card card-post code-block-render-example">
-                <div class="card-post-content">What is a Product Designer? An awesome story by <a href="#">@jgadapee</a> over on Medium! <a href="#">http://buff.ly/1LTbUqv</a></div>
+                <div class="card-post-content">
+                  <p>What is a Product Designer? An awesome story by <a href="#">@jgadapee</a> over on Medium! <a href="#">http://buff.ly/1LTbUqv</a></p>
+                </div>
                 <div class="card-post-meta">
-                  <div class="card-post-meta-data card-post-meta-data-pinned">
-                    <span class="card-post-meta-time card-post-meta-time--pinned">12:57 <span class="card-post-meta-time-zone">(GMT)</span></span><span class="card-post-meta-via">via Extension</span><span class="card-post-meta-data-pinned-arrow"></span>
+                  <div class="card-post-meta-time-pinned">
+                    <div class="card-post-meta-time">
+                      09:42 <span class="card-post-meta-time-zone">(GMT)</span>
+                    </div>
+                    <div class="card-post-meta-time-pinned-arrow"></div>
+                  </div>
+                  <div class="card-post-meta-via">
+                    via Extension
                   </div>
                   <div class="card-post-meta-user">
                     <span class="card-post-meta-user-profile-picture">
-                      <img class="profile-picture profile-picture--small" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
+                      <img class="profile-picture profile-picture--small" height="16" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg" width="16px">
                     </span>
                     <span class="card-post-meta-user-name">
                       steve@buffer.com
                     </span>
                   </div>
                   <ul class="card-post-meta-menu">
-                    <li class="card-post-meta-menu-item"><a href="#">Delete</a></li>
-                    <li class="card-post-meta-menu-item"><a href="#">Edit</a></li>
-                    <li class="card-post-meta-menu-item"><a href="#">Move to Top</a></li>
-                    <li class="card-post-meta-menu-item card-post-meta-menu-item--last"><a href="#">Share Now</a></li>
+                    <li class="card-post-meta-menu-item">
+                      <a href="#"><i class="bi bi-x"></i>Delete</a>
+                    </li>
+                    <li class="card-post-meta-menu-item">
+                      <a href="#"><i class="bi bi-edit"></i>Edit</a>
+                    </li>
+                    <li class="card-post-meta-menu-item">
+                      <a href="#"><i class="bi bi-arrow-up"></i>Move to Top</a>
+                    </li>
+                    <li class="card-post-meta-menu-item card-post-meta-menu-item--last">
+                      <a href="#"><i class="bi bi-arrow-right"></i>Share Now</a>
+                    </li>
                   </ul>
                 </div>
               </div>
             </div>
             <div class="code-block-code">
-<pre>&lt;div class="card card-post">
-  &lt;div class="card-post-content">
-  What is a Product Designer? An awesome story by &lt;a href="#">@jgadapee&lt;/a> over on Medium! &lt;a href="#">http://buff.ly/1LTbUqv&lt;/a>
-  &lt;/div>
-  &lt;div class="card-post-meta">
-    &lt;div class="card-post-meta-data card-post-meta-data-pinned">
-      &lt;span class="card-post-meta-time card-post-meta-time--pinned">12:57 &lt;span class="card-post-meta-time-zone">(GMT)&lt;/span>&lt;/span>
-      &lt;span class="card-post-meta-via">via Extension&lt;/span>
-      &lt;span class="card-post-meta-data-pinned-arrow">&lt;/span>
-    &lt;/div>
-    &lt;div class="card-post-meta-user">
-      &lt;span class="card-post-meta-user-profile-picture">
-        &lt;img class="profile-picture profile-picture--small" src="#">
-      &lt;/span>
-      &lt;span class="card-post-meta-user-name">
-        steve@buffer.com
-      &lt;/span>
-    &lt;/div>
-    &lt;ul class="card-post-meta-menu">
-      &lt;li class="card-post-meta-menu-item">&lt;a href="#">Delete&lt;/a>&lt;/li>
-      &lt;li class="card-post-meta-menu-item">&lt;a href="#">Edit&lt;/a>&lt;/li>
-      &lt;li class="card-post-meta-menu-item">&lt;a href="#">Move to Top&lt;/a>&lt;/li>
-      &lt;li class="card-post-meta-menu-item card-post-meta-menu-item--last">&lt;a href="#">Share Now&lt;/a>&lt;/li>
-    &lt;/ul>
-  &lt;/div>
-&lt;/div></pre>
+<pre>Markup here.</pre>
             </div>
           </div>
-        </section>
-        <section class="section-secondary">
-          <h2 class="section-secondary-title">Card - Pinned Post - Repeat</h2>
-          <p>This object is a modified <code>card-post</code> object that inherits from the base <code>card</code> object and adds further functionality and UI. This object is used when a user has scheduled this post to be repeated. It automatically gets "pinned".</p>
-
-          <div class="code-block code-block--last">
+          <h2>Card - Post -- Tag</h2>
+          <p>This object is a modified <code>card-post</code> object that adds a tag to the <code>card-post</code>'s child object, <code>card-post-meta</code>.</p>
+          <div class="code-block">
             <div class="code-block-title">
               Example:
             </div>
             <div class="code-block-render">
               <div class="card card-post code-block-render-example">
-                <div class="card-post-content">What is a Product Designer? An awesome story by <a href="#">@jgadapee</a> over on Medium! <a href="#">http://buff.ly/1LTbUqv</a></div>
+                <div class="card-post-content">
+                  <p>What is a Product Designer? An awesome story by <a href="#">@jgadapee</a> over on Medium! <a href="#">http://buff.ly/1LTbUqv</a></p>
+                </div>
                 <div class="card-post-meta">
-                  <div class="card-post-meta-data card-post-meta-data-pinned">
-                    <span class="card-post-meta-recurring"><i class="icon card-post-meta-recurring-icon"></i>On Repeat</span><span class="card-post-meta-time card-post-meta-time--pinned">12:57 <span class="card-post-meta-time-zone">(GMT)</span></span><span class="card-post-meta-via">via Extension</span><span class="card-post-meta-data-pinned-arrow"></span>
+                  <div class="card-post-meta-tag tag tag--blue">
+                    In Queue!
+                  </div>
+                  <div class="card-post-meta-time">
+                    <span class="card-post-stat">09:42</span> <span class="card-post-meta-time-zone">(GMT)</span>
+                  </div>
+                  <div class="card-post-meta-via">
+                    via Extension
                   </div>
                   <div class="card-post-meta-user">
                     <span class="card-post-meta-user-profile-picture">
-                      <img class="profile-picture profile-picture--small" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
+                      <img class="profile-picture profile-picture--small" height="16" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg" width="16px">
                     </span>
                     <span class="card-post-meta-user-name">
                       steve@buffer.com
                     </span>
                   </div>
                   <ul class="card-post-meta-menu">
-                    <li class="card-post-meta-menu-item"><a href="#">Delete</a></li>
-                    <li class="card-post-meta-menu-item"><a href="#">Edit</a></li>
-                    <li class="card-post-meta-menu-item"><a href="#">Move to Top</a></li>
-                    <li class="card-post-meta-menu-item card-post-meta-menu-item--last"><a href="#">Share Now</a></li>
+                    <li class="card-post-meta-menu-item">
+                      <a href="#"><i class="bi bi-x-circle"></i>Delete</a>
+                    </li>
+                    <li class="card-post-meta-menu-item">
+                      <a href="#"><i class="bi bi-edit"></i>Edit</a>
+                    </li>
+                    <li class="card-post-meta-menu-item">
+                      <a href="#"><i class="bi bi-arrow-up"></i>Move to Top</a>
+                    </li>
+                    <li class="card-post-meta-menu-item card-post-meta-menu-item--last">
+                      <a href="#"><i class="bi bi-arrow-right"></i>Share Now</a>
+                    </li>
                   </ul>
                 </div>
               </div>
             </div>
             <div class="code-block-code">
-<pre>&lt;div class="card card-post">
-  &lt;div class="card-post-content">
-    What is a Product Designer? An awesome story by &lt;a href="#">@jgadapee&lt;/a> over on Medium! &lt;a href="#">http://buff.ly/1LTbUqv&lt;/a>
-  &lt;/div>
-  &lt;div class="card-post-meta">
-    &lt;div class="card-post-meta-data card-post-meta-data-pinned">
-      &lt;span class="card-post-meta-recurring">
-        &lt;i class="icon card-post-meta-recurring-icon">&lt;/i>On Repeat
-      &lt;/span>
-      &lt;span class="card-post-meta-time card-post-meta-time--pinned">12:57 &lt;span class="card-post-meta-time-zone">(GMT)&lt;/span>&lt;/span>
-      &lt;span class="card-post-meta-via">via Extension&lt;/span>&lt;span class="card-post-meta-data-pinned-arrow">&lt;/span>
-    &lt;/div>
-    &lt;div class="card-post-meta-user">
-      &lt;span class="card-post-meta-user-profile-picture">
-        &lt;img class="profile-picture profile-picture--small" src="#">
-      &lt;/span>
-      &lt;span class="card-post-meta-user-name">
-        steve@buffer.com
-      &lt;/span>
-    &lt;/div>
-    &lt;ul class="card-post-meta-menu">
-      &lt;li class="card-post-meta-menu-item">&lt;a href="#">Delete&lt;/a>&lt;/li>
-      &lt;li class="card-post-meta-menu-item">&lt;a href="#">Edit&lt;/a>&lt;/li>
-      &lt;li class="card-post-meta-menu-item">&lt;a href="#">Move to Top&lt;/a>&lt;/li>
-      &lt;li class="card-post-meta-menu-item card-post-meta-menu-item--last">&lt;a href="#">Share Now&lt;/a>&lt;/li>
-    &lt;/ul>
-  &lt;/div>
-&lt;/div></pre>
+<pre>Markup here.</pre>
             </div>
           </div>
-        </section>
-        <section class="section-secondary">
-          <h2 class="section-secondary-title">Card - Post - Empty</h2>
-          <p>This is a modified <code>card</code> object. It doesn't introduce any new functionality nor UI. It simply modifies the <code>card</code> object's <code>border-style</code>.</p>
-          <div class="code-block code-block--last">
+          <div class="code-block">
             <div class="code-block-title">
               Example:
             </div>
             <div class="code-block-render">
-              <div class="card card--empty code-block-render-example">
-                Content goes here! :)
+              <div class="card card-post code-block-render-example">
+                <div class="card-post-content">
+                  <p>What is a Product Designer? An awesome story by <a href="#">@jgadapee</a> over on Medium! <a href="#">http://buff.ly/1LTbUqv</a></p>
+                </div>
+                <div class="card-post-meta">
+                  <div class="card-post-meta-tag tag tag--error">
+                    Failed
+                  </div>
+                  <div class="card-post-meta-time">
+                    <span class="card-post-stat">09:42</span> <span class="card-post-meta-time-zone">(GMT)</span>
+                  </div>
+                  <div class="card-post-meta-via">
+                    via Extension
+                  </div>
+                  <div class="card-post-meta-user">
+                    <span class="card-post-meta-user-profile-picture">
+                      <img class="profile-picture profile-picture--small" height="16" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg" width="16px">
+                    </span>
+                    <span class="card-post-meta-user-name">
+                      steve@buffer.com
+                    </span>
+                  </div>
+                  <ul class="card-post-meta-menu">
+                    <li class="card-post-meta-menu-item">
+                      <a href="#"><i class="bi bi-x"></i>Delete</a>
+                    </li>
+                    <li class="card-post-meta-menu-item">
+                      <a href="#"><i class="bi bi-edit"></i>Edit</a>
+                    </li>
+                    <li class="card-post-meta-menu-item">
+                      <a href="#"><i class="bi bi-arrow-up"></i>Move to Top</a>
+                    </li>
+                    <li class="card-post-meta-menu-item card-post-meta-menu-item--last">
+                      <a href="#"><i class="bi bi-arrow-right"></i>Share Now</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div class="code-block-code">
-<pre>&lt;div class="card card--empty">
-  Content goes here! :)
-&lt;/div></pre>
+<pre>Markup here.</pre>
             </div>
           </div>
-        </section>
-        <section class="section-secondary section-secondary--last">
           <h2 class="section-secondary-title">Card - Post - Analytics</h2>
-          <p>The <code>card-analytics</code> object inherets from the base <code>card</code> object and adds further functionality and UI. This object is used when a post is displayed within the Analytics tab.</p>
+          <p>The <code>card-post-analytics</code> object inherets from the base <code>card</code> object and adds further functionality and UI. This object is used when a post is displayed within the Analytics tab.</p>
           <div class="code-block code-block--last">
             <div class="code-block-title">
               Example:
             </div>
             <div class="code-block-render">
-              <div class="card card-analytics code-block-render-example">
-                <div class="card-analytics-content">
-                  What is a Product Designer? An awesome story by <a href="#">@jgadapee</a> over on Medium! <a href="#">http://buff.ly/1LTbUqv</a>
-                </div>
-                <div class="card-analytics-meta">
-                  <div class="card-analytics-meta-data-time">
-                    <span class="card-analytics-meta-time">12:57 <span class="card-analytics-meta-time-zone">(GMT)</span></span> <span class="card-analytics-meta-via">via Extension</span>
+              <div class="card card-post-analytics code-block-render-example">
+                <div class="card-post-analytics-content">
+                  <p>What is a Product Designer? An awesome story by <a href="#">@jgadapee</a> over on Medium! <a href="#">http://buff.ly/1LTbUqv</a></p>
+                  <div class="card-post-analytics-posted">
+                    <div class="card-post-analytics-posted-time">
+                      <span class="card-post-stat">09:42</span> <span class="card-post-analytics-posted-time-zone">(GMT)</span>
+                    </div>
+                    <div class="card-post-analytics-posted-via">
+                      via Extension
+                    </div>
                   </div>
-                  <div class="card-analytics-meta-data-stats">
-                    <span class="card-analytics-meta-data-stat"><span class="card-analytics-meta-data-stat-amount">0</span> retweets</span><span class="card-analytics-meta-data-stat"><span class="card-analytics-meta-data-stat-amount">2</span> likes</span><span class="card-analytics-meta-data-stat"><span class="card-analytics-meta-data-stat-amount">0</span> mentions</span><span class="card-analytics-meta-data-stat"><span class="card-analytics-meta-data-stat-amount">6</span> clicks</span><span class="card-analytics-meta-data-stat"><span class="card-analytics-meta-data-stat-amount">843</span> potential</span>
+                </div>
+                <div class="card-post-analytics-meta">
+                  <div class="card-post-analytics-meta-data-stats">
+                    <div class="card-post-analytics-meta-data-stat">
+                      <i class="bi bi-retweet"></i><span class="card-post-stat">0</span> retweets
+                    </div>
+                    <div class="card-post-analytics-meta-data-stat">
+                      <i class="bi bi-like"></i><span class="card-post-stat">2</span> likes
+                    </div>
+                    <div class="card-post-analytics-meta-data-stat">
+                      <i class="bi bi-comment"></i><span class="card-post-stat">0</span> mentions
+                    </div>
+                    <div class="card-post-analytics-meta-data-stat">
+                      <i class="bi bi-click"></i><span class="card-post-stat">6</span> clicks
+                    </div>
+                    <div class="card-post-analytics-meta-data-stat">
+                      <i class="bi bi-view"></i><span class="card-post-stat">843</span> potential
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="code-block-code">
-<pre>&lt;div class="card card-analytics">
-  &lt;div class="card-analytics-content">
-    What is a Product Designer? An awesome story by &lt;a href="#">@jgadapee&lt;/a> over on Medium! &lt;a href="#">http://buff.ly/1LTbUqv&lt;/a>
-  &lt;/div>
-  &lt;div class="card-analytics-meta">
-    &lt;div class="card-analytics-meta-data-time">
-      &lt;span class="card-analytics-meta-time">12:57 &lt;span class="card-analytics-meta-time-zone">(GMT)&lt;/span>&lt;/span>
-      &lt;span class="card-analytics-meta-via">via Extension&lt;/span>
-    &lt;/div>
-    &lt;div class="card-analytics-meta-data-stats">
-      &lt;span class="card-analytics-meta-data-stat">&lt;span class="card-analytics-meta-data-stat-amount">0&lt;/span> retweets&lt;/span>
-      &lt;span class="card-analytics-meta-data-stat">&lt;span class="card-analytics-meta-data-stat-amount">2&lt;/span> likes&lt;/span>
-      &lt;span class="card-analytics-meta-data-stat">&lt;span class="card-analytics-meta-data-stat-amount">0&lt;/span> mentions&lt;/span>
-      &lt;span class="card-analytics-meta-data-stat">&lt;span class="card-analytics-meta-data-stat-amount">6&lt;/span> clicks&lt;/span>
-      &lt;span class="card-analytics-meta-data-stat">&lt;span class="card-analytics-meta-data-stat-amount">843&lt;/span> potential&lt;/span>
-    &lt;/div>
-  &lt;/div>
-&lt;/div></pre>
+<pre>Markup here.</pre>
             </div>
           </div>
         </section>
@@ -439,7 +433,9 @@
             </div>
             <div class="code-block-render">
               <div class="navbar code-block-render-example">
-                <div class="navbar-title">Buffer</div>
+                <div class="navbar-title">
+                  <i class="bi bi-buffer"></i>Buffer
+                </div>
                 <ul class="navbar-menu-left">
                   <li class="navbar-menu-item"><a class="navbar-menu-item--active" href="#">Queue</a></li>
                   <li class="navbar-menu-item"><a href="#">Library</a></li>
@@ -572,8 +568,8 @@
           <p>An introduction to icons!</p>
         </section>
         <section class="section-secondary section-secondary--last">
-          <h2 class="section-secondary-title">UI Icons</h2>
-          <p>This is the base for the <code>icon</code> object.</p>
+          <h2 class="section-secondary-title">Icon</h2>
+          <p>We use <code>bi</code> (an acronym for Buffer Icon) as a global namepsace for our icons. Each <code>bi</code> object is the base <code>bi</code> object. The only difference being how you call an individual icon.</p>
 
           <h3>Icon - Analytics</h3>
           <p>A little bit about the analytics icon.</p>
@@ -582,7 +578,7 @@
               Example:
             </div>
             <div class="code-block-render">
-              <i class="icon icon-analytics"></i>
+              <i class="bi bi-analytics"></i>
             </div>
             <div class="code-block-code">
 <pre>&lt;i class="icon icon-analytics">&lt;/i></pre>
@@ -957,7 +953,6 @@
       </section>
     </section>
 
-    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
     <script src="js/bundle.js"></script>
   </body>
 </html>

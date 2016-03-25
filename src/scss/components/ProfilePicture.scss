@@ -1,31 +1,37 @@
 @import "../base/variables";
 
+/* Base Object
+------------------------------------------------------------ */
 .profile-picture {
   display: block;
-  width: $globalSpacing * 4; // 32px
-  height: $globalSpacing * 4; // 32px
+  width: 32px;
+  height: 32px;
 
-  border-radius: $globalSpacing * 2;
+  border-radius: 16px;
 }
 
+/* Base Object - Modifiers
+------------------------------ */
 .profile-picture--small {
-  width: $globalSpacing * 2; // 16px
-  height: $globalSpacing * 2; // 16px
+  width: 16px;
+  height: 16px;
 
-  border-radius: $globalSpacing;
+  border-radius: 8px;
 }
 
+/* Profile Picture with Icon Object
+------------------------------------------------------------ */
 .profile-picture-with-icon {
   position: relative;
 }
 
 .profile-picture-icon {
   position: absolute;
-  top: $globalSpacing * 2;
-  left: $globalSpacing * 2;
+  top: 16px;
+  left: 16px;
 
-  width: $globalSpacing * 2; // 16px
-  height: $globalSpacing * 2; // 16px
+  width: 16px;
+  height: 16px;
 
-  border-radius: $globalSpacing;
+  border-radius: 8px;
 }

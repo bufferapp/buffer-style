@@ -1,18 +1,21 @@
 @import "../base/variables";
 
+/* Base Object
+------------------------------------------------------------ */
 .card {
-  padding: $globalSpacing * 2;
+  padding: 16px;
 
   background-color: $whiteColor;
   border: 1px solid $borderColor;
   border-radius: $borderRadiusLevel1;
 }
 
-.card-post,
-.card-analytics {
-  margin-bottom: $globalSpacing * 2;
+.card p {
+  margin: 0;
 }
 
+/* Base Object - Modifiers
+------------------------------ */
 .card--last {
   margin-bottom: 0;
 }
@@ -21,21 +24,41 @@
   border: 1px dashed $borderColor;
 }
 
+/* Post & Analytics Shared Objects
+------------------------------------------------------------ */
 .card-post,
-.card-analytics {
+.card-post-analytics {
+  margin-bottom: 16px;
+}
+
+.card-post,
+.card-post-analytics {
   padding: 0;
 }
 
 .card-post-content,
-.card-analytics-content {
-  padding: $globalSpacing * 2;
+.card-post-analytics-content {
+  padding: 16px;
 }
 
 .card-post-meta,
-.card-analytics-meta {
-  padding: 0 ($globalSpacing * 2);
+.card-post-analytics-meta {
+  padding: 0 16px;
 
   font-size: 10px;
+}
+
+.card-post-meta-time-zone,
+.card-post-analytics-meta-time-zone {
+  font-weight: normal;
+}
+
+/* Post Objects
+------------------------------------------------------------ */
+.card-post-stat {
+  font-weight: bold;
+
+  color: $titleColor;
 }
 
 .card-post-meta {
@@ -45,22 +68,34 @@
 
   background-color: $backgroundFillColor;
   border-top: 1px solid $borderColor;
-  border-radius: 0 0 ($globalSpacing - 1) ($globalSpacing - 1);
+  border-radius: 0 0 7px 7px;
 
+  &:hover {
+    .card-post-meta-menu {
+      opacity: 1;
+    }
+  }
   &::after {
     clear: both;
   }
 }
 
-.card-post-meta-data {
+.card-post-meta-tag,
+.card-post-meta-time,
+.card-post-meta-time-pinned,
+.card-post-meta-time-pinned-arrow,
+.card-post-meta-via,
+.card-post-meta-user,
+.card-post-meta-user-profile-picture,
+.card-post-meta-user-name {
   float: left;
 }
 
-.card-post-meta-data-pinned {
+.card-post-meta-time-pinned {
   position: relative;
 
-  margin: ($globalSpacing / 4) 0 ($globalSpacing / 4) (-$globalSpacing + -$globalSpacing + (-$globalSpacing / 4)); // 2px 0 2px -18px
-  padding: 0 ($globalSpacing) 0 ($globalSpacing * 2);
+  margin: 2px 16px 2px -18px;
+  padding: 0 8px 0 16px;
   height: 27px;
 
   line-height: 27px;
@@ -68,73 +103,37 @@
 
   background-color: $actionableColor;
   border-right: 0;
-  border-radius: ($globalSpacing / 4) 0 0 ($globalSpacing / 4);
+  border-radius: 2px 0 0 2px;
 }
 
-.card-post-meta-data-pinned-arrow {
+.card-post-meta-time-pinned .card-post-meta-time {
+  color: $whiteColor;
+}
+
+ .card-post-meta-time-pinned-arrow {
   position: absolute;
-  right: -($globalSpacing);
+  top: 0;
+  right: -8px;
 
   width: 0;
   height: 0;
 
   border-top: 13.5px solid transparent;
   border-bottom: 13.5px solid transparent;
-  border-left: $globalSpacing solid $actionableColor;
-}
-
-.card-post-meta-recurring {
-  margin-right: $globalSpacing;
-
-  font-weight: 600;
-}
-
-.card-post-meta-recurring-icon {
-  float: left;
-  margin-top: $globalSpacing - 2.5;
-  margin-right: $globalSpacing / 2;
-
-  &::after {
-    clear: both;
-  }
-}
-
-.card-post-meta-time,
-.card-analytics-meta-time {
-  font-weight: 600;
-  color: $titleColor;
+  border-left: 8px solid $actionableColor;
 }
 
 .card-post-meta-time {
-  margin-right: $globalSpacing;
-}
-
-.card-post-meta-time--pinned {
-  color: $whiteColor;
-}
-
-.card-post-meta-time-zone,
-.card-analytics-meta-time-zone {
-  font-weight: normal;
+  margin-right: 8px;
 }
 
 .card-post-meta-user {
-  display: inline-block;
-  margin: ($globalSpacing / 2) 0 ($globalSpacing / 2) ($globalSpacing * 2);
-  padding: ($globalSpacing / 2) 0;
-
-  &::after {
-    clear: both;
-  }
-}
-
-.card-post-meta-user-profile-picture {
-  float: left;
+  margin: 4px 0 4px 16px;
+  padding: 4px 0;
 }
 
 .card-post-meta-user-name {
-  margin-left: $globalSpacing;
-  float: left;
+  margin-left: 8px;
 
   font-weight: 600;
   line-height: normal;
@@ -143,11 +142,13 @@
 .card-post-meta-menu {
   margin: 0;
   float: right;
+
+  opacity: 0;
 }
 
 .card-post-meta-menu-item {
   display: inline;
-  margin: 0 ($globalSpacing * 2) 0 0;
+  margin: 0 16px 0 0;
 
   & a {
     color: $titleColor;
@@ -158,25 +159,42 @@
   }
 }
 
+/* Post Objects - Modifiers
+------------------------------ */
 .card-post-meta-menu-item--last {
   margin-right: 0;
 }
 
-.card-analytics {
+.card-post-meta-time--pinned {
+  color: $whiteColor;
+}
+
+/* Analytics Objects
+------------------------------------------------------------ */
+.card-post-analytics {
   padding-bottom: 0;
 }
 
-.card-analytics-meta-data-time {
-  margin-bottom: ($globalSpacing * 2);
+.card-post-analytics-posted {
+  margin-top: 8px;
+  height: 21px;
 
   font-size: 10px;
-  color: $borderColor;
 }
 
-.card-analytics-meta-data-stats {
-  margin-right: -($globalSpacing * 2);
-  margin-left: -($globalSpacing * 2);
-  padding: 0 ($globalSpacing * 2);
+.card-post-analytics-posted-time,
+.card-post-analytics-posted-via {
+  float: left;
+}
+
+.card-post-analytics-posted-via {
+  margin-left: 8px;
+}
+
+.card-post-analytics-meta-data-stats {
+  margin-right: -16px;
+  margin-left: -16px;
+  padding: 0 16px;
   display: block;
   height: 32px;
 
@@ -184,22 +202,16 @@
 
   background-color: $backgroundFillColor;
   border-top: 1px solid $borderColor;
-  border-radius: 0 0 ($globalSpacing - 1) ($globalSpacing - 1);
+  border-radius: 0 0 7px 7px;
 
   &::after {
     clear: both;
   }
 }
 
-.card-analytics-meta-data-stat {
-  display: inline-block;
+.card-post-analytics-meta-data-stat {
+  float: left;
   width: 20%;
 
   text-align: center;
-}
-
-.card-analytics-meta-data-stat-amount {
-  font-weight: bold;
-
-  color: $titleColor;
 }
