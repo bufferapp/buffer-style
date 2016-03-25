@@ -1,7 +1,3 @@
-/* Global Variables
------------------------------------------------------------- */
-$globalSpacing: 8px;
-
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
 * {
@@ -48,9 +44,9 @@ $lineHeight: $fontSize * 1.5;
 /* Border Radii
 ------------------------------------------------------------ */
 
-$borderRadiusLevel1: $globalSpacing;      // 8px
-$borderRadiusLevel2: $globalSpacing / 2;  // 4px
-$borderRadiusLevel3: $globalSpacing / 4;  // 2px
+$borderRadiusLevel1: 8px;
+$borderRadiusLevel2: 4px;
+$borderRadiusLevel3: 2px;
 
 /* Box Shadows
 ------------------------------------------------------------ */
