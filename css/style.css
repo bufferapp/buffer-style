@@ -5,8 +5,6 @@
  * consumed by other projects. Do not include SCSS meant for the presentation
  * of the style guide website itself.
  */
-/* Global Variables
------------------------------------------------------------- */
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
 * {
@@ -23,8 +21,6 @@
 /* Border Radii
 ------------------------------------------------------------ */
 /* Box Shadows
------------------------------------------------------------- */
-/* Global Variables
 ------------------------------------------------------------ */
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
@@ -105,8 +101,6 @@ p {
 *, *:before, *:after {
   box-sizing: inherit; }
 
-/* Global Variables
------------------------------------------------------------- */
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
 * {
@@ -131,6 +125,9 @@ p {
   background-color: #fff;
   border: 1px solid #ced7df;
   border-radius: 8px; }
+
+.card p {
+  margin: 0; }
 
 /* Base Object - Modifiers
 ------------------------------ */
@@ -159,32 +156,40 @@ p {
   padding: 0 16px;
   font-size: 10px; }
 
-.card-post-meta-time,
-.card-post-analytics-meta-time {
-  font-weight: 600;
-  color: #323b43; }
-
 .card-post-meta-time-zone,
 .card-post-analytics-meta-time-zone {
   font-weight: normal; }
 
 /* Post Objects
 ------------------------------------------------------------ */
+.card-post-stat {
+  font-weight: bold;
+  color: #323b43; }
+
 .card-post-meta {
   height: 32px;
   line-height: 32px;
   background-color: #f4f7f9;
   border-top: 1px solid #ced7df;
   border-radius: 0 0 7px 7px; }
+  .card-post-meta:hover .card-post-meta-menu {
+    opacity: 1; }
   .card-post-meta::after {
     clear: both; }
 
-.card-post-meta-data {
+.card-post-meta-tag,
+.card-post-meta-time,
+.card-post-meta-time-pinned,
+.card-post-meta-time-pinned-arrow,
+.card-post-meta-via,
+.card-post-meta-user,
+.card-post-meta-user-profile-picture,
+.card-post-meta-user-name {
   float: left; }
 
-.card-post-meta-data-pinned {
+.card-post-meta-time-pinned {
   position: relative;
-  margin: 2px 0 2px -18px;
+  margin: 2px 16px 2px -18px;
   padding: 0 8px 0 16px;
   height: 27px;
   line-height: 27px;
@@ -193,8 +198,12 @@ p {
   border-right: 0;
   border-radius: 2px 0 0 2px; }
 
-.card-post-meta-data-pinned-arrow {
+.card-post-meta-time-pinned .card-post-meta-time {
+  color: #fff; }
+
+.card-post-meta-time-pinned-arrow {
   position: absolute;
+  top: 0;
   right: -8px;
   width: 0;
   height: 0;
@@ -202,39 +211,22 @@ p {
   border-bottom: 13.5px solid transparent;
   border-left: 8px solid #168eea; }
 
-.card-post-meta-recurring {
-  margin-right: 8px;
-  font-weight: 600; }
-
-.card-post-meta-recurring-icon {
-  float: left;
-  margin-top: 5.5px;
-  margin-right: 4px; }
-  .card-post-meta-recurring-icon::after {
-    clear: both; }
-
 .card-post-meta-time {
   margin-right: 8px; }
 
 .card-post-meta-user {
-  display: inline-block;
   margin: 4px 0 4px 16px;
   padding: 4px 0; }
-  .card-post-meta-user::after {
-    clear: both; }
-
-.card-post-meta-user-profile-picture {
-  float: left; }
 
 .card-post-meta-user-name {
   margin-left: 8px;
-  float: left;
   font-weight: 600;
   line-height: normal; }
 
 .card-post-meta-menu {
   margin: 0;
-  float: right; }
+  float: right;
+  opacity: 0; }
 
 .card-post-meta-menu-item {
   display: inline;
@@ -257,10 +249,17 @@ p {
 .card-post-analytics {
   padding-bottom: 0; }
 
-.card-post-analytics-meta-data-time {
-  margin-bottom: 16px;
-  font-size: 10px;
-  color: #ced7df; }
+.card-post-analytics-posted {
+  margin-top: 8px;
+  height: 21px;
+  font-size: 10px; }
+
+.card-post-analytics-posted-time,
+.card-post-analytics-posted-via {
+  float: left; }
+
+.card-post-analytics-posted-via {
+  margin-left: 8px; }
 
 .card-post-analytics-meta-data-stats {
   margin-right: -16px;
@@ -276,16 +275,10 @@ p {
     clear: both; }
 
 .card-post-analytics-meta-data-stat {
-  display: inline-block;
+  float: left;
   width: 20%;
   text-align: center; }
 
-.card-post-analytics-meta-data-stat-amount {
-  font-weight: bold;
-  color: #323b43; }
-
-/* Global Variables
------------------------------------------------------------- */
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
 * {
@@ -530,8 +523,6 @@ p {
   -webkit-mask-image: url(/img/icon-view.svg);
   mask-image: url(/img/icon-view.svg); }
 
-/* Global Variables
------------------------------------------------------------- */
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
 * {
@@ -574,8 +565,6 @@ p {
   box-shadow: 0 2px 4px rgba(50, 59, 67, 0.2);
   transform: translate(-50%, -50%); }
 
-/* Global Variables
------------------------------------------------------------- */
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
 * {
@@ -646,8 +635,6 @@ p {
 .navbar-menu-item--last {
   margin-right: 0; }
 
-/* Global Variables
------------------------------------------------------------- */
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
 * {
@@ -692,3 +679,39 @@ p {
   width: 16px;
   height: 16px;
   border-radius: 8px; }
+
+/* Global Reset // We'll pull in a common reset here, perhaps in another file!
+------------------------------------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* Primary Palette
+------------------------------------------------------------ */
+/* Brands Palette
+------------------------------------------------------------ */
+/* Font
+------------------------------------------------------------ */
+/* Border Radii
+------------------------------------------------------------ */
+/* Box Shadows
+------------------------------------------------------------ */
+/* Base Object
+------------------------------------------------------------ */
+.tag {
+  margin: 7px 8px 7px 0;
+  padding: 0 4px;
+  height: 18px;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #59626a;
+  background-color: #ced7df;
+  border-radius: 2px; }
+
+/* Base Object - Modifiers
+------------------------------ */
+.tag--blue {
+  color: #fff;
+  background-color: #168eea; }
