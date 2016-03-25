@@ -4,6 +4,7 @@
     <title>Buffer Style Guide</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/guide.css">
+    <link rel="stylesheet" href="//s3.amazonaws.com/buffer-icons/0.1.0/buffer-icons.css" type="text/css" />
   </head>
   <body>
     <header class="navbar">
@@ -157,11 +158,26 @@
 &lt;/div></pre>
             </div>
           </div>
+          <h2>Card -- Empty</h2>
+          <p>This is a modified <code>card</code> object. It doesn't introduce any new functionality nor UI. It simply modifies the <code>card</code> object's <code>border-style</code>.</p>
+          <div class="code-block code-block--last">
+            <div class="code-block-title">
+              Example:
+            </div>
+            <div class="code-block-render">
+              <div class="card card--empty code-block-render-example">
+              </div>
+            </div>
+            <div class="code-block-code">
+<pre>&lt;div class="card card--empty">
+&lt;/div></pre>
+            </div>
+          </div>
         </section>
-        <section class="section-secondary">
+        <section class="section-secondary section-secondary--last">
           <h2 class="section-secondary-title">Card - Post</h2>
           <p>The <code>card-post</code> object inherits from the base <code>card</code> object and adds further functionality and UI. This object is used when a post is displayed.</p>
-          <div class="code-block code-block--last">
+          <div class="code-block">
             <div class="code-block-title">
               Example:
             </div>
@@ -206,10 +222,8 @@
 <pre>Code here.</pre>
             </div>
           </div>
-        </section>
-        <section class="section-secondary">
-          <h2 class="section-secondary-title">Card - Pinned Post</h2>
-          <p>This object is a modified <code>card-post</code> object that inherits from the base <code>card</code> object and adds further functionality and UI. This object is used when a "pinned" post is to be displayed. Pinned posts occur once a user has specified a time for that post to be shared.</p>
+          <h2>Card - Post -- Pinned</h2>
+          <p>This object is a modified <code>card-post</code> object that adds extra UI. A pinned post occurs once a user has specified a time for that post to be shared.</p>
           <div class="code-block code-block--last">
             <div class="code-block-title">
               Example:
@@ -258,12 +272,9 @@
 <pre>Markup here.</pre>
             </div>
           </div>
-        </section>
-        <section class="section-secondary">
-          <h2 class="section-secondary-title">Card - Pinned Post - In Queue</h2>
-          <p>This object is a modified <code>card-post</code> object that inherits from the base <code>card</code> object and adds further functionality and UI. This object is used when a user has scheduled this post to be repeated. It automatically gets "pinned".</p>
-
-          <div class="code-block code-block--last">
+          <h2>Card - Post -- Tag</h2>
+          <p>This object is a modified <code>card-post</code> object that adds a tag to the <code>card-post</code>'s child object, <code>card-post-meta</code>.</p>
+          <div class="code-block">
             <div class="code-block-title">
               Example:
             </div>
@@ -275,6 +286,54 @@
                 <div class="card-post-meta">
                   <div class="card-post-meta-tag tag tag--blue">
                     In Queue!
+                  </div>
+                  <div class="card-post-meta-time">
+                    <span class="card-post-stat">09:42</span> <span class="card-post-meta-time-zone">(GMT)</span>
+                  </div>
+                  <div class="card-post-meta-via">
+                    via Extension
+                  </div>
+                  <div class="card-post-meta-user">
+                    <span class="card-post-meta-user-profile-picture">
+                      <img class="profile-picture profile-picture--small" height="16" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg" width="16px">
+                    </span>
+                    <span class="card-post-meta-user-name">
+                      steve@buffer.com
+                    </span>
+                  </div>
+                  <ul class="card-post-meta-menu">
+                    <li class="card-post-meta-menu-item">
+                      <a href="#"><i class="bi bi-x-circle"></i>Delete</a>
+                    </li>
+                    <li class="card-post-meta-menu-item">
+                      <a href="#"><i class="bi bi-edit"></i>Edit</a>
+                    </li>
+                    <li class="card-post-meta-menu-item">
+                      <a href="#"><i class="bi bi-arrow-up"></i>Move to Top</a>
+                    </li>
+                    <li class="card-post-meta-menu-item card-post-meta-menu-item--last">
+                      <a href="#"><i class="bi bi-arrow-right"></i>Share Now</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="code-block-code">
+<pre>Markup here.</pre>
+            </div>
+          </div>
+          <div class="code-block">
+            <div class="code-block-title">
+              Example:
+            </div>
+            <div class="code-block-render">
+              <div class="card card-post code-block-render-example">
+                <div class="card-post-content">
+                  <p>What is a Product Designer? An awesome story by <a href="#">@jgadapee</a> over on Medium! <a href="#">http://buff.ly/1LTbUqv</a></p>
+                </div>
+                <div class="card-post-meta">
+                  <div class="card-post-meta-tag tag tag--error">
+                    Failed
                   </div>
                   <div class="card-post-meta-time">
                     <span class="card-post-stat">09:42</span> <span class="card-post-meta-time-zone">(GMT)</span>
@@ -311,28 +370,8 @@
 <pre>Markup here.</pre>
             </div>
           </div>
-        </section>
-        <section class="section-secondary">
-          <h2 class="section-secondary-title">Card - Post - Empty</h2>
-          <p>This is a modified <code>card</code> object. It doesn't introduce any new functionality nor UI. It simply modifies the <code>card</code> object's <code>border-style</code>.</p>
-          <div class="code-block code-block--last">
-            <div class="code-block-title">
-              Example:
-            </div>
-            <div class="code-block-render">
-              <div class="card card--empty code-block-render-example">
-                <!-- <p>Content goes here! :)</p> -->
-              </div>
-            </div>
-            <div class="code-block-code">
-<pre>&lt;div class="card card--empty">
-&lt;/div></pre>
-            </div>
-          </div>
-        </section>
-        <section class="section-secondary section-secondary--last">
           <h2 class="section-secondary-title">Card - Post - Analytics</h2>
-          <p>The <code>card-analytics</code> object inherets from the base <code>card</code> object and adds further functionality and UI. This object is used when a post is displayed within the Analytics tab.</p>
+          <p>The <code>card-post-analytics</code> object inherets from the base <code>card</code> object and adds further functionality and UI. This object is used when a post is displayed within the Analytics tab.</p>
           <div class="code-block code-block--last">
             <div class="code-block-title">
               Example:
@@ -529,8 +568,8 @@
           <p>An introduction to icons!</p>
         </section>
         <section class="section-secondary section-secondary--last">
-          <h2 class="section-secondary-title">UI Icons</h2>
-          <p>This is the base for the <code>icon</code> object.</p>
+          <h2 class="section-secondary-title">Icon</h2>
+          <p>We use <code>bi</code> (an acronym for Buffer Icon) as a global namepsace for our icons. Each <code>bi</code> object is the base <code>bi</code> object. The only difference being how you call an individual icon.</p>
 
           <h3>Icon - Analytics</h3>
           <p>A little bit about the analytics icon.</p>
@@ -539,7 +578,7 @@
               Example:
             </div>
             <div class="code-block-render">
-              <i class="icon icon-analytics"></i>
+              <i class="bi bi-analytics"></i>
             </div>
             <div class="code-block-code">
 <pre>&lt;i class="icon icon-analytics">&lt;/i></pre>
