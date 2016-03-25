@@ -1,134 +1,275 @@
 @import "../base/variables";
 
+/* Base Object
+------------------------------------------------------------ */
 .icon {
   display: inline-block;
-  width: $globalSpacing * 2;
-  height: $globalSpacing * 2;
+  width: 16px;
+  height: 16px;
 
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: $bodyColor;
+
+  -webkit-mask-position: center center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-position: center center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
 }
 
+/* Base Object - Modifiers
+------------------------------ */
+.icon.icon--color-actionable {
+  background-color: $actionableColor;
+}
+
+.icon.icon--color-actionable-hover {
+  background-color: $actionableHoverColor;
+}
+
+.icon.icon--color-title {
+  background-color: $titleColor;
+}
+
+.icon.icon--color-body {
+  background-color: $bodyColor;
+}
+
+.icon.icon--color-border {
+  background-color: $borderColor;
+}
+
+.icon.icon--color-border-light {
+  background-color: $borderLightColor;
+}
+
+.icon.icon--color-background-fill {
+  background-color: $backgroundFillColor;
+}
+
+.icon.icon--color-success {
+  background-color: $successColor;
+}
+
+.icon.icon--color-error {
+  background-color: $errorColor;
+}
+
+.icon.icon--color-warning {
+  background-color: $warningColor;
+}
+
+.icon.icon--color-black {
+  background-color: $blackColor;
+}
+
+.icon.icon--color-white {
+  background-color: $whiteColor;
+}
+
+.icon.icon--color-facebook {
+  background-color: $facebookColor;
+}
+
+.icon.icon--color-google-plus {
+  background-color: $googlePlusColor;
+}
+
+.icon.icon--color-linkedin {
+  background-color: $linkedInColor;
+}
+
+.icon.icon--color-pinterest {
+  background-color: $pinterestColor;
+}
+
+.icon.icon--color-twitter {
+  background-color: $twitterColor;
+}
+
+.icon--small {
+  width: 12px;
+  height: 12px;
+}
+
+/* Icon Analytics Object
+------------------------------------------------------------ */
 .icon-analytics {
-  background-image: url(/img/icon-analytics.svg);
+  -webkit-mask-image: url(/img/icon-analytics.svg);
+  mask-image: url(/img/icon-analytics.svg);
 }
 
-.icon-arrow-down,
-.icon-arrow-left,
-.icon-arrow-right,
-.icon-arrow-up,
-.icon-checkmark,
-.icon-export,
-.icon-image,
-.icon-like,
-.icon-multiply,
-.icon-pricing,
-.icon-retweet,
-.icon-view {
-  background-position: center center;
-  background-size: auto;
-}
-
+/* Icon Arrow Down Object
+------------------------------------------------------------ */
 .icon-arrow-down {
-  background-image: url(/img/icon-arrow-down.svg);
+  -webkit-mask-image: url(/img/icon-arrow-down.svg);
+  mask-image: url(/img/icon-arrow-down.svg);
 }
 
+/* Icon Arrow Left Object
+------------------------------------------------------------ */
 .icon-arrow-left {
-  background-image: url(/img/icon-arrow-left.svg);
+  -webkit-mask-image: url(/img/icon-arrow-left.svg);
+  mask-image: url(/img/icon-arrow-left.svg);
 }
 
+/* Icon Arrow Right Object
+------------------------------------------------------------ */
 .icon-arrow-right {
-  background-image: url(/img/icon-arrow-right.svg);
+  -webkit-mask-image: url(/img/icon-arrow-right.svg);
+  mask-image: url(/img/icon-arrow-right.svg);
 }
 
+/* Icon Arrow Up Object
+------------------------------------------------------------ */
 .icon-arrow-up {
-  background-image: url(/img/icon-arrow-up.svg);
+  -webkit-mask-image: url(/img/icon-arrow-up.svg);
+  mask-image: url(/img/icon-arrow-up.svg);
 }
 
+/* Icon Buffer Object
+------------------------------------------------------------ */
+.icon-buffer {
+  -webkit-mask-image: url(/img/icon-buffer.svg);
+  mask-image: url(/img/icon-buffer.svg);
+}
+
+/* Icon Calendar Object
+------------------------------------------------------------ */
 .icon-calendar {
-  background-image: url(/img/icon-calendar.svg);
+  -webkit-mask-image: url(/img/icon-calendar.svg);
+  mask-image: url(/img/icon-calendar.svg);
 }
 
+/* Icon Checkmark Object
+------------------------------------------------------------ */
 .icon-checkmark {
-  background-image: url(/img/icon-checkmark.svg);
+  -webkit-mask-image: url(/img/icon-checkmark.svg);
+  mask-image: url(/img/icon-checkmark.svg);
 }
 
+/* Icon Circle Facebook Object
+------------------------------------------------------------ */
 .icon-circle-facebook {
-  background-image: url(/img/icon-circle-facebook.svg);
+  -webkit-mask-image: url(/img/icon-circle-facebook.svg);
+  mask-image: url(/img/icon-circle-facebook.svg);
 }
 
+/* Icon Circle Google+ Object
+------------------------------------------------------------ */
 .icon-circle-google-plus {
-  background-image: url(/img/icon-circle-google-plus.svg);
+  -webkit-mask-image: url(/img/icon-circle-google-plus.svg);
+  mask-image: url(/img/icon-circle-google-plus.svg);
 }
 
+/* Icon Circle LinkedIn Object
+------------------------------------------------------------ */
 .icon-circle-linkedin {
-  background-image: url(/img/icon-circle-linkedin.svg);
+  -webkit-mask-image: url(/img/icon-circle-linkedin.svg);
+  mask-image: url(/img/icon-circle-linkedin.svg);
 }
 
+/* Icon Circle Multiply Object
+------------------------------------------------------------ */
 .icon-circle-multiply {
-  background-image: url(/img/icon-circle-multiply.svg);
+  -webkit-mask-image: url(/img/icon-circle-multiply.svg);
+  mask-image: url(/img/icon-circle-multiply.svg);
 }
 
+/* Icon Circle Pinterest Object
+------------------------------------------------------------ */
 .icon-circle-pinterest {
-  background-image: url(/img/icon-circle-pinterest.svg);
+  -webkit-mask-image: url(/img/icon-circle-pinterest.svg);
+  mask-image: url(/img/icon-circle-pinterest.svg);
 }
 
+/* Icon Circle Plus Object
+------------------------------------------------------------ */
 .icon-circle-plus {
-  background-image: url(/img/icon-circle-plus.svg);
+  -webkit-mask-image: url(/img/icon-circle-plus.svg);
+  mask-image: url(/img/icon-circle-plus.svg);
 }
 
+/* Icon Circle Twitter Object
+------------------------------------------------------------ */
 .icon-circle-twitter {
-  background-image: url(/img/icon-circle-twitter.svg);
+  -webkit-mask-image: url(/img/icon-circle-twitter.svg);
+  mask-image: url(/img/icon-circle-twitter.svg);
 }
 
+/* Icon Click Object
+------------------------------------------------------------ */
 .icon-click {
-  background-image: url(/img/icon-click.svg);
+  -webkit-mask-image: url(/img/icon-click.svg);
+  mask-image: url(/img/icon-click.svg);
 }
 
+/* Icon Comment Object
+------------------------------------------------------------ */
 .icon-comment {
-  background-image: url(/img/icon-comment.svg);
+  -webkit-mask-image: url(/img/icon-comment.svg);
+  mask-image: url(/img/icon-comment.svg);
 }
 
+/* Icon Edit Object
+------------------------------------------------------------ */
 .icon-edit {
-  background-image: url(/img/icon-edit.svg);
+  -webkit-mask-image: url(/img/icon-edit.svg);
+  mask-image: url(/img/icon-edit.svg);
 }
 
+/* Icon Edit Object
+------------------------------------------------------------ */
 .icon-export {
-  background-image: url(/img/icon-export.svg);
+  -webkit-mask-image: url(/img/icon-export.svg);
+  mask-image: url(/img/icon-export.svg);
 }
 
+/* Icon Image Object
+------------------------------------------------------------ */
 .icon-image {
-  background-image: url(/img/icon-image.svg);
+  -webkit-mask-image: url(/img/icon-image.svg);
+  mask-image: url(/img/icon-image.svg);
 }
 
+/* Icon Like Object
+------------------------------------------------------------ */
 .icon-like {
-  background-image: url(/img/icon-like.svg);
+  -webkit-mask-image: url(/img/icon-like.svg);
+  mask-image: url(/img/icon-like.svg);
 }
 
+/* Icon Link Object
+------------------------------------------------------------ */
 .icon-link {
-  background-image: url(/img/icon-link.svg);
+  -webkit-mask-image: url(/img/icon-link.svg);
+  mask-image: url(/img/icon-link.svg);
 }
 
-.icon-multiply {
-  background-image: url(/img/icon-multiply.svg);
-}
-
-.icon-plus {
-  background-image: url(/img/icon-plus.svg);
-}
-
+/* Icon Pricing Object
+------------------------------------------------------------ */
 .icon-pricing {
-  background-image: url(/img/icon-pricing.svg);
+  -webkit-mask-image: url(/img/icon-pricing.svg);
+  mask-image: url(/img/icon-pricing.svg);
 }
 
+/* Icon Retweet Object
+------------------------------------------------------------ */
 .icon-retweet {
-  background-image: url(/img/icon-retweet.svg);
+  -webkit-mask-image: url(/img/icon-retweet.svg);
+  mask-image: url(/img/icon-retweet.svg);
 }
 
+/* Icon Setttings Object
+------------------------------------------------------------ */
 .icon-settings {
-  background-image: url(/img/icon-settings.svg);
+  -webkit-mask-image: url(/img/icon-settings.svg);
+  mask-image: url(/img/icon-settings.svg);
 }
 
+/* Icon View Object
+------------------------------------------------------------ */
 .icon-view {
-  background-image: url(/img/icon-view.svg);
+  -webkit-mask-image: url(/img/icon-view.svg);
+  mask-image: url(/img/icon-view.svg);
 }

@@ -30,11 +30,11 @@ html {
 
 ol,
 ul {
-  margin: ($globalSpacing * 2) ($globalSpacing * 2) ($globalSpacing * 2) (($globalSpacing * 2) + ($globalSpacing / 4)); // 16px 16px 16px 18px;
+  margin: 16px 16px 16px 18px;
 
   li {
-    margin-top: $globalSpacing;
-    margin-bottom: $globalSpacing;
+    margin-top: 8px;
+    margin-bottom: 8px;
   }
 }
 
@@ -71,8 +71,8 @@ main.flex-container {
 }
 
 .section {
-  margin-bottom: $globalSpacing * 8;
-  padding: 0 ($globalSpacing * 4) ($globalSpacing * 8) ($globalSpacing * 4);
+  margin-bottom: 64px;
+  padding: 0 32px 64px 32px;
 
   border-bottom: 1px solid $borderColor;
 }
@@ -87,15 +87,15 @@ main.flex-container {
 }
 
 .section-secondary {
-  margin-bottom: $globalSpacing * 2;
-  padding: ($globalSpacing * 2) 0;
+  margin-bottom: 16px;
+  padding: 16px 0;
 
   border-bottom: 1px solid $borderLightColor;
 }
 
 .section-secondary-rendered {
-  margin-bottom: $globalSpacing * 3;
-  padding: $globalSpacing * 2;
+  margin-bottom: 24px;
+  padding: 16px;
 
   background-color: $backgroundFillColor;
   border: 1px solid $borderColor;
@@ -112,11 +112,11 @@ main.flex-container {
 }
 
 .code-block {
-  margin: ($globalSpacing * 4) 0;
+  margin: 32px 0;
 }
 
 .code-block-title {
-  padding: $globalSpacing ($globalSpacing * 2);
+  padding: 8px 16px;
 
   font-size: 12px;
   font-weight: 600;
@@ -134,7 +134,7 @@ main.flex-container {
 }
 
 .code-block-render {
-  padding: ($globalSpacing * 4) ($globalSpacing * 2);
+  padding: 32px 16px;
 }
 
 .code-block-render,
@@ -145,7 +145,7 @@ main.flex-container {
 }
 
 .code-block-code {
-  padding: $globalSpacing ($globalSpacing * 2);
+  padding: 8px 16px;
 
   background-color: $backgroundFillColor;
   border: 1px solid $borderColor;
@@ -153,5 +153,5 @@ main.flex-container {
 }
 
 .pre--last {
-  margin-bottom: (-$globalSpacing * 2);
+  margin-bottom: -16px;
 }
