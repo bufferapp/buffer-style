@@ -301,14 +301,41 @@ p {
 .bi {
   margin-right: 4px; }
 
+.bi-circle-appdotnet[class*="bi-"],
+.bi-circle-facebook[class*="bi-"],
+.bi-circle-google-plus[class*="bi-"],
+.bi-circle-linkedin[class*="bi-"],
+.bi-circle-pinterest[class*="bi-"],
+.bi-circle-twitter[class*="bi-"] {
+  font-size: 16px;
+  border: none; }
+
+.bi-circle-appdotnet[class*="bi-"]::before,
+.bi-circle-facebook[class*="bi-"]::before,
+.bi-circle-google-plus[class*="bi-"]::before,
+.bi-circle-linkedin[class*="bi-"]::before,
+.bi-circle-pinterest[class*="bi-"]::before,
+.bi-circle-twitter[class*="bi-"]::before {
+  background-color: #fff;
+  border-radius: 50%; }
+
+.bi-circle-appdotnet {
+  color: #4a484c; }
+
+.bi-circle-facebook {
+  color: #3b5998; }
+
+.bi-circle-google-plus {
+  color: #dd4b39; }
+
+.bi-circle-linkedin {
+  color: #007bb6; }
+
+.bi-circle-pinterest {
+  color: #bd081c; }
+
 .bi-circle-twitter {
   color: #55acee; }
-  .bi-circle-twitter[class*="bi-"] {
-    font-size: 16px;
-    border: none; }
-  .bi-circle-twitter[class*="bi-"]::before {
-    background-color: #fff;
-    border-radius: 50%; }
 
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
