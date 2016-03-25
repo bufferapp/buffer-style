@@ -10,10 +10,6 @@
   border-radius: $borderRadiusLevel1;
 }
 
-.card p {
-  margin: 0;
-}
-
 /* Base Object - Modifiers
 ------------------------------ */
 .card--last {
@@ -39,6 +35,11 @@
 .card-post-content,
 .card-post-analytics-content {
   padding: 16px;
+}
+
+.card-post-content p,
+.card-post-analytics-content p {
+  margin: 0;
 }
 
 .card-post-meta,
