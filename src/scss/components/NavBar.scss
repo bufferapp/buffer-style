@@ -3,6 +3,11 @@
 /* Base Object
 ------------------------------------------------------------ */
 .navbar {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+
+  display: flex;
   margin-bottom: 32px;;
   position: fixed;
   top: 0;
@@ -16,15 +21,12 @@
 
   background-color: $whiteColor;
   border-bottom: 1px solid $borderColor;
-
-  &::after {
-    clear: both;
-  }
 }
 
 .navbar-title {
-  float: left;
-  width: 20%;
+  flex-grow: 0;
+
+  margin-right: 16px;
 
   font-weight: 600;
 }
@@ -35,15 +37,11 @@
 }
 
 .navbar-menu-left {
-  float: left;
-  width: 40%;
+  flex-grow: 1;
 }
 
 .navbar-menu-right {
-  float: right;
-  width: 40%;
-
-  text-align: right;
+  flex-grow: 0;
 }
 
 .navbar-menu-item {
