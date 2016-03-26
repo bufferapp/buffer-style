@@ -44,7 +44,18 @@
 
 .card-post-meta,
 .card-post-analytics-meta {
+  flex-direction: row;
+  justify-content: flex-start;
+
+  display: flex;
   padding: 0 16px;
+  height: 32px;
+
+  line-height: 32px;
+
+  background-color: $backgroundFillColor;
+  border-top: 1px solid $borderColor;
+  border-radius: 0 0 7px 7px;
 
   font-size: 10px;
 }
@@ -63,14 +74,6 @@
 }
 
 .card-post-meta {
-  height: 32px;
-
-  line-height: 32px;
-
-  background-color: $backgroundFillColor;
-  border-top: 1px solid $borderColor;
-  border-radius: 0 0 7px 7px;
-
   &:hover {
     .card-post-meta-menu {
       opacity: 1;
@@ -81,22 +84,13 @@
   }
 }
 
-.card-post-meta-tag,
-.card-post-meta-time,
-.card-post-meta-time-pinned,
-.card-post-meta-time-pinned-arrow,
-.card-post-meta-via,
-.card-post-meta-user,
-.card-post-meta-user-profile-picture,
-.card-post-meta-user-name {
-  float: left;
-}
-
 .card-post-meta-time-pinned {
+  flex-grow: 0;
+
   position: relative;
 
   margin: 2px 16px 2px -18px;
-  padding: 0 8px 0 16px;
+  padding-left: 16px;
   height: 27px;
 
   line-height: 27px;
@@ -124,11 +118,31 @@
   border-left: 8px solid $actionableColor;
 }
 
+.card-post-meta-tag {
+  flex-grow: 0;
+
+  margin: 7px 8px 7px 0;
+}
+
 .card-post-meta-time {
+  flex-grow: 0;
+
   margin-right: 8px;
+
+  font-weight: 600;
+}
+
+.card-post-meta-via {
+  flex-grow: 0;
 }
 
 .card-post-meta-user {
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-grow: 1;
+
+  display: flex;
+
   margin: 4px 0 4px 16px;
   padding: 4px 0;
 }
@@ -140,18 +154,36 @@
   line-height: normal;
 }
 
+.card-post-meta-user-profile-picture {
+  flex-grow: 0;
+}
+
+.card-post-meta-user-name {
+  flex-grow: 1;
+}
+
 .card-post-meta-menu {
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-grow: 0;
+
+  display: flex;
+
   margin: 0;
-  float: right;
+
+  list-style: none;
 
   opacity: 0;
 }
 
 .card-post-meta-menu-item {
-  display: inline;
+  flex-grow: 1;
+
   margin: 0 16px 0 0;
 
   & a {
+    display: block;
+
     color: $titleColor;
 
     &:hover {
@@ -192,27 +224,8 @@
   margin-left: 8px;
 }
 
-.card-post-analytics-meta-data-stats {
-  margin-right: -16px;
-  margin-left: -16px;
-  padding: 0 16px;
-  display: block;
-  height: 32px;
-
-  line-height: 32px;
-
-  background-color: $backgroundFillColor;
-  border-top: 1px solid $borderColor;
-  border-radius: 0 0 7px 7px;
-
-  &::after {
-    clear: both;
-  }
-}
-
 .card-post-analytics-meta-data-stat {
-  float: left;
-  width: 20%;
+  flex-grow: 1;
 
   text-align: center;
 }

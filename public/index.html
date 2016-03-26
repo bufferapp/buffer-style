@@ -232,7 +232,7 @@
     &lt;/div>
     &lt;div class="card-post-meta-user">
       &lt;span class="card-post-meta-user-profile-picture">
-        &lt;img class="profile-picture profile-picture--small" src="#" >
+        &lt;img class="profile-picture profile-picture--small" src="#">
       &lt;/span>
       &lt;span class="card-post-meta-user-name">
         steve@buffer.com
@@ -537,22 +537,20 @@
                   </div>
                 </div>
                 <div class="card-post-analytics-meta">
-                  <div class="card-post-analytics-meta-data-stats">
-                    <div class="card-post-analytics-meta-data-stat">
-                      <i class="bi bi-retweet"></i><span class="card-post-stat">0</span> retweets
-                    </div>
-                    <div class="card-post-analytics-meta-data-stat">
-                      <i class="bi bi-like"></i><span class="card-post-stat">2</span> likes
-                    </div>
-                    <div class="card-post-analytics-meta-data-stat">
-                      <i class="bi bi-comment"></i><span class="card-post-stat">0</span> mentions
-                    </div>
-                    <div class="card-post-analytics-meta-data-stat">
-                      <i class="bi bi-click"></i><span class="card-post-stat">6</span> clicks
-                    </div>
-                    <div class="card-post-analytics-meta-data-stat">
-                      <i class="bi bi-view"></i><span class="card-post-stat">843</span> potential
-                    </div>
+                  <div class="card-post-analytics-meta-data-stat">
+                    <i class="bi bi-retweet"></i><span class="card-post-stat">0</span> retweets
+                  </div>
+                  <div class="card-post-analytics-meta-data-stat">
+                    <i class="bi bi-like"></i><span class="card-post-stat">2</span> likes
+                  </div>
+                  <div class="card-post-analytics-meta-data-stat">
+                    <i class="bi bi-comment"></i><span class="card-post-stat">0</span> mentions
+                  </div>
+                  <div class="card-post-analytics-meta-data-stat">
+                    <i class="bi bi-click"></i><span class="card-post-stat">6</span> clicks
+                  </div>
+                  <div class="card-post-analytics-meta-data-stat">
+                    <i class="bi bi-view"></i><span class="card-post-stat">843</span> potential
                   </div>
                 </div>
               </div>
@@ -571,22 +569,20 @@
     &lt;/div>
   &lt;/div>
   &lt;div class="card-post-analytics-meta">
-    &lt;div class="card-post-analytics-meta-data-stats">
-      &lt;div class="card-post-analytics-meta-data-stat">
-        &lt;i class="bi bi-retweet">&lt;/i>&lt;span class="card-post-stat">0&lt;/span> retweets
-      &lt;/div>
-      &lt;div class="card-post-analytics-meta-data-stat">
-        &lt;i class="bi bi-like">&lt;/i>&lt;span class="card-post-stat">2&lt;/span> likes
-      &lt;/div>
-      &lt;div class="card-post-analytics-meta-data-stat">
-        &lt;i class="bi bi-comment">&lt;/i>&lt;span class="card-post-stat">0&lt;/span> mentions
-      &lt;/div>
-      &lt;div class="card-post-analytics-meta-data-stat">
-        &lt;i class="bi bi-click">&lt;/i>&lt;span class="card-post-stat">6&lt;/span> clicks
-      &lt;/div>
-      &lt;div class="card-post-analytics-meta-data-stat">
-        &lt;i class="bi bi-view">&lt;/i>&lt;span class="card-post-stat">843&lt;/span> potential
-      &lt;/div>
+    &lt;div class="card-post-analytics-meta-data-stat">
+      &lt;i class="bi bi-retweet">&lt;/i>&lt;span class="card-post-stat">0&lt;/span> retweets
+    &lt;/div>
+    &lt;div class="card-post-analytics-meta-data-stat">
+      &lt;i class="bi bi-like">&lt;/i>&lt;span class="card-post-stat">2&lt;/span> likes
+    &lt;/div>
+    &lt;div class="card-post-analytics-meta-data-stat">
+      &lt;i class="bi bi-comment">&lt;/i>&lt;span class="card-post-stat">0&lt;/span> mentions
+    &lt;/div>
+    &lt;div class="card-post-analytics-meta-data-stat">
+      &lt;i class="bi bi-click">&lt;/i>&lt;span class="card-post-stat">6&lt;/span> clicks
+    &lt;/div>
+    &lt;div class="card-post-analytics-meta-data-stat">
+      &lt;i class="bi bi-view">&lt;/i>&lt;span class="card-post-stat">843&lt;/span> potential
     &lt;/div>
   &lt;/div>
 &lt;/div></pre>
@@ -669,6 +665,32 @@
     <section class="section">
       <section class="card">
         <section class="section-secondary">
+          <h1 class="section-secondary-title">SideBars</h1>
+          <p>A description on SideBars.</p>
+        </section>
+        <section class="section-secondary section-secondary--last">
+          <h2 class="section-secondary-title">SideBar</h2>
+          <p>This is the base object for the <code>sidebar</code> object.</p>
+          <div class="code-block code-block--last">
+            <div class="code-block-title">
+              Example:
+            </div>
+            <div class="code-block-render">
+              <div class="code-block-render-example">
+                <p>Object render goes here!</p>
+              </div>
+            </div>
+            <div class="code-block-code">
+              <pre>Object markup goes here!</pre>
+            </div>
+          </div>
+        </section>
+      </section>
+    </section>
+
+    <section class="section">
+      <section class="card">
+        <section class="section-secondary">
           <h1 class="section-secondary-title">Profile Pictures</h1>
           <p>Profile Pictures are objects designed to display a user's profile picture.</p>
         </section>
@@ -709,6 +731,57 @@
     &lt;i class="bi bi-circle-twitter">&lt;/i>
   &lt;/div>
 &lt;/div></pre>
+            </div>
+          </div>
+        </section>
+        <section class="section-secondary">
+          <h2 class="section-secondary-title">Profile Picture -- Inactive</h2>
+          <p>This is a modifier for the <code>profile-picture</code> object, which grayscales our customers' profile picture. When used with the <code>profile-picture-with-icon</code>, it also grayscales the social network icon.</p>
+          <div class="code-block code-block">
+            <div class="code-block-title">
+              Example:
+            </div>
+            <div class="code-block-render">
+              <img class="profile-picture profile-picture--inactive code-block-render-example" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
+            </div>
+            <div class="code-block-code">
+<pre>&lt;img class="profile-picture profile-picture--inactive" src="#"></pre>
+            </div>
+          </div>
+          <div class="code-block code-block--last">
+            <div class="code-block-title">
+              Example:
+            </div>
+            <div class="code-block-render">
+              <div class="profile-picture-with-icon profile-picture--inactive code-block-render-example">
+                <img class="profile-picture" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
+                <div class="profile-picture-icon">
+                  <i class="bi bi-circle-twitter"></i>
+                </div>
+              </div>
+            </div>
+            <div class="code-block-code">
+              <pre>&lt;div class="profile-picture-with-icon profile-picture--inactive">
+  &lt;img class="profile-picture" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
+  &lt;div class="profile-picture-icon">
+    &lt;i class="bi bi-circle-twitter">&lt;/i>
+  &lt;/div>
+&lt;/div></pre>
+            </div>
+          </div>
+        </section>
+        <section class="section-secondary section-secondary--last">
+          <h2 class="section-secondary-title">Profile Picture -- Large</h2>
+          <p>This is a modified <code>profile-picture</code> object. It modifies the <code>profile-picture</code> object's <code>width</code> and <code>height</code>.</p>
+          <div class="code-block code-block--last">
+            <div class="code-block-title">
+              Example:
+            </div>
+            <div class="code-block-render">
+              <img class="profile-picture profile-picture--large code-block-render-example" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
+            </div>
+            <div class="code-block-code">
+<pre>&lt;img class="profile-picture profile-picture--large" src="#"></pre>
             </div>
           </div>
         </section>

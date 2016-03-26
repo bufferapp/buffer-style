@@ -154,7 +154,15 @@ p {
 
 .card-post-meta,
 .card-post-analytics-meta {
+  flex-direction: row;
+  justify-content: flex-start;
+  display: flex;
   padding: 0 16px;
+  height: 32px;
+  line-height: 32px;
+  background-color: #f4f7f9;
+  border-top: 1px solid #ced7df;
+  border-radius: 0 0 7px 7px;
   font-size: 10px; }
 
 .card-post-meta-time-zone,
@@ -167,31 +175,17 @@ p {
   font-weight: bold;
   color: #323b43; }
 
-.card-post-meta {
-  height: 32px;
-  line-height: 32px;
-  background-color: #f4f7f9;
-  border-top: 1px solid #ced7df;
-  border-radius: 0 0 7px 7px; }
-  .card-post-meta:hover .card-post-meta-menu {
-    opacity: 1; }
-  .card-post-meta::after {
-    clear: both; }
+.card-post-meta:hover .card-post-meta-menu {
+  opacity: 1; }
 
-.card-post-meta-tag,
-.card-post-meta-time,
-.card-post-meta-time-pinned,
-.card-post-meta-time-pinned-arrow,
-.card-post-meta-via,
-.card-post-meta-user,
-.card-post-meta-user-profile-picture,
-.card-post-meta-user-name {
-  float: left; }
+.card-post-meta::after {
+  clear: both; }
 
 .card-post-meta-time-pinned {
+  flex-grow: 0;
   position: relative;
   margin: 2px 16px 2px -18px;
-  padding: 0 8px 0 16px;
+  padding-left: 16px;
   height: 27px;
   line-height: 27px;
   color: #fff;
@@ -212,10 +206,23 @@ p {
   border-bottom: 13.5px solid transparent;
   border-left: 8px solid #168eea; }
 
+.card-post-meta-tag {
+  flex-grow: 0;
+  margin: 7px 8px 7px 0; }
+
 .card-post-meta-time {
-  margin-right: 8px; }
+  flex-grow: 0;
+  margin-right: 8px;
+  font-weight: 600; }
+
+.card-post-meta-via {
+  flex-grow: 0; }
 
 .card-post-meta-user {
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-grow: 1;
+  display: flex;
   margin: 4px 0 4px 16px;
   padding: 4px 0; }
 
@@ -224,15 +231,26 @@ p {
   font-weight: 600;
   line-height: normal; }
 
+.card-post-meta-user-profile-picture {
+  flex-grow: 0; }
+
+.card-post-meta-user-name {
+  flex-grow: 1; }
+
 .card-post-meta-menu {
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-grow: 0;
+  display: flex;
   margin: 0;
-  float: right;
+  list-style: none;
   opacity: 0; }
 
 .card-post-meta-menu-item {
-  display: inline;
+  flex-grow: 1;
   margin: 0 16px 0 0; }
   .card-post-meta-menu-item a {
+    display: block;
     color: #323b43; }
     .card-post-meta-menu-item a:hover {
       color: #000; }
@@ -262,22 +280,8 @@ p {
 .card-post-analytics-posted-via {
   margin-left: 8px; }
 
-.card-post-analytics-meta-data-stats {
-  margin-right: -16px;
-  margin-left: -16px;
-  padding: 0 16px;
-  display: block;
-  height: 32px;
-  line-height: 32px;
-  background-color: #f4f7f9;
-  border-top: 1px solid #ced7df;
-  border-radius: 0 0 7px 7px; }
-  .card-post-analytics-meta-data-stats::after {
-    clear: both; }
-
 .card-post-analytics-meta-data-stat {
-  float: left;
-  width: 20%;
+  flex-grow: 1;
   text-align: center; }
 
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
@@ -400,6 +404,10 @@ p {
 /* Base Object
 ------------------------------------------------------------ */
 .navbar {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+  display: flex;
   margin-bottom: 32px;
   position: fixed;
   top: 0;
@@ -411,12 +419,10 @@ p {
   line-height: 64px;
   background-color: #fff;
   border-bottom: 1px solid #ced7df; }
-  .navbar::after {
-    clear: both; }
 
 .navbar-title {
-  float: left;
-  width: 20%;
+  flex-grow: 0;
+  margin-right: 16px;
   font-weight: 600; }
 
 .navbar-menu-left,
@@ -424,13 +430,10 @@ p {
   margin: 0; }
 
 .navbar-menu-left {
-  float: left;
-  width: 40%; }
+  flex-grow: 1; }
 
 .navbar-menu-right {
-  float: right;
-  width: 40%;
-  text-align: right; }
+  flex-grow: 0; }
 
 .navbar-menu-item {
   display: inline;
@@ -477,6 +480,17 @@ p {
 
 /* Base Object - Modifiers
 ------------------------------ */
+.profile-picture--inactive {
+  filter: grayscale(1);
+  opacity: 0.5; }
+  .profile-picture--inactive .profile-picture-icon .bi {
+    color: #323b43; }
+
+.profile-picture--large {
+  width: 48px;
+  height: 48px;
+  border-radius: 32px; }
+
 .profile-picture--small {
   width: 16px;
   height: 16px;
@@ -514,7 +528,6 @@ p {
 /* Base Object
 ------------------------------------------------------------ */
 .tag {
-  margin: 7px 8px 7px 0;
   padding: 0 4px;
   height: 18px;
   font-size: 10px;
