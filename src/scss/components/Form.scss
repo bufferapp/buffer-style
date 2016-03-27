@@ -1,0 +1,42 @@
+@import "../base/variables";
+
+/* Base Objects
+------------------------------------------------------------ */
+.input {
+  margin: 0;
+  padding: 0 4px;
+  height: 32px;
+
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  color: $bodyColor;
+
+  border: 1px solid $borderColor;
+  border-radius: $borderRadiusLevel2;
+
+  outline: none;
+
+  &:focus {
+    color: $actionableColor;
+
+    border-color: $actionableColor;
+  }
+}
+
+.input--with-icon {
+  position: relative;
+}
+
+.input--with-icon .bi {
+  position: absolute;
+  top: 5px;
+  left: 8px;
+
+  margin: 0;
+
+  color: $borderColor;
+}
+
+.input--icon {
+  padding-left: 28px;
+}

@@ -301,6 +301,52 @@ p {
 ------------------------------------------------------------ */
 /* Box Shadows
 ------------------------------------------------------------ */
+/* Base Objects
+------------------------------------------------------------ */
+.input {
+  margin: 0;
+  padding: 0 4px;
+  height: 32px;
+  font-family: "open sans", sans-serif;
+  font-size: 14px;
+  color: #59626a;
+  border: 1px solid #ced7df;
+  border-radius: 4px;
+  outline: none; }
+  .input:focus {
+    color: #168eea;
+    border-color: #168eea; }
+
+.input--with-icon {
+  position: relative; }
+
+.input--with-icon .bi {
+  position: absolute;
+  top: 5px;
+  left: 8px;
+  margin: 0;
+  color: #ced7df; }
+
+.input--icon {
+  padding-left: 28px; }
+
+/* Global Reset // We'll pull in a common reset here, perhaps in another file!
+------------------------------------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* Primary Palette
+------------------------------------------------------------ */
+/* Brands Palette
+------------------------------------------------------------ */
+/* Font
+------------------------------------------------------------ */
+/* Border Radii
+------------------------------------------------------------ */
+/* Box Shadows
+------------------------------------------------------------ */
 /* Base Object
 ------------------------------------------------------------ */
 .bi {
@@ -409,8 +455,6 @@ p {
   align-content: flex-start;
   display: flex;
   margin-bottom: 32px;
-  position: fixed;
-  top: 0;
   padding: 0 16px;
   width: 100%;
   height: 64px;
@@ -507,6 +551,51 @@ p {
   left: 16px;
   margin-right: 0;
   font-size: 16px; }
+
+/* Global Reset // We'll pull in a common reset here, perhaps in another file!
+------------------------------------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* Primary Palette
+------------------------------------------------------------ */
+/* Brands Palette
+------------------------------------------------------------ */
+/* Font
+------------------------------------------------------------ */
+/* Border Radii
+------------------------------------------------------------ */
+/* Box Shadows
+------------------------------------------------------------ */
+/* Base Object
+------------------------------------------------------------ */
+.sidebar {
+  margin-top: -32px;
+  padding: 16px;
+  width: 256px;
+  min-height: 100vh;
+  background-color: #f8f8f8;
+  border-right: 1px solid #ced7df;
+  order: -1; }
+
+/* Base Objects
+------------------------------------------------------------ */
+.sidebar-search-profiles-input {
+  width: 100%; }
+
+.sidebar-accounts {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+  display: flex; }
+
+.sidebar-accounts-title {
+  flex-grow: 2; }
+
+.sidebar-accounts-button {
+  flex-grow: 0; }
 
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
