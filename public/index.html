@@ -1,1259 +1,1371 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
     <title>Buffer Style Guide</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/guide.css">
-    <link rel="stylesheet" href="//s3.amazonaws.com/buffer-icons/0.2.0/buffer-icons.css" type="text/css" />
+    <link rel="stylesheet" href="//s3.amazonaws.com/buffer-icons/0.3.0/buffer-icons.css" type="text/css" />
   </head>
-  <body>
+  <body class="app">
     <header class="navbar">
-      <div class="navbar-title">
+      <nav class="navbar-title">
         <i class="bi bi-buffer"></i>Buffer Style Guide
-      </div>
+      </nav>
     </header>
 
-    <section class="section">
-      <section class="card card--last">
-        <section class="section-secondary">
-          <h1 class="section-secondary-title">The Buffer Style Guide</h1>
-          <p>The Buffer Style Guide defines a set of base components. The Buffer Style Guide is designed with these goals in mind:</p>
-          <ul>
-            <li>Provide a set of core components that are currently used within the product and to allow new components to be built from those.</li>
-            <li>Introduce a level of thinking when building and designing.</li>
-            <li>Make software development easier.</li>
+    <section class="body">
+
+      <aside class="sidebar">
+        <!-- <div class="card card--last">
+          <ul class="sidebar-style-guide-list">
+            <li>
+              <a href="#the-buffer-style-guide">The Buffer Style Guide</a>
+            </li>
+            <li>
+              <a href="#typography">Typography</a>
+            </li>
+            <li>
+              <a href="#cards">Cards</a>
+            </li>
+            <li>
+              <a href="#navbars">NavBars</a>
+            </li>
+            <li>
+              <a href="#sidebars">SideBars</a>
+            </li>
+            <li>
+              <a href="#profile-pictures">Profile Pictures</a>
+            </li>
+            <li>
+              <a class="sidebar-style-guide-list--last" href="#modals">Modals</a>
+            </li>
           </ul>
-        </section>
-        <section class="section-secondary">
-          <h2 class="section-secondary-title">Engineering Buffer</h2>
-          <h3>How we think of Buffer</h3>
-          <p>We think of Buffer as a collection of base objects that when put together, create the Buffer product. When we explore new ideas, we default to what base objects are already available to us and if required, reuse and modify them to our needs. In some cases, these ideas lead to brand new objects that become base objects and are then added to the Buffer Style Guide.</p>
-          <p>To help frame this thinking, we think of design at Buffer as object-oriented design and utilise a variation of the <a href="http://getbem.com/introduction/">BEM methodology</a>, replacing "blocks" for "objects" and categorising "elements" as objects too. This could be thought of as the OM methodology.</p>
-          <h4>Objects</h4>
-          <p>Objects are standalone entities that are meaningful on their own. Examples of objects could be <code>card</code>, <code>navbar</code>, and <code>button</code>. These can be used together has part of a larger object or individually.</p>
-          <h4>Modifiers</h4>
-          <p>Modifiers are flags on objects. They modify the appearance or behaviour of objects. For example, <code>--hidden</code> would be a modifier that would set an object to be hidden. Modifiers are always prefixed with a double-dash: <code>--</code>.</p>
-        </section>
-        <section class="section-secondary section-secondary--last">
-          <h2 class="section-secondary-title">Designing Buffer</h2>
-          <h4>Sketch and File Names</h4>
-          <p>Our primary tool of choice for design in <a href="https://www.sketchapp.com">Sketch</a>. When working on a new idea or modifying an existing idea, we begin with the base file for that particular task. For example, updating how posts are displayed within the Content tab could be achieved by duplicating the <code>buffer-web-v1.0</code> Sketch document and updating its file name. Depending on the level of the change we're looking to make determines what we will increment the version number by. For example, a slight copy change might only increment the file version by <code>.X.X</code>, or perhaps a new page in the document might increment by <code>.X</code>. For any larger work or complete overhauls, we would increase the version number by a whole number completely.</p>
-          <p>To help determine who last worked on the file in case we might need some advice, we affix our initials to the end of the file name, such as <code>buffer-web-v1.0-sd</code>.</p>
-          <h4>Layers, Groups and Symbols</h4>
-          <p>Sketch is such an amazing product with fantastic layer and symbol functionality. We're super passionate about keeping the cohesion between design and engineering that we strive to keep the names of our layers and symbols the same as we would our code. In all cases, we strive to construct objects with how they might be constructed in code by using groups and symbols. For example, when using a <code>button</code> object in our Sketch files, we might name that button's group <code>.button .button--primary</code>. This way, any engineers that open our Sketch files have complete knowledge of what that object is and what they need to look for/modify when coding.</p>
-        </section>
-      </section>
-    </section>
+        </div> -->
 
-    <section class="section">
-      <section class="card card--last">
-          <section class="section-secondary">
-            <h1 class="section-secondary-title">Typography</h1>
-            <p>We exclusively use <a href="https://www.google.com/fonts/specimen/Open+Sans">Open Sans</a> as the base typeface for the Buffer product.</p>
-          </section>
-          <section class="section-secondary">
-            <h2 class="section-secondary-title">Heading Level 1</h2>
-            <p>The Heading Level 1 object is used for the primary heading of a page. Semantically, a <code>h1</code> might not always be styled below i.e. if using a <code>h1</code> in a <code>navbar</code>, it will appear differently than in the example below. The example below shows an unaltered, base style for our <code>h1</code> object.</p>
-            <div class="code-block">
-              <div class="code-block-title">
-                Example:
-              </div>
-              <div class="code-block-render">
-                <h1 class="code-block-render-example">Heading Level 1</h1>
-              </div>
-              <div class="code-block-code">
-                <pre>&lt;h1&gt;Heading Level 1&lt;/h1&gt;</pre>
-              </div>
-            </div>
-          </section>
-          <section class="section-secondary">
-            <h2 class="section-secondary-title">Heading Level 2</h2>
-            <p>The Heading Level 2 object is used for the secondary headings of a page.</p>
-            <div class="code-block">
-              <div class="code-block-title">
-                Example:
-              </div>
-              <div class="code-block-render">
-                <h2 class="code-block-render-example">Heading Level 2</h2>
-              </div>
-              <div class="code-block-code">
-                <pre>&lt;h2&gt;Heading Level 2&lt;/h2&gt;</pre>
-              </div>
-            </div>
-          </section>
-          <section class="section-secondary">
-            <h2 class="section-secondary-title">Heading Level 3</h2>
-            <p>The Heading Level 3 object is used for the tertiary headings of a page.</p>
-            <div class="code-block">
-              <div class="code-block-title">
-                Example:
-              </div>
-              <div class="code-block-render">
-                <h3 class="code-block-render-example">Heading Level 3</h3>
-              </div>
-              <div class="code-block-code">
-                <pre>&lt;h3&gt;Heading Level 3&lt;/h3&gt;</pre>
-              </div>
-            </div>
-          </section>
-          <section class="section-secondary section-secondary--last">
-            <h2 class="section-secondary-title">Heading Level 4, 5, and 6</h2>
-            <p>The Heading Level 4, 5, and 6 objects are used for various headings of a page.</p>
-            <div class="code-block">
-              <div class="code-block-title">
-                Example:
-              </div>
-              <div class="code-block-render">
-                <h4 class="code-block-render-example">Heading Level 4</h4>
-              </div>
-              <div class="code-block-code">
-                <pre>&lt;h4&gt;Heading Level 4&lt;/h4&gt;</pre>
-              </div>
-            </div>
-            <div class="code-block">
-              <div class="code-block-title">
-                Example:
-              </div>
-              <div class="code-block-render">
-                <h5 class="code-block-render-example">Heading Level 5</h5>
-              </div>
-              <div class="code-block-code">
-                <pre>&lt;h5&gt;Heading Level 5&lt;/h5&gt;</pre>
-              </div>
-            </div>
-            <div class="code-block code-block--last">
-              <div class="code-block-title">
-                Example:
-              </div>
-              <div class="code-block-render">
-                <h6 class="code-block-render-example">Heading Level 6</h6>
-              </div>
-              <div class="code-block-code">
-                <pre>&lt;h6&gt;Heading Level 6&lt;/h6&gt;</pre>
-              </div>
-            </div>
-          </section>
-      </section>
-    </section>
+        <section class="sidebar-search-profiles">
+          <div class="input--with-icon">
+            <i class="bi bi-search"></i><input class="sidebar-search-profiles-input input input--icon" placeholder="Search Profiles" type="text">
+          </div>
+        </section>
 
-    <section class="section">
-      <section class="card">
-        <section class="section-secondary">
-          <h1 class="section-secondary-title">Cards</h1>
-          <p>Cards are a general-use object that hold different parts of the UI.</p>
-        </section>
-        <section class="section-secondary">
-          <h2 class="section-secondary-title">Card</h2>
-          <p>This is the base object for the <code>card</code> object.</p>
-          <div class="code-block code-block--last">
-            <div class="code-block-title">
-              Example:
-            </div>
-            <div class="code-block-render">
-              <div class="card code-block-render-example">
-              </div>
-            </div>
-            <div class="code-block-code">
-<pre>&lt;div class="card">
-&lt;/div></pre>
-            </div>
-          </div>
-          <h2>Card -- Empty</h2>
-          <p>This is a modified <code>card</code> object. It doesn't introduce any new functionality nor UI. It simply modifies the <code>card</code> object's <code>border-style</code>.</p>
-          <div class="code-block code-block--last">
-            <div class="code-block-title">
-              Example:
-            </div>
-            <div class="code-block-render">
-              <div class="card card--empty code-block-render-example">
-              </div>
-            </div>
-            <div class="code-block-code">
-<pre>&lt;div class="card card--empty">
-&lt;/div></pre>
-            </div>
+        <section class="sidebar-accounts">
+          <h6 class="sidebar-accounts-title">Accounts</h6>
+          <div class="sidebar-accounts-button">
+            <button class="button button--primary"><i class="bi bi-circle-plus"></i>Add Account</button>
           </div>
         </section>
-        <section class="section-secondary section-secondary--last">
-          <h2 class="section-secondary-title">Card - Post</h2>
-          <p>The <code>card-post</code> object inherits from the base <code>card</code> object and adds further functionality and UI. This object is used when a post is displayed.</p>
-          <div class="code-block">
-            <div class="code-block-title">
-              Example:
-            </div>
-            <div class="code-block-render">
-              <div class="card card-post code-block-render-example">
-                <div class="card-post-content">
-                  <p>What is a Product Designer? An awesome story by <a href="#">@jgadapee</a> over on Medium! <a href="#">http://buff.ly/1LTbUqv</a></p>
+        
+      </aside>
+
+      <main class="content">
+
+        <section class="section">
+          <section class="card card--last">
+            <section class="section-secondary">
+              <h1 class="section-secondary-title">The Buffer Style Guide</h1>
+              <p>The Buffer Style Guide defines a set of base components. The Buffer Style Guide is designed with these goals in mind:</p>
+              <ul>
+                <li>Provide a set of core components that are currently used within the product and to allow new components to be built from those.</li>
+                <li>Introduce a level of thinking when building and designing.</li>
+                <li>Make software development easier.</li>
+              </ul>
+            </section>
+            <section class="section-secondary">
+              <h2 class="section-secondary-title">Engineering Buffer</h2>
+              <h3>How we think of Buffer</h3>
+              <p>We think of Buffer as a collection of base objects that when put together, create the Buffer product. When we explore new ideas, we default to what base objects are already available to us and if required, reuse and modify them to our needs. In some cases, these ideas lead to brand new objects that become base objects and are then added to the Buffer Style Guide.</p>
+              <p>To help frame this thinking, we think of design at Buffer as object-oriented design and utilise a variation of the <a href="http://getbem.com/introduction/">BEM methodology</a>, replacing "blocks" for "objects" and categorising "elements" as objects too. This could be thought of as the OM methodology.</p>
+              <h4>Objects</h4>
+              <p>Objects are standalone entities that are meaningful on their own. Examples of objects could be <code>card</code>, <code>navbar</code>, and <code>button</code>. These can be used together has part of a larger object or individually.</p>
+              <h4>Modifiers</h4>
+              <p>Modifiers are flags on objects. They modify the appearance or behaviour of objects. For example, <code>--hidden</code> would be a modifier that would set an object to be hidden. Modifiers are always prefixed with a double-dash: <code>--</code>.</p>
+            </section>
+            <section class="section-secondary section-secondary--last">
+              <h2 class="section-secondary-title">Designing Buffer</h2>
+              <h4>Sketch and File Names</h4>
+              <p>Our primary tool of choice for design in <a href="https://www.sketchapp.com">Sketch</a>. When working on a new idea or modifying an existing idea, we begin with the base file for that particular task. For example, updating how posts are displayed within the Content tab could be achieved by duplicating the <code>buffer-web-v1.0</code> Sketch document and updating its file name. Depending on the level of the change we're looking to make determines what we will increment the version number by. For example, a slight copy change might only increment the file version by <code>.X.X</code>, or perhaps a new page in the document might increment by <code>.X</code>. For any larger work or complete overhauls, we would increase the version number by a whole number completely.</p>
+              <p>To help determine who last worked on the file in case we might need some advice, we affix our initials to the end of the file name, such as <code>buffer-web-v1.0-sd</code>.</p>
+              <h4>Layers, Groups and Symbols</h4>
+              <p>Sketch is such an amazing product with fantastic layer and symbol functionality. We're super passionate about keeping the cohesion between design and engineering that we strive to keep the names of our layers and symbols the same as we would our code. In all cases, we strive to construct objects with how they might be constructed in code by using groups and symbols. For example, when using a <code>button</code> object in our Sketch files, we might name that button's group <code>.button .button--primary</code>. This way, any engineers that open our Sketch files have complete knowledge of what that object is and what they need to look for/modify when coding.</p>
+            </section>
+          </section>
+        </section>
+
+        <section class="section">
+          <section class="card card--last">
+              <section class="section-secondary">
+                <h1 class="section-secondary-title">Typography</h1>
+                <p>We exclusively use <a href="https://www.google.com/fonts/specimen/Open+Sans">Open Sans</a> as the base typeface for the Buffer product.</p>
+              </section>
+              <section class="section-secondary">
+                <h2 class="section-secondary-title">Heading Level 1</h2>
+                <p>The Heading Level 1 object is used for the primary heading of a page. Semantically, a <code>h1</code> might not always be styled below i.e. if using a <code>h1</code> in a <code>navbar</code>, it will appear differently than in the example below. The example below shows an unaltered, base style for our <code>h1</code> object.</p>
+                <div class="code-block">
+                  <div class="code-block-title">
+                    Example:
+                  </div>
+                  <div class="code-block-render">
+                    <h1 class="code-block-render-example">Heading Level 1</h1>
+                  </div>
+                  <div class="code-block-code">
+                    <pre>&lt;h1&gt;Heading Level 1&lt;/h1&gt;</pre>
+                  </div>
                 </div>
-                <div class="card-post-meta">
-                  <div class="card-post-meta-time">
-                    <span class="card-post-stat">09:42</span> <span class="card-post-meta-time-zone">(GMT)</span>
+              </section>
+              <section class="section-secondary">
+                <h2 class="section-secondary-title">Heading Level 2</h2>
+                <p>The Heading Level 2 object is used for the secondary headings of a page.</p>
+                <div class="code-block">
+                  <div class="code-block-title">
+                    Example:
                   </div>
-                  <div class="card-post-meta-via">
-                    via Extension
+                  <div class="code-block-render">
+                    <h2 class="code-block-render-example">Heading Level 2</h2>
                   </div>
-                  <div class="card-post-meta-user">
-                    <span class="card-post-meta-user-profile-picture">
-                      <img class="profile-picture profile-picture--small" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
-                    </span>
-                    <span class="card-post-meta-user-name">
-                      steve@buffer.com
-                    </span>
+                  <div class="code-block-code">
+                    <pre>&lt;h2&gt;Heading Level 2&lt;/h2&gt;</pre>
                   </div>
-                  <ul class="card-post-meta-menu">
-                    <li class="card-post-meta-menu-item">
-                      <a href="#"><i class="bi bi-x"></i>Delete</a>
-                    </li>
-                    <li class="card-post-meta-menu-item">
-                      <a href="#"><i class="bi bi-edit"></i>Edit</a>
-                    </li>
-                    <li class="card-post-meta-menu-item">
-                      <a href="#"><i class="bi bi-arrow-up"></i>Move to Top</a>
-                    </li>
-                    <li class="card-post-meta-menu-item card-post-meta-menu-item--last">
-                      <a href="#"><i class="bi bi-arrow-right"></i>Share Now</a>
-                    </li>
-                  </ul>
+                </div>
+              </section>
+              <section class="section-secondary">
+                <h2 class="section-secondary-title">Heading Level 3</h2>
+                <p>The Heading Level 3 object is used for the tertiary headings of a page.</p>
+                <div class="code-block">
+                  <div class="code-block-title">
+                    Example:
+                  </div>
+                  <div class="code-block-render">
+                    <h3 class="code-block-render-example">Heading Level 3</h3>
+                  </div>
+                  <div class="code-block-code">
+                    <pre>&lt;h3&gt;Heading Level 3&lt;/h3&gt;</pre>
+                  </div>
+                </div>
+              </section>
+              <section class="section-secondary section-secondary--last">
+                <h2 class="section-secondary-title">Heading Level 4, 5, and 6</h2>
+                <p>The Heading Level 4, 5, and 6 objects are used for various headings of a page.</p>
+                <div class="code-block">
+                  <div class="code-block-title">
+                    Example:
+                  </div>
+                  <div class="code-block-render">
+                    <h4 class="code-block-render-example">Heading Level 4</h4>
+                  </div>
+                  <div class="code-block-code">
+                    <pre>&lt;h4&gt;Heading Level 4&lt;/h4&gt;</pre>
+                  </div>
+                </div>
+                <div class="code-block">
+                  <div class="code-block-title">
+                    Example:
+                  </div>
+                  <div class="code-block-render">
+                    <h5 class="code-block-render-example">Heading Level 5</h5>
+                  </div>
+                  <div class="code-block-code">
+                    <pre>&lt;h5&gt;Heading Level 5&lt;/h5&gt;</pre>
+                  </div>
+                </div>
+                <div class="code-block code-block--last">
+                  <div class="code-block-title">
+                    Example:
+                  </div>
+                  <div class="code-block-render">
+                    <h6 class="code-block-render-example">Heading Level 6</h6>
+                  </div>
+                  <div class="code-block-code">
+                    <pre>&lt;h6&gt;Heading Level 6&lt;/h6&gt;</pre>
+                  </div>
+                </div>
+              </section>
+          </section>
+        </section>
+
+        <section class="section">
+          <section class="card">
+            <section class="section-secondary">
+              <h1 class="section-secondary-title">Cards</h1>
+              <p>Cards are a general-use object that hold different parts of the UI.</p>
+            </section>
+            <section class="section-secondary">
+              <h2 class="section-secondary-title">Card</h2>
+              <p>This is the base object for the <code>card</code> object.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <div class="card code-block-render-example">
+                  </div>
+                </div>
+                <div class="code-block-code">
+    <pre>&lt;div class="card">
+    &lt;/div></pre>
                 </div>
               </div>
-            </div>
-            <div class="code-block-code">
-              <pre>&lt;div class="card card-post code-block-render-example">
-  &lt;div class="card-post-content">
-    &lt;p>What is a Product Designer? An awesome story by &lt;a href="#">@jgadapee&lt;/a> over on Medium! &lt;a href="#">http://buff.ly/1LTbUqv&lt;/a>&lt;/p>
-  &lt;/div>
-  &lt;div class="card-post-meta">
-    &lt;div class="card-post-meta-time">
-      &lt;span class="card-post-stat">09:42&lt;/span> &lt;span class="card-post-meta-time-zone">(GMT)&lt;/span>
-    &lt;/div>
-    &lt;div class="card-post-meta-via">
-      via Extension
-    &lt;/div>
-    &lt;div class="card-post-meta-user">
-      &lt;span class="card-post-meta-user-profile-picture">
-        &lt;img class="profile-picture profile-picture--small" src="#">
-      &lt;/span>
-      &lt;span class="card-post-meta-user-name">
-        steve@buffer.com
-      &lt;/span>
-    &lt;/div>
-    &lt;ul class="card-post-meta-menu">
-      &lt;li class="card-post-meta-menu-item">
-        &lt;a href="#">&lt;i class="bi bi-x">&lt;/i>Delete&lt;/a>
-      &lt;/li>
-      &lt;li class="card-post-meta-menu-item">
-        &lt;a href="#">&lt;i class="bi bi-edit">&lt;/i>Edit&lt;/a>
-      &lt;/li>
-      &lt;li class="card-post-meta-menu-item">
-        &lt;a href="#">&lt;i class="bi bi-arrow-up">&lt;/i>Move to Top&lt;/a>
-      &lt;/li>
-      &lt;li class="card-post-meta-menu-item card-post-meta-menu-item--last">
-        &lt;a href="#">&lt;i class="bi bi-arrow-right">&lt;/i>Share Now&lt;/a>
-      &lt;/li>
-    &lt;/ul>
-  &lt;/div>
-&lt;/div></pre>
-            </div>
-          </div>
-          <h2>Card - Post -- Pinned</h2>
-          <p>This object is a modified <code>card-post</code> object that adds extra UI. A pinned post occurs once a user has specified a time for that post to be shared.</p>
-          <div class="code-block code-block--last">
-            <div class="code-block-title">
-              Example:
-            </div>
-            <div class="code-block-render">
-              <div class="card card-post code-block-render-example">
-                <div class="card-post-content">
-                  <p>What is a Product Designer? An awesome story by <a href="#">@jgadapee</a> over on Medium! <a href="#">http://buff.ly/1LTbUqv</a></p>
+              <h2>Card -- Empty</h2>
+              <p>This is a modified <code>card</code> object. It doesn't introduce any new functionality nor UI. It simply modifies the <code>card</code> object's <code>border-style</code>.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
                 </div>
-                <div class="card-post-meta">
-                  <div class="card-post-meta-time-pinned">
-                    <div class="card-post-meta-time">
-                      09:42 <span class="card-post-meta-time-zone">(GMT)</span>
+                <div class="code-block-render">
+                  <div class="card card--empty code-block-render-example">
+                  </div>
+                </div>
+                <div class="code-block-code">
+    <pre>&lt;div class="card card--empty">
+    &lt;/div></pre>
+                </div>
+              </div>
+            </section>
+            <section class="section-secondary section-secondary--last">
+              <h2 class="section-secondary-title">Card - Post</h2>
+              <p>The <code>card-post</code> object inherits from the base <code>card</code> object and adds further functionality and UI. This object is used when a post is displayed.</p>
+              <div class="code-block">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <div class="card card-post code-block-render-example">
+                    <div class="card-post-content">
+                      <p>What is a Product Designer? An awesome story by <a href="#">@jgadapee</a> over on Medium! <a href="#">http://buff.ly/1LTbUqv</a></p>
                     </div>
-                    <div class="card-post-meta-time-pinned-arrow"></div>
+                    <div class="card-post-meta">
+                      <div class="card-post-meta-time">
+                        <span class="card-post-stat">09:42</span> <span class="card-post-meta-time-zone">(GMT)</span>
+                      </div>
+                      <div class="card-post-meta-via">
+                        via Extension
+                      </div>
+                      <div class="card-post-meta-user">
+                        <span class="card-post-meta-user-profile-picture">
+                          <img class="profile-picture profile-picture--small" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
+                        </span>
+                        <span class="card-post-meta-user-name">
+                          steve@buffer.com
+                        </span>
+                      </div>
+                      <ul class="card-post-meta-menu">
+                        <li class="card-post-meta-menu-item">
+                          <a href="#"><i class="bi bi-x"></i>Delete</a>
+                        </li>
+                        <li class="card-post-meta-menu-item">
+                          <a href="#"><i class="bi bi-edit"></i>Edit</a>
+                        </li>
+                        <li class="card-post-meta-menu-item">
+                          <a href="#"><i class="bi bi-arrow-up"></i>Move to Top</a>
+                        </li>
+                        <li class="card-post-meta-menu-item card-post-meta-menu-item--last">
+                          <a href="#"><i class="bi bi-arrow-right"></i>Share Now</a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                  <div class="card-post-meta-via">
-                    via Extension
-                  </div>
-                  <div class="card-post-meta-user">
-                    <span class="card-post-meta-user-profile-picture">
-                      <img class="profile-picture profile-picture--small" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
-                    </span>
-                    <span class="card-post-meta-user-name">
-                      steve@buffer.com
-                    </span>
-                  </div>
-                  <ul class="card-post-meta-menu">
-                    <li class="card-post-meta-menu-item">
-                      <a href="#"><i class="bi bi-x"></i>Delete</a>
-                    </li>
-                    <li class="card-post-meta-menu-item">
-                      <a href="#"><i class="bi bi-edit"></i>Edit</a>
-                    </li>
-                    <li class="card-post-meta-menu-item">
-                      <a href="#"><i class="bi bi-arrow-up"></i>Move to Top</a>
-                    </li>
-                    <li class="card-post-meta-menu-item card-post-meta-menu-item--last">
-                      <a href="#"><i class="bi bi-arrow-right"></i>Share Now</a>
-                    </li>
-                  </ul>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;div class="card card-post code-block-render-example">
+      &lt;div class="card-post-content">
+        &lt;p>What is a Product Designer? An awesome story by &lt;a href="#">@jgadapee&lt;/a> over on Medium! &lt;a href="#">http://buff.ly/1LTbUqv&lt;/a>&lt;/p>
+      &lt;/div>
+      &lt;div class="card-post-meta">
+        &lt;div class="card-post-meta-time">
+          &lt;span class="card-post-stat">09:42&lt;/span> &lt;span class="card-post-meta-time-zone">(GMT)&lt;/span>
+        &lt;/div>
+        &lt;div class="card-post-meta-via">
+          via Extension
+        &lt;/div>
+        &lt;div class="card-post-meta-user">
+          &lt;span class="card-post-meta-user-profile-picture">
+            &lt;img class="profile-picture profile-picture--small" src="#">
+          &lt;/span>
+          &lt;span class="card-post-meta-user-name">
+            steve@buffer.com
+          &lt;/span>
+        &lt;/div>
+        &lt;ul class="card-post-meta-menu">
+          &lt;li class="card-post-meta-menu-item">
+            &lt;a href="#">&lt;i class="bi bi-x">&lt;/i>Delete&lt;/a>
+          &lt;/li>
+          &lt;li class="card-post-meta-menu-item">
+            &lt;a href="#">&lt;i class="bi bi-edit">&lt;/i>Edit&lt;/a>
+          &lt;/li>
+          &lt;li class="card-post-meta-menu-item">
+            &lt;a href="#">&lt;i class="bi bi-arrow-up">&lt;/i>Move to Top&lt;/a>
+          &lt;/li>
+          &lt;li class="card-post-meta-menu-item card-post-meta-menu-item--last">
+            &lt;a href="#">&lt;i class="bi bi-arrow-right">&lt;/i>Share Now&lt;/a>
+          &lt;/li>
+        &lt;/ul>
+      &lt;/div>
+    &lt;/div></pre>
                 </div>
               </div>
-            </div>
-            <div class="code-block-code">
-              <pre>&lt;div class="code-block-render">
-  &lt;div class="card card-post code-block-render-example">
-    &lt;div class="card-post-content">
-      &lt;p>What is a Product Designer? An awesome story by &lt;a href="#">@jgadapee&lt;/a> over on Medium! &lt;a href="#">http://buff.ly/1LTbUqv&lt;/a>&lt;/p>
-    &lt;/div>
-    &lt;div class="card-post-meta">
-      &lt;div class="card-post-meta-time-pinned">
-        &lt;div class="card-post-meta-time">
-          09:42 &lt;span class="card-post-meta-time-zone">(GMT)&lt;/span>
+              <h2>Card - Post -- Pinned</h2>
+              <p>This object is a modified <code>card-post</code> object that adds extra UI. A pinned post occurs once a user has specified a time for that post to be shared.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <div class="card card-post code-block-render-example">
+                    <div class="card-post-content">
+                      <p>What is a Product Designer? An awesome story by <a href="#">@jgadapee</a> over on Medium! <a href="#">http://buff.ly/1LTbUqv</a></p>
+                    </div>
+                    <div class="card-post-meta">
+                      <div class="card-post-meta-time-pinned">
+                        <div class="card-post-meta-time">
+                          09:42 <span class="card-post-meta-time-zone">(GMT)</span>
+                        </div>
+                        <div class="card-post-meta-time-pinned-arrow"></div>
+                      </div>
+                      <div class="card-post-meta-via">
+                        via Extension
+                      </div>
+                      <div class="card-post-meta-user">
+                        <span class="card-post-meta-user-profile-picture">
+                          <img class="profile-picture profile-picture--small" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
+                        </span>
+                        <span class="card-post-meta-user-name">
+                          steve@buffer.com
+                        </span>
+                      </div>
+                      <ul class="card-post-meta-menu">
+                        <li class="card-post-meta-menu-item">
+                          <a href="#"><i class="bi bi-x"></i>Delete</a>
+                        </li>
+                        <li class="card-post-meta-menu-item">
+                          <a href="#"><i class="bi bi-edit"></i>Edit</a>
+                        </li>
+                        <li class="card-post-meta-menu-item">
+                          <a href="#"><i class="bi bi-arrow-up"></i>Move to Top</a>
+                        </li>
+                        <li class="card-post-meta-menu-item card-post-meta-menu-item--last">
+                          <a href="#"><i class="bi bi-arrow-right"></i>Share Now</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;div class="code-block-render">
+      &lt;div class="card card-post code-block-render-example">
+        &lt;div class="card-post-content">
+          &lt;p>What is a Product Designer? An awesome story by &lt;a href="#">@jgadapee&lt;/a> over on Medium! &lt;a href="#">http://buff.ly/1LTbUqv&lt;/a>&lt;/p>
         &lt;/div>
-        &lt;div class="card-post-meta-time-pinned-arrow">&lt;/div>
+        &lt;div class="card-post-meta">
+          &lt;div class="card-post-meta-time-pinned">
+            &lt;div class="card-post-meta-time">
+              09:42 &lt;span class="card-post-meta-time-zone">(GMT)&lt;/span>
+            &lt;/div>
+            &lt;div class="card-post-meta-time-pinned-arrow">&lt;/div>
+          &lt;/div>
+          &lt;div class="card-post-meta-via">
+            via Extension
+          &lt;/div>
+          &lt;div class="card-post-meta-user">
+            &lt;span class="card-post-meta-user-profile-picture">
+              &lt;img class="profile-picture profile-picture--small" src="#">
+            &lt;/span>
+            &lt;span class="card-post-meta-user-name">
+              steve@buffer.com
+            &lt;/span>
+          &lt;/div>
+          &lt;ul class="card-post-meta-menu">
+            &lt;li class="card-post-meta-menu-item">
+              &lt;a href="#">&lt;i class="bi bi-x">&lt;/i>Delete&lt;/a>
+            &lt;/li>
+            &lt;li class="card-post-meta-menu-item">
+              &lt;a href="#">&lt;i class="bi bi-edit">&lt;/i>Edit&lt;/a>
+            &lt;/li>
+            &lt;li class="card-post-meta-menu-item">
+              &lt;a href="#">&lt;i class="bi bi-arrow-up">&lt;/i>Move to Top&lt;/a>
+            &lt;/li>
+            &lt;li class="card-post-meta-menu-item card-post-meta-menu-item--last">
+              &lt;a href="#">&lt;i class="bi bi-arrow-right">&lt;/i>Share Now&lt;/a>
+            &lt;/li>
+          &lt;/ul>
+        &lt;/div>
       &lt;/div>
-      &lt;div class="card-post-meta-via">
-        via Extension
+    &lt;/div></pre>
+                </div>
+              </div>
+              <h2>Card - Post -- Tag</h2>
+              <p>This object is a modified <code>card-post</code> object that adds a tag to the <code>card-post</code>'s child object, <code>card-post-meta</code>.</p>
+              <div class="code-block">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <div class="card card-post code-block-render-example">
+                    <div class="card-post-content">
+                      <p>What is a Product Designer? An awesome story by <a href="#">@jgadapee</a> over on Medium! <a href="#">http://buff.ly/1LTbUqv</a></p>
+                    </div>
+                    <div class="card-post-meta">
+                      <div class="card-post-meta-tag tag tag--blue">
+                        In Queue!
+                      </div>
+                      <div class="card-post-meta-time">
+                        <span class="card-post-stat">09:42</span> <span class="card-post-meta-time-zone">(GMT)</span>
+                      </div>
+                      <div class="card-post-meta-via">
+                        via Extension
+                      </div>
+                      <div class="card-post-meta-user">
+                        <span class="card-post-meta-user-profile-picture">
+                          <img class="profile-picture profile-picture--small" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
+                        </span>
+                        <span class="card-post-meta-user-name">
+                          steve@buffer.com
+                        </span>
+                      </div>
+                      <ul class="card-post-meta-menu">
+                        <li class="card-post-meta-menu-item">
+                          <a href="#"><i class="bi bi-x"></i>Delete</a>
+                        </li>
+                        <li class="card-post-meta-menu-item">
+                          <a href="#"><i class="bi bi-edit"></i>Edit</a>
+                        </li>
+                        <li class="card-post-meta-menu-item">
+                          <a href="#"><i class="bi bi-arrow-up"></i>Move to Top</a>
+                        </li>
+                        <li class="card-post-meta-menu-item card-post-meta-menu-item--last">
+                          <a href="#"><i class="bi bi-arrow-right"></i>Share Now</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;div class="card card-post code-block-render-example">
+      &lt;div class="card-post-content">
+        &lt;p>What is a Product Designer? An awesome story by &lt;a href="#">@jgadapee&lt;/a> over on Medium! &lt;a href="#">http://buff.ly/1LTbUqv&lt;/a>&lt;/p>
       &lt;/div>
-      &lt;div class="card-post-meta-user">
-        &lt;span class="card-post-meta-user-profile-picture">
-          &lt;img class="profile-picture profile-picture--small" src="#">
-        &lt;/span>
-        &lt;span class="card-post-meta-user-name">
-          steve@buffer.com
-        &lt;/span>
+      &lt;div class="card-post-meta">
+        &lt;div class="card-post-meta-tag tag tag--blue">
+          In Queue!
+        &lt;/div>
+        &lt;div class="card-post-meta-time">
+          &lt;span class="card-post-stat">09:42&lt;/span> &lt;span class="card-post-meta-time-zone">(GMT)&lt;/span>
+        &lt;/div>
+        &lt;div class="card-post-meta-via">
+          via Extension
+        &lt;/div>
+        &lt;div class="card-post-meta-user">
+          &lt;span class="card-post-meta-user-profile-picture">
+            &lt;img class="profile-picture profile-picture--small" src="#">
+          &lt;/span>
+          &lt;span class="card-post-meta-user-name">
+            steve@buffer.com
+          &lt;/span>
+        &lt;/div>
+        &lt;ul class="card-post-meta-menu">
+          &lt;li class="card-post-meta-menu-item">
+            &lt;a href="#">&lt;i class="bi bi-x">&lt;/i>Delete&lt;/a>
+          &lt;/li>
+          &lt;li class="card-post-meta-menu-item">
+            &lt;a href="#">&lt;i class="bi bi-edit">&lt;/i>Edit&lt;/a>
+          &lt;/li>
+          &lt;li class="card-post-meta-menu-item">
+            &lt;a href="#">&lt;i class="bi bi-arrow-up">&lt;/i>Move to Top&lt;/a>
+          &lt;/li>
+          &lt;li class="card-post-meta-menu-item card-post-meta-menu-item--last">
+            &lt;a href="#">&lt;i class="bi bi-arrow-right">&lt;/i>Share Now&lt;/a>
+          &lt;/li>
+        &lt;/ul>
       &lt;/div>
-      &lt;ul class="card-post-meta-menu">
-        &lt;li class="card-post-meta-menu-item">
-          &lt;a href="#">&lt;i class="bi bi-x">&lt;/i>Delete&lt;/a>
+    &lt;/div></pre>
+                </div>
+              </div>
+              <div class="code-block">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <div class="card card-post code-block-render-example">
+                    <div class="card-post-content">
+                      <p>What is a Product Designer? An awesome story by <a href="#">@jgadapee</a> over on Medium! <a href="#">http://buff.ly/1LTbUqv</a></p>
+                    </div>
+                    <div class="card-post-meta">
+                      <div class="card-post-meta-tag tag tag--error">
+                        Failed
+                      </div>
+                      <div class="card-post-meta-time">
+                        <span class="card-post-stat">09:42</span> <span class="card-post-meta-time-zone">(GMT)</span>
+                      </div>
+                      <div class="card-post-meta-via">
+                        via Extension
+                      </div>
+                      <div class="card-post-meta-user">
+                        <span class="card-post-meta-user-profile-picture">
+                          <img class="profile-picture profile-picture--small" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
+                        </span>
+                        <span class="card-post-meta-user-name">
+                          steve@buffer.com
+                        </span>
+                      </div>
+                      <ul class="card-post-meta-menu">
+                        <li class="card-post-meta-menu-item">
+                          <a href="#"><i class="bi bi-x"></i>Delete</a>
+                        </li>
+                        <li class="card-post-meta-menu-item">
+                          <a href="#"><i class="bi bi-edit"></i>Edit</a>
+                        </li>
+                        <li class="card-post-meta-menu-item">
+                          <a href="#"><i class="bi bi-arrow-up"></i>Move to Top</a>
+                        </li>
+                        <li class="card-post-meta-menu-item card-post-meta-menu-item--last">
+                          <a href="#"><i class="bi bi-arrow-right"></i>Share Now</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;div class="card card-post code-block-render-example">
+      &lt;div class="card-post-content">
+        &lt;p>What is a Product Designer? An awesome story by &lt;a href="#">@jgadapee&lt;/a> over on Medium! &lt;a href="#">http://buff.ly/1LTbUqv&lt;/a>&lt;/p>
+      &lt;/div>
+      &lt;div class="card-post-meta">
+        &lt;div class="card-post-meta-tag tag tag--error">
+          Failed
+        &lt;/div>
+        &lt;div class="card-post-meta-time">
+          &lt;span class="card-post-stat">09:42&lt;/span> &lt;span class="card-post-meta-time-zone">(GMT)&lt;/span>
+        &lt;/div>
+        &lt;div class="card-post-meta-via">
+          via Extension
+        &lt;/div>
+        &lt;div class="card-post-meta-user">
+          &lt;span class="card-post-meta-user-profile-picture">
+            &lt;img class="profile-picture profile-picture--small" src="#">
+          &lt;/span>
+          &lt;span class="card-post-meta-user-name">
+            steve@buffer.com
+          &lt;/span>
+        &lt;/div>
+        &lt;ul class="card-post-meta-menu">
+          &lt;li class="card-post-meta-menu-item">
+            &lt;a href="#">&lt;i class="bi bi-x">&lt;/i>Delete&lt;/a>
+          &lt;/li>
+          &lt;li class="card-post-meta-menu-item">
+            &lt;a href="#">&lt;i class="bi bi-edit">&lt;/i>Edit&lt;/a>
+          &lt;/li>
+          &lt;li class="card-post-meta-menu-item">
+            &lt;a href="#">&lt;i class="bi bi-arrow-up">&lt;/i>Move to Top&lt;/a>
+          &lt;/li>
+          &lt;li class="card-post-meta-menu-item card-post-meta-menu-item--last">
+            &lt;a href="#">&lt;i class="bi bi-arrow-right">&lt;/i>Share Now&lt;/a>
+          &lt;/li>
+        &lt;/ul>
+      &lt;/div>
+    &lt;/div></pre>
+                </div>
+              </div>
+              <h2 class="section-secondary-title">Card - Post - Analytics</h2>
+              <p>The <code>card-post-analytics</code> object inherets from the base <code>card</code> object and adds further functionality and UI. This object is used when a post is displayed within the Analytics tab.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <div class="card card-post-analytics code-block-render-example">
+                    <div class="card-post-analytics-content">
+                      <p>What is a Product Designer? An awesome story by <a href="#">@jgadapee</a> over on Medium! <a href="#">http://buff.ly/1LTbUqv</a></p>
+                      <div class="card-post-analytics-posted">
+                        <div class="card-post-analytics-posted-time">
+                          <span class="card-post-stat">09:42</span> <span class="card-post-analytics-posted-time-zone">(GMT)</span>
+                        </div>
+                        <div class="card-post-analytics-posted-via">
+                          via Extension
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-post-analytics-meta">
+                      <div class="card-post-analytics-meta-data-stat">
+                        <i class="bi bi-retweet"></i><span class="card-post-stat">0</span> retweets
+                      </div>
+                      <div class="card-post-analytics-meta-data-stat">
+                        <i class="bi bi-like"></i><span class="card-post-stat">2</span> likes
+                      </div>
+                      <div class="card-post-analytics-meta-data-stat">
+                        <i class="bi bi-comment"></i><span class="card-post-stat">0</span> mentions
+                      </div>
+                      <div class="card-post-analytics-meta-data-stat">
+                        <i class="bi bi-click"></i><span class="card-post-stat">6</span> clicks
+                      </div>
+                      <div class="card-post-analytics-meta-data-stat">
+                        <i class="bi bi-view"></i><span class="card-post-stat">843</span> potential
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;div class="card card-post-analytics code-block-render-example">
+      &lt;div class="card-post-analytics-content">
+        &lt;p>What is a Product Designer? An awesome story by &lt;a href="#">@jgadapee&lt;/a> over on Medium! &lt;a href="#">http://buff.ly/1LTbUqv&lt;/a>&lt;/p>
+        &lt;div class="card-post-analytics-posted">
+          &lt;div class="card-post-analytics-posted-time">
+            &lt;span class="card-post-stat">09:42&lt;/span> &lt;span class="card-post-analytics-posted-time-zone">(GMT)&lt;/span>
+          &lt;/div>
+          &lt;div class="card-post-analytics-posted-via">
+            via Extension
+          &lt;/div>
+        &lt;/div>
+      &lt;/div>
+      &lt;div class="card-post-analytics-meta">
+        &lt;div class="card-post-analytics-meta-data-stat">
+          &lt;i class="bi bi-retweet">&lt;/i>&lt;span class="card-post-stat">0&lt;/span> retweets
+        &lt;/div>
+        &lt;div class="card-post-analytics-meta-data-stat">
+          &lt;i class="bi bi-like">&lt;/i>&lt;span class="card-post-stat">2&lt;/span> likes
+        &lt;/div>
+        &lt;div class="card-post-analytics-meta-data-stat">
+          &lt;i class="bi bi-comment">&lt;/i>&lt;span class="card-post-stat">0&lt;/span> mentions
+        &lt;/div>
+        &lt;div class="card-post-analytics-meta-data-stat">
+          &lt;i class="bi bi-click">&lt;/i>&lt;span class="card-post-stat">6&lt;/span> clicks
+        &lt;/div>
+        &lt;div class="card-post-analytics-meta-data-stat">
+          &lt;i class="bi bi-view">&lt;/i>&lt;span class="card-post-stat">843&lt;/span> potential
+        &lt;/div>
+      &lt;/div>
+    &lt;/div></pre>
+                </div>
+              </div>
+            </section>
+          </section>
+        </section>
+
+        <section class="section">
+          <section class="card">
+            <section class="section-secondary">
+              <h1 class="section-secondary-title">NavBars</h1>
+              <p>NavBars are an object solely designed to hold navigational objects and typically stick to the top of the viewport.</p>
+            </section>
+            <section class="section-secondary section-secondary--last">
+              <h2 class="section-secondary-title">NavBar</h2>
+              <p>This is the base object for the <code>navbar</code> object.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <div class="navbar code-block-render-example">
+                    <div class="navbar-title">
+                      <i class="bi bi-buffer"></i>Buffer
+                    </div>
+                    <ul class="navbar-menu-left">
+                      <li class="navbar-menu-item">
+                        <a class="navbar-menu-item--active" href="#">Queue</a>
+                      </li>
+                      <li class="navbar-menu-item">
+                        <a href="#">Library</a>
+                      </li>
+                      <li class="navbar-menu-item navbar-menu-item--last">
+                        <a href="#">Analytics</a>
+                      </li>
+                    </ul>
+                    <ul class="navbar-menu-right">
+                      <li class="navbar-menu-item">
+                        <a href="#">Help</a>
+                      </li>
+                      <li class="navbar-menu-item navbar-menu-item--last">
+                        <a href="#"><img class="navbar-menu-item-profile-picture profile-picture" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">Account</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;div class="navbar code-block-render-example">
+      &lt;div class="navbar-title">
+        &lt;i class="bi bi-buffer">&lt;/i>Buffer
+      &lt;/div>
+      &lt;ul class="navbar-menu-left">
+        &lt;li class="navbar-menu-item">
+          &lt;a class="navbar-menu-item--active" href="#">Queue&lt;/a>
         &lt;/li>
-        &lt;li class="card-post-meta-menu-item">
-          &lt;a href="#">&lt;i class="bi bi-edit">&lt;/i>Edit&lt;/a>
+        &lt;li class="navbar-menu-item">
+          &lt;a href="#">Library&lt;/a>
         &lt;/li>
-        &lt;li class="card-post-meta-menu-item">
-          &lt;a href="#">&lt;i class="bi bi-arrow-up">&lt;/i>Move to Top&lt;/a>
-        &lt;/li>
-        &lt;li class="card-post-meta-menu-item card-post-meta-menu-item--last">
-          &lt;a href="#">&lt;i class="bi bi-arrow-right">&lt;/i>Share Now&lt;/a>
+        &lt;li class="navbar-menu-item navbar-menu-item--last">
+          &lt;a href="#">Analytics&lt;/a>
         &lt;/li>
       &lt;/ul>
-    &lt;/div>
-  &lt;/div>
-&lt;/div></pre>
-            </div>
-          </div>
-          <h2>Card - Post -- Tag</h2>
-          <p>This object is a modified <code>card-post</code> object that adds a tag to the <code>card-post</code>'s child object, <code>card-post-meta</code>.</p>
-          <div class="code-block">
-            <div class="code-block-title">
-              Example:
-            </div>
-            <div class="code-block-render">
-              <div class="card card-post code-block-render-example">
-                <div class="card-post-content">
-                  <p>What is a Product Designer? An awesome story by <a href="#">@jgadapee</a> over on Medium! <a href="#">http://buff.ly/1LTbUqv</a></p>
-                </div>
-                <div class="card-post-meta">
-                  <div class="card-post-meta-tag tag tag--blue">
-                    In Queue!
-                  </div>
-                  <div class="card-post-meta-time">
-                    <span class="card-post-stat">09:42</span> <span class="card-post-meta-time-zone">(GMT)</span>
-                  </div>
-                  <div class="card-post-meta-via">
-                    via Extension
-                  </div>
-                  <div class="card-post-meta-user">
-                    <span class="card-post-meta-user-profile-picture">
-                      <img class="profile-picture profile-picture--small" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
-                    </span>
-                    <span class="card-post-meta-user-name">
-                      steve@buffer.com
-                    </span>
-                  </div>
-                  <ul class="card-post-meta-menu">
-                    <li class="card-post-meta-menu-item">
-                      <a href="#"><i class="bi bi-x"></i>Delete</a>
-                    </li>
-                    <li class="card-post-meta-menu-item">
-                      <a href="#"><i class="bi bi-edit"></i>Edit</a>
-                    </li>
-                    <li class="card-post-meta-menu-item">
-                      <a href="#"><i class="bi bi-arrow-up"></i>Move to Top</a>
-                    </li>
-                    <li class="card-post-meta-menu-item card-post-meta-menu-item--last">
-                      <a href="#"><i class="bi bi-arrow-right"></i>Share Now</a>
-                    </li>
-                  </ul>
+      &lt;ul class="navbar-menu-right">
+        &lt;li class="navbar-menu-item">
+          &lt;a href="#">Help&lt;/a>
+        &lt;/li>
+        &lt;li class="navbar-menu-item navbar-menu-item--last">
+          &lt;a href="#">&lt;img class="navbar-menu-item-profile-picture profile-picture" src="#">Account&lt;/a>
+        &lt;/li>
+      &lt;/ul>
+    &lt;/div></pre>
                 </div>
               </div>
-            </div>
-            <div class="code-block-code">
-              <pre>&lt;div class="card card-post code-block-render-example">
-  &lt;div class="card-post-content">
-    &lt;p>What is a Product Designer? An awesome story by &lt;a href="#">@jgadapee&lt;/a> over on Medium! &lt;a href="#">http://buff.ly/1LTbUqv&lt;/a>&lt;/p>
-  &lt;/div>
-  &lt;div class="card-post-meta">
-    &lt;div class="card-post-meta-tag tag tag--blue">
-      In Queue!
-    &lt;/div>
-    &lt;div class="card-post-meta-time">
-      &lt;span class="card-post-stat">09:42&lt;/span> &lt;span class="card-post-meta-time-zone">(GMT)&lt;/span>
-    &lt;/div>
-    &lt;div class="card-post-meta-via">
-      via Extension
-    &lt;/div>
-    &lt;div class="card-post-meta-user">
-      &lt;span class="card-post-meta-user-profile-picture">
-        &lt;img class="profile-picture profile-picture--small" src="#">
-      &lt;/span>
-      &lt;span class="card-post-meta-user-name">
-        steve@buffer.com
-      &lt;/span>
-    &lt;/div>
-    &lt;ul class="card-post-meta-menu">
-      &lt;li class="card-post-meta-menu-item">
-        &lt;a href="#">&lt;i class="bi bi-x">&lt;/i>Delete&lt;/a>
-      &lt;/li>
-      &lt;li class="card-post-meta-menu-item">
-        &lt;a href="#">&lt;i class="bi bi-edit">&lt;/i>Edit&lt;/a>
-      &lt;/li>
-      &lt;li class="card-post-meta-menu-item">
-        &lt;a href="#">&lt;i class="bi bi-arrow-up">&lt;/i>Move to Top&lt;/a>
-      &lt;/li>
-      &lt;li class="card-post-meta-menu-item card-post-meta-menu-item--last">
-        &lt;a href="#">&lt;i class="bi bi-arrow-right">&lt;/i>Share Now&lt;/a>
-      &lt;/li>
-    &lt;/ul>
-  &lt;/div>
-&lt;/div></pre>
-            </div>
-          </div>
-          <div class="code-block">
-            <div class="code-block-title">
-              Example:
-            </div>
-            <div class="code-block-render">
-              <div class="card card-post code-block-render-example">
-                <div class="card-post-content">
-                  <p>What is a Product Designer? An awesome story by <a href="#">@jgadapee</a> over on Medium! <a href="#">http://buff.ly/1LTbUqv</a></p>
+            </section>
+          </section>
+        </section>
+
+        <section class="section">
+          <section class="card">
+            <section class="section-secondary">
+              <h1 class="section-secondary-title">SideBars</h1>
+              <p>A description on SideBars.</p>
+            </section>
+            <section class="section-secondary section-secondary--last">
+              <h2 class="section-secondary-title">SideBar</h2>
+              <p>This is the base object for the <code>sidebar</code> object.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
                 </div>
-                <div class="card-post-meta">
-                  <div class="card-post-meta-tag tag tag--error">
-                    Failed
+                <div class="code-block-render">
+                  <div class="code-block-render-example">
+                    <p>Object render goes here!</p>
                   </div>
-                  <div class="card-post-meta-time">
-                    <span class="card-post-stat">09:42</span> <span class="card-post-meta-time-zone">(GMT)</span>
-                  </div>
-                  <div class="card-post-meta-via">
-                    via Extension
-                  </div>
-                  <div class="card-post-meta-user">
-                    <span class="card-post-meta-user-profile-picture">
-                      <img class="profile-picture profile-picture--small" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
-                    </span>
-                    <span class="card-post-meta-user-name">
-                      steve@buffer.com
-                    </span>
-                  </div>
-                  <ul class="card-post-meta-menu">
-                    <li class="card-post-meta-menu-item">
-                      <a href="#"><i class="bi bi-x"></i>Delete</a>
-                    </li>
-                    <li class="card-post-meta-menu-item">
-                      <a href="#"><i class="bi bi-edit"></i>Edit</a>
-                    </li>
-                    <li class="card-post-meta-menu-item">
-                      <a href="#"><i class="bi bi-arrow-up"></i>Move to Top</a>
-                    </li>
-                    <li class="card-post-meta-menu-item card-post-meta-menu-item--last">
-                      <a href="#"><i class="bi bi-arrow-right"></i>Share Now</a>
-                    </li>
-                  </ul>
+                </div>
+                <div class="code-block-code">
+                  <pre>Object markup goes here!</pre>
                 </div>
               </div>
-            </div>
-            <div class="code-block-code">
-              <pre>&lt;div class="card card-post code-block-render-example">
-  &lt;div class="card-post-content">
-    &lt;p>What is a Product Designer? An awesome story by &lt;a href="#">@jgadapee&lt;/a> over on Medium! &lt;a href="#">http://buff.ly/1LTbUqv&lt;/a>&lt;/p>
-  &lt;/div>
-  &lt;div class="card-post-meta">
-    &lt;div class="card-post-meta-tag tag tag--error">
-      Failed
-    &lt;/div>
-    &lt;div class="card-post-meta-time">
-      &lt;span class="card-post-stat">09:42&lt;/span> &lt;span class="card-post-meta-time-zone">(GMT)&lt;/span>
-    &lt;/div>
-    &lt;div class="card-post-meta-via">
-      via Extension
-    &lt;/div>
-    &lt;div class="card-post-meta-user">
-      &lt;span class="card-post-meta-user-profile-picture">
-        &lt;img class="profile-picture profile-picture--small" src="#">
-      &lt;/span>
-      &lt;span class="card-post-meta-user-name">
-        steve@buffer.com
-      &lt;/span>
-    &lt;/div>
-    &lt;ul class="card-post-meta-menu">
-      &lt;li class="card-post-meta-menu-item">
-        &lt;a href="#">&lt;i class="bi bi-x">&lt;/i>Delete&lt;/a>
-      &lt;/li>
-      &lt;li class="card-post-meta-menu-item">
-        &lt;a href="#">&lt;i class="bi bi-edit">&lt;/i>Edit&lt;/a>
-      &lt;/li>
-      &lt;li class="card-post-meta-menu-item">
-        &lt;a href="#">&lt;i class="bi bi-arrow-up">&lt;/i>Move to Top&lt;/a>
-      &lt;/li>
-      &lt;li class="card-post-meta-menu-item card-post-meta-menu-item--last">
-        &lt;a href="#">&lt;i class="bi bi-arrow-right">&lt;/i>Share Now&lt;/a>
-      &lt;/li>
-    &lt;/ul>
-  &lt;/div>
-&lt;/div></pre>
-            </div>
-          </div>
-          <h2 class="section-secondary-title">Card - Post - Analytics</h2>
-          <p>The <code>card-post-analytics</code> object inherets from the base <code>card</code> object and adds further functionality and UI. This object is used when a post is displayed within the Analytics tab.</p>
-          <div class="code-block code-block--last">
-            <div class="code-block-title">
-              Example:
-            </div>
-            <div class="code-block-render">
-              <div class="card card-post-analytics code-block-render-example">
-                <div class="card-post-analytics-content">
-                  <p>What is a Product Designer? An awesome story by <a href="#">@jgadapee</a> over on Medium! <a href="#">http://buff.ly/1LTbUqv</a></p>
-                  <div class="card-post-analytics-posted">
-                    <div class="card-post-analytics-posted-time">
-                      <span class="card-post-stat">09:42</span> <span class="card-post-analytics-posted-time-zone">(GMT)</span>
-                    </div>
-                    <div class="card-post-analytics-posted-via">
-                      via Extension
+            </section>
+          </section>
+        </section>
+
+        <section class="section">
+          <section class="card">
+            <section class="section-secondary">
+              <h1 class="section-secondary-title">Profile Pictures</h1>
+              <p>Profile Pictures are objects designed to display a user's profile picture.</p>
+            </section>
+            <section class="section-secondary">
+              <h2 class="section-secondary-title">Profile Picture</h2>
+              <p>This is the base object for the <code>profile-picture</code> object.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <img class="profile-picture code-block-render-example" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
+                </div>
+                <div class="code-block-code">
+    <pre>&lt;img class="profile-picture" src="#"></pre>
+                </div>
+              </div>
+            </section>
+            <section class="section-secondary">
+              <h2 class="section-secondary-title">Profile Picture with Icon</h2>
+              <p>This is the base object for the <code>profile-picture-with-icon</code> object that includes a profile picture and a social network icon. It includes two separate objects (<code>profile-picture</code> and <code>icon</code>) that each inherit from their own base objects.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <div class="profile-picture-with-icon code-block-render-example">
+                    <img class="profile-picture" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
+                    <div class="profile-picture-icon">
+                      <i class="bi bi-circle-twitter"></i>
                     </div>
                   </div>
                 </div>
-                <div class="card-post-analytics-meta">
-                  <div class="card-post-analytics-meta-data-stat">
-                    <i class="bi bi-retweet"></i><span class="card-post-stat">0</span> retweets
-                  </div>
-                  <div class="card-post-analytics-meta-data-stat">
-                    <i class="bi bi-like"></i><span class="card-post-stat">2</span> likes
-                  </div>
-                  <div class="card-post-analytics-meta-data-stat">
-                    <i class="bi bi-comment"></i><span class="card-post-stat">0</span> mentions
-                  </div>
-                  <div class="card-post-analytics-meta-data-stat">
-                    <i class="bi bi-click"></i><span class="card-post-stat">6</span> clicks
-                  </div>
-                  <div class="card-post-analytics-meta-data-stat">
-                    <i class="bi bi-view"></i><span class="card-post-stat">843</span> potential
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="code-block-code">
-              <pre>&lt;div class="card card-post-analytics code-block-render-example">
-  &lt;div class="card-post-analytics-content">
-    &lt;p>What is a Product Designer? An awesome story by &lt;a href="#">@jgadapee&lt;/a> over on Medium! &lt;a href="#">http://buff.ly/1LTbUqv&lt;/a>&lt;/p>
-    &lt;div class="card-post-analytics-posted">
-      &lt;div class="card-post-analytics-posted-time">
-        &lt;span class="card-post-stat">09:42&lt;/span> &lt;span class="card-post-analytics-posted-time-zone">(GMT)&lt;/span>
+                <div class="code-block-code">
+                  <pre>&lt;div class="profile-picture-with-icon code-block-render-example">
+      &lt;img class="profile-picture" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
+      &lt;div class="profile-picture-icon">
+        &lt;i class="bi bi-circle-twitter">&lt;/i>
       &lt;/div>
-      &lt;div class="card-post-analytics-posted-via">
-        via Extension
-      &lt;/div>
-    &lt;/div>
-  &lt;/div>
-  &lt;div class="card-post-analytics-meta">
-    &lt;div class="card-post-analytics-meta-data-stat">
-      &lt;i class="bi bi-retweet">&lt;/i>&lt;span class="card-post-stat">0&lt;/span> retweets
-    &lt;/div>
-    &lt;div class="card-post-analytics-meta-data-stat">
-      &lt;i class="bi bi-like">&lt;/i>&lt;span class="card-post-stat">2&lt;/span> likes
-    &lt;/div>
-    &lt;div class="card-post-analytics-meta-data-stat">
-      &lt;i class="bi bi-comment">&lt;/i>&lt;span class="card-post-stat">0&lt;/span> mentions
-    &lt;/div>
-    &lt;div class="card-post-analytics-meta-data-stat">
-      &lt;i class="bi bi-click">&lt;/i>&lt;span class="card-post-stat">6&lt;/span> clicks
-    &lt;/div>
-    &lt;div class="card-post-analytics-meta-data-stat">
-      &lt;i class="bi bi-view">&lt;/i>&lt;span class="card-post-stat">843&lt;/span> potential
-    &lt;/div>
-  &lt;/div>
-&lt;/div></pre>
-            </div>
-          </div>
-        </section>
-      </section>
-    </section>
-
-    <section class="section">
-      <section class="card">
-        <section class="section-secondary">
-          <h1 class="section-secondary-title">NavBars</h1>
-          <p>NavBars are an object solely designed to hold navigational objects and typically stick to the top of the viewport.</p>
-        </section>
-        <section class="section-secondary section-secondary--last">
-          <h2 class="section-secondary-title">NavBar</h2>
-          <p>This is the base object for the <code>navbar</code> object.</p>
-          <div class="code-block code-block--last">
-            <div class="code-block-title">
-              Example:
-            </div>
-            <div class="code-block-render">
-              <div class="navbar code-block-render-example">
-                <div class="navbar-title">
-                  <i class="bi bi-buffer"></i>Buffer
-                </div>
-                <ul class="navbar-menu-left">
-                  <li class="navbar-menu-item">
-                    <a class="navbar-menu-item--active" href="#">Queue</a>
-                  </li>
-                  <li class="navbar-menu-item">
-                    <a href="#">Library</a>
-                  </li>
-                  <li class="navbar-menu-item navbar-menu-item--last">
-                    <a href="#">Analytics</a>
-                  </li>
-                </ul>
-                <ul class="navbar-menu-right">
-                  <li class="navbar-menu-item">
-                    <a href="#">Help</a>
-                  </li>
-                  <li class="navbar-menu-item navbar-menu-item--last">
-                    <a href="#"><img class="navbar-menu-item-profile-picture profile-picture" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">Account</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="code-block-code">
-              <pre>&lt;div class="navbar code-block-render-example">
-  &lt;div class="navbar-title">
-    &lt;i class="bi bi-buffer">&lt;/i>Buffer
-  &lt;/div>
-  &lt;ul class="navbar-menu-left">
-    &lt;li class="navbar-menu-item">
-      &lt;a class="navbar-menu-item--active" href="#">Queue&lt;/a>
-    &lt;/li>
-    &lt;li class="navbar-menu-item">
-      &lt;a href="#">Library&lt;/a>
-    &lt;/li>
-    &lt;li class="navbar-menu-item navbar-menu-item--last">
-      &lt;a href="#">Analytics&lt;/a>
-    &lt;/li>
-  &lt;/ul>
-  &lt;ul class="navbar-menu-right">
-    &lt;li class="navbar-menu-item">
-      &lt;a href="#">Help&lt;/a>
-    &lt;/li>
-    &lt;li class="navbar-menu-item navbar-menu-item--last">
-      &lt;a href="#">&lt;img class="navbar-menu-item-profile-picture profile-picture" src="#">Account&lt;/a>
-    &lt;/li>
-  &lt;/ul>
-&lt;/div></pre>
-            </div>
-          </div>
-        </section>
-      </section>
-    </section>
-
-    <section class="section">
-      <section class="card">
-        <section class="section-secondary">
-          <h1 class="section-secondary-title">SideBars</h1>
-          <p>A description on SideBars.</p>
-        </section>
-        <section class="section-secondary section-secondary--last">
-          <h2 class="section-secondary-title">SideBar</h2>
-          <p>This is the base object for the <code>sidebar</code> object.</p>
-          <div class="code-block code-block--last">
-            <div class="code-block-title">
-              Example:
-            </div>
-            <div class="code-block-render">
-              <div class="code-block-render-example">
-                <p>Object render goes here!</p>
-              </div>
-            </div>
-            <div class="code-block-code">
-              <pre>Object markup goes here!</pre>
-            </div>
-          </div>
-        </section>
-      </section>
-    </section>
-
-    <section class="section">
-      <section class="card">
-        <section class="section-secondary">
-          <h1 class="section-secondary-title">Profile Pictures</h1>
-          <p>Profile Pictures are objects designed to display a user's profile picture.</p>
-        </section>
-        <section class="section-secondary">
-          <h2 class="section-secondary-title">Profile Picture</h2>
-          <p>This is the base object for the <code>profile-picture</code> object.</p>
-          <div class="code-block code-block--last">
-            <div class="code-block-title">
-              Example:
-            </div>
-            <div class="code-block-render">
-              <img class="profile-picture code-block-render-example" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
-            </div>
-            <div class="code-block-code">
-<pre>&lt;img class="profile-picture" src="#"></pre>
-            </div>
-          </div>
-        </section>
-        <section class="section-secondary">
-          <h2 class="section-secondary-title">Profile Picture with Icon</h2>
-          <p>This is the base object for the <code>profile-picture-with-icon</code> object that includes a profile picture and a social network icon. It includes two separate objects (<code>profile-picture</code> and <code>icon</code>) that each inherit from their own base objects.</p>
-          <div class="code-block code-block--last">
-            <div class="code-block-title">
-              Example:
-            </div>
-            <div class="code-block-render">
-              <div class="profile-picture-with-icon code-block-render-example">
-                <img class="profile-picture" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
-                <div class="profile-picture-icon">
-                  <i class="bi bi-circle-twitter"></i>
+    &lt;/div></pre>
                 </div>
               </div>
-            </div>
-            <div class="code-block-code">
-              <pre>&lt;div class="profile-picture-with-icon code-block-render-example">
-  &lt;img class="profile-picture" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
+            </section>
+            <section class="section-secondary">
+              <h2 class="section-secondary-title">Profile Picture -- Inactive</h2>
+              <p>This is a modifier for the <code>profile-picture</code> object, which grayscales our customers' profile picture. When used with the <code>profile-picture-with-icon</code>, it also grayscales the social network icon.</p>
+              <div class="code-block code-block">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <img class="profile-picture profile-picture--inactive code-block-render-example" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;img class="profile-picture profile-picture--inactive" src="#"></pre>
+                </div>
+              </div>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <div class="profile-picture-with-icon profile-picture--inactive code-block-render-example">
+                    <img class="profile-picture" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
+                    <div class="profile-picture-icon">
+                      <i class="bi bi-circle-twitter"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;div class="profile-picture-with-icon profile-picture--inactive">
+  &lt;img class="profile-picture" src="#">
   &lt;div class="profile-picture-icon">
     &lt;i class="bi bi-circle-twitter">&lt;/i>
   &lt;/div>
 &lt;/div></pre>
-            </div>
-          </div>
-        </section>
-        <section class="section-secondary">
-          <h2 class="section-secondary-title">Profile Picture -- Inactive</h2>
-          <p>This is a modifier for the <code>profile-picture</code> object, which grayscales our customers' profile picture. When used with the <code>profile-picture-with-icon</code>, it also grayscales the social network icon.</p>
-          <div class="code-block code-block">
-            <div class="code-block-title">
-              Example:
-            </div>
-            <div class="code-block-render">
-              <img class="profile-picture profile-picture--inactive code-block-render-example" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
-            </div>
-            <div class="code-block-code">
-<pre>&lt;img class="profile-picture profile-picture--inactive" src="#"></pre>
-            </div>
-          </div>
-          <div class="code-block code-block--last">
-            <div class="code-block-title">
-              Example:
-            </div>
-            <div class="code-block-render">
-              <div class="profile-picture-with-icon profile-picture--inactive code-block-render-example">
-                <img class="profile-picture" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
-                <div class="profile-picture-icon">
-                  <i class="bi bi-circle-twitter"></i>
                 </div>
               </div>
-            </div>
-            <div class="code-block-code">
-              <pre>&lt;div class="profile-picture-with-icon profile-picture--inactive">
-  &lt;img class="profile-picture" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
-  &lt;div class="profile-picture-icon">
-    &lt;i class="bi bi-circle-twitter">&lt;/i>
-  &lt;/div>
-&lt;/div></pre>
-            </div>
-          </div>
-        </section>
-        <section class="section-secondary section-secondary--last">
-          <h2 class="section-secondary-title">Profile Picture -- Large</h2>
-          <p>This is a modified <code>profile-picture</code> object. It modifies the <code>profile-picture</code> object's <code>width</code> and <code>height</code>.</p>
-          <div class="code-block code-block--last">
-            <div class="code-block-title">
-              Example:
-            </div>
-            <div class="code-block-render">
-              <img class="profile-picture profile-picture--large code-block-render-example" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
-            </div>
-            <div class="code-block-code">
-<pre>&lt;img class="profile-picture profile-picture--large" src="#"></pre>
-            </div>
-          </div>
-        </section>
-        <section class="section-secondary section-secondary--last">
-          <h2 class="section-secondary-title">Profile Picture -- Small</h2>
-          <p>This is a modified <code>profile-picture</code> object. It doesn't introduce any new functionality nor UI. It simply modifies the <code>profile-picture</code> object's <code>width</code> and <code>height</code>.</p>
-          <div class="code-block code-block--last">
-            <div class="code-block-title">
-              Example:
-            </div>
-            <div class="code-block-render">
-              <img class="profile-picture profile-picture--small code-block-render-example" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
-            </div>
-            <div class="code-block-code">
-<pre>&lt;img class="profile-picture profile-picture--small" src="#"></pre>
-            </div>
-          </div>
-        </section>
-      </section>
-    </section>
-
-    <section class="section">
-      <section class="card">
-        <section class="section-secondary">
-          <h1 class="section-secondary-title">Modals</h1>
-          <p>An introduction to modals.</p>
-        </section>
-        <section class="section-secondary section-secondary--last">
-          <h2 class="section-secondary-title">Modal</h2>
-          <p>This is the base object for the <code>modal</code> object.</p>
-          <div class="code-block code-block--last">
-            <div class="code-block-title">
-              Example:
-            </div>
-            <div class="code-block-render">
-              <a href="#openModal">Open Modal</a>
-              <div class="modal" id="openModal">
-                <div class="card">
-                  <p>Modal example here. <a href="#close" title="Close">Close</a></p>
+            </section>
+            <section class="section-secondary section-secondary--last">
+              <h2 class="section-secondary-title">Profile Picture -- Large</h2>
+              <p>This is a modified <code>profile-picture</code> object. It modifies the <code>profile-picture</code> object's <code>width</code> and <code>height</code>.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <img class="profile-picture profile-picture--large code-block-render-example" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;img class="profile-picture profile-picture--large" src="#"></pre>
                 </div>
               </div>
-            </div>
-            <div class="code-block-code">
-              <pre>&lt;div class="modal" id="openModal">
-  &lt;div class="card">
-    &lt;p>Modal example here. &lt;a href="#close" title="Close">Close&lt;/a>&lt;/p>
-  &lt;/div>
+            </section>
+            <section class="section-secondary section-secondary--last">
+              <h2 class="section-secondary-title">Profile Picture -- Small</h2>
+              <p>This is a modified <code>profile-picture</code> object. It doesn't introduce any new functionality nor UI. It simply modifies the <code>profile-picture</code> object's <code>width</code> and <code>height</code>.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <img class="profile-picture profile-picture--small code-block-render-example" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;img class="profile-picture profile-picture--small" src="#"></pre>
+                </div>
+              </div>
+            </section>
+          </section>
+        </section>
+
+        <section class="section">
+          <section class="card">
+            <section class="section-secondary">
+              <h1 class="section-secondary-title">Modals</h1>
+              <p>An introduction to modals.</p>
+            </section>
+            <section class="section-secondary section-secondary--last">
+              <h2 class="section-secondary-title">Modal</h2>
+              <p>This is the base object for the <code>modal</code> object.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <a href="#openModal">Open Modal</a>
+                  <div class="modal" id="openModal">
+                    <div class="card">
+                      <p>Modal example here. <a href="#close" title="Close">Close</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;div class="modal" id="openModal">
+      &lt;div class="card">
+        &lt;p>Modal example here. &lt;a href="#close" title="Close">Close&lt;/a>&lt;/p>
+      &lt;/div>
+    &lt;/div></pre>
+                </div>
+              </div>
+            </section>
+          </section>
+        </section>
+
+        <section class="section">
+          <section class="card">
+            <section class="section-secondary">
+              <h1 class="section-secondary-title">Icons</h1>
+              <p>An introduction to icons!</p>
+            </section>
+            <section class="section-secondary section-secondary--last">
+              <h2 class="section-secondary-title">Icon</h2>
+              <p>We use <code>bi</code> (an acronym for Buffer Icon) as a global namepsace for our icons. Each <code>bi</code> object is the base <code>bi</code> object. The only difference being how you call an individual icon.</p>
+
+              <h3>Icon - Analytics</h3>
+              <p>A little bit about the analytics icon.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <i class="bi bi-analytics"></i>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;i class="bi bi-analytics">&lt;/i></pre>
+                </div>
+              </div>
+
+              <h3>Icon - Arrow - Down</h3>
+              <p>A little bit about the <code>icon-arrow-down</code> icon.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <i class="bi bi-arrow-down"></i>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;i class="bi bi-arrow-down">&lt;/i></pre>
+                </div>
+              </div>
+
+              <h3>Icon - Arrow - Left</h3>
+              <p>A little bit about the <code>icon-arrow-left</code> icon.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <i class="bi bi-arrow-left"></i>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;i class="bi bi-arrow-left">&lt;/i></pre>
+                </div>
+              </div>
+
+              <h3>Icon - Arrow - Right</h3>
+              <p>A little bit about the <code>icon-arrow-right</code> icon.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <i class="bi bi-arrow-right"></i>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;i class="bi bi-arrow-right">&lt;/i></pre>
+                </div>
+              </div>
+
+              <h3>Icon - Arrow - Up</h3>
+              <p>A little bit about the <code>icon-arrow-up</code> icon.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <i class="bi bi-arrow-up"></i>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;i class="bi bi-arrow-up">&lt;/i></pre>
+                </div>
+              </div>
+
+              <h3>Icon - Buffer</h3>
+              <p>A little bit about the <code>icon-buffer</code> icon.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <i class="bi bi-buffer"></i>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;i class="bi bi-buffer">&lt;/i></pre>
+                </div>
+              </div>
+
+              <h3>Icon - Calendar</h3>
+              <p>A little bit about the <code>icon-calendar</code> icon.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <i class="bi bi-calendar"></i>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;i class="bi bi-calendar">&lt;/i></pre>
+                </div>
+              </div>
+
+              <h3>Icon - Checkmark</h3>
+              <p>A little bit about the <code>icon-checkmark</code> icon.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <i class="bi bi-checkmark"></i>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;i class="bi bi-checkmark">&lt;/i></pre>
+                </div>
+              </div>
+
+              <h3>Icon - Circle - App.net</h3>
+              <p>A little bit about the <code>icon-circle-appdotnet</code> icon.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <i class="bi bi-circle-appdotnet"></i>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;i class="bi bi-circle-appdotnet">&lt;/i></pre>
+                </div>
+              </div>
+
+              <h3>Icon - Circle - Facebook</h3>
+              <p>A little bit about the <code>icon-circle-facebook</code> icon.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <i class="bi bi-circle-facebook"></i>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;i class="bi bi-circle-facebook">&lt;/i></pre>
+                </div>
+              </div>
+
+              <h3>Icon - Circle - Google+</h3>
+              <p>A little bit about the <code>icon-circle-google-plus</code> icon.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <i class="bi bi-circle-google-plus"></i>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;i class="bi bi-circle-google-plus">&lt;/i></pre>
+                </div>
+              </div>
+
+              <h3>Icon - Circle - LinkedIn</h3>
+              <p>A little bit about the <code>icon-circle-linkedin</code> icon.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <i class="bi bi-circle-linkedin"></i>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;i class="bi bi-circle-linkedin">&lt;/i></pre>
+                </div>
+              </div>
+
+              <h3>Icon - Circle - Pinterest</h3>
+              <p>A little bit about the <code>icon-circle-pinterest</code> icon.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <i class="bi bi-circle-pinterest"></i>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;i class="bi bi-circle-pinterest">&lt;/i></pre>
+                </div>
+              </div>
+
+              <h3>Icon - Circle - Plus</h3>
+              <p>A little bit about the <code>icon-circle-plus</code> icon.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <i class="bi bi-circle-plus"></i>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;i class="bi bi-circle-plus">&lt;/i></pre>
+                </div>
+              </div>
+
+              <h3>Icon - Circle - Twitter</h3>
+              <p>A little bit about the <code>icon-circle-twitter</code> icon.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <i class="bi bi-circle-twitter twitter"></i>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;i class="bi bi-circle-twitter">&lt;/i></pre>
+                </div>
+              </div>
+
+              <h3>Icon - Circle - X</h3>
+              <p>A little bit about the <code>icon-circle-x</code> icon.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <i class="bi bi-circle-x"></i>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;i class="bi bi-circle-x">&lt;/i></pre>
+                </div>
+              </div>
+
+              <h3>Icon - Click</h3>
+              <p>A little bit about the <code>icon-click</code> icon.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <i class="bi bi-click"></i>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;i class="bi bi-click">&lt;/i></pre>
+                </div>
+              </div>
+
+              <h3>Icon - Comment</h3>
+              <p>A little bit about the <code>icon-comment</code> icon.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <i class="bi bi-comment"></i>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;i class="bi bi-comment">&lt;/i></pre>
+                </div>
+              </div>
+
+              <h3>Icon - Edit</h3>
+              <p>A little bit about the <code>icon-edit</code> icon.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <i class="bi bi-edit"></i>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;i class="bi bi-edit">&lt;/i></pre>
+                </div>
+              </div>
+
+              <h3>Icon - Export</h3>
+              <p>A little bit about the <code>icon-export</code> icon.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <i class="bi bi-export"></i>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;i class="bi bi-export">&lt;/i></pre>
+                </div>
+              </div>
+
+              <h3>Icon - Image</h3>
+              <p>A little bit about the <code>icon-image</code> icon.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <i class="bi bi-image"></i>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;i class="bi bi-image">&lt;/i></pre>
+                </div>
+              </div>
+
+              <h3>Icon - Like</h3>
+              <p>A little bit about the <code>icon-like</code> icon.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <i class="bi bi-like"></i>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;i class="bi bi-like">&lt;/i></pre>
+                </div>
+              </div>
+
+              <h3>Icon - Link</h3>
+              <p>A little bit about the <code>icon-link</code> icon.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <i class="bi bi-link"></i>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;i class="bi bi-link">&lt;/i></pre>
+                </div>
+              </div>
+
+              <h3>Icon - Plus</h3>
+              <p>A little bit about the <code>icon-plus</code> icon.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <i class="bi bi-plus"></i>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;i class="bi bi-plus">&lt;/i></pre>
+                </div>
+              </div>
+
+              <h3>Icon - Pricing</h3>
+              <p>A little bit about the <code>icon-pricing</code> icon.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <i class="bi bi-pricing"></i>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;i class="bi bi-pricing">&lt;/i></pre>
+                </div>
+              </div>
+
+              <h3>Icon - Retweet</h3>
+              <p>A little bit about the <code>icon-retweet</code> icon.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <i class="bi bi-retweet"></i>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;i class="bi bi-retweet">&lt;/i></pre>
+                </div>
+              </div>
+
+              <h3>Icon - Search</h3>
+              <p>A little bit about the <code>icon-search</code> icon.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <i class="bi bi-search"></i>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;i class="bi bi-search">&lt;/i></pre>
+                </div>
+              </div>
+
+              <h3>Icon - Settings</h3>
+              <p>A little bit about the <code>icon-settings</code> icon.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <i class="bi bi-settings"></i>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;i class="bi bi-settings">&lt;/i></pre>
+                </div>
+              </div>
+
+              <h3>Icon - View</h3>
+              <p>A little bit about the <code>icon-view</code> icon.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <i class="bi bi-view"></i>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;i class="bi bi-view">&lt;/i></pre>
+                </div>
+              </div>
+
+              <h3>Icon - X</h3>
+              <p>A little bit about the <code>icon-x</code> icon.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <i class="bi bi-x"></i>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;i class="bi bi-x">&lt;/i></pre>
+                </div>
+              </div>
+
+            </section>
+          </section>
+        </section>
+
+        <section class="section">
+          <section class="card">
+            <section class="section-secondary">
+              <h1 class="section-secondary-title">Forms</h1>
+              <p>An introduction to forms!</p>
+            </section>
+            <section class="section-secondary section-secondary--last">
+              <h2 class="section-secondary-title">Input</h2>
+              <p>Description here!</p>
+
+              <h3>Input</h3>
+              <p>A little bit about inputs.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <input class="input" placeholder="Placeholder text" type="text">
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;input class="input" placeholder="Placeholder text" type="text"></pre>
+                </div>
+              </div>
+
+              <h3>Input -- With Icon</h3>
+              <p>A little bit about inputs.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <div class="input--with-icon">
+                    <i class="bi bi-search"></i><input class="input input--icon" placeholder="Search Profiles" type="text">
+                  </div>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;div class="input--with-icon">
+  &lt;i class="bi bi-search">&lt;/i>&lt;input class="input input--icon" placeholder="Search Profiles" type="text">
 &lt;/div></pre>
-            </div>
-          </div>
+                </div>
+              </div>
+
+            </section>
+          </section>
         </section>
-      </section>
-    </section>
 
-    <section class="section">
-      <section class="card">
-        <section class="section-secondary">
-          <h1 class="section-secondary-title">Icons</h1>
-          <p>An introduction to icons!</p>
-        </section>
-        <section class="section-secondary section-secondary--last">
-          <h2 class="section-secondary-title">Icon</h2>
-          <p>We use <code>bi</code> (an acronym for Buffer Icon) as a global namepsace for our icons. Each <code>bi</code> object is the base <code>bi</code> object. The only difference being how you call an individual icon.</p>
+      </main>
 
-          <h3>Icon - Analytics</h3>
-          <p>A little bit about the analytics icon.</p>
-          <div class="code-block code-block--last">
-            <div class="code-block-title">
-              Example:
-            </div>
-            <div class="code-block-render">
-              <i class="bi bi-analytics"></i>
-            </div>
-            <div class="code-block-code">
-              <pre>&lt;i class="bi bi-analytics">&lt;/i></pre>
-            </div>
-          </div>
-
-          <h3>Icon - Arrow - Down</h3>
-          <p>A little bit about the <code>icon-arrow-down</code> icon.</p>
-          <div class="code-block code-block--last">
-            <div class="code-block-title">
-              Example:
-            </div>
-            <div class="code-block-render">
-              <i class="bi bi-arrow-down"></i>
-            </div>
-            <div class="code-block-code">
-              <pre>&lt;i class="bi bi-arrow-down">&lt;/i></pre>
-            </div>
-          </div>
-
-          <h3>Icon - Arrow - Left</h3>
-          <p>A little bit about the <code>icon-arrow-left</code> icon.</p>
-          <div class="code-block code-block--last">
-            <div class="code-block-title">
-              Example:
-            </div>
-            <div class="code-block-render">
-              <i class="bi bi-arrow-left"></i>
-            </div>
-            <div class="code-block-code">
-              <pre>&lt;i class="bi bi-arrow-left">&lt;/i></pre>
-            </div>
-          </div>
-
-          <h3>Icon - Arrow - Right</h3>
-          <p>A little bit about the <code>icon-arrow-right</code> icon.</p>
-          <div class="code-block code-block--last">
-            <div class="code-block-title">
-              Example:
-            </div>
-            <div class="code-block-render">
-              <i class="bi bi-arrow-right"></i>
-            </div>
-            <div class="code-block-code">
-              <pre>&lt;i class="bi bi-arrow-right">&lt;/i></pre>
-            </div>
-          </div>
-
-          <h3>Icon - Arrow - Up</h3>
-          <p>A little bit about the <code>icon-arrow-up</code> icon.</p>
-          <div class="code-block code-block--last">
-            <div class="code-block-title">
-              Example:
-            </div>
-            <div class="code-block-render">
-              <i class="bi bi-arrow-up"></i>
-            </div>
-            <div class="code-block-code">
-              <pre>&lt;i class="bi bi-arrow-up">&lt;/i></pre>
-            </div>
-          </div>
-
-          <h3>Icon - Buffer</h3>
-          <p>A little bit about the <code>icon-buffer</code> icon.</p>
-          <div class="code-block code-block--last">
-            <div class="code-block-title">
-              Example:
-            </div>
-            <div class="code-block-render">
-              <i class="bi bi-buffer"></i>
-            </div>
-            <div class="code-block-code">
-              <pre>&lt;i class="bi bi-buffer">&lt;/i></pre>
-            </div>
-          </div>
-
-          <h3>Icon - Calendar</h3>
-          <p>A little bit about the <code>icon-calendar</code> icon.</p>
-          <div class="code-block code-block--last">
-            <div class="code-block-title">
-              Example:
-            </div>
-            <div class="code-block-render">
-              <i class="bi bi-calendar"></i>
-            </div>
-            <div class="code-block-code">
-              <pre>&lt;i class="bi bi-calendar">&lt;/i></pre>
-            </div>
-          </div>
-
-          <h3>Icon - Checkmark</h3>
-          <p>A little bit about the <code>icon-checkmark</code> icon.</p>
-          <div class="code-block code-block--last">
-            <div class="code-block-title">
-              Example:
-            </div>
-            <div class="code-block-render">
-              <i class="bi bi-checkmark"></i>
-            </div>
-            <div class="code-block-code">
-              <pre>&lt;i class="bi bi-checkmark">&lt;/i></pre>
-            </div>
-          </div>
-
-          <h3>Icon - Circle - App.net</h3>
-          <p>A little bit about the <code>icon-circle-appdotnet</code> icon.</p>
-          <div class="code-block code-block--last">
-            <div class="code-block-title">
-              Example:
-            </div>
-            <div class="code-block-render">
-              <i class="bi bi-circle-appdotnet"></i>
-            </div>
-            <div class="code-block-code">
-              <pre>&lt;i class="bi bi-circle-appdotnet">&lt;/i></pre>
-            </div>
-          </div>
-
-          <h3>Icon - Circle - Facebook</h3>
-          <p>A little bit about the <code>icon-circle-facebook</code> icon.</p>
-          <div class="code-block code-block--last">
-            <div class="code-block-title">
-              Example:
-            </div>
-            <div class="code-block-render">
-              <i class="bi bi-circle-facebook"></i>
-            </div>
-            <div class="code-block-code">
-              <pre>&lt;i class="bi bi-circle-facebook">&lt;/i></pre>
-            </div>
-          </div>
-
-          <h3>Icon - Circle - Google+</h3>
-          <p>A little bit about the <code>icon-circle-google-plus</code> icon.</p>
-          <div class="code-block code-block--last">
-            <div class="code-block-title">
-              Example:
-            </div>
-            <div class="code-block-render">
-              <i class="bi bi-circle-google-plus"></i>
-            </div>
-            <div class="code-block-code">
-              <pre>&lt;i class="bi bi-circle-google-plus">&lt;/i></pre>
-            </div>
-          </div>
-
-          <h3>Icon - Circle - LinkedIn</h3>
-          <p>A little bit about the <code>icon-circle-linkedin</code> icon.</p>
-          <div class="code-block code-block--last">
-            <div class="code-block-title">
-              Example:
-            </div>
-            <div class="code-block-render">
-              <i class="bi bi-circle-linkedin"></i>
-            </div>
-            <div class="code-block-code">
-              <pre>&lt;i class="bi bi-circle-linkedin">&lt;/i></pre>
-            </div>
-          </div>
-
-          <h3>Icon - Circle - Pinterest</h3>
-          <p>A little bit about the <code>icon-circle-pinterest</code> icon.</p>
-          <div class="code-block code-block--last">
-            <div class="code-block-title">
-              Example:
-            </div>
-            <div class="code-block-render">
-              <i class="bi bi-circle-pinterest"></i>
-            </div>
-            <div class="code-block-code">
-              <pre>&lt;i class="bi bi-circle-pinterest">&lt;/i></pre>
-            </div>
-          </div>
-
-          <h3>Icon - Circle - Plus</h3>
-          <p>A little bit about the <code>icon-circle-plus</code> icon.</p>
-          <div class="code-block code-block--last">
-            <div class="code-block-title">
-              Example:
-            </div>
-            <div class="code-block-render">
-              <i class="bi bi-circle-plus"></i>
-            </div>
-            <div class="code-block-code">
-              <pre>&lt;i class="bi bi-circle-plus">&lt;/i></pre>
-            </div>
-          </div>
-
-          <h3>Icon - Circle - Twitter</h3>
-          <p>A little bit about the <code>icon-circle-twitter</code> icon.</p>
-          <div class="code-block code-block--last">
-            <div class="code-block-title">
-              Example:
-            </div>
-            <div class="code-block-render">
-              <i class="bi bi-circle-twitter twitter"></i>
-            </div>
-            <div class="code-block-code">
-              <pre>&lt;i class="bi bi-circle-twitter">&lt;/i></pre>
-            </div>
-          </div>
-
-          <h3>Icon - Circle - X</h3>
-          <p>A little bit about the <code>icon-circle-x</code> icon.</p>
-          <div class="code-block code-block--last">
-            <div class="code-block-title">
-              Example:
-            </div>
-            <div class="code-block-render">
-              <i class="bi bi-circle-x"></i>
-            </div>
-            <div class="code-block-code">
-              <pre>&lt;i class="bi bi-circle-x">&lt;/i></pre>
-            </div>
-          </div>
-
-          <h3>Icon - Click</h3>
-          <p>A little bit about the <code>icon-click</code> icon.</p>
-          <div class="code-block code-block--last">
-            <div class="code-block-title">
-              Example:
-            </div>
-            <div class="code-block-render">
-              <i class="bi bi-click"></i>
-            </div>
-            <div class="code-block-code">
-              <pre>&lt;i class="bi bi-click">&lt;/i></pre>
-            </div>
-          </div>
-
-          <h3>Icon - Comment</h3>
-          <p>A little bit about the <code>icon-comment</code> icon.</p>
-          <div class="code-block code-block--last">
-            <div class="code-block-title">
-              Example:
-            </div>
-            <div class="code-block-render">
-              <i class="bi bi-comment"></i>
-            </div>
-            <div class="code-block-code">
-              <pre>&lt;i class="bi bi-comment">&lt;/i></pre>
-            </div>
-          </div>
-
-          <h3>Icon - Edit</h3>
-          <p>A little bit about the <code>icon-edit</code> icon.</p>
-          <div class="code-block code-block--last">
-            <div class="code-block-title">
-              Example:
-            </div>
-            <div class="code-block-render">
-              <i class="bi bi-edit"></i>
-            </div>
-            <div class="code-block-code">
-              <pre>&lt;i class="bi bi-edit">&lt;/i></pre>
-            </div>
-          </div>
-
-          <h3>Icon - Export</h3>
-          <p>A little bit about the <code>icon-export</code> icon.</p>
-          <div class="code-block code-block--last">
-            <div class="code-block-title">
-              Example:
-            </div>
-            <div class="code-block-render">
-              <i class="bi bi-export"></i>
-            </div>
-            <div class="code-block-code">
-              <pre>&lt;i class="bi bi-export">&lt;/i></pre>
-            </div>
-          </div>
-
-          <h3>Icon - Image</h3>
-          <p>A little bit about the <code>icon-image</code> icon.</p>
-          <div class="code-block code-block--last">
-            <div class="code-block-title">
-              Example:
-            </div>
-            <div class="code-block-render">
-              <i class="bi bi-image"></i>
-            </div>
-            <div class="code-block-code">
-              <pre>&lt;i class="bi bi-image">&lt;/i></pre>
-            </div>
-          </div>
-
-          <h3>Icon - Like</h3>
-          <p>A little bit about the <code>icon-like</code> icon.</p>
-          <div class="code-block code-block--last">
-            <div class="code-block-title">
-              Example:
-            </div>
-            <div class="code-block-render">
-              <i class="bi bi-like"></i>
-            </div>
-            <div class="code-block-code">
-              <pre>&lt;i class="bi bi-like">&lt;/i></pre>
-            </div>
-          </div>
-
-          <h3>Icon - Link</h3>
-          <p>A little bit about the <code>icon-link</code> icon.</p>
-          <div class="code-block code-block--last">
-            <div class="code-block-title">
-              Example:
-            </div>
-            <div class="code-block-render">
-              <i class="bi bi-link"></i>
-            </div>
-            <div class="code-block-code">
-              <pre>&lt;i class="bi bi-link">&lt;/i></pre>
-            </div>
-          </div>
-
-          <h3>Icon - Plus</h3>
-          <p>A little bit about the <code>icon-plus</code> icon.</p>
-          <div class="code-block code-block--last">
-            <div class="code-block-title">
-              Example:
-            </div>
-            <div class="code-block-render">
-              <i class="bi bi-plus"></i>
-            </div>
-            <div class="code-block-code">
-              <pre>&lt;i class="bi bi-plus">&lt;/i></pre>
-            </div>
-          </div>
-
-          <h3>Icon - Pricing</h3>
-          <p>A little bit about the <code>icon-pricing</code> icon.</p>
-          <div class="code-block code-block--last">
-            <div class="code-block-title">
-              Example:
-            </div>
-            <div class="code-block-render">
-              <i class="bi bi-pricing"></i>
-            </div>
-            <div class="code-block-code">
-              <pre>&lt;i class="bi bi-pricing">&lt;/i></pre>
-            </div>
-          </div>
-
-          <h3>Icon - Retweet</h3>
-          <p>A little bit about the <code>icon-retweet</code> icon.</p>
-          <div class="code-block code-block--last">
-            <div class="code-block-title">
-              Example:
-            </div>
-            <div class="code-block-render">
-              <i class="bi bi-retweet"></i>
-            </div>
-            <div class="code-block-code">
-              <pre>&lt;i class="bi bi-retweet">&lt;/i></pre>
-            </div>
-          </div>
-
-          <h3>Icon - Settings</h3>
-          <p>A little bit about the <code>icon-settings</code> icon.</p>
-          <div class="code-block code-block--last">
-            <div class="code-block-title">
-              Example:
-            </div>
-            <div class="code-block-render">
-              <i class="bi bi-settings"></i>
-            </div>
-            <div class="code-block-code">
-              <pre>&lt;i class="bi bi-settings">&lt;/i></pre>
-            </div>
-          </div>
-
-          <h3>Icon - View</h3>
-          <p>A little bit about the <code>icon-view</code> icon.</p>
-          <div class="code-block code-block--last">
-            <div class="code-block-title">
-              Example:
-            </div>
-            <div class="code-block-render">
-              <i class="bi bi-view"></i>
-            </div>
-            <div class="code-block-code">
-              <pre>&lt;i class="bi bi-view">&lt;/i></pre>
-            </div>
-          </div>
-
-          <h3>Icon - X</h3>
-          <p>A little bit about the <code>icon-x</code> icon.</p>
-          <div class="code-block code-block--last">
-            <div class="code-block-title">
-              Example:
-            </div>
-            <div class="code-block-render">
-              <i class="bi bi-x"></i>
-            </div>
-            <div class="code-block-code">
-              <pre>&lt;i class="bi bi-x">&lt;/i></pre>
-            </div>
-          </div>
-
-        </section>
-      </section>
     </section>
 
     <script src="js/bundle.js"></script>

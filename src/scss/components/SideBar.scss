@@ -1,0 +1,37 @@
+@import "../base/variables";
+
+/* Base Object
+------------------------------------------------------------ */
+.sidebar {
+  margin-top: -32px;
+  padding: 16px;
+  width: 256px;
+  min-height: 100vh;
+
+  background-color: $bufferForBusinessColor;
+  border-right: 1px solid $borderColor;
+
+  order: -1;
+}
+
+/* Base Objects
+------------------------------------------------------------ */
+.sidebar-search-profiles-input {
+  width: 100%;
+}
+
+.sidebar-accounts {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+
+  display: flex;
+}
+
+.sidebar-accounts-title {
+  flex-grow: 2;
+}
+
+.sidebar-accounts-button {
+  flex-grow: 0;
+}

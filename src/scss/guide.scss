@@ -14,15 +14,13 @@ a {
 }
 
 body {
-  margin-top: 128px;
-
   font-family: $fontFamily;
   font-size: $fontSize;
   font-weight: $fontWeight;
   line-height: $lineHeight;
   color: $bodyColor;
 
-  background-color: $backgroundFillColor;
+  background-color: $whiteColor;
 }
 
 html {
@@ -38,41 +36,80 @@ ul {
   }
 }
 
-.flex-container,
-.flex-container header,
-.flex-container footer {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
+// .flex-container,
+// .flex-container header,
+// .flex-container footer {
+//   display: -webkit-box;
+//   display: -moz-box;
+//   display: -ms-flexbox;
+//   display: -webkit-flex;
+//   display: flex;
+// }
+//
+// div.flex-container {
+//   flex-direction: column;
+//   justify-content: center;
+// }
+//
+// main.flex-container {
+//   flex-direction: row;
+// }
+//
+// .atom-list {
+//   flex-basis: 20%;
+// }
+//
+// .content {
+//   flex-basis: 80%;
+// }
+//
+// .flex-container header,
+// .flex-container footer {
+//   width: 100%;
+// }
+
+.app {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.body {
+  flex: 1;
+
   display: flex;
 }
 
-div.flex-container {
-  flex-direction: column;
-  justify-content: center;
+.sidebar-style-guide-list {
+  margin: -16px -16px -16px 0;
+
+  list-style: none;
 }
 
-main.flex-container {
-  flex-direction: row;
+.sidebar-style-guide-list li {
+  margin: 0;
 }
 
-.atom-list {
-  flex-basis: 20%;
+.sidebar-style-guide-list a.sidebar-style-guide-list--last {
+  border-bottom: 0;
+}
+
+.sidebar-style-guide-list a {
+  display: block;
+  height: 32px;
+
+  line-height: 32px;
+  border-bottom: 1px solid $borderLightColor;
+
 }
 
 .content {
-  flex-basis: 80%;
-}
-
-.flex-container header,
-.flex-container footer {
-  width: 100%;
+  flex: 1;
 }
 
 .section {
-  margin-bottom: 64px;
-  padding: 0 32px 64px 32px;
+  margin: 0 32px 64px 32px;
+  padding-bottom: 64px;
 
   border-bottom: 1px solid $borderColor;
 }
@@ -150,6 +187,8 @@ main.flex-container {
   background-color: $backgroundFillColor;
   border: 1px solid $borderColor;
   border-radius: 0 0 $borderRadiusLevel2 $borderRadiusLevel2;
+
+  overflow: hidden;
 }
 
 .pre--last {
