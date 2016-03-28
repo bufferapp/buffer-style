@@ -1,0 +1,91 @@
+@import "../base/variables";
+
+/* Base Object
+------------------------------------------------------------ */
+.button {
+  padding: 0 16px;
+  height: 32px;
+
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  color: $bodyColor;
+
+  background-color: transparent;
+  border: 1px solid $borderColor;
+  border-radius: $borderRadiusLevel2;
+
+  cursor: pointer;
+}
+
+.button [class*=" bi-"]:before, [class^=bi-]:before {
+  vertical-align: baseline;
+}
+
+.button:hover {
+  background-color: $borderLightColor;
+}
+
+/* Base Object - Modifiers
+------------------------------ */
+.button--active,
+.button--inactive {
+  background-color: $borderLightColor;
+}
+
+.button--active:hover {
+  background-color: $borderLightColor;
+}
+
+.button--inactive {
+  color: $borderColor;
+}
+
+.button--large {
+  padding: 0 32px;
+  height: 48px;
+
+  line-height: 48px;
+}
+
+.button--left {
+  border-radius: $borderRadiusLevel2 0 0 $borderRadiusLevel2;
+}
+
+.button--middle {
+  border-right: 0;
+  border-left: 0;
+  border-radius: 0;
+}
+
+.button--primary {
+  color: $whiteColor;
+
+  background-color: $actionableColor;
+  border-color: $actionableBorderColor;
+}
+
+.button--primary,
+.button--secondary {
+  border-radius: 256px;
+
+  &:hover {
+    color: $whiteColor;
+
+    background-color: $actionableHoverColor;
+    border-color: $actionableBorderColor;
+  }
+}
+
+.button--right {
+  border-radius: 0 $borderRadiusLevel2 $borderRadiusLevel2 0;
+}
+
+.button--remove-border-left {
+  border-left: 0;
+}
+
+.button--secondary {
+  color: $actionableColor;
+
+  border-color: $actionableColor;
+}

@@ -120,6 +120,91 @@ p {
 ------------------------------------------------------------ */
 /* Base Object
 ------------------------------------------------------------ */
+.button {
+  padding: 0 16px;
+  height: 32px;
+  font-family: "open sans", sans-serif;
+  font-size: 14px;
+  color: #59626a;
+  background-color: transparent;
+  border: 1px solid #ced7df;
+  border-radius: 4px;
+  cursor: pointer; }
+
+.button [class*=" bi-"]:before, [class^=bi-]:before {
+  vertical-align: baseline; }
+
+.button:hover {
+  background-color: #eff3f6; }
+
+/* Base Object - Modifiers
+------------------------------ */
+.button--active,
+.button--inactive {
+  background-color: #eff3f6; }
+
+.button--active:hover {
+  background-color: #eff3f6; }
+
+.button--inactive {
+  color: #ced7df; }
+
+.button--large {
+  padding: 0 32px;
+  height: 48px;
+  line-height: 48px; }
+
+.button--left {
+  border-radius: 4px 0 0 4px; }
+
+.button--middle {
+  border-right: 0;
+  border-left: 0;
+  border-radius: 0; }
+
+.button--primary {
+  color: #fff;
+  background-color: #168eea;
+  border-color: rgba(0, 0, 0, 0.2); }
+
+.button--primary,
+.button--secondary {
+  border-radius: 256px; }
+  .button--primary:hover,
+  .button--secondary:hover {
+    color: #fff;
+    background-color: #106aaf;
+    border-color: rgba(0, 0, 0, 0.2); }
+
+.button--right {
+  border-radius: 0 4px 4px 0; }
+
+.button--remove-border-left {
+  border-left: 0; }
+
+.button--secondary {
+  color: #168eea;
+  border-color: #168eea; }
+
+/* Global Reset // We'll pull in a common reset here, perhaps in another file!
+------------------------------------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* Primary Palette
+------------------------------------------------------------ */
+/* Brands Palette
+------------------------------------------------------------ */
+/* Font
+------------------------------------------------------------ */
+/* Border Radii
+------------------------------------------------------------ */
+/* Box Shadows
+------------------------------------------------------------ */
+/* Base Object
+------------------------------------------------------------ */
 .card {
   padding: 16px;
   background-color: #fff;
@@ -350,7 +435,7 @@ p {
 /* Base Object
 ------------------------------------------------------------ */
 .bi {
-  margin-right: 4px; }
+  margin-right: 8px; }
 
 .bi-circle-appdotnet[class*="bi-"],
 .bi-circle-facebook[class*="bi-"],
@@ -596,6 +681,9 @@ p {
 
 .sidebar-accounts-button {
   flex-grow: 0; }
+
+.sidebar-accounts-button .bi {
+  margin-right: 0; }
 
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
