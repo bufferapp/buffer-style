@@ -45,8 +45,10 @@
         </div> -->
 
         <section class="sidebar-search-profiles">
-          <div class="input--with-icon">
-            <i class="bi bi-search"></i><input class="sidebar-search-profiles-input input input--icon" placeholder="Search Profiles" type="text">
+          <div class="sidebar-search-profiles-input">
+            <div class="input-with-icon-left">
+              <i class="bi bi-search"></i><input class="input input--icon-left" placeholder="Search Profiles" type="text">
+            </div>
           </div>
         </section>
 
@@ -55,6 +57,41 @@
           <div class="sidebar-accounts-button">
             <button class="button button--primary"><i class="bi bi-circle-plus"></i></button>
           </div>
+        </section>
+
+        <section class="sidebar-connected-accounts">
+
+          <div class="sidebar-connected-account sidebar-connected-account--active">
+            <div class="sidebar-connected-account-profile-picture">
+              <div class="profile-picture-with-icon">
+                <img class="profile-picture" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
+                <div class="profile-picture-icon">
+                  <i class="bi bi-circle-twitter"></i>
+                </div>
+              </div>
+            </div>
+            <div class="sidebar-connected-account-name">
+              stevemdixon
+            </div>
+            <div class="sidebar-connected-account-current">
+              <i class="bi bi-arrow-right"></i>
+            </div>
+          </div>
+
+          <div class="sidebar-connected-account">
+            <div class="sidebar-connected-account-profile-picture">
+              <div class="profile-picture-with-icon">
+                <img class="profile-picture" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
+                <div class="profile-picture-icon">
+                  <i class="bi bi-circle-facebook"></i>
+                </div>
+              </div>
+            </div>
+            <div class="sidebar-connected-account-name">
+              Steve Dixon
+            </div>
+          </div>
+
         </section>
 
       </aside>
@@ -202,8 +239,8 @@
                   </div>
                 </div>
                 <div class="code-block-code">
-    <pre>&lt;div class="card">
-    &lt;/div></pre>
+                  <pre>&lt;div class="card">
+&lt;/div></pre>
                 </div>
               </div>
               <h2>Card -- Empty</h2>
@@ -217,8 +254,8 @@
                   </div>
                 </div>
                 <div class="code-block-code">
-    <pre>&lt;div class="card card--empty">
-    &lt;/div></pre>
+                  <pre>&lt;div class="card card--empty">
+&lt;/div></pre>
                 </div>
               </div>
             </section>
@@ -241,13 +278,7 @@
                       <div class="card-post-meta-via">
                         via Extension
                       </div>
-                      <div class="card-post-meta-user">
-                        <span class="card-post-meta-user-profile-picture">
-                          <img class="profile-picture profile-picture--small" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
-                        </span>
-                        <span class="card-post-meta-user-name">
-                          steve@buffer.com
-                        </span>
+                      <div class="card-post-meta-user"><span class="card-post-meta-user-profile-picture"><img class="profile-picture profile-picture--small" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg"></span><span class="card-post-meta-user-name">steve@buffer.com</span>
                       </div>
                       <ul class="card-post-meta-menu">
                         <li class="card-post-meta-menu-item">
@@ -267,41 +298,39 @@
                   </div>
                 </div>
                 <div class="code-block-code">
-                  <pre>&lt;div class="card card-post code-block-render-example">
-      &lt;div class="card-post-content">
-        &lt;p>What is a Product Designer? An awesome story by &lt;a href="#">@jgadapee&lt;/a> over on Medium! &lt;a href="#">http://buff.ly/1LTbUqv&lt;/a>&lt;/p>
-      &lt;/div>
-      &lt;div class="card-post-meta">
-        &lt;div class="card-post-meta-time">
-          &lt;span class="card-post-stat">09:42&lt;/span> &lt;span class="card-post-meta-time-zone">(GMT)&lt;/span>
-        &lt;/div>
-        &lt;div class="card-post-meta-via">
-          via Extension
-        &lt;/div>
-        &lt;div class="card-post-meta-user">
-          &lt;span class="card-post-meta-user-profile-picture">
-            &lt;img class="profile-picture profile-picture--small" src="#">
-          &lt;/span>
-          &lt;span class="card-post-meta-user-name">
-            steve@buffer.com
-          &lt;/span>
-        &lt;/div>
-        &lt;ul class="card-post-meta-menu">
-          &lt;li class="card-post-meta-menu-item">
-            &lt;a href="#">&lt;i class="bi bi-x">&lt;/i>Delete&lt;/a>
-          &lt;/li>
-          &lt;li class="card-post-meta-menu-item">
-            &lt;a href="#">&lt;i class="bi bi-edit">&lt;/i>Edit&lt;/a>
-          &lt;/li>
-          &lt;li class="card-post-meta-menu-item">
-            &lt;a href="#">&lt;i class="bi bi-arrow-up">&lt;/i>Move to Top&lt;/a>
-          &lt;/li>
-          &lt;li class="card-post-meta-menu-item card-post-meta-menu-item--last">
-            &lt;a href="#">&lt;i class="bi bi-arrow-right">&lt;/i>Share Now&lt;/a>
-          &lt;/li>
-        &lt;/ul>
-      &lt;/div>
-    &lt;/div></pre>
+                  <pre>&lt;div class="card card-post">
+
+  &lt;div class="card-post-content">
+    &lt;p>What is a Product Designer? An awesome story by &lt;a href="#">@jgadapee&lt;/a> over on Medium! &lt;a href="#">http://buff.ly/1LTbUqv&lt;/a>&lt;/p>
+  &lt;/div>
+
+  &lt;div class="card-post-meta">
+    &lt;div class="card-post-meta-time">
+      &lt;span class="card-post-stat">09:42&lt;/span> &lt;span class="card-post-meta-time-zone">(GMT)&lt;/span>
+    &lt;/div>
+    &lt;div class="card-post-meta-via">
+      via Extension
+    &lt;/div>
+    &lt;div class="card-post-meta-user">
+      &lt;span class="card-post-meta-user-profile-picture">&lt;img class="profile-picture profile-picture--small" src="#">&lt;/span>&lt;span class="card-post-meta-user-name">steve@buffer.com&lt;/span>
+    &lt;/div>
+    &lt;ul class="card-post-meta-menu">
+      &lt;li class="card-post-meta-menu-item">
+        &lt;a href="#">&lt;i class="bi bi-x">&lt;/i>Delete&lt;/a>
+      &lt;/li>
+      &lt;li class="card-post-meta-menu-item">
+        &lt;a href="#">&lt;i class="bi bi-edit">&lt;/i>Edit&lt;/a>
+      &lt;/li>
+      &lt;li class="card-post-meta-menu-item">
+        &lt;a href="#">&lt;i class="bi bi-arrow-up">&lt;/i>Move to Top&lt;/a>
+      &lt;/li>
+      &lt;li class="card-post-meta-menu-item card-post-meta-menu-item--last">
+        &lt;a href="#">&lt;i class="bi bi-arrow-right">&lt;/i>Share Now&lt;/a>
+      &lt;/li>
+    &lt;/ul>
+  &lt;/div>
+
+&lt;/div></pre>
                 </div>
               </div>
               <h2>Card - Post -- Pinned</h2>
@@ -326,12 +355,7 @@
                         via Extension
                       </div>
                       <div class="card-post-meta-user">
-                        <span class="card-post-meta-user-profile-picture">
-                          <img class="profile-picture profile-picture--small" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
-                        </span>
-                        <span class="card-post-meta-user-name">
-                          steve@buffer.com
-                        </span>
+                        <span class="card-post-meta-user-profile-picture"><img class="profile-picture profile-picture--small" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg"></span><span class="card-post-meta-user-name">steve@buffer.com</span>
                       </div>
                       <ul class="card-post-meta-menu">
                         <li class="card-post-meta-menu-item">
@@ -351,46 +375,42 @@
                   </div>
                 </div>
                 <div class="code-block-code">
-                  <pre>&lt;div class="code-block-render">
-      &lt;div class="card card-post code-block-render-example">
-        &lt;div class="card-post-content">
-          &lt;p>What is a Product Designer? An awesome story by &lt;a href="#">@jgadapee&lt;/a> over on Medium! &lt;a href="#">http://buff.ly/1LTbUqv&lt;/a>&lt;/p>
-        &lt;/div>
-        &lt;div class="card-post-meta">
-          &lt;div class="card-post-meta-time-pinned">
-            &lt;div class="card-post-meta-time">
-              09:42 &lt;span class="card-post-meta-time-zone">(GMT)&lt;/span>
-            &lt;/div>
-            &lt;div class="card-post-meta-time-pinned-arrow">&lt;/div>
-          &lt;/div>
-          &lt;div class="card-post-meta-via">
-            via Extension
-          &lt;/div>
-          &lt;div class="card-post-meta-user">
-            &lt;span class="card-post-meta-user-profile-picture">
-              &lt;img class="profile-picture profile-picture--small" src="#">
-            &lt;/span>
-            &lt;span class="card-post-meta-user-name">
-              steve@buffer.com
-            &lt;/span>
-          &lt;/div>
-          &lt;ul class="card-post-meta-menu">
-            &lt;li class="card-post-meta-menu-item">
-              &lt;a href="#">&lt;i class="bi bi-x">&lt;/i>Delete&lt;/a>
-            &lt;/li>
-            &lt;li class="card-post-meta-menu-item">
-              &lt;a href="#">&lt;i class="bi bi-edit">&lt;/i>Edit&lt;/a>
-            &lt;/li>
-            &lt;li class="card-post-meta-menu-item">
-              &lt;a href="#">&lt;i class="bi bi-arrow-up">&lt;/i>Move to Top&lt;/a>
-            &lt;/li>
-            &lt;li class="card-post-meta-menu-item card-post-meta-menu-item--last">
-              &lt;a href="#">&lt;i class="bi bi-arrow-right">&lt;/i>Share Now&lt;/a>
-            &lt;/li>
-          &lt;/ul>
-        &lt;/div>
+                  <pre>&lt;div class="card card-post">
+
+  &lt;div class="card-post-content">
+    &lt;p>What is a Product Designer? An awesome story by &lt;a href="#">@jgadapee&lt;/a> over on Medium! &lt;a href="#">http://buff.ly/1LTbUqv&lt;/a>&lt;/p>
+  &lt;/div>
+
+  &lt;div class="card-post-meta">
+    &lt;div class="card-post-meta-time-pinned">
+      &lt;div class="card-post-meta-time">
+        09:42 &lt;span class="card-post-meta-time-zone">(GMT)&lt;/span>
       &lt;/div>
-    &lt;/div></pre>
+      &lt;div class="card-post-meta-time-pinned-arrow">&lt;/div>
+    &lt;/div>
+    &lt;div class="card-post-meta-via">
+      via Extension
+    &lt;/div>
+    &lt;div class="card-post-meta-user">
+      &lt;span class="card-post-meta-user-profile-picture">&lt;img class="profile-picture profile-picture--small" src="#">&lt;/span>&lt;span class="card-post-meta-user-name">steve@buffer.com&lt;/span>
+    &lt;/div>
+    &lt;ul class="card-post-meta-menu">
+      &lt;li class="card-post-meta-menu-item">
+        &lt;a href="#">&lt;i class="bi bi-x">&lt;/i>Delete&lt;/a>
+      &lt;/li>
+      &lt;li class="card-post-meta-menu-item">
+        &lt;a href="#">&lt;i class="bi bi-edit">&lt;/i>Edit&lt;/a>
+      &lt;/li>
+      &lt;li class="card-post-meta-menu-item">
+        &lt;a href="#">&lt;i class="bi bi-arrow-up">&lt;/i>Move to Top&lt;/a>
+      &lt;/li>
+      &lt;li class="card-post-meta-menu-item card-post-meta-menu-item--last">
+        &lt;a href="#">&lt;i class="bi bi-arrow-right">&lt;/i>Share Now&lt;/a>
+      &lt;/li>
+    &lt;/ul>
+  &lt;/div>
+
+&lt;/div></pre>
                 </div>
               </div>
               <h2>Card - Post -- Tag</h2>
@@ -415,12 +435,7 @@
                         via Extension
                       </div>
                       <div class="card-post-meta-user">
-                        <span class="card-post-meta-user-profile-picture">
-                          <img class="profile-picture profile-picture--small" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
-                        </span>
-                        <span class="card-post-meta-user-name">
-                          steve@buffer.com
-                        </span>
+                        <span class="card-post-meta-user-profile-picture"><img class="profile-picture profile-picture--small" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg"></span><span class="card-post-meta-user-name">steve@buffer.com</span>
                       </div>
                       <ul class="card-post-meta-menu">
                         <li class="card-post-meta-menu-item">
@@ -440,44 +455,42 @@
                   </div>
                 </div>
                 <div class="code-block-code">
-                  <pre>&lt;div class="card card-post code-block-render-example">
-      &lt;div class="card-post-content">
-        &lt;p>What is a Product Designer? An awesome story by &lt;a href="#">@jgadapee&lt;/a> over on Medium! &lt;a href="#">http://buff.ly/1LTbUqv&lt;/a>&lt;/p>
-      &lt;/div>
-      &lt;div class="card-post-meta">
-        &lt;div class="card-post-meta-tag tag tag--blue">
-          In Queue!
-        &lt;/div>
-        &lt;div class="card-post-meta-time">
-          &lt;span class="card-post-stat">09:42&lt;/span> &lt;span class="card-post-meta-time-zone">(GMT)&lt;/span>
-        &lt;/div>
-        &lt;div class="card-post-meta-via">
-          via Extension
-        &lt;/div>
-        &lt;div class="card-post-meta-user">
-          &lt;span class="card-post-meta-user-profile-picture">
-            &lt;img class="profile-picture profile-picture--small" src="#">
-          &lt;/span>
-          &lt;span class="card-post-meta-user-name">
-            steve@buffer.com
-          &lt;/span>
-        &lt;/div>
-        &lt;ul class="card-post-meta-menu">
-          &lt;li class="card-post-meta-menu-item">
-            &lt;a href="#">&lt;i class="bi bi-x">&lt;/i>Delete&lt;/a>
-          &lt;/li>
-          &lt;li class="card-post-meta-menu-item">
-            &lt;a href="#">&lt;i class="bi bi-edit">&lt;/i>Edit&lt;/a>
-          &lt;/li>
-          &lt;li class="card-post-meta-menu-item">
-            &lt;a href="#">&lt;i class="bi bi-arrow-up">&lt;/i>Move to Top&lt;/a>
-          &lt;/li>
-          &lt;li class="card-post-meta-menu-item card-post-meta-menu-item--last">
-            &lt;a href="#">&lt;i class="bi bi-arrow-right">&lt;/i>Share Now&lt;/a>
-          &lt;/li>
-        &lt;/ul>
-      &lt;/div>
-    &lt;/div></pre>
+                  <pre>&lt;div class="card card-post">
+
+  &lt;div class="card-post-content">
+    &lt;p>What is a Product Designer? An awesome story by &lt;a href="#">@jgadapee&lt;/a> over on Medium! &lt;a href="#">http://buff.ly/1LTbUqv&lt;/a>&lt;/p>
+  &lt;/div>
+
+  &lt;div class="card-post-meta">
+    &lt;div class="card-post-meta-tag tag tag--blue">
+      In Queue!
+    &lt;/div>
+    &lt;div class="card-post-meta-time">
+      &lt;span class="card-post-stat">09:42&lt;/span> &lt;span class="card-post-meta-time-zone">(GMT)&lt;/span>
+    &lt;/div>
+    &lt;div class="card-post-meta-via">
+      via Extension
+    &lt;/div>
+    &lt;div class="card-post-meta-user">
+      &lt;span class="card-post-meta-user-profile-picture">&lt;img class="profile-picture profile-picture--small" src="#">&lt;/span>&lt;span class="card-post-meta-user-name">steve@buffer.com&lt;/span>
+    &lt;/div>
+    &lt;ul class="card-post-meta-menu">
+      &lt;li class="card-post-meta-menu-item">
+        &lt;a href="#">&lt;i class="bi bi-x">&lt;/i>Delete&lt;/a>
+      &lt;/li>
+      &lt;li class="card-post-meta-menu-item">
+        &lt;a href="#">&lt;i class="bi bi-edit">&lt;/i>Edit&lt;/a>
+      &lt;/li>
+      &lt;li class="card-post-meta-menu-item">
+        &lt;a href="#">&lt;i class="bi bi-arrow-up">&lt;/i>Move to Top&lt;/a>
+      &lt;/li>
+      &lt;li class="card-post-meta-menu-item card-post-meta-menu-item--last">
+        &lt;a href="#">&lt;i class="bi bi-arrow-right">&lt;/i>Share Now&lt;/a>
+      &lt;/li>
+    &lt;/ul>
+  &lt;/div>
+
+&lt;/div></pre>
                 </div>
               </div>
               <div class="code-block">
@@ -500,12 +513,7 @@
                         via Extension
                       </div>
                       <div class="card-post-meta-user">
-                        <span class="card-post-meta-user-profile-picture">
-                          <img class="profile-picture profile-picture--small" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
-                        </span>
-                        <span class="card-post-meta-user-name">
-                          steve@buffer.com
-                        </span>
+                        <span class="card-post-meta-user-profile-picture"><img class="profile-picture profile-picture--small" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg"></span><span class="card-post-meta-user-name">steve@buffer.com</span>
                       </div>
                       <ul class="card-post-meta-menu">
                         <li class="card-post-meta-menu-item">
@@ -525,44 +533,42 @@
                   </div>
                 </div>
                 <div class="code-block-code">
-                  <pre>&lt;div class="card card-post code-block-render-example">
-      &lt;div class="card-post-content">
-        &lt;p>What is a Product Designer? An awesome story by &lt;a href="#">@jgadapee&lt;/a> over on Medium! &lt;a href="#">http://buff.ly/1LTbUqv&lt;/a>&lt;/p>
-      &lt;/div>
-      &lt;div class="card-post-meta">
-        &lt;div class="card-post-meta-tag tag tag--error">
-          Failed
-        &lt;/div>
-        &lt;div class="card-post-meta-time">
-          &lt;span class="card-post-stat">09:42&lt;/span> &lt;span class="card-post-meta-time-zone">(GMT)&lt;/span>
-        &lt;/div>
-        &lt;div class="card-post-meta-via">
-          via Extension
-        &lt;/div>
-        &lt;div class="card-post-meta-user">
-          &lt;span class="card-post-meta-user-profile-picture">
-            &lt;img class="profile-picture profile-picture--small" src="#">
-          &lt;/span>
-          &lt;span class="card-post-meta-user-name">
-            steve@buffer.com
-          &lt;/span>
-        &lt;/div>
-        &lt;ul class="card-post-meta-menu">
-          &lt;li class="card-post-meta-menu-item">
-            &lt;a href="#">&lt;i class="bi bi-x">&lt;/i>Delete&lt;/a>
-          &lt;/li>
-          &lt;li class="card-post-meta-menu-item">
-            &lt;a href="#">&lt;i class="bi bi-edit">&lt;/i>Edit&lt;/a>
-          &lt;/li>
-          &lt;li class="card-post-meta-menu-item">
-            &lt;a href="#">&lt;i class="bi bi-arrow-up">&lt;/i>Move to Top&lt;/a>
-          &lt;/li>
-          &lt;li class="card-post-meta-menu-item card-post-meta-menu-item--last">
-            &lt;a href="#">&lt;i class="bi bi-arrow-right">&lt;/i>Share Now&lt;/a>
-          &lt;/li>
-        &lt;/ul>
-      &lt;/div>
-    &lt;/div></pre>
+                  <pre>&lt;div class="card card-post">
+
+  &lt;div class="card-post-content">
+    &lt;p>What is a Product Designer? An awesome story by &lt;a href="#">@jgadapee&lt;/a> over on Medium! &lt;a href="#">http://buff.ly/1LTbUqv&lt;/a>&lt;/p>
+  &lt;/div>
+
+  &lt;div class="card-post-meta">
+    &lt;div class="card-post-meta-tag tag tag--error">
+      Failed
+    &lt;/div>
+    &lt;div class="card-post-meta-time">
+      &lt;span class="card-post-stat">09:42&lt;/span> &lt;span class="card-post-meta-time-zone">(GMT)&lt;/span>
+    &lt;/div>
+    &lt;div class="card-post-meta-via">
+      via Extension
+    &lt;/div>
+    &lt;div class="card-post-meta-user">
+      &lt;span class="card-post-meta-user-profile-picture">&lt;img class="profile-picture profile-picture--small" src="#">&lt;/span>&lt;span class="card-post-meta-user-name">steve@buffer.com&lt;/span>
+    &lt;/div>
+    &lt;ul class="card-post-meta-menu">
+      &lt;li class="card-post-meta-menu-item">
+        &lt;a href="#">&lt;i class="bi bi-x">&lt;/i>Delete&lt;/a>
+      &lt;/li>
+      &lt;li class="card-post-meta-menu-item">
+        &lt;a href="#">&lt;i class="bi bi-edit">&lt;/i>Edit&lt;/a>
+      &lt;/li>
+      &lt;li class="card-post-meta-menu-item">
+        &lt;a href="#">&lt;i class="bi bi-arrow-up">&lt;/i>Move to Top&lt;/a>
+      &lt;/li>
+      &lt;li class="card-post-meta-menu-item card-post-meta-menu-item--last">
+        &lt;a href="#">&lt;i class="bi bi-arrow-right">&lt;/i>Share Now&lt;/a>
+      &lt;/li>
+    &lt;/ul>
+  &lt;/div>
+
+&lt;/div></pre>
                 </div>
               </div>
               <h2 class="section-secondary-title">Card - Post - Analytics</h2>
@@ -604,36 +610,39 @@
                   </div>
                 </div>
                 <div class="code-block-code">
-                  <pre>&lt;div class="card card-post-analytics code-block-render-example">
-      &lt;div class="card-post-analytics-content">
-        &lt;p>What is a Product Designer? An awesome story by &lt;a href="#">@jgadapee&lt;/a> over on Medium! &lt;a href="#">http://buff.ly/1LTbUqv&lt;/a>&lt;/p>
-        &lt;div class="card-post-analytics-posted">
-          &lt;div class="card-post-analytics-posted-time">
-            &lt;span class="card-post-stat">09:42&lt;/span> &lt;span class="card-post-analytics-posted-time-zone">(GMT)&lt;/span>
-          &lt;/div>
-          &lt;div class="card-post-analytics-posted-via">
-            via Extension
-          &lt;/div>
-        &lt;/div>
+                  <pre>&lt;div class="card card-post-analytics">
+
+  &lt;div class="card-post-analytics-content">
+    &lt;p>What is a Product Designer? An awesome story by &lt;a href="#">@jgadapee&lt;/a> over on Medium! &lt;a href="#">http://buff.ly/1LTbUqv&lt;/a>&lt;/p>
+    &lt;div class="card-post-analytics-posted">
+      &lt;div class="card-post-analytics-posted-time">
+        &lt;span class="card-post-stat">09:42&lt;/span> &lt;span class="card-post-analytics-posted-time-zone">(GMT)&lt;/span>
       &lt;/div>
-      &lt;div class="card-post-analytics-meta">
-        &lt;div class="card-post-analytics-meta-data-stat">
-          &lt;i class="bi bi-retweet">&lt;/i>&lt;span class="card-post-stat">0&lt;/span> retweets
-        &lt;/div>
-        &lt;div class="card-post-analytics-meta-data-stat">
-          &lt;i class="bi bi-like">&lt;/i>&lt;span class="card-post-stat">2&lt;/span> likes
-        &lt;/div>
-        &lt;div class="card-post-analytics-meta-data-stat">
-          &lt;i class="bi bi-comment">&lt;/i>&lt;span class="card-post-stat">0&lt;/span> mentions
-        &lt;/div>
-        &lt;div class="card-post-analytics-meta-data-stat">
-          &lt;i class="bi bi-click">&lt;/i>&lt;span class="card-post-stat">6&lt;/span> clicks
-        &lt;/div>
-        &lt;div class="card-post-analytics-meta-data-stat">
-          &lt;i class="bi bi-view">&lt;/i>&lt;span class="card-post-stat">843&lt;/span> potential
-        &lt;/div>
+      &lt;div class="card-post-analytics-posted-via">
+        via Extension
       &lt;/div>
-    &lt;/div></pre>
+    &lt;/div>
+  &lt;/div>
+
+  &lt;div class="card-post-analytics-meta">
+    &lt;div class="card-post-analytics-meta-data-stat">
+      &lt;i class="bi bi-retweet">&lt;/i>&lt;span class="card-post-stat">0&lt;/span> retweets
+    &lt;/div>
+    &lt;div class="card-post-analytics-meta-data-stat">
+      &lt;i class="bi bi-like">&lt;/i>&lt;span class="card-post-stat">2&lt;/span> likes
+    &lt;/div>
+    &lt;div class="card-post-analytics-meta-data-stat">
+      &lt;i class="bi bi-comment">&lt;/i>&lt;span class="card-post-stat">0&lt;/span> mentions
+    &lt;/div>
+    &lt;div class="card-post-analytics-meta-data-stat">
+      &lt;i class="bi bi-click">&lt;/i>&lt;span class="card-post-stat">6&lt;/span> clicks
+    &lt;/div>
+    &lt;div class="card-post-analytics-meta-data-stat">
+      &lt;i class="bi bi-view">&lt;/i>&lt;span class="card-post-stat">843&lt;/span> potential
+    &lt;/div>
+  &lt;/div>
+
+&lt;/div></pre>
                 </div>
               </div>
             </section>
@@ -680,30 +689,34 @@
                   </div>
                 </div>
                 <div class="code-block-code">
-                  <pre>&lt;div class="navbar code-block-render-example">
-      &lt;div class="navbar-title">
-        &lt;i class="bi bi-buffer">&lt;/i>Buffer
-      &lt;/div>
-      &lt;ul class="navbar-menu-left">
-        &lt;li class="navbar-menu-item">
-          &lt;a class="navbar-menu-item--active" href="#">Queue&lt;/a>
-        &lt;/li>
-        &lt;li class="navbar-menu-item">
-          &lt;a href="#">Library&lt;/a>
-        &lt;/li>
-        &lt;li class="navbar-menu-item navbar-menu-item--last">
-          &lt;a href="#">Analytics&lt;/a>
-        &lt;/li>
-      &lt;/ul>
-      &lt;ul class="navbar-menu-right">
-        &lt;li class="navbar-menu-item">
-          &lt;a href="#">Help&lt;/a>
-        &lt;/li>
-        &lt;li class="navbar-menu-item navbar-menu-item--last">
-          &lt;a href="#">&lt;img class="navbar-menu-item-profile-picture profile-picture" src="#">Account&lt;/a>
-        &lt;/li>
-      &lt;/ul>
-    &lt;/div></pre>
+                  <pre>&lt;div class="navbar">
+
+  &lt;div class="navbar-title">
+    &lt;i class="bi bi-buffer">&lt;/i>Buffer
+  &lt;/div>
+
+  &lt;ul class="navbar-menu-left">
+    &lt;li class="navbar-menu-item">
+      &lt;a class="navbar-menu-item--active" href="#">Queue&lt;/a>
+    &lt;/li>
+    &lt;li class="navbar-menu-item">
+      &lt;a href="#">Library&lt;/a>
+    &lt;/li>
+    &lt;li class="navbar-menu-item navbar-menu-item--last">
+      &lt;a href="#">Analytics&lt;/a>
+    &lt;/li>
+  &lt;/ul>
+
+  &lt;ul class="navbar-menu-right">
+    &lt;li class="navbar-menu-item">
+      &lt;a href="#">Help&lt;/a>
+    &lt;/li>
+    &lt;li class="navbar-menu-item navbar-menu-item--last">
+      &lt;a href="#">&lt;img class="navbar-menu-item-profile-picture profile-picture" src="#">Account&lt;/a>
+    &lt;/li>
+  &lt;/ul>
+
+&lt;/div></pre>
                 </div>
               </div>
             </section>
@@ -753,7 +766,7 @@
                   <img class="profile-picture code-block-render-example" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
                 </div>
                 <div class="code-block-code">
-    <pre>&lt;img class="profile-picture" src="#"></pre>
+                  <pre>&lt;img class="profile-picture" src="#"></pre>
                 </div>
               </div>
             </section>
@@ -874,10 +887,10 @@
                 </div>
                 <div class="code-block-code">
                   <pre>&lt;div class="modal" id="openModal">
-      &lt;div class="card">
-        &lt;p>Modal example here. &lt;a href="#close" title="Close">Close&lt;/a>&lt;/p>
-      &lt;/div>
-    &lt;/div></pre>
+  &lt;div class="card">
+    &lt;p>Modal example here. &lt;a href="#close" title="Close">Close&lt;/a>&lt;/p>
+  &lt;/div>
+&lt;/div></pre>
                 </div>
               </div>
             </section>
@@ -1188,6 +1201,20 @@
                 </div>
               </div>
 
+              <h3>Icon - Credit Card</h3>
+              <p>A little bit about the <code>icon-credit-card</code> icon.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <i class="bi bi-credit-card"></i>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;i class="bi bi-credit-card">&lt;/i></pre>
+                </div>
+              </div>
+
               <h3>Icon - Edit</h3>
               <p>A little bit about the <code>icon-edit</code> icon.</p>
               <div class="code-block code-block--last">
@@ -1426,20 +1453,38 @@
                 </div>
               </div>
 
-              <h3>Input -- With Icon</h3>
+              <h3>Input -- Icon Left</h3>
               <p>A little bit about inputs.</p>
               <div class="code-block code-block--last">
                 <div class="code-block-title">
                   Example:
                 </div>
                 <div class="code-block-render">
-                  <div class="input--with-icon">
-                    <i class="bi bi-search"></i><input class="input input--icon" placeholder="Search Profiles" type="text">
+                  <div class="input-with-icon-left">
+                    <i class="bi bi-search"></i><input class="input input--icon-left" placeholder="Search Profiles" type="text">
                   </div>
                 </div>
                 <div class="code-block-code">
-                  <pre>&lt;div class="input--with-icon">
-  &lt;i class="bi bi-search">&lt;/i>&lt;input class="input input--icon" placeholder="Search Profiles" type="text">
+                  <pre>&lt;div class="input-with-icon-left">
+  &lt;i class="bi bi-search">&lt;/i>&lt;input class="input input--icon-left" placeholder="Search Profiles" type="text">
+&lt;/div></pre>
+                </div>
+              </div>
+
+              <h3>Input -- Icon Right</h3>
+              <p>A little bit about inputs.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <div class="input-with-icon-right">
+                    <input class="input input--icon-right" placeholder="Credit Card Number" type="text"><i class="bi bi-search"></i>
+                  </div>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;div class="input-with-icon-right">
+  &lt;input class="input input--icon-right" placeholder="Credit Card Number" type="text">&lt;i class="bi bi-credit-card">&lt;/i>
 &lt;/div></pre>
                 </div>
               </div>

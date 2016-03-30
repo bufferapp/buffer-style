@@ -402,18 +402,31 @@ p {
     color: #168eea;
     border-color: #168eea; }
 
-.input--with-icon {
-  position: relative; }
+.input-with-icon-left,
+.input-with-icon-right {
+  position: relative;
+  display: inline-block; }
 
-.input--with-icon .bi {
+.input-with-icon-left .bi,
+.input-with-icon-right .bi {
   position: absolute;
   top: 5px;
-  left: 8px;
   margin: 0;
   color: #ced7df; }
 
-.input--icon {
+.input-with-icon-left .bi {
+  left: 8px; }
+
+.input-with-icon-right .bi {
+  right: 8px; }
+
+/* Base Object - Modifiers
+------------------------------ */
+.input--icon-left {
   padding-left: 28px; }
+
+.input--icon-right {
+  padding-right: 28px; }
 
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
@@ -435,7 +448,7 @@ p {
 /* Base Object
 ------------------------------------------------------------ */
 .bi {
-  margin-right: 8px; }
+  margin-right: 4px; }
 
 .bi-circle-appdotnet[class*="bi-"],
 .bi-circle-facebook[class*="bi-"],
@@ -667,23 +680,65 @@ p {
 
 /* Base Objects
 ------------------------------------------------------------ */
-.sidebar-search-profiles-input {
+.sidebar-search-profiles-input .input-with-icon-left,
+.sidebar-search-profiles-input .input {
   width: 100%; }
 
 .sidebar-accounts {
   flex-direction: row;
   justify-content: flex-start;
   align-content: flex-start;
-  display: flex; }
+  display: flex;
+  margin: 16px -16px 0 0;
+  padding-right: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ced7df; }
 
 .sidebar-accounts-title {
-  flex-grow: 2; }
+  align-self: center;
+  flex-grow: 1;
+  margin: 0; }
 
 .sidebar-accounts-button {
+  align-self: center;
   flex-grow: 0; }
 
 .sidebar-accounts-button .bi {
   margin-right: 0; }
+
+.sidebar-connected-accounts {
+  flex-grow: 1; }
+
+.sidebar-connected-account {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+  display: flex;
+  margin-right: -16px;
+  padding: 16px;
+  border-bottom: 1px solid #ced7df; }
+
+.sidebar-connected-account--active {
+  background-color: #fff;
+  border-right: 0; }
+
+.sidebar-connected-account-profile-picture {
+  align-self: center;
+  flex-grow: 0;
+  margin-right: 16px; }
+
+.sidebar-connected-account-name {
+  align-self: center;
+  flex-grow: 1;
+  margin-right: 16px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #323b43;
+  overflow: hidden; }
+
+.sidebar-connected-account-current {
+  align-self: center;
+  flex-grow: 0; }
 
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
