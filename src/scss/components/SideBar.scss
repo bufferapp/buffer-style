@@ -16,7 +16,8 @@
 
 /* Base Objects
 ------------------------------------------------------------ */
-.sidebar-search-profiles-input {
+.sidebar-search-profiles-input .input-with-icon-left,
+.sidebar-search-profiles-input .input {
   width: 100%;
 }
 
@@ -26,16 +27,72 @@
   align-content: flex-start;
 
   display: flex;
+
+  margin: 16px -16px 0 0;
+  padding-right: 16px;
+  padding-bottom: 16px;
+
+  border-bottom: 1px solid $borderColor;
 }
 
 .sidebar-accounts-title {
-  flex-grow: 2;
+  align-self: center;
+  flex-grow: 1;
+
+  margin: 0;
 }
 
 .sidebar-accounts-button {
+  align-self: center;
   flex-grow: 0;
 }
 
 .sidebar-accounts-button .bi {
   margin-right: 0;
+}
+
+.sidebar-connected-accounts {
+  flex-grow: 1;
+}
+
+.sidebar-connected-account {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+
+  display: flex;
+  margin-right: -16px;
+  padding: 16px;
+
+  border-bottom: 1px solid $borderColor;
+}
+
+.sidebar-connected-account--active {
+  background-color: $whiteColor;
+  border-right: 0;
+}
+
+.sidebar-connected-account-profile-picture {
+  align-self: center;
+  flex-grow: 0;
+
+  margin-right: 16px;
+}
+
+.sidebar-connected-account-name {
+  align-self: center;
+  flex-grow: 1;
+
+  margin-right: 16px;
+
+  font-size: 12px;
+  font-weight: 600;
+  color: $titleColor;
+
+  overflow: hidden;
+}
+
+.sidebar-connected-account-current {
+  align-self: center;
+  flex-grow: 0;
 }

@@ -23,20 +23,37 @@
   }
 }
 
-.input--with-icon {
+.input-with-icon-left,
+.input-with-icon-right {
   position: relative;
+
+  display: inline-block;
 }
 
-.input--with-icon .bi {
+.input-with-icon-left .bi,
+.input-with-icon-right .bi {
   position: absolute;
   top: 5px;
-  left: 8px;
 
   margin: 0;
 
   color: $borderColor;
 }
 
-.input--icon {
+.input-with-icon-left .bi {
+  left: 8px;
+}
+
+.input-with-icon-right .bi {
+  right: 8px;
+}
+
+/* Base Object - Modifiers
+------------------------------ */
+.input--icon-left {
   padding-left: 28px;
+}
+
+.input--icon-right {
+  padding-right: 28px;
 }
