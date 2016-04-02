@@ -15,6 +15,7 @@
   border-radius: $borderRadiusLevel2;
 
   outline: none;
+  transition: border-color $transitionAnimationTime $transitionAnimationType;
 
   &:focus {
     color: $actionableColor;

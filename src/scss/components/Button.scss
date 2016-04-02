@@ -8,6 +8,7 @@
 
   font-family: $fontFamily;
   font-size: $fontSize;
+  line-height: 32px;
   color: $bodyColor;
 
   background-color: transparent;
@@ -15,10 +16,15 @@
   border-radius: $borderRadiusLevel2;
 
   cursor: pointer;
-}
+  transition: background-color $transitionAnimationTime $transitionAnimationType;
 
-.button [class*=" bi-"]:before, [class^=bi-]:before {
-  vertical-align: baseline;
+  &:active {
+    background-color: #e7eaec !important;
+  }
+
+  [class*=" bi-"]:before, [class^=bi-]:before {
+    vertical-align: baseline;
+  }
 }
 
 .button:hover {
@@ -30,6 +36,10 @@
 .button--active,
 .button--inactive {
   background-color: $borderLightColor;
+
+  &:active {
+    background-color: $borderLightColor !important;
+  }
 }
 
 .button--active:hover {
@@ -67,6 +77,10 @@
 .button--primary,
 .button--secondary {
   border-radius: 256px;
+
+  &:active {
+    background-color: $actionableActiveColor !important;
+  }
 
   &:hover {
     color: $whiteColor;

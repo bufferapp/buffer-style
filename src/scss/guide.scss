@@ -36,42 +36,11 @@ ul {
   }
 }
 
-// .flex-container,
-// .flex-container header,
-// .flex-container footer {
-//   display: -webkit-box;
-//   display: -moz-box;
-//   display: -ms-flexbox;
-//   display: -webkit-flex;
-//   display: flex;
-// }
-//
-// div.flex-container {
-//   flex-direction: column;
-//   justify-content: center;
-// }
-//
-// main.flex-container {
-//   flex-direction: row;
-// }
-//
-// .atom-list {
-//   flex-basis: 20%;
-// }
-//
-// .content {
-//   flex-basis: 80%;
-// }
-//
-// .flex-container header,
-// .flex-container footer {
-//   width: 100%;
-// }
-
 .app {
+  flex-direction: column;
+
   display: flex;
   min-height: 100vh;
-  flex-direction: column;
 }
 
 .body {
@@ -100,7 +69,6 @@ ul {
 
   line-height: 32px;
   border-bottom: 1px solid $borderLightColor;
-
 }
 
 .content {

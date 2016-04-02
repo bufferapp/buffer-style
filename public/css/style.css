@@ -22,6 +22,8 @@
 ------------------------------------------------------------ */
 /* Box Shadows
 ------------------------------------------------------------ */
+/* Animation
+------------------------------------------------------------ */
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
 * {
@@ -38,6 +40,8 @@
 /* Border Radii
 ------------------------------------------------------------ */
 /* Box Shadows
+------------------------------------------------------------ */
+/* Animation
 ------------------------------------------------------------ */
 /* Body
 ------------------------------------------------------------ */
@@ -118,6 +122,8 @@ p {
 ------------------------------------------------------------ */
 /* Box Shadows
 ------------------------------------------------------------ */
+/* Animation
+------------------------------------------------------------ */
 /* Base Object
 ------------------------------------------------------------ */
 .button {
@@ -125,14 +131,17 @@ p {
   height: 32px;
   font-family: "open sans", sans-serif;
   font-size: 14px;
+  line-height: 32px;
   color: #59626a;
   background-color: transparent;
   border: 1px solid #ced7df;
   border-radius: 4px;
-  cursor: pointer; }
-
-.button [class*=" bi-"]:before, [class^=bi-]:before {
-  vertical-align: baseline; }
+  cursor: pointer;
+  transition: background-color 0.1s linear; }
+  .button:active {
+    background-color: #e7eaec !important; }
+  .button [class*=" bi-"]:before, .button [class^=bi-]:before {
+    vertical-align: baseline; }
 
 .button:hover {
   background-color: #eff3f6; }
@@ -142,6 +151,9 @@ p {
 .button--active,
 .button--inactive {
   background-color: #eff3f6; }
+  .button--active:active,
+  .button--inactive:active {
+    background-color: #eff3f6 !important; }
 
 .button--active:hover {
   background-color: #eff3f6; }
@@ -165,16 +177,19 @@ p {
 .button--primary {
   color: #fff;
   background-color: #168eea;
-  border-color: rgba(0, 0, 0, 0.2); }
+  border-color: #1172bc; }
 
 .button--primary,
 .button--secondary {
   border-radius: 256px; }
+  .button--primary:active,
+  .button--secondary:active {
+    background-color: #0d5b97 !important; }
   .button--primary:hover,
   .button--secondary:hover {
     color: #fff;
     background-color: #106aaf;
-    border-color: rgba(0, 0, 0, 0.2); }
+    border-color: #1172bc; }
 
 .button--right {
   border-radius: 0 4px 4px 0; }
@@ -202,6 +217,8 @@ p {
 /* Border Radii
 ------------------------------------------------------------ */
 /* Box Shadows
+------------------------------------------------------------ */
+/* Animation
 ------------------------------------------------------------ */
 /* Base Object
 ------------------------------------------------------------ */
@@ -386,6 +403,8 @@ p {
 ------------------------------------------------------------ */
 /* Box Shadows
 ------------------------------------------------------------ */
+/* Animation
+------------------------------------------------------------ */
 /* Base Objects
 ------------------------------------------------------------ */
 .input {
@@ -397,7 +416,8 @@ p {
   color: #59626a;
   border: 1px solid #ced7df;
   border-radius: 4px;
-  outline: none; }
+  outline: none;
+  transition: border-color 0.1s linear; }
   .input:focus {
     color: #168eea;
     border-color: #168eea; }
@@ -444,6 +464,8 @@ p {
 /* Border Radii
 ------------------------------------------------------------ */
 /* Box Shadows
+------------------------------------------------------------ */
+/* Animation
 ------------------------------------------------------------ */
 /* Base Object
 ------------------------------------------------------------ */
@@ -503,6 +525,8 @@ p {
 ------------------------------------------------------------ */
 /* Box Shadows
 ------------------------------------------------------------ */
+/* Animation
+------------------------------------------------------------ */
 /* Base Object
 ------------------------------------------------------------ */
 .modal {
@@ -545,12 +569,13 @@ p {
 ------------------------------------------------------------ */
 /* Box Shadows
 ------------------------------------------------------------ */
+/* Animation
+------------------------------------------------------------ */
 /* Base Object
 ------------------------------------------------------------ */
 .navbar {
   flex-direction: row;
   justify-content: flex-start;
-  align-content: flex-start;
   display: flex;
   margin-bottom: 32px;
   padding: 0 16px;
@@ -612,6 +637,8 @@ p {
 ------------------------------------------------------------ */
 /* Box Shadows
 ------------------------------------------------------------ */
+/* Animation
+------------------------------------------------------------ */
 /* Base Object
 ------------------------------------------------------------ */
 .profile-picture {
@@ -667,19 +694,25 @@ p {
 ------------------------------------------------------------ */
 /* Box Shadows
 ------------------------------------------------------------ */
+/* Animation
+------------------------------------------------------------ */
 /* Base Object
 ------------------------------------------------------------ */
 .sidebar {
   margin-top: -32px;
-  padding: 16px;
+  padding: 16px 0;
   width: 256px;
   min-height: 100vh;
+  font-size: 12px;
   background-color: #f8f8f8;
   border-right: 1px solid #ced7df;
   order: -1; }
 
 /* Base Objects
 ------------------------------------------------------------ */
+.sidebar-search-profiles-input {
+  margin: 0 16px; }
+
 .sidebar-search-profiles-input .input-with-icon-left,
 .sidebar-search-profiles-input .input {
   width: 100%; }
@@ -687,21 +720,18 @@ p {
 .sidebar-accounts {
   flex-direction: row;
   justify-content: flex-start;
-  align-content: flex-start;
   display: flex;
-  margin: 16px -16px 0 0;
-  padding-right: 16px;
-  padding-bottom: 16px;
+  padding: 16px;
   border-bottom: 1px solid #ced7df; }
 
 .sidebar-accounts-title {
-  align-self: center;
   flex-grow: 1;
+  align-self: center;
   margin: 0; }
 
 .sidebar-accounts-button {
-  align-self: center;
-  flex-grow: 0; }
+  flex-grow: 0;
+  align-self: center; }
 
 .sidebar-accounts-button .bi {
   margin-right: 0; }
@@ -712,33 +742,42 @@ p {
 .sidebar-connected-account {
   flex-direction: row;
   justify-content: flex-start;
-  align-content: flex-start;
   display: flex;
-  margin-right: -16px;
   padding: 16px;
   border-bottom: 1px solid #ced7df; }
 
-.sidebar-connected-account--active {
-  background-color: #fff;
-  border-right: 0; }
-
 .sidebar-connected-account-profile-picture {
-  align-self: center;
   flex-grow: 0;
+  align-self: center;
   margin-right: 16px; }
 
 .sidebar-connected-account-name {
-  align-self: center;
   flex-grow: 1;
+  align-self: center;
   margin-right: 16px;
   font-size: 12px;
   font-weight: 600;
   color: #323b43;
   overflow: hidden; }
 
-.sidebar-connected-account-current {
-  align-self: center;
-  flex-grow: 0; }
+.sidebar-connected-account-tag {
+  align-self: center; }
+
+.sidebar-footer-list {
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style: none;
+  display: flex; }
+
+.sidebar-footer-list-item {
+  flex-grow: 0;
+  margin-right: 16px; }
+
+/* Base Objects - Modifiers
+------------------------------ */
+.sidebar-connected-account--active {
+  margin-right: -1px;
+  background-color: #fff; }
 
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
@@ -756,6 +795,8 @@ p {
 /* Border Radii
 ------------------------------------------------------------ */
 /* Box Shadows
+------------------------------------------------------------ */
+/* Animation
 ------------------------------------------------------------ */
 /* Base Object
 ------------------------------------------------------------ */

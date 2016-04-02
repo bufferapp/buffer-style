@@ -4,9 +4,11 @@
 ------------------------------------------------------------ */
 .sidebar {
   margin-top: -32px;
-  padding: 16px;
+  padding: 16px 0;
   width: 256px;
   min-height: 100vh;
+
+  font-size: $fontSize - 2px;
 
   background-color: $bufferForBusinessColor;
   border-right: 1px solid $borderColor;
@@ -16,6 +18,10 @@
 
 /* Base Objects
 ------------------------------------------------------------ */
+.sidebar-search-profiles-input {
+  margin: 0 16px;
+}
+
 .sidebar-search-profiles-input .input-with-icon-left,
 .sidebar-search-profiles-input .input {
   width: 100%;
@@ -24,27 +30,24 @@
 .sidebar-accounts {
   flex-direction: row;
   justify-content: flex-start;
-  align-content: flex-start;
 
   display: flex;
 
-  margin: 16px -16px 0 0;
-  padding-right: 16px;
-  padding-bottom: 16px;
+  padding: 16px;
 
   border-bottom: 1px solid $borderColor;
 }
 
 .sidebar-accounts-title {
-  align-self: center;
   flex-grow: 1;
+  align-self: center;
 
   margin: 0;
 }
 
 .sidebar-accounts-button {
-  align-self: center;
   flex-grow: 0;
+  align-self: center;
 }
 
 .sidebar-accounts-button .bi {
@@ -58,30 +61,23 @@
 .sidebar-connected-account {
   flex-direction: row;
   justify-content: flex-start;
-  align-content: flex-start;
 
   display: flex;
-  margin-right: -16px;
   padding: 16px;
 
   border-bottom: 1px solid $borderColor;
 }
 
-.sidebar-connected-account--active {
-  background-color: $whiteColor;
-  border-right: 0;
-}
-
 .sidebar-connected-account-profile-picture {
-  align-self: center;
   flex-grow: 0;
+  align-self: center;
 
   margin-right: 16px;
 }
 
 .sidebar-connected-account-name {
-  align-self: center;
   flex-grow: 1;
+  align-self: center;
 
   margin-right: 16px;
 
@@ -92,7 +88,29 @@
   overflow: hidden;
 }
 
-.sidebar-connected-account-current {
+.sidebar-connected-account-tag {
   align-self: center;
+}
+
+.sidebar-footer-list {
+  flex-direction: row;
+  justify-content: flex-start;
+
+  list-style: none;
+
+  display: flex;
+}
+
+.sidebar-footer-list-item {
   flex-grow: 0;
+
+  margin-right: 16px;
+}
+
+/* Base Objects - Modifiers
+------------------------------ */
+.sidebar-connected-account--active {
+  margin-right: -1px;
+
+  background-color: $whiteColor;
 }
