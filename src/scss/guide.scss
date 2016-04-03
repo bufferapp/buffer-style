@@ -73,6 +73,9 @@ ul {
 
 .content {
   flex: 1;
+
+  margin-top: 96px;
+  margin-left: 256px;
 }
 
 .section {
@@ -133,7 +136,7 @@ ul {
 }
 
 .code-block-render-example {
-  margin: 0;
+  margin: 0 auto;
   position: relative;
   z-index: 0;
 }
