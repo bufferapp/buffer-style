@@ -576,6 +576,7 @@ p {
 .navbar {
   flex-direction: row;
   justify-content: flex-start;
+  position: fixed;
   display: flex;
   margin-bottom: 32px;
   padding: 0 16px;
@@ -699,59 +700,75 @@ p {
 /* Base Object
 ------------------------------------------------------------ */
 .sidebar {
-  margin-top: -32px;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: fixed;
+  display: flex;
+  margin-top: 64px;
   padding: 16px 0;
   width: 256px;
   min-height: 100vh;
   font-size: 12px;
-  background-color: #f8f8f8;
-  border-right: 1px solid #ced7df;
-  order: -1; }
+  order: -1;
+  z-index: 1; }
 
-/* Base Objects
+/* Base Object - Modifiers
+------------------------------ */
+.sidebar .card {
+  margin-left: 16px; }
+
+/* SideBar App Objects
 ------------------------------------------------------------ */
-.sidebar-search-profiles-input {
+.sidebar-app {
+  background-color: #f8f8f8;
+  border-right: 1px solid #ced7df; }
+
+.sidebar-app-search-profiles {
+  flex-grow: 0; }
+
+.sidebar-app-search-profiles-input {
   margin: 0 16px; }
 
-.sidebar-search-profiles-input .input-with-icon-left,
-.sidebar-search-profiles-input .input {
+.sidebar-app-search-profiles-input .input-with-icon-left,
+.sidebar-app-search-profiles-input .input {
   width: 100%; }
 
-.sidebar-accounts {
+.sidebar-app-accounts {
   flex-direction: row;
   justify-content: flex-start;
+  flex-grow: 0;
   display: flex;
   padding: 16px;
   border-bottom: 1px solid #ced7df; }
 
-.sidebar-accounts-title {
+.sidebar-app-accounts-title {
   flex-grow: 1;
   align-self: center;
   margin: 0; }
 
-.sidebar-accounts-button {
+.sidebar-app-accounts-button {
   flex-grow: 0;
   align-self: center; }
 
-.sidebar-accounts-button .bi {
+.sidebar-app-accounts-button .bi {
   margin-right: 0; }
 
-.sidebar-connected-accounts {
-  flex-grow: 1; }
+.sidebar-app-connected-accounts {
+  flex-grow: 0; }
 
-.sidebar-connected-account {
+.sidebar-app-connected-account {
   flex-direction: row;
   justify-content: flex-start;
   display: flex;
   padding: 16px;
   border-bottom: 1px solid #ced7df; }
 
-.sidebar-connected-account-profile-picture {
+.sidebar-app-connected-account-profile-picture {
   flex-grow: 0;
   align-self: center;
   margin-right: 16px; }
 
-.sidebar-connected-account-name {
+.sidebar-app-connected-account-name {
   flex-grow: 1;
   align-self: center;
   margin-right: 16px;
@@ -760,22 +777,25 @@ p {
   color: #323b43;
   overflow: hidden; }
 
-.sidebar-connected-account-tag {
+.sidebar-app-connected-account-tag {
   align-self: center; }
 
-.sidebar-footer-list {
-  flex-direction: row;
-  justify-content: flex-start;
-  list-style: none;
-  display: flex; }
+.sidebar-app-footer {
+  flex-grow: 1;
+  position: relative; }
 
-.sidebar-footer-list-item {
-  flex-grow: 0;
+.sidebar-app-footer-list {
+  position: absolute;
+  bottom: 32px;
+  list-style: none; }
+
+.sidebar-app-footer-list-item {
+  display: inline-block;
   margin-right: 16px; }
 
-/* Base Objects - Modifiers
+/* SideBar App Objects - Modifiers
 ------------------------------ */
-.sidebar-connected-account--active {
+.sidebar-app-connected-account--active {
   margin-right: -1px;
   background-color: #fff; }
 

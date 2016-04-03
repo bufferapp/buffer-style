@@ -67,7 +67,9 @@ ul {
   border-bottom: 1px solid #eff3f6; }
 
 .content {
-  flex: 1; }
+  flex: 1;
+  margin-top: 96px;
+  margin-left: 256px; }
 
 .section {
   margin: 0 32px 64px 32px;
@@ -113,7 +115,7 @@ ul {
   border-radius: 4px 4px 0 0; }
 
 .code-block-render-example {
-  margin: 0;
+  margin: 0 auto;
   position: relative;
   z-index: 0; }
 
