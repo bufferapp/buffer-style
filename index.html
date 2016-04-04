@@ -42,6 +42,9 @@
               <a href="#icons">Icons</a>
             </li>
             <li>
+              <a href="#inputs">Inputs</a>
+            </li>
+            <li>
               <a href="#profile-pictures">Profile Pictures</a>
             </li>
             <li>
@@ -89,100 +92,83 @@
         </section>
 
         <section class="section">
-          <section class="card card--last">
-              <section class="section-secondary">
-                <h1 class="section-secondary-title">Typography</h1>
-                <p>We exclusively use <a href="https://www.google.com/fonts/specimen/Open+Sans">Open Sans</a> as the base typeface for the Buffer product.</p>
-              </section>
-              <section class="section-secondary">
-                <h2 class="section-secondary-title">Heading Level 1</h2>
-                <p>The Heading Level 1 object is used for the primary heading of a page. Semantically, a <code>h1</code> might not always be styled below i.e. if using a <code>h1</code> in a <code>navbar</code>, it will appear differently than in the example below. The example below shows an unaltered, base style for our <code>h1</code> object.</p>
-                <div class="code-block">
-                  <div class="code-block-title">
-                    Example:
-                  </div>
-                  <div class="code-block-render">
-                    <h1 class="code-block-render-example">Heading Level 1</h1>
-                  </div>
-                  <div class="code-block-code">
-                    <pre>&lt;h1&gt;Heading Level 1&lt;/h1&gt;</pre>
+          <section class="card">
+            <section class="section-secondary">
+              <h1 class="section-secondary-title">NavBars</h1>
+              <p>NavBars are an object solely designed to hold navigational objects and typically stick to the top of the viewport.</p>
+            </section>
+            <section class="section-secondary section-secondary--last">
+              <h2 class="section-secondary-title">NavBar</h2>
+              <p>This is the base object for the <code>navbar</code> object.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <div class="navbar code-block-render-example">
+                    <div class="navbar-title">
+                      <i class="bi bi-buffer"></i>Buffer
+                    </div>
+                    <ul class="navbar-menu-left">
+                      <li class="navbar-menu-item">
+                        <a class="navbar-menu-item--active" href="#">Queue</a>
+                      </li>
+                      <li class="navbar-menu-item">
+                        <a href="#">Library</a>
+                      </li>
+                      <li class="navbar-menu-item navbar-menu-item--last">
+                        <a href="#">Analytics</a>
+                      </li>
+                    </ul>
+                    <ul class="navbar-menu-right">
+                      <li class="navbar-menu-item">
+                        <a href="#">Help</a>
+                      </li>
+                      <li class="navbar-menu-item navbar-menu-item--last">
+                        <a href="#"><img class="navbar-menu-item-profile-picture profile-picture" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">Account</a>
+                      </li>
+                    </ul>
                   </div>
                 </div>
-              </section>
-              <section class="section-secondary">
-                <h2 class="section-secondary-title">Heading Level 2</h2>
-                <p>The Heading Level 2 object is used for the secondary headings of a page.</p>
-                <div class="code-block">
-                  <div class="code-block-title">
-                    Example:
-                  </div>
-                  <div class="code-block-render">
-                    <h2 class="code-block-render-example">Heading Level 2</h2>
-                  </div>
-                  <div class="code-block-code">
-                    <pre>&lt;h2&gt;Heading Level 2&lt;/h2&gt;</pre>
-                  </div>
+                <div class="code-block-code">
+                  <pre>&lt;div class="navbar">
+
+  &lt;div class="navbar-title">
+    &lt;i class="bi bi-buffer">&lt;/i>Buffer
+  &lt;/div>
+
+  &lt;ul class="navbar-menu-left">
+    &lt;li class="navbar-menu-item">
+      &lt;a class="navbar-menu-item--active" href="#">Queue&lt;/a>
+    &lt;/li>
+    &lt;li class="navbar-menu-item">
+      &lt;a href="#">Library&lt;/a>
+    &lt;/li>
+    &lt;li class="navbar-menu-item navbar-menu-item--last">
+      &lt;a href="#">Analytics&lt;/a>
+    &lt;/li>
+  &lt;/ul>
+
+  &lt;ul class="navbar-menu-right">
+    &lt;li class="navbar-menu-item">
+      &lt;a href="#">Help&lt;/a>
+    &lt;/li>
+    &lt;li class="navbar-menu-item navbar-menu-item--last">
+      &lt;a href="#">&lt;img class="navbar-menu-item-profile-picture profile-picture" src="#">Account&lt;/a>
+    &lt;/li>
+  &lt;/ul>
+
+&lt;/div></pre>
                 </div>
-              </section>
-              <section class="section-secondary">
-                <h2 class="section-secondary-title">Heading Level 3</h2>
-                <p>The Heading Level 3 object is used for the tertiary headings of a page.</p>
-                <div class="code-block">
-                  <div class="code-block-title">
-                    Example:
-                  </div>
-                  <div class="code-block-render">
-                    <h3 class="code-block-render-example">Heading Level 3</h3>
-                  </div>
-                  <div class="code-block-code">
-                    <pre>&lt;h3&gt;Heading Level 3&lt;/h3&gt;</pre>
-                  </div>
-                </div>
-              </section>
-              <section class="section-secondary section-secondary--last">
-                <h2 class="section-secondary-title">Heading Level 4, 5, and 6</h2>
-                <p>The Heading Level 4, 5, and 6 objects are used for various headings of a page.</p>
-                <div class="code-block">
-                  <div class="code-block-title">
-                    Example:
-                  </div>
-                  <div class="code-block-render">
-                    <h4 class="code-block-render-example">Heading Level 4</h4>
-                  </div>
-                  <div class="code-block-code">
-                    <pre>&lt;h4&gt;Heading Level 4&lt;/h4&gt;</pre>
-                  </div>
-                </div>
-                <div class="code-block">
-                  <div class="code-block-title">
-                    Example:
-                  </div>
-                  <div class="code-block-render">
-                    <h5 class="code-block-render-example">Heading Level 5</h5>
-                  </div>
-                  <div class="code-block-code">
-                    <pre>&lt;h5&gt;Heading Level 5&lt;/h5&gt;</pre>
-                  </div>
-                </div>
-                <div class="code-block code-block--last">
-                  <div class="code-block-title">
-                    Example:
-                  </div>
-                  <div class="code-block-render">
-                    <h6 class="code-block-render-example">Heading Level 6</h6>
-                  </div>
-                  <div class="code-block-code">
-                    <pre>&lt;h6&gt;Heading Level 6&lt;/h6&gt;</pre>
-                  </div>
-                </div>
-              </section>
+              </div>
+            </section>
           </section>
         </section>
 
         <section class="section">
           <section class="card">
             <section class="section-secondary">
-              <h1 class="section-secondary-title">SideBar</h1>
+              <h1 class="section-secondary-title">SideBars</h1>
               <p>Description of SideBars.</p>
             </section>
             <section class="section-secondary--last">
@@ -701,221 +687,6 @@
         <section class="section">
           <section class="card">
             <section class="section-secondary">
-              <h1 class="section-secondary-title">NavBars</h1>
-              <p>NavBars are an object solely designed to hold navigational objects and typically stick to the top of the viewport.</p>
-            </section>
-            <section class="section-secondary section-secondary--last">
-              <h2 class="section-secondary-title">NavBar</h2>
-              <p>This is the base object for the <code>navbar</code> object.</p>
-              <div class="code-block code-block--last">
-                <div class="code-block-title">
-                  Example:
-                </div>
-                <div class="code-block-render">
-                  <div class="navbar code-block-render-example">
-                    <div class="navbar-title">
-                      <i class="bi bi-buffer"></i>Buffer
-                    </div>
-                    <ul class="navbar-menu-left">
-                      <li class="navbar-menu-item">
-                        <a class="navbar-menu-item--active" href="#">Queue</a>
-                      </li>
-                      <li class="navbar-menu-item">
-                        <a href="#">Library</a>
-                      </li>
-                      <li class="navbar-menu-item navbar-menu-item--last">
-                        <a href="#">Analytics</a>
-                      </li>
-                    </ul>
-                    <ul class="navbar-menu-right">
-                      <li class="navbar-menu-item">
-                        <a href="#">Help</a>
-                      </li>
-                      <li class="navbar-menu-item navbar-menu-item--last">
-                        <a href="#"><img class="navbar-menu-item-profile-picture profile-picture" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">Account</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="code-block-code">
-                  <pre>&lt;div class="navbar">
-
-  &lt;div class="navbar-title">
-    &lt;i class="bi bi-buffer">&lt;/i>Buffer
-  &lt;/div>
-
-  &lt;ul class="navbar-menu-left">
-    &lt;li class="navbar-menu-item">
-      &lt;a class="navbar-menu-item--active" href="#">Queue&lt;/a>
-    &lt;/li>
-    &lt;li class="navbar-menu-item">
-      &lt;a href="#">Library&lt;/a>
-    &lt;/li>
-    &lt;li class="navbar-menu-item navbar-menu-item--last">
-      &lt;a href="#">Analytics&lt;/a>
-    &lt;/li>
-  &lt;/ul>
-
-  &lt;ul class="navbar-menu-right">
-    &lt;li class="navbar-menu-item">
-      &lt;a href="#">Help&lt;/a>
-    &lt;/li>
-    &lt;li class="navbar-menu-item navbar-menu-item--last">
-      &lt;a href="#">&lt;img class="navbar-menu-item-profile-picture profile-picture" src="#">Account&lt;/a>
-    &lt;/li>
-  &lt;/ul>
-
-&lt;/div></pre>
-                </div>
-              </div>
-            </section>
-          </section>
-        </section>
-
-        <section class="section">
-          <section class="card">
-            <section class="section-secondary">
-              <h1 class="section-secondary-title">SideBars</h1>
-              <p>A description on SideBars.</p>
-            </section>
-            <section class="section-secondary section-secondary--last">
-              <h2 class="section-secondary-title">SideBar</h2>
-              <p>This is the base object for the <code>sidebar</code> object.</p>
-              <div class="code-block code-block--last">
-                <div class="code-block-title">
-                  Example:
-                </div>
-                <div class="code-block-render">
-                  <div class="code-block-render-example">
-                    <p>Object render goes here!</p>
-                  </div>
-                </div>
-                <div class="code-block-code">
-                  <pre>Object markup goes here!</pre>
-                </div>
-              </div>
-            </section>
-          </section>
-        </section>
-
-        <section class="section">
-          <section class="card">
-            <section class="section-secondary">
-              <h1 class="section-secondary-title">Profile Pictures</h1>
-              <p>Profile Pictures are objects designed to display a user's profile picture.</p>
-            </section>
-            <section class="section-secondary">
-              <h2 class="section-secondary-title">Profile Picture</h2>
-              <p>This is the base object for the <code>profile-picture</code> object.</p>
-              <div class="code-block code-block--last">
-                <div class="code-block-title">
-                  Example:
-                </div>
-                <div class="code-block-render">
-                  <img class="profile-picture code-block-render-example" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
-                </div>
-                <div class="code-block-code">
-                  <pre>&lt;img class="profile-picture" src="#"></pre>
-                </div>
-              </div>
-            </section>
-            <section class="section-secondary">
-              <h2 class="section-secondary-title">Profile Picture with Icon</h2>
-              <p>This is the base object for the <code>profile-picture-with-icon</code> object that includes a profile picture and a social network icon. It includes two separate objects (<code>profile-picture</code> and <code>icon</code>) that each inherit from their own base objects.</p>
-              <div class="code-block code-block--last">
-                <div class="code-block-title">
-                  Example:
-                </div>
-                <div class="code-block-render">
-                  <div class="profile-picture-with-icon code-block-render-example">
-                    <img class="profile-picture" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
-                    <div class="profile-picture-icon">
-                      <i class="bi bi-circle-twitter"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="code-block-code">
-                  <pre>&lt;div class="profile-picture-with-icon code-block-render-example">
-      &lt;img class="profile-picture" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
-      &lt;div class="profile-picture-icon">
-        &lt;i class="bi bi-circle-twitter">&lt;/i>
-      &lt;/div>
-    &lt;/div></pre>
-                </div>
-              </div>
-            </section>
-            <section class="section-secondary">
-              <h2 class="section-secondary-title">Profile Picture -- Inactive</h2>
-              <p>This is a modifier for the <code>profile-picture</code> object, which grayscales our customers' profile picture. When used with the <code>profile-picture-with-icon</code>, it also grayscales the social network icon.</p>
-              <div class="code-block code-block">
-                <div class="code-block-title">
-                  Example:
-                </div>
-                <div class="code-block-render">
-                  <img class="profile-picture profile-picture--inactive code-block-render-example" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
-                </div>
-                <div class="code-block-code">
-                  <pre>&lt;img class="profile-picture profile-picture--inactive" src="#"></pre>
-                </div>
-              </div>
-              <div class="code-block code-block--last">
-                <div class="code-block-title">
-                  Example:
-                </div>
-                <div class="code-block-render">
-                  <div class="profile-picture-with-icon profile-picture--inactive code-block-render-example">
-                    <img class="profile-picture" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
-                    <div class="profile-picture-icon">
-                      <i class="bi bi-circle-twitter"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="code-block-code">
-                  <pre>&lt;div class="profile-picture-with-icon profile-picture--inactive">
-  &lt;img class="profile-picture" src="#">
-  &lt;div class="profile-picture-icon">
-    &lt;i class="bi bi-circle-twitter">&lt;/i>
-  &lt;/div>
-&lt;/div></pre>
-                </div>
-              </div>
-            </section>
-            <section class="section-secondary section-secondary--last">
-              <h2 class="section-secondary-title">Profile Picture -- Large</h2>
-              <p>This is a modified <code>profile-picture</code> object. It modifies the <code>profile-picture</code> object's <code>width</code> and <code>height</code>.</p>
-              <div class="code-block code-block--last">
-                <div class="code-block-title">
-                  Example:
-                </div>
-                <div class="code-block-render">
-                  <img class="profile-picture profile-picture--large code-block-render-example" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
-                </div>
-                <div class="code-block-code">
-                  <pre>&lt;img class="profile-picture profile-picture--large" src="#"></pre>
-                </div>
-              </div>
-            </section>
-            <section class="section-secondary section-secondary--last">
-              <h2 class="section-secondary-title">Profile Picture -- Small</h2>
-              <p>This is a modified <code>profile-picture</code> object. It doesn't introduce any new functionality nor UI. It simply modifies the <code>profile-picture</code> object's <code>width</code> and <code>height</code>.</p>
-              <div class="code-block code-block--last">
-                <div class="code-block-title">
-                  Example:
-                </div>
-                <div class="code-block-render">
-                  <img class="profile-picture profile-picture--small code-block-render-example" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
-                </div>
-                <div class="code-block-code">
-                  <pre>&lt;img class="profile-picture profile-picture--small" src="#"></pre>
-                </div>
-              </div>
-            </section>
-          </section>
-        </section>
-
-        <section class="section">
-          <section class="card">
-            <section class="section-secondary">
               <h1 class="section-secondary-title">Modals</h1>
               <p>An introduction to modals.</p>
             </section>
@@ -943,6 +714,202 @@
                 </div>
               </div>
             </section>
+          </section>
+        </section>
+
+        <section class="section">
+          <section class="card">
+            <section class="section-secondary">
+              <h1 class="section-secondary-title">Buttons</h1>
+              <p>An introduction to buttons!</p>
+            </section>
+            <section class="section-secondary">
+              <h2 class="section-secondary-title">Button</h2>
+              <p>A description about buttons!</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <button class="button">Add to Queue</button>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;button class="button">Add to Queue&lt;/button></pre>
+                </div>
+              </div>
+            </section>
+
+            <section class="section-secondary">
+              <h2 class="section-secondary-title">Button -- Active</h2>
+              <p>A description about buttons!</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <button class="button button--active">Add to Queue</button>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;button class="button--active">Add to Queue&lt;/button></pre>
+                </div>
+              </div>
+            </section>
+
+            <section class="section-secondary">
+              <h2 class="section-secondary-title">Button -- Inactive</h2>
+              <p>A description about buttons!</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <button class="button button--inactive">Add to Queue</button>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;button class="button--inactive">Add to Queue&lt;/button></pre>
+                </div>
+              </div>
+            </section>
+
+            <section class="section-secondary">
+              <h2 class="section-secondary-title">Button -- Large</h2>
+              <p>A description about buttons!</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <button class="button button--large">Add to Queue</button>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;button class="button button--large">Add to Queue&lt;/button></pre>
+                </div>
+              </div>
+            </section>
+
+            <section class="section-secondary">
+              <h2 class="section-secondary-title">Button -- Left</h2>
+              <p>A description about buttons!</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <button class="button button--left">Left Button</button>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;button class="button button--left">Left Button&lt;/button></pre>
+                </div>
+              </div>
+            </section>
+
+            <section class="section-secondary">
+              <h2 class="section-secondary-title">Button -- Middle</h2>
+              <p>A description about buttons!</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <button class="button button--middle">Middle Button</button>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;button class="button button--middle">Middle Button&lt;/button></pre>
+                </div>
+              </div>
+            </section>
+
+            <section class="section-secondary">
+              <h2 class="section-secondary-title">Button -- Primary</h2>
+              <p>A description about buttons!</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <button class="button button--primary">Add to Queue</button>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;button class="button button--primary">Add to Queue&lt;/button></pre>
+                </div>
+              </div>
+            </section>
+
+            <section class="section-secondary">
+              <h2 class="section-secondary-title">Button -- Right</h2>
+              <p>A description about buttons!</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <button class="button button--right">Right Button</button>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;button class="button button--right">Right Button&lt;/button></pre>
+                </div>
+              </div>
+            </section>
+
+            <section class="section-secondary">
+              <h2 class="section-secondary-title">Button -- Secondary</h2>
+              <p>A description about buttons!</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <button class="button button--secondary">Add to Queue</button>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;button class="button button--secondary">Add to Queue&lt;/button></pre>
+                </div>
+              </div>
+            </section>
+
+            <section class="section-secondary">
+              <h2 class="section-secondary-title">Button with Icon</h2>
+              <p>A description about buttons!</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <button class="button"><i class="bi bi-plus"></i>Add to Queue</button>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;button class="button">&lt;i class="bi bi-plus">&lt;/i>Add to Queue&lt;/button></pre>
+                </div>
+              </div>
+            </section>
+
+            <section class="section-secondary section-secondary--last">
+              <h2 class="section-secondary-title">Button - Group</h2>
+              <p>A description about buttons!</p>
+              <div class="code-block">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <button class="button button--left">Left Button</button><button class="button button--middle">Middle Button</button><button class="button button--right">Right Button</button>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;button class="button button--left">Left Button&lt;/button>&lt;button class="button button--middle">Middle Button&lt;/button>&lt;button class="button button--right">Right Button&lt;/button></pre>
+                </div>
+              </div>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <button class="button button--left"><i class="bi bi-queue"></i>List</button><button class="button button--right button--remove-border-left"><i class="bi bi-calendar"></i>Calendar</button>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;button class="button button--left">&lt;i class="bi bi-queue">&lt;/i>List&lt;/button>&lt;button class="button button--right button--remove-border-left">&lt;i class="bi bi-calendar">&lt;/i>Calendar&lt;/button></pre>
+                </div>
+              </div>
+            </section>
+
           </section>
         </section>
 
@@ -1481,15 +1448,15 @@
         <section class="section">
           <section class="card">
             <section class="section-secondary">
-              <h1 class="section-secondary-title">Forms</h1>
-              <p>An introduction to forms!</p>
+              <h1 class="section-secondary-title">Inputs</h1>
+              <p>Description of <code>input</code> objects.</p>
             </section>
             <section class="section-secondary section-secondary--last">
               <h2 class="section-secondary-title">Input</h2>
-              <p>Description here!</p>
+              <p>Description of the base object.</p>
 
               <h3>Input</h3>
-              <p>A little bit about inputs.</p>
+              <p>A little bit about the <code>input</code> object.</p>
               <div class="code-block code-block--last">
                 <div class="code-block-title">
                   Example:
@@ -1502,8 +1469,8 @@
                 </div>
               </div>
 
-              <h3>Input -- Icon Left</h3>
-              <p>A little bit about inputs.</p>
+              <h3>Input - With Icon Left</h3>
+              <p>Description of <code>input-with-icon-left</code> object.</p>
               <div class="code-block code-block--last">
                 <div class="code-block-title">
                   Example:
@@ -1520,8 +1487,8 @@
                 </div>
               </div>
 
-              <h3>Input -- Icon Right</h3>
-              <p>A little bit about inputs.</p>
+              <h3>Input - With Icon Right</h3>
+              <p>Description of <code>input-with-icon-right</code> object.</p>
               <div class="code-block code-block--last">
                 <div class="code-block-title">
                   Example:
@@ -1545,181 +1512,201 @@
         <section class="section">
           <section class="card">
             <section class="section-secondary">
-              <h1 class="section-secondary-title">Buttons</h1>
-              <p>An introduction to buttons!</p>
+              <h1 class="section-secondary-title">Profile Pictures</h1>
+              <p>Profile Pictures are objects designed to display a user's profile picture.</p>
             </section>
             <section class="section-secondary">
-              <h2 class="section-secondary-title">Button</h2>
-              <p>A description about buttons!</p>
+              <h2 class="section-secondary-title">Profile Picture</h2>
+              <p>This is the base object for the <code>profile-picture</code> object.</p>
               <div class="code-block code-block--last">
                 <div class="code-block-title">
                   Example:
                 </div>
                 <div class="code-block-render">
-                  <button class="button">Add to Queue</button>
+                  <img class="profile-picture code-block-render-example" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
                 </div>
                 <div class="code-block-code">
-                  <pre>&lt;button class="button">Add to Queue&lt;/button></pre>
+                  <pre>&lt;img class="profile-picture" src="#"></pre>
                 </div>
               </div>
             </section>
-
             <section class="section-secondary">
-              <h2 class="section-secondary-title">Button -- Active</h2>
-              <p>A description about buttons!</p>
+              <h2 class="section-secondary-title">Profile Picture with Icon</h2>
+              <p>This is the base object for the <code>profile-picture-with-icon</code> object that includes a profile picture and a social network icon. It includes two separate objects (<code>profile-picture</code> and <code>icon</code>) that each inherit from their own base objects.</p>
               <div class="code-block code-block--last">
                 <div class="code-block-title">
                   Example:
                 </div>
                 <div class="code-block-render">
-                  <button class="button button--active">Add to Queue</button>
+                  <div class="profile-picture-with-icon code-block-render-example">
+                    <img class="profile-picture" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
+                    <div class="profile-picture-icon">
+                      <i class="bi bi-circle-twitter"></i>
+                    </div>
+                  </div>
                 </div>
                 <div class="code-block-code">
-                  <pre>&lt;button class="button--active">Add to Queue&lt;/button></pre>
+                  <pre>&lt;div class="profile-picture-with-icon code-block-render-example">
+      &lt;img class="profile-picture" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
+      &lt;div class="profile-picture-icon">
+        &lt;i class="bi bi-circle-twitter">&lt;/i>
+      &lt;/div>
+    &lt;/div></pre>
                 </div>
               </div>
             </section>
-
             <section class="section-secondary">
-              <h2 class="section-secondary-title">Button -- Inactive</h2>
-              <p>A description about buttons!</p>
+              <h2 class="section-secondary-title">Profile Picture -- Inactive</h2>
+              <p>This is a modifier for the <code>profile-picture</code> object, which grayscales our customers' profile picture. When used with the <code>profile-picture-with-icon</code>, it also grayscales the social network icon.</p>
+              <div class="code-block code-block">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <img class="profile-picture profile-picture--inactive code-block-render-example" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;img class="profile-picture profile-picture--inactive" src="#"></pre>
+                </div>
+              </div>
               <div class="code-block code-block--last">
                 <div class="code-block-title">
                   Example:
                 </div>
                 <div class="code-block-render">
-                  <button class="button button--inactive">Add to Queue</button>
+                  <div class="profile-picture-with-icon profile-picture--inactive code-block-render-example">
+                    <img class="profile-picture" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
+                    <div class="profile-picture-icon">
+                      <i class="bi bi-circle-twitter"></i>
+                    </div>
+                  </div>
                 </div>
                 <div class="code-block-code">
-                  <pre>&lt;button class="button--inactive">Add to Queue&lt;/button></pre>
+                  <pre>&lt;div class="profile-picture-with-icon profile-picture--inactive">
+  &lt;img class="profile-picture" src="#">
+  &lt;div class="profile-picture-icon">
+    &lt;i class="bi bi-circle-twitter">&lt;/i>
+  &lt;/div>
+&lt;/div></pre>
                 </div>
               </div>
             </section>
-
-            <section class="section-secondary">
-              <h2 class="section-secondary-title">Button -- Large</h2>
-              <p>A description about buttons!</p>
-              <div class="code-block code-block--last">
-                <div class="code-block-title">
-                  Example:
-                </div>
-                <div class="code-block-render">
-                  <button class="button button--large">Add to Queue</button>
-                </div>
-                <div class="code-block-code">
-                  <pre>&lt;button class="button button--large">Add to Queue&lt;/button></pre>
-                </div>
-              </div>
-            </section>
-
-            <section class="section-secondary">
-              <h2 class="section-secondary-title">Button -- Left</h2>
-              <p>A description about buttons!</p>
-              <div class="code-block code-block--last">
-                <div class="code-block-title">
-                  Example:
-                </div>
-                <div class="code-block-render">
-                  <button class="button button--left">Left Button</button>
-                </div>
-                <div class="code-block-code">
-                  <pre>&lt;button class="button button--left">Left Button&lt;/button></pre>
-                </div>
-              </div>
-            </section>
-
-            <section class="section-secondary">
-              <h2 class="section-secondary-title">Button -- Middle</h2>
-              <p>A description about buttons!</p>
-              <div class="code-block code-block--last">
-                <div class="code-block-title">
-                  Example:
-                </div>
-                <div class="code-block-render">
-                  <button class="button button--middle">Middle Button</button>
-                </div>
-                <div class="code-block-code">
-                  <pre>&lt;button class="button button--middle">Middle Button&lt;/button></pre>
-                </div>
-              </div>
-            </section>
-
-            <section class="section-secondary">
-              <h2 class="section-secondary-title">Button -- Primary</h2>
-              <p>A description about buttons!</p>
-              <div class="code-block code-block--last">
-                <div class="code-block-title">
-                  Example:
-                </div>
-                <div class="code-block-render">
-                  <button class="button button--primary">Add to Queue</button>
-                </div>
-                <div class="code-block-code">
-                  <pre>&lt;button class="button button--primary">Add to Queue&lt;/button></pre>
-                </div>
-              </div>
-            </section>
-
-            <section class="section-secondary">
-              <h2 class="section-secondary-title">Button -- Right</h2>
-              <p>A description about buttons!</p>
-              <div class="code-block code-block--last">
-                <div class="code-block-title">
-                  Example:
-                </div>
-                <div class="code-block-render">
-                  <button class="button button--right">Right Button</button>
-                </div>
-                <div class="code-block-code">
-                  <pre>&lt;button class="button button--right">Right Button&lt;/button></pre>
-                </div>
-              </div>
-            </section>
-
-            <section class="section-secondary">
-              <h2 class="section-secondary-title">Button -- Secondary</h2>
-              <p>A description about buttons!</p>
-              <div class="code-block code-block--last">
-                <div class="code-block-title">
-                  Example:
-                </div>
-                <div class="code-block-render">
-                  <button class="button button--secondary">Add to Queue</button>
-                </div>
-                <div class="code-block-code">
-                  <pre>&lt;button class="button button--secondary">Add to Queue&lt;/button></pre>
-                </div>
-              </div>
-            </section>
-
-            <section class="section-secondary">
-              <h2 class="section-secondary-title">Button with Icon</h2>
-              <p>A description about buttons!</p>
-              <div class="code-block code-block--last">
-                <div class="code-block-title">
-                  Example:
-                </div>
-                <div class="code-block-render">
-                  <button class="button"><i class="bi bi-plus"></i>Add to Queue</button>
-                </div>
-                <div class="code-block-code">
-                  <pre>&lt;button class="button">&lt;i class="bi bi-plus">&lt;/i>Add to Queue&lt;/button></pre>
-                </div>
-              </div>
-            </section>
-
             <section class="section-secondary section-secondary--last">
-              <h2 class="section-secondary-title">Button - Group</h2>
-              <p>A description about buttons!</p>
+              <h2 class="section-secondary-title">Profile Picture -- Large</h2>
+              <p>This is a modified <code>profile-picture</code> object. It modifies the <code>profile-picture</code> object's <code>width</code> and <code>height</code>.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <img class="profile-picture profile-picture--large code-block-render-example" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;img class="profile-picture profile-picture--large" src="#"></pre>
+                </div>
+              </div>
+            </section>
+            <section class="section-secondary section-secondary--last">
+              <h2 class="section-secondary-title">Profile Picture -- Small</h2>
+              <p>This is a modified <code>profile-picture</code> object. It doesn't introduce any new functionality nor UI. It simply modifies the <code>profile-picture</code> object's <code>width</code> and <code>height</code>.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <img class="profile-picture profile-picture--small code-block-render-example" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;img class="profile-picture profile-picture--small" src="#"></pre>
+                </div>
+              </div>
+            </section>
+          </section>
+        </section>
+
+        <section class="section">
+          <section class="card card--last">
+            <section class="section-secondary">
+              <h1 class="section-secondary-title">Tags</h1>
+              <p>Description about <code>tag</code> objects.</p>
+            </section>
+          </section>
+        </section>
+
+        <section class="section section--last">
+          <section class="card card--last">
+            <section class="section-secondary">
+              <h1 class="section-secondary-title">Typography</h1>
+              <p>We exclusively use <a href="https://www.google.com/fonts/specimen/Open+Sans">Open Sans</a> as the base typeface for the Buffer product.</p>
+            </section>
+            <section class="section-secondary">
+              <h2 class="section-secondary-title">Heading Level 1</h2>
+              <p>The Heading Level 1 object is used for the primary heading of a page. Semantically, a <code>h1</code> might not always be styled below i.e. if using a <code>h1</code> in a <code>navbar</code>, it will appear differently than in the example below. The example below shows an unaltered, base style for our <code>h1</code> object.</p>
               <div class="code-block">
                 <div class="code-block-title">
                   Example:
                 </div>
                 <div class="code-block-render">
-                  <button class="button button--left">Left Button</button><button class="button button--middle">Middle Button</button><button class="button button--right">Right Button</button>
+                  <h1 class="code-block-render-example">Heading Level 1</h1>
                 </div>
                 <div class="code-block-code">
-                  <pre>&lt;button class="button button--left">Left Button&lt;/button>&lt;button class="button button--middle">Middle Button&lt;/button>&lt;button class="button button--right">Right Button&lt;/button></pre>
+                  <pre>&lt;h1&gt;Heading Level 1&lt;/h1&gt;</pre>
+                </div>
+              </div>
+            </section>
+            <section class="section-secondary">
+              <h2 class="section-secondary-title">Heading Level 2</h2>
+              <p>The Heading Level 2 object is used for the secondary headings of a page.</p>
+              <div class="code-block">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <h2 class="code-block-render-example">Heading Level 2</h2>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;h2&gt;Heading Level 2&lt;/h2&gt;</pre>
+                </div>
+              </div>
+            </section>
+            <section class="section-secondary">
+              <h2 class="section-secondary-title">Heading Level 3</h2>
+              <p>The Heading Level 3 object is used for the tertiary headings of a page.</p>
+              <div class="code-block">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <h3 class="code-block-render-example">Heading Level 3</h3>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;h3&gt;Heading Level 3&lt;/h3&gt;</pre>
+                </div>
+              </div>
+            </section>
+            <section class="section-secondary section-secondary--last">
+              <h2 class="section-secondary-title">Heading Level 4, 5, and 6</h2>
+              <p>The Heading Level 4, 5, and 6 objects are used for various headings of a page.</p>
+              <div class="code-block">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <h4 class="code-block-render-example">Heading Level 4</h4>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;h4&gt;Heading Level 4&lt;/h4&gt;</pre>
+                </div>
+              </div>
+              <div class="code-block">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <h5 class="code-block-render-example">Heading Level 5</h5>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;h5&gt;Heading Level 5&lt;/h5&gt;</pre>
                 </div>
               </div>
               <div class="code-block code-block--last">
@@ -1727,14 +1714,13 @@
                   Example:
                 </div>
                 <div class="code-block-render">
-                  <button class="button button--left"><i class="bi bi-queue"></i>List</button><button class="button button--right button--remove-border-left"><i class="bi bi-calendar"></i>Calendar</button>
+                  <h6 class="code-block-render-example">Heading Level 6</h6>
                 </div>
                 <div class="code-block-code">
-                  <pre>&lt;button class="button button--left">&lt;i class="bi bi-queue">&lt;/i>List&lt;/button>&lt;button class="button button--right button--remove-border-left">&lt;i class="bi bi-calendar">&lt;/i>Calendar&lt;/button></pre>
+                  <pre>&lt;h6&gt;Heading Level 6&lt;/h6&gt;</pre>
                 </div>
               </div>
             </section>
-
           </section>
         </section>
 
