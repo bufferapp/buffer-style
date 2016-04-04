@@ -3,35 +3,137 @@
 /* Base Object
 ------------------------------------------------------------ */
 .sidebar {
-  margin-top: -32px;
-  padding: 16px;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  position: fixed;
+
+  display: flex;
+  margin-top: 64px;
+  padding: 16px 0;
   width: 256px;
   min-height: 100vh;
 
-  background-color: $bufferForBusinessColor;
-  border-right: 1px solid $borderColor;
+  font-size: $fontSize - 2px;
 
   order: -1;
+  z-index: 1;
 }
 
-/* Base Objects
+/* Base Object - Modifiers
+------------------------------ */
+.sidebar .card {
+  margin-left: 16px;
+}
+
+/* SideBar App Objects
 ------------------------------------------------------------ */
-.sidebar-search-profiles-input {
+.sidebar-app {
+  background-color: $bufferForBusinessColor;
+  border-right: 1px solid $borderColor;
+}
+
+.sidebar-app-search-profiles {
+  flex-grow: 0;
+}
+
+.sidebar-app-search-profiles-input {
+  margin: 0 16px;
+}
+
+.sidebar-app-search-profiles-input .input-with-icon-left,
+.sidebar-app-search-profiles-input .input {
   width: 100%;
 }
 
-.sidebar-accounts {
+.sidebar-app-accounts {
   flex-direction: row;
   justify-content: flex-start;
-  align-content: flex-start;
+  flex-grow: 0;
 
   display: flex;
+
+  padding: 16px;
+
+  border-bottom: 1px solid $borderColor;
 }
 
-.sidebar-accounts-title {
-  flex-grow: 2;
+.sidebar-app-accounts-title {
+  flex-grow: 1;
+  align-self: center;
+
+  margin: 0;
 }
 
-.sidebar-accounts-button {
+.sidebar-app-accounts-button {
   flex-grow: 0;
+  align-self: center;
+}
+
+.sidebar-app-accounts-button .bi {
+  margin-right: 0;
+}
+
+.sidebar-app-connected-accounts {
+  flex-grow: 0;
+}
+
+.sidebar-app-connected-account {
+  flex-direction: row;
+  justify-content: flex-start;
+
+  display: flex;
+  padding: 16px;
+
+  border-bottom: 1px solid $borderColor;
+}
+
+.sidebar-app-connected-account-profile-picture {
+  flex-grow: 0;
+  align-self: center;
+
+  margin-right: 16px;
+}
+
+.sidebar-app-connected-account-name {
+  flex-grow: 1;
+  align-self: center;
+
+  margin-right: 16px;
+
+  font-size: 12px;
+  font-weight: 600;
+  color: $titleColor;
+
+  overflow: hidden;
+}
+
+.sidebar-app-connected-account-tag {
+  align-self: center;
+}
+
+.sidebar-app-footer {
+  flex-grow: 1;
+
+  position: relative;
+}
+
+.sidebar-app-footer-list {
+  position: absolute;
+  bottom: 32px;
+
+  list-style: none;
+}
+
+.sidebar-app-footer-list-item {
+  display: inline-block;
+  margin-right: 16px;
+}
+
+/* SideBar App Objects - Modifiers
+------------------------------ */
+.sidebar-app-connected-account--active {
+  margin-right: -1px;
+
+  background-color: $whiteColor;
 }

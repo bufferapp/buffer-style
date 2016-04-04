@@ -10,20 +10,20 @@
 ------------------------------------------------------------ */
 
 $actionableColor: #168eea;
+$actionableActiveColor: #0d5b97;
 $actionableHoverColor: #106aaf;
-$actionableBorderColor: rgba(0, 0, 0, 0.2);
-$titleColor: #323b43;
+$actionableBorderColor: #1172bc;
+$backgroundFillColor: #f4f7f9;
+$blackColor: #000;
 $bodyColor: #59626a;
 $borderColor: #ced7df;
 $borderLightColor: #eff3f6;
-$backgroundFillColor: #f4f7f9;
-$successColor: #76b852;
-$errorColor: #ee4f4f;
-$warningColor: #fff9ea;
-$blackColor: #000;
-$whiteColor: #fff;
-
 $bufferForBusinessColor: #f8f8f8;
+$errorColor: #ee4f4f;
+$successColor: #76b852;
+$titleColor: #323b43;
+$warningColor: #fff9ea;
+$whiteColor: #fff;
 
 /* Brands Palette
 ------------------------------------------------------------ */
@@ -32,7 +32,6 @@ $appDotNetColor: #4a484c;
 $facebookColor: #3b5998;
 $linkedInColor: #007bb6;
 $twitterColor: #55acee;
-$appNetColor: #4a484c;
 $googlePlusColor: #dd4b39;
 $pinterestColor: #bd081c;
 
@@ -58,3 +57,8 @@ $boxShadowLevel1: 0 2px 4px rgba(50, 59, 67, 0.2);
 $boxShadowLevel2: 0 4px 6px rgba(50, 59, 67, 0.2);
 $boxShadowLevel3: 0 6px 8px rgba(50, 59, 67, 0.2);
 $boxShadowLevel4: 0 8px 10px rgba(50, 59, 67, 0.2);
+
+/* Animation
+------------------------------------------------------------ */
+$transitionAnimationTime: 0.1s;
+$transitionAnimationType: linear;

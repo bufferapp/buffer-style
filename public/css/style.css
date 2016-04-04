@@ -22,6 +22,8 @@
 ------------------------------------------------------------ */
 /* Box Shadows
 ------------------------------------------------------------ */
+/* Animation
+------------------------------------------------------------ */
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
 * {
@@ -38,6 +40,8 @@
 /* Border Radii
 ------------------------------------------------------------ */
 /* Box Shadows
+------------------------------------------------------------ */
+/* Animation
 ------------------------------------------------------------ */
 /* Body
 ------------------------------------------------------------ */
@@ -117,6 +121,104 @@ p {
 /* Border Radii
 ------------------------------------------------------------ */
 /* Box Shadows
+------------------------------------------------------------ */
+/* Animation
+------------------------------------------------------------ */
+/* Base Object
+------------------------------------------------------------ */
+.button {
+  padding: 0 16px;
+  height: 32px;
+  font-family: "open sans", sans-serif;
+  font-size: 14px;
+  line-height: 32px;
+  color: #59626a;
+  background-color: transparent;
+  border: 1px solid #ced7df;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.1s linear; }
+  .button:active {
+    background-color: #e7eaec !important; }
+  .button [class*=" bi-"]:before, .button [class^=bi-]:before {
+    vertical-align: baseline; }
+
+.button:hover {
+  background-color: #eff3f6; }
+
+/* Base Object - Modifiers
+------------------------------ */
+.button--active,
+.button--inactive {
+  background-color: #eff3f6; }
+  .button--active:active,
+  .button--inactive:active {
+    background-color: #eff3f6 !important; }
+
+.button--active:hover {
+  background-color: #eff3f6; }
+
+.button--inactive {
+  color: #ced7df; }
+
+.button--large {
+  padding: 0 32px;
+  height: 48px;
+  line-height: 48px; }
+
+.button--left {
+  border-radius: 4px 0 0 4px; }
+
+.button--middle {
+  border-right: 0;
+  border-left: 0;
+  border-radius: 0; }
+
+.button--primary {
+  color: #fff;
+  background-color: #168eea;
+  border-color: #1172bc; }
+
+.button--primary,
+.button--secondary {
+  border-radius: 256px; }
+  .button--primary:active,
+  .button--secondary:active {
+    background-color: #0d5b97 !important; }
+  .button--primary:hover,
+  .button--secondary:hover {
+    color: #fff;
+    background-color: #106aaf;
+    border-color: #1172bc; }
+
+.button--right {
+  border-radius: 0 4px 4px 0; }
+
+.button--remove-border-left {
+  border-left: 0; }
+
+.button--secondary {
+  color: #168eea;
+  border-color: #168eea; }
+
+/* Global Reset // We'll pull in a common reset here, perhaps in another file!
+------------------------------------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* Primary Palette
+------------------------------------------------------------ */
+/* Brands Palette
+------------------------------------------------------------ */
+/* Font
+------------------------------------------------------------ */
+/* Border Radii
+------------------------------------------------------------ */
+/* Box Shadows
+------------------------------------------------------------ */
+/* Animation
 ------------------------------------------------------------ */
 /* Base Object
 ------------------------------------------------------------ */
@@ -301,6 +403,8 @@ p {
 ------------------------------------------------------------ */
 /* Box Shadows
 ------------------------------------------------------------ */
+/* Animation
+------------------------------------------------------------ */
 /* Base Objects
 ------------------------------------------------------------ */
 .input {
@@ -312,23 +416,37 @@ p {
   color: #59626a;
   border: 1px solid #ced7df;
   border-radius: 4px;
-  outline: none; }
+  outline: none;
+  transition: border-color 0.1s linear; }
   .input:focus {
     color: #168eea;
     border-color: #168eea; }
 
-.input--with-icon {
-  position: relative; }
+.input-with-icon-left,
+.input-with-icon-right {
+  position: relative;
+  display: inline-block; }
 
-.input--with-icon .bi {
+.input-with-icon-left .bi,
+.input-with-icon-right .bi {
   position: absolute;
   top: 5px;
-  left: 8px;
   margin: 0;
   color: #ced7df; }
 
-.input--icon {
+.input-with-icon-left .bi {
+  left: 8px; }
+
+.input-with-icon-right .bi {
+  right: 8px; }
+
+/* Base Object - Modifiers
+------------------------------ */
+.input--icon-left {
   padding-left: 28px; }
+
+.input--icon-right {
+  padding-right: 28px; }
 
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
@@ -346,6 +464,8 @@ p {
 /* Border Radii
 ------------------------------------------------------------ */
 /* Box Shadows
+------------------------------------------------------------ */
+/* Animation
 ------------------------------------------------------------ */
 /* Base Object
 ------------------------------------------------------------ */
@@ -405,6 +525,8 @@ p {
 ------------------------------------------------------------ */
 /* Box Shadows
 ------------------------------------------------------------ */
+/* Animation
+------------------------------------------------------------ */
 /* Base Object
 ------------------------------------------------------------ */
 .modal {
@@ -447,12 +569,14 @@ p {
 ------------------------------------------------------------ */
 /* Box Shadows
 ------------------------------------------------------------ */
+/* Animation
+------------------------------------------------------------ */
 /* Base Object
 ------------------------------------------------------------ */
 .navbar {
   flex-direction: row;
   justify-content: flex-start;
-  align-content: flex-start;
+  position: fixed;
   display: flex;
   margin-bottom: 32px;
   padding: 0 16px;
@@ -514,6 +638,8 @@ p {
 ------------------------------------------------------------ */
 /* Box Shadows
 ------------------------------------------------------------ */
+/* Animation
+------------------------------------------------------------ */
 /* Base Object
 ------------------------------------------------------------ */
 .profile-picture {
@@ -569,33 +695,109 @@ p {
 ------------------------------------------------------------ */
 /* Box Shadows
 ------------------------------------------------------------ */
+/* Animation
+------------------------------------------------------------ */
 /* Base Object
 ------------------------------------------------------------ */
 .sidebar {
-  margin-top: -32px;
-  padding: 16px;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: fixed;
+  display: flex;
+  margin-top: 64px;
+  padding: 16px 0;
   width: 256px;
   min-height: 100vh;
-  background-color: #f8f8f8;
-  border-right: 1px solid #ced7df;
-  order: -1; }
+  font-size: 12px;
+  order: -1;
+  z-index: 1; }
 
-/* Base Objects
+/* Base Object - Modifiers
+------------------------------ */
+.sidebar .card {
+  margin-left: 16px; }
+
+/* SideBar App Objects
 ------------------------------------------------------------ */
-.sidebar-search-profiles-input {
+.sidebar-app {
+  background-color: #f8f8f8;
+  border-right: 1px solid #ced7df; }
+
+.sidebar-app-search-profiles {
+  flex-grow: 0; }
+
+.sidebar-app-search-profiles-input {
+  margin: 0 16px; }
+
+.sidebar-app-search-profiles-input .input-with-icon-left,
+.sidebar-app-search-profiles-input .input {
   width: 100%; }
 
-.sidebar-accounts {
+.sidebar-app-accounts {
   flex-direction: row;
   justify-content: flex-start;
-  align-content: flex-start;
-  display: flex; }
+  flex-grow: 0;
+  display: flex;
+  padding: 16px;
+  border-bottom: 1px solid #ced7df; }
 
-.sidebar-accounts-title {
-  flex-grow: 2; }
+.sidebar-app-accounts-title {
+  flex-grow: 1;
+  align-self: center;
+  margin: 0; }
 
-.sidebar-accounts-button {
+.sidebar-app-accounts-button {
+  flex-grow: 0;
+  align-self: center; }
+
+.sidebar-app-accounts-button .bi {
+  margin-right: 0; }
+
+.sidebar-app-connected-accounts {
   flex-grow: 0; }
+
+.sidebar-app-connected-account {
+  flex-direction: row;
+  justify-content: flex-start;
+  display: flex;
+  padding: 16px;
+  border-bottom: 1px solid #ced7df; }
+
+.sidebar-app-connected-account-profile-picture {
+  flex-grow: 0;
+  align-self: center;
+  margin-right: 16px; }
+
+.sidebar-app-connected-account-name {
+  flex-grow: 1;
+  align-self: center;
+  margin-right: 16px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #323b43;
+  overflow: hidden; }
+
+.sidebar-app-connected-account-tag {
+  align-self: center; }
+
+.sidebar-app-footer {
+  flex-grow: 1;
+  position: relative; }
+
+.sidebar-app-footer-list {
+  position: absolute;
+  bottom: 32px;
+  list-style: none; }
+
+.sidebar-app-footer-list-item {
+  display: inline-block;
+  margin-right: 16px; }
+
+/* SideBar App Objects - Modifiers
+------------------------------ */
+.sidebar-app-connected-account--active {
+  margin-right: -1px;
+  background-color: #fff; }
 
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
@@ -613,6 +815,8 @@ p {
 /* Border Radii
 ------------------------------------------------------------ */
 /* Box Shadows
+------------------------------------------------------------ */
+/* Animation
 ------------------------------------------------------------ */
 /* Base Object
 ------------------------------------------------------------ */
