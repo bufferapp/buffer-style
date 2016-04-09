@@ -577,12 +577,12 @@ p {
   flex-direction: row;
   justify-content: flex-start;
   position: fixed;
+  z-index: 1;
   display: flex;
   margin-bottom: 32px;
   padding: 0 16px;
   width: 100%;
   height: 64px;
-  z-index: 1;
   font-size: 14px;
   line-height: 64px;
   background-color: #fff;
@@ -620,6 +620,55 @@ p {
 
 .navbar-menu-item--last {
   margin-right: 0; }
+
+/* Global Reset // We'll pull in a common reset here, perhaps in another file!
+------------------------------------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* Primary Palette
+------------------------------------------------------------ */
+/* Brands Palette
+------------------------------------------------------------ */
+/* Font
+------------------------------------------------------------ */
+/* Border Radii
+------------------------------------------------------------ */
+/* Box Shadows
+------------------------------------------------------------ */
+/* Animation
+------------------------------------------------------------ */
+/* Base Object
+------------------------------------------------------------ */
+.notification {
+  flex-direction: row;
+  justify-content: flex-start;
+  position: fixed;
+  top: 100;
+  z-index: 2;
+  display: flex;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 100%;
+  background-color: #f4f7f9;
+  border-bottom: 1px solid #ced7df; }
+
+.notification-message,
+.notification-close {
+  align-self: center; }
+
+.notification-message {
+  flex-grow: 0;
+  margin: 0 0 0 16px;
+  background-color: rgba(0, 0, 0, 0.1); }
+
+.notification-close {
+  flex-grow: 1;
+  margin-right: 16px;
+  margin-left: 16px;
+  background-color: rgba(0, 0, 0, 0.2); }
 
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
@@ -704,8 +753,7 @@ p {
   justify-content: flex-start;
   position: fixed;
   display: flex;
-  margin-top: 64px;
-  padding: 16px 0;
+  margin-top: 96px;
   width: 256px;
   min-height: 100vh;
   font-size: 12px;
@@ -724,7 +772,8 @@ p {
   border-right: 1px solid #ced7df; }
 
 .sidebar-app-search-profiles {
-  flex-grow: 0; }
+  flex-grow: 0;
+  padding-top: 16px; }
 
 .sidebar-app-search-profiles-input {
   margin: 0 16px; }
