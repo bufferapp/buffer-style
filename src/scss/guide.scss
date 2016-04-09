@@ -68,6 +68,7 @@ ul {
   height: 32px;
 
   line-height: 32px;
+
   border-bottom: 1px solid $borderLightColor;
 }
 
@@ -117,10 +118,6 @@ ul {
   border-bottom: 0;
 }
 
-.twitter {
-  fill: $twitterColor;
-}
-
 .code-block {
   margin: 32px 0;
 }
@@ -138,9 +135,10 @@ ul {
 }
 
 .code-block-render-example {
-  margin: 0;
   position: relative;
   z-index: 0;
+
+  margin: 0;
 }
 
 .code-block-render {
@@ -149,16 +147,15 @@ ul {
 
 .code-block-render,
 .code-block-code {
-  border: 1px solid $borderColor;
-  border-top: 0;
-  border-bottom: 0;
+  border-right: 1px solid $borderColor;
+  border-bottom: 1px solid $borderColor;
+  border-left: 1px solid $borderColor;
 }
 
 .code-block-code {
   padding: 8px 16px;
 
   background-color: $backgroundFillColor;
-  border: 1px solid $borderColor;
   border-radius: 0 0 $borderRadiusLevel2 $borderRadiusLevel2;
 
   overflow: hidden;
