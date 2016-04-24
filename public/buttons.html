@@ -66,7 +66,6 @@
           <section class="card">
             <section class="section-secondary">
               <h1 class="section-secondary-title">Buttons</h1>
-              <!-- <p>An introduction to buttons!</p> -->
               <p>A <code>button</code> object executes code in response to user interactions. When you click or tap a button, the button performs any actions attached to it. You communicate the purpose of a button using text, an icon, or both. The appearance of buttons is configurable, so you can modify buttons for different use cases. You can add buttons to your interface using the markup below.</p>
             </section>
 
@@ -144,12 +143,17 @@
                 <div class="code-block-render">
                   <button class="button"><i class="bi bi-plus"></i>Add to Queue</button><br /><br />
                   <button class="button button--warning"><i class="bi bi-x"></i>Remove from Queue</button><br /><br />
-                  <button class="button button--secondary"><i class="bi bi-plus"></i>Add to Queue</button>
+                  <button class="button button--secondary"><i class="bi bi-plus"></i>Add to Queue</button><br /><br />
+                  <button class="button">Add to Queue<i class="bi bi--right bi-arrow-down"></i></button>
                 </div>
                 <div class="code-block-code">
                   <pre>&lt;button class="button">&lt;i class="bi bi-plus">&lt;/i>Add to Queue&lt;/button>
+
 &lt;button class="button button--warning">&lt;i class="bi bi-x">&lt;/i>Remove from Queue&lt;/button>
-&lt;button class="button button--secondary">&lt;i class="bi bi-plus">&lt;/i>Add to Queue&lt;/button></pre>
+
+&lt;button class="button button--secondary">&lt;i class="bi bi-plus">&lt;/i>Add to Queue&lt;/button>
+
+&lt;button class="button">Add to Queue&lt;i class="bi bi--right bi-arrow-down">&lt;/i>&lt;/button></pre>
                 </div>
               </div>
             </section>

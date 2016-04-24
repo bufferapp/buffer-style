@@ -87,17 +87,14 @@ $lineHeight: $fontSize * 1.5;
 /* Border Radii
 ------------------------------------------------------------ */
 
-$borderRadiusLevel1: 8px;
-$borderRadiusLevel2: 4px;
-$borderRadiusLevel3: 2px;
+$borderRadiusLevel1: 4px;
+$borderRadiusLevel2: 2px;
+$borderRadiusLevel3: 1px;
 
 /* Box Shadows
 ------------------------------------------------------------ */
 
-$boxShadowLevel1: 0 2px 4px rgba(50, 59, 67, 0.2);
-$boxShadowLevel2: 0 4px 6px rgba(50, 59, 67, 0.2);
-$boxShadowLevel3: 0 6px 8px rgba(50, 59, 67, 0.2);
-$boxShadowLevel4: 0 8px 10px rgba(50, 59, 67, 0.2);
+$boxShadowLevel1: 0 1px 2px $blackColor50;
 
 /* Animation
 ------------------------------------------------------------ */

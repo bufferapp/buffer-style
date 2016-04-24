@@ -48,3 +48,10 @@
 .bi-circle-twitter {
   color: $twitterColor;
 }
+
+/* Base Object - Modifiers
+------------------------------ */
+.bi--right {
+  margin-right: 0;
+  margin-left: 10px;
+}
