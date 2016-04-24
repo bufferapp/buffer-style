@@ -12,6 +12,8 @@
   padding: 0;
   box-sizing: border-box; }
 
+/* Shades Palette
+------------------------------------------------------------ */
 /* Primary Palette
 ------------------------------------------------------------ */
 /* Brands Palette
@@ -31,6 +33,8 @@
   padding: 0;
   box-sizing: border-box; }
 
+/* Shades Palette
+------------------------------------------------------------ */
 /* Primary Palette
 ------------------------------------------------------------ */
 /* Brands Palette
@@ -47,9 +51,9 @@
 ------------------------------------------------------------ */
 body {
   font-family: "open sans", sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
-  line-height: 21px;
+  line-height: 19.5px;
   color: #59626a; }
 
 /* Headings
@@ -86,18 +90,18 @@ h6 {
   font-weight: 600; }
 
 h4 {
-  font-size: 14px;
-  line-height: 21px; }
+  font-size: 13px;
+  line-height: 19.5px; }
 
 h5,
 h6 {
-  font-size: 12px;
-  line-height: 21px; }
+  font-size: 11px;
+  line-height: 19.5px; }
 
 /* Paragraphs
 -------------------------------------------------- */
 code {
-  color: #000; }
+  color: black; }
 
 p {
   margin: 16px 0; }
@@ -112,6 +116,8 @@ p {
   padding: 0;
   box-sizing: border-box; }
 
+/* Shades Palette
+------------------------------------------------------------ */
 /* Primary Palette
 ------------------------------------------------------------ */
 /* Brands Palette
@@ -127,79 +133,81 @@ p {
 /* Base Object
 ------------------------------------------------------------ */
 .button {
-  padding: 0 16px;
+  padding: 0 24px;
   height: 32px;
   font-family: "open sans", sans-serif;
-  font-size: 14px;
+  font-size: 13px;
+  font-weight: 400;
   line-height: 32px;
-  color: #59626a;
-  background-color: transparent;
-  border: 1px solid #ced7df;
-  border-radius: 4px;
+  color: white;
+  background-color: #168eea;
+  border: 1px solid transparent;
+  border-radius: 16px;
   cursor: pointer;
   transition: background-color 0.1s linear; }
   .button:active {
-    background-color: #e7eaec !important; }
+    background-color: #0f63a4 !important; }
+  .button:hover {
+    background-color: #137ac9; }
   .button [class*=" bi-"]:before, .button [class^=bi-]:before {
     vertical-align: baseline; }
 
-.button:hover {
-  background-color: #eff3f6; }
-
 /* Base Object - Modifiers
 ------------------------------ */
-.button--active,
-.button--inactive {
-  background-color: #eff3f6; }
-  .button--active:active,
-  .button--inactive:active {
-    background-color: #eff3f6 !important; }
-
-.button--active:hover {
-  background-color: #eff3f6; }
-
-.button--inactive {
-  color: #ced7df; }
-
-.button--large {
-  padding: 0 32px;
-  height: 48px;
-  line-height: 48px; }
-
-.button--left {
-  border-radius: 4px 0 0 4px; }
-
-.button--middle {
-  border-right: 0;
-  border-left: 0;
-  border-radius: 0; }
-
-.button--primary {
-  color: #fff;
-  background-color: #168eea;
-  border-color: #1172bc; }
-
-.button--primary,
-.button--secondary {
-  border-radius: 256px; }
-  .button--primary:active,
-  .button--secondary:active {
-    background-color: #0d5b97 !important; }
-  .button--primary:hover,
-  .button--secondary:hover {
-    color: #fff;
-    background-color: #106aaf;
-    border-color: #1172bc; }
-
-.button--right {
-  border-radius: 0 4px 4px 0; }
-
-.button--remove-border-left {
-  border-left: 0; }
+.button--active {
+  background-color: #0f63a4; }
+  .button--active:active, .button--active:hover {
+    background-color: #0f63a4 !important; }
 
 .button--secondary {
   color: #168eea;
+  background-color: white;
   border-color: #168eea; }
+  .button--secondary:active {
+    color: #137ac9 !important;
+    background-color: #e7f2fa !important;
+    border-color: #137ac9 !important; }
+  .button--secondary:hover {
+    color: #137ac9;
+    background-color: white;
+    border-color: #137ac9; }
+    .button--secondary:hover i.bi {
+      color: #137ac9; }
+  .button--secondary i.bi {
+    color: #168eea; }
+
+.button--tertiary {
+  color: #666c72;
+  background-color: white;
+  border-color: #ced7df; }
+  .button--tertiary:active {
+    color: #343e47 !important;
+    background-color: #f0f0f1 !important;
+    border-color: #abb3ba !important; }
+  .button--tertiary:hover {
+    color: #343e47;
+    background-color: white;
+    border-color: #abb3ba; }
+
+.button--warning {
+  color: #ff1e1e;
+  background-color: white;
+  border-color: #ff1e1e; }
+  .button--warning:active {
+    background-color: #e61b1b !important;
+    border-color: transparent !important; }
+  .button--warning:hover {
+    color: white;
+    background-color: #ff1e1e; }
+    .button--warning:hover i.bi {
+      color: white; }
+  .button--warning i.bi {
+    color: #ff1e1e; }
+
+/* Base Objects
+------------------------------------------------------------ */
+.button .bi {
+  color: white; }
 
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
@@ -208,6 +216,8 @@ p {
   padding: 0;
   box-sizing: border-box; }
 
+/* Shades Palette
+------------------------------------------------------------ */
 /* Primary Palette
 ------------------------------------------------------------ */
 /* Brands Palette
@@ -224,7 +234,7 @@ p {
 ------------------------------------------------------------ */
 .card {
   padding: 16px;
-  background-color: #fff;
+  background-color: white;
   border: 1px solid #ced7df;
   border-radius: 8px; }
 
@@ -290,13 +300,13 @@ p {
   padding-left: 16px;
   height: 27px;
   line-height: 27px;
-  color: #fff;
+  color: white;
   background-color: #168eea;
   border-right: 0;
   border-radius: 2px 0 0 2px; }
 
 .card-post-meta-time-pinned .card-post-meta-time {
-  color: #fff; }
+  color: white; }
 
 .card-post-meta-time-pinned-arrow {
   position: absolute;
@@ -355,7 +365,7 @@ p {
     display: block;
     color: #323b43; }
     .card-post-meta-menu-item a:hover {
-      color: #000; }
+      color: black; }
 
 /* Post Objects - Modifiers
 ------------------------------ */
@@ -363,7 +373,7 @@ p {
   margin-right: 0; }
 
 .card-post-meta-time--pinned {
-  color: #fff; }
+  color: white; }
 
 /* Analytics Objects
 ------------------------------------------------------------ */
@@ -393,6 +403,8 @@ p {
   padding: 0;
   box-sizing: border-box; }
 
+/* Shades Palette
+------------------------------------------------------------ */
 /* Primary Palette
 ------------------------------------------------------------ */
 /* Brands Palette
@@ -412,7 +424,7 @@ p {
   padding: 0 4px;
   height: 32px;
   font-family: "open sans", sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   color: #59626a;
   border: 1px solid #ced7df;
   border-radius: 4px;
@@ -455,6 +467,8 @@ p {
   padding: 0;
   box-sizing: border-box; }
 
+/* Shades Palette
+------------------------------------------------------------ */
 /* Primary Palette
 ------------------------------------------------------------ */
 /* Brands Palette
@@ -470,7 +484,8 @@ p {
 /* Base Object
 ------------------------------------------------------------ */
 .bi {
-  margin-right: 4px; }
+  margin-right: 10px;
+  color: #343e47; }
 
 .bi-circle-appdotnet[class*="bi-"],
 .bi-circle-facebook[class*="bi-"],
@@ -487,7 +502,7 @@ p {
 .bi-circle-linkedin[class*="bi-"]::before,
 .bi-circle-pinterest[class*="bi-"]::before,
 .bi-circle-twitter[class*="bi-"]::before {
-  background-color: #fff;
+  background-color: white;
   border-radius: 50%; }
 
 .bi-circle-appdotnet {
@@ -515,6 +530,8 @@ p {
   padding: 0;
   box-sizing: border-box; }
 
+/* Shades Palette
+------------------------------------------------------------ */
 /* Primary Palette
 ------------------------------------------------------------ */
 /* Brands Palette
@@ -559,6 +576,8 @@ p {
   padding: 0;
   box-sizing: border-box; }
 
+/* Shades Palette
+------------------------------------------------------------ */
 /* Primary Palette
 ------------------------------------------------------------ */
 /* Brands Palette
@@ -583,9 +602,9 @@ p {
   padding: 0 16px;
   width: 100%;
   height: 64px;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 64px;
-  background-color: #fff;
+  background-color: white;
   border-bottom: 1px solid #ced7df; }
 
 .navbar-title {
@@ -628,6 +647,8 @@ p {
   padding: 0;
   box-sizing: border-box; }
 
+/* Shades Palette
+------------------------------------------------------------ */
 /* Primary Palette
 ------------------------------------------------------------ */
 /* Brands Palette
@@ -677,6 +698,8 @@ p {
   padding: 0;
   box-sizing: border-box; }
 
+/* Shades Palette
+------------------------------------------------------------ */
 /* Primary Palette
 ------------------------------------------------------------ */
 /* Brands Palette
@@ -734,6 +757,8 @@ p {
   padding: 0;
   box-sizing: border-box; }
 
+/* Shades Palette
+------------------------------------------------------------ */
 /* Primary Palette
 ------------------------------------------------------------ */
 /* Brands Palette
@@ -756,7 +781,7 @@ p {
   margin-top: 96px;
   width: 256px;
   min-height: 100vh;
-  font-size: 12px;
+  font-size: 11px;
   order: -1;
   z-index: 1; }
 
@@ -846,7 +871,7 @@ p {
 ------------------------------ */
 .sidebar-app-connected-account--active {
   margin-right: -1px;
-  background-color: #fff; }
+  background-color: white; }
 
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
@@ -855,6 +880,8 @@ p {
   padding: 0;
   box-sizing: border-box; }
 
+/* Shades Palette
+------------------------------------------------------------ */
 /* Primary Palette
 ------------------------------------------------------------ */
 /* Brands Palette
@@ -883,10 +910,10 @@ p {
 ------------------------------ */
 .tag--blue,
 .tag--error {
-  color: #fff; }
+  color: white; }
 
 .tag--blue {
   background-color: #168eea; }
 
 .tag--error {
-  background-color: #ee4f4f; }
+  background-color: #ff1e1e; }

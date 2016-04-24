@@ -5,6 +5,8 @@
   padding: 0;
   box-sizing: border-box; }
 
+/* Shades Palette
+------------------------------------------------------------ */
 /* Primary Palette
 ------------------------------------------------------------ */
 /* Brands Palette
@@ -21,17 +23,17 @@ a {
   color: #168eea;
   text-decoration: none; }
   a:hover {
-    color: #106aaf; }
+    color: #137ac9; }
   a img {
     outline: none; }
 
 body {
   font-family: "open sans", sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
-  line-height: 21px;
+  line-height: 19.5px;
   color: #59626a;
-  background-color: #fff; }
+  background-color: white; }
 
 ol,
 ul {
