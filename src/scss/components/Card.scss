@@ -5,7 +5,7 @@
 .card {
   padding: 16px;
 
-  background-color: $whiteColor;
+  background-color: $whiteColor100;
   border: 1px solid $borderColor;
   border-radius: $borderRadiusLevel1;
 }
@@ -93,7 +93,7 @@
   height: 27px;
 
   line-height: 27px;
-  color: $whiteColor;
+  color: $whiteColor100;
 
   background-color: $actionableColor;
   border-right: 0;
@@ -101,7 +101,7 @@
 }
 
 .card-post-meta-time-pinned .card-post-meta-time {
-  color: $whiteColor;
+  color: $whiteColor100;
 }
 
  .card-post-meta-time-pinned-arrow {
@@ -186,7 +186,7 @@
     color: $titleColor;
 
     &:hover {
-      color: $blackColor;
+      color: $blackColor100;
     }
   }
 }
@@ -198,7 +198,7 @@
 }
 
 .card-post-meta-time--pinned {
-  color: $whiteColor;
+  color: $whiteColor100;
 }
 
 /* Analytics Objects

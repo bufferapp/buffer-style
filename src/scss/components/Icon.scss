@@ -3,7 +3,9 @@
 /* Base Object
 ------------------------------------------------------------ */
 .bi {
-  margin-right: 4px;
+  margin-right: 10px;
+
+  color: #343e47;
 }
 
 .bi-circle-appdotnet,
@@ -18,7 +20,7 @@
   }
 
   &[class*="bi-"]::before {
-    background-color: $whiteColor;
+    background-color: $whiteColor100;
     border-radius: 50%;
   }
 }

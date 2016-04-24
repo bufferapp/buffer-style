@@ -3,23 +3,28 @@
 /* Base Object
 ------------------------------------------------------------ */
 .button {
-  padding: 0 16px;
+  padding: 0 24px;
   height: 32px;
 
   font-family: $fontFamily;
   font-size: $fontSize;
+  font-weight: 400;
   line-height: 32px;
-  color: $bodyColor;
+  color: $whiteColor100;
 
-  background-color: transparent;
-  border: 1px solid $borderColor;
-  border-radius: $borderRadiusLevel2;
+  background-color: $actionableColor;
+  border: 1px solid transparent;
+  border-radius: 16px;
 
   cursor: pointer;
   transition: background-color $transitionAnimationTime $transitionAnimationType;
 
   &:active {
-    background-color: #e7eaec !important;
+    background-color: $actionableActiveColor !important;
+  }
+
+  &:hover {
+    background-color: $actionableHoverColor;
   }
 
   [class*=" bi-"]:before, [class^=bi-]:before {
@@ -27,79 +32,95 @@
   }
 }
 
-.button:hover {
-  background-color: $borderLightColor;
-}
-
 /* Base Object - Modifiers
 ------------------------------ */
-.button--active,
-.button--inactive {
-  background-color: $borderLightColor;
+.button--active {
+  background-color: $actionableActiveColor;
 
-  &:active {
-    background-color: $borderLightColor !important;
-  }
-}
-
-.button--active:hover {
-  background-color: $borderLightColor;
-}
-
-.button--inactive {
-  color: $borderColor;
-}
-
-.button--large {
-  padding: 0 32px;
-  height: 48px;
-
-  line-height: 48px;
-}
-
-.button--left {
-  border-radius: $borderRadiusLevel2 0 0 $borderRadiusLevel2;
-}
-
-.button--middle {
-  border-right: 0;
-  border-left: 0;
-  border-radius: 0;
-}
-
-.button--primary {
-  color: $whiteColor;
-
-  background-color: $actionableColor;
-  border-color: $actionableBorderColor;
-}
-
-.button--primary,
-.button--secondary {
-  border-radius: 256px;
-
-  &:active {
+  &:active,
+  &:hover {
     background-color: $actionableActiveColor !important;
   }
-
-  &:hover {
-    color: $whiteColor;
-
-    background-color: $actionableHoverColor;
-    border-color: $actionableBorderColor;
-  }
-}
-
-.button--right {
-  border-radius: 0 $borderRadiusLevel2 $borderRadiusLevel2 0;
-}
-
-.button--remove-border-left {
-  border-left: 0;
 }
 
 .button--secondary {
   color: $actionableColor;
 
+  background-color: $whiteColor100;
   border-color: $actionableColor;
+
+  &:active {
+    color: $buttonSecondaryBorderColor !important;
+
+    background-color: mix($whiteColor100, $buttonSecondaryBorderColor, 90%) !important;
+    border-color: $buttonSecondaryBorderColor !important;
+  }
+
+  &:hover {
+    color: $buttonSecondaryBorderColor;
+
+    background-color: $whiteColor100;
+    border-color: $buttonSecondaryBorderColor;
+
+    i.bi {
+      color: $buttonSecondaryBorderColor;
+    }
+  }
+
+  i.bi {
+    color: $actionableColor;
+  }
+}
+
+.button--tertiary {
+  color: $buttonTertiaryTextColor;
+
+  background-color: $whiteColor100;
+  border-color: $buttonTertiaryBorderColor;
+
+  &:active {
+    color: $buttonTertiaryHoverTextColor !important;
+
+    background-color: mix($whiteColor100, $buttonTertiaryTextColor, 90%) !important;
+    border-color: $buttonTertiaryHoverBorderColor !important;
+  }
+
+  &:hover {
+    color: $buttonTertiaryHoverTextColor;
+
+    background-color: $whiteColor100;
+    border-color: $buttonTertiaryHoverBorderColor;
+  }
+}
+
+.button--warning {
+  color: $warningColor;
+
+  background-color: $whiteColor100;
+  border-color: $warningColor;
+
+  &:active {
+    background-color: mix($warningColor, $blackColor100, 90%) !important;
+    border-color: transparent !important;
+  }
+
+  &:hover {
+    color: $whiteColor100;
+
+    background-color: $warningColor;
+
+    i.bi {
+      color: $whiteColor100;
+    }
+  }
+
+  i.bi {
+    color: $warningColor;
+  }
+}
+
+/* Base Objects
+------------------------------------------------------------ */
+.button .bi {
+  color: $whiteColor100;
 }

@@ -19,7 +19,7 @@
 ------------------------------ */
 .tag--blue,
 .tag--error {
-  color: $whiteColor;
+  color: $whiteColor100;
 }
 
 .tag--blue {
@@ -27,5 +27,5 @@
 }
 
 .tag--error {
-  background-color: $errorColor;
+  background-color: $warningColor;
 }
