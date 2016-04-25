@@ -257,7 +257,7 @@ p {
 /* Base Object
 ------------------------------------------------------------ */
 .card {
-  padding: 20px;
+  padding: 30px 20px;
   background-color: white;
   border: 1px solid #ced7df;
   border-radius: 4px; }
@@ -268,160 +268,78 @@ p {
   margin-bottom: 0; }
 
 .card--empty {
-  border: 1px dashed #ced7df; }
+  border-style: dashed; }
 
 .card--no-border {
   border: 0; }
 
-/* Post & Analytics Shared Objects
+/* Base Object
 ------------------------------------------------------------ */
-.card-post,
-.card-post-analytics {
-  margin-bottom: 16px; }
+.post-content {
+  padding: 30px 20px;
+  background-color: white;
+  border: 1px solid #ced7df;
+  border-radius: 4px 4px 0 0; }
 
-.card-post,
-.card-post-analytics {
-  padding: 0; }
-
-.card-post-content,
-.card-post-analytics-content {
-  padding: 16px; }
-
-.card-post-content p,
-.card-post-analytics-content p {
-  margin: 0; }
-
-.card-post-meta,
-.card-post-analytics-meta {
+.metabar {
+  display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  display: flex;
-  padding: 0 16px;
-  height: 32px;
-  line-height: 32px;
+  align-items: center;
+  align-content: stretch;
+  padding: 10px;
+  font-size: 11px;
+  font-weight: 600;
   background-color: #f4f7f9;
-  border-top: 1px solid #ced7df;
-  border-radius: 0 0 7px 7px;
-  font-size: 10px; }
+  border-right: 1px solid #ced7df;
+  border-bottom: 1px solid #ced7df;
+  border-left: 1px solid #ced7df;
+  border-radius: 0 0 4px 4px; }
+  .metabar:hover .metabar-menu-item {
+    display: inherit; }
 
-.card-post-meta-time-zone,
-.card-post-analytics-meta-time-zone {
+.metabar-time {
+  flex-grow: 0; }
+
+.metabar-time-zone {
+  flex-grow: 0;
   font-weight: normal; }
 
-/* Post Objects
------------------------------------------------------------- */
-.card-post-stat {
-  font-weight: bold;
-  color: #323b43; }
-
-.card-post-meta:hover .card-post-meta-menu {
-  opacity: 1; }
-
-.card-post-meta::after {
-  clear: both; }
-
-.card-post-meta-time-pinned {
+.metabar-profile-picture {
   flex-grow: 0;
-  position: relative;
-  margin: 2px 16px 2px -18px;
-  padding-left: 16px;
-  height: 27px;
-  line-height: 27px;
-  color: white;
-  background-color: #168eea;
-  border-right: 0;
-  border-radius: 2px 0 0 2px; }
+  margin-left: 20px;
+  border: 1px solid #ced7df;
+  border-radius: 256px; }
 
-.card-post-meta-time-pinned .card-post-meta-time {
-  color: white; }
-
-.card-post-meta-time-pinned-arrow {
-  position: absolute;
-  top: 0;
-  right: -8px;
-  width: 0;
-  height: 0;
-  border-top: 13.5px solid transparent;
-  border-bottom: 13.5px solid transparent;
-  border-left: 8px solid #168eea; }
-
-.card-post-meta-tag {
+.metabar-user-name {
   flex-grow: 0;
-  margin: 7px 8px 7px 0; }
+  margin-left: 10px; }
 
-.card-post-meta-time {
+.metabar-via {
   flex-grow: 0;
-  margin-right: 8px;
-  font-weight: 600; }
+  margin-left: 10px; }
 
-.card-post-meta-via {
-  flex-grow: 0; }
+.metabar-tag {
+  flex-grow: 0;
+  margin-left: 10px; }
 
-.card-post-meta-user {
+.metabar-menu {
+  display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: flex-end;
   flex-grow: 1;
-  display: flex;
-  margin: 4px 0 4px 16px;
-  padding: 4px 0; }
-
-.card-post-meta-user-name {
-  margin-left: 8px;
-  font-weight: 600;
-  line-height: normal; }
-
-.card-post-meta-user-profile-picture {
-  flex-grow: 0; }
-
-.card-post-meta-user-name {
-  flex-grow: 1; }
-
-.card-post-meta-menu {
-  flex-direction: row;
-  justify-content: flex-start;
-  flex-grow: 0;
-  display: flex;
   margin: 0;
-  list-style: none;
-  opacity: 0; }
+  padding: 0;
+  list-style: none; }
 
-.card-post-meta-menu-item {
-  flex-grow: 1;
-  margin: 0 16px 0 0; }
-  .card-post-meta-menu-item a {
-    display: block;
-    color: #323b43; }
-    .card-post-meta-menu-item a:hover {
-      color: black; }
-
-/* Post Objects - Modifiers
------------------------------- */
-.card-post-meta-menu-item--last {
-  margin-right: 0; }
-
-.card-post-meta-time--pinned {
-  color: white; }
-
-/* Analytics Objects
------------------------------------------------------------- */
-.card-post-analytics {
-  padding-bottom: 0; }
-
-.card-post-analytics-posted {
-  margin-top: 8px;
-  height: 21px;
-  font-size: 10px; }
-
-.card-post-analytics-posted-time,
-.card-post-analytics-posted-via {
-  float: left; }
-
-.card-post-analytics-posted-via {
-  margin-left: 8px; }
-
-.card-post-analytics-meta-data-stat {
-  flex-grow: 1;
-  text-align: center; }
+.metabar-menu-item {
+  display: none;
+  margin: 0 0 0 20px;
+  padding: 0; }
+  .metabar-menu-item [class*=" bi-"]:before, .metabar-menu-item [class^=bi-]:before {
+    vertical-align: baseline; }
+  .metabar-menu-item a {
+    display: block; }
 
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
@@ -532,8 +450,7 @@ p {
 /* Base Object
 ------------------------------------------------------------ */
 .bi {
-  margin-right: 10px;
-  color: #343e47; }
+  margin-right: 10px; }
 
 .bi-circle-appdotnet[class*="bi-"],
 .bi-circle-facebook[class*="bi-"],
@@ -980,23 +897,23 @@ p {
 /* Base Object
 ------------------------------------------------------------ */
 .tag {
-  padding: 0 4px;
+  padding: 0 10px;
   height: 18px;
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 600;
   line-height: 18px;
   color: #59626a;
   background-color: #ced7df;
-  border-radius: 1px; }
+  border-radius: 2px; }
 
 /* Base Object - Modifiers
 ------------------------------ */
-.tag--blue,
-.tag--error {
+.tag--primary,
+.tag--warning {
   color: white; }
 
-.tag--blue {
+.tag--primary {
   background-color: #168eea; }
 
-.tag--error {
+.tag--warning {
   background-color: #ff1e1e; }

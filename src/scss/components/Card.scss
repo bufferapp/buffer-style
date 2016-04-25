@@ -3,7 +3,7 @@
 /* Base Object
 ------------------------------------------------------------ */
 .card {
-  padding: 20px;
+  padding: 30px 20px;
 
   background-color: $white-100;
   border: 1px solid $geyser;
@@ -17,218 +17,109 @@
 }
 
 .card--empty {
-  border: 1px dashed $geyser;
+  border-style: dashed;
 }
 
 .card--no-border {
   border: 0;
 }
 
-/* Post & Analytics Shared Objects
+/* Base Object
 ------------------------------------------------------------ */
-.card-post,
-.card-post-analytics {
-  margin-bottom: 16px;
+.post-content {
+  padding: 30px 20px;
+
+  background-color: $white-100;
+  border: 1px solid $geyser;
+  border-radius: $border-radius-level-1 $border-radius-level-1 0 0;
 }
 
-.card-post,
-.card-post-analytics {
-  padding: 0;
-}
-
-.card-post-content,
-.card-post-analytics-content {
-  padding: 16px;
-}
-
-.card-post-content p,
-.card-post-analytics-content p {
-  margin: 0;
-}
-
-.card-post-meta,
-.card-post-analytics-meta {
+.metabar {
+  display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
 
-  display: flex;
-  padding: 0 16px;
-  height: 32px;
+  padding: 10px;
 
-  line-height: 32px;
+  font-size: 11px;
+  font-weight: 600;
 
   background-color: $aqua-haze;
-  border-top: 1px solid $geyser;
-  border-radius: 0 0 7px 7px;
+  border-right: 1px solid $geyser;
+  border-bottom: 1px solid $geyser;
+  border-left: 1px solid $geyser;
+  border-radius: 0 0 $border-radius-level-1 $border-radius-level-1;
 
-  font-size: 10px;
+  &:hover {
+    .metabar-menu-item {
+      display: inherit;
+    }
+  }
 }
 
-.card-post-meta-time-zone,
-.card-post-analytics-meta-time-zone {
+.metabar-time {
+  flex-grow: 0;
+}
+
+.metabar-time-zone {
+  flex-grow: 0;
+
   font-weight: normal;
 }
 
-/* Post Objects
------------------------------------------------------------- */
-.card-post-stat {
-  font-weight: bold;
-
-  color: $outer-space;
-}
-
-.card-post-meta {
-  &:hover {
-    .card-post-meta-menu {
-      opacity: 1;
-    }
-  }
-  &::after {
-    clear: both;
-  }
-}
-
-.card-post-meta-time-pinned {
-  flex-grow: 0;
-  position: relative;
-
-  margin: 2px 16px 2px -18px;
-  padding-left: 16px;
-  height: 27px;
-
-  line-height: 27px;
-  color: $white-100;
-
-  background-color: $curious-blue;
-  border-right: 0;
-  border-radius: 2px 0 0 2px;
-}
-
-.card-post-meta-time-pinned .card-post-meta-time {
-  color: $white-100;
-}
-
- .card-post-meta-time-pinned-arrow {
-  position: absolute;
-  top: 0;
-  right: -8px;
-
-  width: 0;
-  height: 0;
-
-  border-top: 13.5px solid transparent;
-  border-bottom: 13.5px solid transparent;
-  border-left: 8px solid $curious-blue;
-}
-
-.card-post-meta-tag {
+.metabar-profile-picture {
   flex-grow: 0;
 
-  margin: 7px 8px 7px 0;
+  margin-left: 20px;
+
+  border: 1px solid $geyser;
+  border-radius: 256px;
 }
 
-.card-post-meta-time {
+.metabar-user-name {
   flex-grow: 0;
 
-  margin-right: 8px;
-
-  font-weight: 600;
+  margin-left: 10px;
 }
 
-.card-post-meta-via {
+.metabar-via {
   flex-grow: 0;
+
+  margin-left: 10px;
 }
 
-.card-post-meta-user {
-  flex-direction: row;
-  justify-content: flex-start;
-  flex-grow: 1;
+.metabar-tag {
+  flex-grow: 0;
 
+  margin-left: 10px;
+}
+
+.metabar-menu {
   display: flex;
-
-  margin: 4px 0 4px 16px;
-  padding: 4px 0;
-}
-
-.card-post-meta-user-name {
-  margin-left: 8px;
-
-  font-weight: 600;
-  line-height: normal;
-}
-
-.card-post-meta-user-profile-picture {
-  flex-grow: 0;
-}
-
-.card-post-meta-user-name {
-  flex-grow: 1;
-}
-
-.card-post-meta-menu {
   flex-direction: row;
-  justify-content: flex-start;
-  flex-grow: 0;
+  justify-content: flex-end;
 
-  display: flex;
+  flex-grow: 1;
 
   margin: 0;
+  padding: 0;
 
   list-style: none;
-
-  opacity: 0;
 }
 
-.card-post-meta-menu-item {
-  flex-grow: 1;
+.metabar-menu-item {
+  display: none;
 
-  margin: 0 16px 0 0;
+  margin: 0 0 0 20px;
+  padding: 0;
 
-  & a {
-    display: block;
-
-    color: $outer-space;
-
-    &:hover {
-      color: $black-100;
-    }
+  [class*=" bi-"]:before, [class^=bi-]:before {
+    vertical-align: baseline;
   }
-}
 
-/* Post Objects - Modifiers
------------------------------- */
-.card-post-meta-menu-item--last {
-  margin-right: 0;
-}
-
-.card-post-meta-time--pinned {
-  color: $white-100;
-}
-
-/* Analytics Objects
------------------------------------------------------------- */
-.card-post-analytics {
-  padding-bottom: 0;
-}
-
-.card-post-analytics-posted {
-  margin-top: 8px;
-  height: 21px;
-
-  font-size: 10px;
-}
-
-.card-post-analytics-posted-time,
-.card-post-analytics-posted-via {
-  float: left;
-}
-
-.card-post-analytics-posted-via {
-  margin-left: 8px;
-}
-
-.card-post-analytics-meta-data-stat {
-  flex-grow: 1;
-
-  text-align: center;
+  a {
+    display: block;
+  }
 }

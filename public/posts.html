@@ -71,32 +71,41 @@
         <section class="section section--last">
           <section class="card">
             <section class="section-secondary">
-              <h1 class="section-secondary-title">Modals</h1>
-              <p>An introduction to modals.</p>
+              <h1 class="section-secondary-title">Posts</h1>
+              <p>Posts are user-created content.</p>
             </section>
-            <section class="section-secondary section-secondary--last">
-              <h2 class="section-secondary-title">Modal</h2>
-              <p>This is the base object for the <code>modal</code> object.</p>
-              <div class="code-block code-block--last">
+            <section class="section-secondary">
+              <h2 class="section-secondary-title">Post</h2>
+              <p>This is the base <code>post</code> object and includes a <code>metabar</code> object.</p>
+              <div class="code-block">
                 <div class="code-block-title">
                   Example:
                 </div>
                 <div class="code-block-render">
-                  <a href="#openModal">Open Modal</a>
-                  <div class="modal" id="openModal">
-                    <div class="card card--no-border">
-                      <p>Modal example here. <a href="#close" title="Close">Close</a></p>
+                  <div class="post">
+                    <div class="post-content">
+                      What is a Product Designer? An awesome story by <a href="#">@jgadapee</a> over on Medium! <a href="#">http://buff.ly/1LTbUqv</a>
+                    </div>
+                    <div class="metabar">
+                      <div class="metabar-time">09:42 <span class="metabar-time-zone">(GMT)</span></div>
+                      <div class="metabar-profile-picture"><img class="profile-picture profile-picture--small" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg"></div>
+                      <div class="metabar-user-name">steve@buffer.com</div>
+                      <div class="metabar-via">via Extension</div>
+                      <div class="metabar-tag tag tag--primary">In Queue</div>
+                      <ul class="metabar-menu">
+                        <li class="metabar-menu-item"><a href="#"><i class="bi bi-x"></i>Delete</a></li>
+                        <li class="metabar-menu-item"><a href="#"><i class="bi bi-edit"></i>Edit</a></li>
+                        <li class="metabar-menu-item"><a href="#"><i class="bi bi-arrow-up"></i>Move to Top</a></li>
+                        <li class="metabar-menu-item"><a href="#"><i class="bi bi-arrow-right"></i>Share Now</a></li>
+                      </ul>
                     </div>
                   </div>
                 </div>
                 <div class="code-block-code">
-                  <pre>&lt;div class="modal" id="openModal">
-  &lt;div class="card">
-    &lt;p>Modal example here. &lt;a href="#close" title="Close">Close&lt;/a>&lt;/p>
-  &lt;/div>
-&lt;/div></pre>
+                  <pre>Markup of `post`.</pre>
                 </div>
               </div>
+
             </section>
           </section>
         </section>
