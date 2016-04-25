@@ -795,7 +795,7 @@ p {
   display: block;
   width: 32px;
   height: 32px;
-  border-radius: 16px; }
+  border-radius: 256px; }
 
 /* Base Object - Modifiers
 ------------------------------ */
@@ -805,15 +805,9 @@ p {
   .profile-picture--inactive .profile-picture-icon .bi {
     color: #323b43; }
 
-.profile-picture--large {
-  width: 48px;
-  height: 48px;
-  border-radius: 32px; }
-
 .profile-picture--small {
   width: 16px;
-  height: 16px;
-  border-radius: 8px; }
+  height: 16px; }
 
 /* Profile Picture with Icon Object
 ------------------------------------------------------------ */
