@@ -9,23 +9,23 @@
   font-size: 10px;
   font-weight: 600;
   line-height: 18px;
-  color: $bodyColor;
+  color: $shuttle-gray;
 
-  background-color: $borderColor;
-  border-radius: $borderRadiusLevel3;
+  background-color: $geyser;
+  border-radius: $border-radius-level-3;
 }
 
 /* Base Object - Modifiers
 ------------------------------ */
 .tag--blue,
 .tag--error {
-  color: $whiteColor100;
+  color: $white-100;
 }
 
 .tag--blue {
-  background-color: $actionableColor;
+  background-color: $curious-blue;
 }
 
 .tag--error {
-  background-color: $warningColor;
+  background-color: $torch-red;
 }

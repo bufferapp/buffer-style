@@ -19,33 +19,33 @@
   }
 
   &[class*="bi-"]::before {
-    background-color: $whiteColor100;
+    background-color: $white-100;
     border-radius: 50%;
   }
 }
 
 .bi-circle-appdotnet {
-  color: $appDotNetColor;
+  color: $appdotnet;
 }
 
 .bi-circle-facebook {
-  color: $facebookColor;
+  color: $facebook;
 }
 
 .bi-circle-google-plus {
-  color: $googlePlusColor;
+  color: $googleplus;
 }
 
 .bi-circle-linkedin {
-  color: $linkedInColor;
+  color: $linkedin;
 }
 
 .bi-circle-pinterest {
-  color: $pinterestColor;
+  color: $pinterest;
 }
 
 .bi-circle-twitter {
-  color: $twitterColor;
+  color: $twitter;
 }
 
 /* Base Object - Modifiers

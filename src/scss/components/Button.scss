@@ -6,25 +6,25 @@
   padding: 0 24px;
   height: 32px;
 
-  font-family: $fontFamily;
-  font-size: $fontSize;
+  font-family: $font-family;
+  font-size: $font-size;
   font-weight: 400;
   line-height: 32px;
-  color: $whiteColor100;
+  color: $white-100;
 
-  background-color: $actionableColor;
+  background-color: $curious-blue;
   border: 1px solid transparent;
   border-radius: 16px;
 
   cursor: pointer;
-  transition: background-color $transitionAnimationTime $transitionAnimationType;
+  transition: background-color $transition-animation-time $transition-animation-type;
 
   &:active {
-    background-color: $actionableActiveColor !important;
+    background-color: $tory-blue !important;
   }
 
   &:hover {
-    background-color: $actionableHoverColor;
+    background-color: $denim;
   }
 
   [class*=" bi-"]:before, [class^=bi-]:before {
@@ -35,92 +35,92 @@
 /* Base Object - Modifiers
 ------------------------------ */
 .button--active {
-  background-color: $actionableActiveColor;
+  background-color: $tory-blue;
 
   &:active,
   &:hover {
-    background-color: $actionableActiveColor !important;
+    background-color: $tory-blue !important;
   }
 }
 
 .button--secondary {
-  color: $actionableColor;
+  color: $curious-blue;
 
-  background-color: $whiteColor100;
-  border-color: $actionableColor;
+  background-color: $white-100;
+  border-color: $curious-blue;
 
   &:active {
-    color: $buttonSecondaryBorderColor !important;
+    color: $curious-blue !important;
 
-    background-color: mix($whiteColor100, $buttonSecondaryBorderColor, 90%) !important;
-    border-color: $buttonSecondaryBorderColor !important;
+    background-color: $selago !important;
+    border-color: $curious-blue !important;
   }
 
   &:hover {
-    color: $buttonSecondaryBorderColor;
+    color: $denim;
 
-    background-color: $whiteColor100;
-    border-color: $buttonSecondaryBorderColor;
+    background-color: $white-100;
+    border-color: $denim;
 
     i.bi {
-      color: $buttonSecondaryBorderColor;
+      color: $denim;
     }
   }
 
   i.bi {
-    color: $actionableColor;
+    color: $curious-blue;
   }
 }
 
 .button--tertiary {
-  color: $buttonTertiaryTextColor;
+  color: $nevada;
 
-  background-color: $whiteColor100;
-  border-color: $buttonTertiaryBorderColor;
+  background-color: transparent;
+  border-color: $geyser;
 
   &:active {
-    color: $buttonTertiaryHoverTextColor !important;
+    color: $limed-spruce !important;
 
-    background-color: mix($whiteColor100, $buttonTertiaryTextColor, 90%) !important;
-    border-color: $buttonTertiaryHoverBorderColor !important;
+    background-color: mix($white-100, $nevada, 90%) !important;
+    border-color: $hit-gray !important;
   }
 
   &:hover {
-    color: $buttonTertiaryHoverTextColor;
+    color: $limed-spruce;
 
-    background-color: $whiteColor100;
-    border-color: $buttonTertiaryHoverBorderColor;
+    background-color: transparent;
+    border-color: $hit-gray;
   }
 }
 
 .button--warning {
-  color: $warningColor;
+  color: $torch-red;
 
-  background-color: $whiteColor100;
-  border-color: $warningColor;
+  background-color: $white-100;
+  border-color: $torch-red;
 
   &:active {
-    background-color: mix($warningColor, $blackColor100, 90%) !important;
+    background-color: mix($torch-red, $black-100, 90%) !important;
     border-color: transparent !important;
   }
 
   &:hover {
-    color: $whiteColor100;
+    color: $white-100;
 
-    background-color: $warningColor;
+    background-color: $torch-red;
 
     i.bi {
-      color: $whiteColor100;
+      color: $white-100;
     }
   }
 
   i.bi {
-    color: $warningColor;
+    color: $torch-red;
   }
 }
 
 /* Base Objects
 ------------------------------------------------------------ */
 .button .bi {
-  color: $whiteColor100;
+  color: $white-100;
 }

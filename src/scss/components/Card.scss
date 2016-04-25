@@ -5,9 +5,9 @@
 .card {
   padding: 20px;
 
-  background-color: $whiteColor100;
-  border: 1px solid $borderColor;
-  border-radius: $borderRadiusLevel1;
+  background-color: $white-100;
+  border: 1px solid $geyser;
+  border-radius: $border-radius-level-1;
 }
 
 /* Base Object - Modifiers
@@ -17,7 +17,7 @@
 }
 
 .card--empty {
-  border: 1px dashed $borderColor;
+  border: 1px dashed $geyser;
 }
 
 .card--no-border {
@@ -57,8 +57,8 @@
 
   line-height: 32px;
 
-  background-color: $backgroundFillColor;
-  border-top: 1px solid $borderColor;
+  background-color: $aqua-haze;
+  border-top: 1px solid $geyser;
   border-radius: 0 0 7px 7px;
 
   font-size: 10px;
@@ -74,7 +74,7 @@
 .card-post-stat {
   font-weight: bold;
 
-  color: $titleColor;
+  color: $outer-space;
 }
 
 .card-post-meta {
@@ -97,15 +97,15 @@
   height: 27px;
 
   line-height: 27px;
-  color: $whiteColor100;
+  color: $white-100;
 
-  background-color: $actionableColor;
+  background-color: $curious-blue;
   border-right: 0;
   border-radius: 2px 0 0 2px;
 }
 
 .card-post-meta-time-pinned .card-post-meta-time {
-  color: $whiteColor100;
+  color: $white-100;
 }
 
  .card-post-meta-time-pinned-arrow {
@@ -118,7 +118,7 @@
 
   border-top: 13.5px solid transparent;
   border-bottom: 13.5px solid transparent;
-  border-left: 8px solid $actionableColor;
+  border-left: 8px solid $curious-blue;
 }
 
 .card-post-meta-tag {
@@ -187,10 +187,10 @@
   & a {
     display: block;
 
-    color: $titleColor;
+    color: $outer-space;
 
     &:hover {
-      color: $blackColor100;
+      color: $black-100;
     }
   }
 }
@@ -202,7 +202,7 @@
 }
 
 .card-post-meta-time--pinned {
-  color: $whiteColor100;
+  color: $white-100;
 }
 
 /* Analytics Objects

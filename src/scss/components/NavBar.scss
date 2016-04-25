@@ -14,11 +14,11 @@
   width: 100%;
   height: 64px;
 
-  font-size: $fontSize;
+  font-size: $font-size;
   line-height: 64px;
 
-  background-color: $whiteColor100;
-  border-bottom: 1px solid $borderColor;
+  background-color: $white-100;
+  border-bottom: 1px solid $geyser;
 }
 
 .navbar-title {
@@ -59,7 +59,7 @@
 /* Base Object - Modifiers
 ------------------------------ */
 .navbar-menu-item a.navbar-menu-item--active {
-  box-shadow: inset 0 -2px $titleColor;
+  box-shadow: inset 0 -2px $outer-space;
 }
 
 .navbar-menu-item--last {

@@ -8,95 +8,90 @@
 
 /* Shades Palette
 ------------------------------------------------------------ */
-$blackColor100: rgba(0, 0, 0, 1.0);
-$blackColor90: rgba(0, 0, 0, 0.9);
-$blackColor80: rgba(0, 0, 0, 0.8);
-$blackColor70: rgba(0, 0, 0, 0.7);
-$blackColor60: rgba(0, 0, 0, 0.6);
-$blackColor50: rgba(0, 0, 0, 0.5);
-$blackColor40: rgba(0, 0, 0, 0.4);
-$blackColor30: rgba(0, 0, 0, 0.3);
-$blackColor20: rgba(0, 0, 0, 0.2);
-$blackColor10: rgba(0, 0, 0, 0.1);
-$blackColor05: rgba(0, 0, 0, 0.05);
+$black-100: rgba(0, 0, 0, 1.0);
+$black-90: rgba(0, 0, 0, 0.9);
+$black-80: rgba(0, 0, 0, 0.8);
+$black-70: rgba(0, 0, 0, 0.7);
+$black-60: rgba(0, 0, 0, 0.6);
+$black-50: rgba(0, 0, 0, 0.5);
+$black-40: rgba(0, 0, 0, 0.4);
+$black-30: rgba(0, 0, 0, 0.3);
+$black-20: rgba(0, 0, 0, 0.2);
+$black-10: rgba(0, 0, 0, 0.1);
+$black-05: rgba(0, 0, 0, 0.05);
 
-$blueColor100: rgba(22, 142, 234, 1);
-$blueColor90: rgba(22, 142, 234, 0.9);
-$blueColor80: rgba(22, 142, 234, 0.8);
-$blueColor70: rgba(22, 142, 234, 0.7);
-$blueColor60: rgba(22, 142, 234, 0.6);
-$blueColor50: rgba(22, 142, 234, 0.5);
-$blueColor40: rgba(22, 142, 234, 0.4);
-$blueColor30: rgba(22, 142, 234, 0.3);
-$blueColor20: rgba(22, 142, 234, 0.2);
-$blueColor10: rgba(22, 142, 234, 0.1);
-$blueColor05: rgba(22, 142, 234, 0.05);
-
-$whiteColor100: rgba(255, 255, 255, 1);
-$whiteColor90: rgba(255, 255, 255, 0.9);
-$whiteColor80: rgba(255, 255, 255, 0.8);
-$whiteColor70: rgba(255, 255, 255, 0.7);
-$whiteColor60: rgba(255, 255, 255, 0.6);
-$whiteColor50: rgba(255, 255, 255, 0.5);
-$whiteColor40: rgba(255, 255, 255, 0.4);
-$whiteColor30: rgba(255, 255, 255, 0.3);
-$whiteColor20: rgba(255, 255, 255, 0.2);
-$whiteColor10: rgba(255, 255, 255, 0.1);
-$whiteColor05: rgba(255, 255, 255, 0.05);
-
+$white-100: rgba(255, 255, 255, 1);
+$white-90: rgba(255, 255, 255, 0.9);
+$white-80: rgba(255, 255, 255, 0.8);
+$white-70: rgba(255, 255, 255, 0.7);
+$white-60: rgba(255, 255, 255, 0.6);
+$white-50: rgba(255, 255, 255, 0.5);
+$white-40: rgba(255, 255, 255, 0.4);
+$white-30: rgba(255, 255, 255, 0.3);
+$white-20: rgba(255, 255, 255, 0.2);
+$white-10: rgba(255, 255, 255, 0.1);
+$white-05: rgba(255, 255, 255, 0.05);
 
 /* Primary Palette
 ------------------------------------------------------------ */
 
-$actionableColor: $blueColor100;
-$actionableActiveColor: mix($blueColor100, $blackColor100, 70%);
-$actionableHoverColor: #137ac9;
-$backgroundFillColor: #f4f7f9;
-$bodyColor: #59626a;
-$borderColor: #ced7df;
-$borderLightColor: #eff3f6;
-$bufferForBusinessColor: #f8f8f8;
-$successColor: #76b852;
-$titleColor: #323b43;
-$warningColor: #ff1e1e;
+/* Blues
+------------------------------ */
+$curious-blue: #168eea;
+$denim: #137ac9;
+$tory-blue: mix($curious-blue, $black-100, 70%);
+$selago: mix($white-100, $curious-blue, 90%);
 
-$buttonSecondaryBorderColor: #137ac9;
-$buttonTertiaryBorderColor: #ced7df;
-$buttonTertiaryHoverBorderColor: #abb3ba;
-$buttonTertiaryTextColor: #666c72;
-$buttonTertiaryHoverTextColor: #343e47;
+/* Grays
+------------------------------ */
+$outer-space: #323b43;
+$limed-spruce: #343e47;
+$shuttle-gray: #59626a;
+$nevada: #666c72;
+$manatee: #989da1;
+$hit-gray: #abb3ba;
+$geyser: #ced7df;
+$aqua-haze: #f4f7f9;
+$alabaster: #f8f8f8;
+
+/* Others
+------------------------------ */
+$mantis: #76b852;
+$torch-red: #ff1e1e;
+
+
 
 /* Brands Palette
 ------------------------------------------------------------ */
 
-$appDotNetColor: #4a484c;
-$facebookColor: #3b5998;
-$linkedInColor: #007bb6;
-$twitterColor: #55acee;
-$googlePlusColor: #dd4b39;
-$pinterestColor: #bd081c;
+$appdotnet: #4a484c;
+$facebook: #3b5998;
+$linkedin: #007bb6;
+$twitter: #55acee;
+$googleplus: #dd4b39;
+$pinterest: #bd081c;
 
 /* Font
 ------------------------------------------------------------ */
 
-$fontFamily: 'open sans', sans-serif;
-$fontSize: 14px;
-$fontWeight: 400;
-$lineHeight: $fontSize * 1.5;
+$font-family: 'open sans', sans-serif;
+$font-size: 14px;
+$font-weight: 400;
+$line-height: $font-size * 1.5;
 
 /* Border Radii
 ------------------------------------------------------------ */
 
-$borderRadiusLevel1: 4px;
-$borderRadiusLevel2: 2px;
-$borderRadiusLevel3: 1px;
+$border-radius-level-1: 4px;
+$border-radius-level-2: 2px;
+$border-radius-level-3: 1px;
 
 /* Box Shadows
 ------------------------------------------------------------ */
 
-$boxShadowLevel1: 0 1px 2px $blackColor50;
+$box-shadow-level-1: 0 1px 2px $black-50;
 
 /* Animation
 ------------------------------------------------------------ */
-$transitionAnimationTime: 0.1s;
-$transitionAnimationType: linear;
+$transition-animation-time: 0.1s;
+$transition-animation-type: linear;

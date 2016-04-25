@@ -1,11 +1,11 @@
 @import "base/variables";
 
 a {
-  color: $actionableColor;
+  color: $curious-blue;
   text-decoration: none;
 
   &:hover {
-    color: $actionableHoverColor;
+    color: mix($curious-blue, $black-100, 70%);
   }
 
   img {
@@ -14,13 +14,13 @@ a {
 }
 
 body {
-  font-family: $fontFamily;
-  font-size: $fontSize;
-  font-weight: $fontWeight;
-  line-height: $lineHeight;
-  color: $bodyColor;
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  color: $shuttle-gray;
 
-  background-color: $whiteColor100;
+  background-color: $white-100;
 }
 
 html {
@@ -69,7 +69,7 @@ ul {
 
   line-height: 32px;
 
-  border-bottom: 1px solid $borderLightColor;
+  border-bottom: 1px solid $aqua-haze;
 }
 
 .content {
@@ -83,7 +83,7 @@ ul {
   margin: 0 30px 50px 30px;
   padding-bottom: 64px;
 
-  border-bottom: 1px solid $borderColor;
+  border-bottom: 1px solid $aqua-haze;
 }
 
 .section--last {
@@ -101,16 +101,16 @@ ul {
   margin-bottom: 20px;
   padding: 20px 0;
 
-  border-bottom: 1px solid $borderLightColor;
+  border-bottom: 1px solid $aqua-haze;
 }
 
 .section-secondary-rendered {
   margin-bottom: 20px;
   padding: 20px;
 
-  background-color: $backgroundFillColor;
-  border: 1px solid $borderColor;
-  border-radius: $borderRadiusLevel2;
+  background-color: $aqua-haze;
+  border: 1px solid $geyser;
+  border-radius: $border-radius-level-2;
 }
 .section-secondary--last {
   padding-bottom: 0;
@@ -127,11 +127,11 @@ ul {
 
   font-size: 12px;
   font-weight: 600;
-  color: $titleColor;
+  color: $outer-space;
   text-transform: uppercase;
 
-  background-color: $borderColor;
-  border-radius: $borderRadiusLevel2 $borderRadiusLevel2 0 0;
+  background-color: $geyser;
+  border-radius: $border-radius-level-2 $border-radius-level-2 0 0;
 }
 
 .code-block-render-example {
@@ -147,16 +147,16 @@ ul {
 
 .code-block-render,
 .code-block-code {
-  border-right: 1px solid $borderColor;
-  border-bottom: 1px solid $borderColor;
-  border-left: 1px solid $borderColor;
+  border-right: 1px solid $geyser;
+  border-bottom: 1px solid $geyser;
+  border-left: 1px solid $geyser;
 }
 
 .code-block-code {
   padding: 10px 20px;
 
-  background-color: $backgroundFillColor;
-  border-radius: 0 0 $borderRadiusLevel2 $borderRadiusLevel2;
+  background-color: $aqua-haze;
+  border-radius: 0 0 $border-radius-level-2 $border-radius-level-2;
 
   overflow: hidden;
 }

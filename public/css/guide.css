@@ -9,6 +9,12 @@
 ------------------------------------------------------------ */
 /* Primary Palette
 ------------------------------------------------------------ */
+/* Blues
+------------------------------ */
+/* Grays
+------------------------------ */
+/* Others
+------------------------------ */
 /* Brands Palette
 ------------------------------------------------------------ */
 /* Font
@@ -23,7 +29,7 @@ a {
   color: #168eea;
   text-decoration: none; }
   a:hover {
-    color: #137ac9; }
+    color: #0f63a4; }
   a img {
     outline: none; }
 
@@ -66,7 +72,7 @@ ul {
   display: block;
   height: 32px;
   line-height: 32px;
-  border-bottom: 1px solid #eff3f6; }
+  border-bottom: 1px solid #f4f7f9; }
 
 .content {
   flex: 1;
@@ -76,7 +82,7 @@ ul {
 .section {
   margin: 0 30px 50px 30px;
   padding-bottom: 64px;
-  border-bottom: 1px solid #ced7df; }
+  border-bottom: 1px solid #f4f7f9; }
 
 .section--last {
   margin-bottom: 0;
@@ -89,7 +95,7 @@ ul {
 .section-secondary {
   margin-bottom: 20px;
   padding: 20px 0;
-  border-bottom: 1px solid #eff3f6; }
+  border-bottom: 1px solid #f4f7f9; }
 
 .section-secondary-rendered {
   margin-bottom: 20px;
