@@ -273,74 +273,6 @@ p {
 .card--no-border {
   border: 0; }
 
-/* Base Object
------------------------------------------------------------- */
-.post-content {
-  padding: 30px 20px;
-  background-color: white;
-  border: 1px solid #ced7df;
-  border-radius: 4px 4px 0 0; }
-
-.metabar {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  align-content: stretch;
-  padding: 10px;
-  font-size: 11px;
-  font-weight: 600;
-  background-color: #f4f7f9;
-  border-right: 1px solid #ced7df;
-  border-bottom: 1px solid #ced7df;
-  border-left: 1px solid #ced7df;
-  border-radius: 0 0 4px 4px; }
-  .metabar:hover .metabar-menu-item {
-    display: inherit; }
-
-.metabar-time {
-  flex-grow: 0; }
-
-.metabar-time-zone {
-  flex-grow: 0;
-  font-weight: normal; }
-
-.metabar-profile-picture {
-  flex-grow: 0;
-  margin-left: 20px;
-  border: 1px solid #ced7df;
-  border-radius: 256px; }
-
-.metabar-user-name {
-  flex-grow: 0;
-  margin-left: 10px; }
-
-.metabar-via {
-  flex-grow: 0;
-  margin-left: 10px; }
-
-.metabar-tag {
-  flex-grow: 0;
-  margin-left: 10px; }
-
-.metabar-menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  flex-grow: 1;
-  margin: 0;
-  padding: 0;
-  list-style: none; }
-
-.metabar-menu-item {
-  display: none;
-  margin: 0 0 0 20px;
-  padding: 0; }
-  .metabar-menu-item [class*=" bi-"]:before, .metabar-menu-item [class^=bi-]:before {
-    vertical-align: baseline; }
-  .metabar-menu-item a {
-    display: block; }
-
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
 * {
@@ -492,6 +424,95 @@ p {
 .bi--right {
   margin-right: 0;
   margin-left: 10px; }
+
+/* Global Reset // We'll pull in a common reset here, perhaps in another file!
+------------------------------------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* Shades Palette
+------------------------------------------------------------ */
+/* Primary Palette
+------------------------------------------------------------ */
+/* Blues
+------------------------------ */
+/* Grays
+------------------------------ */
+/* Others
+------------------------------ */
+/* Brands Palette
+------------------------------------------------------------ */
+/* Font
+------------------------------------------------------------ */
+/* Border Radii
+------------------------------------------------------------ */
+/* Box Shadows
+------------------------------------------------------------ */
+/* Animation
+------------------------------------------------------------ */
+/* Base Object
+------------------------------------------------------------ */
+.metabar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+  padding: 10px;
+  font-size: 11px;
+  font-weight: 600;
+  background-color: #f4f7f9;
+  border-right: 1px solid #ced7df;
+  border-bottom: 1px solid #ced7df;
+  border-left: 1px solid #ced7df;
+  border-radius: 0 0 4px 4px; }
+  .metabar:hover .metabar-menu-item {
+    display: inherit; }
+
+.metabar-time {
+  flex-grow: 0; }
+
+.metabar-time-zone {
+  flex-grow: 0;
+  font-weight: normal; }
+
+.metabar-profile-picture {
+  flex-grow: 0;
+  margin-left: 20px;
+  border: 1px solid #ced7df;
+  border-radius: 256px; }
+
+.metabar-user-name {
+  flex-grow: 0;
+  margin-left: 10px; }
+
+.metabar-via {
+  flex-grow: 0;
+  margin-left: 10px; }
+
+.metabar-tag {
+  flex-grow: 0;
+  margin-left: 10px; }
+
+.metabar-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-grow: 1;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.metabar-menu-item {
+  display: none;
+  margin: 0 0 0 20px;
+  padding: 0; }
+  .metabar-menu-item [class*=" bi-"]:before, .metabar-menu-item [class^=bi-]:before {
+    vertical-align: baseline; }
+  .metabar-menu-item a {
+    display: block; }
 
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
@@ -678,6 +699,103 @@ p {
   margin-right: 16px;
   margin-left: 16px;
   background-color: rgba(0, 0, 0, 0.2); }
+
+/* Global Reset // We'll pull in a common reset here, perhaps in another file!
+------------------------------------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* Shades Palette
+------------------------------------------------------------ */
+/* Primary Palette
+------------------------------------------------------------ */
+/* Blues
+------------------------------ */
+/* Grays
+------------------------------ */
+/* Others
+------------------------------ */
+/* Brands Palette
+------------------------------------------------------------ */
+/* Font
+------------------------------------------------------------ */
+/* Border Radii
+------------------------------------------------------------ */
+/* Box Shadows
+------------------------------------------------------------ */
+/* Animation
+------------------------------------------------------------ */
+/* Base Object
+------------------------------------------------------------ */
+.post-content {
+  padding: 30px 20px;
+  background-color: white;
+  border: 1px solid #ced7df;
+  border-radius: 4px 4px 0 0; }
+
+/* Base Object
+------------------------------------------------------------ */
+.metabar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+  padding: 10px;
+  font-size: 11px;
+  font-weight: 600;
+  background-color: #f4f7f9;
+  border-right: 1px solid #ced7df;
+  border-bottom: 1px solid #ced7df;
+  border-left: 1px solid #ced7df;
+  border-radius: 0 0 4px 4px; }
+  .metabar:hover .metabar-menu-item {
+    display: inherit; }
+
+.metabar-time {
+  flex-grow: 0; }
+
+.metabar-time-zone {
+  flex-grow: 0;
+  font-weight: normal; }
+
+.metabar-profile-picture {
+  flex-grow: 0;
+  margin-left: 20px;
+  border: 1px solid #ced7df;
+  border-radius: 256px; }
+
+.metabar-user-name {
+  flex-grow: 0;
+  margin-left: 10px; }
+
+.metabar-via {
+  flex-grow: 0;
+  margin-left: 10px; }
+
+.metabar-tag {
+  flex-grow: 0;
+  margin-left: 10px; }
+
+.metabar-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-grow: 1;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.metabar-menu-item {
+  display: none;
+  margin: 0 0 0 20px;
+  padding: 0; }
+  .metabar-menu-item [class*=" bi-"]:before, .metabar-menu-item [class^=bi-]:before {
+    vertical-align: baseline; }
+  .metabar-menu-item a {
+    display: block; }
 
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
