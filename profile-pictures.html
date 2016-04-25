@@ -64,10 +64,12 @@
 
         <section class="section section--last">
           <section class="card">
+
             <section class="section-secondary">
               <h1 class="section-secondary-title">Profile Pictures</h1>
               <p>Profile Pictures are objects designed to display a user's profile picture.</p>
             </section>
+
             <section class="section-secondary">
               <h2 class="section-secondary-title">Profile Picture</h2>
               <p>This is the base object for the <code>profile-picture</code> object.</p>
@@ -82,33 +84,6 @@
                   <pre>&lt;img class="profile-picture" src="#"></pre>
                 </div>
               </div>
-            </section>
-            <section class="section-secondary">
-              <h2 class="section-secondary-title">Profile Picture with Icon</h2>
-              <p>This is the base object for the <code>profile-picture-with-icon</code> object that includes a profile picture and a social network icon. It includes two separate objects (<code>profile-picture</code> and <code>icon</code>) that each inherit from their own base objects.</p>
-              <div class="code-block code-block--last">
-                <div class="code-block-title">
-                  Example:
-                </div>
-                <div class="code-block-render">
-                  <div class="profile-picture-with-icon code-block-render-example">
-                    <img class="profile-picture" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
-                    <div class="profile-picture-icon">
-                      <i class="bi bi-circle-twitter"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="code-block-code">
-                  <pre>&lt;div class="profile-picture-with-icon code-block-render-example">
-      &lt;img class="profile-picture" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
-      &lt;div class="profile-picture-icon">
-        &lt;i class="bi bi-circle-twitter">&lt;/i>
-      &lt;/div>
-    &lt;/div></pre>
-                </div>
-              </div>
-            </section>
-            <section class="section-secondary">
               <h2 class="section-secondary-title">Profile Picture -- Inactive</h2>
               <p>This is a modifier for the <code>profile-picture</code> object, which grayscales our customers' profile picture. When used with the <code>profile-picture-with-icon</code>, it also grayscales the social network icon.</p>
               <div class="code-block code-block">
@@ -143,23 +118,6 @@
 &lt;/div></pre>
                 </div>
               </div>
-            </section>
-            <section class="section-secondary section-secondary--last">
-              <h2 class="section-secondary-title">Profile Picture -- Large</h2>
-              <p>This is a modified <code>profile-picture</code> object. It modifies the <code>profile-picture</code> object's <code>width</code> and <code>height</code>.</p>
-              <div class="code-block code-block--last">
-                <div class="code-block-title">
-                  Example:
-                </div>
-                <div class="code-block-render">
-                  <img class="profile-picture profile-picture--large code-block-render-example" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
-                </div>
-                <div class="code-block-code">
-                  <pre>&lt;img class="profile-picture profile-picture--large" src="#"></pre>
-                </div>
-              </div>
-            </section>
-            <section class="section-secondary section-secondary--last">
               <h2 class="section-secondary-title">Profile Picture -- Small</h2>
               <p>This is a modified <code>profile-picture</code> object. It doesn't introduce any new functionality nor UI. It simply modifies the <code>profile-picture</code> object's <code>width</code> and <code>height</code>.</p>
               <div class="code-block code-block--last">
@@ -174,6 +132,33 @@
                 </div>
               </div>
             </section>
+
+            <section class="section-secondary section-secondary--last">
+              <h2 class="section-secondary-title">Profile Picture with Icon</h2>
+              <p>This is the base object for the <code>profile-picture-with-icon</code> object that includes a profile picture and a social network icon. It includes two separate objects (<code>profile-picture</code> and <code>icon</code>) that each inherit from their own base objects.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <div class="profile-picture-with-icon code-block-render-example">
+                    <img class="profile-picture" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
+                    <div class="profile-picture-icon">
+                      <i class="bi bi-circle-twitter"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;div class="profile-picture-with-icon code-block-render-example">
+      &lt;img class="profile-picture" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
+      &lt;div class="profile-picture-icon">
+        &lt;i class="bi bi-circle-twitter">&lt;/i>
+      &lt;/div>
+    &lt;/div></pre>
+                </div>
+              </div>
+            </section>
+
           </section>
         </section>
 
