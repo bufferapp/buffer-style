@@ -4,7 +4,7 @@
 ------------------------------------------------------------ */
 .bi {
   margin-right: 10px;
-
+  
   color: #343e47;
 }
 
@@ -15,7 +15,6 @@
 .bi-circle-pinterest,
 .bi-circle-twitter {
   &[class*="bi-"] {
-    font-size: 16px;
     border: none;
   }
 

@@ -496,7 +496,6 @@ p {
 .bi-circle-linkedin[class*="bi-"],
 .bi-circle-pinterest[class*="bi-"],
 .bi-circle-twitter[class*="bi-"] {
-  font-size: 16px;
   border: none; }
 
 .bi-circle-appdotnet[class*="bi-"]::before,
