@@ -543,7 +543,25 @@ p {
   .metabar-menu-item [class*=" bi-"]:before, .metabar-menu-item [class^=bi-]:before {
     vertical-align: baseline; }
   .metabar-menu-item a {
+    color: #59626a;
     display: block; }
+    .metabar-menu-item a:hover {
+      color: #168eea; }
+
+.metabar-time--pinned {
+  margin-left: -12px;
+  padding-left: 10px;
+  color: white;
+  background-color: #168eea;
+  border-radius: 1px 0 0 1px; }
+
+.metabar-time--pinned-arrow {
+  margin-right: -10px;
+  width: 0;
+  height: 0;
+  border-top: 10.5px solid transparent;
+  border-bottom: 10.5px solid transparent;
+  border-left: 10px solid #168eea; }
 
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
@@ -760,83 +778,39 @@ p {
 ------------------------------------------------------------ */
 /* Base Object
 ------------------------------------------------------------ */
+/* Base Objects - Modifiers
+------------------------------ */
+.post--failed .post-content {
+  border-top: 1px solid #ff1e1e;
+  border-right: 1px solid #ff1e1e;
+  border-left: 1px solid #ff1e1e; }
+
+.post--failed .metabar {
+  border-right: 1px solid #ff1e1e;
+  border-bottom: 1px solid #ff1e1e;
+  border-left: 1px solid #ff1e1e; }
+
+/* Base Objects
+------------------------------------------------------------ */
 .post-content {
-  padding: 30px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: stretch;
   background-color: white;
   border: 1px solid #ced7df;
   border-radius: 4px 4px 0 0; }
 
-/* Base Object
------------------------------------------------------------- */
-.metabar {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  align-content: stretch;
-  padding: 10px;
-  font-size: 11px;
-  font-weight: 600;
-  background-color: #f4f7f9;
-  border-right: 1px solid #ced7df;
-  border-bottom: 1px solid #ced7df;
-  border-left: 1px solid #ced7df;
-  border-radius: 0 0 4px 4px; }
-  .metabar:hover .metabar-menu-item {
-    display: inherit; }
-
-.metabar-time {
-  flex-grow: 0; }
-
-.metabar-time-zone {
-  flex-grow: 0;
-  font-weight: normal; }
-
-.metabar-profile-picture {
-  flex-grow: 0;
-  margin-left: 20px;
-  border: 1px solid #ced7df;
-  border-radius: 256px; }
-
-.metabar-user-name {
-  flex-grow: 0;
-  margin-left: 10px; }
-
-.metabar-via {
-  flex-grow: 0;
-  margin-left: 10px; }
-
-.metabar-tag {
-  flex-grow: 0;
-  margin-left: 10px; }
-
-.metabar-menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+.post-content-text {
   flex-grow: 1;
-  margin: 0;
-  padding: 0;
-  list-style: none; }
+  padding: 30px 20px; }
 
-.metabar-menu-item {
-  display: none;
-  margin: 0 0 0 20px;
-  padding: 0; }
-  .metabar-menu-item [class*=" bi-"]:before, .metabar-menu-item [class^=bi-]:before {
-    vertical-align: baseline; }
-  .metabar-menu-item a {
-    color: #59626a;
-    display: block; }
-    .metabar-menu-item a:hover {
-      color: #168eea; }
-
-.metabar-time--pinned {
-  margin-left: -12px;
-  padding-left: 10px;
-  color: white;
-  background-color: #168eea;
-  border-radius: 1px 0 0 1px; }
+.post-content-image {
+  flex-grow: 0;
+  padding: 20px 20px 20px 0; }
+  .post-content-image img {
+    display: block;
+    border-radius: 4px; }
 
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
@@ -1068,11 +1042,11 @@ p {
 /* Base Object - Modifiers
 ------------------------------ */
 .tag--primary,
-.tag--warning {
+.tag--failed {
   color: white; }
 
 .tag--primary {
   background-color: #168eea; }
 
-.tag--warning {
+.tag--failed {
   background-color: #ff1e1e; }
