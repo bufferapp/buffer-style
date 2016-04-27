@@ -98,6 +98,21 @@
   }
 
   a {
+    color: $shuttle-gray;
     display: block;
+
+    &:hover {
+      color: $curious-blue;
+    }
   }
+}
+
+.metabar-time--pinned {
+  margin-left: -12px;
+  padding-left: 10px;
+
+  color: $white-100;
+
+  background-color: $curious-blue;
+  border-radius: $border-radius-level-3 0 0 $border-radius-level-3;
 }

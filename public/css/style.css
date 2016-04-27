@@ -165,8 +165,13 @@ p {
   transition: background-color 0.1s linear; }
   .button:active {
     background-color: #0f63a4 !important; }
+    .button:active.button--inactive {
+      background-color: #168eea !important; }
   .button:hover {
     background-color: #137ac9; }
+    .button:hover.button--inactive {
+      color: white;
+      background-color: #168eea; }
   .button [class*=" bi-"]:before, .button [class^=bi-]:before {
     vertical-align: baseline; }
 
@@ -177,18 +182,28 @@ p {
   .button--active:active, .button--active:hover {
     background-color: #0f63a4 !important; }
 
+.button--inactive {
+  opacity: 0.2;
+  cursor: not-allowed; }
+
 .button--secondary {
   color: #168eea;
   background-color: white;
   border-color: #168eea; }
   .button--secondary:active {
     color: #168eea !important;
-    background-color: #e8f4fd !important;
+    background-color: #f3f9fe !important;
     border-color: #168eea !important; }
+    .button--secondary:active.button--inactive {
+      background-color: white !important; }
   .button--secondary:hover {
     color: #137ac9;
     background-color: white;
     border-color: #137ac9; }
+    .button--secondary:hover.button--inactive {
+      color: #168eea;
+      background-color: white;
+      border-color: #168eea; }
     .button--secondary:hover i.bi {
       color: #137ac9; }
   .button--secondary i.bi {
@@ -202,10 +217,18 @@ p {
     color: #343e47 !important;
     background-color: #f0f0f1 !important;
     border-color: #abb3ba !important; }
+    .button--tertiary:active.button--inactive {
+      color: #666c72 !important;
+      background-color: transparent !important;
+      border-color: #ced7df !important; }
   .button--tertiary:hover {
     color: #343e47;
     background-color: transparent;
     border-color: #abb3ba; }
+    .button--tertiary:hover.button--inactive {
+      color: #666c72;
+      background-color: transparent;
+      border-color: #ced7df; }
 
 .button--warning {
   color: #ff1e1e;
@@ -214,9 +237,17 @@ p {
   .button--warning:active {
     background-color: #e61b1b !important;
     border-color: transparent !important; }
+    .button--warning:active.button--inactive {
+      color: #ff1e1e !important;
+      background-color: white !important;
+      border-color: #ff1e1e !important; }
   .button--warning:hover {
     color: white;
     background-color: #ff1e1e; }
+    .button--warning:hover.button--inactive {
+      color: #ff1e1e;
+      background-color: white;
+      border-color: #ff1e1e; }
     .button--warning:hover i.bi {
       color: white; }
   .button--warning i.bi {
@@ -795,7 +826,17 @@ p {
   .metabar-menu-item [class*=" bi-"]:before, .metabar-menu-item [class^=bi-]:before {
     vertical-align: baseline; }
   .metabar-menu-item a {
+    color: #59626a;
     display: block; }
+    .metabar-menu-item a:hover {
+      color: #168eea; }
+
+.metabar-time--pinned {
+  margin-left: -12px;
+  padding-left: 10px;
+  color: white;
+  background-color: #168eea;
+  border-radius: 1px 0 0 1px; }
 
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */

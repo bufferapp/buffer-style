@@ -21,10 +21,20 @@
 
   &:active {
     background-color: $tory-blue !important;
+
+    &.button--inactive {
+      background-color: $curious-blue !important;
+    }
   }
 
   &:hover {
     background-color: $denim;
+
+    &.button--inactive {
+      color: $white-100;
+
+      background-color: $curious-blue;
+    }
   }
 
   [class*=" bi-"]:before, [class^=bi-]:before {
@@ -43,6 +53,11 @@
   }
 }
 
+.button--inactive {
+  opacity: 0.2;
+  cursor: not-allowed;
+}
+
 .button--secondary {
   color: $curious-blue;
 
@@ -52,8 +67,12 @@
   &:active {
     color: $curious-blue !important;
 
-    background-color: $selago !important;
+    background-color: $foam !important;
     border-color: $curious-blue !important;
+
+    &.button--inactive {
+      background-color: $white-100 !important;
+    }
   }
 
   &:hover {
@@ -61,6 +80,13 @@
 
     background-color: $white-100;
     border-color: $denim;
+
+    &.button--inactive {
+      color: $curious-blue;
+
+      background-color: $white-100;
+      border-color: $curious-blue;
+    }
 
     i.bi {
       color: $denim;
@@ -83,6 +109,13 @@
 
     background-color: mix($white-100, $nevada, 90%) !important;
     border-color: $hit-gray !important;
+
+    &.button--inactive {
+      color: $nevada !important;
+
+      background-color: transparent !important;
+      border-color: $geyser !important;
+    }
   }
 
   &:hover {
@@ -90,6 +123,13 @@
 
     background-color: transparent;
     border-color: $hit-gray;
+
+    &.button--inactive {
+      color: $nevada;
+
+      background-color: transparent;
+      border-color: $geyser;
+    }
   }
 }
 
@@ -102,12 +142,26 @@
   &:active {
     background-color: mix($torch-red, $black-100, 90%) !important;
     border-color: transparent !important;
+
+    &.button--inactive {
+      color: $torch-red !important;
+
+      background-color: $white-100 !important;
+      border-color: $torch-red !important;
+    }
   }
 
   &:hover {
     color: $white-100;
 
     background-color: $torch-red;
+
+    &.button--inactive {
+      color: $torch-red;
+
+      background-color: $white-100;
+      border-color: $torch-red;
+    }
 
     i.bi {
       color: $white-100;
