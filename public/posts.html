@@ -70,11 +70,13 @@
 
         <section class="section section--last">
           <section class="card">
+
             <section class="section-secondary">
               <h1 class="section-secondary-title">Posts</h1>
               <p>Posts are user-created content.</p>
             </section>
-            <section class="section-secondary">
+
+            <section class="section-secondary section-secondary--last">
               <h2 class="section-secondary-title">Post</h2>
               <p>This is the base <code>post</code> object and includes a <code>metabar</code> object.</p>
               <div class="code-block">
@@ -84,7 +86,9 @@
                 <div class="code-block-render">
                   <div class="post">
                     <div class="post-content">
-                      What is a Product Designer? An awesome story by <a href="#">@jgadapee</a> over on Medium! <a href="#">http://buff.ly/1LTbUqv</a>
+                      <div class="post-content-text">
+                        What is a Product Designer? An awesome story by <a href="#">@jgadapee</a> over on Medium! <a href="#">http://buff.ly/1LTbUqv</a>
+                      </div>
                     </div>
                     <div class="metabar">
                       <div class="metabar-time">09:42 <span class="metabar-time-zone">(GMT)</span></div>
@@ -105,12 +109,11 @@
                   <pre>Markup of `post`.</pre>
                 </div>
               </div>
-
             </section>
 
-            <section class="section-secondary">
+            <section class="section-secondary section-secondary--last">
               <h2 class="section-secondary-title">Post - Pinned</h2>
-              <p>This is the base <code>post</code> object and includes a <code>metabar</code> object.</p>
+              <p>This is the base <code>post</code> object and includes a <code>metabar</code> object with a modified <code>metabar-time</code></a> object.</p></p>
               <div class="code-block">
                 <div class="code-block-title">
                   Example:
@@ -118,10 +121,49 @@
                 <div class="code-block-render">
                   <div class="post">
                     <div class="post-content">
-                      What is a Product Designer? An awesome story by <a href="#">@jgadapee</a> over on Medium! <a href="#">http://buff.ly/1LTbUqv</a>
+                      <div class="post-content-text">
+                        What is a Product Designer? An awesome story by <a href="#">@jgadapee</a> over on Medium! <a href="#">http://buff.ly/1LTbUqv</a>
+                      </div>
                     </div>
                     <div class="metabar">
-                      <div class="metabar-time metabar-time--pinned">09:42 <span class="metabar-time-zone">(GMT)</span></div>
+                      <div class="metabar-time metabar-time--pinned">
+                        09:42 <span class="metabar-time-zone">(GMT)</span>
+                      </div>
+                      <div class="metabar-time--pinned-arrow"></div>
+                      <div class="metabar-profile-picture"><img class="profile-picture profile-picture--small" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg"></div>
+                      <div class="metabar-user-name">steve@buffer.com</div>
+                      <div class="metabar-via">via Extension</div>
+                      <ul class="metabar-menu">
+                        <li class="metabar-menu-item"><a href="#"><i class="bi bi-x"></i>Delete</a></li>
+                        <li class="metabar-menu-item"><a href="#"><i class="bi bi-edit"></i>Edit</a></li>
+                        <li class="metabar-menu-item"><a href="#"><i class="bi bi-arrow-up"></i>Move to Top</a></li>
+                        <li class="metabar-menu-item"><a href="#"><i class="bi bi-arrow-right"></i>Share Now</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="code-block-code">
+                  <pre>Markup of `post`.</pre>
+                </div>
+              </div>
+            </section>
+
+            <section class="section-secondary section-secondary--last">
+              <h2 class="section-secondary-title">Post - Tag</h2>
+              <p>This is the base <code>post</code> object and includes a <a href="metabars.html"><code>metabar</code></a> object with an additional <a href="tags.html"><code>tag</code></a> object.</p>
+              <div class="code-block">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <div class="post">
+                    <div class="post-content">
+                      <div class="post-content-text">
+                        What is a Product Designer? An awesome story by <a href="#">@jgadapee</a> over on Medium! <a href="#">http://buff.ly/1LTbUqv</a>
+                      </div>
+                    </div>
+                    <div class="metabar">
+                      <div class="metabar-time">09:42 <span class="metabar-time-zone">(GMT)</span></div>
                       <div class="metabar-profile-picture"><img class="profile-picture profile-picture--small" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg"></div>
                       <div class="metabar-user-name">steve@buffer.com</div>
                       <div class="metabar-via">via Extension</div>
@@ -139,8 +181,81 @@
                   <pre>Markup of `post`.</pre>
                 </div>
               </div>
-
             </section>
+
+            <section class="section-secondary section-secondary--last">
+              <h2 class="section-secondary-title">Post - Tag -- Failed</h2>
+              <p>This is the base <code>post</code> object and includes a <a href="metabars.html"><code>metabar</code></a> object with an additional, modified <a href="tags.html"><code>tag</code></a> object.</p>
+              <div class="code-block">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <div class="post post--failed">
+                    <div class="post-content">
+                      <div class="post-content-text">
+                        What is a Product Designer? An awesome story by <a href="#">@jgadapee</a> over on Medium! <a href="#">http://buff.ly/1LTbUqv</a>
+                      </div>
+                    </div>
+                    <div class="metabar">
+                      <div class="metabar-time">09:42 <span class="metabar-time-zone">(GMT)</span></div>
+                      <div class="metabar-profile-picture"><img class="profile-picture profile-picture--small" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg"></div>
+                      <div class="metabar-user-name">steve@buffer.com</div>
+                      <div class="metabar-via">via Extension</div>
+                      <div class="metabar-tag tag tag--failed">Failed</div>
+                      <ul class="metabar-menu">
+                        <li class="metabar-menu-item"><a href="#"><i class="bi bi-x"></i>Delete</a></li>
+                        <li class="metabar-menu-item"><a href="#"><i class="bi bi-edit"></i>Edit</a></li>
+                        <li class="metabar-menu-item"><a href="#"><i class="bi bi-arrow-up"></i>Move to Top</a></li>
+                        <li class="metabar-menu-item"><a href="#"><i class="bi bi-arrow-right"></i>Share Now</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="code-block-code">
+                  <pre>Markup of `post`.</pre>
+                </div>
+              </div>
+            </section>
+
+            <section class="section-secondary section-secondary--last">
+              <h2 class="section-secondary-title">Post - Image</h2>
+              <p>This is the base <code>post</code> object and includes a <code>metabar</code> object.</p>
+              <div class="code-block">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <div class="post">
+                    <div class="post-content">
+                      <div class="post-content-text">
+                        What is a Product Designer? An awesome story by <a href="#">@jgadapee</a> over on Medium! <a href="#">http://buff.ly/1LTbUqv</a>
+                      </div>
+                      <div class="post-content-image">
+                        <img height="100" src="https://images.unsplash.com/photo-1428189923803-e9801d464d76?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=467ee7b8a091aa5cb8bc9b496aada853" width="100">
+                      </div>
+                    </div>
+                    <div class="metabar">
+                      <div class="metabar-time">09:42 <span class="metabar-time-zone">(GMT)</span></div>
+                      <div class="metabar-profile-picture"><img class="profile-picture profile-picture--small" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg"></div>
+                      <div class="metabar-user-name">steve@buffer.com</div>
+                      <div class="metabar-via">via Extension</div>
+                      <div class="metabar-tag tag tag--primary">In Queue</div>
+                      <ul class="metabar-menu">
+                        <li class="metabar-menu-item"><a href="#"><i class="bi bi-x"></i>Delete</a></li>
+                        <li class="metabar-menu-item"><a href="#"><i class="bi bi-edit"></i>Edit</a></li>
+                        <li class="metabar-menu-item"><a href="#"><i class="bi bi-arrow-up"></i>Move to Top</a></li>
+                        <li class="metabar-menu-item"><a href="#"><i class="bi bi-arrow-right"></i>Share Now</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="code-block-code">
+                  <pre>Markup of `post`.</pre>
+                </div>
+              </div>
+            </section>
+
           </section>
         </section>
 

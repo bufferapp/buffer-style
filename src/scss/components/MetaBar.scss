@@ -88,6 +88,31 @@
   }
 
   a {
+    color: $shuttle-gray;
     display: block;
+
+    &:hover {
+      color: $curious-blue;
+    }
   }
+}
+
+.metabar-time--pinned {
+  margin-left: -12px;
+  padding-left: 10px;
+
+  color: $white-100;
+
+  background-color: $curious-blue;
+  border-radius: $border-radius-level-3 0 0 $border-radius-level-3;
+}
+
+.metabar-time--pinned-arrow {
+  margin-right: -10px;
+	width: 0;
+	height: 0;
+	border-top: 10.5px solid transparent;
+	border-bottom: 10.5px solid transparent;
+
+	border-left: 10px solid $curious-blue;
 }

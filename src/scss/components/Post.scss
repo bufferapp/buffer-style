@@ -2,117 +2,51 @@
 
 /* Base Object
 ------------------------------------------------------------ */
+.post {}
+
+/* Base Objects - Modifiers
+------------------------------ */
+.post--failed {
+  .post-content {
+    border-top: 1px solid $torch-red;
+    border-right: 1px solid $torch-red;
+    border-left: 1px solid $torch-red;
+  }
+
+  .metabar {
+    border-right: 1px solid $torch-red;
+    border-bottom: 1px solid $torch-red;
+    border-left: 1px solid $torch-red;
+  }
+}
+
+/* Base Objects
+------------------------------------------------------------ */
 .post-content {
-  padding: 30px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: stretch;
 
   background-color: $white-100;
   border: 1px solid $geyser;
   border-radius: $border-radius-level-1 $border-radius-level-1 0 0;
 }
 
-/* Base Object
------------------------------------------------------------- */
-.metabar {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  align-content: stretch;
-
-  padding: 10px;
-
-  font-size: 11px;
-  font-weight: 600;
-
-  background-color: $aqua-haze;
-  border-right: 1px solid $geyser;
-  border-bottom: 1px solid $geyser;
-  border-left: 1px solid $geyser;
-  border-radius: 0 0 $border-radius-level-1 $border-radius-level-1;
-
-  &:hover {
-    .metabar-menu-item {
-      display: inherit;
-    }
-  }
-}
-
-.metabar-time {
-  flex-grow: 0;
-}
-
-.metabar-time-zone {
-  flex-grow: 0;
-
-  font-weight: normal;
-}
-
-.metabar-profile-picture {
-  flex-grow: 0;
-
-  margin-left: 20px;
-
-  border: 1px solid $geyser;
-  border-radius: 256px;
-}
-
-.metabar-user-name {
-  flex-grow: 0;
-
-  margin-left: 10px;
-}
-
-.metabar-via {
-  flex-grow: 0;
-
-  margin-left: 10px;
-}
-
-.metabar-tag {
-  flex-grow: 0;
-
-  margin-left: 10px;
-}
-
-.metabar-menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-
+.post-content-text {
   flex-grow: 1;
 
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
+  padding: 30px 20px;
 }
 
-.metabar-menu-item {
-  display: none;
+.post-content-image {
+  flex-grow: 0;
 
-  margin: 0 0 0 20px;
-  padding: 0;
+  padding: 20px 20px 20px 0;
 
-  [class*=" bi-"]:before, [class^=bi-]:before {
-    vertical-align: baseline;
-  }
-
-  a {
-    color: $shuttle-gray;
+  img {
     display: block;
 
-    &:hover {
-      color: $curious-blue;
-    }
+    border-radius: $border-radius-level-1;
   }
-}
-
-.metabar-time--pinned {
-  margin-left: -12px;
-  padding-left: 10px;
-
-  color: $white-100;
-
-  background-color: $curious-blue;
-  border-radius: $border-radius-level-3 0 0 $border-radius-level-3;
 }
