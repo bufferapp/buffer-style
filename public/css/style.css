@@ -521,11 +521,11 @@ p {
 
 .metabar-via {
   flex-grow: 0;
-  margin-left: 10px; }
+  margin-left: 20px; }
 
 .metabar-tag {
   flex-grow: 0;
-  margin-left: 10px; }
+  margin-left: 20px; }
 
 .metabar-menu {
   display: flex;
@@ -551,12 +551,13 @@ p {
 .metabar-time--pinned {
   margin-left: -12px;
   padding-left: 10px;
+  padding-left: 10px;
   color: white;
   background-color: #168eea;
   border-radius: 1px 0 0 1px; }
 
 .metabar-time--pinned-arrow {
-  margin-right: -10px;
+  margin-right: -8px;
   width: 0;
   height: 0;
   border-top: 10.5px solid transparent;
