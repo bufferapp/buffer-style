@@ -46,7 +46,20 @@
 
   img {
     display: block;
+    max-width: 200px;
+    max-height: 100px;
 
     border-radius: $border-radius-level-1;
+  }
+}
+
+.post-content-video {
+  flex-grow: 0;
+
+  padding: 20px 20px 20px 0;
+
+  iframe {
+    max-width: 200px;
+    max-height: 100px;
   }
 }

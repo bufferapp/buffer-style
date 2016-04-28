@@ -134,15 +134,15 @@ ul {
   border-radius: $border-radius-level-2 $border-radius-level-2 0 0;
 }
 
-.code-block-render-example {
-  position: relative;
-  z-index: 0;
-
-  margin: 0;
-}
-
 .code-block-render {
   padding: 30px 20px;
+
+  .metabar {
+    position: relative;
+    z-index: 0;
+
+    margin: 0;
+  }
 }
 
 .code-block-render,
@@ -159,6 +159,10 @@ ul {
   border-radius: 0 0 $border-radius-level-2 $border-radius-level-2;
 
   overflow: hidden;
+
+  pre {
+    white-space: pre-wrap;
+  }
 }
 
 .pre--last {

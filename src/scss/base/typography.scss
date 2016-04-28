@@ -19,6 +19,11 @@ h4,
 h5,
 h6 {
   color: $outer-space;
+
+  .subtitle {
+    font-size: $font-size;
+    font-weight: $font-weight;
+  }
 }
 
 h1 {
