@@ -73,12 +73,60 @@
 
             <section class="section-secondary">
               <h1 class="section-secondary-title">Posts</h1>
-              <p>Posts are user-created content.</p>
+              <p>Posts are templates that display content added to Buffer and live within different parts of the Buffer app.</p>
             </section>
 
-            <section class="section-secondary section-secondary--last">
-              <h2 class="section-secondary-title">Post</h2>
-              <p>This is the base <code>post</code> object and includes a <code>metabar</code> object.</p>
+            <section class="section-secondary">
+              <h2 class="section-secondary-title">Post <span class="subtitle">within Queue</span></h2>
+              <p>Use this template to communicate to the user a regular post in Queue.</p>
+              <div class="code-block">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <div class="post">
+                    <div class="post-content">
+                      <div class="post-content-text">
+                        What is a Product Designer? An awesome story by <a href="#">@jgadapee</a> over on Medium! <a href="#">http://buff.ly/1LTbUqv</a>
+                      </div>
+                    </div>
+                    <div class="metabar">
+                      <div class="metabar-time">09:42 <span class="metabar-time-zone">(GMT)</span></div>
+                      <div class="metabar-via">via Extension</div>
+                      <ul class="metabar-menu">
+                        <li class="metabar-menu-item"><a href="#"><i class="bi bi-x"></i>Delete</a></li>
+                        <li class="metabar-menu-item"><a href="#"><i class="bi bi-edit"></i>Edit</a></li>
+                        <li class="metabar-menu-item"><a href="#"><i class="bi bi-arrow-up"></i>Move to Top</a></li>
+                        <li class="metabar-menu-item"><a href="#"><i class="bi bi-arrow-right"></i>Share Now</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="code-block-code">
+<pre>&lt;div class="post">
+  &lt;div class="post-content">
+    &lt;div class="post-content-text">
+      What is a Product Designer? An awesome story by &lt;a href="#">@jgadapee&lt;/a> over on Medium! &lt;a href="#">http://buff.ly/1LTbUqv&lt;/a>
+    &lt;/div>
+  &lt;/div>
+  &lt;div class="metabar">
+    &lt;div class="metabar-time">09:42 &lt;span class="metabar-time-zone">(GMT)&lt;/span>&lt;/div>
+    &lt;div class="metabar-via">via Extension&lt;/div>
+    &lt;ul class="metabar-menu">
+      &lt;li class="metabar-menu-item">&lt;a href="#">&lt;i class="bi bi-x">&lt;/i>Delete&lt;/a>&lt;/li>
+      &lt;li class="metabar-menu-item">&lt;a href="#">&lt;i class="bi bi-edit">&lt;/i>Edit&lt;/a>&lt;/li>
+      &lt;li class="metabar-menu-item">&lt;a href="#">&lt;i class="bi bi-arrow-up">&lt;/i>Move to Top&lt;/a>&lt;/li>
+      &lt;li class="metabar-menu-item">&lt;a href="#">&lt;i class="bi bi-arrow-right">&lt;/i>Share Now&lt;/a>&lt;/li>
+    &lt;/ul>
+  &lt;/div>
+&lt;/div></pre>
+                </div>
+              </div>
+            </section>
+
+            <section class="section-secondary">
+              <h2 class="section-secondary-title">Post <span class="subtitle">within Queue on Buffer for Business</span></h2>
+              <p>Use this template to communicate to the user a regular post in Queue. Posts within Queue on a Buffer for Business plan include a <code>profile-picture</code> atom and a <code>user-name</code> atom.</p>
               <div class="code-block">
                 <div class="code-block-title">
                   Example:
@@ -95,7 +143,6 @@
                       <div class="metabar-profile-picture"><img class="profile-picture profile-picture--small" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg"></div>
                       <div class="metabar-user-name">steve@buffer.com</div>
                       <div class="metabar-via">via Extension</div>
-                      <div class="metabar-tag tag tag--primary">In Queue</div>
                       <ul class="metabar-menu">
                         <li class="metabar-menu-item"><a href="#"><i class="bi bi-x"></i>Delete</a></li>
                         <li class="metabar-menu-item"><a href="#"><i class="bi bi-edit"></i>Edit</a></li>
@@ -106,14 +153,32 @@
                   </div>
                 </div>
                 <div class="code-block-code">
-                  <pre>Markup of `post`.</pre>
+<pre>&lt;div class="post">
+  &lt;div class="post-content">
+    &lt;div class="post-content-text">
+      What is a Product Designer? An awesome story by &lt;a href="#">@jgadapee&lt;/a> over on Medium! &lt;a href="#">http://buff.ly/1LTbUqv&lt;/a>
+    &lt;/div>
+  &lt;/div>
+  &lt;div class="metabar">
+    &lt;div class="metabar-time">09:42 &lt;span class="metabar-time-zone">(GMT)&lt;/span>&lt;/div>
+    &lt;div class="metabar-profile-picture">&lt;img class="profile-picture profile-picture--small" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">&lt;/div>
+    &lt;div class="metabar-user-name">steve@buffer.com&lt;/div>
+    &lt;div class="metabar-via">via Extension&lt;/div>
+    &lt;ul class="metabar-menu">
+      &lt;li class="metabar-menu-item">&lt;a href="#">&lt;i class="bi bi-x">&lt;/i>Delete&lt;/a>&lt;/li>
+      &lt;li class="metabar-menu-item">&lt;a href="#">&lt;i class="bi bi-edit">&lt;/i>Edit&lt;/a>&lt;/li>
+      &lt;li class="metabar-menu-item">&lt;a href="#">&lt;i class="bi bi-arrow-up">&lt;/i>Move to Top&lt;/a>&lt;/li>
+      &lt;li class="metabar-menu-item">&lt;a href="#">&lt;i class="bi bi-arrow-right">&lt;/i>Share Now&lt;/a>&lt;/li>
+    &lt;/ul>
+  &lt;/div>
+&lt;/div></pre>
                 </div>
               </div>
             </section>
 
-            <section class="section-secondary section-secondary--last">
-              <h2 class="section-secondary-title">Post - Pinned</h2>
-              <p>This is the base <code>post</code> object and includes a <code>metabar</code> object with a modified <code>metabar-time</code></a> object.</p></p>
+            <section class="section-secondary">
+              <h2 class="section-secondary-title">Post <span class="subtitle">that has been pinned to a specific time</span></h2>
+              <p>Use this template to communicate to the user that a post has been pinned to a specific time in Queue.</p>
               <div class="code-block">
                 <div class="code-block-title">
                   Example:
@@ -130,8 +195,6 @@
                         09:42 <span class="metabar-time-zone">(GMT)</span>
                       </div>
                       <div class="metabar-time--pinned-arrow"></div>
-                      <div class="metabar-profile-picture"><img class="profile-picture profile-picture--small" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg"></div>
-                      <div class="metabar-user-name">steve@buffer.com</div>
                       <div class="metabar-via">via Extension</div>
                       <ul class="metabar-menu">
                         <li class="metabar-menu-item"><a href="#"><i class="bi bi-x"></i>Delete</a></li>
@@ -143,14 +206,33 @@
                   </div>
                 </div>
                 <div class="code-block-code">
-                  <pre>Markup of `post`.</pre>
+<pre>&lt;div class="post">
+  &lt;div class="post-content">
+    &lt;div class="post-content-text">
+      What is a Product Designer? An awesome story by &lt;a href="#">@jgadapee&lt;/a> over on Medium! &lt;a href="#">http://buff.ly/1LTbUqv&lt;/a>
+    &lt;/div>
+  &lt;/div>
+  &lt;div class="metabar">
+    &lt;div class="metabar-time metabar-time--pinned">
+      09:42 &lt;span class="metabar-time-zone">(GMT)&lt;/span>
+    &lt;/div>
+    &lt;div class="metabar-time--pinned-arrow">&lt;/div>
+    &lt;div class="metabar-via">via Extension&lt;/div>
+    &lt;ul class="metabar-menu">
+      &lt;li class="metabar-menu-item">&lt;a href="#">&lt;i class="bi bi-x">&lt;/i>Delete&lt;/a>&lt;/li>
+      &lt;li class="metabar-menu-item">&lt;a href="#">&lt;i class="bi bi-edit">&lt;/i>Edit&lt;/a>&lt;/li>
+      &lt;li class="metabar-menu-item">&lt;a href="#">&lt;i class="bi bi-arrow-up">&lt;/i>Move to Top&lt;/a>&lt;/li>
+      &lt;li class="metabar-menu-item">&lt;a href="#">&lt;i class="bi bi-arrow-right">&lt;/i>Share Now&lt;/a>&lt;/li>
+    &lt;/ul>
+  &lt;/div>
+&lt;/div></pre>
                 </div>
               </div>
             </section>
 
-            <section class="section-secondary section-secondary--last">
-              <h2 class="section-secondary-title">Post - Tag</h2>
-              <p>This is the base <code>post</code> object and includes a <a href="metabars.html"><code>metabar</code></a> object with an additional <a href="tags.html"><code>tag</code></a> object.</p>
+            <section class="section-secondary">
+              <h2 class="section-secondary-title">Post <span class="subtitle">within Content Library that has been added to Queue</span></h2>
+              <p>Use this template to communicate to the user that a post stored in Content Library has been added to Queue.</p>
               <div class="code-block">
                 <div class="code-block-title">
                   Example:
@@ -164,8 +246,6 @@
                     </div>
                     <div class="metabar">
                       <div class="metabar-time">09:42 <span class="metabar-time-zone">(GMT)</span></div>
-                      <div class="metabar-profile-picture"><img class="profile-picture profile-picture--small" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg"></div>
-                      <div class="metabar-user-name">steve@buffer.com</div>
                       <div class="metabar-via">via Extension</div>
                       <div class="metabar-tag tag tag--primary">In Queue</div>
                       <ul class="metabar-menu">
@@ -183,9 +263,9 @@
               </div>
             </section>
 
-            <section class="section-secondary section-secondary--last">
-              <h2 class="section-secondary-title">Post - Tag -- Failed</h2>
-              <p>This is the base <code>post</code> object and includes a <a href="metabars.html"><code>metabar</code></a> object with an additional, modified <a href="tags.html"><code>tag</code></a> object.</p>
+            <section class="section-secondary">
+              <h2 class="section-secondary-title">Post <span class="subtitle">that failed to send</span></h2>
+              <p>Use this template to communicate to the user that a post has failed to send to a connected network.</p>
               <div class="code-block">
                 <div class="code-block-title">
                   Example:
@@ -199,8 +279,6 @@
                     </div>
                     <div class="metabar">
                       <div class="metabar-time">09:42 <span class="metabar-time-zone">(GMT)</span></div>
-                      <div class="metabar-profile-picture"><img class="profile-picture profile-picture--small" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg"></div>
-                      <div class="metabar-user-name">steve@buffer.com</div>
                       <div class="metabar-via">via Extension</div>
                       <div class="metabar-tag tag tag--failed">Failed</div>
                       <ul class="metabar-menu">
@@ -213,14 +291,31 @@
                   </div>
                 </div>
                 <div class="code-block-code">
-                  <pre>Markup of `post`.</pre>
+<pre>&lt;div class="post post--failed">
+  &lt;div class="post-content">
+    &lt;div class="post-content-text">
+      What is a Product Designer? An awesome story by &lt;a href="#">@jgadapee&lt;/a> over on Medium! &lt;a href="#">http://buff.ly/1LTbUqv&lt;/a>
+    &lt;/div>
+  &lt;/div>
+  &lt;div class="metabar">
+    &lt;div class="metabar-time">09:42 &lt;span class="metabar-time-zone">(GMT)&lt;/span>&lt;/div>
+    &lt;div class="metabar-via">via Extension&lt;/div>
+    &lt;div class="metabar-tag tag tag--failed">Failed&lt;/div>
+    &lt;ul class="metabar-menu">
+      &lt;li class="metabar-menu-item">&lt;a href="#">&lt;i class="bi bi-x">&lt;/i>Delete&lt;/a>&lt;/li>
+      &lt;li class="metabar-menu-item">&lt;a href="#">&lt;i class="bi bi-edit">&lt;/i>Edit&lt;/a>&lt;/li>
+      &lt;li class="metabar-menu-item">&lt;a href="#">&lt;i class="bi bi-arrow-up">&lt;/i>Move to Top&lt;/a>&lt;/li>
+      &lt;li class="metabar-menu-item">&lt;a href="#">&lt;i class="bi bi-arrow-right">&lt;/i>Share Now&lt;/a>&lt;/li>
+    &lt;/ul>
+  &lt;/div>
+&lt;/div></pre>
                 </div>
               </div>
             </section>
 
             <section class="section-secondary section-secondary--last">
-              <h2 class="section-secondary-title">Post - Image</h2>
-              <p>This is the base <code>post</code> object and includes a <code>metabar</code> object.</p>
+              <h2 class="section-secondary-title">Post <span class="subtitle">with an image attachment</span></h2>
+              <p>Use this template to communicate a post with an image attachment to a user.</p>
               <div class="code-block">
                 <div class="code-block-title">
                   Example:
@@ -232,15 +327,12 @@
                         What is a Product Designer? An awesome story by <a href="#">@jgadapee</a> over on Medium! <a href="#">http://buff.ly/1LTbUqv</a>
                       </div>
                       <div class="post-content-image">
-                        <img height="100" src="https://images.unsplash.com/photo-1428189923803-e9801d464d76?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=467ee7b8a091aa5cb8bc9b496aada853" width="100">
+                        <img src="https://images.unsplash.com/photo-1428189923803-e9801d464d76?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=467ee7b8a091aa5cb8bc9b496aada853">
                       </div>
                     </div>
                     <div class="metabar">
                       <div class="metabar-time">09:42 <span class="metabar-time-zone">(GMT)</span></div>
-                      <div class="metabar-profile-picture"><img class="profile-picture profile-picture--small" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg"></div>
-                      <div class="metabar-user-name">steve@buffer.com</div>
                       <div class="metabar-via">via Extension</div>
-                      <div class="metabar-tag tag tag--primary">In Queue</div>
                       <ul class="metabar-menu">
                         <li class="metabar-menu-item"><a href="#"><i class="bi bi-x"></i>Delete</a></li>
                         <li class="metabar-menu-item"><a href="#"><i class="bi bi-edit"></i>Edit</a></li>
@@ -251,7 +343,80 @@
                   </div>
                 </div>
                 <div class="code-block-code">
-                  <pre>Markup of `post`.</pre>
+<pre>&lt;div class="post">
+  &lt;div class="post-content">
+    &lt;div class="post-content-text">
+      What is a Product Designer? An awesome story by &lt;a href="#">@jgadapee&lt;/a> over on Medium! &lt;a href="#">http://buff.ly/1LTbUqv&lt;/a>
+    &lt;/div>
+    &lt;div class="post-content-image">
+      &lt;img src="https://images.unsplash.com/photo-1428189923803-e9801d464d76?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=467ee7b8a091aa5cb8bc9b496aada853">
+    &lt;/div>
+  &lt;/div>
+  &lt;div class="metabar">
+    &lt;div class="metabar-time">09:42 &lt;span class="metabar-time-zone">(GMT)&lt;/span>&lt;/div>
+    &lt;div class="metabar-via">via Extension&lt;/div>
+    &lt;ul class="metabar-menu">
+      &lt;li class="metabar-menu-item">&lt;a href="#">&lt;i class="bi bi-x">&lt;/i>Delete&lt;/a>&lt;/li>
+      &lt;li class="metabar-menu-item">&lt;a href="#">&lt;i class="bi bi-edit">&lt;/i>Edit&lt;/a>&lt;/li>
+      &lt;li class="metabar-menu-item">&lt;a href="#">&lt;i class="bi bi-arrow-up">&lt;/i>Move to Top&lt;/a>&lt;/li>
+      &lt;li class="metabar-menu-item">&lt;a href="#">&lt;i class="bi bi-arrow-right">&lt;/i>Share Now&lt;/a>&lt;/li>
+    &lt;/ul>
+  &lt;/div>
+&lt;/div></pre>
+                </div>
+              </div>
+            </section>
+
+            <section class="section-secondary section-secondary--last">
+              <h2 class="section-secondary-title">Post <span class="subtitle">with a video attachment</span></h2>
+              <p>Use this template to communicate a post with an video attachment to a user.</p>
+              <div class="code-block">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <div class="post">
+                    <div class="post-content">
+                      <div class="post-content-text">
+                        What is a Product Designer? An awesome story by <a href="#">@jgadapee</a> over on Medium! <a href="#">http://buff.ly/1LTbUqv</a>
+                      </div>
+                      <div class="post-content-video">
+                        <iframe src="https://player.vimeo.com/video/163741423" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                      </div>
+                    </div>
+                    <div class="metabar">
+                      <div class="metabar-time">09:42 <span class="metabar-time-zone">(GMT)</span></div>
+                      <div class="metabar-via">via Extension</div>
+                      <ul class="metabar-menu">
+                        <li class="metabar-menu-item"><a href="#"><i class="bi bi-x"></i>Delete</a></li>
+                        <li class="metabar-menu-item"><a href="#"><i class="bi bi-edit"></i>Edit</a></li>
+                        <li class="metabar-menu-item"><a href="#"><i class="bi bi-arrow-up"></i>Move to Top</a></li>
+                        <li class="metabar-menu-item"><a href="#"><i class="bi bi-arrow-right"></i>Share Now</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="code-block-code">
+<pre>&lt;div class="post">
+  &lt;div class="post-content">
+    &lt;div class="post-content-text">
+      What is a Product Designer? An awesome story by &lt;a href="#">@jgadapee&lt;/a> over on Medium! &lt;a href="#">http://buff.ly/1LTbUqv&lt;/a>
+    &lt;/div>
+    &lt;div class="post-content-video">
+      &lt;iframe src="https://player.vimeo.com/video/163741423" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>&lt;/iframe>
+    &lt;/div>
+  &lt;/div>
+  &lt;div class="metabar">
+    &lt;div class="metabar-time">09:42 &lt;span class="metabar-time-zone">(GMT)&lt;/span>&lt;/div>
+    &lt;div class="metabar-via">via Extension&lt;/div>
+    &lt;ul class="metabar-menu">
+      &lt;li class="metabar-menu-item">&lt;a href="#">&lt;i class="bi bi-x">&lt;/i>Delete&lt;/a>&lt;/li>
+      &lt;li class="metabar-menu-item">&lt;a href="#">&lt;i class="bi bi-edit">&lt;/i>Edit&lt;/a>&lt;/li>
+      &lt;li class="metabar-menu-item">&lt;a href="#">&lt;i class="bi bi-arrow-up">&lt;/i>Move to Top&lt;/a>&lt;/li>
+      &lt;li class="metabar-menu-item">&lt;a href="#">&lt;i class="bi bi-arrow-right">&lt;/i>Share Now&lt;/a>&lt;/li>
+    &lt;/ul>
+  &lt;/div>
+&lt;/div></pre>
                 </div>
               </div>
             </section>

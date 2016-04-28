@@ -120,13 +120,12 @@ ul {
   background-color: #ced7df;
   border-radius: 2px 2px 0 0; }
 
-.code-block-render-example {
-  position: relative;
-  z-index: 0;
-  margin: 0; }
-
 .code-block-render {
   padding: 30px 20px; }
+  .code-block-render .metabar {
+    position: relative;
+    z-index: 0;
+    margin: 0; }
 
 .code-block-render,
 .code-block-code {
@@ -139,6 +138,8 @@ ul {
   background-color: #f4f7f9;
   border-radius: 0 0 2px 2px;
   overflow: hidden; }
+  .code-block-code pre {
+    white-space: pre-wrap; }
 
 .pre--last {
   margin-bottom: -20px; }
