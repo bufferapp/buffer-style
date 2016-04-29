@@ -77,8 +77,8 @@
             </section>
 
             <section class="section-secondary">
-              <h2 class="section-secondary-title">Post <span class="subtitle">within Queue</span></h2>
-              <p>Use this template to communicate to the user a regular post in Queue.</p>
+              <h2 class="section-secondary-title">Post <span class="subtitle">within <strong>Content &rarr; Queue</strong></span></h2>
+              <p>Use this template to communicate a regular post to the user.</p>
               <div class="code-block">
                 <div class="code-block-title">
                   Example:
@@ -125,8 +125,9 @@
             </section>
 
             <section class="section-secondary">
-              <h2 class="section-secondary-title">Post <span class="subtitle">within Queue on Buffer for Business</span></h2>
-              <p>Use this template to communicate to the user a regular post in Queue. Posts within Queue on a Buffer for Business plan include a <code>profile-picture</code> atom and a <code>user-name</code> atom.</p>
+              <h2 class="section-secondary-title">Post <span class="subtitle">within <strong>Content &rarr; Queue</strong> on Buffer for Business</span></h2>
+              <p>Use this template to communicate a regular post to the user.</p>
+              <p>Posts within Content &rarr; Queue on a Buffer for Business plan include a <code>profile-picture</code> atom and a <code>user-name</code> atom.</p>
               <div class="code-block">
                 <div class="code-block-title">
                   Example:
@@ -231,8 +232,8 @@
             </section>
 
             <section class="section-secondary">
-              <h2 class="section-secondary-title">Post <span class="subtitle">within Content Library that has been added to Queue</span></h2>
-              <p>Use this template to communicate to the user that a post stored in Content Library has been added to Queue.</p>
+              <h2 class="section-secondary-title">Post <span class="subtitle">within <strong>Content &rarr; Library (beta)</strong> that has been added to <strong>Content &rarr; Queue</strong></span></h2>
+              <p>Use this template to communicate to the user that a post has been added to Queue.</p>
               <div class="code-block">
                 <div class="code-block-title">
                   Example:
@@ -367,7 +368,7 @@
               </div>
             </section>
 
-            <section class="section-secondary section-secondary--last">
+            <section class="section-secondary">
               <h2 class="section-secondary-title">Post <span class="subtitle">with a video attachment</span></h2>
               <p>Use this template to communicate a post with an video attachment to a user.</p>
               <div class="code-block">
@@ -414,6 +415,78 @@
       &lt;li class="metabar-menu-item">&lt;a href="#">&lt;i class="bi bi-edit">&lt;/i>Edit&lt;/a>&lt;/li>
       &lt;li class="metabar-menu-item">&lt;a href="#">&lt;i class="bi bi-arrow-up">&lt;/i>Move to Top&lt;/a>&lt;/li>
       &lt;li class="metabar-menu-item">&lt;a href="#">&lt;i class="bi bi-arrow-right">&lt;/i>Share Now&lt;/a>&lt;/li>
+    &lt;/ul>
+  &lt;/div>
+&lt;/div></pre>
+                </div>
+              </div>
+            </section>
+
+            <section class="section-secondary section-secondary--last">
+              <h2 class="section-secondary-title">Post <span class="subtitle">within <strong>Content &rarr; Posts</strong></span></h2>
+              <p>Use this template to communicate a post with analytics.</p>
+              <div class="code-block">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <div class="post">
+                    <div class="post-content">
+                      <div class="post-content-text">
+                        What is a Product Designer? An awesome story by <a href="#">@jgadapee</a> over on Medium! <a href="#">http://buff.ly/1LTbUqv</a>
+                      </div>
+                      <div class="post-content-video">
+                        <iframe src="https://player.vimeo.com/video/163741423" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                      </div>
+                    </div>
+                    <div class="metabar metabar--analytics">
+                      <ul class="metabar-metrics">
+                        <li class="metabar-metrics-item">
+                          <i class="bi bi-retweet"></i>10 <span class="metabar-metrics-item-label">Retweets</span>
+                        </li>
+                        <li class="metabar-metrics-item">
+                          <i class="bi bi-like"></i>28 <span class="metabar-metrics-item-label">Likes</span>
+                        </li>
+                        <li class="metabar-metrics-item">
+                          <i class="bi bi-comment"></i>2 <span class="metabar-metrics-item-label">Mentions</span>
+                        </li>
+                        <li class="metabar-metrics-item">
+                          <i class="bi bi-click"></i>200 <span class="metabar-metrics-item-label">Clicks</span>
+                        </li>
+                        <li class="metabar-metrics-item metabar-metrics-item--last">
+                          <i class="bi bi-view"></i>1,457 <span class="metabar-metrics-item-label">Potential</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="code-block-code">
+<pre>&lt;div class="post">
+  &lt;div class="post-content">
+    &lt;div class="post-content-text">
+      What is a Product Designer? An awesome story by &lt;a href="#">@jgadapee&lt;/a> over on Medium! &lt;a href="#">http://buff.ly/1LTbUqv&lt;/a>
+    &lt;/div>
+    &lt;div class="post-content-video">
+      &lt;iframe src="https://player.vimeo.com/video/163741423" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>&lt;/iframe>
+    &lt;/div>
+  &lt;/div>
+  &lt;div class="metabar metabar--analytics">
+    &lt;ul class="metabar-metrics">
+      &lt;li class="metabar-metrics-item">
+        &lt;i class="bi bi-retweet">&lt;/i>10 &lt;span class="metabar-metrics-item-label">Retweets&lt;/span>
+      &lt;/li>
+      &lt;li class="metabar-metrics-item">
+        &lt;i class="bi bi-like">&lt;/i>28 &lt;span class="metabar-metrics-item-label">Likes&lt;/span>
+      &lt;/li>
+      &lt;li class="metabar-metrics-item">
+        &lt;i class="bi bi-comment">&lt;/i>2 &lt;span class="metabar-metrics-item-label">Mentions&lt;/span>
+      &lt;/li>
+      &lt;li class="metabar-metrics-item">
+        &lt;i class="bi bi-click">&lt;/i>200 &lt;span class="metabar-metrics-item-label">Clicks&lt;/span>
+      &lt;/li>
+      &lt;li class="metabar-metrics-item metabar-metrics-item--last">
+        &lt;i class="bi bi-view">&lt;/i>1,457 &lt;span class="metabar-metrics-item-label">Potential&lt;/span>
+      &lt;/li>
     &lt;/ul>
   &lt;/div>
 &lt;/div></pre>

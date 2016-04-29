@@ -510,7 +510,20 @@ p {
   border-radius: 0 0 4px 4px; }
   .metabar:hover .metabar-menu-item {
     display: inherit; }
+  .metabar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .metabar [class*=" bi-"]:before, .metabar [class^=bi-]:before {
+    vertical-align: baseline; }
 
+/* Base Object - Modifiers
+------------------------------ */
+.metabar--analytics {
+  padding: 0; }
+
+/* Base Objects
+------------------------------------------------------------ */
 .metabar-time {
   flex-grow: 0; }
 
@@ -540,23 +553,37 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  flex-grow: 1;
-  margin: 0;
-  padding: 0;
-  list-style: none; }
+  flex-grow: 1; }
 
 .metabar-menu-item {
   display: none;
   margin: 0 0 0 20px;
   padding: 0; }
-  .metabar-menu-item [class*=" bi-"]:before, .metabar-menu-item [class^=bi-]:before {
-    vertical-align: baseline; }
   .metabar-menu-item a {
     color: #59626a;
     display: block; }
     .metabar-menu-item a:hover {
       color: #168eea; }
 
+.metabar-metrics {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-grow: 1; }
+
+.metabar-metrics-item {
+  flex-grow: 1;
+  margin: 0;
+  padding: 10px 0;
+  text-align: center;
+  border-right: 1px solid #ced7df; }
+
+.metabar-metrics-item-label {
+  margin-left: 2px;
+  font-weight: normal; }
+
+/* Base Objects - Modifiers
+------------------------------ */
 .metabar-time--pinned {
   margin-left: -12px;
   padding-left: 10px;
@@ -571,6 +598,9 @@ p {
   border-top: 10.5px solid transparent;
   border-bottom: 10.5px solid transparent;
   border-left: 10px solid #168eea; }
+
+.metabar-metrics-item--last {
+  border-right: 0; }
 
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
