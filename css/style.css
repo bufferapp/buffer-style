@@ -339,7 +339,7 @@ p {
 ------------------------------------------------------------ */
 /* Animation
 ------------------------------------------------------------ */
-/* Base Objects
+/* Base Object
 ------------------------------------------------------------ */
 .input {
   margin: 0;
@@ -365,6 +365,14 @@ p {
   .input:-ms-input-placeholder {
     color: #989da1; }
 
+/* Base Objects
+------------------------------------------------------------ */
+.input-label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: #343e47; }
+
 .input-with-icon-left,
 .input-with-icon-right {
   position: relative;
@@ -374,8 +382,7 @@ p {
 .input-with-icon-right .bi {
   position: absolute;
   top: 5px;
-  margin: 0;
-  color: #989da1; }
+  margin: 0; }
 
 .input-with-icon-left .bi {
   left: 10px; }

@@ -72,58 +72,74 @@
           <section class="card">
             <section class="section-secondary">
               <h1 class="section-secondary-title">Inputs</h1>
-              <p>Description of <code>input</code> objects.</p>
+              <p>Inputs are molecules that capture content entered by the user. They have a label atom and an input atom.</p>
             </section>
-            <section class="section-secondary section-secondary--last">
-              <h2 class="section-secondary-title">Input</h2>
-              <p>Description of the base object.</p>
 
-              <h3>Input</h3>
-              <p>A little bit about the <code>input</code> object.</p>
+            <section class="section-secondary">
+              <h2 class="section-secondary-title">Input</h2>
+              <p>Use this molecule to capture content entered by the user and communicate the intention of what data will be captured by the input atom with the label atom.</p>
               <div class="code-block code-block--last">
                 <div class="code-block-title">
                   Example:
                 </div>
                 <div class="code-block-render">
-                  <input class="input" placeholder="Placeholder text" type="text">
+                  <label class="input-label"for="email">Email</label>
+                  <input class="input" id="email" placeholder="Placeholder text" type="text">
                 </div>
                 <div class="code-block-code">
-                  <pre>&lt;input class="input" placeholder="Placeholder text" type="text"></pre>
+<pre>&lt;label class="input-label"for="email">Email&lt;/label>
+&lt;input class="input" id="email" placeholder="Placeholder text" type="text"></pre>
                 </div>
               </div>
+            </section>
 
-              <h3>Input - With Icon Left</h3>
-              <p>Description of <code>input-with-icon-left</code> object.</p>
+            <section class="section-secondary">
+              <h2 class="section-secondary-title">Input <span class="subtitle">with a left-aligned icon</span></h2>
+              <p>Use this molecule in instances where an icon communicates intention with the user.</p>
               <div class="code-block code-block--last">
                 <div class="code-block-title">
                   Example:
                 </div>
                 <div class="code-block-render">
-                  <div class="input-with-icon-left">
-                    <i class="bi bi-search"></i><input class="input input--icon-left" placeholder="Search Profiles" type="text">
+                  <div class="input-with-icon">
+                    <label class="input-label" for="search-profiles">Search Profiles</label>
+                    <div class="input-with-icon-left">
+                      <i class="bi bi-search"></i><input class="input input--icon-left" id="search-profiles" placeholder="Search Profiles" type="text">
+                    </div>
                   </div>
                 </div>
                 <div class="code-block-code">
-                  <pre>&lt;div class="input-with-icon-left">
-  &lt;i class="bi bi-search">&lt;/i>&lt;input class="input input--icon-left" placeholder="Search Profiles" type="text">
+                  <pre>&lt;div class="input-with-icon">
+  &lt;label class="input-label" for="search-profiles">Search Profiles&lt;/label>
+  &lt;div class="input-with-icon-left">
+    &lt;i class="bi bi-search">&lt;/i>&lt;input class="input input--icon-left" id="search-profiles" placeholder="Search Profiles" type="text">
+  &lt;/div>
 &lt;/div></pre>
                 </div>
               </div>
+            </section>
 
-              <h3>Input - With Icon Right</h3>
-              <p>Description of <code>input-with-icon-right</code> object.</p>
+            <section class="section-secondary section-secondary--last">
+              <h2 class="section-secondary-title">Input <span class="subtitle">with a right-aligned icon</span></h2>
+              <p>Use this molecule in instances where an icon communicates intention with the user.</p>
               <div class="code-block code-block--last">
                 <div class="code-block-title">
                   Example:
                 </div>
                 <div class="code-block-render">
-                  <div class="input-with-icon-right">
-                    <input class="input input--icon-right" placeholder="Search Profiles" type="text"><i class="bi bi-search"></i>
+                  <div class="input-with-icon">
+                    <label class="input-label" for="twitter-username">Twitter Username</label>
+                    <div class="input-with-icon-right">
+                      <i class="bi bi-circle-twitter"></i><input class="input input--icon-right" id="twitter-username" placeholder="Twitter Username" type="text">
+                    </div>
                   </div>
                 </div>
                 <div class="code-block-code">
-                  <pre>&lt;div class="input-with-icon-right">
-  &lt;input class="input input--icon-right" placeholder="Search Profiles" type="text">&lt;i class="bi bi-credit-card">&lt;/i>
+                  <pre>&lt;div class="input-with-icon">
+  &lt;label class="input-label" for="twitter-username">Twitter Username&lt;/label>
+  &lt;div class="input-with-icon-right">
+    &lt;i class="bi bi-circle-twitter">&lt;/i>&lt;input class="input input--icon-right" id="twitter-username" placeholder="Twitter Username" type="text">
+  &lt;/div>
 &lt;/div></pre>
                 </div>
               </div>
