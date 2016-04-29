@@ -26,8 +26,27 @@
       display: inherit;
     }
   }
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  [class*=" bi-"]:before, [class^=bi-]:before {
+    vertical-align: baseline;
+  }
 }
 
+/* Base Object - Modifiers
+------------------------------ */
+.metabar--analytics {
+  padding: 0;
+}
+
+/* Base Objects
+------------------------------------------------------------ */
 .metabar-time {
   flex-grow: 0;
 }
@@ -71,11 +90,6 @@
   justify-content: flex-end;
 
   flex-grow: 1;
-
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
 }
 
 .metabar-menu-item {
@@ -83,10 +97,6 @@
 
   margin: 0 0 0 20px;
   padding: 0;
-
-  [class*=" bi-"]:before, [class^=bi-]:before {
-    vertical-align: baseline;
-  }
 
   a {
     color: $shuttle-gray;
@@ -98,6 +108,32 @@
   }
 }
 
+.metabar-metrics {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-grow: 1;
+}
+
+.metabar-metrics-item {
+  flex-grow: 1;
+
+  margin: 0;
+  padding: 10px 0;
+
+  text-align: center;
+
+  border-right: 1px solid $geyser;
+}
+
+.metabar-metrics-item-label {
+  margin-left: 2px;
+
+  font-weight: normal;
+}
+
+/* Base Objects - Modifiers
+------------------------------ */
 .metabar-time--pinned {
   margin-left: -12px;
   padding-left: 10px;
@@ -116,4 +152,8 @@
 	border-bottom: 10.5px solid transparent;
 
 	border-left: 10px solid $curious-blue;
+}
+
+.metabar-metrics-item--last {
+  border-right: 0;
 }
