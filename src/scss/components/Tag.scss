@@ -3,29 +3,29 @@
 /* Base Object
 ------------------------------------------------------------ */
 .tag {
-  padding: 0 4px;
+  padding: 0 10px;
   height: 18px;
 
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 600;
   line-height: 18px;
-  color: $bodyColor;
+  color: $shuttle-gray;
 
-  background-color: $borderColor;
-  border-radius: $borderRadiusLevel3;
+  background-color: $geyser;
+  border-radius: $border-radius-level-2;
 }
 
 /* Base Object - Modifiers
 ------------------------------ */
-.tag--blue,
-.tag--error {
-  color: $whiteColor;
+.tag--primary,
+.tag--failed {
+  color: $white-100;
 }
 
-.tag--blue {
-  background-color: $actionableColor;
+.tag--primary {
+  background-color: $curious-blue;
 }
 
-.tag--error {
-  background-color: $errorColor;
+.tag--failed {
+  background-color: $torch-red;
 }

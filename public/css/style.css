@@ -12,8 +12,16 @@
   padding: 0;
   box-sizing: border-box; }
 
+/* Shades Palette
+------------------------------------------------------------ */
 /* Primary Palette
 ------------------------------------------------------------ */
+/* Blues
+------------------------------ */
+/* Grays
+------------------------------ */
+/* Others
+------------------------------ */
 /* Brands Palette
 ------------------------------------------------------------ */
 /* Font
@@ -31,8 +39,16 @@
   padding: 0;
   box-sizing: border-box; }
 
+/* Shades Palette
+------------------------------------------------------------ */
 /* Primary Palette
 ------------------------------------------------------------ */
+/* Blues
+------------------------------ */
+/* Grays
+------------------------------ */
+/* Others
+------------------------------ */
 /* Brands Palette
 ------------------------------------------------------------ */
 /* Font
@@ -61,6 +77,14 @@ h4,
 h5,
 h6 {
   color: #323b43; }
+  h1 .subtitle,
+  h2 .subtitle,
+  h3 .subtitle,
+  h4 .subtitle,
+  h5 .subtitle,
+  h6 .subtitle {
+    font-size: 14px;
+    font-weight: 400; }
 
 h1 {
   margin: 32px 0;
@@ -97,7 +121,7 @@ h6 {
 /* Paragraphs
 -------------------------------------------------- */
 code {
-  color: #000; }
+  color: black; }
 
 p {
   margin: 16px 0; }
@@ -112,8 +136,16 @@ p {
   padding: 0;
   box-sizing: border-box; }
 
+/* Shades Palette
+------------------------------------------------------------ */
 /* Primary Palette
 ------------------------------------------------------------ */
+/* Blues
+------------------------------ */
+/* Grays
+------------------------------ */
+/* Others
+------------------------------ */
 /* Brands Palette
 ------------------------------------------------------------ */
 /* Font
@@ -127,79 +159,112 @@ p {
 /* Base Object
 ------------------------------------------------------------ */
 .button {
-  padding: 0 16px;
+  padding: 0 24px;
   height: 32px;
   font-family: "open sans", sans-serif;
   font-size: 14px;
+  font-weight: 400;
   line-height: 32px;
-  color: #59626a;
-  background-color: transparent;
-  border: 1px solid #ced7df;
-  border-radius: 4px;
+  color: white;
+  background-color: #168eea;
+  border: 1px solid transparent;
+  border-radius: 16px;
   cursor: pointer;
   transition: background-color 0.1s linear; }
   .button:active {
-    background-color: #e7eaec !important; }
+    background-color: #0f63a4 !important; }
+    .button:active.button--inactive {
+      background-color: #168eea !important; }
+  .button:hover {
+    background-color: #137ac9; }
+    .button:hover.button--inactive {
+      color: white;
+      background-color: #168eea; }
   .button [class*=" bi-"]:before, .button [class^=bi-]:before {
     vertical-align: baseline; }
 
-.button:hover {
-  background-color: #eff3f6; }
-
 /* Base Object - Modifiers
 ------------------------------ */
-.button--active,
-.button--inactive {
-  background-color: #eff3f6; }
-  .button--active:active,
-  .button--inactive:active {
-    background-color: #eff3f6 !important; }
-
-.button--active:hover {
-  background-color: #eff3f6; }
+.button--active {
+  background-color: #0f63a4; }
+  .button--active:active, .button--active:hover {
+    background-color: #0f63a4 !important; }
 
 .button--inactive {
-  color: #ced7df; }
-
-.button--large {
-  padding: 0 32px;
-  height: 48px;
-  line-height: 48px; }
-
-.button--left {
-  border-radius: 4px 0 0 4px; }
-
-.button--middle {
-  border-right: 0;
-  border-left: 0;
-  border-radius: 0; }
-
-.button--primary {
-  color: #fff;
-  background-color: #168eea;
-  border-color: #1172bc; }
-
-.button--primary,
-.button--secondary {
-  border-radius: 256px; }
-  .button--primary:active,
-  .button--secondary:active {
-    background-color: #0d5b97 !important; }
-  .button--primary:hover,
-  .button--secondary:hover {
-    color: #fff;
-    background-color: #106aaf;
-    border-color: #1172bc; }
-
-.button--right {
-  border-radius: 0 4px 4px 0; }
-
-.button--remove-border-left {
-  border-left: 0; }
+  opacity: 0.2;
+  cursor: not-allowed; }
 
 .button--secondary {
   color: #168eea;
+  background-color: white;
   border-color: #168eea; }
+  .button--secondary:active {
+    color: #168eea !important;
+    background-color: #f3f9fe !important;
+    border-color: #168eea !important; }
+    .button--secondary:active.button--inactive {
+      background-color: white !important; }
+  .button--secondary:hover {
+    color: #137ac9;
+    background-color: white;
+    border-color: #137ac9; }
+    .button--secondary:hover.button--inactive {
+      color: #168eea;
+      background-color: white;
+      border-color: #168eea; }
+    .button--secondary:hover i.bi {
+      color: #137ac9; }
+  .button--secondary i.bi {
+    color: #168eea; }
+
+.button--tertiary {
+  color: #666c72;
+  background-color: transparent;
+  border-color: #ced7df; }
+  .button--tertiary:active {
+    color: #343e47 !important;
+    background-color: #f0f0f1 !important;
+    border-color: #abb3ba !important; }
+    .button--tertiary:active.button--inactive {
+      color: #666c72 !important;
+      background-color: transparent !important;
+      border-color: #ced7df !important; }
+  .button--tertiary:hover {
+    color: #343e47;
+    background-color: transparent;
+    border-color: #abb3ba; }
+    .button--tertiary:hover.button--inactive {
+      color: #666c72;
+      background-color: transparent;
+      border-color: #ced7df; }
+
+.button--warning {
+  color: #ff1e1e;
+  background-color: white;
+  border-color: #ff1e1e; }
+  .button--warning:active {
+    background-color: #e61b1b !important;
+    border-color: transparent !important; }
+    .button--warning:active.button--inactive {
+      color: #ff1e1e !important;
+      background-color: white !important;
+      border-color: #ff1e1e !important; }
+  .button--warning:hover {
+    color: white;
+    background-color: #ff1e1e; }
+    .button--warning:hover.button--inactive {
+      color: #ff1e1e;
+      background-color: white;
+      border-color: #ff1e1e; }
+    .button--warning:hover i.bi {
+      color: white; }
+  .button--warning i.bi {
+    color: #ff1e1e; }
+
+/* Base Objects
+------------------------------------------------------------ */
+.button .bi {
+  color: white; }
 
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
@@ -208,8 +273,16 @@ p {
   padding: 0;
   box-sizing: border-box; }
 
+/* Shades Palette
+------------------------------------------------------------ */
 /* Primary Palette
 ------------------------------------------------------------ */
+/* Blues
+------------------------------ */
+/* Grays
+------------------------------ */
+/* Others
+------------------------------ */
 /* Brands Palette
 ------------------------------------------------------------ */
 /* Font
@@ -223,10 +296,10 @@ p {
 /* Base Object
 ------------------------------------------------------------ */
 .card {
-  padding: 16px;
-  background-color: #fff;
+  padding: 30px 20px;
+  background-color: white;
   border: 1px solid #ced7df;
-  border-radius: 8px; }
+  border-radius: 4px; }
 
 /* Base Object - Modifiers
 ------------------------------ */
@@ -234,157 +307,10 @@ p {
   margin-bottom: 0; }
 
 .card--empty {
-  border: 1px dashed #ced7df; }
+  border-style: dashed; }
 
-/* Post & Analytics Shared Objects
------------------------------------------------------------- */
-.card-post,
-.card-post-analytics {
-  margin-bottom: 16px; }
-
-.card-post,
-.card-post-analytics {
-  padding: 0; }
-
-.card-post-content,
-.card-post-analytics-content {
-  padding: 16px; }
-
-.card-post-content p,
-.card-post-analytics-content p {
-  margin: 0; }
-
-.card-post-meta,
-.card-post-analytics-meta {
-  flex-direction: row;
-  justify-content: flex-start;
-  display: flex;
-  padding: 0 16px;
-  height: 32px;
-  line-height: 32px;
-  background-color: #f4f7f9;
-  border-top: 1px solid #ced7df;
-  border-radius: 0 0 7px 7px;
-  font-size: 10px; }
-
-.card-post-meta-time-zone,
-.card-post-analytics-meta-time-zone {
-  font-weight: normal; }
-
-/* Post Objects
------------------------------------------------------------- */
-.card-post-stat {
-  font-weight: bold;
-  color: #323b43; }
-
-.card-post-meta:hover .card-post-meta-menu {
-  opacity: 1; }
-
-.card-post-meta::after {
-  clear: both; }
-
-.card-post-meta-time-pinned {
-  flex-grow: 0;
-  position: relative;
-  margin: 2px 16px 2px -18px;
-  padding-left: 16px;
-  height: 27px;
-  line-height: 27px;
-  color: #fff;
-  background-color: #168eea;
-  border-right: 0;
-  border-radius: 2px 0 0 2px; }
-
-.card-post-meta-time-pinned .card-post-meta-time {
-  color: #fff; }
-
-.card-post-meta-time-pinned-arrow {
-  position: absolute;
-  top: 0;
-  right: -8px;
-  width: 0;
-  height: 0;
-  border-top: 13.5px solid transparent;
-  border-bottom: 13.5px solid transparent;
-  border-left: 8px solid #168eea; }
-
-.card-post-meta-tag {
-  flex-grow: 0;
-  margin: 7px 8px 7px 0; }
-
-.card-post-meta-time {
-  flex-grow: 0;
-  margin-right: 8px;
-  font-weight: 600; }
-
-.card-post-meta-via {
-  flex-grow: 0; }
-
-.card-post-meta-user {
-  flex-direction: row;
-  justify-content: flex-start;
-  flex-grow: 1;
-  display: flex;
-  margin: 4px 0 4px 16px;
-  padding: 4px 0; }
-
-.card-post-meta-user-name {
-  margin-left: 8px;
-  font-weight: 600;
-  line-height: normal; }
-
-.card-post-meta-user-profile-picture {
-  flex-grow: 0; }
-
-.card-post-meta-user-name {
-  flex-grow: 1; }
-
-.card-post-meta-menu {
-  flex-direction: row;
-  justify-content: flex-start;
-  flex-grow: 0;
-  display: flex;
-  margin: 0;
-  list-style: none;
-  opacity: 0; }
-
-.card-post-meta-menu-item {
-  flex-grow: 1;
-  margin: 0 16px 0 0; }
-  .card-post-meta-menu-item a {
-    display: block;
-    color: #323b43; }
-    .card-post-meta-menu-item a:hover {
-      color: #000; }
-
-/* Post Objects - Modifiers
------------------------------- */
-.card-post-meta-menu-item--last {
-  margin-right: 0; }
-
-.card-post-meta-time--pinned {
-  color: #fff; }
-
-/* Analytics Objects
------------------------------------------------------------- */
-.card-post-analytics {
-  padding-bottom: 0; }
-
-.card-post-analytics-posted {
-  margin-top: 8px;
-  height: 21px;
-  font-size: 10px; }
-
-.card-post-analytics-posted-time,
-.card-post-analytics-posted-via {
-  float: left; }
-
-.card-post-analytics-posted-via {
-  margin-left: 8px; }
-
-.card-post-analytics-meta-data-stat {
-  flex-grow: 1;
-  text-align: center; }
+.card--no-border {
+  border: 0; }
 
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
@@ -393,8 +319,16 @@ p {
   padding: 0;
   box-sizing: border-box; }
 
+/* Shades Palette
+------------------------------------------------------------ */
 /* Primary Palette
 ------------------------------------------------------------ */
+/* Blues
+------------------------------ */
+/* Grays
+------------------------------ */
+/* Others
+------------------------------ */
 /* Brands Palette
 ------------------------------------------------------------ */
 /* Font
@@ -405,22 +339,39 @@ p {
 ------------------------------------------------------------ */
 /* Animation
 ------------------------------------------------------------ */
-/* Base Objects
+/* Base Object
 ------------------------------------------------------------ */
 .input {
   margin: 0;
-  padding: 0 4px;
+  padding: 0 10px;
   height: 32px;
   font-family: "open sans", sans-serif;
   font-size: 14px;
-  color: #59626a;
+  color: #343e47;
   border: 1px solid #ced7df;
-  border-radius: 4px;
+  border-radius: 2px;
   outline: none;
   transition: border-color 0.1s linear; }
   .input:focus {
-    color: #168eea;
     border-color: #168eea; }
+  .input::-webkit-input-placeholder {
+    color: #989da1; }
+  .input:-moz-placeholder {
+    /* Firefox 18- */
+    color: #989da1; }
+  .input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #989da1; }
+  .input:-ms-input-placeholder {
+    color: #989da1; }
+
+/* Base Objects
+------------------------------------------------------------ */
+.input-label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: #343e47; }
 
 .input-with-icon-left,
 .input-with-icon-right {
@@ -431,22 +382,21 @@ p {
 .input-with-icon-right .bi {
   position: absolute;
   top: 5px;
-  margin: 0;
-  color: #ced7df; }
+  margin: 0; }
 
 .input-with-icon-left .bi {
-  left: 8px; }
+  left: 10px; }
 
 .input-with-icon-right .bi {
-  right: 8px; }
+  right: 10px; }
 
 /* Base Object - Modifiers
 ------------------------------ */
 .input--icon-left {
-  padding-left: 28px; }
+  padding-left: 34px; }
 
 .input--icon-right {
-  padding-right: 28px; }
+  padding-right: 34px; }
 
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
@@ -455,8 +405,16 @@ p {
   padding: 0;
   box-sizing: border-box; }
 
+/* Shades Palette
+------------------------------------------------------------ */
 /* Primary Palette
 ------------------------------------------------------------ */
+/* Blues
+------------------------------ */
+/* Grays
+------------------------------ */
+/* Others
+------------------------------ */
 /* Brands Palette
 ------------------------------------------------------------ */
 /* Font
@@ -470,7 +428,7 @@ p {
 /* Base Object
 ------------------------------------------------------------ */
 .bi {
-  margin-right: 4px; }
+  margin-right: 10px; }
 
 .bi-circle-appdotnet[class*="bi-"],
 .bi-circle-facebook[class*="bi-"],
@@ -478,7 +436,6 @@ p {
 .bi-circle-linkedin[class*="bi-"],
 .bi-circle-pinterest[class*="bi-"],
 .bi-circle-twitter[class*="bi-"] {
-  font-size: 16px;
   border: none; }
 
 .bi-circle-appdotnet[class*="bi-"]::before,
@@ -487,7 +444,7 @@ p {
 .bi-circle-linkedin[class*="bi-"]::before,
 .bi-circle-pinterest[class*="bi-"]::before,
 .bi-circle-twitter[class*="bi-"]::before {
-  background-color: #fff;
+  background-color: white;
   border-radius: 50%; }
 
 .bi-circle-appdotnet {
@@ -508,6 +465,12 @@ p {
 .bi-circle-twitter {
   color: #55acee; }
 
+/* Base Object - Modifiers
+------------------------------ */
+.bi--right {
+  margin-right: 0;
+  margin-left: 10px; }
+
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
 * {
@@ -515,8 +478,154 @@ p {
   padding: 0;
   box-sizing: border-box; }
 
+/* Shades Palette
+------------------------------------------------------------ */
 /* Primary Palette
 ------------------------------------------------------------ */
+/* Blues
+------------------------------ */
+/* Grays
+------------------------------ */
+/* Others
+------------------------------ */
+/* Brands Palette
+------------------------------------------------------------ */
+/* Font
+------------------------------------------------------------ */
+/* Border Radii
+------------------------------------------------------------ */
+/* Box Shadows
+------------------------------------------------------------ */
+/* Animation
+------------------------------------------------------------ */
+/* Base Object
+------------------------------------------------------------ */
+.metabar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 11px;
+  font-weight: 600;
+  background-color: #f4f7f9;
+  border-right: 1px solid #ced7df;
+  border-bottom: 1px solid #ced7df;
+  border-left: 1px solid #ced7df;
+  border-radius: 0 0 4px 4px; }
+  .metabar:hover .metabar-menu-item {
+    display: inherit; }
+  .metabar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .metabar [class*=" bi-"]:before, .metabar [class^=bi-]:before {
+    vertical-align: baseline; }
+
+/* Base Object - Modifiers
+------------------------------ */
+.metabar--analytics {
+  padding: 0; }
+
+/* Base Objects
+------------------------------------------------------------ */
+.metabar-time {
+  flex-grow: 0; }
+
+.metabar-time-zone {
+  flex-grow: 0;
+  font-weight: normal; }
+
+.metabar-profile-picture {
+  flex-grow: 0;
+  margin-left: 20px;
+  border: 1px solid #ced7df;
+  border-radius: 256px; }
+
+.metabar-user-name {
+  flex-grow: 0;
+  margin-left: 10px; }
+
+.metabar-via {
+  flex-grow: 0;
+  margin-left: 20px; }
+
+.metabar-tag {
+  flex-grow: 0;
+  margin-left: 20px; }
+
+.metabar-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-grow: 1; }
+
+.metabar-menu-item {
+  display: none;
+  margin: 0 0 0 20px;
+  padding: 0; }
+  .metabar-menu-item a {
+    color: #59626a;
+    display: block; }
+    .metabar-menu-item a:hover {
+      color: #168eea; }
+
+.metabar-metrics {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-grow: 1; }
+
+.metabar-metrics-item {
+  flex-grow: 1;
+  margin: 0;
+  padding: 10px 0;
+  text-align: center;
+  border-right: 1px solid #ced7df; }
+
+.metabar-metrics-item-label {
+  margin-left: 2px;
+  font-weight: normal; }
+
+/* Base Objects - Modifiers
+------------------------------ */
+.metabar-time--pinned {
+  margin-left: -12px;
+  padding-left: 10px;
+  color: white;
+  background-color: #168eea;
+  border-radius: 1px 0 0 1px; }
+
+.metabar-time--pinned-arrow {
+  margin-right: -8px;
+  width: 0;
+  height: 0;
+  border-top: 10.5px solid transparent;
+  border-bottom: 10.5px solid transparent;
+  border-left: 10px solid #168eea; }
+
+.metabar-metrics-item--last {
+  border-right: 0; }
+
+/* Global Reset // We'll pull in a common reset here, perhaps in another file!
+------------------------------------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* Shades Palette
+------------------------------------------------------------ */
+/* Primary Palette
+------------------------------------------------------------ */
+/* Blues
+------------------------------ */
+/* Grays
+------------------------------ */
+/* Others
+------------------------------ */
 /* Brands Palette
 ------------------------------------------------------------ */
 /* Font
@@ -549,7 +658,7 @@ p {
   left: 50%;
   width: 200px;
   height: 100px;
-  box-shadow: 0 2px 4px rgba(50, 59, 67, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
   transform: translate(-50%, -50%); }
 
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
@@ -559,8 +668,16 @@ p {
   padding: 0;
   box-sizing: border-box; }
 
+/* Shades Palette
+------------------------------------------------------------ */
 /* Primary Palette
 ------------------------------------------------------------ */
+/* Blues
+------------------------------ */
+/* Grays
+------------------------------ */
+/* Others
+------------------------------ */
 /* Brands Palette
 ------------------------------------------------------------ */
 /* Font
@@ -585,7 +702,7 @@ p {
   height: 64px;
   font-size: 14px;
   line-height: 64px;
-  background-color: #fff;
+  background-color: white;
   border-bottom: 1px solid #ced7df; }
 
 .navbar-title {
@@ -628,8 +745,16 @@ p {
   padding: 0;
   box-sizing: border-box; }
 
+/* Shades Palette
+------------------------------------------------------------ */
 /* Primary Palette
 ------------------------------------------------------------ */
+/* Blues
+------------------------------ */
+/* Grays
+------------------------------ */
+/* Others
+------------------------------ */
 /* Brands Palette
 ------------------------------------------------------------ */
 /* Font
@@ -677,8 +802,88 @@ p {
   padding: 0;
   box-sizing: border-box; }
 
+/* Shades Palette
+------------------------------------------------------------ */
 /* Primary Palette
 ------------------------------------------------------------ */
+/* Blues
+------------------------------ */
+/* Grays
+------------------------------ */
+/* Others
+------------------------------ */
+/* Brands Palette
+------------------------------------------------------------ */
+/* Font
+------------------------------------------------------------ */
+/* Border Radii
+------------------------------------------------------------ */
+/* Box Shadows
+------------------------------------------------------------ */
+/* Animation
+------------------------------------------------------------ */
+/* Base Object
+------------------------------------------------------------ */
+/* Base Objects - Modifiers
+------------------------------ */
+.post--failed .post-content {
+  border-top: 1px solid #ff1e1e;
+  border-right: 1px solid #ff1e1e;
+  border-left: 1px solid #ff1e1e; }
+
+.post--failed .metabar {
+  border-right: 1px solid #ff1e1e;
+  border-bottom: 1px solid #ff1e1e;
+  border-left: 1px solid #ff1e1e; }
+
+/* Base Objects
+------------------------------------------------------------ */
+.post-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: stretch;
+  background-color: white;
+  border: 1px solid #ced7df;
+  border-radius: 4px 4px 0 0; }
+
+.post-content-text {
+  flex-grow: 1;
+  padding: 30px 20px; }
+
+.post-content-image {
+  flex-grow: 0;
+  padding: 20px 20px 20px 0; }
+  .post-content-image img {
+    display: block;
+    max-width: 200px;
+    max-height: 100px;
+    border-radius: 4px; }
+
+.post-content-video {
+  flex-grow: 0;
+  padding: 20px 20px 20px 0; }
+  .post-content-video iframe {
+    max-width: 200px;
+    max-height: 100px; }
+
+/* Global Reset // We'll pull in a common reset here, perhaps in another file!
+------------------------------------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* Shades Palette
+------------------------------------------------------------ */
+/* Primary Palette
+------------------------------------------------------------ */
+/* Blues
+------------------------------ */
+/* Grays
+------------------------------ */
+/* Others
+------------------------------ */
 /* Brands Palette
 ------------------------------------------------------------ */
 /* Font
@@ -695,7 +900,7 @@ p {
   display: block;
   width: 32px;
   height: 32px;
-  border-radius: 16px; }
+  border-radius: 256px; }
 
 /* Base Object - Modifiers
 ------------------------------ */
@@ -705,15 +910,9 @@ p {
   .profile-picture--inactive .profile-picture-icon .bi {
     color: #323b43; }
 
-.profile-picture--large {
-  width: 48px;
-  height: 48px;
-  border-radius: 32px; }
-
 .profile-picture--small {
   width: 16px;
-  height: 16px;
-  border-radius: 8px; }
+  height: 16px; }
 
 /* Profile Picture with Icon Object
 ------------------------------------------------------------ */
@@ -734,8 +933,16 @@ p {
   padding: 0;
   box-sizing: border-box; }
 
+/* Shades Palette
+------------------------------------------------------------ */
 /* Primary Palette
 ------------------------------------------------------------ */
+/* Blues
+------------------------------ */
+/* Grays
+------------------------------ */
+/* Others
+------------------------------ */
 /* Brands Palette
 ------------------------------------------------------------ */
 /* Font
@@ -846,7 +1053,7 @@ p {
 ------------------------------ */
 .sidebar-app-connected-account--active {
   margin-right: -1px;
-  background-color: #fff; }
+  background-color: white; }
 
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
@@ -855,8 +1062,16 @@ p {
   padding: 0;
   box-sizing: border-box; }
 
+/* Shades Palette
+------------------------------------------------------------ */
 /* Primary Palette
 ------------------------------------------------------------ */
+/* Blues
+------------------------------ */
+/* Grays
+------------------------------ */
+/* Others
+------------------------------ */
 /* Brands Palette
 ------------------------------------------------------------ */
 /* Font
@@ -870,9 +1085,9 @@ p {
 /* Base Object
 ------------------------------------------------------------ */
 .tag {
-  padding: 0 4px;
+  padding: 0 10px;
   height: 18px;
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 600;
   line-height: 18px;
   color: #59626a;
@@ -881,12 +1096,12 @@ p {
 
 /* Base Object - Modifiers
 ------------------------------ */
-.tag--blue,
-.tag--error {
-  color: #fff; }
+.tag--primary,
+.tag--failed {
+  color: white; }
 
-.tag--blue {
+.tag--primary {
   background-color: #168eea; }
 
-.tag--error {
-  background-color: #ee4f4f; }
+.tag--failed {
+  background-color: #ff1e1e; }

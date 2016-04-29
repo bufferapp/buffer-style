@@ -3,7 +3,7 @@
 /* Base Object
 ------------------------------------------------------------ */
 .bi {
-  margin-right: 4px;
+  margin-right: 10px;
 }
 
 .bi-circle-appdotnet,
@@ -13,36 +13,42 @@
 .bi-circle-pinterest,
 .bi-circle-twitter {
   &[class*="bi-"] {
-    font-size: 16px;
     border: none;
   }
 
   &[class*="bi-"]::before {
-    background-color: $whiteColor;
+    background-color: $white-100;
     border-radius: 50%;
   }
 }
 
 .bi-circle-appdotnet {
-  color: $appDotNetColor;
+  color: $appdotnet;
 }
 
 .bi-circle-facebook {
-  color: $facebookColor;
+  color: $facebook;
 }
 
 .bi-circle-google-plus {
-  color: $googlePlusColor;
+  color: $googleplus;
 }
 
 .bi-circle-linkedin {
-  color: $linkedInColor;
+  color: $linkedin;
 }
 
 .bi-circle-pinterest {
-  color: $pinterestColor;
+  color: $pinterest;
 }
 
 .bi-circle-twitter {
-  color: $twitterColor;
+  color: $twitter;
+}
+
+/* Base Object - Modifiers
+------------------------------ */
+.bi--right {
+  margin-right: 0;
+  margin-left: 10px;
 }

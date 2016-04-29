@@ -1,0 +1,159 @@
+@import "../base/variables";
+
+/* Base Object
+------------------------------------------------------------ */
+.metabar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+
+  margin-bottom: 20px;
+  padding: 10px;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  background-color: $aqua-haze;
+  border-right: 1px solid $geyser;
+  border-bottom: 1px solid $geyser;
+  border-left: 1px solid $geyser;
+  border-radius: 0 0 $border-radius-level-1 $border-radius-level-1;
+
+  &:hover {
+    .metabar-menu-item {
+      display: inherit;
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  [class*=" bi-"]:before, [class^=bi-]:before {
+    vertical-align: baseline;
+  }
+}
+
+/* Base Object - Modifiers
+------------------------------ */
+.metabar--analytics {
+  padding: 0;
+}
+
+/* Base Objects
+------------------------------------------------------------ */
+.metabar-time {
+  flex-grow: 0;
+}
+
+.metabar-time-zone {
+  flex-grow: 0;
+
+  font-weight: normal;
+}
+
+.metabar-profile-picture {
+  flex-grow: 0;
+
+  margin-left: 20px;
+
+  border: 1px solid $geyser;
+  border-radius: 256px;
+}
+
+.metabar-user-name {
+  flex-grow: 0;
+
+  margin-left: 10px;
+}
+
+.metabar-via {
+  flex-grow: 0;
+
+  margin-left: 20px;
+}
+
+.metabar-tag {
+  flex-grow: 0;
+
+  margin-left: 20px;
+}
+
+.metabar-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+  flex-grow: 1;
+}
+
+.metabar-menu-item {
+  display: none;
+
+  margin: 0 0 0 20px;
+  padding: 0;
+
+  a {
+    color: $shuttle-gray;
+    display: block;
+
+    &:hover {
+      color: $curious-blue;
+    }
+  }
+}
+
+.metabar-metrics {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-grow: 1;
+}
+
+.metabar-metrics-item {
+  flex-grow: 1;
+
+  margin: 0;
+  padding: 10px 0;
+
+  text-align: center;
+
+  border-right: 1px solid $geyser;
+}
+
+.metabar-metrics-item-label {
+  margin-left: 2px;
+
+  font-weight: normal;
+}
+
+/* Base Objects - Modifiers
+------------------------------ */
+.metabar-time--pinned {
+  margin-left: -12px;
+  padding-left: 10px;
+
+  color: $white-100;
+
+  background-color: $curious-blue;
+  border-radius: $border-radius-level-3 0 0 $border-radius-level-3;
+}
+
+.metabar-time--pinned-arrow {
+  margin-right: -8px;
+	width: 0;
+	height: 0;
+	border-top: 10.5px solid transparent;
+	border-bottom: 10.5px solid transparent;
+
+	border-left: 10px solid $curious-blue;
+}
+
+.metabar-metrics-item--last {
+  border-right: 0;
+}

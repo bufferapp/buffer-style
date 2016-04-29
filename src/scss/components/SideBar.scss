@@ -12,7 +12,7 @@
   width: 256px;
   min-height: 100vh;
 
-  font-size: $fontSize - 2px;
+  font-size: $font-size - 2px;
 
   order: -1;
   z-index: 1;
@@ -27,8 +27,8 @@
 /* SideBar App Objects
 ------------------------------------------------------------ */
 .sidebar-app {
-  background-color: $bufferForBusinessColor;
-  border-right: 1px solid $borderColor;
+  background-color: $alabaster;
+  border-right: 1px solid $geyser;
 }
 
 .sidebar-app-search-profiles {
@@ -54,7 +54,7 @@
   display: flex;
   padding: 16px;
 
-  border-bottom: 1px solid $borderColor;
+  border-bottom: 1px solid $geyser;
 }
 
 .sidebar-app-accounts-title {
@@ -84,7 +84,7 @@
   display: flex;
   padding: 16px;
 
-  border-bottom: 1px solid $borderColor;
+  border-bottom: 1px solid $geyser;
 }
 
 .sidebar-app-connected-account-profile-picture {
@@ -102,7 +102,7 @@
 
   font-size: 12px;
   font-weight: 600;
-  color: $titleColor;
+  color: $outer-space;
 
   overflow: hidden;
 }
@@ -134,5 +134,5 @@
 .sidebar-app-connected-account--active {
   margin-right: -1px;
 
-  background-color: $whiteColor;
+  background-color: $white-100;
 }

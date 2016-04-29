@@ -1,27 +1,51 @@
 @import "../base/variables";
 
-/* Base Objects
+/* Base Object
 ------------------------------------------------------------ */
 .input {
   margin: 0;
-  padding: 0 4px;
+  padding: 0 10px;
   height: 32px;
 
-  font-family: $fontFamily;
-  font-size: $fontSize;
-  color: $bodyColor;
+  font-family: $font-family;
+  font-size: $font-size;
+  color: $limed-spruce;
 
-  border: 1px solid $borderColor;
-  border-radius: $borderRadiusLevel2;
+  border: 1px solid $geyser;
+  border-radius: $border-radius-level-2;
 
   outline: none;
-  transition: border-color $transitionAnimationTime $transitionAnimationType;
+  transition: border-color $transition-animation-time $transition-animation-type;
 
   &:focus {
-    color: $actionableColor;
-
-    border-color: $actionableColor;
+    border-color: $curious-blue;
   }
+
+  &::-webkit-input-placeholder {
+    color: $manatee;
+  }
+
+  &:-moz-placeholder { /* Firefox 18- */
+    color: $manatee;
+  }
+
+  &::-moz-placeholder {  /* Firefox 19+ */
+    color: $manatee;
+  }
+
+  &:-ms-input-placeholder {
+    color: $manatee;
+  }
+}
+
+/* Base Objects
+------------------------------------------------------------ */
+.input-label {
+  display: block;
+  margin-bottom: 10px;
+
+  font-size: 12px;
+  color: $limed-spruce;
 }
 
 .input-with-icon-left,
@@ -37,24 +61,22 @@
   top: 5px;
 
   margin: 0;
-
-  color: $borderColor;
 }
 
 .input-with-icon-left .bi {
-  left: 8px;
+  left: 10px;
 }
 
 .input-with-icon-right .bi {
-  right: 8px;
+  right: 10px;
 }
 
 /* Base Object - Modifiers
 ------------------------------ */
 .input--icon-left {
-  padding-left: 28px;
+  padding-left: 34px;
 }
 
 .input--icon-right {
-  padding-right: 28px;
+  padding-right: 34px;
 }

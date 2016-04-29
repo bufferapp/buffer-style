@@ -1,0 +1,65 @@
+@import "../base/variables";
+
+/* Base Object
+------------------------------------------------------------ */
+.post {}
+
+/* Base Objects - Modifiers
+------------------------------ */
+.post--failed {
+  .post-content {
+    border-top: 1px solid $torch-red;
+    border-right: 1px solid $torch-red;
+    border-left: 1px solid $torch-red;
+  }
+
+  .metabar {
+    border-right: 1px solid $torch-red;
+    border-bottom: 1px solid $torch-red;
+    border-left: 1px solid $torch-red;
+  }
+}
+
+/* Base Objects
+------------------------------------------------------------ */
+.post-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: stretch;
+
+  background-color: $white-100;
+  border: 1px solid $geyser;
+  border-radius: $border-radius-level-1 $border-radius-level-1 0 0;
+}
+
+.post-content-text {
+  flex-grow: 1;
+
+  padding: 30px 20px;
+}
+
+.post-content-image {
+  flex-grow: 0;
+
+  padding: 20px 20px 20px 0;
+
+  img {
+    display: block;
+    max-width: 200px;
+    max-height: 100px;
+
+    border-radius: $border-radius-level-1;
+  }
+}
+
+.post-content-video {
+  flex-grow: 0;
+
+  padding: 20px 20px 20px 0;
+
+  iframe {
+    max-width: 200px;
+    max-height: 100px;
+  }
+}

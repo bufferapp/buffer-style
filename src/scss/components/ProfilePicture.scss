@@ -7,7 +7,7 @@
   width: 32px;
   height: 32px;
 
-  border-radius: 16px;
+  border-radius: 256px;
 }
 
 /* Base Object - Modifiers
@@ -17,22 +17,13 @@
   opacity: 0.5;
 
   .profile-picture-icon .bi {
-    color: $titleColor;
+    color: $outer-space;
   }
-}
-
-.profile-picture--large {
-  width: 48px;
-  height: 48px;
-
-  border-radius: 32px;
 }
 
 .profile-picture--small {
   width: 16px;
   height: 16px;
-
-  border-radius: 8px;
 }
 
 /* Profile Picture with Icon Object

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <title>Buffer Style Guide</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/guide.css">
+    <link rel="stylesheet" href="//s3.amazonaws.com/buffer-icons/0.5.0/buffer-icons.css" type="text/css" />
+  </head>
+  <body class="app">
+    <header class="navbar">
+      <nav class="navbar-title">
+        <i class="bi bi-buffer"></i>Buffer Style Guide
+      </nav>
+    </header>
+
+    <section class="body">
+
+      <aside class="sidebar">
+        <div class="card card--last">
+          <ul class="sidebar-style-guide-list">
+            <li>
+              <a href="index.html">The Buffer Style Guide</a>
+            </li>
+            <li>
+              <a href="navbars.html">NavBars</a>
+            </li>
+            <li>
+              <a href="sidebars.html">SideBars</a>
+            </li>
+            <li>
+              <a href="notifications.html">Notifications</a>
+            </li>
+            <li>
+              <a href="cards.html">Cards</a>
+            </li>
+            <li>
+              <a href="posts.html">Posts</a>
+            </li>
+            <li>
+              <a href="metabars.html">MetaBars</a>
+            </li>
+            <li>
+              <a href="modals.html">Modals</a>
+            </li>
+            <li>
+              <a href="buttons.html">Buttons</a>
+            </li>
+            <li>
+              <a href="icons.html">Icons</a>
+            </li>
+            <li>
+              <a href="inputs.html">Inputs</a>
+            </li>
+            <li>
+              <a href="profile-pictures.html">Profile Pictures</a>
+            </li>
+            <li>
+              <a href="tags.html">Tags</a>
+            </li>
+            <li>
+              <a class="sidebar-style-guide-list--last" href="typography.html">Typography</a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <main class="content">
+
+        <section class="section section--last">
+          <section class="card">
+            <section class="section-secondary">
+              <h1 class="section-secondary-title">Buttons</h1>
+              <p>A <code>button</code> object executes code in response to user interactions. When you click or tap a button, the button performs any actions attached to it. You communicate the purpose of a button using text, an icon, or both.</p>
+            </section>
+
+            <section class="section-secondary section-secondary--last">
+              <h2 class="section-secondary-title">Button</h2>
+              <p>This is the base <code>button</code> object. Use this object when communicating a primary action to the user.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <button class="button">Add to Queue</button>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;button class="button">Add to Queue&lt;/button></pre>
+                </div>
+              </div>
+            </section>
+
+            <section class="section-secondary section-secondary--last">
+              <h2 class="section-secondary-title">Button -- Secondary</h2>
+              <p>This is a modified base object. Use this modifier when communicating a secondary action to the user.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <button class="button button--secondary">Cancel</button>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;button class="button button--secondary">Add to Queue&lt;/button></pre>
+                </div>
+              </div>
+            </section>
+
+            <section class="section-secondary section-secondary--last">
+              <h2 class="section-secondary-title">Button -- Tertiary</h2>
+              <p>This is a modified base object. Use this modifier when communicating an alternative action to the user that isn't primary nor secondary.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <button class="button button--tertiary">Add to Queue</button>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;button class="button button--tertiary">Add to Queue&lt;/button></pre>
+                </div>
+              </div>
+            </section>
+
+            <section class="section-secondary">
+              <h2 class="section-secondary-title">Button -- Warning</h2>
+              <p>This is a modified base object. Use this modifier when communicating a destructive action to the user.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <button class="button button--warning">Delete Post</button>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;button class="button button--warning">Delete Post&lt;/button></pre>
+                </div>
+              </div>
+            </section>
+
+            <section class="section-secondary section-secondary--last">
+              <h2 class="section-secondary-title">Button -- Inactive</h2>
+              <p>This is a modified base object. Use this modifier when communicating a currently locked action to the user.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <button class="button button--inactive">Add to Queue</button><br /><br /><br />
+                  <button class="button button--secondary button--inactive">Add to Queue</button><br /><br /><br />
+                  <button class="button button--tertiary button--inactive">Add to Queue</button><br /><br /><br />
+                  <button class="button button--warning button--inactive">Delete Post</button>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;button class="button button--inactive">Add to Queue&lt;/button>
+
+&lt;button class="button button--secondary button--inactive">Add to Queue&lt;/button>
+
+&lt;button class="button button--tertiary button--inactive">Add to Queue&lt;/button>
+
+&lt;button class="button button--warning button--inactive">Delete Post&lt;/button></pre>
+                </div>
+              </div>
+            </section>
+
+          </section>
+        </section>
+
+      </main>
+
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="js/bundle.js"></script>
+  </body>
+</html>
