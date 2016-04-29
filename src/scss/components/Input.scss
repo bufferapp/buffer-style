@@ -1,6 +1,6 @@
 @import "../base/variables";
 
-/* Base Objects
+/* Base Object
 ------------------------------------------------------------ */
 .input {
   margin: 0;
@@ -38,6 +38,16 @@
   }
 }
 
+/* Base Objects
+------------------------------------------------------------ */
+.input-label {
+  display: block;
+  margin-bottom: 10px;
+
+  font-size: 12px;
+  color: $limed-spruce;
+}
+
 .input-with-icon-left,
 .input-with-icon-right {
   position: relative;
@@ -51,8 +61,6 @@
   top: 5px;
 
   margin: 0;
-
-  color: $manatee;
 }
 
 .input-with-icon-left .bi {
