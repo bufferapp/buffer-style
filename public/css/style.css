@@ -121,7 +121,7 @@ h6 {
 /* Paragraphs
 -------------------------------------------------- */
 code {
-  color: black; }
+  color: #000000; }
 
 p {
   margin: 16px 0; }
@@ -165,7 +165,7 @@ p {
   font-size: 14px;
   font-weight: 400;
   line-height: 32px;
-  color: white;
+  color: #ffffff;
   background-color: #168eea;
   border: 1px solid transparent;
   border-radius: 16px;
@@ -178,7 +178,7 @@ p {
   .button:hover {
     background-color: #137ac9; }
     .button:hover.button--inactive {
-      color: white;
+      color: #ffffff;
       background-color: #168eea; }
   .button [class*=" bi-"]:before, .button [class^=bi-]:before {
     vertical-align: baseline; }
@@ -196,21 +196,21 @@ p {
 
 .button--secondary {
   color: #168eea;
-  background-color: white;
+  background-color: #ffffff;
   border-color: #168eea; }
   .button--secondary:active {
     color: #168eea !important;
-    background-color: #f3f9fe !important;
+    background-color: rgba(22, 142, 234, 0.1) !important;
     border-color: #168eea !important; }
     .button--secondary:active.button--inactive {
-      background-color: white !important; }
+      background-color: #ffffff !important; }
   .button--secondary:hover {
     color: #137ac9;
-    background-color: white;
+    background-color: #ffffff;
     border-color: #137ac9; }
     .button--secondary:hover.button--inactive {
       color: #168eea;
-      background-color: white;
+      background-color: #ffffff;
       border-color: #168eea; }
     .button--secondary:hover i.bi {
       color: #137ac9; }
@@ -223,7 +223,7 @@ p {
   border-color: #ced7df; }
   .button--tertiary:active {
     color: #343e47 !important;
-    background-color: #f0f0f1 !important;
+    background-color: rgba(52, 62, 71, 0.1) !important;
     border-color: #abb3ba !important; }
     .button--tertiary:active.button--inactive {
       color: #666c72 !important;
@@ -240,31 +240,31 @@ p {
 
 .button--warning {
   color: #ff1e1e;
-  background-color: white;
+  background-color: #ffffff;
   border-color: #ff1e1e; }
   .button--warning:active {
-    background-color: #e61b1b !important;
+    background-color: #b31515 !important;
     border-color: transparent !important; }
     .button--warning:active.button--inactive {
       color: #ff1e1e !important;
-      background-color: white !important;
+      background-color: #ffffff !important;
       border-color: #ff1e1e !important; }
   .button--warning:hover {
-    color: white;
+    color: #ffffff;
     background-color: #ff1e1e; }
     .button--warning:hover.button--inactive {
       color: #ff1e1e;
-      background-color: white;
+      background-color: #ffffff;
       border-color: #ff1e1e; }
     .button--warning:hover i.bi {
-      color: white; }
+      color: #ffffff; }
   .button--warning i.bi {
     color: #ff1e1e; }
 
 /* Base Objects
 ------------------------------------------------------------ */
 .button .bi {
-  color: white; }
+  color: #ffffff; }
 
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
@@ -297,7 +297,7 @@ p {
 ------------------------------------------------------------ */
 .card {
   padding: 30px 20px;
-  background-color: white;
+  background-color: #ffffff;
   border: 1px solid #ced7df;
   border-radius: 4px; }
 
@@ -444,7 +444,7 @@ p {
 .bi-circle-linkedin[class*="bi-"]::before,
 .bi-circle-pinterest[class*="bi-"]::before,
 .bi-circle-twitter[class*="bi-"]::before {
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 50%; }
 
 .bi-circle-appdotnet {
@@ -594,7 +594,7 @@ p {
 .metabar-time--pinned {
   margin-left: -12px;
   padding-left: 10px;
-  color: white;
+  color: #ffffff;
   background-color: #168eea;
   border-radius: 1px 0 0 1px; }
 
@@ -702,7 +702,7 @@ p {
   height: 64px;
   font-size: 14px;
   line-height: 64px;
-  background-color: white;
+  background-color: #ffffff;
   border-bottom: 1px solid #ced7df; }
 
 .navbar-title {
@@ -768,32 +768,66 @@ p {
 /* Base Object
 ------------------------------------------------------------ */
 .notification {
+  display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  position: fixed;
-  top: 100;
-  z-index: 2;
-  display: flex;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  width: 100%;
-  background-color: #f4f7f9;
-  border-bottom: 1px solid #ced7df; }
+  align-content: stretch;
+  padding: 20px;
+  color: #ffffff;
+  background-color: #168eea; }
 
-.notification-message,
-.notification-close {
-  align-self: center; }
-
-.notification-message {
-  flex-grow: 0;
-  margin: 0 0 0 16px;
-  background-color: rgba(0, 0, 0, 0.1); }
-
-.notification-close {
+/* Base Objects
+------------------------------------------------------------ */
+.notification p {
   flex-grow: 1;
-  margin-right: 16px;
-  margin-left: 16px;
-  background-color: rgba(0, 0, 0, 0.2); }
+  align-self: center;
+  margin: 0 20px 0 0; }
+
+.notification a .bi {
+  color: #ffffff; }
+  .notification a .bi:hover {
+    color: rgba(255, 255, 255, 0.8); }
+  .notification a .bi:active {
+    color: rgba(255, 255, 255, 0.5) !important; }
+
+.notification i {
+  flex-grow: 0;
+  margin-right: 0; }
+
+/* Base Object - Modifiers
+------------------------------------------------------------ */
+.notification--warning {
+  color: #343e47;
+  background-color: rgba(241, 203, 58, 0.2); }
+
+.notification--warning a .bi {
+  color: #f1cb3a; }
+  .notification--warning a .bi:hover {
+    color: rgba(241, 203, 58, 0.8); }
+  .notification--warning a .bi:active {
+    color: rgba(241, 203, 58, 0.5) !important; }
+
+.notification--error {
+  color: #343e47;
+  background-color: rgba(255, 30, 30, 0.2); }
+
+.notification--error a .bi {
+  color: #ff1e1e; }
+  .notification--error a .bi:hover {
+    color: rgba(255, 30, 30, 0.8); }
+  .notification--error a .bi:active {
+    color: rgba(255, 30, 30, 0.5) !important; }
+
+.notification--success {
+  color: #343e47;
+  background-color: rgba(47, 213, 102, 0.2); }
+
+.notification--success a .bi {
+  color: #2fd566; }
+  .notification--success a .bi:hover {
+    color: rgba(47, 213, 102, 0.8); }
+  .notification--success a .bi:active {
+    color: rgba(47, 213, 102, 0.5) !important; }
 
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
@@ -843,7 +877,7 @@ p {
   flex-direction: row;
   justify-content: flex-start;
   align-content: stretch;
-  background-color: white;
+  background-color: #ffffff;
   border: 1px solid #ced7df;
   border-radius: 4px 4px 0 0; }
 
@@ -1053,7 +1087,7 @@ p {
 ------------------------------ */
 .sidebar-app-connected-account--active {
   margin-right: -1px;
-  background-color: white; }
+  background-color: #ffffff; }
 
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
@@ -1098,7 +1132,7 @@ p {
 ------------------------------ */
 .tag--primary,
 .tag--failed {
-  color: white; }
+  color: #ffffff; }
 
 .tag--primary {
   background-color: #168eea; }

@@ -72,97 +72,113 @@
           <section class="card">
             <section class="section-secondary">
               <h1 class="section-secondary-title">Buttons</h1>
-              <p>A <code>button</code> object executes code in response to user interactions. When you click or tap a button, the button performs any actions attached to it. You communicate the purpose of a button using text, an icon, or both.</p>
+              <p>Buttons can be atoms or organisms depending on their child elements. A button with a text label remains an atom while a button with a text label and an icon (or any other atom) is an organism. A button communicates an action that will happen once a user has clicked/tapped it.</p>
             </section>
 
             <section class="section-secondary section-secondary--last">
               <h2 class="section-secondary-title">Button</h2>
-              <p>This is the base <code>button</code> object. Use this object when communicating a primary action to the user.</p>
+              <p>Use this atom to communicate a primary action to the user.</p>
               <div class="code-block code-block--last">
                 <div class="code-block-title">
                   Example:
                 </div>
                 <div class="code-block-render">
-                  <button class="button">Add to Queue</button>
+                  <button class="button">Text Label</button>
                 </div>
                 <div class="code-block-code">
-                  <pre>&lt;button class="button">Add to Queue&lt;/button></pre>
+                  <pre>&lt;button class="button">Text Label&lt;/button></pre>
                 </div>
               </div>
             </section>
 
             <section class="section-secondary section-secondary--last">
               <h2 class="section-secondary-title">Button -- Secondary</h2>
-              <p>This is a modified base object. Use this modifier when communicating a secondary action to the user.</p>
+              <p>Use this atom to communicate a secondary action to the user.</p>
               <div class="code-block code-block--last">
                 <div class="code-block-title">
                   Example:
                 </div>
                 <div class="code-block-render">
-                  <button class="button button--secondary">Cancel</button>
+                  <button class="button button--secondary">Text Label</button>
                 </div>
                 <div class="code-block-code">
-                  <pre>&lt;button class="button button--secondary">Add to Queue&lt;/button></pre>
+                  <pre>&lt;button class="button button--secondary">Text Label&lt;/button></pre>
                 </div>
               </div>
             </section>
 
             <section class="section-secondary section-secondary--last">
               <h2 class="section-secondary-title">Button -- Tertiary</h2>
-              <p>This is a modified base object. Use this modifier when communicating an alternative action to the user that isn't primary nor secondary.</p>
+              <p>Use this atom to communicate a tertiary action to the user.</p>
               <div class="code-block code-block--last">
                 <div class="code-block-title">
                   Example:
                 </div>
                 <div class="code-block-render">
-                  <button class="button button--tertiary">Add to Queue</button>
+                  <button class="button button--tertiary">Text Label</button>
                 </div>
                 <div class="code-block-code">
-                  <pre>&lt;button class="button button--tertiary">Add to Queue&lt;/button></pre>
+                  <pre>&lt;button class="button button--tertiary">Text Label&lt;/button></pre>
                 </div>
               </div>
             </section>
 
             <section class="section-secondary">
               <h2 class="section-secondary-title">Button -- Warning</h2>
-              <p>This is a modified base object. Use this modifier when communicating a destructive action to the user.</p>
+              <p>Use this atom to communicate a destructive action to the user.</p>
               <div class="code-block code-block--last">
                 <div class="code-block-title">
                   Example:
                 </div>
                 <div class="code-block-render">
-                  <button class="button button--warning">Delete Post</button>
+                  <button class="button button--warning">Text Label</button>
                 </div>
                 <div class="code-block-code">
-                  <pre>&lt;button class="button button--warning">Delete Post&lt;/button></pre>
+                  <pre>&lt;button class="button button--warning">Text Label&lt;/button></pre>
                 </div>
               </div>
             </section>
 
             <section class="section-secondary section-secondary--last">
               <h2 class="section-secondary-title">Button -- Inactive</h2>
-              <p>This is a modified base object. Use this modifier when communicating a currently locked action to the user.</p>
+              <p>Use this atom to communicate a currently locked action to the user.</p>
               <div class="code-block code-block--last">
                 <div class="code-block-title">
                   Example:
                 </div>
                 <div class="code-block-render">
-                  <button class="button button--inactive">Add to Queue</button><br /><br /><br />
-                  <button class="button button--secondary button--inactive">Add to Queue</button><br /><br /><br />
-                  <button class="button button--tertiary button--inactive">Add to Queue</button><br /><br /><br />
-                  <button class="button button--warning button--inactive">Delete Post</button>
+                  <button class="button button--inactive">Text Label</button><br /><br /><br />
+                  <button class="button button--secondary button--inactive">Text Label</button><br /><br /><br />
+                  <button class="button button--tertiary button--inactive">Text Label</button><br /><br /><br />
+                  <button class="button button--warning button--inactive">Text Label</button>
                 </div>
                 <div class="code-block-code">
-                  <pre>&lt;button class="button button--inactive">Add to Queue&lt;/button>
+                  <pre>&lt;button class="button button--inactive">Text Label&lt;/button>
 
-&lt;button class="button button--secondary button--inactive">Add to Queue&lt;/button>
+&lt;button class="button button--secondary button--inactive">Text Label&lt;/button>
 
-&lt;button class="button button--tertiary button--inactive">Add to Queue&lt;/button>
+&lt;button class="button button--tertiary button--inactive">Text Label&lt;/button>
 
-&lt;button class="button button--warning button--inactive">Delete Post&lt;/button></pre>
+&lt;button class="button button--warning button--inactive">Text Label&lt;/button></pre>
                 </div>
               </div>
             </section>
+
+            <!-- <section class="section-secondary section-secondary--last">
+              <h2 class="section-secondary-title">Button -- Notification - Regular</h2>
+              <p>Use this modified atom when communicating an action that a user can take within a Notification organism.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <button class="button button--notification-regular">Add to Queue</button>
+                </div>
+                <div class="code-block-code">
+                  <pre></pre>
+                </div>
+              </div>
+            </section> -->
 
           </section>
         </section>

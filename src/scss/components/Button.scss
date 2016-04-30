@@ -10,7 +10,7 @@
   font-size: $font-size;
   font-weight: 400;
   line-height: 32px;
-  color: $white-100;
+  color: $white;
 
   background-color: $curious-blue;
   border: 1px solid transparent;
@@ -31,7 +31,7 @@
     background-color: $denim;
 
     &.button--inactive {
-      color: $white-100;
+      color: $white;
 
       background-color: $curious-blue;
     }
@@ -61,30 +61,30 @@
 .button--secondary {
   color: $curious-blue;
 
-  background-color: $white-100;
+  background-color: $white;
   border-color: $curious-blue;
 
   &:active {
     color: $curious-blue !important;
 
-    background-color: $foam !important;
+    background-color: rgba($curious-blue, 0.1) !important;
     border-color: $curious-blue !important;
 
     &.button--inactive {
-      background-color: $white-100 !important;
+      background-color: $white !important;
     }
   }
 
   &:hover {
     color: $denim;
 
-    background-color: $white-100;
+    background-color: $white;
     border-color: $denim;
 
     &.button--inactive {
       color: $curious-blue;
 
-      background-color: $white-100;
+      background-color: $white;
       border-color: $curious-blue;
     }
 
@@ -107,7 +107,7 @@
   &:active {
     color: $limed-spruce !important;
 
-    background-color: mix($white-100, $nevada, 90%) !important;
+    background-color: rgba($limed-spruce, 0.1) !important;
     border-color: $hit-gray !important;
 
     &.button--inactive {
@@ -136,35 +136,35 @@
 .button--warning {
   color: $torch-red;
 
-  background-color: $white-100;
+  background-color: $white;
   border-color: $torch-red;
 
   &:active {
-    background-color: mix($torch-red, $black-100, 90%) !important;
+    background-color: $thunderbird !important;
     border-color: transparent !important;
 
     &.button--inactive {
       color: $torch-red !important;
 
-      background-color: $white-100 !important;
+      background-color: $white !important;
       border-color: $torch-red !important;
     }
   }
 
   &:hover {
-    color: $white-100;
+    color: $white;
 
     background-color: $torch-red;
 
     &.button--inactive {
       color: $torch-red;
 
-      background-color: $white-100;
+      background-color: $white;
       border-color: $torch-red;
     }
 
     i.bi {
-      color: $white-100;
+      color: $white;
     }
   }
 
@@ -176,5 +176,5 @@
 /* Base Objects
 ------------------------------------------------------------ */
 .button .bi {
-  color: $white-100;
+  color: $white;
 }
