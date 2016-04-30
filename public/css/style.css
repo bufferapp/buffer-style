@@ -730,11 +730,12 @@ p {
 .navbar-menu-item {
   margin: 0 50px 0 0; }
   .navbar-menu-item a {
-    color: #666c72;
-    display: inline-block; }
+    display: inline-block;
+    color: #666c72; }
 
 .navbar-menu-item-profile-picture {
   vertical-align: middle;
+  display: inline-block !important;
   margin-right: 10px; }
 
 /* Base Object - Modifiers
@@ -885,10 +886,10 @@ p {
 /* Base Objects
 ------------------------------------------------------------ */
 .post-content {
-  display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-content: stretch;
+  display: flex;
   background-color: #ffffff;
   border: 1px solid #ced7df;
   border-radius: 4px 4px 0 0; }
@@ -943,7 +944,7 @@ p {
 /* Base Object
 ------------------------------------------------------------ */
 .profile-picture {
-  display: inline-block;
+  display: block;
   width: 32px;
   height: 32px;
   border-radius: 256px; }
@@ -999,26 +1000,26 @@ p {
 ------------------------------------------------------------ */
 /* Animation
 ------------------------------------------------------------ */
-/* Base Object
+/* Base
 ------------------------------------------------------------ */
 .sidebar {
   flex-direction: column;
   justify-content: flex-start;
   position: fixed;
+  z-index: 1;
   display: flex;
   margin-top: 96px;
-  width: 256px;
+  width: 250px;
   min-height: 100vh;
   font-size: 12px;
-  order: -1;
-  z-index: 1; }
+  order: -1; }
 
-/* Base Object - Modifiers
------------------------------- */
+/* Style Guide
+------------------------------------------------------------ */
 .sidebar .card {
-  margin-left: 16px; }
+  margin-left: 20px; }
 
-/* SideBar App Objects
+/* App
 ------------------------------------------------------------ */
 .sidebar-app {
   background-color: #f8f8f8;
@@ -1026,10 +1027,10 @@ p {
 
 .sidebar-app-search-profiles {
   flex-grow: 0;
-  padding-top: 16px; }
+  padding-top: 10px; }
 
 .sidebar-app-search-profiles-input {
-  margin: 0 16px; }
+  margin: 0 20px; }
 
 .sidebar-app-search-profiles-input .input-with-icon-left,
 .sidebar-app-search-profiles-input .input {
@@ -1040,7 +1041,7 @@ p {
   justify-content: flex-start;
   flex-grow: 0;
   display: flex;
-  padding: 16px;
+  padding: 10px;
   border-bottom: 1px solid #ced7df; }
 
 .sidebar-app-accounts-title {
@@ -1062,19 +1063,18 @@ p {
   flex-direction: row;
   justify-content: flex-start;
   display: flex;
-  padding: 16px;
+  padding: 20px;
   border-bottom: 1px solid #ced7df; }
 
 .sidebar-app-connected-account-profile-picture {
   flex-grow: 0;
   align-self: center;
-  margin-right: 16px; }
+  margin-right: 20px; }
 
 .sidebar-app-connected-account-name {
   flex-grow: 1;
   align-self: center;
-  margin-right: 16px;
-  font-size: 12px;
+  margin-right: 20px;
   font-weight: 600;
   color: #323b43;
   overflow: hidden; }
@@ -1088,12 +1088,12 @@ p {
 
 .sidebar-app-footer-list {
   position: absolute;
-  bottom: 32px;
+  bottom: 20px;
   list-style: none; }
 
 .sidebar-app-footer-list-item {
   display: inline-block;
-  margin-right: 16px; }
+  margin-right: 20px; }
 
 /* SideBar App Objects - Modifiers
 ------------------------------ */
