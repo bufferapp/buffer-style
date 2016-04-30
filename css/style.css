@@ -1011,7 +1011,6 @@ p {
   margin-top: 96px;
   width: 250px;
   min-height: 100vh;
-  font-size: 12px;
   order: -1; }
 
 /* Style Guide
@@ -1027,13 +1026,10 @@ p {
 
 .sidebar-app-search-profiles {
   flex-grow: 0;
-  padding-top: 10px; }
+  padding: 20px;
+  border-bottom: 1px solid #ced7df; }
 
-.sidebar-app-search-profiles-input {
-  margin: 0 20px; }
-
-.sidebar-app-search-profiles-input .input-with-icon-left,
-.sidebar-app-search-profiles-input .input {
+.sidebar-app-search-profiles input {
   width: 100%; }
 
 .sidebar-app-accounts {
@@ -1041,20 +1037,13 @@ p {
   justify-content: flex-start;
   flex-grow: 0;
   display: flex;
-  padding: 10px;
+  padding: 20px;
   border-bottom: 1px solid #ced7df; }
 
-.sidebar-app-accounts-title {
+.sidebar-app-accounts-button {
   flex-grow: 1;
   align-self: center;
-  margin: 0; }
-
-.sidebar-app-accounts-button {
-  flex-grow: 0;
-  align-self: center; }
-
-.sidebar-app-accounts-button .bi {
-  margin-right: 0; }
+  text-align: center; }
 
 .sidebar-app-connected-accounts {
   flex-grow: 0; }
@@ -1075,8 +1064,6 @@ p {
   flex-grow: 1;
   align-self: center;
   margin-right: 20px;
-  font-weight: 600;
-  color: #323b43;
   overflow: hidden; }
 
 .sidebar-app-connected-account-tag {
