@@ -3,40 +3,97 @@
 /* Base Object
 ------------------------------------------------------------ */
 .notification {
+  display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  // align-content: center;
-  position: fixed;
-  top: 100;
-  z-index: 2;
+  align-content: stretch;
 
-  display: flex;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  width: 100%;
+  padding: 20px;
 
-  background-color: $aqua-haze;
-  border-bottom: 1px solid $geyser;
+  color: $white;
+
+  background-color: $curious-blue;
 }
 
-.notification-message,
-.notification-close {
+/* Base Objects
+------------------------------------------------------------ */
+.notification p {
+  flex-grow: 1;
   align-self: center;
+
+  margin: 0 20px 0 0;
 }
 
-.notification-message {
+.notification a .bi {
+  color: $white;
+
+  &:hover {
+    color: rgba($white, 0.8);
+  }
+
+  &:active {
+    color: rgba($white, 0.5) !important;
+  }
+}
+
+.notification i {
   flex-grow: 0;
 
-  margin: 0 0 0 16px;
-
-  background-color: rgba(0, 0, 0, 0.1);
+  margin-right: 0;
 }
 
-.notification-close {
-  flex-grow: 1;
+/* Base Object - Modifiers
+------------------------------------------------------------ */
+.notification--warning {
+  color: $limed-spruce;
 
-  margin-right: 16px;
-  margin-left: 16px;
+  background-color: rgba($saffron, 0.2);
+}
 
-  background-color: rgba(0, 0, 0, 0.2);
+.notification--warning a .bi {
+  color: $saffron;
+
+  &:hover {
+    color: rgba($saffron, 0.8);
+  }
+
+  &:active {
+    color: rgba($saffron, 0.5) !important;
+  }
+}
+
+.notification--error {
+  color: $limed-spruce;
+
+  background-color: rgba($torch-red, 0.2);
+}
+
+.notification--error a .bi {
+  color: $torch-red;
+
+  &:hover {
+    color: rgba($torch-red, 0.8);
+  }
+
+  &:active {
+    color: rgba($torch-red, 0.5) !important;
+  }
+}
+
+.notification--success {
+  color: $limed-spruce;
+
+  background-color: rgba($shamrock, 0.2);
+}
+
+.notification--success a .bi {
+  color: $shamrock;
+
+  &:hover {
+    color: rgba($shamrock, 0.8);
+  }
+
+  &:active {
+    color: rgba($shamrock, 0.5) !important;
+  }
 }

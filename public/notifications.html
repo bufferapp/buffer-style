@@ -70,25 +70,100 @@
 
         <section class="section section--last">
           <section class="card">
+
             <section class="section-secondary">
               <h1 class="section-secondary-title">Notifications</h1>
-              <p>Notifications are a general-use object that hold information as a result of a particular action a user has taken or has to take.</p>
+              <p>Notifications are a general-use organism that hold information as a result of a particular action a user has taken or has to take.</p>
             </section>
+
             <section class="section-secondary section-secondary--last">
               <h2 class="section-secondary-title">Notification</h2>
-              <p>This is the base object for the <code>notification</code> object.</p>
+              <p>Use this organism to communicate a standard notification to the user that requires no action.</p>
               <div class="code-block code-block--last">
                 <div class="code-block-title">
                   Example:
                 </div>
                 <div class="code-block-render">
-                  Rendered object.
+                  <div class="notification">
+                    <p>This is a regular notification bar.</p>
+                    <a href="#"><i class="bi bi-x"></i></a>
+                  </div>
                 </div>
                 <div class="code-block-code">
-                  <pre>Markup for `notification` object.</pre>
+                  <pre>&lt;div class="notification">
+  &lt;p>This is a regular notification bar.&lt;/p>
+  &lt;a href="#">&lt;i class="bi bi-x">&lt;/i>&lt;/a>
+&lt;/div></pre>
                 </div>
               </div>
             </section>
+
+            <section class="section-secondary">
+              <h2 class="section-secondary-title">Notification <span class="subtitle">displaying a warning</span></h2>
+              <p>Use this organism to communicate a warning notification to the user and an action for them to take to resolve the warning.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <div class="notification notification--warning">
+                    <p>This is a warning notification bar. <a href="#">Action to Take</a></p>
+                    <a href="#"><i class="bi bi-x"></i></a>
+                  </div>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;div class="notification notification--warning">
+  &lt;p>This is a warning notification bar. &lt;a href="#">Action to Take&lt;/a>&lt;/p>
+  &lt;a href="#">&lt;i class="bi bi-x">&lt;/i>&lt;/a>
+&lt;/div></pre>
+                </div>
+              </div>
+            </section>
+
+            <section class="section-secondary">
+              <h2 class="section-secondary-title">Notification <span class="subtitle">displaying an error message</span></h2>
+              <p>Use this organism to communicate an error notification to the user and an action for them to take to resolve the error.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <div class="notification notification--error">
+                    <p>This is an error notification bar. <a href="#">Action to Take</a></p>
+                    <a href="#"><i class="bi bi-x"></i></a>
+                  </div>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;div class="notification notification--error">
+  &lt;p>This is an error notification bar. &lt;a href="#">Action to Take&lt;/a>&lt;/p>
+  &lt;a href="#">&lt;i class="bi bi-x">&lt;/i>&lt;/a>
+&lt;/div></pre>
+                </div>
+              </div>
+            </section>
+
+            <section class="section-secondary section-secondary--last">
+              <h2 class="section-secondary-title">Notification <span class="subtitle">displaying a success message</span></h2>
+              <p>Use this organism to communicate a success notification to the user.</p>
+              <div class="code-block code-block--last">
+                <div class="code-block-title">
+                  Example:
+                </div>
+                <div class="code-block-render">
+                  <div class="notification notification--success">
+                    <p>This is a success notification bar.</p>
+                    <a href="#"><i class="bi bi-x"></i></a>
+                  </div>
+                </div>
+                <div class="code-block-code">
+                  <pre>&lt;div class="notification notification--success">
+  &lt;p>This is a success notification bar.&lt;/p>
+  &lt;a href="#">&lt;i class="bi bi-x">&lt;/i>&lt;/a>
+&lt;/div></pre>
+                </div>
+              </div>
+            </section>
+
           </section>
         </section>
 
