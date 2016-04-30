@@ -156,6 +156,9 @@ ul {
   }
 }
 
+.code-block-render--dark {
+  background-color: rgba($black, 0.8);
+}
 .code-block-render,
 .code-block-code {
   border-right: 1px solid $geyser;

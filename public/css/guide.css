@@ -133,6 +133,9 @@ ul {
     z-index: 0;
     margin: 0; }
 
+.code-block-render--dark {
+  background-color: rgba(0, 0, 0, 0.8); }
+
 .code-block-render,
 .code-block-code {
   border-right: 1px solid #ced7df;
