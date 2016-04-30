@@ -56,14 +56,16 @@
   margin: 0 50px 0 0;
 
   a {
-    color: $nevada;
     display: inline-block;
+    
+    color: $nevada;
   }
 }
 
 .navbar-menu-item-profile-picture {
   vertical-align: middle;
 
+  display: inline-block !important;
   margin-right: 10px;
 }
 

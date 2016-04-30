@@ -23,10 +23,11 @@
 /* Base Objects
 ------------------------------------------------------------ */
 .post-content {
-  display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-content: stretch;
+  
+  display: flex;
 
   background-color: $white;
   border: 1px solid $geyser;
