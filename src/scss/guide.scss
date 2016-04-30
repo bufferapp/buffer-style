@@ -5,7 +5,7 @@ a {
   text-decoration: none;
 
   &:hover {
-    color: mix($curious-blue, $black, 70%);
+    color: $tory-blue;
   }
 
   img {
@@ -137,6 +137,17 @@ ul {
 .code-block-render {
   padding: 30px 20px;
 
+  .navbar {
+    position: inherit;
+
+    margin-bottom: 0;
+  }
+
+  .sidebar {
+    position: inherit;
+
+    margin-top: 0;
+  }
   .metabar {
     position: relative;
     z-index: 0;
