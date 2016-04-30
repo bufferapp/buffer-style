@@ -6,7 +6,7 @@
     <title>Buffer Style Guide</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/guide.css">
-    <link rel="stylesheet" href="//s3.amazonaws.com/buffer-icons/0.5.0/buffer-icons.css" type="text/css" />
+    <link rel="stylesheet" href="//s3.amazonaws.com/buffer-icons/0.6.0/buffer-icons.css" type="text/css" />
   </head>
   <body class="app">
     <header class="navbar">
@@ -72,11 +72,11 @@
           <section class="card">
             <section class="section-secondary">
               <h1 class="section-secondary-title">NavBars</h1>
-              <p>NavBars are an object solely designed to hold navigational objects and typically stick to the top of the viewport.</p>
+              <p>NavBars are a template that display navigational organisms and typically stick to the top of a browser's viewport.</p>
             </section>
             <section class="section-secondary section-secondary--last">
               <h2 class="section-secondary-title">NavBar</h2>
-              <p>This is the base object for the <code>navbar</code> object.</p>
+              <p>Use this template for the Buffer web app's primary navigation.</p>
               <div class="code-block code-block--last">
                 <div class="code-block-title">
                   Example:
@@ -84,22 +84,25 @@
                 <div class="code-block-render">
                   <div class="navbar">
                     <div class="navbar-title">
-                      <i class="bi bi-buffer"></i>Buffer
+                      <i class="bi bi-buffer"></i><strong>Awesome</strong> plan
                     </div>
                     <ul class="navbar-menu-left">
                       <li class="navbar-menu-item">
-                        <a class="navbar-menu-item--active" href="#">Queue</a>
+                        <a class="navbar-menu-item--active" href="#"><i class="bi bi-content"></i>Content</a>
                       </li>
                       <li class="navbar-menu-item">
-                        <a href="#">Library</a>
+                        <a href="#"><i class="bi bi-analytics"></i>Analytics</a>
+                      </li>
+                      <li class="navbar-menu-item">
+                        <a href="#"><i class="bi bi-calendar"></i>Schedule</a>
                       </li>
                       <li class="navbar-menu-item navbar-menu-item--last">
-                        <a href="#">Analytics</a>
+                        <a href="#"><i class="bi bi-settings"></i>Settings</a>
                       </li>
                     </ul>
                     <ul class="navbar-menu-right">
                       <li class="navbar-menu-item">
-                        <a href="#">Help</a>
+                        <a href="#"><i class="bi bi-exclamation"></i>Help</a>
                       </li>
                       <li class="navbar-menu-item navbar-menu-item--last">
                         <a href="#"><img class="navbar-menu-item-profile-picture profile-picture" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">Account</a>
@@ -108,7 +111,33 @@
                   </div>
                 </div>
                 <div class="code-block-code">
-                  <pre>Markup of `navbar`.</pre>
+                  <pre>&lt;div class="navbar">
+  &lt;div class="navbar-title">
+    &lt;i class="bi bi-buffer">&lt;/i>&lt;strong>Awesome&lt;/strong> plan
+  &lt;/div>
+  &lt;ul class="navbar-menu-left">
+    &lt;li class="navbar-menu-item">
+      &lt;a class="navbar-menu-item--active" href="#">&lt;i class="bi bi-content">&lt;/i>Content&lt;/a>
+    &lt;/li>
+    &lt;li class="navbar-menu-item">
+      &lt;a href="#">&lt;i class="bi bi-analytics">&lt;/i>Analytics&lt;/a>
+    &lt;/li>
+    &lt;li class="navbar-menu-item">
+      &lt;a href="#">&lt;i class="bi bi-calendar">&lt;/i>Schedule&lt;/a>
+    &lt;/li>
+    &lt;li class="navbar-menu-item navbar-menu-item--last">
+      &lt;a href="#">&lt;i class="bi bi-settings">&lt;/i>Settings&lt;/a>
+    &lt;/li>
+  &lt;/ul>
+  &lt;ul class="navbar-menu-right">
+    &lt;li class="navbar-menu-item">
+      &lt;a href="#">&lt;i class="bi bi-exclamation">&lt;/i>Help&lt;/a>
+    &lt;/li>
+    &lt;li class="navbar-menu-item navbar-menu-item--last">
+      &lt;a href="#">&lt;img class="navbar-menu-item-profile-picture profile-picture" src="#">Account&lt;/a>
+    &lt;/li>
+  &lt;/ul>
+&lt;/div></pre>
                 </div>
               </div>
             </section>

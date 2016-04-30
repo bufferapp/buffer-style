@@ -5,6 +5,7 @@
 .navbar {
   flex-direction: row;
   justify-content: flex-start;
+  align-items: center;
   position: fixed;
   z-index: 1;
 
@@ -12,54 +13,71 @@
   margin-bottom: 32px;
   padding: 0 16px;
   width: 100%;
-  height: 64px;
+  height: 62px;
 
   font-size: $font-size;
-  line-height: 64px;
+  line-height: 62px;
 
   background-color: $white;
   border-bottom: 1px solid $geyser;
 }
 
+/* Base Objects
+------------------------------------------------------------ */
 .navbar-title {
   flex-grow: 0;
 
-  margin-right: 16px;
-
-  font-weight: 600;
+  margin-right: 50px;
 }
 
 .navbar-menu-left,
 .navbar-menu-right {
+  display: flex;
+  flex-direction: row;
+
   margin: 0;
+
+  list-style: none;
 }
 
 .navbar-menu-left {
+  justify-content: flex-start;
+
   flex-grow: 1;
 }
 
 .navbar-menu-right {
+  justify-content: flex-end;
+
   flex-grow: 0;
 }
 
 .navbar-menu-item {
-  display: inline;
-  margin: 0 16px 0 0;
+  margin: 0 50px 0 0;
 
   a {
+    color: $nevada;
     display: inline-block;
   }
 }
 
 .navbar-menu-item-profile-picture {
-  float: left;
-  margin: 16px 8px -12px 0;
+  vertical-align: middle;
+
+  margin-right: 10px;
 }
 
 /* Base Object - Modifiers
------------------------------- */
+------------------------------------------------------------ */
 .navbar-menu-item a.navbar-menu-item--active {
-  box-shadow: inset 0 -2px $outer-space;
+  margin-right: -10px;
+  margin-left: -10px;
+  padding-right: 10px;
+  padding-left: 10px;
+
+  color: $limed-spruce;
+
+  box-shadow: inset 0 -2px $curious-blue;
 }
 
 .navbar-menu-item--last {
