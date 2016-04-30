@@ -70,13 +70,15 @@
 
         <section class="section section--last">
           <section class="card">
+
             <section class="section-secondary">
               <h1 class="section-secondary-title">Cards</h1>
-              <p>Cards are a general-use object that hold different parts of the UI.</p>
+              <p>Cards can be atoms or organisms depending on their child elements. A card with a single <code>&lt;p>&lt;/p></code> remains an atom while a card with multiple atoms is an organism.</p>
             </section>
-            <section class="section-secondary section-secondary--last">
+
+            <section class="section-secondary">
               <h2 class="section-secondary-title">Card</h2>
-              <p>This is the base object for the <code>card</code> object.</p>
+              <p>Use this atom as a base for any UI that requires a container for its content.</p>
               <div class="code-block code-block--last">
                 <div class="code-block-title">
                   Example:
@@ -90,8 +92,10 @@
 &lt;/div></pre>
                 </div>
               </div>
-              <h2>Card -- Empty</h2>
-              <p>This is a modified <code>card</code> object. It doesn't introduce any new functionality nor UI. It simply modifies the <code>card</code> object's <code>border-style</code>.</p>
+            </section>
+            <section class="section-secondary">
+              <h2>Card <span class="subtitle">within Content &rarr; Queue that is empty</span></h2>
+              <p>Use this modified atom to communicate an empty time slot with Content &rarr; Queue.</p>
               <div class="code-block code-block--last">
                 <div class="code-block-title">
                   Example:
@@ -105,13 +109,15 @@
 &lt;/div></pre>
                 </div>
               </div>
-              <h2>Card -- No Border</h2>
-              <p>This is a modified <code>card</code> object. It doesn't introduce any new functionality nor UI. It simply modifies the <code>card</code> object's <code>border-style</code>.</p>
+            </section>
+            <section class="section-secondary section-secondary--last">
+              <h2>Card <span class="subtitle">without a border</span></h2>
+              <p>Use this modified card atom for popups and modals.</p>
               <div class="code-block code-block--last">
                 <div class="code-block-title">
                   Example:
                 </div>
-                <div class="code-block-render">
+                <div class="code-block-render code-block-render--dark">
                   <div class="card card--no-border code-block-render-example">
                   </div>
                 </div>
