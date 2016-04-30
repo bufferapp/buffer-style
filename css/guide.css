@@ -122,6 +122,12 @@ ul {
 
 .code-block-render {
   padding: 30px 20px; }
+  .code-block-render .navbar {
+    position: inherit;
+    margin-bottom: 0; }
+  .code-block-render .sidebar {
+    position: inherit;
+    margin-top: 0; }
   .code-block-render .metabar {
     position: relative;
     z-index: 0;
