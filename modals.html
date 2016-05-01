@@ -72,11 +72,11 @@
           <section class="card">
             <section class="section-secondary">
               <h1 class="section-secondary-title">Modals</h1>
-              <p>An introduction to modals.</p>
+              <p>Modals are templates that have a singular responsibility and are designed by nature to focus the user's attention.</p>
             </section>
             <section class="section-secondary section-secondary--last">
               <h2 class="section-secondary-title">Modal</h2>
-              <p>This is the base object for the <code>modal</code> object.</p>
+              <p>Use this template as a base to build other modals.</p>
               <div class="code-block code-block--last">
                 <div class="code-block-title">
                   Example:
@@ -85,14 +85,23 @@
                   <a href="#openModal">Open Modal</a>
                   <div class="modal" id="openModal">
                     <div class="card card--no-border">
-                      <p>Modal example here. <a href="#close" title="Close">Close</a></p>
+                      <div class="modal-content">
+                        <p>Modal content.</p>
+                        <a class="modal-exit" href="#close" title="Close"><i class="bi bi-x"></i></a>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="code-block-code">
-                  <pre>&lt;div class="modal" id="openModal">
-  &lt;div class="card">
-    &lt;p>Modal example here. &lt;a href="#close" title="Close">Close&lt;/a>&lt;/p>
+                  <pre>&lt;div class="code-block-render">
+  &lt;a href="#openModal">Open Modal&lt;/a>
+  &lt;div class="modal" id="openModal">
+    &lt;div class="card card--no-border">
+      &lt;div class="modal-content">
+        &lt;p>Modal content.&lt;/p>
+        &lt;a class="modal-exit" href="#close" title="Close">&lt;i class="bi bi-x">&lt;/i>&lt;/a>
+      &lt;/div>
+    &lt;/div>
   &lt;/div>
 &lt;/div></pre>
                 </div>
