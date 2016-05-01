@@ -36,6 +36,11 @@ ul {
   }
 }
 
+p {
+  .bi {
+    margin-right: 0;
+  }
+}
 .app {
   flex-direction: column;
 
@@ -157,7 +162,7 @@ ul {
 }
 
 .code-block-render--dark {
-  background-color: rgba($black, 0.8);
+  background-color: rgba($shark, 0.9);
 }
 .code-block-render,
 .code-block-code {

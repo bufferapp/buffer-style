@@ -49,6 +49,9 @@ ul {
     margin-top: 10px;
     margin-bottom: 10px; }
 
+p .bi {
+  margin-right: 0; }
+
 .app {
   flex-direction: column;
   display: flex;
@@ -134,7 +137,7 @@ ul {
     margin: 0; }
 
 .code-block-render--dark {
-  background-color: rgba(0, 0, 0, 0.8); }
+  background-color: rgba(42, 46, 50, 0.9); }
 
 .code-block-render,
 .code-block-code {
