@@ -501,11 +501,11 @@ p {
 /* Base Object
 ------------------------------------------------------------ */
 .metabar {
-  display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   align-content: stretch;
+  display: flex;
   margin-bottom: 20px;
   padding: 10px;
   font-size: 11px;
@@ -645,7 +645,7 @@ p {
   bottom: 0;
   left: 0;
   z-index: 2;
-  background-color: rgba(244, 247, 249, 0.9);
+  background-color: rgba(42, 46, 50, 0.9);
   opacity: 0;
   pointer-events: none; }
   .modal:target {
@@ -656,10 +656,26 @@ p {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 200px;
-  height: 100px;
+  display: flex;
+  width: 960px;
+  max-height: 80%;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
   transform: translate(-50%, -50%); }
+
+.modal-content {
+  position: relative;
+  width: 100%; }
+
+.modal-content .modal-exit {
+  position: absolute;
+  top: -25px;
+  right: -10px;
+  color: #343e47; }
+  .modal-content .modal-exit:hover {
+    color: #0f63a4; }
+
+.modal-content .modal-exit .bi {
+  margin-right: 0; }
 
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */

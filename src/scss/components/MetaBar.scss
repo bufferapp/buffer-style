@@ -3,12 +3,12 @@
 /* Base Object
 ------------------------------------------------------------ */
 .metabar {
-  display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   align-content: stretch;
 
+  display: flex;
   margin-bottom: 20px;
   padding: 10px;
 
