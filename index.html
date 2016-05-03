@@ -11,7 +11,7 @@
   <body class="app">
     <header class="navbar">
       <nav class="navbar-title">
-        <i class="bi bi-buffer"></i>Buffer Style Guide
+        <i class="bi bi-buffer"></i>Style Guide
       </nav>
     </header>
 
@@ -21,7 +21,7 @@
         <div class="card card--last">
           <ul class="sidebar-style-guide-list">
             <li>
-              <a href="index.html">The Buffer Style Guide</a>
+              <a href="index.html">Introduction</a>
             </li>
             <li>
               <a href="navbars.html">NavBars</a>
@@ -70,33 +70,29 @@
 
         <section class="section section--last">
           <section class="card card--last">
+
             <section class="section-secondary">
-              <h1 class="section-secondary-title">The Buffer Style Guide</h1>
-              <p>The Buffer Style Guide defines a set of base components. The Buffer Style Guide is designed with these goals in mind:</p>
+              <h1 class="section-secondary-title">Introduction</h1>
+              <p>This style guide is a work in progress. Our goal for the Buffer Style Guide is to provide a library of all atoms, molecules, organisms, templates, and pages that make up the Buffer web app and company website.</p>
+              <p>Our Style Guide was designed with these goals in mind:</p>
               <ul>
-                <li>Provide a set of core components that are currently used within the product and to allow new components to be built from those.</li>
-                <li>Introduce a level of thinking when building and designing.</li>
-                <li>Make software development easier.</li>
+                <li>To be the point of truth for our user interface for the Buffer web app.</li>
+                <li>To enable us to move faster with design that has been tested by the Growth team.</li>
+                <li>To introduce a level of data-driven thinking when building and designing.</li>
+                <li>To help make software development easier.</li>
               </ul>
             </section>
+
             <section class="section-secondary">
-              <h2 class="section-secondary-title">Engineering Buffer</h2>
-              <h3>How we think of Buffer</h3>
-              <p>We think of Buffer as a collection of base objects that when put together, create the Buffer product. When we explore new ideas, we default to what base objects are already available to us and if required, reuse and modify them to our needs. In some cases, these ideas lead to brand new objects that become base objects and are then added to the Buffer Style Guide.</p>
-              <p>To help frame this thinking, we think of design at Buffer as object-oriented design and utilise a variation of the <a href="http://getbem.com/introduction/">BEM methodology</a>, replacing "blocks" for "objects" and categorising "elements" as objects too. This could be thought of as the OM methodology.</p>
-              <h4>Objects</h4>
-              <p>Objects are standalone entities that are meaningful on their own. Examples of objects could be <code>card</code>, <code>navbar</code>, and <code>button</code>. These can be used together has part of a larger object or individually.</p>
-              <h4>Modifiers</h4>
-              <p>Modifiers are flags on objects. They modify the appearance or behaviour of objects. For example, <code>--hidden</code> would be a modifier that would set an object to be hidden. Modifiers are always prefixed with a double-dash: <code>--</code>.</p>
-            </section>
-            <section class="section-secondary section-secondary--last">
               <h2 class="section-secondary-title">Designing Buffer</h2>
-              <h4>Sketch and File Names</h4>
-              <p>Our primary tool of choice for design is <a href="https://www.sketchapp.com">Sketch</a>. When working on a new idea or modifying an existing idea, we begin with the base file for that particular task. For example, updating how posts are displayed within the Content tab could be achieved by duplicating the <code>buffer-web-v1.0</code> Sketch document and updating its file name. Depending on the level of the change we're looking to make determines what we will increment the version number by. For example, a slight copy change might only increment the file version by <code>.X.X</code>, or perhaps a new page in the document might increment by <code>.X</code>. For any larger work or complete overhauls, we would increase the version number by a whole number completely.</p>
-              <p>To help determine who last worked on the file in case we might need some advice, we affix our initials to the end of the file name, such as <code>buffer-web-v1.0-sd</code>.</p>
-              <h4>Layers, Groups and Symbols</h4>
-              <p>Sketch is such an amazing product with fantastic layer and symbol functionality. We're super passionate about keeping the cohesion between design and engineering that we strive to keep the names of our layers and symbols the same as we would our code. In all cases, we strive to construct objects with how they might be constructed in code by using groups and symbols. For example, when using a <code>button</code> object in our Sketch files, we might name that button's group <code>.button .button--primary</code>. This way, any engineers that open our Sketch files have complete knowledge of what that object is and what they need to look for/modify when coding.</p>
+              <p>Paragraph on what we use to design at Buffer, how we construct our files, etc.</p>
             </section>
+
+            <section class="section-secondary section-secondary--last">
+              <h2 class="section-secondary-title">Building Buffer</h2>
+              <p>Using Atomic Design with our UI.</p>
+            </section>
+
           </section>
         </section>
 
