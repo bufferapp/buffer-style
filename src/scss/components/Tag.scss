@@ -18,7 +18,7 @@
 /* Base Object - Modifiers
 ------------------------------ */
 .tag--primary,
-.tag--failed {
+.tag--error {
   color: $white;
 }
 
@@ -26,6 +26,6 @@
   background-color: $curious-blue;
 }
 
-.tag--failed {
+.tag--error {
   background-color: $torch-red;
 }

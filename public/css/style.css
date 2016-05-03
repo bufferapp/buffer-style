@@ -1146,11 +1146,11 @@ p {
 /* Base Object - Modifiers
 ------------------------------ */
 .tag--primary,
-.tag--failed {
+.tag--error {
   color: #ffffff; }
 
 .tag--primary {
   background-color: #168eea; }
 
-.tag--failed {
+.tag--error {
   background-color: #ff1e1e; }

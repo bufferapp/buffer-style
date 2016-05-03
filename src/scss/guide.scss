@@ -41,6 +41,7 @@ p {
     margin-right: 0;
   }
 }
+
 .app {
   flex-direction: column;
 
@@ -117,6 +118,7 @@ p {
   border: 1px solid $geyser;
   border-radius: $border-radius-level-2;
 }
+
 .section-secondary--last {
   padding-bottom: 0;
 
@@ -153,17 +155,23 @@ p {
 
     margin-top: 0;
   }
+
   .metabar {
     position: relative;
     z-index: 0;
 
     margin: 0;
   }
+
+  .tag {
+    display: table;
+  }
 }
 
 .code-block-render--dark {
   background-color: rgba($shark, 0.9);
 }
+
 .code-block-render,
 .code-block-code {
   border-right: 1px solid $geyser;
