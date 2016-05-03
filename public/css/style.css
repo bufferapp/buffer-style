@@ -59,13 +59,16 @@
 ------------------------------------------------------------ */
 /* Animation
 ------------------------------------------------------------ */
+html {
+  font-size: 0.875em; }
+
 /* Body
 ------------------------------------------------------------ */
 body {
   font-family: "open sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  line-height: 21px;
+  line-height: 1.45;
   color: #59626a; }
 
 /* Headings
@@ -73,50 +76,37 @@ body {
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
+h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2; }
+
+h1 {
+  font-size: 3.998em;
   color: #323b43; }
-  h1 .subtitle,
-  h2 .subtitle,
-  h3 .subtitle,
-  h4 .subtitle,
-  h5 .subtitle,
-  h6 .subtitle {
+  h1 .subtitle {
     font-size: 14px;
     font-weight: 400; }
 
-h1 {
-  margin: 32px 0;
-  font-size: 32px;
-  font-weight: 100;
-  line-height: 48px; }
-
 h2 {
-  margin: 24px 0;
-  font-size: 24px;
-  line-height: 36px; }
+  font-size: 2.827em;
+  color: #323b43; }
+  h2 .subtitle {
+    font-size: 14px;
+    font-weight: 400; }
 
 h3 {
-  font-size: 16px;
-  line-height: 24px; }
-
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 16px 0;
-  font-weight: 600; }
+  font-size: 1.999em;
+  color: #323b43; }
 
 h4 {
-  font-size: 14px;
-  line-height: 21px; }
+  font-size: 1.414em;
+  color: #323b43; }
 
 h5,
 h6 {
-  font-size: 12px;
-  line-height: 21px; }
+  font-size: 14px;
+  color: #323b43; }
 
 /* Paragraphs
 -------------------------------------------------- */
@@ -124,7 +114,10 @@ code {
   color: #000000; }
 
 p {
-  margin: 16px 0; }
+  margin-bottom: 1.3em; }
+
+small {
+  font-size: 0.707em; }
 
 *, *:before, *:after {
   box-sizing: inherit; }

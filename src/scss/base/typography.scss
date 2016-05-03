@@ -1,5 +1,9 @@
 @import "variables";
 
+html {
+  font-size: 0.875em;
+}
+
 /* Body
 ------------------------------------------------------------ */
 body {
@@ -15,9 +19,18 @@ body {
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
+h4 {
+  margin: 1.414em 0 0.5em;
+
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+h1 {
+  // margin: 40px 0;
+
+  font-size: 3.998em;
+  // line-height: 58px
   color: $outer-space;
 
   .subtitle {
@@ -26,45 +39,33 @@ h6 {
   }
 }
 
-h1 {
-  margin: 32px 0;
-
-  font-size: 32px;
-  font-weight: 100;
-  line-height: 48px;
-}
-
 h2 {
-  margin: 24px 0;
+  font-size: 2.827em;
+  // line-height: 49px;
+  color: $outer-space;
 
-  font-size: 24px;
-  line-height: 36px;
+  .subtitle {
+    font-size: $font-size;
+    font-weight: $font-weight;
+  }
 }
 
 h3 {
-  font-size: 16px;
-  line-height: 24px;
-}
-
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 16px 0;
-
-  font-weight: 600;
+  font-size: 1.999em;
+  // line-height: 41px;
+  color: $outer-space;
 }
 
 h4 {
-  font-size: $font-size;
-  line-height: $line-height;
+  font-size: 1.414em;
+  // line-height: 33px;
+  color: $outer-space;
 }
 
 h5,
 h6 {
-  font-size: $font-size - 2;
-  line-height: $line-height;
+  font-size: $font-size;
+  color: $outer-space;
 }
 
 /* Paragraphs
@@ -74,5 +75,9 @@ code {
 }
 
 p {
-  margin: 16px 0;
+  margin-bottom: 1.3em;
+}
+
+small {
+  font-size: 0.707em;
 }

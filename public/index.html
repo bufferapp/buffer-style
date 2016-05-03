@@ -84,13 +84,45 @@
             </section>
 
             <section class="section-secondary">
-              <h2 class="section-secondary-title">Designing Buffer</h2>
-              <p>Paragraph on what we use to design at Buffer, how we construct our files, etc.</p>
+              <h2 class="section-secondary-title">Design at Buffer</h2>
+              <h3>What we use</h3>
+              <p>To design at Buffer, we use <a href="http://www.sketchapp.com">Sketch</a> by the amazing folks at Bohemian Coding.</p>
+              <h3>How we currently manage our Sketch style guide</h3>
+              <p>We currently have one Sketch file that holds all of our symbols that we copy and paste in to new Sketch files as we need them. We're exploring separating the different categories of UI into their own Sketch files and eventually have them as downloadable assets in each section.</p>
+              <h3>Organization within Sketch</h3>
+              <p>We try and maintain a 1:1 nomenclature with our codebase and Sketch. If a button used within code has a class name of <code>button button--secondary</code>, our layer/symbol name will have that same name. This makes it easier for anyone who isn't a Product Designer to jump in and see that link between Sketch and code.</p>
+              <!-- <h4>Pages</h4>
+              <p>Refer to Lorenz's document structure for this one!</p> -->
+            </section>
+
+            <section class="section-secondary">
+              <h2 class="section-secondary-title">Prototyping at Buffer</h2>
+              <h3>What we use</h3>
+              <p>Prototyping helps us remain lean when conducting experiments for new features, growth experiments, product enhancements, customer development, and more! Our tool of choice here is <a href="https://www.invisionapp.com">InVision</a>, another wonderful tool to add to our belt!</p>
+              <h3>How we use InVision</h3>
+              <p>We start by creating a new prototype and give it a descriptive name. From there, we invite fellow Buffer team mates who'll be working with us on this project. Using InVision Sync, we export our artboards to the "Screens" folder, which will automatically sync with our new prototype on the web. From the web app, we start adding hotspots and segues to the different artboards we imported and once finished, we're ready for feedback from the team!</p>
+              <p>With InVision's amazing commenting system, we rely heavily on this to collect our feedback and iterate on the design. Sometimes we'll jump into a LiveShare and explain our prototypes over a video call!</p>
             </section>
 
             <section class="section-secondary section-secondary--last">
               <h2 class="section-secondary-title">Building Buffer</h2>
-              <p>Using Atomic Design with our UI.</p>
+              <h3>Atomic Design Thinking</h3>
+              <p>When thinking about UI at Buffer and how we might construct it, we're inspired by Brad Frost's <a href="http://bradfrost.com/blog/post/atomic-web-design/">Atomic Design</a>.</p>
+              <p>Brad breaks down a design system into 5 distinct categories; atoms, molecules, organisms, templates, and pages.</p>
+              <h4>Atoms</h4>
+              <p>Following Brad's chemistry analogy, we think of our atoms as being singular pieces of UI such as an icon or a button with a text label. These are our smallest building blocks.</p>
+              <h4>Molecules</h4>
+              <p>A UI component consisting of more than one atom is considered a molecule. For example, a button with both an icon and a text label is a button molecule with two atoms; a text label and an icon.</p>
+              <h4>Organisms</h4>
+              <p>A piece of UI consiting of multiple molecules is considered an organism. An example organism is a post. Posts are comprised of many molecules and atoms and together form a complex piece of UI.</p>
+              <h4>Templates</h4>
+              <p>Templates occur When a group of organisms are stitched together. For example, the queue in Content &rarr; Queue would be categorized as a template as it isn't a complete page by itself but forms part of the entire Queue page.</p>
+              <h4>Pages</h4>
+              <p>Pages are a collection of templates that form that specific page.</p>
+              <h3>HTML &amp; Sass</h3>
+              <p>Each UI component has been tested in Chrome and Safari. In the example block, you can see an actual render of the markup and CSS and then its markup immediately after. The intention here is to help our Engineers copy and paste the markup into React components and the Sass into the connected Less file.</p>
+              <h3>React</h3>
+              <p>Over time, we'd love to replace the rendered HTML and Sass with the actual React component.</p>
             </section>
 
           </section>
