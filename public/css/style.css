@@ -254,6 +254,29 @@ small {
   .button--warning i.bi {
     color: #ff1e1e; }
 
+
+    .button--sketch {
+      color: #ffffff;
+      background-color: #FFB70B; }
+      .button--sketch:active {
+        background-color: #E0A009 !important;
+        border-color: transparent !important; }
+        .button--sketch:active.button--inactive {
+          color: #ff1e1e !important;
+          background-color: #ffffff !important;
+          border-color: #ff1e1e !important; }
+      .button--sketch:hover {
+        color: #ffffff;
+        background-color: #F5AE0A; }
+        .button--sketch:hover.button--inactive {
+          color: #ff1e1e;
+          background-color: #E6A825;
+          border-color: #ff1e1e; }
+        .button--sketch:hover i.bi {
+          color: #ffffff; }
+      .button--sketch i.bi {
+        color: #ff1e1e; }
+
 /* Base Objects
 ------------------------------------------------------------ */
 .button .bi {
