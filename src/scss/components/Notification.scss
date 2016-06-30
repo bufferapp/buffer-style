@@ -26,14 +26,6 @@
 
 .notification a .bi {
   color: $white;
-
-  &:hover {
-    color: rgba($white, 0.8);
-  }
-
-  &:active {
-    color: rgba($white, 0.5) !important;
-  }
 }
 
 .notification i {
@@ -45,55 +37,31 @@
 /* Base Object - Modifiers
 ------------------------------------------------------------ */
 .notification--warning {
-  color: $limed-spruce;
+  color: $outer-space;
 
   background-color: rgba($saffron, 0.2);
 }
 
 .notification--warning a .bi {
   color: $saffron;
-
-  &:hover {
-    color: rgba($saffron, 0.8);
-  }
-
-  &:active {
-    color: rgba($saffron, 0.5) !important;
-  }
 }
 
 .notification--error {
-  color: $limed-spruce;
+  color: $outer-space;
 
   background-color: rgba($torch-red, 0.2);
 }
 
 .notification--error a .bi {
   color: $torch-red;
-
-  &:hover {
-    color: rgba($torch-red, 0.8);
-  }
-
-  &:active {
-    color: rgba($torch-red, 0.5) !important;
-  }
 }
 
 .notification--success {
-  color: $limed-spruce;
+  color: $outer-space;
 
   background-color: rgba($shamrock, 0.2);
 }
 
 .notification--success a .bi {
   color: $shamrock;
-
-  &:hover {
-    color: rgba($shamrock, 0.8);
-  }
-
-  &:active {
-    color: rgba($shamrock, 0.5) !important;
-  }
 }

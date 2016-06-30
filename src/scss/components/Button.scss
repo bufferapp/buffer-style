@@ -105,10 +105,10 @@
   border-color: $geyser;
 
   &:active {
-    color: $limed-spruce !important;
+    color: $outer-space !important;
 
-    background-color: rgba($limed-spruce, 0.1) !important;
-    border-color: $hit-gray !important;
+    background-color: rgba($outer-space, 0.1) !important;
+    border-color: $outer-space !important;
 
     &.button--inactive {
       color: $nevada !important;
@@ -119,10 +119,10 @@
   }
 
   &:hover {
-    color: $limed-spruce;
+    color: $outer-space;
 
     background-color: transparent;
-    border-color: $hit-gray;
+    border-color: $outer-space;
 
     &.button--inactive {
       color: $nevada;
@@ -140,8 +140,10 @@
   border-color: $torch-red;
 
   &:active {
-    background-color: $thunderbird !important;
-    border-color: transparent !important;
+    color: $torch-red !important;
+
+    background-color: rgba($torch-red, 0.1) !important;
+    // border-color: transparent !important;
 
     &.button--inactive {
       color: $torch-red !important;
@@ -152,9 +154,9 @@
   }
 
   &:hover {
-    color: $white;
+    color: $torch-red !important;
 
-    background-color: $torch-red;
+    background-color: $white;
 
     &.button--inactive {
       color: $torch-red;

@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    
+
     box-sizing: border-box;
 }
 
@@ -25,11 +25,8 @@ $tory-blue: mix($curious-blue, $black, 70%);
 ------------------------------ */
 $shark: #2a2e32;
 $outer-space: #323b43;
-$limed-spruce: #343e47;
 $shuttle-gray: #59626a;
 $nevada: #666c72;
-$manatee: #989da1;
-$hit-gray: #abb3ba;
 $geyser: #ced7df;
 $aqua-haze: #f4f7f9;
 $alabaster: #f8f8f8;
@@ -39,14 +36,9 @@ $alabaster: #f8f8f8;
 $shamrock: #2fd566;
 $saffron: #f1cb3a;
 $torch-red: #ff1e1e;
-$thunderbird: #b31515;
-$alizarin-crimson: #e61b1b;
-
-
 
 /* Brands Palette
 ------------------------------------------------------------ */
-
 $appdotnet: #4a484c;
 $facebook: #3b5998;
 $linkedin: #007bb6;
@@ -56,23 +48,19 @@ $pinterest: #bd081c;
 
 /* Font
 ------------------------------------------------------------ */
-
 $font-family: 'open sans', sans-serif;
 $font-size: 14px;
 $font-weight: 400;
-// $line-height: $font-size * 1.5;
 $line-height: 1.45;
 
 /* Border Radii
 ------------------------------------------------------------ */
-
 $border-radius-level-1: 4px;
 $border-radius-level-2: 2px;
 $border-radius-level-3: 1px;
 
 /* Box Shadows
 ------------------------------------------------------------ */
-
 $box-shadow-level-1: 0 1px 2px rgba($black, 0.5);
 
 /* Animation
