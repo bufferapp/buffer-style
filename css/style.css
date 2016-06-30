@@ -215,17 +215,17 @@ small {
   background-color: transparent;
   border-color: #ced7df; }
   .button--tertiary:active {
-    color: #343e47 !important;
-    background-color: rgba(52, 62, 71, 0.1) !important;
-    border-color: #abb3ba !important; }
+    color: #323b43 !important;
+    background-color: rgba(50, 59, 67, 0.1) !important;
+    border-color: #323b43 !important; }
     .button--tertiary:active.button--inactive {
       color: #666c72 !important;
       background-color: transparent !important;
       border-color: #ced7df !important; }
   .button--tertiary:hover {
-    color: #343e47;
+    color: #323b43;
     background-color: transparent;
-    border-color: #abb3ba; }
+    border-color: #323b43; }
     .button--tertiary:hover.button--inactive {
       color: #666c72;
       background-color: transparent;
@@ -236,15 +236,15 @@ small {
   background-color: #ffffff;
   border-color: #ff1e1e; }
   .button--warning:active {
-    background-color: #b31515 !important;
-    border-color: transparent !important; }
+    color: #ff1e1e !important;
+    background-color: rgba(255, 30, 30, 0.1) !important; }
     .button--warning:active.button--inactive {
       color: #ff1e1e !important;
       background-color: #ffffff !important;
       border-color: #ff1e1e !important; }
   .button--warning:hover {
-    color: #ffffff;
-    background-color: #ff1e1e; }
+    color: #ff1e1e !important;
+    background-color: #ffffff; }
     .button--warning:hover.button--inactive {
       color: #ff1e1e;
       background-color: #ffffff;
@@ -340,7 +340,7 @@ small {
   height: 32px;
   font-family: "open sans", sans-serif;
   font-size: 14px;
-  color: #343e47;
+  color: #323b43;
   border: 1px solid #ced7df;
   border-radius: 2px;
   outline: none;
@@ -348,15 +348,15 @@ small {
   .input:focus {
     border-color: #168eea; }
   .input::-webkit-input-placeholder {
-    color: #989da1; }
+    color: #ced7df; }
   .input:-moz-placeholder {
     /* Firefox 18- */
-    color: #989da1; }
+    color: #ced7df; }
   .input::-moz-placeholder {
     /* Firefox 19+ */
-    color: #989da1; }
+    color: #ced7df; }
   .input:-ms-input-placeholder {
-    color: #989da1; }
+    color: #ced7df; }
 
 /* Base Objects
 ------------------------------------------------------------ */
@@ -364,7 +364,7 @@ small {
   display: block;
   margin-bottom: 10px;
   font-size: 12px;
-  color: #343e47; }
+  color: #323b43; }
 
 .input-with-icon-left,
 .input-with-icon-right {
@@ -663,9 +663,9 @@ small {
   position: absolute;
   top: -25px;
   right: -10px;
-  color: #343e47; }
+  color: #666c72; }
   .modal-content .modal-exit:hover {
-    color: #0f63a4; }
+    color: #323b43; }
 
 .modal-content .modal-exit .bi {
   margin-right: 0; }
@@ -754,7 +754,7 @@ small {
   margin-left: -10px;
   padding-right: 10px;
   padding-left: 10px;
-  color: #343e47;
+  color: #323b43;
   box-shadow: inset 0 -2px #168eea; }
 
 .navbar-menu-item--last {
@@ -807,10 +807,6 @@ small {
 
 .notification a .bi {
   color: #ffffff; }
-  .notification a .bi:hover {
-    color: rgba(255, 255, 255, 0.8); }
-  .notification a .bi:active {
-    color: rgba(255, 255, 255, 0.5) !important; }
 
 .notification i {
   flex-grow: 0;
@@ -819,37 +815,25 @@ small {
 /* Base Object - Modifiers
 ------------------------------------------------------------ */
 .notification--warning {
-  color: #343e47;
+  color: #323b43;
   background-color: rgba(241, 203, 58, 0.2); }
 
 .notification--warning a .bi {
   color: #f1cb3a; }
-  .notification--warning a .bi:hover {
-    color: rgba(241, 203, 58, 0.8); }
-  .notification--warning a .bi:active {
-    color: rgba(241, 203, 58, 0.5) !important; }
 
 .notification--error {
-  color: #343e47;
+  color: #323b43;
   background-color: rgba(255, 30, 30, 0.2); }
 
 .notification--error a .bi {
   color: #ff1e1e; }
-  .notification--error a .bi:hover {
-    color: rgba(255, 30, 30, 0.8); }
-  .notification--error a .bi:active {
-    color: rgba(255, 30, 30, 0.5) !important; }
 
 .notification--success {
-  color: #343e47;
+  color: #323b43;
   background-color: rgba(47, 213, 102, 0.2); }
 
 .notification--success a .bi {
   color: #2fd566; }
-  .notification--success a .bi:hover {
-    color: rgba(47, 213, 102, 0.8); }
-  .notification--success a .bi:active {
-    color: rgba(47, 213, 102, 0.5) !important; }
 
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
