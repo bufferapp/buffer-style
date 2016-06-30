@@ -9,7 +9,7 @@
 
   font-family: $font-family;
   font-size: $font-size;
-  color: $limed-spruce;
+  color: $outer-space;
 
   border: 1px solid $geyser;
   border-radius: $border-radius-level-2;
@@ -22,19 +22,19 @@
   }
 
   &::-webkit-input-placeholder {
-    color: $manatee;
+    color: $geyser;
   }
 
   &:-moz-placeholder { /* Firefox 18- */
-    color: $manatee;
+    color: $geyser;
   }
 
   &::-moz-placeholder {  /* Firefox 19+ */
-    color: $manatee;
+    color: $geyser;
   }
 
   &:-ms-input-placeholder {
-    color: $manatee;
+    color: $geyser;
   }
 }
 
@@ -45,7 +45,7 @@
   margin-bottom: 10px;
 
   font-size: 12px;
-  color: $limed-spruce;
+  color: $outer-space;
 }
 
 .input-with-icon-left,
