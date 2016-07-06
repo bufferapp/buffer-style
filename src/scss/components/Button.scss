@@ -3,18 +3,16 @@
 /* Base Object
 ------------------------------------------------------------ */
 .button {
-  padding: 0 24px;
-  height: 32px;
+  padding: 5px 20px;
 
   font-family: $font-family;
   font-size: $font-size;
   font-weight: 400;
-  line-height: 32px;
   color: $white;
 
   background-color: $curious-blue;
   border: 1px solid transparent;
-  border-radius: 16px;
+  border-radius: 100px;
 
   cursor: pointer;
   transition: background-color $transition-animation-time $transition-animation-type;
@@ -143,7 +141,6 @@
     color: $torch-red !important;
 
     background-color: rgba($torch-red, 0.1) !important;
-    // border-color: transparent !important;
 
     &.button--inactive {
       color: $torch-red !important;
