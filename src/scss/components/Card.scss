@@ -3,7 +3,7 @@
 /* Base Object
 ------------------------------------------------------------ */
 .card {
-  padding: 30px 20px;
+  padding: 20px;
 
   background-color: $white;
   border: 1px solid $geyser;
@@ -22,4 +22,101 @@
 
 .card--no-border {
   border: 0;
+}
+
+/* Base Objects
+------------------------------------------------------------ */
+.card-with-color {
+  vertical-align: top;
+
+  display: inline-block;
+  padding: 0;
+  width: 25%;
+}
+
+.card-with-color-color {
+  border-radius: 3px 3px 0 0;
+
+  p {
+    margin: 0;
+    padding: 40px 20px;
+
+    font-weight: 100;
+    font-size: 28px;
+    text-align: center;
+
+    span {
+      font-size: 14px;
+    }
+  }
+}
+
+.card-with-color-color--blue-1,
+.card-with-color-color--blue-2,
+.card-with-color-color--blue-3,
+.card-with-color-color--gray-1,
+.card-with-color-color--gray-2,
+.card-with-color-color--gray-3,
+.card-with-color-color--green,
+.card-with-color-color--red {
+  color: $white;
+}
+
+.card-with-color-color--blue-1 {
+  background-color: $curious-blue;
+}
+
+.card-with-color-color--blue-2 {
+  background-color: $denim;
+}
+
+.card-with-color-color--blue-3 {
+  background-color: $tory-blue;
+}
+
+.card-with-color-color--gray-1 {
+  background-color: $outer-space;
+}
+
+.card-with-color-color--gray-2 {
+  background-color: $shuttle-gray;
+}
+
+.card-with-color-color--gray-3 {
+  background-color: $nevada;
+}
+
+.card-with-color-color--gray-4 {
+  background-color: $geyser;
+}
+
+.card-with-color-color--gray-5 {
+  background-color: $aqua-haze;
+}
+
+.card-with-color-color--gray-6 {
+  background-color: $alabaster;
+}
+
+.card-with-color-color--green {
+  background-color: $shamrock;
+}
+
+.card-with-color-color--yellow {
+  background-color: $saffron;
+}
+
+.card-with-color-color--red {
+  background-color: $torch-red;
+}
+
+.card-with-item-content {
+  padding: 0 20px;
+
+  ul {
+    margin-right: 0;
+    margin-left: 0;
+
+    list-style: none;
+  }
 }

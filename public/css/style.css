@@ -289,7 +289,7 @@ small {
 /* Base Object
 ------------------------------------------------------------ */
 .card {
-  padding: 30px 20px;
+  padding: 20px;
   background-color: #ffffff;
   border: 1px solid #ced7df;
   border-radius: 4px; }
@@ -304,6 +304,78 @@ small {
 
 .card--no-border {
   border: 0; }
+
+/* Base Objects
+------------------------------------------------------------ */
+.card-with-color {
+  vertical-align: top;
+  display: inline-block;
+  padding: 0;
+  width: 25%; }
+
+.card-with-color-color {
+  border-radius: 3px 3px 0 0; }
+  .card-with-color-color p {
+    margin: 0;
+    padding: 40px 20px;
+    font-weight: 100;
+    font-size: 28px;
+    text-align: center; }
+    .card-with-color-color p span {
+      font-size: 14px; }
+
+.card-with-color-color--blue-1,
+.card-with-color-color--blue-2,
+.card-with-color-color--blue-3,
+.card-with-color-color--gray-1,
+.card-with-color-color--gray-2,
+.card-with-color-color--gray-3,
+.card-with-color-color--green,
+.card-with-color-color--red {
+  color: #ffffff; }
+
+.card-with-color-color--blue-1 {
+  background-color: #168eea; }
+
+.card-with-color-color--blue-2 {
+  background-color: #137ac9; }
+
+.card-with-color-color--blue-3 {
+  background-color: #0f63a4; }
+
+.card-with-color-color--gray-1 {
+  background-color: #323b43; }
+
+.card-with-color-color--gray-2 {
+  background-color: #59626a; }
+
+.card-with-color-color--gray-3 {
+  background-color: #666c72; }
+
+.card-with-color-color--gray-4 {
+  background-color: #ced7df; }
+
+.card-with-color-color--gray-5 {
+  background-color: #f4f7f9; }
+
+.card-with-color-color--gray-6 {
+  background-color: #f8f8f8; }
+
+.card-with-color-color--green {
+  background-color: #2fd566; }
+
+.card-with-color-color--yellow {
+  background-color: #f1cb3a; }
+
+.card-with-color-color--red {
+  background-color: #ff1e1e; }
+
+.card-with-item-content {
+  padding: 0 20px; }
+  .card-with-item-content ul {
+    margin-right: 0;
+    margin-left: 0;
+    list-style: none; }
 
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
