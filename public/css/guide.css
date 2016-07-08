@@ -42,11 +42,7 @@ body {
 
 ol,
 ul {
-  margin: 20px 20px 20px 22px; }
-  ol li,
-  ul li {
-    margin-top: 10px;
-    margin-bottom: 10px; }
+  margin: 20px; }
 
 p .bi {
   margin-right: 0; }
@@ -72,8 +68,8 @@ p .bi {
 
 .sidebar-style-guide-list a {
   display: block;
-  height: 32px;
-  line-height: 32px;
+  height: 30px;
+  line-height: 30px;
   border-bottom: 1px solid #f4f7f9; }
 
 .content {
@@ -82,8 +78,8 @@ p .bi {
   margin-left: 256px; }
 
 .section {
+  padding-bottom: 50px;
   margin: 0 30px 50px 30px;
-  padding-bottom: 64px;
   border-bottom: 1px solid #f4f7f9; }
 
 .section--last {
@@ -95,13 +91,12 @@ p .bi {
   margin-top: 0; }
 
 .section-secondary {
-  margin-bottom: 20px;
   padding: 20px 0;
   border-bottom: 1px solid #f4f7f9; }
 
 .section-secondary-rendered {
-  margin-bottom: 20px;
   padding: 20px;
+  margin-bottom: 20px;
   background-color: #f4f7f9;
   border: 1px solid #ced7df;
   border-radius: 2px; }
@@ -147,7 +142,7 @@ p .bi {
   border-left: 1px solid #ced7df; }
 
 .code-block-code {
-  padding: 10px 20px;
+  padding: 20px;
   background-color: #f4f7f9;
   border-radius: 0 0 2px 2px;
   overflow: hidden; }
