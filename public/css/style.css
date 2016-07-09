@@ -60,7 +60,7 @@
 /* Animation
 ------------------------------------------------------------ */
 html {
-  font-size: 0.875em; }
+  font-size: 14px; }
 
 /* Body
 ------------------------------------------------------------ */
@@ -68,7 +68,7 @@ body {
   font-family: "open sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.45;
+  line-height: 1.5;
   color: #59626a; }
 
 /* Headings
@@ -76,37 +76,35 @@ body {
 h1,
 h2,
 h3,
-h4 {
-  margin: 1.414em 0 0.5em;
-  font-weight: inherit;
-  line-height: 1.2; }
+h4,
+h5,
+h6 {
+  margin: 30px 0;
+  color: #323b43; }
+
+h1 .subtitle,
+h2 .subtitle {
+  color: #59626a;
+  font-size: 14px;
+  font-weight: 400; }
 
 h1 {
-  font-size: 3.998em;
-  color: #323b43; }
-  h1 .subtitle {
-    font-size: 14px;
-    font-weight: 400; }
+  font-size: 28px;
+  font-weight: 100; }
 
 h2 {
-  font-size: 2.827em;
-  color: #323b43; }
-  h2 .subtitle {
-    font-size: 14px;
-    font-weight: 400; }
+  font-size: 22px;
+  font-weight: 400; }
 
 h3 {
-  font-size: 1.999em;
-  color: #323b43; }
+  font-size: 20px;
+  font-weight: 400; }
 
-h4 {
-  font-size: 1.414em;
-  color: #323b43; }
-
+h4,
 h5,
 h6 {
   font-size: 14px;
-  color: #323b43; }
+  font-weight: 600; }
 
 /* Paragraphs
 -------------------------------------------------- */

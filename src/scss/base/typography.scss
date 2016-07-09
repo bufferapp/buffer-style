@@ -1,7 +1,7 @@
 @import "variables";
 
 html {
-  font-size: 0.875em;
+  font-size: $font-size;
 }
 
 /* Body
@@ -19,53 +19,43 @@ body {
 h1,
 h2,
 h3,
-h4 {
-  margin: 1.414em 0 0.5em;
+h4,
+h5,
+h6 {
+  margin: 30px 0;
 
-  font-weight: inherit;
-  line-height: 1.2;
+  color: $outer-space;
+}
+
+h1,
+h2 {
+  .subtitle {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    color: $shuttle-gray;
+  }
 }
 
 h1 {
-  // margin: 40px 0;
-
-  font-size: 3.998em;
-  // line-height: 58px
-  color: $outer-space;
-
-  .subtitle {
-    font-size: $font-size;
-    font-weight: $font-weight;
-  }
+  font-size: 28px;
+  font-weight: 100;
 }
 
 h2 {
-  font-size: 2.827em;
-  // line-height: 49px;
-  color: $outer-space;
-
-  .subtitle {
-    font-size: $font-size;
-    font-weight: $font-weight;
-  }
+  font-size: 22px;
+  font-weight: 400;
 }
 
 h3 {
-  font-size: 1.999em;
-  // line-height: 41px;
-  color: $outer-space;
+  font-size: 20px;
+  font-weight: 400;
 }
 
-h4 {
-  font-size: 1.414em;
-  // line-height: 33px;
-  color: $outer-space;
-}
-
+h4,
 h5,
 h6 {
   font-size: $font-size;
-  color: $outer-space;
+  font-weight: 600;
 }
 
 /* Paragraphs
