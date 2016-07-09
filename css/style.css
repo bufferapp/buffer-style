@@ -152,16 +152,13 @@ small {
 /* Base Object
 ------------------------------------------------------------ */
 .button {
-  padding: 0 24px;
-  height: 32px;
+  padding: 5px 20px;
   font-family: "open sans", sans-serif;
   font-size: 14px;
-  font-weight: 400;
-  line-height: 32px;
   color: #ffffff;
   background-color: #168eea;
   border: 1px solid transparent;
-  border-radius: 16px;
+  border-radius: 100px;
   cursor: pointer;
   transition: background-color 0.1s linear; }
   .button:active {
@@ -231,6 +228,23 @@ small {
       background-color: transparent;
       border-color: #ced7df; }
 
+.button--borderless {
+  color: #168eea;
+  background-color: transparent;
+  border: 0; }
+  .button--borderless:hover {
+    color: #137ac9;
+    background-color: transparent; }
+    .button--borderless:hover.button--inactive {
+      color: #168eea;
+      background-color: transparent; }
+  .button--borderless:active {
+    color: #137ac9;
+    background-color: transparent !important; }
+    .button--borderless:active.button--inactive {
+      color: #168eea;
+      background-color: transparent !important; }
+
 .button--warning {
   color: #ff1e1e;
   background-color: #ffffff;
@@ -253,6 +267,10 @@ small {
       color: #ffffff; }
   .button--warning i.bi {
     color: #ff1e1e; }
+
+.button--small {
+  padding: 2px 10px;
+  font-size: 11px; }
 
 /* Base Objects
 ------------------------------------------------------------ */
