@@ -68,7 +68,7 @@ body {
   font-family: "open sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 21px;
   color: #59626a; }
 
 /* Headings
@@ -79,14 +79,14 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 30px 0;
+  margin: 30px 0 10px 0;
   color: #323b43; }
 
 h1 .subtitle,
 h2 .subtitle {
-  color: #59626a;
   font-size: 14px;
-  font-weight: 400; }
+  font-weight: 400;
+  color: #59626a; }
 
 h1 {
   font-size: 28px;
@@ -112,10 +112,10 @@ code {
   color: #000000; }
 
 p {
-  margin-bottom: 1.3em; }
+  margin-bottom: 20px; }
 
 small {
-  font-size: 0.707em; }
+  font-size: 11px; }
 
 *, *:before, *:after {
   box-sizing: inherit; }
@@ -731,7 +731,7 @@ small {
   bottom: 0;
   left: 0;
   z-index: 2;
-  background-color: rgba(42, 46, 50, 0.9);
+  background-color: rgba(50, 59, 67, 0.9);
   opacity: 0;
   pointer-events: none; }
   .modal:target {
@@ -1094,7 +1094,7 @@ small {
   position: fixed;
   z-index: 1;
   display: flex;
-  margin-top: 96px;
+  margin-top: 92px;
   width: 250px;
   min-height: 100vh;
   order: -1; }
@@ -1102,7 +1102,7 @@ small {
 /* Style Guide
 ------------------------------------------------------------ */
 .sidebar .card {
-  margin-left: 20px; }
+  margin-left: 30px; }
 
 /* App
 ------------------------------------------------------------ */
