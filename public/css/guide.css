@@ -37,7 +37,7 @@ body {
   font-family: "open sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 21px;
   background-color: #ffffff; }
 
 ol,
@@ -57,7 +57,10 @@ p .bi {
   display: flex; }
 
 .sidebar-style-guide-list {
-  margin: -20px -20px -20px 0;
+  margin-top: 0;
+  margin-right: -20px;
+  margin-bottom: 0;
+  margin-left: 0;
   list-style: none; }
 
 .sidebar-style-guide-list li {
@@ -74,25 +77,17 @@ p .bi {
 
 .content {
   flex: 1;
-  margin-top: 96px;
-  margin-left: 256px; }
-
-.section {
-  padding-bottom: 50px;
-  margin: 0 30px 50px 30px;
-  border-bottom: 1px solid #f4f7f9; }
+  margin-top: 92px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  margin-left: 280px; }
 
 .section--last {
   margin-bottom: 0;
   border-bottom: 0; }
 
-.section-title,
-.section-secondary-title {
+.page-title {
   margin-top: 0; }
-
-.section-secondary {
-  padding: 20px 0;
-  border-bottom: 1px solid #f4f7f9; }
 
 .section-secondary-rendered {
   padding: 20px;
@@ -106,7 +101,10 @@ p .bi {
   border-bottom: 0; }
 
 .code-block {
-  margin: 30px 0; }
+  margin-bottom: 30px; }
+
+.code-block--last {
+  margin-bottom: 0; }
 
 .code-block-title {
   padding: 10px 20px;
@@ -133,7 +131,7 @@ p .bi {
     display: table; }
 
 .code-block-render--dark {
-  background-color: rgba(42, 46, 50, 0.9); }
+  background-color: rgba(50, 59, 67, 0.9); }
 
 .code-block-render,
 .code-block-code {
