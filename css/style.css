@@ -68,7 +68,7 @@ body {
   font-family: "open sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  line-height: 21px;
+  line-height: 1.5;
   color: #59626a; }
 
 /* Headings
@@ -89,22 +89,20 @@ h2 .subtitle {
   color: #59626a; }
 
 h1 {
-  font-size: 28px;
-  font-weight: 100; }
+  font-size: 36px; }
 
 h2 {
-  font-size: 22px;
-  font-weight: 400; }
+  font-size: 32px; }
 
 h3 {
-  font-size: 20px;
-  font-weight: 400; }
+  font-size: 24px; }
 
-h4,
+h4 {
+  font-size: 20px; }
+
 h5,
 h6 {
-  font-size: 14px;
-  font-weight: 600; }
+  font-size: 16px; }
 
 /* Paragraphs
 -------------------------------------------------- */
@@ -112,10 +110,14 @@ code {
   color: #000000; }
 
 p {
-  margin-bottom: 20px; }
+  margin-bottom: 16px; }
 
 small {
   font-size: 11px; }
+
+li {
+  margin-top: 8px;
+  margin-bottom: 8px; }
 
 *, *:before, *:after {
   box-sizing: inherit; }
@@ -305,16 +307,13 @@ small {
 /* Base Object
 ------------------------------------------------------------ */
 .card {
-  padding: 20px;
+  padding: 16px;
   background-color: #ffffff;
   border: 1px solid #ced7df;
   border-radius: 4px; }
 
 /* Base Object - Modifiers
 ------------------------------ */
-.card--last {
-  margin-bottom: 0; }
-
 .card--empty {
   border-style: dashed; }
 
@@ -812,7 +811,9 @@ small {
 ------------------------------------------------------------ */
 .navbar-title {
   flex-grow: 0;
-  margin-right: 50px; }
+  margin-right: 50px;
+  font-weight: 600;
+  color: #323b43; }
 
 .navbar-menu-left,
 .navbar-menu-right {
@@ -836,9 +837,9 @@ small {
     color: #666c72; }
 
 .navbar-menu-item-profile-picture {
-  vertical-align: middle;
   display: inline-block !important;
-  margin-right: 10px; }
+  margin-right: 10px;
+  vertical-align: middle; }
 
 /* Base Object - Modifiers
 ------------------------------------------------------------ */
