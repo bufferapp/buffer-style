@@ -3,7 +3,7 @@
 /* Base Object
 ------------------------------------------------------------ */
 .card {
-  padding: 20px;
+  padding: 16px;
 
   background-color: $white;
   border: 1px solid $geyser;
@@ -12,10 +12,6 @@
 
 /* Base Object - Modifiers
 ------------------------------ */
-.card--last {
-  margin-bottom: 0;
-}
-
 .card--empty {
   border-style: dashed;
 }

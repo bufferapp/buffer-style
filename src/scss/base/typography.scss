@@ -37,25 +37,24 @@ h2 {
 }
 
 h1 {
-  font-size: 28px;
-  font-weight: 100;
+  font-size: 36px;
 }
 
 h2 {
-  font-size: 22px;
-  font-weight: 400;
+  font-size: 32px;
 }
 
 h3 {
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 24px;
 }
 
-h4,
+h4 {
+  font-size: 20px;
+}
+
 h5,
 h6 {
-  font-size: $font-size;
-  font-weight: 600;
+  font-size: 16px;
 }
 
 /* Paragraphs
@@ -65,9 +64,14 @@ code {
 }
 
 p {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 small {
   font-size: 11px;
+}
+
+li {
+  margin-top: 8px;
+  margin-bottom: 8px;
 }

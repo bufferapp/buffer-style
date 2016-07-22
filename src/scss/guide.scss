@@ -17,7 +17,6 @@ body {
   font-family: $font-family;
   font-size: $font-size;
   font-weight: $font-weight;
-  line-height: $line-height;
 
   background-color: $white;
 }
@@ -83,29 +82,8 @@ p {
 
 .section {}
 
-.section--last {
-  margin-bottom: 0;
-
-  border-bottom: 0;
-}
-
 .page-title {
   margin-top: 0;
-}
-
-.section-secondary-rendered {
-  padding: 20px;
-  margin-bottom: 20px;
-
-  background-color: $aqua-haze;
-  border: 1px solid $geyser;
-  border-radius: $border-radius-level-2;
-}
-
-.section-secondary--last {
-  padding-bottom: 0;
-
-  border-bottom: 0;
 }
 
 .code-block {

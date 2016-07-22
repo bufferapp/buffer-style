@@ -37,7 +37,6 @@ body {
   font-family: "open sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  line-height: 21px;
   background-color: #ffffff; }
 
 ol,
@@ -82,23 +81,8 @@ p .bi {
   margin-bottom: 30px;
   margin-left: 280px; }
 
-.section--last {
-  margin-bottom: 0;
-  border-bottom: 0; }
-
 .page-title {
   margin-top: 0; }
-
-.section-secondary-rendered {
-  padding: 20px;
-  margin-bottom: 20px;
-  background-color: #f4f7f9;
-  border: 1px solid #ced7df;
-  border-radius: 2px; }
-
-.section-secondary--last {
-  padding-bottom: 0;
-  border-bottom: 0; }
 
 .code-block {
   margin-bottom: 30px; }
