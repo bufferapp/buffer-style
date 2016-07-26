@@ -12,6 +12,7 @@ body {
   font-weight: $font-weight;
   line-height: $line-height;
   color: $shuttle-gray;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* Headings
