@@ -17,12 +17,8 @@ body {
   font-family: $font-family;
   font-size: $font-size;
   font-weight: $font-weight;
-  line-height: $line-height;
 
   background-color: $white;
-}
-
-html {
 }
 
 ol,
@@ -50,7 +46,10 @@ p {
 }
 
 .sidebar-style-guide-list {
-  margin: -20px -20px -20px 0;
+  margin-top: 0;
+  margin-right: -20px;
+  margin-bottom: 0;
+  margin-left: 0;
 
   list-style: none;
 }
@@ -75,52 +74,24 @@ p {
 .content {
   flex: 1;
 
-  margin-top: 96px;
-  margin-left: 256px;
+  margin-top: 92px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  margin-left: 280px;
 }
 
-.section {
-  padding-bottom: 50px;
-  margin: 0 30px 50px 30px;
+.section {}
 
-  border-bottom: 1px solid $aqua-haze;
-}
-
-.section--last {
-  margin-bottom: 0;
-
-  border-bottom: 0;
-}
-
-.section-title,
-.section-secondary-title {
+.page-title {
   margin-top: 0;
 }
 
-.section-secondary {
-  padding: 20px 0;
-  // margin-bottom: 20px;
-
-  border-bottom: 1px solid $aqua-haze;
-}
-
-.section-secondary-rendered {
-  padding: 20px;
-  margin-bottom: 20px;
-
-  background-color: $aqua-haze;
-  border: 1px solid $geyser;
-  border-radius: $border-radius-level-2;
-}
-
-.section-secondary--last {
-  padding-bottom: 0;
-
-  border-bottom: 0;
-}
-
 .code-block {
-  margin: 30px 0;
+  margin-bottom: 30px;
+}
+
+.code-block--last {
+  margin-bottom: 0;
 }
 
 .code-block-title {
@@ -163,7 +134,7 @@ p {
 }
 
 .code-block-render--dark {
-  background-color: rgba($shark, 0.9);
+  background-color: rgba($outer-space, 0.9);
 }
 
 .code-block-render,

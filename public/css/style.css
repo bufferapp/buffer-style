@@ -60,64 +60,65 @@
 /* Animation
 ------------------------------------------------------------ */
 html {
-  font-size: 0.875em; }
+  font-size: 14px; }
 
 /* Body
 ------------------------------------------------------------ */
 body {
-  font-family: "open sans", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.45;
-  color: #59626a; }
+  line-height: 1.5;
+  color: #59626a;
+  -webkit-font-smoothing: antialiased; }
 
 /* Headings
 ------------------------------------------------------------ */
 h1,
 h2,
 h3,
-h4 {
-  margin: 1.414em 0 0.5em;
-  font-weight: inherit;
-  line-height: 1.2; }
+h4,
+h5,
+h6 {
+  margin: 30px 0 10px 0;
+  color: #323b43; }
+
+h1 .subtitle,
+h2 .subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  color: #59626a; }
 
 h1 {
-  font-size: 3.998em;
-  color: #323b43; }
-  h1 .subtitle {
-    font-size: 14px;
-    font-weight: 400; }
+  font-size: 36px; }
 
 h2 {
-  font-size: 2.827em;
-  color: #323b43; }
-  h2 .subtitle {
-    font-size: 14px;
-    font-weight: 400; }
+  font-size: 32px; }
 
 h3 {
-  font-size: 1.999em;
-  color: #323b43; }
+  font-size: 24px; }
 
 h4 {
-  font-size: 1.414em;
-  color: #323b43; }
+  font-size: 20px; }
 
 h5,
 h6 {
-  font-size: 14px;
-  color: #323b43; }
+  font-size: 16px; }
 
 /* Paragraphs
 -------------------------------------------------- */
 code {
-  color: #000000; }
+  color: #000; }
 
 p {
-  margin-bottom: 1.3em; }
+  margin-bottom: 16px; }
 
 small {
-  font-size: 0.707em; }
+  font-size: 11px; }
+
+li {
+  margin-top: 8px;
+  margin-bottom: 8px; }
 
 *, *:before, *:after {
   box-sizing: inherit; }
@@ -152,26 +153,31 @@ small {
 /* Base Object
 ------------------------------------------------------------ */
 .button {
-  padding: 5px 20px;
-  font-family: "open sans", sans-serif;
+  padding: 8px 24px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 14px;
-  color: #ffffff;
+  color: #fff;
   background-color: #168eea;
   border: 1px solid transparent;
   border-radius: 100px;
   cursor: pointer;
+  outline: none;
   transition: background-color 0.1s linear; }
   .button:active {
     background-color: #0f63a4 !important; }
-    .button:active.button--inactive {
-      background-color: #168eea !important; }
   .button:hover {
     background-color: #137ac9; }
-    .button:hover.button--inactive {
-      color: #ffffff;
-      background-color: #168eea; }
   .button [class*=" bi-"]:before, .button [class^=bi-]:before {
     vertical-align: baseline; }
+  .button.ia {
+    padding: 4px 16px; }
+
+.button:active.button--inactive {
+  background-color: #168eea !important; }
+
+.button:hover.button--inactive {
+  color: #fff;
+  background-color: #168eea; }
 
 /* Base Object - Modifiers
 ------------------------------ */
@@ -181,31 +187,33 @@ small {
     background-color: #0f63a4 !important; }
 
 .button--inactive {
-  opacity: 0.2;
+  opacity: 0.5;
   cursor: not-allowed; }
 
 .button--secondary {
   color: #168eea;
-  background-color: #ffffff;
+  background-color: #fff;
   border-color: #168eea; }
   .button--secondary:active {
     color: #168eea !important;
     background-color: rgba(22, 142, 234, 0.1) !important;
     border-color: #168eea !important; }
-    .button--secondary:active.button--inactive {
-      background-color: #ffffff !important; }
   .button--secondary:hover {
     color: #137ac9;
-    background-color: #ffffff;
+    background-color: #fff;
     border-color: #137ac9; }
-    .button--secondary:hover.button--inactive {
-      color: #168eea;
-      background-color: #ffffff;
-      border-color: #168eea; }
-    .button--secondary:hover i.bi {
-      color: #137ac9; }
   .button--secondary i.bi {
     color: #168eea; }
+
+.button--secondary:active.button--inactive {
+  background-color: #fff !important; }
+
+.button--secondary:hover.button--inactive {
+  color: #168eea;
+  background-color: #fff;
+  border-color: #168eea; }
+  .button--secondary:hover.button--inactive i.bi {
+    color: #137ac9; }
 
 .button--tertiary {
   color: #666c72;
@@ -215,18 +223,20 @@ small {
     color: #323b43 !important;
     background-color: rgba(50, 59, 67, 0.1) !important;
     border-color: #323b43 !important; }
-    .button--tertiary:active.button--inactive {
-      color: #666c72 !important;
-      background-color: transparent !important;
-      border-color: #ced7df !important; }
   .button--tertiary:hover {
     color: #323b43;
     background-color: transparent;
     border-color: #323b43; }
-    .button--tertiary:hover.button--inactive {
-      color: #666c72;
-      background-color: transparent;
-      border-color: #ced7df; }
+
+.button--tertiary:active.button--inactive {
+  color: #666c72 !important;
+  background-color: transparent !important;
+  border-color: #ced7df !important; }
+
+.button--tertiary:hover.button--inactive {
+  color: #666c72;
+  background-color: transparent;
+  border-color: #ced7df; }
 
 .button--borderless {
   color: #168eea;
@@ -235,38 +245,52 @@ small {
   .button--borderless:hover {
     color: #137ac9;
     background-color: transparent; }
-    .button--borderless:hover.button--inactive {
-      color: #168eea;
-      background-color: transparent; }
   .button--borderless:active {
     color: #137ac9;
     background-color: transparent !important; }
-    .button--borderless:active.button--inactive {
-      color: #168eea;
-      background-color: transparent !important; }
+
+.button--borderless:hover.button--inactive {
+  color: #168eea;
+  background-color: transparent; }
+
+.button--borderless:active.button--inactive {
+  color: #168eea;
+  background-color: transparent !important; }
 
 .button--warning {
   color: #ff1e1e;
-  background-color: #ffffff;
+  background-color: #fff;
   border-color: #ff1e1e; }
   .button--warning:active {
     color: #ff1e1e !important;
     background-color: rgba(255, 30, 30, 0.1) !important; }
     .button--warning:active.button--inactive {
       color: #ff1e1e !important;
-      background-color: #ffffff !important;
+      background-color: #fff !important;
       border-color: #ff1e1e !important; }
   .button--warning:hover {
     color: #ff1e1e !important;
-    background-color: #ffffff; }
+    background-color: #fff; }
     .button--warning:hover.button--inactive {
       color: #ff1e1e;
-      background-color: #ffffff;
+      background-color: #fff;
       border-color: #ff1e1e; }
     .button--warning:hover i.bi {
-      color: #ffffff; }
+      color: #fff; }
   .button--warning i.bi {
     color: #ff1e1e; }
+
+.button--warning:active.button--inactive {
+  color: #ff1e1e !important;
+  background-color: #fff !important;
+  border-color: #ff1e1e !important; }
+
+.button--warning:hover.button--inactive {
+  color: #ff1e1e;
+  background-color: #fff;
+  border-color: #ff1e1e; }
+  .button--warning:hover.button--inactive i.bi {
+    color: #fff; }
 
 .button--small {
   padding: 2px 10px;
@@ -275,7 +299,7 @@ small {
 /* Base Objects
 ------------------------------------------------------------ */
 .button .bi {
-  color: #ffffff; }
+  color: #fff; }
 
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
@@ -307,16 +331,13 @@ small {
 /* Base Object
 ------------------------------------------------------------ */
 .card {
-  padding: 20px;
-  background-color: #ffffff;
+  padding: 16px;
+  background-color: #fff;
   border: 1px solid #ced7df;
   border-radius: 4px; }
 
 /* Base Object - Modifiers
 ------------------------------ */
-.card--last {
-  margin-bottom: 0; }
-
 .card--empty {
   border-style: dashed; }
 
@@ -357,7 +378,7 @@ small {
 .card-with-color--gray-3,
 .card-with-color--green,
 .card-with-color--red {
-  color: #ffffff; }
+  color: #fff; }
 
 .card-with-color--blue-1 {
   background-color: #168eea; }
@@ -433,7 +454,7 @@ small {
   margin: 0;
   padding: 0 10px;
   height: 32px;
-  font-family: "open sans", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 14px;
   color: #323b43;
   border: 1px solid #ced7df;
@@ -532,7 +553,7 @@ small {
 .bi-circle-linkedin[class*="bi-"]::before,
 .bi-circle-pinterest[class*="bi-"]::before,
 .bi-circle-twitter[class*="bi-"]::before {
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 50%; }
 
 .bi-circle-appdotnet {
@@ -682,7 +703,7 @@ small {
 .metabar-time--pinned {
   margin-left: -12px;
   padding-left: 10px;
-  color: #ffffff;
+  color: #fff;
   background-color: #168eea;
   border-radius: 1px 0 0 1px; }
 
@@ -733,7 +754,7 @@ small {
   bottom: 0;
   left: 0;
   z-index: 2;
-  background-color: rgba(42, 46, 50, 0.9);
+  background-color: rgba(50, 59, 67, 0.9);
   opacity: 0;
   pointer-events: none; }
   .modal:target {
@@ -807,14 +828,16 @@ small {
   height: 62px;
   font-size: 14px;
   line-height: 62px;
-  background-color: #ffffff;
+  background-color: #fff;
   border-bottom: 1px solid #ced7df; }
 
 /* Base Objects
 ------------------------------------------------------------ */
 .navbar-title {
   flex-grow: 0;
-  margin-right: 50px; }
+  margin-right: 50px;
+  font-weight: 600;
+  color: #323b43; }
 
 .navbar-menu-left,
 .navbar-menu-right {
@@ -838,9 +861,9 @@ small {
     color: #666c72; }
 
 .navbar-menu-item-profile-picture {
-  vertical-align: middle;
   display: inline-block !important;
-  margin-right: 10px; }
+  margin-right: 10px;
+  vertical-align: middle; }
 
 /* Base Object - Modifiers
 ------------------------------------------------------------ */
@@ -890,7 +913,7 @@ small {
   justify-content: flex-start;
   align-content: stretch;
   padding: 20px;
-  color: #ffffff;
+  color: #fff;
   background-color: #168eea; }
 
 /* Base Objects
@@ -901,7 +924,7 @@ small {
   margin: 0 20px 0 0; }
 
 .notification a .bi {
-  color: #ffffff; }
+  color: #fff; }
 
 .notification i {
   flex-grow: 0;
@@ -978,7 +1001,7 @@ small {
   justify-content: flex-start;
   align-content: stretch;
   display: flex;
-  background-color: #ffffff;
+  background-color: #fff;
   border: 1px solid #ced7df;
   border-radius: 4px 4px 0 0; }
 
@@ -1096,7 +1119,7 @@ small {
   position: fixed;
   z-index: 1;
   display: flex;
-  margin-top: 96px;
+  margin-top: 92px;
   width: 250px;
   min-height: 100vh;
   order: -1; }
@@ -1104,7 +1127,7 @@ small {
 /* Style Guide
 ------------------------------------------------------------ */
 .sidebar .card {
-  margin-left: 20px; }
+  margin-left: 30px; }
 
 /* App
 ------------------------------------------------------------ */
@@ -1174,7 +1197,7 @@ small {
 ------------------------------ */
 .sidebar-app-connected-account--active {
   margin-right: -1px;
-  background-color: #ffffff; }
+  background-color: #fff; }
 
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
@@ -1219,7 +1242,7 @@ small {
 ------------------------------ */
 .tag--primary,
 .tag--error {
-  color: #ffffff; }
+  color: #fff; }
 
 .tag--primary {
   background-color: #168eea; }

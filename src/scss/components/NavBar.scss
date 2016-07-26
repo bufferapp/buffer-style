@@ -26,15 +26,16 @@
 ------------------------------------------------------------ */
 .navbar-title {
   flex-grow: 0;
-
   margin-right: 50px;
+
+  font-weight: 600;
+  color: $outer-space;
 }
 
 .navbar-menu-left,
 .navbar-menu-right {
   display: flex;
   flex-direction: row;
-
   margin: 0;
 
   list-style: none;
@@ -42,13 +43,11 @@
 
 .navbar-menu-left {
   justify-content: flex-start;
-
   flex-grow: 1;
 }
 
 .navbar-menu-right {
   justify-content: flex-end;
-
   flex-grow: 0;
 }
 
@@ -57,16 +56,15 @@
 
   a {
     display: inline-block;
-    
+
     color: $nevada;
   }
 }
 
 .navbar-menu-item-profile-picture {
-  vertical-align: middle;
-
   display: inline-block !important;
   margin-right: 10px;
+  vertical-align: middle;
 }
 
 /* Base Object - Modifiers

@@ -9,232 +9,156 @@
     <link rel="stylesheet" href="//s3.amazonaws.com/buffer-icons/0.5.0/buffer-icons.css" type="text/css" />
   </head>
   <body class="app">
-    <header class="navbar">
-      <nav class="navbar-title">
+    <div class="navbar">
+      <div class="navbar-title">
         <i class="bi bi-buffer"></i>Style Guide
-      </nav>
-    </header>
+      </div>
+    </div>
 
-    <section class="body">
-
-      <aside class="sidebar">
+    <div class="body">
+      <div class="sidebar">
         <div class="card card--last">
           <ul class="sidebar-style-guide-list">
-            <li>
-              <a href="index.html">Introduction</a>
-            </li>
-            <li>
-              <a href="buttons.html">Buttons</a>
-            </li>
-            <li>
-              <a href="cards.html">Cards</a>
-            </li>
-            <li>
-              <a href="colors.html">Colors</a>
-            </li>
-            <li>
-              <a href="icons.html">Icons</a>
-            </li>
-            <li>
-              <a href="inputs.html">Inputs</a>
-            </li>
-            <li>
-              <a href="metabars.html">MetaBars</a>
-            </li>
-            <li>
-              <a href="modals.html">Modals</a>
-            </li>
-            <li>
-              <a href="navbars.html">NavBars</a>
-            </li>
-            <li>
-              <a href="notifications.html">Notifications</a>
-            </li>
-            <li>
-              <a href="posts.html">Posts</a>
-            </li>
-            <li>
-              <a href="profile-pictures.html">Profile Pictures</a>
-            </li>
-            <li>
-              <a href="sidebars.html">SideBars</a>
-            </li>
-            <li>
-              <a href="tags.html">Tags</a>
-            </li>
-            <li>
-              <a class="sidebar-style-guide-list--last" href="typography.html">Typography</a>
-            </li>
+            <li><a href="index.html">Introduction</a></li>
+            <li><a href="buttons.html">Buttons</a></li>
+            <li><a href="cards.html">Cards</a></li>
+            <li><a href="colors.html">Colors</a></li>
+            <li><a href="icons.html">Icons</a></li>
+            <li><a href="inputs.html">Inputs</a></li>
+            <li><a href="metabars.html">MetaBars</a></li>
+            <li><a href="modals.html">Modals</a></li>
+            <li><a href="navbars.html">NavBars</a></li>
+            <li><a href="notifications.html">Notifications</a></li>
+            <li><a href="posts.html">Posts</a></li>
+            <li><a href="profile-pictures.html">Profile Pictures</a></li>
+            <li><a href="sidebars.html">SideBars</a></li>
+            <li><a href="tags.html">Tags</a></li>
+            <li><a class="sidebar-style-guide-list--last" href="typography.html">Typography</a></li>
           </ul>
         </div>
-      </aside>
+      </div>
 
-      <main class="content">
+      <div class="content">
+        <div class="card">
+          <div class="section">
+            <h1 class="page-title">Buttons</h1>
+            <p>Buttons can be atoms or molecules depending on their child elements. A button with a text label remains an atom while a button with a text label and an icon (or any other atom) is a molecule. A button communicates an action that will happen once a user has clicked/tapped it.</p>
+          </div>
 
-        <section class="section section--last">
-          <section class="card">
-            <section class="section-secondary">
-              <h1 class="section-secondary-title">Buttons</h1>
-              <p>Buttons can be atoms or molecules depending on their child elements. A button with a text label remains an atom while a button with a text label and an icon (or any other atom) is a molecule. A button communicates an action that will happen once a user has clicked/tapped it.</p>
-            </section>
-
-            <section class="section-secondary section-secondary--last">
-              <h2 class="section-secondary-title">Button</h2>
-              <p>Use this atom to communicate a primary action to the user.</p>
-              <div class="code-block code-block--last">
-                <div class="code-block-title">
-                  Example:
-                </div>
-                <div class="code-block-render">
-                  <button class="button">Text Label</button>
-                </div>
-                <div class="code-block-code">
-                  <pre>&lt;button class="button">Text Label&lt;/button></pre>
-                </div>
+          <div class="section">
+            <h2>Button</h2>
+            <p>Use this atom to communicate a primary action to the user.</p>
+            <div class="code-block">
+              <div class="code-block-title">
+                Example:
               </div>
-            </section>
-
-            <section class="section-secondary section-secondary--last">
-              <h2 class="section-secondary-title">Button <span class="subtitle">secondary</span></h2>
-              <p>Use this atom to communicate a secondary action to the user.</p>
-              <div class="code-block code-block--last">
-                <div class="code-block-title">
-                  Example:
-                </div>
-                <div class="code-block-render">
-                  <button class="button button--secondary">Text Label</button>
-                </div>
-                <div class="code-block-code">
-                  <pre>&lt;button class="button button--secondary">Text Label&lt;/button></pre>
-                </div>
+              <div class="code-block-render">
+                <button class="button ia">Text Label</button>
               </div>
-            </section>
-
-            <section class="section-secondary section-secondary--last">
-              <h2 class="section-secondary-title">Button <span class="subtitle">tertiary</span></h2>
-              <p>Use this atom to communicate a tertiary action to the user.</p>
-              <div class="code-block code-block--last">
-                <div class="code-block-title">
-                  Example:
-                </div>
-                <div class="code-block-render">
-                  <button class="button button--tertiary">Text Label</button>
-                </div>
-                <div class="code-block-code">
-                  <pre>&lt;button class="button button--tertiary">Text Label&lt;/button></pre>
-                </div>
+              <div class="code-block-code">
+                <pre>&lt;button class="button ia">Text Label&lt;/button></pre>
               </div>
-            </section>
+            </div>
+          </div>
 
-            <section class="section-secondary section-secondary--last">
-              <h2 class="section-secondary-title">Button <span class="subtitle">without a border</span></h2>
-              <p>Use this atom to communicate a non-primary action to the user.</p>
-              <div class="code-block code-block--last">
-                <div class="code-block-title">
-                  Example:
-                </div>
-                <div class="code-block-render">
-                  <button class="button button--borderless">Text Label</button>
-                </div>
-                <div class="code-block-code">
-                  <pre>&lt;button class="button button--borderless">Text Label&lt;/button></pre>
-                </div>
+          <div class="section">
+            <h2>Button <span class="subtitle">secondary</span></h2>
+            <p>Use this atom to communicate a secondary action to the user.</p>
+            <div class="code-block">
+              <div class="code-block-title">
+                Example:
               </div>
-            </section>
-
-            <section class="section-secondary">
-              <h2 class="section-secondary-title">Button <span class="subtitle">warning</span></h2>
-              <p>Use this atom to communicate a destructive action to the user.</p>
-              <div class="code-block code-block--last">
-                <div class="code-block-title">
-                  Example:
-                </div>
-                <div class="code-block-render">
-                  <button class="button button--warning">Text Label</button>
-                </div>
-                <div class="code-block-code">
-                  <pre>&lt;button class="button button--warning">Text Label&lt;/button></pre>
-                </div>
+              <div class="code-block-render">
+                <button class="button ia button--secondary">Text Label</button>
               </div>
-            </section>
-
-            <section class="section-secondary section-secondary--last">
-              <h2 class="section-secondary-title">Button <span class="subtitle">small</span></h2>
-              <p>Use this atom to communicate a primary action to the user when space is limited.</p>
-              <div class="code-block code-block--last">
-                <div class="code-block-title">
-                  Example:
-                </div>
-                <div class="code-block-render">
-                  <button class="button button--small">Text Label</button><br /><br /><br />
-                  <button class="button button--secondary button--small">Text Label</button><br /><br /><br />
-                  <button class="button button--tertiary button--small">Text Label</button><br /><br /><br />
-                  <button class="button button--borderless button--small">Text Label</button><br /><br /><br />
-                  <button class="button button--warning button--small">Text Label</button>
-                </div>
-                <div class="code-block-code">
-                  <pre>&lt;button class="button button--small">Text Label&lt;/button>
-
-&lt;button class="button button--secondary button--small">Text Label&lt;/button>
-
-&lt;button class="button button--tertiary button--small">Text Label&lt;/button>
-
-&lt;button class="button button--borderless button--small">Text Label&lt;/button>
-
-&lt;button class="button button--warning button--small">Text Label&lt;/button></pre>
-                </div>
+              <div class="code-block-code">
+                <pre>&lt;button class="button ia button--secondary">Text Label&lt;/button></pre>
               </div>
-            </section>
+            </div>
+          </div>
 
-            <section class="section-secondary section-secondary--last">
-              <h2 class="section-secondary-title">Button <span class="subtitle">inactive</span></h2>
-              <p>Use this atom to communicate a currently locked action to the user.</p>
-              <div class="code-block code-block--last">
-                <div class="code-block-title">
-                  Example:
-                </div>
-                <div class="code-block-render">
-                  <button class="button button--inactive">Text Label</button><br /><br /><br />
-                  <button class="button button--secondary button--inactive">Text Label</button><br /><br /><br />
-                  <button class="button button--tertiary button--inactive">Text Label</button><br /><br /><br />
-                  <button class="button button--borderless button--inactive">Text Label</button><br /><br /><br />
-                  <button class="button button--warning button--inactive">Text Label</button><br /><br /><br />
-                  <button class="button button--small button--inactive">Text Label</button><br /><br /><br />
-                  <button class="button button--small button--secondary button--inactive">Text Label</button><br /><br /><br />
-                  <button class="button button--small button--tertiary button--inactive">Text Label</button><br /><br /><br />
-                  <button class="button button--small button--borderless button--inactive">Text Label</button><br /><br /><br />
-                  <button class="button button--small button--warning button--inactive">Text Label</button>
-                </div>
-                <div class="code-block-code">
-                  <pre>&lt;button class="button button--inactive">Text Label&lt;/button>
-
-&lt;button class="button button--secondary button--inactive">Text Label&lt;/button>
-
-&lt;button class="button button--tertiary button--inactive">Text Label&lt;/button>
-
-&lt;button class="button button--borderless button--inactive">Text Label&lt;/button>
-
-&lt;button class="button button--warning button--inactive">Text Label&lt;/button>
-
-&lt;button class="button button--small button--inactive">Text Label&lt;/button>
-
-&lt;button class="button button--small button--secondary button--inactive">Text Label&lt;/button>
-
-&lt;button class="button button--small button--tertiary button--inactive">Text Label&lt;/button>
-
-&lt;button class="button button--small button--borderless button--inactive">Text Label&lt;/button>
-
-&lt;button class="button button--small button--warning button--inactive">Text Label&lt;/button></pre>
-                </div>
+          <div class="section">
+            <h2>Button <span class="subtitle">tertiary</span></h2>
+            <p>Use this atom to communicate a tertiary action to the user.</p>
+            <div class="code-block">
+              <div class="code-block-title">
+                Example:
               </div>
-            </section>
+              <div class="code-block-render">
+                <button class="button ia button--tertiary">Text Label</button>
+              </div>
+              <div class="code-block-code">
+                <pre>&lt;button class="button ia button--tertiary">Text Label&lt;/button></pre>
+              </div>
+            </div>
+          </div>
 
-          </section>
-        </section>
+          <div class="section">
+            <h2>Button <span class="subtitle">without a border</span></h2>
+            <p>Use this atom to communicate a non-primary action to the user.</p>
+            <div class="code-block">
+              <div class="code-block-title">
+                Example:
+              </div>
+              <div class="code-block-render">
+                <button class="button ia button--borderless">Text Label</button>
+              </div>
+              <div class="code-block-code">
+                <pre>&lt;button class="button ia button--borderless">Text Label&lt;/button></pre>
+              </div>
+            </div>
+          </div>
 
-      </main>
+          <div class="section">
+            <h2>Button <span class="subtitle">warning</span></h2>
+            <p>Use this atom to communicate a destructive action to the user.</p>
+            <div class="code-block">
+              <div class="code-block-title">
+                Example:
+              </div>
+              <div class="code-block-render">
+                <button class="button ia button--warning">Text Label</button>
+              </div>
+              <div class="code-block-code">
+                <pre>&lt;button class="button ia button--warning">Text Label&lt;/button></pre>
+              </div>
+            </div>
+          </div>
 
-    </section>
+          <div class="section">
+            <h2>Button <span class="subtitle">small</span></h2>
+            <p>Use this atom to communicate a primary action to the user when space is limited.</p>
+            <div class="code-block">
+              <div class="code-block-title">
+                Example:
+              </div>
+              <div class="code-block-render">
+                <button class="button button--small">Text Label</button>
+              </div>
+              <div class="code-block-code">
+                <pre>&lt;button class="button button--small">Text Label&lt;/button></pre>
+              </div>
+            </div>
+          </div>
+
+          <div class="section">
+            <h2>Button <span class="subtitle">inactive</span></h2>
+            <p>Use this atom to communicate a currently locked action to the user.</p>
+            <div class="code-block code-block--last">
+              <div class="code-block-title">
+                Example:
+              </div>
+              <div class="code-block-render">
+                <button class="button ia button--inactive">Text Label</button>
+              </div>
+              <div class="code-block-code">
+                <pre>&lt;button class="button ia button--inactive">Text Label&lt;/button></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="js/bundle.js"></script>
