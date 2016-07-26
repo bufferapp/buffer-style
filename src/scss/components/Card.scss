@@ -32,28 +32,24 @@
 .card-color-swatches .card {
   margin-bottom: 20px;
   width: 32%;
-
-  &.card--last {
-    margin-bottom: 0;
-  }
 }
 
 .card-with-color {
-  margin: -20px -20px 0 -20px;
+  margin-top: -16px;
+  margin-right: -16px;
+  margin-left: -16px;
+  padding: 32px 16px;
+
+  text-align: center;
 
   border-radius: 3px 3px 0 0;
 
+  h3 {
+    margin-top: 0;
+  }
+
   p {
-    margin: 0;
-    padding: 40px 20px;
-
-    font-weight: 100;
-    font-size: 28px;
-    text-align: center;
-
-    span {
-      font-size: 14px;
-    }
+    margin-bottom: 0;
   }
 }
 
@@ -66,6 +62,10 @@
 .card-with-color--green,
 .card-with-color--red {
   color: $white;
+
+  h3 {
+    color: $white;
+  }
 }
 
 .card-with-color--blue-1 {

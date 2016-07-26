@@ -355,20 +355,18 @@ li {
 .card-color-swatches .card {
   margin-bottom: 20px;
   width: 32%; }
-  .card-color-swatches .card.card--last {
-    margin-bottom: 0; }
 
 .card-with-color {
-  margin: -20px -20px 0 -20px;
+  margin-top: -16px;
+  margin-right: -16px;
+  margin-left: -16px;
+  padding: 32px 16px;
+  text-align: center;
   border-radius: 3px 3px 0 0; }
+  .card-with-color h3 {
+    margin-top: 0; }
   .card-with-color p {
-    margin: 0;
-    padding: 40px 20px;
-    font-weight: 100;
-    font-size: 28px;
-    text-align: center; }
-    .card-with-color p span {
-      font-size: 14px; }
+    margin-bottom: 0; }
 
 .card-with-color--blue-1,
 .card-with-color--blue-2,
@@ -379,6 +377,15 @@ li {
 .card-with-color--green,
 .card-with-color--red {
   color: #fff; }
+  .card-with-color--blue-1 h3,
+  .card-with-color--blue-2 h3,
+  .card-with-color--blue-3 h3,
+  .card-with-color--gray-1 h3,
+  .card-with-color--gray-2 h3,
+  .card-with-color--gray-3 h3,
+  .card-with-color--green h3,
+  .card-with-color--red h3 {
+    color: #fff; }
 
 .card-with-color--blue-1 {
   background-color: #168eea; }
