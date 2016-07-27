@@ -794,8 +794,8 @@ li {
 
 .modal-content .modal-exit {
   position: absolute;
-  top: -25px;
-  right: -10px;
+  top: -7px;
+  right: -2px;
   color: #666c72; }
   .modal-content .modal-exit:hover {
     color: #323b43; }
