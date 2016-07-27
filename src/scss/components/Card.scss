@@ -31,9 +31,10 @@
 /* Base Objects
 ------------------------------------------------------------ */
 .card-color-swatches {
-  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  display: flex;
   padding: 0;
 }
 

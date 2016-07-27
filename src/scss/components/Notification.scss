@@ -3,11 +3,11 @@
 /* Base Object
 ------------------------------------------------------------ */
 .notification {
-  display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-content: stretch;
 
+  display: flex;
   padding: 20px;
 
   color: $white;

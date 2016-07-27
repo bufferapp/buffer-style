@@ -80,14 +80,18 @@
   flex-grow: 0;
 
   margin-left: 16px;
+
+  .tag {
+    border-radius: $border-radius-level-2;
+  }
 }
 
 .metabar-menu {
-  display: flex;
   flex-direction: row;
   justify-content: flex-end;
-
   flex-grow: 1;
+
+  display: flex;
 }
 
 .metabar-menu-item {
@@ -97,8 +101,9 @@
   padding: 0;
 
   a {
-    color: $shuttle-gray;
     display: block;
+    
+    color: $shuttle-gray;
   }
 }
 
@@ -107,10 +112,11 @@
 }
 
 .metabar-metrics {
-  display: flex;
   flex-direction: row;
   justify-content: flex-start;
   flex-grow: 1;
+
+  display: flex;
 }
 
 .metabar-metrics-item {
@@ -149,9 +155,9 @@
   margin-right: -8px;
 	width: 0;
 	height: 0;
+
 	border-top: 10px solid transparent;
 	border-bottom: 10px solid transparent;
-
 	border-left: 8px solid $curious-blue;
 }
 

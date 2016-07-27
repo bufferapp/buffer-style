@@ -5,14 +5,13 @@
 .sidebar {
   flex-direction: column;
   justify-content: flex-start;
-
   position: fixed;
   z-index: 1;
 
   display: flex;
-  margin-top: 92px;
-  width: 250px;
-  min-height: 100vh;
+  margin-top: 64px;
+  width: 256px;
+  min-height: 128vh;
 
   order: -1;
 }
@@ -20,7 +19,8 @@
 /* Style Guide
 ------------------------------------------------------------ */
 .sidebar .card {
-  margin-left: 30px;
+  margin-top: 16px;
+  margin-left: 16px;
 }
 
 /* App
@@ -33,31 +33,28 @@
 .sidebar-app-search-profiles {
   flex-grow: 0;
 
-  padding: 20px;
+  padding: 16px;
 
   border-bottom: 1px solid $geyser;
 }
 
-.sidebar-app-search-profiles input {
+.sidebar-app-search-profiles .input-with-icon-left,
+.sidebar-app-search-profiles .input-with-icon-left input {
   width: 100%;
 }
 
 .sidebar-app-accounts {
-  flex-direction: row;
-  justify-content: flex-start;
   flex-grow: 0;
 
-  display: flex;
-  padding: 20px;
-
-  border-bottom: 1px solid $geyser;
-}
-
-.sidebar-app-accounts-button {
-  flex-grow: 1;
-  align-self: center;
+  padding: 16px;
 
   text-align: center;
+
+  border-bottom: 1px solid $geyser;
+
+  .button {
+    width: 100%;
+  }
 }
 
 .sidebar-app-connected-accounts {
@@ -69,7 +66,7 @@
   justify-content: flex-start;
 
   display: flex;
-  padding: 20px;
+  padding: 16px;
 
   border-bottom: 1px solid $geyser;
 }
@@ -78,14 +75,14 @@
   flex-grow: 0;
   align-self: center;
 
-  margin-right: 20px;
+  margin-right: 16px;
 }
 
 .sidebar-app-connected-account-name {
   flex-grow: 1;
   align-self: center;
 
-  margin-right: 20px;
+  margin-right: 16px;
 
   overflow: hidden;
 }
@@ -102,14 +99,14 @@
 
 .sidebar-app-footer-list {
   position: absolute;
-  bottom: 20px;
+  bottom: 16px;
 
   list-style: none;
 }
 
 .sidebar-app-footer-list-item {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 16px;
 }
 
 /* SideBar App Objects - Modifiers

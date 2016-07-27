@@ -49,7 +49,7 @@ p .bi {
 .app {
   flex-direction: column;
   display: flex;
-  min-height: 100vh; }
+  min-height: 128vh; }
 
 .body {
   flex: 1;
@@ -57,7 +57,7 @@ p .bi {
 
 .sidebar-style-guide-list {
   margin-top: 0;
-  margin-right: -20px;
+  margin-right: -16px;
   margin-bottom: 0;
   margin-left: 0;
   list-style: none; }
@@ -70,28 +70,22 @@ p .bi {
 
 .sidebar-style-guide-list a {
   display: block;
-  height: 30px;
-  line-height: 30px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   border-bottom: 1px solid #f4f7f9; }
 
 .content {
   flex: 1;
-  margin-top: 92px;
-  margin-right: 30px;
-  margin-bottom: 30px;
-  margin-left: 280px; }
-
-.page-title {
-  margin-top: 0; }
+  margin-top: 80px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  margin-left: 272px; }
 
 .code-block {
-  margin-bottom: 30px; }
-
-.code-block--last {
-  margin-bottom: 0; }
+  margin-bottom: 32px; }
 
 .code-block-title {
-  padding: 10px 20px;
+  padding: 8px 16px;
   font-size: 12px;
   font-weight: 600;
   color: #323b43;
@@ -100,7 +94,7 @@ p .bi {
   border-radius: 2px 2px 0 0; }
 
 .code-block-render {
-  padding: 30px 20px; }
+  padding: 32px 16px; }
   .code-block-render .navbar {
     position: inherit;
     margin-bottom: 0; }
@@ -124,12 +118,9 @@ p .bi {
   border-left: 1px solid #ced7df; }
 
 .code-block-code {
-  padding: 20px;
+  padding: 16px;
   background-color: #f4f7f9;
   border-radius: 0 0 2px 2px;
   overflow: hidden; }
   .code-block-code pre {
     white-space: pre-wrap; }
-
-.pre--last {
-  margin-bottom: -20px; }
