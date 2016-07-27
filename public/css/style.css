@@ -335,6 +335,11 @@ li {
   background-color: #fff;
   border: 1px solid #ced7df;
   border-radius: 4px; }
+  .card .card {
+    border-radius: 2px; }
+
+.card .card .card {
+  border-radius: 1px; }
 
 /* Base Object - Modifiers
 ------------------------------ */
@@ -353,7 +358,7 @@ li {
   padding: 0; }
 
 .card-color-swatches .card {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   width: 32%; }
 
 .card-with-color {
@@ -362,7 +367,7 @@ li {
   margin-left: -16px;
   padding: 32px 16px;
   text-align: center;
-  border-radius: 3px 3px 0 0; }
+  border-radius: 1px 1px 0 0; }
   .card-with-color h3 {
     margin-top: 0; }
   .card-with-color p {

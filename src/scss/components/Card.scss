@@ -8,6 +8,14 @@
   background-color: $white;
   border: 1px solid $geyser;
   border-radius: $border-radius-level-1;
+
+  .card {
+    border-radius: $border-radius-level-2;
+  }
+}
+
+.card .card .card {
+  border-radius: $border-radius-level-3;
 }
 
 /* Base Object - Modifiers
@@ -30,7 +38,7 @@
 }
 
 .card-color-swatches .card {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   width: 32%;
 }
 
@@ -42,7 +50,7 @@
 
   text-align: center;
 
-  border-radius: 3px 3px 0 0;
+  border-radius: $border-radius-level-3 $border-radius-level-3 0 0;
 
   h3 {
     margin-top: 0;
