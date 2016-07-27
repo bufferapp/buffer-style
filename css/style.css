@@ -618,8 +618,8 @@ li {
   align-items: center;
   align-content: stretch;
   display: flex;
-  margin-bottom: 20px;
-  padding: 10px;
+  margin-bottom: 16px;
+  padding: 8px;
   font-size: 11px;
   font-weight: 600;
   background-color: #f4f7f9;
@@ -627,14 +627,15 @@ li {
   border-bottom: 1px solid #ced7df;
   border-left: 1px solid #ced7df;
   border-radius: 0 0 4px 4px; }
-  .metabar:hover .metabar-menu-item {
-    display: inherit; }
   .metabar ul {
     margin: 0;
     padding: 0;
     list-style: none; }
   .metabar [class*=" bi-"]:before, .metabar [class^=bi-]:before {
     vertical-align: baseline; }
+
+.metabar&:hover.metabar-menu-item {
+  display: inherit; }
 
 /* Base Object - Modifiers
 ------------------------------ */
@@ -652,21 +653,21 @@ li {
 
 .metabar-profile-picture {
   flex-grow: 0;
-  margin-left: 20px;
+  margin-left: 16px;
   border: 1px solid #ced7df;
-  border-radius: 256px; }
+  border-radius: 128px; }
 
 .metabar-user-name {
   flex-grow: 0;
-  margin-left: 10px; }
+  margin-left: 8px; }
 
 .metabar-via {
   flex-grow: 0;
-  margin-left: 20px; }
+  margin-left: 16px; }
 
 .metabar-tag {
   flex-grow: 0;
-  margin-left: 20px; }
+  margin-left: 16px; }
 
 .metabar-menu {
   display: flex;
@@ -676,13 +677,14 @@ li {
 
 .metabar-menu-item {
   display: none;
-  margin: 0 0 0 20px;
+  margin-left: 16px;
   padding: 0; }
   .metabar-menu-item a {
     color: #59626a;
     display: block; }
-    .metabar-menu-item a:hover {
-      color: #168eea; }
+
+.metabar-menu-item a:hover {
+  color: #168eea; }
 
 .metabar-metrics {
   display: flex;
@@ -693,7 +695,8 @@ li {
 .metabar-metrics-item {
   flex-grow: 1;
   margin: 0;
-  padding: 10px 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
   text-align: center;
   border-right: 1px solid #ced7df; }
 
@@ -705,7 +708,9 @@ li {
 ------------------------------ */
 .metabar-time--pinned {
   margin-left: -12px;
-  padding-left: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 8px;
   color: #fff;
   background-color: #168eea;
   border-radius: 1px 0 0 1px; }
@@ -714,9 +719,9 @@ li {
   margin-right: -8px;
   width: 0;
   height: 0;
-  border-top: 10.5px solid transparent;
-  border-bottom: 10.5px solid transparent;
-  border-left: 10px solid #168eea; }
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 8px solid #168eea; }
 
 .metabar-metrics-item--last {
   border-right: 0; }
@@ -1009,23 +1014,23 @@ li {
 
 .post-content-text {
   flex-grow: 1;
-  padding: 30px 20px; }
+  padding: 32px 16px; }
 
 .post-content-image {
   flex-grow: 0;
-  padding: 20px 20px 20px 0; }
+  padding: 16px 16px 16px 0; }
   .post-content-image img {
     display: block;
-    max-width: 200px;
-    max-height: 100px;
-    border-radius: 4px; }
+    max-width: 256px;
+    max-height: 128px;
+    border-radius: 2px; }
 
 .post-content-video {
   flex-grow: 0;
-  padding: 20px 20px 20px 0; }
+  padding: 16px 16px 16px 0; }
   .post-content-video iframe {
-    max-width: 200px;
-    max-height: 100px; }
+    max-width: 256px;
+    max-height: 128px; }
 
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
