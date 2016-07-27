@@ -153,19 +153,21 @@ li {
 /* Base Object
 ------------------------------------------------------------ */
 .button {
+  display: inline-block;
   padding: 8px 24px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 14px;
   color: #fff;
   background-color: #168eea;
   border: 1px solid transparent;
-  border-radius: 100px;
+  border-radius: 256px;
   cursor: pointer;
   outline: none;
   transition: background-color 0.1s linear; }
   .button:active {
     background-color: #0f63a4 !important; }
   .button:hover {
+    color: #fff;
     background-color: #137ac9; }
   .button [class*=" bi-"]:before, .button [class^=bi-]:before {
     vertical-align: baseline; }
@@ -335,6 +337,11 @@ li {
   background-color: #fff;
   border: 1px solid #ced7df;
   border-radius: 4px; }
+  .card .card {
+    border-radius: 2px; }
+
+.card .card .card {
+  border-radius: 1px; }
 
 /* Base Object - Modifiers
 ------------------------------ */
@@ -347,28 +354,26 @@ li {
 /* Base Objects
 ------------------------------------------------------------ */
 .card-color-swatches {
-  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  display: flex;
   padding: 0; }
 
 .card-color-swatches .card {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   width: 32%; }
-  .card-color-swatches .card.card--last {
-    margin-bottom: 0; }
 
 .card-with-color {
-  margin: -20px -20px 0 -20px;
-  border-radius: 3px 3px 0 0; }
+  margin-top: -16px;
+  margin-right: -16px;
+  margin-left: -16px;
+  padding: 32px 16px;
+  text-align: center;
+  border-radius: 1px 1px 0 0; }
+  .card-with-color h3 {
+    margin-top: 0; }
   .card-with-color p {
-    margin: 0;
-    padding: 40px 20px;
-    font-weight: 100;
-    font-size: 28px;
-    text-align: center; }
-    .card-with-color p span {
-      font-size: 14px; }
+    margin-bottom: 0; }
 
 .card-with-color--blue-1,
 .card-with-color--blue-2,
@@ -379,6 +384,15 @@ li {
 .card-with-color--green,
 .card-with-color--red {
   color: #fff; }
+  .card-with-color--blue-1 h3,
+  .card-with-color--blue-2 h3,
+  .card-with-color--blue-3 h3,
+  .card-with-color--gray-1 h3,
+  .card-with-color--gray-2 h3,
+  .card-with-color--gray-3 h3,
+  .card-with-color--green h3,
+  .card-with-color--red h3 {
+    color: #fff; }
 
 .card-with-color--blue-1 {
   background-color: #168eea; }
@@ -452,8 +466,7 @@ li {
 ------------------------------------------------------------ */
 .input {
   margin: 0;
-  padding: 0 10px;
-  height: 32px;
+  padding: 8px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 14px;
   color: #323b43;
@@ -465,11 +478,9 @@ li {
     border-color: #168eea; }
   .input::-webkit-input-placeholder {
     color: #ced7df; }
-  .input:-moz-placeholder {
-    /* Firefox 18- */
-    color: #ced7df; }
   .input::-moz-placeholder {
-    /* Firefox 19+ */
+    color: #ced7df; }
+  .input:-moz-placeholder {
     color: #ced7df; }
   .input:-ms-input-placeholder {
     color: #ced7df; }
@@ -478,7 +489,7 @@ li {
 ------------------------------------------------------------ */
 .input-label {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   font-size: 12px;
   color: #323b43; }
 
@@ -486,26 +497,25 @@ li {
 .input-with-icon-right {
   position: relative;
   display: inline-block; }
-
-.input-with-icon-left .bi,
-.input-with-icon-right .bi {
-  position: absolute;
-  top: 5px;
-  margin: 0; }
+  .input-with-icon-left .bi,
+  .input-with-icon-right .bi {
+    position: absolute;
+    top: 6px;
+    margin: 0; }
 
 .input-with-icon-left .bi {
-  left: 10px; }
+  left: 8px; }
 
 .input-with-icon-right .bi {
-  right: 10px; }
+  right: 8px; }
 
 /* Base Object - Modifiers
 ------------------------------ */
 .input--icon-left {
-  padding-left: 34px; }
+  padding-left: 30px; }
 
 .input--icon-right {
-  padding-right: 34px; }
+  padding-right: 30px; }
 
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
@@ -615,8 +625,8 @@ li {
   align-items: center;
   align-content: stretch;
   display: flex;
-  margin-bottom: 20px;
-  padding: 10px;
+  margin-bottom: 16px;
+  padding: 8px;
   font-size: 11px;
   font-weight: 600;
   background-color: #f4f7f9;
@@ -624,14 +634,15 @@ li {
   border-bottom: 1px solid #ced7df;
   border-left: 1px solid #ced7df;
   border-radius: 0 0 4px 4px; }
-  .metabar:hover .metabar-menu-item {
-    display: inherit; }
   .metabar ul {
     margin: 0;
     padding: 0;
     list-style: none; }
   .metabar [class*=" bi-"]:before, .metabar [class^=bi-]:before {
     vertical-align: baseline; }
+
+.metabar&:hover.metabar-menu-item {
+  display: inherit; }
 
 /* Base Object - Modifiers
 ------------------------------ */
@@ -649,48 +660,52 @@ li {
 
 .metabar-profile-picture {
   flex-grow: 0;
-  margin-left: 20px;
+  margin-left: 16px;
   border: 1px solid #ced7df;
-  border-radius: 256px; }
+  border-radius: 128px; }
 
 .metabar-user-name {
   flex-grow: 0;
-  margin-left: 10px; }
+  margin-left: 8px; }
 
 .metabar-via {
   flex-grow: 0;
-  margin-left: 20px; }
+  margin-left: 16px; }
 
 .metabar-tag {
   flex-grow: 0;
-  margin-left: 20px; }
+  margin-left: 16px; }
+  .metabar-tag .tag {
+    border-radius: 2px; }
 
 .metabar-menu {
-  display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  flex-grow: 1; }
+  flex-grow: 1;
+  display: flex; }
 
 .metabar-menu-item {
   display: none;
-  margin: 0 0 0 20px;
+  margin-left: 16px;
   padding: 0; }
   .metabar-menu-item a {
-    color: #59626a;
-    display: block; }
-    .metabar-menu-item a:hover {
-      color: #168eea; }
+    display: block;
+    color: #59626a; }
+
+.metabar-menu-item a:hover {
+  color: #168eea; }
 
 .metabar-metrics {
-  display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  flex-grow: 1; }
+  flex-grow: 1;
+  display: flex; }
 
 .metabar-metrics-item {
   flex-grow: 1;
   margin: 0;
-  padding: 10px 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
   text-align: center;
   border-right: 1px solid #ced7df; }
 
@@ -702,7 +717,9 @@ li {
 ------------------------------ */
 .metabar-time--pinned {
   margin-left: -12px;
-  padding-left: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 8px;
   color: #fff;
   background-color: #168eea;
   border-radius: 1px 0 0 1px; }
@@ -711,9 +728,9 @@ li {
   margin-right: -8px;
   width: 0;
   height: 0;
-  border-top: 10.5px solid transparent;
-  border-bottom: 10.5px solid transparent;
-  border-left: 10px solid #168eea; }
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 8px solid #168eea; }
 
 .metabar-metrics-item--last {
   border-right: 0; }
@@ -825,9 +842,8 @@ li {
   margin-bottom: 32px;
   padding: 0 16px;
   width: 100%;
-  height: 62px;
-  font-size: 14px;
-  line-height: 62px;
+  height: 64px;
+  line-height: 64px;
   background-color: #fff;
   border-bottom: 1px solid #ced7df; }
 
@@ -841,8 +857,8 @@ li {
 
 .navbar-menu-left,
 .navbar-menu-right {
-  display: flex;
   flex-direction: row;
+  display: flex;
   margin: 0;
   list-style: none; }
 
@@ -855,23 +871,23 @@ li {
   flex-grow: 0; }
 
 .navbar-menu-item {
-  margin: 0 50px 0 0; }
+  margin: 0 32px 0 0; }
   .navbar-menu-item a {
     display: inline-block;
     color: #666c72; }
 
 .navbar-menu-item-profile-picture {
+  vertical-align: middle;
   display: inline-block !important;
-  margin-right: 10px;
-  vertical-align: middle; }
+  margin-right: 8px; }
 
 /* Base Object - Modifiers
 ------------------------------------------------------------ */
 .navbar-menu-item a.navbar-menu-item--active {
-  margin-right: -10px;
-  margin-left: -10px;
-  padding-right: 10px;
-  padding-left: 10px;
+  margin-right: -8px;
+  margin-left: -8px;
+  padding-right: 8px;
+  padding-left: 8px;
   color: #323b43;
   box-shadow: inset 0 -2px #168eea; }
 
@@ -908,10 +924,10 @@ li {
 /* Base Object
 ------------------------------------------------------------ */
 .notification {
-  display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-content: stretch;
+  display: flex;
   padding: 20px;
   color: #fff;
   background-color: #168eea; }
@@ -1007,23 +1023,23 @@ li {
 
 .post-content-text {
   flex-grow: 1;
-  padding: 30px 20px; }
+  padding: 32px 16px; }
 
 .post-content-image {
   flex-grow: 0;
-  padding: 20px 20px 20px 0; }
+  padding: 16px 16px 16px 0; }
   .post-content-image img {
     display: block;
-    max-width: 200px;
-    max-height: 100px;
-    border-radius: 4px; }
+    max-width: 256px;
+    max-height: 128px;
+    border-radius: 2px; }
 
 .post-content-video {
   flex-grow: 0;
-  padding: 20px 20px 20px 0; }
+  padding: 16px 16px 16px 0; }
   .post-content-video iframe {
-    max-width: 200px;
-    max-height: 100px; }
+    max-width: 256px;
+    max-height: 128px; }
 
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
@@ -1119,15 +1135,16 @@ li {
   position: fixed;
   z-index: 1;
   display: flex;
-  margin-top: 92px;
-  width: 250px;
-  min-height: 100vh;
+  margin-top: 64px;
+  width: 256px;
+  min-height: 128vh;
   order: -1; }
 
 /* Style Guide
 ------------------------------------------------------------ */
 .sidebar .card {
-  margin-left: 30px; }
+  margin-top: 16px;
+  margin-left: 16px; }
 
 /* App
 ------------------------------------------------------------ */
@@ -1137,24 +1154,20 @@ li {
 
 .sidebar-app-search-profiles {
   flex-grow: 0;
-  padding: 20px;
+  padding: 16px;
   border-bottom: 1px solid #ced7df; }
 
-.sidebar-app-search-profiles input {
+.sidebar-app-search-profiles .input-with-icon-left,
+.sidebar-app-search-profiles .input-with-icon-left input {
   width: 100%; }
 
 .sidebar-app-accounts {
-  flex-direction: row;
-  justify-content: flex-start;
   flex-grow: 0;
-  display: flex;
-  padding: 20px;
+  padding: 16px;
+  text-align: center;
   border-bottom: 1px solid #ced7df; }
-
-.sidebar-app-accounts-button {
-  flex-grow: 1;
-  align-self: center;
-  text-align: center; }
+  .sidebar-app-accounts .button {
+    width: 100%; }
 
 .sidebar-app-connected-accounts {
   flex-grow: 0; }
@@ -1163,18 +1176,18 @@ li {
   flex-direction: row;
   justify-content: flex-start;
   display: flex;
-  padding: 20px;
+  padding: 16px;
   border-bottom: 1px solid #ced7df; }
 
 .sidebar-app-connected-account-profile-picture {
   flex-grow: 0;
   align-self: center;
-  margin-right: 20px; }
+  margin-right: 16px; }
 
 .sidebar-app-connected-account-name {
   flex-grow: 1;
   align-self: center;
-  margin-right: 20px;
+  margin-right: 16px;
   overflow: hidden; }
 
 .sidebar-app-connected-account-tag {
@@ -1186,12 +1199,12 @@ li {
 
 .sidebar-app-footer-list {
   position: absolute;
-  bottom: 20px;
+  bottom: 16px;
   list-style: none; }
 
 .sidebar-app-footer-list-item {
   display: inline-block;
-  margin-right: 20px; }
+  margin-right: 16px; }
 
 /* SideBar App Objects - Modifiers
 ------------------------------ */
@@ -1229,14 +1242,12 @@ li {
 /* Base Object
 ------------------------------------------------------------ */
 .tag {
-  padding: 0 10px;
-  height: 18px;
+  padding: 2px 8px;
   font-size: 11px;
   font-weight: 600;
-  line-height: 18px;
   color: #59626a;
   background-color: #ced7df;
-  border-radius: 2px; }
+  border-radius: 4px; }
 
 /* Base Object - Modifiers
 ------------------------------ */

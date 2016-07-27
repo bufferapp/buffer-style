@@ -9,8 +9,8 @@
   align-content: stretch;
 
   display: flex;
-  margin-bottom: 20px;
-  padding: 10px;
+  margin-bottom: 16px;
+  padding: 8px;
 
   font-size: 11px;
   font-weight: 600;
@@ -20,12 +20,6 @@
   border-bottom: 1px solid $geyser;
   border-left: 1px solid $geyser;
   border-radius: 0 0 $border-radius-level-1 $border-radius-level-1;
-
-  &:hover {
-    .metabar-menu-item {
-      display: inherit;
-    }
-  }
 
   ul {
     margin: 0;
@@ -37,6 +31,10 @@
   [class*=" bi-"]:before, [class^=bi-]:before {
     vertical-align: baseline;
   }
+}
+
+.metabar&:hover.metabar-menu-item {
+  display: inherit;
 }
 
 /* Base Object - Modifiers
@@ -60,66 +58,73 @@
 .metabar-profile-picture {
   flex-grow: 0;
 
-  margin-left: 20px;
+  margin-left: 16px;
 
   border: 1px solid $geyser;
-  border-radius: 256px;
+  border-radius: 128px;
 }
 
 .metabar-user-name {
   flex-grow: 0;
 
-  margin-left: 10px;
+  margin-left: 8px;
 }
 
 .metabar-via {
   flex-grow: 0;
 
-  margin-left: 20px;
+  margin-left: 16px;
 }
 
 .metabar-tag {
   flex-grow: 0;
 
-  margin-left: 20px;
+  margin-left: 16px;
+
+  .tag {
+    border-radius: $border-radius-level-2;
+  }
 }
 
 .metabar-menu {
-  display: flex;
   flex-direction: row;
   justify-content: flex-end;
-
   flex-grow: 1;
+
+  display: flex;
 }
 
 .metabar-menu-item {
   display: none;
 
-  margin: 0 0 0 20px;
+  margin-left: 16px;
   padding: 0;
 
   a {
-    color: $shuttle-gray;
     display: block;
-
-    &:hover {
-      color: $curious-blue;
-    }
+    
+    color: $shuttle-gray;
   }
 }
 
+.metabar-menu-item a:hover {
+  color: $curious-blue;
+}
+
 .metabar-metrics {
-  display: flex;
   flex-direction: row;
   justify-content: flex-start;
   flex-grow: 1;
+
+  display: flex;
 }
 
 .metabar-metrics-item {
   flex-grow: 1;
 
   margin: 0;
-  padding: 10px 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
 
   text-align: center;
 
@@ -136,7 +141,9 @@
 ------------------------------ */
 .metabar-time--pinned {
   margin-left: -12px;
-  padding-left: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 8px;
 
   color: $white;
 
@@ -148,10 +155,10 @@
   margin-right: -8px;
 	width: 0;
 	height: 0;
-	border-top: 10.5px solid transparent;
-	border-bottom: 10.5px solid transparent;
 
-	border-left: 10px solid $curious-blue;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-left: 8px solid $curious-blue;
 }
 
 .metabar-metrics-item--last {

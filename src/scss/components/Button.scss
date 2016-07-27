@@ -3,6 +3,7 @@
 /* Base Object
 ------------------------------------------------------------ */
 .button {
+  display: inline-block;
   padding: 8px 24px;
 
   font-family: $font-family;
@@ -11,7 +12,7 @@
 
   background-color: $curious-blue;
   border: 1px solid transparent;
-  border-radius: 100px;
+  border-radius: 256px;
 
   cursor: pointer;
   outline: none;
@@ -22,6 +23,8 @@
   }
 
   &:hover {
+    color: $white;
+
     background-color: $denim;
   }
 

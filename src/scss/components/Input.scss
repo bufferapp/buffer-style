@@ -4,8 +4,7 @@
 ------------------------------------------------------------ */
 .input {
   margin: 0;
-  padding: 0 10px;
-  height: 32px;
+  padding: 8px;
 
   font-family: $font-family;
   font-size: $font-size;
@@ -25,11 +24,11 @@
     color: $geyser;
   }
 
-  &:-moz-placeholder { /* Firefox 18- */
+  &::-moz-placeholder {
     color: $geyser;
   }
 
-  &::-moz-placeholder {  /* Firefox 19+ */
+  &:-moz-placeholder {
     color: $geyser;
   }
 
@@ -38,11 +37,12 @@
   }
 }
 
+
 /* Base Objects
 ------------------------------------------------------------ */
 .input-label {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 
   font-size: 12px;
   color: $outer-space;
@@ -53,30 +53,30 @@
   position: relative;
 
   display: inline-block;
+
+  .bi {
+    position: absolute;
+    top: 6px;
+
+    margin: 0;
+  }
 }
 
-.input-with-icon-left .bi,
-.input-with-icon-right .bi {
-  position: absolute;
-  top: 5px;
-
-  margin: 0;
-}
 
 .input-with-icon-left .bi {
-  left: 10px;
+  left: 8px;
 }
 
 .input-with-icon-right .bi {
-  right: 10px;
+  right: 8px;
 }
 
 /* Base Object - Modifiers
 ------------------------------ */
 .input--icon-left {
-  padding-left: 34px;
+  padding-left: 30px;
 }
 
 .input--icon-right {
-  padding-right: 34px;
+  padding-right: 30px;
 }
