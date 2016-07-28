@@ -1,0 +1,22 @@
+@import "../base/variables";
+
+/* Base Objects
+------------------------------------------------------------ */
+.block-title-text-hero {
+  text-align: center;
+
+  h1 {
+    margin-bottom: 8px;
+  }
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-size: 24px;
+    font-weight: 300;
+  }
+}
+
+/* Base Object - Modifiers
+------------------------------ */
