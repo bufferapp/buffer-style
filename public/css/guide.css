@@ -34,7 +34,7 @@ a {
     outline: none; }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
   background-color: #fff; }

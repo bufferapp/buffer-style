@@ -2,10 +2,18 @@
 
 /* Base Objects
 ------------------------------------------------------------ */
-.block-title-text-hero {
+.block-hero {
+  padding-top: 96px;
+  padding-bottom: 96px;
+
   text-align: center;
 
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+
   h1 {
+    margin-top: 0;
     margin-bottom: 8px;
   }
 
@@ -20,3 +28,6 @@
 
 /* Base Object - Modifiers
 ------------------------------ */
+.block-hero--pricing {
+  background-image: url(/img/block-title-text--hero@2x.png);
+}
