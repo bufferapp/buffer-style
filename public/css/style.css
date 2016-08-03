@@ -65,7 +65,7 @@ html {
 /* Body
 ------------------------------------------------------------ */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
@@ -80,11 +80,12 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 30px 0 10px 0;
+  margin: 32px 0 8px 0;
   color: #323b43; }
 
 h1 .subtitle,
-h2 .subtitle {
+h2 .subtitle,
+h3 .subtitle {
   font-size: 14px;
   font-weight: 400;
   color: #59626a; }
@@ -155,7 +156,7 @@ li {
 .button {
   display: inline-block;
   padding: 8px 24px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   color: #fff;
   background-color: #168eea;
@@ -467,7 +468,7 @@ li {
 .input {
   margin: 0;
   padding: 8px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   color: #323b43;
   border: 1px solid #ced7df;
@@ -1211,6 +1212,56 @@ li {
 .sidebar-app-connected-account--active {
   margin-right: -1px;
   background-color: #fff; }
+
+/* Global Reset // We'll pull in a common reset here, perhaps in another file!
+------------------------------------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* Shades Palette
+------------------------------------------------------------ */
+/* Primary Palette
+------------------------------------------------------------ */
+/* Blues
+------------------------------ */
+/* Grays
+------------------------------ */
+/* Others
+------------------------------ */
+/* Brands Palette
+------------------------------------------------------------ */
+/* Font
+------------------------------------------------------------ */
+/* Border Radii
+------------------------------------------------------------ */
+/* Box Shadows
+------------------------------------------------------------ */
+/* Animation
+------------------------------------------------------------ */
+/* Base Objects
+------------------------------------------------------------ */
+.block-hero {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  text-align: center;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .block-hero h1 {
+    margin-top: 0;
+    margin-bottom: 8px; }
+  .block-hero h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: 300; }
+
+/* Base Object - Modifiers
+------------------------------ */
+.block-hero--pricing {
+  background-image: url(/img/block-title-text--hero@2x.png); }
 
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
