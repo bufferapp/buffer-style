@@ -20,7 +20,7 @@
 
 /* Tablet
 ------------------------------ */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .col-md-1 {
     width: 8.33%;
   }
@@ -76,7 +76,13 @@
 
 /* Desktop
 ------------------------------ */
-@media (min-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 959px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
   .col-lg-1 {
     width: 8.33%;
   }
