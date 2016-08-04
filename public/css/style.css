@@ -463,6 +463,126 @@ li {
 ------------------------------------------------------------ */
 /* Animation
 ------------------------------------------------------------ */
+/* Global Overrides
+------------------------------------------------------------ */
+* {
+  box-sizing: border-box; }
+
+/* Base Objects
+------------------------------------------------------------ */
+/* Mobile
+------------------------------ */
+[class*="col-"] {
+  float: left;
+  padding: 16px;
+  width: 100%;
+  border: 1px solid #ced7df; }
+
+/* Tablet
+------------------------------ */
+@media screen and (max-width: 768px) {
+  .col-md-1 {
+    width: 8.33%; }
+  .col-md-2 {
+    width: 16.66%; }
+  .col-md-3 {
+    width: 25%; }
+  .col-md-4 {
+    width: 33.33%; }
+  .col-md-5 {
+    width: 41.66%; }
+  .col-md-6 {
+    width: 50%; }
+  .col-md-7 {
+    width: 58.33%; }
+  .col-md-8 {
+    width: 66.66%; }
+  .col-md-9 {
+    width: 75%; }
+  .col-md-10 {
+    width: 83.33%; }
+  .col-md-11 {
+    width: 91.66%; }
+  .col-md-12 {
+    width: 100%; }
+  .container {
+    width: 100%; } }
+
+/* Desktop
+------------------------------ */
+@media screen and (min-width: 769px) and (max-width: 959px) {
+  .container {
+    width: 100%; } }
+
+@media screen and (min-width: 1024px) {
+  .col-lg-1 {
+    width: 8.33%; }
+  .col-lg-2 {
+    width: 16.66%; }
+  .col-lg-3 {
+    width: 25%; }
+  .col-lg-4 {
+    width: 33.33%; }
+  .col-lg-5 {
+    width: 41.66%; }
+  .col-lg-6 {
+    width: 50%; }
+  .col-lg-7 {
+    width: 58.33%; }
+  .col-lg-8 {
+    width: 66.66%; }
+  .col-lg-9 {
+    width: 75%; }
+  .col-lg-10 {
+    width: 83.33%; }
+  .col-lg-11 {
+    width: 91.66%; }
+  .col-lg-12 {
+    width: 100%; }
+  .container {
+    width: 960px; } }
+
+.row::after {
+  display: block;
+  clear: both;
+  content: ""; }
+
+.container {
+  margin: 0 auto; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+/* Base Object - Modifiers
+------------------------------ */
+/* Global Reset // We'll pull in a common reset here, perhaps in another file!
+------------------------------------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* Shades Palette
+------------------------------------------------------------ */
+/* Primary Palette
+------------------------------------------------------------ */
+/* Blues
+------------------------------ */
+/* Grays
+------------------------------ */
+/* Others
+------------------------------ */
+/* Brands Palette
+------------------------------------------------------------ */
+/* Font
+------------------------------------------------------------ */
+/* Border Radii
+------------------------------------------------------------ */
+/* Box Shadows
+------------------------------------------------------------ */
+/* Animation
+------------------------------------------------------------ */
 /* Base Object
 ------------------------------------------------------------ */
 .input {
