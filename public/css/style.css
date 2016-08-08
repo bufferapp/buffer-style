@@ -668,7 +668,7 @@ img {
 /* Base Object
 ------------------------------------------------------------ */
 .bi {
-  margin-right: 10px; }
+  margin-right: 8px; }
 
 .bi-circle-appdotnet[class*="bi-"],
 .bi-circle-facebook[class*="bi-"],
@@ -1378,10 +1378,62 @@ img {
     font-size: 24px;
     font-weight: 300; }
 
+.block,
+.block-pricing {
+  padding-top: 64px;
+  padding-bottom: 64px; }
+
+.block-pricing {
+  background-color: #f4f7f9; }
+
 /* Base Object - Modifiers
 ------------------------------ */
 .block-hero--pricing {
   background-image: url(/img/block-title-text--hero@2x.png); }
+
+/*  Separate out into an extended Sass file. Individual static pages should have
+    their own specific Sass file and not be part of this file. This is for
+    global StaticPage construction only.
+*/
+.pricing-card-header,
+.pricing-card-price {
+  text-align: center; }
+
+.pricing-card-header {
+  margin-top: -17px;
+  margin-right: -17px;
+  margin-left: -17px;
+  padding: 17px;
+  color: #fff;
+  text-align: center;
+  background-color: #168eea;
+  border-radius: 2px 2px 0 0; }
+
+.pricing-card-header-title {
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 600; }
+
+.pricing-card-header-desc {
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.75); }
+
+.pricing-card-price {
+  padding-top: 48px;
+  padding-bottom: 32px; }
+  .pricing-card-price h3 {
+    margin-top: 0; }
+
+.pricing-card-features-icon {
+  padding-right: 16px; }
+
+.pricing-card-features-icon i {
+  margin-right: 0; }
+
+.pricing-card-features-description {
+  padding-bottom: 16px; }
+  .pricing-card-features-description:nth-last-child() {
+    padding-bottom: 0; }
 
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */

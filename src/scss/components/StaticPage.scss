@@ -26,8 +26,78 @@
   }
 }
 
+.block,
+.block-pricing {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.block-pricing {
+  background-color: $aqua-haze;
+}
+
 /* Base Object - Modifiers
 ------------------------------ */
 .block-hero--pricing {
   background-image: url(/img/block-title-text--hero@2x.png);
+}
+
+
+/*  Separate out into an extended Sass file. Individual static pages should have
+    their own specific Sass file and not be part of this file. This is for
+    global StaticPage construction only.
+*/
+.pricing-card-header,
+.pricing-card-price {
+  text-align: center;
+}
+
+.pricing-card-header {
+  margin-top: -17px;
+  margin-right: -17px;
+  margin-left: -17px;
+  padding: 17px;
+
+  color: $white;
+  text-align: center;
+
+  background-color: $curious-blue;
+  border-radius: $border-radius-level-2 $border-radius-level-2 0 0;
+}
+
+.pricing-card-header-title {
+  margin-bottom: 8px;
+
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.pricing-card-header-desc {
+  margin-bottom: 0;
+
+  color: rgba($white, .75);
+}
+
+.pricing-card-price {
+  padding-top: 48px;
+  padding-bottom: 32px;
+
+  h3 {
+    margin-top: 0;
+  }
+}
+
+.pricing-card-features-icon {
+  padding-right: 16px;
+}
+
+.pricing-card-features-icon i {
+  margin-right: 0;
+}
+
+.pricing-card-features-description {
+  padding-bottom: 16px;
+  &:nth-last-child() {
+    padding-bottom: 0;
+  }
 }

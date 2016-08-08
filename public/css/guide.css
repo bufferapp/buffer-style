@@ -124,3 +124,9 @@ p .bi {
   overflow: hidden; }
   .code-block-code pre {
     white-space: pre-wrap; }
+
+[class*="block-hero"] [class*="col-"] {
+  border: 0; }
+
+[class*="block-pricing"] [class*="col-"] {
+  border: 0; }
