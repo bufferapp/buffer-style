@@ -1386,6 +1386,9 @@ img {
 .block-pricing {
   background-color: #f4f7f9; }
 
+.block-content {
+  text-align: center; }
+
 /* Base Object - Modifiers
 ------------------------------ */
 .block-hero--pricing {
@@ -1441,6 +1444,12 @@ img {
   margin-top: 48px;
   margin-bottom: 32px;
   text-align: center; }
+
+.pricing-features-tree {
+  margin-top: 24px; }
+
+.pricing-features-tree-description {
+  margin-bottom: 32px; }
 
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */

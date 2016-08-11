@@ -171,3 +171,9 @@ p {
     border: 0;
   }
 }
+
+[class*="block-content"] {
+  [class*="col-"] {
+    border: 0;
+  }
+}

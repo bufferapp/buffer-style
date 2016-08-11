@@ -36,6 +36,10 @@
   background-color: $aqua-haze;
 }
 
+.block-content {
+  text-align: center;
+}
+
 /* Base Object - Modifiers
 ------------------------------ */
 .block-hero--pricing {
@@ -111,4 +115,12 @@
   margin-bottom: 32px;
 
   text-align: center;
+}
+
+.pricing-features-tree {
+  margin-top: 24px;
+}
+
+.pricing-features-tree-description {
+  margin-bottom: 32px;
 }

@@ -139,3 +139,6 @@ p .bi {
 
 [class*="block-pricing"] [class*="col-"] {
   border: 0; }
+
+[class*="block-content"] [class*="col-"] {
+  border: 0; }
