@@ -1407,7 +1407,7 @@ img {
   color: #fff;
   text-align: center;
   background-color: #168eea;
-  border-radius: 2px 2px 0 0; }
+  border-radius: 4px 4px 0 0; }
 
 .pricing-card-header-title {
   margin-bottom: 8px;
@@ -1426,6 +1426,8 @@ img {
 
 .pricing-card-features-icon {
   padding-right: 16px; }
+  .pricing-card-features-icon .bi-circle-pinterest {
+    color: #59626a; }
 
 .pricing-card-features-icon i {
   margin-right: 0; }
@@ -1434,6 +1436,11 @@ img {
   padding-bottom: 16px; }
   .pricing-card-features-description:nth-last-child() {
     padding-bottom: 0; }
+
+.pricing-card-features-cta {
+  margin-top: 48px;
+  margin-bottom: 32px;
+  text-align: center; }
 
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */

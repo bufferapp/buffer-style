@@ -124,6 +124,18 @@ p {
   }
 }
 
+.code-block-render .card {
+  border-radius: $border-radius-level-1;
+}
+
+.code-block-render .card .card {
+  border-radius: $border-radius-level-2;
+}
+
+.code-block-render .card .card .card {
+  border-radius: $border-radius-level-3;
+}
+
 .code-block-render--dark {
   background-color: rgba($outer-space, 0.9);
 }

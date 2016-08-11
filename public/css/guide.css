@@ -108,6 +108,15 @@ p .bi {
   .code-block-render .tag {
     display: table; }
 
+.code-block-render .card {
+  border-radius: 4px; }
+
+.code-block-render .card .card {
+  border-radius: 2px; }
+
+.code-block-render .card .card .card {
+  border-radius: 1px; }
+
 .code-block-render--dark {
   background-color: rgba(50, 59, 67, 0.9); }
 

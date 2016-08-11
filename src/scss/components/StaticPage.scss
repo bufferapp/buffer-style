@@ -62,7 +62,7 @@
   text-align: center;
 
   background-color: $curious-blue;
-  border-radius: $border-radius-level-2 $border-radius-level-2 0 0;
+  border-radius: $border-radius-level-1 $border-radius-level-1 0 0;
 }
 
 .pricing-card-header-title {
@@ -89,6 +89,10 @@
 
 .pricing-card-features-icon {
   padding-right: 16px;
+
+  .bi-circle-pinterest {
+    color: $shuttle-gray;
+  }
 }
 
 .pricing-card-features-icon i {
@@ -100,4 +104,11 @@
   &:nth-last-child() {
     padding-bottom: 0;
   }
+}
+
+.pricing-card-features-cta {
+  margin-top: 48px;
+  margin-bottom: 32px;
+
+  text-align: center;
 }
