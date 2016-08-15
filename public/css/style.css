@@ -1362,6 +1362,17 @@ img {
 ------------------------------------------------------------ */
 /* Base Objects
 ------------------------------------------------------------ */
+.block {
+  padding-top: 64px;
+  padding-bottom: 64px; }
+  .block h1 {
+    margin-top: 0;
+    margin-bottom: 8px; }
+  .block h2 {
+    margin-top: 0;
+    font-size: 24px;
+    font-weight: 300; }
+
 .block-hero {
   padding-top: 96px;
   padding-bottom: 96px;
@@ -1369,30 +1380,33 @@ img {
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat; }
-  .block-hero h1 {
-    margin-top: 0;
-    margin-bottom: 8px; }
   .block-hero h2 {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 24px;
-    font-weight: 300; }
-
-.block,
-.block-pricing {
-  padding-top: 64px;
-  padding-bottom: 64px; }
+    margin-bottom: 0; }
 
 .block-pricing {
   background-color: #f4f7f9; }
-
-.block-content {
-  text-align: center; }
 
 /* Base Object - Modifiers
 ------------------------------ */
 .block-hero--pricing {
   background-image: url(/img/block-title-text--hero@2x.png); }
+
+.block--center {
+  text-align: center; }
+
+.block--dark {
+  color: #fff;
+  background-color: #323b43; }
+  .block--dark h1 {
+    color: white; }
+  .block--dark h2,
+  .block--dark h3,
+  .block--dark h4,
+  .block--dark h5,
+  .block--dark h6 {
+    color: rgba(255, 255, 255, 0.75); }
+  .block--dark p {
+    color: rgba(255, 255, 255, 0.5); }
 
 /*  Separate out into an extended Sass file. Individual static pages should have
     their own specific Sass file and not be part of this file. This is for
