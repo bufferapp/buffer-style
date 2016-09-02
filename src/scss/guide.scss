@@ -17,7 +17,6 @@ body {
   font-family: $font-family;
   font-size: $font-size;
   font-weight: $font-weight;
-
   background-color: $white;
 }
 
@@ -34,14 +33,12 @@ p {
 
 .app {
   flex-direction: column;
-
   display: flex;
   min-height: 128vh;
 }
 
 .body {
   flex: 1;
-
   display: flex;
 }
 
@@ -50,7 +47,6 @@ p {
   margin-right: -16px;
   margin-bottom: 0;
   margin-left: 0;
-
   list-style: none;
 }
 
@@ -66,20 +62,16 @@ p {
   display: block;
   padding-top: 8px;
   padding-bottom: 8px;
-
   border-bottom: 1px solid $aqua-haze;
 }
 
 .content {
   flex: 1;
-
   margin-top: 80px;
   margin-right: 16px;
   margin-bottom: 16px;
   margin-left: 272px;
 }
-
-.section {}
 
 .code-block {
   margin-bottom: 32px;
@@ -87,12 +79,10 @@ p {
 
 .code-block-title {
   padding: 8px 16px;
-
   font-size: 12px;
   font-weight: 600;
   color: $outer-space;
   text-transform: uppercase;
-
   background-color: $geyser;
   border-radius: $border-radius-level-2 $border-radius-level-2 0 0;
 }
@@ -102,20 +92,17 @@ p {
 
   .navbar {
     position: inherit;
-
     margin-bottom: 0;
   }
 
   .sidebar {
     position: inherit;
-
     margin-top: 0;
   }
 
   .metabar {
     position: relative;
     z-index: 0;
-
     margin: 0;
   }
 
@@ -137,10 +124,8 @@ p {
 
 .code-block-code {
   padding: 16px;
-
   background-color: $aqua-haze;
   border-radius: 0 0 $border-radius-level-2 $border-radius-level-2;
-
   overflow: hidden;
 
   pre {

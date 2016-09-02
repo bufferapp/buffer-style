@@ -1,67 +1,53 @@
 @import "../base/variables";
 
-/* Base Object
------------------------------------------------------------- */
 .notification {
   flex-direction: row;
   justify-content: flex-start;
   align-content: stretch;
-
   display: flex;
   padding: 20px;
-
   color: $white;
-
   background-color: $curious-blue;
+
+  a .bi {
+    color: $white;
+  }
+
+  i {
+    flex-grow: 0;
+    margin-right: 0;
+  }
+
+  p {
+    flex-grow: 1;
+    align-self: center;
+    margin: 0 20px 0 0;
+  }
 }
 
-/* Base Objects
------------------------------------------------------------- */
-.notification p {
-  flex-grow: 1;
-  align-self: center;
-
-  margin: 0 20px 0 0;
-}
-
-.notification a .bi {
-  color: $white;
-}
-
-.notification i {
-  flex-grow: 0;
-
-  margin-right: 0;
-}
-
-/* Base Object - Modifiers
------------------------------------------------------------- */
 .notification--warning {
   color: $outer-space;
-
   background-color: rgba($saffron, 0.2);
-}
 
-.notification--warning a .bi {
-  color: $saffron;
+  a .bi {
+    color: $saffron;
+  }
 }
 
 .notification--error {
   color: $outer-space;
-
   background-color: rgba($torch-red, 0.2);
-}
 
-.notification--error a .bi {
-  color: $torch-red;
+  a .bi {
+    color: $torch-red;
+  }
 }
 
 .notification--success {
   color: $outer-space;
-
   background-color: rgba($shamrock, 0.2);
-}
 
-.notification--success a .bi {
-  color: $shamrock;
+  a .bi {
+    color: $shamrock;
+  }
 }

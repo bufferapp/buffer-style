@@ -5,27 +5,32 @@
 .button {
   display: inline-block;
   padding: 8px 24px;
-
   font-family: $font-family;
   font-size: $font-size;
   color: $white;
-
   background-color: $curious-blue;
   border: 1px solid transparent;
   border-radius: 256px;
-
   cursor: pointer;
   outline: none;
   transition: background-color $transition-animation-time $transition-animation-type;
 
   &:active {
     background-color: $tory-blue !important;
+
+    &.button--inactive {
+      background-color: $curious-blue !important;
+    }
   }
 
   &:hover {
     color: $white;
-
     background-color: $denim;
+
+    &.button--inactive {
+      color: $white;
+      background-color: $curious-blue;
+    }
   }
 
   [class*=" bi-"]:before, [class^=bi-]:before {
@@ -37,18 +42,6 @@
   }
 }
 
-.button:active.button--inactive {
-  background-color: $curious-blue !important;
-}
-
-.button:hover.button--inactive {
-  color: $white;
-
-  background-color: $curious-blue;
-}
-
-/* Base Object - Modifiers
------------------------------- */
 .button--active {
   background-color: $tory-blue;
 
@@ -65,22 +58,33 @@
 
 .button--secondary {
   color: $curious-blue;
-
   background-color: $white;
   border-color: $curious-blue;
 
   &:active {
     color: $curious-blue !important;
-
     background-color: rgba($curious-blue, 0.1) !important;
     border-color: $curious-blue !important;
+
+    &.button--inactive {
+      background-color: $white !important;
+    }
   }
 
   &:hover {
     color: $denim;
-
     background-color: $white;
     border-color: $denim;
+
+    &.button--inactive {
+      color: $curious-blue;
+      background-color: $white;
+      border-color: $curious-blue;
+
+      i.bi {
+        color: $denim;
+      }
+    }
   }
 
   i.bi {
@@ -88,101 +92,73 @@
   }
 }
 
-.button--secondary:active.button--inactive {
-  background-color: $white !important;
-}
-
-.button--secondary:hover.button--inactive {
-  color: $curious-blue;
-
-  background-color: $white;
-  border-color: $curious-blue;
-
-  i.bi {
-    color: $denim;
-  }
-}
-
 .button--tertiary {
   color: $nevada;
-
   background-color: transparent;
   border-color: $geyser;
 
   &:active {
     color: $outer-space !important;
-
     background-color: rgba($outer-space, 0.1) !important;
     border-color: $outer-space !important;
+
+    &.button--inactive {
+      color: $nevada !important;
+      background-color: transparent !important;
+      border-color: $geyser !important;
+    }
   }
 
   &:hover {
     color: $outer-space;
-
     background-color: transparent;
     border-color: $outer-space;
+
+    &.button--inactive {
+      color: $nevada;
+      background-color: transparent;
+      border-color: $geyser;
+    }
   }
-}
-
-.button--tertiary:active.button--inactive {
-  color: $nevada !important;
-
-  background-color: transparent !important;
-  border-color: $geyser !important;
-}
-
-.button--tertiary:hover.button--inactive {
-  color: $nevada;
-
-  background-color: transparent;
-  border-color: $geyser;
 }
 
 .button--borderless {
   color: $curious-blue;
-
   background-color: transparent;
   border: 0;
 
   &:hover {
     color: $denim;
-
     background-color: transparent;
+
+    &.button--inactive {
+      color: $curious-blue;
+      background-color: transparent;
+    }
   }
 
   &:active {
     color: $denim;
-
     background-color: transparent !important;
+
+    .button--inactive {
+      color: $curious-blue;
+      background-color: transparent !important;
+    }
   }
-}
-
-.button--borderless:hover.button--inactive {
-  color: $curious-blue;
-
-  background-color: transparent;
-}
-
-.button--borderless:active.button--inactive {
-  color: $curious-blue;
-
-  background-color: transparent !important;
 }
 
 .button--warning {
   color: $torch-red;
-
   background-color: $white;
   border-color: $torch-red;
 
   &:active {
     color: $torch-red !important;
-
     background-color: rgba($torch-red, 0.1) !important;
 
     &.button--inactive {
       color: $torch-red !important;
-
       background-color: $white !important;
       border-color: $torch-red !important;
     }
@@ -190,12 +166,10 @@
 
   &:hover {
     color: $torch-red !important;
-
     background-color: $white;
 
     &.button--inactive {
       color: $torch-red;
-
       background-color: $white;
       border-color: $torch-red;
     }
@@ -210,32 +184,11 @@
   }
 }
 
-.button--warning:active.button--inactive {
-  color: $torch-red !important;
-
-  background-color: $white !important;
-  border-color: $torch-red !important;
-}
-
-.button--warning:hover.button--inactive {
-  color: $torch-red;
-
-  background-color: $white;
-  border-color: $torch-red;
-
-  i.bi {
-    color: $white;
-  }
-}
-
 .button--small {
   padding: 2px 10px;
-
   font-size: 11px;
 }
 
-/* Base Objects
------------------------------------------------------------- */
 .button .bi {
   color: $white;
 }

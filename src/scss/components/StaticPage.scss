@@ -1,7 +1,5 @@
 @import "../base/variables";
 
-/* Base Objects
------------------------------------------------------------- */
 .block-hero {
   padding-top: 96px;
   padding-bottom: 96px;
@@ -26,8 +24,6 @@
   }
 }
 
-/* Base Object - Modifiers
------------------------------- */
 .block-hero--pricing {
   background-image: url(/img/block-title-text--hero@2x.png);
 }

@@ -1,7 +1,5 @@
 @import "../base/variables";
 
-/* Base Object
------------------------------------------------------------- */
 .modal {
   position: fixed;
   top: 0;
@@ -9,9 +7,7 @@
   bottom: 0;
   left: 0;
   z-index: 2;
-
   background-color: rgba($outer-space, 0.9);
-
   opacity: 0;
   pointer-events: none;
 
@@ -19,40 +15,35 @@
     opacity: 1;
     pointer-events: auto;
   }
-}
 
-.modal .card {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  display: flex;
-  width: 960px;
-  max-height: 80%;
-
-  box-shadow: $box-shadow-level-1;
-
-  transform: translate(-50%, -50%);
+  .card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    width: 960px;
+    max-height: 80%;
+    box-shadow: $box-shadow-level-1;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .modal-content {
   position: relative;
-
   width: 100%;
-}
 
-.modal-content .modal-exit {
-  position: absolute;
-  top: -7px;
-  right: -2px;
+  .modal-exit {
+    position: absolute;
+    top: -7px;
+    right: -2px;
+    color: $nevada;
 
-  color: $nevada;
-
-  &:hover {
-    color: $outer-space;
+    &:hover {
+      color: $outer-space;
+    }
   }
-}
 
-.modal-content .modal-exit .bi {
-  margin-right: 0;
+  .bi {
+    margin-right: 0;
+  }
 }

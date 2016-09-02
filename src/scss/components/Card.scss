@@ -1,10 +1,7 @@
 @import "../base/variables";
 
-/* Base Object
------------------------------------------------------------- */
 .card {
   padding: 16px;
-
   background-color: $white;
   border: 1px solid $geyser;
   border-radius: $border-radius-level-1;
@@ -18,8 +15,6 @@
   border-radius: $border-radius-level-3;
 }
 
-/* Base Object - Modifiers
------------------------------- */
 .card--empty {
   border-style: dashed;
 }
@@ -28,12 +23,9 @@
   border: 0;
 }
 
-/* Base Objects
------------------------------------------------------------- */
 .card-color-swatches {
   justify-content: space-between;
   flex-wrap: wrap;
-
   display: flex;
   padding: 0;
 }
@@ -48,9 +40,7 @@
   margin-right: -16px;
   margin-left: -16px;
   padding: 32px 16px;
-
   text-align: center;
-
   border-radius: $border-radius-level-3 $border-radius-level-3 0 0;
 
   h3 {
@@ -129,7 +119,6 @@
   ul {
     margin-right: 0;
     margin-left: 0;
-
     list-style: none;
   }
 }
