@@ -1,33 +1,24 @@
 @import "../base/variables";
 
-/* Base Object
------------------------------------------------------------- */
 .navbar {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   position: fixed;
   z-index: 1;
-
   display: flex;
   margin-bottom: 32px;
   padding: 0 16px;
   width: 100%;
   height: 64px;
-
   line-height: 64px;
-
   background-color: $white;
   border-bottom: 1px solid $geyser;
 }
 
-/* Base Objects
------------------------------------------------------------- */
 .navbar-title {
   flex-grow: 0;
-
   margin-right: 50px;
-
   font-weight: 600;
   color: $outer-space;
 }
@@ -35,10 +26,8 @@
 .navbar-menu-left,
 .navbar-menu-right {
   flex-direction: row;
-
   display: flex;
   margin: 0;
-
   list-style: none;
 }
 
@@ -57,31 +46,25 @@
 
   a {
     display: inline-block;
-
     color: $nevada;
+
+    &.navbar-menu-item--active {
+      margin-right: -8px;
+      margin-left: -8px;
+      padding-right: 8px;
+      padding-left: 8px;
+      color: $outer-space;
+      box-shadow: inset 0 -2px $curious-blue;
+    }
   }
-}
-
-.navbar-menu-item-profile-picture {
-  vertical-align: middle;
-
-  display: inline-block !important;
-  margin-right: 8px;
-}
-
-/* Base Object - Modifiers
------------------------------------------------------------- */
-.navbar-menu-item a.navbar-menu-item--active {
-  margin-right: -8px;
-  margin-left: -8px;
-  padding-right: 8px;
-  padding-left: 8px;
-
-  color: $outer-space;
-
-  box-shadow: inset 0 -2px $curious-blue;
 }
 
 .navbar-menu-item--last {
   margin-right: 0;
+}
+
+.navbar-menu-item-profile-picture {
+  vertical-align: middle;
+  display: inline-block !important;
+  margin-right: 8px;
 }

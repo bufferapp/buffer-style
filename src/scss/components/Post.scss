@@ -1,11 +1,5 @@
 @import "../base/variables";
 
-/* Base Object
------------------------------------------------------------- */
-.post {}
-
-/* Base Objects - Modifiers
------------------------------- */
 .post--failed {
   .post-content {
     border-top: 1px solid $torch-red;
@@ -20,15 +14,11 @@
   }
 }
 
-/* Base Objects
------------------------------------------------------------- */
 .post-content {
   flex-direction: row;
   justify-content: flex-start;
   align-content: stretch;
-
   display: flex;
-
   background-color: $white;
   border: 1px solid $geyser;
   border-radius: $border-radius-level-1 $border-radius-level-1 0 0;
@@ -36,27 +26,23 @@
 
 .post-content-text {
   flex-grow: 1;
-
   padding: 32px 16px;
 }
 
 .post-content-image {
   flex-grow: 0;
-
   padding: 16px 16px 16px 0;
 
   img {
     display: block;
     max-width: 256px;
     max-height: 128px;
-
     border-radius: $border-radius-level-2;
   }
 }
 
 .post-content-video {
   flex-grow: 0;
-
   padding: 16px 16px 16px 0;
 
   iframe {

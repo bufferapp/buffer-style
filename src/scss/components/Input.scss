@@ -5,14 +5,11 @@
 .input {
   margin: 0;
   padding: 8px;
-
   font-family: $font-family;
   font-size: $font-size;
   color: $outer-space;
-
   border: 1px solid $geyser;
   border-radius: $border-radius-level-2;
-
   outline: none;
   transition: border-color $transition-animation-time $transition-animation-type;
 
@@ -37,13 +34,17 @@
   }
 }
 
+.input--icon-left {
+  padding-left: 30px;
+}
 
-/* Base Objects
------------------------------------------------------------- */
+.input--icon-right {
+  padding-right: 30px;
+}
+
 .input-label {
   display: block;
   margin-bottom: 8px;
-
   font-size: 12px;
   color: $outer-space;
 }
@@ -51,13 +52,11 @@
 .input-with-icon-left,
 .input-with-icon-right {
   position: relative;
-
   display: inline-block;
 
   .bi {
     position: absolute;
     top: 6px;
-
     margin: 0;
   }
 }
@@ -69,14 +68,4 @@
 
 .input-with-icon-right .bi {
   right: 8px;
-}
-
-/* Base Object - Modifiers
------------------------------- */
-.input--icon-left {
-  padding-left: 30px;
-}
-
-.input--icon-right {
-  padding-right: 30px;
 }

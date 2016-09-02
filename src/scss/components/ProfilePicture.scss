@@ -1,17 +1,12 @@
 @import "../base/variables";
 
-/* Base Object
------------------------------------------------------------- */
 .profile-picture {
   display: block;
   width: 32px;
   height: 32px;
-
   border-radius: 256px;
 }
 
-/* Base Object - Modifiers
------------------------------- */
 .profile-picture--inactive {
   filter: grayscale(1);
   opacity: 0.5;
@@ -26,8 +21,6 @@
   height: 16px;
 }
 
-/* Profile Picture with Icon Object
------------------------------------------------------------- */
 .profile-picture-with-icon {
   position: relative;
 }
@@ -36,8 +29,6 @@
   position: absolute;
   top: 12px;
   left: 16px;
-
   margin-right: 0;
-
   font-size: 16px;
 }
