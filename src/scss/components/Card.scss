@@ -1,7 +1,5 @@
 @import "../base/variables";
 
-/* Base Object
------------------------------------------------------------- */
 .card {
   padding: 16px;
   background-color: $white;
@@ -17,8 +15,6 @@
   border-radius: $border-radius-level-3;
 }
 
-/* Base Object - Modifiers
------------------------------- */
 .card--empty {
   border-style: dashed;
 }
@@ -27,8 +23,6 @@
   border: 0;
 }
 
-/* Base Objects
------------------------------------------------------------- */
 .card-color-swatches {
   justify-content: space-between;
   flex-wrap: wrap;
