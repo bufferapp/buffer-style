@@ -1,11 +1,28 @@
 @import "../base/variables";
 
-.block-hero {
-  padding-top: 96px;
-  padding-bottom: 96px;
+.Block {
+  padding: 64px 0;
 
+  .bi {
+    margin-right: 8px;
+
+    &.bi--shamrock {
+      color: $shamrock;
+    }
+  }
+}
+
+.Block_content--center {
   text-align: center;
+  img {
+    margin: 0 auto;
+  }
+}
 
+.BlockHero {
+  padding-top: 128px;
+  padding-bottom: 128px;
+  text-align: center;
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -18,12 +35,19 @@
   h2 {
     margin-top: 0;
     margin-bottom: 0;
-
     font-size: 24px;
     font-weight: 300;
   }
 }
 
-.block-hero--pricing {
+.BlockHero--pricing {
   background-image: url(/img/block-title-text--hero@2x.png);
+}
+
+.BlockFooter {
+  background-color: $aqua-haze;
+
+  h5 {
+    margin-bottom: 32px;
+  }
 }

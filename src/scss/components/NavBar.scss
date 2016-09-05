@@ -1,54 +1,56 @@
 @import "../base/variables";
 
-.navbar {
+.NavBar {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  position: fixed;
   z-index: 1;
   display: flex;
-  margin-bottom: 32px;
   padding: 0 16px;
   width: 100%;
   height: 64px;
   line-height: 64px;
   background-color: $white;
   border-bottom: 1px solid $geyser;
+
+  .bi {
+    margin-right: 8px;
+  }
 }
 
-.navbar-title {
+.NavBar__title {
   flex-grow: 0;
   margin-right: 50px;
   font-weight: 600;
   color: $outer-space;
 }
 
-.navbar-menu-left,
-.navbar-menu-right {
+.NavBar__LeftMenu,
+.NavBar__RightMenu {
   flex-direction: row;
   display: flex;
   margin: 0;
   list-style: none;
 }
 
-.navbar-menu-left {
+.NavBar__LeftMenu {
   justify-content: flex-start;
   flex-grow: 1;
 }
 
-.navbar-menu-right {
+.NavBar__RightMenu {
   justify-content: flex-end;
   flex-grow: 0;
 }
 
-.navbar-menu-item {
+.NavBar__Menu__item {
   margin: 0 32px 0 0;
 
   a {
     display: inline-block;
     color: $nevada;
 
-    &.navbar-menu-item--active {
+    &.NavBar__Menu__item--active {
       margin-right: -8px;
       margin-left: -8px;
       padding-right: 8px;
@@ -57,14 +59,14 @@
       box-shadow: inset 0 -2px $curious-blue;
     }
   }
+
+  .ProfilePicture {
+    vertical-align: middle;
+    display: inline-block !important;
+    margin-right: 8px;
+  }
 }
 
-.navbar-menu-item--last {
+.NavBar__Menu__item--last {
   margin-right: 0;
-}
-
-.navbar-menu-item-profile-picture {
-  vertical-align: middle;
-  display: inline-block !important;
-  margin-right: 8px;
 }

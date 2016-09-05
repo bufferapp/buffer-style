@@ -10,29 +10,26 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700" rel="stylesheet" type="text/css">
   </head>
   <body class="app">
-    <div class="navbar">
-      <div class="navbar-title">
+    <div class="NavBar">
+      <div class="NavBar__title">
         <i class="bi bi-buffer"></i>Style Guide
       </div>
     </div>
     <div class="body">
       <div class="sidebar">
-        <div class="card">
+        <div class="Card">
           <ul class="sidebar-style-guide-list">
             <li><a href="index.html">Introduction</a></li>
             <li><a href="buttons.html">Buttons</a></li>
             <li><a href="cards.html">Cards</a></li>
             <li><a href="colors.html">Colors</a></li>
             <li><a href="grid-system.html">Grid System</a></li>
-            <li><a href="icons.html">Icons</a></li>
             <li><a href="inputs.html">Inputs</a></li>
             <li><a href="metabars.html">MetaBars</a></li>
-            <li><a href="modals.html">Modals</a></li>
             <li><a href="navbars.html">NavBars</a></li>
             <li><a href="notifications.html">Notifications</a></li>
             <li><a href="posts.html">Posts</a></li>
             <li><a href="profile-pictures.html">Profile Pictures</a></li>
-            <li><a href="sidebars.html">SideBars</a></li>
             <li><a href="static-pages.html">Static Pages</a></li>
             <li><a href="tags.html">Tags</a></li>
             <li><a class="sidebar-style-guide-list--last" href="typography.html">Typography</a></li>
@@ -40,49 +37,45 @@
         </div>
       </div>
       <div class="content">
-          <div class="card">
+          <div class="Card">
             <div class="section">
-              <h1>NavBars</h1>
-              <p>NavBars are an organism that display navigational organisms and typically stick to the top of a browser's viewport.</p>
-            </div>
-            <div class="section">
-              <h2>NavBar</h2>
-              <p>Use this organism for the Buffer web app's primary navigation.</p>
+              <h1>NavBar</h1>
+              <p>The <code>NavBar</code> component displays navigational objects.</p>
               <div class="code-block">
                 <div class="code-block-title">
                   Example:
                 </div>
                 <div class="code-block-render">
-                  <div class="navbar">
-                    <div class="navbar-title">
+                  <div class="NavBar">
+                    <div class="NavBar__title">
                       <i class="bi bi-buffer"></i><strong>Awesome</strong> plan
                     </div>
-                    <ul class="navbar-menu-left">
-                      <li class="navbar-menu-item"><a class="navbar-menu-item--active" href="#">Content</a></li>
-                      <li class="navbar-menu-item"><a href="#">Analytics</a></li>
-                      <li class="navbar-menu-item"><a href="#">Schedule</a></li>
-                      <li class="navbar-menu-item navbar-menu-item--last"><a href="#">Settings</a></li>
+                    <ul class="NavBar__LeftMenu">
+                      <li class="NavBar__Menu__item"><a class="NavBar__Menu__item--active" href="#">Content</a></li>
+                      <li class="NavBar__Menu__item"><a href="#">Analytics</a></li>
+                      <li class="NavBar__Menu__item"><a href="#">Schedule</a></li>
+                      <li class="NavBar__Menu__item NavBar__Menu__item--last"><a href="#">Settings</a></li>
                     </ul>
-                    <ul class="navbar-menu-right">
-                      <li class="navbar-menu-item"><a href="#">Help</a></li>
-                      <li class="navbar-menu-item navbar-menu-item--last"><a href="#"><img class="navbar-menu-item-profile-picture profile-picture" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">Account</a></li>
+                    <ul class="NavBar__RightMenu">
+                      <li class="NavBar__Menu__item"><a href="#">Help</a></li>
+                      <li class="NavBar__Menu__item NavBar__Menu__item--last"><a href="#"><img class="ProfilePicture" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">Account</a></li>
                     </ul>
                   </div>
                 </div>
                 <div class="code-block-code">
-                  <pre>&lt;div class="navbar">
-  &lt;div class="navbar-title">
+                  <pre>&lt;div class="NavBar">
+  &lt;div class="NavBar__title">
     &lt;i class="bi bi-buffer">&lt;/i>&lt;strong>Awesome&lt;/strong> plan
   &lt;/div>
-  &lt;ul class="navbar-menu-left">
-    &lt;li class="navbar-menu-item">&lt;a class="navbar-menu-item--active" href="#">&lt;i class="bi bi-content">&lt;/i>Content&lt;/a>&lt;/li>
-    &lt;li class="navbar-menu-item">&lt;a href="#">&lt;i class="bi bi-analytics">&lt;/i>Analytics&lt;/a>&lt;/li>
-    &lt;li class="navbar-menu-item">&lt;a href="#">&lt;i class="bi bi-calendar">&lt;/i>Schedule&lt;/a>&lt;/li>
-    &lt;li class="navbar-menu-item navbar-menu-item--last">&lt;a href="#">&lt;i class="bi bi-settings">&lt;/i>Settings&lt;/a>&lt;/li>
+  &lt;ul class="NavBar__LeftMenu">
+    &lt;li class="NavBar__Menu__item">&lt;a class="NavBar__Menu__item--active" href="#">Content&lt;/a>&lt;/li>
+    &lt;li class="NavBar__Menu__item">&lt;a href="#">Analytics&lt;/a>&lt;/li>
+    &lt;li class="NavBar__Menu__item">&lt;a href="#">Schedule&lt;/a>&lt;/li>
+    &lt;li class="NavBar__Menu__item NavBar__Menu__item--last">&lt;a href="#">Settings&lt;/a>&lt;/li>
   &lt;/ul>
-  &lt;ul class="navbar-menu-right">
-    &lt;li class="navbar-menu-item">&lt;a href="#">&lt;i class="bi bi-exclamation">&lt;/i>Help&lt;/a>&lt;/li>
-    &lt;li class="navbar-menu-item navbar-menu-item--last">&lt;a href="#">&lt;img class="navbar-menu-item-profile-picture profile-picture" src="#">Account&lt;/a>&lt;/li>
+  &lt;ul class="NavBar__RightMenu">
+    &lt;li class="NavBar__Menu__item">&lt;a href="#">Help&lt;/a>&lt;/li>
+    &lt;li class="NavBar__Menu__item NavBar__Menu__item--last">&lt;a href="#">&lt;img class="ProfilePicture" src="#">Account&lt;/a>&lt;/li>
   &lt;/ul>
 &lt;/div></pre>
                 </div>

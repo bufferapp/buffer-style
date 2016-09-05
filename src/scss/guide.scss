@@ -20,11 +20,6 @@ body {
   background-color: $white;
 }
 
-ol,
-ul {
-  margin: 16px;
-}
-
 p {
   .bi {
     margin-right: 0;
@@ -43,10 +38,7 @@ p {
 }
 
 .sidebar-style-guide-list {
-  margin-top: 0;
-  margin-right: -16px;
-  margin-bottom: 0;
-  margin-left: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -67,10 +59,10 @@ p {
 
 .content {
   flex: 1;
-  margin-top: 80px;
+  margin-top: 16px;
   margin-right: 16px;
   margin-bottom: 16px;
-  margin-left: 272px;
+  margin-left: 16px;
 }
 
 .code-block {
@@ -95,9 +87,9 @@ p {
     margin-bottom: 0;
   }
 
-  .sidebar {
+  .sidebar-app {
     position: inherit;
-    margin-top: 0;
+    margin: 0 auto;
   }
 
   .metabar {
@@ -108,6 +100,11 @@ p {
 
   .tag {
     display: table;
+  }
+
+  [class*="Column"],
+  [class*="Columns"] {
+    border: 1px solid $geyser;
   }
 }
 
@@ -130,5 +127,20 @@ p {
 
   pre {
     white-space: pre-wrap;
+  }
+}
+
+.sidebar {
+  flex-grow: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+  z-index: 1;
+  display: flex;
+  min-height: 128vh;
+  order: -1;
+
+  .Card {
+    margin-top: 16px;
+    margin-left: 16px;
   }
 }

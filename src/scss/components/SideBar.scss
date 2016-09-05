@@ -1,23 +1,9 @@
 @import "../base/variables";
 
-.sidebar {
-  flex-direction: column;
-  justify-content: flex-start;
-  position: fixed;
-  z-index: 1;
-  display: flex;
-  margin-top: 64px;
-  width: 256px;
-  min-height: 128vh;
-  order: -1;
 
-  .card {
-    margin-top: 16px;
-    margin-left: 16px;
-  }
-}
 
 .sidebar-app {
+  width: 256px;
   background-color: $alabaster;
   border-right: 1px solid $geyser;
 }

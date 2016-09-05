@@ -4,13 +4,14 @@
   box-sizing: border-box;
 }
 
-[class*="column-"] {
+[class*="Column"],
+[class*="Columns"] {
   float: left;
   padding: 16px;
   width: 100%;
 }
 
-.grid-row {
+.GridRow {
   &::after {
     display: block;
     clear: both;
@@ -23,120 +24,120 @@
   }
 }
 
-.grid-container {
+.GridContainer {
   margin: 0 auto;
 }
 
 @media screen and (max-width: 768px) {
-  .grid-container {
+  .GridContainer {
     width: 100%;
   }
 
-  .one-column {
+  .OneColumn--medium {
     width: 8.33%;
   }
 
-  .two-columns {
+  .TwoColumns--medium {
     width: 16.66%;
   }
 
-  .three-columns {
+  .ThreeColumns--medium {
     width: 25%;
   }
 
-  .four-columns {
+  .FourColumns--medium {
     width: 33.33%;
   }
 
-  .five-columns {
+  .FiveColumns--medium {
     width: 41.66%;
   }
 
-  .six-columns {
+  .SixColumns--medium {
     width: 50%;
   }
 
-  .seven-columns {
+  .SevenColumns--medium {
     width: 58.33%;
   }
 
-  .eight-columns {
+  .EightColumns--medium {
     width: 66.66%;
   }
 
-  .nine-columns {
+  .NineColumns--medium {
     width: 75%;
   }
 
-  .ten-columns {
+  .TenColumns--medium {
     width: 83.33%;
   }
 
-  .eleven-columns {
+  .ElevenColumns--medium {
     width: 91.66%;
   }
 
-  .twelve-columns {
+  .TwelveColumns--medium {
     width: 100%;
   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 959px) {
-  .grid-container {
+  .GridContainer {
     width: 100%;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .grid-container {
+  .GridContainer {
     width: 960px;
   }
 
-  .one-column {
+  .OneColumn--large {
     width: 8.33%;
   }
 
-  .two-columns {
+  .TwoColumns--large {
     width: 16.66%;
   }
 
-  .three-columns {
+  .ThreeColumns--large {
     width: 25%;
   }
 
-  .four-columns {
+  .FourColumns--large {
     width: 33.33%;
   }
 
-  .five-columns {
+  .FiveColumns--large {
     width: 41.66%;
   }
 
-  .six-columns {
+  .SixColumns--large {
     width: 50%;
   }
 
-  .seven-columns {
+  .SevenColumns--large {
     width: 58.33%;
   }
 
-  .eight-columns {
+  .EightColumns--large {
     width: 66.66%;
   }
 
-  .nine-columns {
+  .NineColumns--large {
     width: 75%;
   }
 
-  .ten-columns {
+  .TenColumns--large {
     width: 83.33%;
   }
 
-  .eleven-columns {
+  .ElevenColumns--large {
     width: 91.66%;
   }
 
-  .twelve-columns {
+  .TwelveColumns--large {
     width: 100%;
   }
 }

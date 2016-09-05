@@ -1,41 +1,45 @@
 @import "../base/variables";
 
-.card {
+.Card {
   padding: 16px;
   background-color: $white;
   border: 1px solid $geyser;
   border-radius: $border-radius-level-1;
 
-  .card {
+  .Card {
     border-radius: $border-radius-level-2;
+
+    .Card {
+      border-radius: $border-radius-level-3;
+    }
   }
 }
 
-.card .card .card {
-  border-radius: $border-radius-level-3;
-}
-
-.card--empty {
+.Card--empty {
   border-style: dashed;
 }
 
-.card--no-border {
+.Card--no-border {
   border: 0;
 }
 
-.card-color-swatches {
+.Card--double-padding {
+  padding: 32px;
+}
+
+.CardColorSwatches {
   justify-content: space-between;
   flex-wrap: wrap;
   display: flex;
   padding: 0;
 }
 
-.card-color-swatches .card {
+.CardColorSwatches .Card {
   margin-bottom: 16px;
   width: 32%;
 }
 
-.card-with-color {
+.CardWithColor {
   margin-top: -16px;
   margin-right: -16px;
   margin-left: -16px;
@@ -52,14 +56,14 @@
   }
 }
 
-.card-with-color--blue-1,
-.card-with-color--blue-2,
-.card-with-color--blue-3,
-.card-with-color--gray-1,
-.card-with-color--gray-2,
-.card-with-color--gray-3,
-.card-with-color--green,
-.card-with-color--red {
+.CardWithColor--blue-1,
+.CardWithColor--blue-2,
+.CardWithColor--blue-3,
+.CardWithColor--gray-1,
+.CardWithColor--gray-2,
+.CardWithColor--gray-3,
+.CardWithColor--green,
+.CardWithColor--red {
   color: $white;
 
   h3 {
@@ -67,58 +71,62 @@
   }
 }
 
-.card-with-color--blue-1 {
+.CardWithColor--blue-1 {
   background-color: $curious-blue;
 }
 
-.card-with-color--blue-2 {
+.CardWithColor--blue-2 {
   background-color: $denim;
 }
 
-.card-with-color--blue-3 {
+.CardWithColor--blue-3 {
   background-color: $tory-blue;
 }
 
-.card-with-color--gray-1 {
+.CardWithColor--gray-1 {
   background-color: $outer-space;
 }
 
-.card-with-color--gray-2 {
+.CardWithColor--gray-2 {
   background-color: $shuttle-gray;
 }
 
-.card-with-color--gray-3 {
+.CardWithColor--gray-3 {
   background-color: $nevada;
 }
 
-.card-with-color--gray-4 {
+.CardWithColor--gray-4 {
   background-color: $geyser;
 }
 
-.card-with-color--gray-5 {
+.CardWithColor--gray-5 {
   background-color: $aqua-haze;
 }
 
-.card-with-color--gray-6 {
+.CardWithColor--gray-6 {
   background-color: $alabaster;
 }
 
-.card-with-color--green {
+.CardWithColor--green {
   background-color: $shamrock;
 }
 
-.card-with-color--yellow {
+.CardWithColor--yellow {
   background-color: $saffron;
 }
 
-.card-with-color--red {
+.CardWithColor--red {
   background-color: $torch-red;
 }
 
-.card-with-item-content {
+.CardWithItem__content {
+  h4 {
+    margin: 16px 0;
+  }
+
   ul {
     margin-right: 0;
     margin-left: 0;
-    list-style: none;
+    // list-style: none;
   }
 }

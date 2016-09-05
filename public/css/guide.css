@@ -39,10 +39,6 @@ body {
   font-weight: 400;
   background-color: #fff; }
 
-ol,
-ul {
-  margin: 16px; }
-
 p .bi {
   margin-right: 0; }
 
@@ -56,10 +52,7 @@ p .bi {
   display: flex; }
 
 .sidebar-style-guide-list {
-  margin-top: 0;
-  margin-right: -16px;
-  margin-bottom: 0;
-  margin-left: 0;
+  margin: 0;
   list-style: none; }
 
 .sidebar-style-guide-list li {
@@ -76,10 +69,10 @@ p .bi {
 
 .content {
   flex: 1;
-  margin-top: 80px;
+  margin-top: 16px;
   margin-right: 16px;
   margin-bottom: 16px;
-  margin-left: 272px; }
+  margin-left: 16px; }
 
 .code-block {
   margin-bottom: 32px; }
@@ -98,15 +91,18 @@ p .bi {
   .code-block-render .navbar {
     position: inherit;
     margin-bottom: 0; }
-  .code-block-render .sidebar {
+  .code-block-render .sidebar-app {
     position: inherit;
-    margin-top: 0; }
+    margin: 0 auto; }
   .code-block-render .metabar {
     position: relative;
     z-index: 0;
     margin: 0; }
   .code-block-render .tag {
     display: table; }
+  .code-block-render [class*="Column"],
+  .code-block-render [class*="Columns"] {
+    border: 1px solid #ced7df; }
 
 .code-block-render--dark {
   background-color: rgba(50, 59, 67, 0.9); }
@@ -124,3 +120,15 @@ p .bi {
   overflow: hidden; }
   .code-block-code pre {
     white-space: pre-wrap; }
+
+.sidebar {
+  flex-grow: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+  z-index: 1;
+  display: flex;
+  min-height: 128vh;
+  order: -1; }
+  .sidebar .Card {
+    margin-top: 16px;
+    margin-left: 16px; }
