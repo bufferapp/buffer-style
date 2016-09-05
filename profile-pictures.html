@@ -10,29 +10,26 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700" rel="stylesheet" type="text/css">
   </head>
   <body class="app">
-    <div class="navbar">
-      <div class="navbar-title">
+    <div class="NavBar">
+      <div class="NavBar__title">
         <i class="bi bi-buffer"></i>Style Guide
       </div>
     </div>
     <div class="body">
       <div class="sidebar">
-        <div class="card">
+        <div class="Card">
           <ul class="sidebar-style-guide-list">
             <li><a href="index.html">Introduction</a></li>
             <li><a href="buttons.html">Buttons</a></li>
             <li><a href="cards.html">Cards</a></li>
             <li><a href="colors.html">Colors</a></li>
             <li><a href="grid-system.html">Grid System</a></li>
-            <li><a href="icons.html">Icons</a></li>
             <li><a href="inputs.html">Inputs</a></li>
             <li><a href="metabars.html">MetaBars</a></li>
-            <li><a href="modals.html">Modals</a></li>
             <li><a href="navbars.html">NavBars</a></li>
             <li><a href="notifications.html">Notifications</a></li>
             <li><a href="posts.html">Posts</a></li>
             <li><a href="profile-pictures.html">Profile Pictures</a></li>
-            <li><a href="sidebars.html">SideBars</a></li>
             <li><a href="static-pages.html">Static Pages</a></li>
             <li><a href="tags.html">Tags</a></li>
             <li><a class="sidebar-style-guide-list--last" href="typography.html">Typography</a></li>
@@ -40,106 +37,50 @@
         </div>
       </div>
       <div class="content">
-        <div class="card">
+        <div class="Card">
           <div class="section">
             <h1>Profile Pictures</h1>
             <p>Profile pictures can be atoms or molecules depending on their child elements. A profile picture remains an atom while a profile picture with a social network icon is a molecule. A profile picture communicates a familar connection to the user.</p>
           </div>
           <div class="section">
             <h2>Profile Picture</h2>
-            <p>Use this atom to communicate a user's connected profile.</p>
+            <p>Use the <code>ProfilePicture</code> atom to show a user's connected profile.</p>
             <div class="code-block">
               <div class="code-block-title">
                 Example:
               </div>
               <div class="code-block-render">
-                <img class="profile-picture" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
+                <img alt="A profile picture of Steve Dixon" class="ProfilePicture" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg" />
               </div>
               <div class="code-block-code">
-                <pre>&lt;img class="profile-picture" src="#"></pre>
+                <pre>&lt;img alt="A profile picture of Steve Dixon" class="ProfilePicture" src="#" /></pre>
+              </div>
+            </div>
+            <p>A <code>ProfilePicture</code> atom using the <code>--small</code> modifier:</p>
+            <div class="code-block">
+              <div class="code-block-title">
+                Example:
+              </div>
+              <div class="code-block-render">
+                <img alt="A profile picture of Steve Dixon" class="ProfilePicture ProfilePicture--small code-block-render-example" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg" />
+              </div>
+              <div class="code-block-code">
+                <pre>&lt;img alt="A profile picture of Steve Dixon" class="ProfilePicture ProfilePicture--small" src="#" /></pre>
+              </div>
+            </div>
+            <p>A <code>ProfilePicture</code> atom using the <code>--large</code> modifier:</p>
+            <div class="code-block">
+              <div class="code-block-title">
+                Example:
+              </div>
+              <div class="code-block-render">
+                <img alt="A profile picture of Steve Dixon" class="ProfilePicture ProfilePicture--large code-block-render-example" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg" />
+              </div>
+              <div class="code-block-code">
+                <pre>&lt;img alt="A profile picture of Steve Dixon" class="ProfilePicture ProfilePicture--large" src="#" /></pre>
               </div>
             </div>
           </div>
-          <div class="section">
-            <h2>Profile Picture <span class="subtitle">when inactive</span></h2>
-            <p>Use this atom to communicate a user's connected profile that is currently inactive.</p>
-            <div class="code-block">
-              <div class="code-block-title">
-                Example:
-              </div>
-              <div class="code-block-render">
-                <img class="profile-picture profile-picture--inactive" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
-              </div>
-              <div class="code-block-code">
-                <pre>&lt;img class="profile-picture profile-picture--inactive" src="#"></pre>
-              </div>
-            </div>
-          </div>
-          <div class="section">
-            <h2>Profile Picture <span class="subtitle">when used in <a href="metabars.html">MetaBar</a> organisms</span></h2>
-            <p>Use this atom when communicating an account in <a href="metabars.html">MetaBar</a> organisms</p>
-            <div class="code-block">
-              <div class="code-block-title">
-                Example:
-              </div>
-              <div class="code-block-render">
-                <img class="profile-picture profile-picture--small code-block-render-example" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
-              </div>
-              <div class="code-block-code">
-                <pre>&lt;img class="profile-picture profile-picture--small" src="#"></pre>
-              </div>
-            </div>
-          </div>
-          <div class="section">
-            <h2>Profile Picture with Icon</h2>
-            <p>Use this molecule to communicate a user's connected profile and the social network.</p>
-            <div class="code-block">
-              <div class="code-block-title">
-                Example:
-              </div>
-              <div class="code-block-render">
-                <div class="profile-picture-with-icon code-block-render-example">
-                  <img class="profile-picture" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
-                  <div class="profile-picture-icon">
-                    <i class="bi bi-circle-twitter"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="code-block-code">
-                <pre>&lt;div class="profile-picture-with-icon">
-&lt;img class="profile-picture" src="#">
-&lt;div class="profile-picture-icon">
-  &lt;i class="bi bi-circle-twitter">&lt;/i>
-&lt;/div>
-&lt;/div></pre>
-              </div>
-            </div>
-          </div>
-          <div class="section">
-            <h2>Profile Picture with Icon <span class="subtitle">when inactive</span></h2>
-            <p>Use this molecule to communicate a user's connected profile that is currently inactive.</p>
-            <div class="code-block">
-              <div class="code-block-title">
-                Example:
-              </div>
-              <div class="code-block-render">
-                <div class="profile-picture-with-icon profile-picture--inactive code-block-render-example">
-                  <img class="profile-picture" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg">
-                  <div class="profile-picture-icon">
-                    <i class="bi bi-circle-twitter"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="code-block-code">
-                <pre>&lt;div class="profile-picture-with-icon profile-picture--inactive">
-&lt;img class="profile-picture" src="#">
-&lt;div class="profile-picture-icon">
-  &lt;i class="bi bi-circle-twitter">&lt;/i>
-&lt;/div>
-&lt;/div></pre>
-                </div>
-              </div>
-            </div>
         </div>
       </div>
     </div>

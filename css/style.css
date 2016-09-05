@@ -59,11 +59,14 @@
 ------------------------------------------------------------ */
 /* Animation
 ------------------------------------------------------------ */
-html {
-  font-size: 14px; }
+a {
+  color: #168eea;
+  text-decoration: none; }
+  a:hover {
+    color: #0f63a4; }
+  a img {
+    outline: none; }
 
-/* Body
------------------------------------------------------------- */
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
@@ -72,15 +75,16 @@ body {
   color: #59626a;
   -webkit-font-smoothing: antialiased; }
 
-/* Headings
------------------------------------------------------------- */
+code {
+  color: #000; }
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  margin: 32px 0 8px 0;
+  margin: 0;
   color: #323b43; }
 
 h1 .subtitle,
@@ -106,20 +110,25 @@ h5,
 h6 {
   font-size: 16px; }
 
-/* Paragraphs
--------------------------------------------------- */
-code {
-  color: #000; }
+html {
+  font-size: 14px; }
+
+li {
+  margin-bottom: 8px; }
+
+ol,
+ul {
+  margin: 0 16px; }
+  ol.no-style,
+  ul.no-style {
+    margin: 0;
+    list-style: none; }
 
 p {
   margin-bottom: 16px; }
 
 small {
   font-size: 11px; }
-
-li {
-  margin-top: 8px;
-  margin-bottom: 8px; }
 
 *, *:before, *:after {
   box-sizing: inherit; }
@@ -167,23 +176,19 @@ li {
   transition: background-color 0.1s linear; }
   .button:active {
     background-color: #0f63a4 !important; }
+    .button:active.button--inactive {
+      background-color: #168eea !important; }
   .button:hover {
     color: #fff;
     background-color: #137ac9; }
+    .button:hover.button--inactive {
+      color: #fff;
+      background-color: #168eea; }
   .button [class*=" bi-"]:before, .button [class^=bi-]:before {
     vertical-align: baseline; }
   .button.ia {
     padding: 4px 16px; }
 
-.button:active.button--inactive {
-  background-color: #168eea !important; }
-
-.button:hover.button--inactive {
-  color: #fff;
-  background-color: #168eea; }
-
-/* Base Object - Modifiers
------------------------------- */
 .button--active {
   background-color: #0f63a4; }
   .button--active:active, .button--active:hover {
@@ -201,22 +206,20 @@ li {
     color: #168eea !important;
     background-color: rgba(22, 142, 234, 0.1) !important;
     border-color: #168eea !important; }
+    .button--secondary:active.button--inactive {
+      background-color: #fff !important; }
   .button--secondary:hover {
     color: #137ac9;
     background-color: #fff;
     border-color: #137ac9; }
+    .button--secondary:hover.button--inactive {
+      color: #168eea;
+      background-color: #fff;
+      border-color: #168eea; }
+      .button--secondary:hover.button--inactive i.bi {
+        color: #137ac9; }
   .button--secondary i.bi {
     color: #168eea; }
-
-.button--secondary:active.button--inactive {
-  background-color: #fff !important; }
-
-.button--secondary:hover.button--inactive {
-  color: #168eea;
-  background-color: #fff;
-  border-color: #168eea; }
-  .button--secondary:hover.button--inactive i.bi {
-    color: #137ac9; }
 
 .button--tertiary {
   color: #666c72;
@@ -226,20 +229,18 @@ li {
     color: #323b43 !important;
     background-color: rgba(50, 59, 67, 0.1) !important;
     border-color: #323b43 !important; }
+    .button--tertiary:active.button--inactive {
+      color: #666c72 !important;
+      background-color: transparent !important;
+      border-color: #ced7df !important; }
   .button--tertiary:hover {
     color: #323b43;
     background-color: transparent;
     border-color: #323b43; }
-
-.button--tertiary:active.button--inactive {
-  color: #666c72 !important;
-  background-color: transparent !important;
-  border-color: #ced7df !important; }
-
-.button--tertiary:hover.button--inactive {
-  color: #666c72;
-  background-color: transparent;
-  border-color: #ced7df; }
+    .button--tertiary:hover.button--inactive {
+      color: #666c72;
+      background-color: transparent;
+      border-color: #ced7df; }
 
 .button--borderless {
   color: #168eea;
@@ -248,17 +249,15 @@ li {
   .button--borderless:hover {
     color: #137ac9;
     background-color: transparent; }
+    .button--borderless:hover.button--inactive {
+      color: #168eea;
+      background-color: transparent; }
   .button--borderless:active {
     color: #137ac9;
     background-color: transparent !important; }
-
-.button--borderless:hover.button--inactive {
-  color: #168eea;
-  background-color: transparent; }
-
-.button--borderless:active.button--inactive {
-  color: #168eea;
-  background-color: transparent !important; }
+    .button--borderless:active .button--inactive {
+      color: #168eea;
+      background-color: transparent !important; }
 
 .button--warning {
   color: #ff1e1e;
@@ -283,24 +282,10 @@ li {
   .button--warning i.bi {
     color: #ff1e1e; }
 
-.button--warning:active.button--inactive {
-  color: #ff1e1e !important;
-  background-color: #fff !important;
-  border-color: #ff1e1e !important; }
-
-.button--warning:hover.button--inactive {
-  color: #ff1e1e;
-  background-color: #fff;
-  border-color: #ff1e1e; }
-  .button--warning:hover.button--inactive i.bi {
-    color: #fff; }
-
 .button--small {
   padding: 2px 10px;
   font-size: 11px; }
 
-/* Base Objects
------------------------------------------------------------- */
 .button .bi {
   color: #fff; }
 
@@ -331,110 +316,108 @@ li {
 ------------------------------------------------------------ */
 /* Animation
 ------------------------------------------------------------ */
-/* Base Object
------------------------------------------------------------- */
-.card {
+.Card {
   padding: 16px;
   background-color: #fff;
   border: 1px solid #ced7df;
   border-radius: 4px; }
-  .card .card {
+  .Card .Card {
     border-radius: 2px; }
+    .Card .Card .Card {
+      border-radius: 1px; }
 
-.card .card .card {
-  border-radius: 1px; }
-
-/* Base Object - Modifiers
------------------------------- */
-.card--empty {
+.Card--empty {
   border-style: dashed; }
 
-.card--no-border {
+.Card--no-border {
   border: 0; }
 
-/* Base Objects
------------------------------------------------------------- */
-.card-color-swatches {
+.Card--double-padding {
+  padding: 32px; }
+
+.CardColorSwatches {
   justify-content: space-between;
   flex-wrap: wrap;
   display: flex;
   padding: 0; }
 
-.card-color-swatches .card {
+.CardColorSwatches .Card {
   margin-bottom: 16px;
   width: 32%; }
 
-.card-with-color {
+.CardWithColor {
   margin-top: -16px;
   margin-right: -16px;
   margin-left: -16px;
   padding: 32px 16px;
   text-align: center;
   border-radius: 1px 1px 0 0; }
-  .card-with-color h3 {
+  .CardWithColor h3 {
     margin-top: 0; }
-  .card-with-color p {
+  .CardWithColor p {
     margin-bottom: 0; }
 
-.card-with-color--blue-1,
-.card-with-color--blue-2,
-.card-with-color--blue-3,
-.card-with-color--gray-1,
-.card-with-color--gray-2,
-.card-with-color--gray-3,
-.card-with-color--green,
-.card-with-color--red {
+.CardWithColor--blue-1,
+.CardWithColor--blue-2,
+.CardWithColor--blue-3,
+.CardWithColor--gray-1,
+.CardWithColor--gray-2,
+.CardWithColor--gray-3,
+.CardWithColor--green,
+.CardWithColor--red {
   color: #fff; }
-  .card-with-color--blue-1 h3,
-  .card-with-color--blue-2 h3,
-  .card-with-color--blue-3 h3,
-  .card-with-color--gray-1 h3,
-  .card-with-color--gray-2 h3,
-  .card-with-color--gray-3 h3,
-  .card-with-color--green h3,
-  .card-with-color--red h3 {
+  .CardWithColor--blue-1 h3,
+  .CardWithColor--blue-2 h3,
+  .CardWithColor--blue-3 h3,
+  .CardWithColor--gray-1 h3,
+  .CardWithColor--gray-2 h3,
+  .CardWithColor--gray-3 h3,
+  .CardWithColor--green h3,
+  .CardWithColor--red h3 {
     color: #fff; }
 
-.card-with-color--blue-1 {
+.CardWithColor--blue-1 {
   background-color: #168eea; }
 
-.card-with-color--blue-2 {
+.CardWithColor--blue-2 {
   background-color: #137ac9; }
 
-.card-with-color--blue-3 {
+.CardWithColor--blue-3 {
   background-color: #0f63a4; }
 
-.card-with-color--gray-1 {
+.CardWithColor--gray-1 {
   background-color: #323b43; }
 
-.card-with-color--gray-2 {
+.CardWithColor--gray-2 {
   background-color: #59626a; }
 
-.card-with-color--gray-3 {
+.CardWithColor--gray-3 {
   background-color: #666c72; }
 
-.card-with-color--gray-4 {
+.CardWithColor--gray-4 {
   background-color: #ced7df; }
 
-.card-with-color--gray-5 {
+.CardWithColor--gray-5 {
   background-color: #f4f7f9; }
 
-.card-with-color--gray-6 {
+.CardWithColor--gray-6 {
   background-color: #f8f8f8; }
 
-.card-with-color--green {
+.CardWithColor--green {
   background-color: #2fd566; }
 
-.card-with-color--yellow {
+.CardWithColor--yellow {
   background-color: #f1cb3a; }
 
-.card-with-color--red {
+.CardWithColor--red {
   background-color: #ff1e1e; }
 
-.card-with-item-content ul {
+.CardWithItem__content h4 {
+  margin: 16px 0; }
+
+.CardWithItem__content ul {
   margin-right: 0;
-  margin-left: 0;
-  list-style: none; }
+  margin-left: 0; }
 
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
@@ -466,81 +449,82 @@ li {
 * {
   box-sizing: border-box; }
 
-[class*="column-"] {
+[class*="Column"],
+[class*="Columns"] {
   float: left;
   padding: 16px;
   width: 100%; }
 
-.grid-row::after {
+.GridRow::after {
   display: block;
   clear: both;
   content: ""; }
 
-.grid-row img {
+.GridRow img {
   max-width: 100%;
   height: auto; }
 
-.grid-container {
+.GridContainer {
   margin: 0 auto; }
 
 @media screen and (max-width: 768px) {
-  .grid-container {
+  .GridContainer {
     width: 100%; }
-  .one-column {
+  .OneColumn--medium {
     width: 8.33%; }
-  .two-columns {
+  .TwoColumns--medium {
     width: 16.66%; }
-  .three-columns {
+  .ThreeColumns--medium {
     width: 25%; }
-  .four-columns {
+  .FourColumns--medium {
     width: 33.33%; }
-  .five-columns {
+  .FiveColumns--medium {
     width: 41.66%; }
-  .six-columns {
+  .SixColumns--medium {
     width: 50%; }
-  .seven-columns {
+  .SevenColumns--medium {
     width: 58.33%; }
-  .eight-columns {
+  .EightColumns--medium {
     width: 66.66%; }
-  .nine-columns {
+  .NineColumns--medium {
     width: 75%; }
-  .ten-columns {
+  .TenColumns--medium {
     width: 83.33%; }
-  .eleven-columns {
+  .ElevenColumns--medium {
     width: 91.66%; }
-  .twelve-columns {
+  .TwelveColumns--medium {
     width: 100%; } }
 
 @media screen and (min-width: 769px) and (max-width: 959px) {
-  .grid-container {
+  .GridContainer {
     width: 100%; } }
 
 @media screen and (min-width: 1024px) {
-  .grid-container {
+  .GridContainer {
     width: 960px; }
-  .one-column {
+  .OneColumn--large {
     width: 8.33%; }
-  .two-columns {
+  .TwoColumns--large {
     width: 16.66%; }
-  .three-columns {
+  .ThreeColumns--large {
     width: 25%; }
-  .four-columns {
+  .FourColumns--large {
     width: 33.33%; }
-  .five-columns {
+  .FiveColumns--large {
     width: 41.66%; }
-  .six-columns {
+  .SixColumns--large {
     width: 50%; }
-  .seven-columns {
+  .SevenColumns--large {
     width: 58.33%; }
-  .eight-columns {
+  .EightColumns--large {
     width: 66.66%; }
-  .nine-columns {
+  .NineColumns--large {
     width: 75%; }
-  .ten-columns {
+  .TenColumns--large {
     width: 83.33%; }
-  .eleven-columns {
+  .ElevenColumns--large {
     width: 91.66%; }
-  .twelve-columns {
+  .TwelveColumns--large {
     width: 100%; } }
 
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
@@ -569,8 +553,6 @@ li {
 /* Box Shadows
 ------------------------------------------------------------ */
 /* Animation
------------------------------------------------------------- */
-/* Base Object
 ------------------------------------------------------------ */
 .input {
   margin: 0;
@@ -620,79 +602,6 @@ li {
 
 .input-with-icon-right .bi {
   right: 8px; }
-
-/* Global Reset // We'll pull in a common reset here, perhaps in another file!
------------------------------------------------------------- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-/* Shades Palette
------------------------------------------------------------- */
-/* Primary Palette
------------------------------------------------------------- */
-/* Blues
------------------------------- */
-/* Grays
------------------------------- */
-/* Others
------------------------------- */
-/* Brands Palette
------------------------------------------------------------- */
-/* Font
------------------------------------------------------------- */
-/* Border Radii
------------------------------------------------------------- */
-/* Box Shadows
------------------------------------------------------------- */
-/* Animation
------------------------------------------------------------- */
-/* Base Object
------------------------------------------------------------- */
-.bi {
-  margin-right: 10px; }
-
-.bi-circle-appdotnet[class*="bi-"],
-.bi-circle-facebook[class*="bi-"],
-.bi-circle-google-plus[class*="bi-"],
-.bi-circle-linkedin[class*="bi-"],
-.bi-circle-pinterest[class*="bi-"],
-.bi-circle-twitter[class*="bi-"] {
-  border: none; }
-
-.bi-circle-appdotnet[class*="bi-"]::before,
-.bi-circle-facebook[class*="bi-"]::before,
-.bi-circle-google-plus[class*="bi-"]::before,
-.bi-circle-linkedin[class*="bi-"]::before,
-.bi-circle-pinterest[class*="bi-"]::before,
-.bi-circle-twitter[class*="bi-"]::before {
-  background-color: #fff;
-  border-radius: 50%; }
-
-.bi-circle-appdotnet {
-  color: #4a484c; }
-
-.bi-circle-facebook {
-  color: #3b5998; }
-
-.bi-circle-google-plus {
-  color: #dd4b39; }
-
-.bi-circle-linkedin {
-  color: #007bb6; }
-
-.bi-circle-pinterest {
-  color: #bd081c; }
-
-.bi-circle-twitter {
-  color: #55acee; }
-
-/* Base Object - Modifiers
------------------------------- */
-.bi--right {
-  margin-right: 0;
-  margin-left: 10px; }
 
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
@@ -858,125 +767,61 @@ li {
 ------------------------------------------------------------ */
 /* Animation
 ------------------------------------------------------------ */
-.modal {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 2;
-  background-color: rgba(50, 59, 67, 0.9);
-  opacity: 0;
-  pointer-events: none; }
-  .modal:target {
-    opacity: 1;
-    pointer-events: auto; }
-  .modal .card {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    display: flex;
-    width: 960px;
-    max-height: 80%;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-    transform: translate(-50%, -50%); }
-
-.modal-content {
-  position: relative;
-  width: 100%; }
-  .modal-content .modal-exit {
-    position: absolute;
-    top: -7px;
-    right: -2px;
-    color: #666c72; }
-    .modal-content .modal-exit:hover {
-      color: #323b43; }
-  .modal-content .bi {
-    margin-right: 0; }
-
-/* Global Reset // We'll pull in a common reset here, perhaps in another file!
------------------------------------------------------------- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-/* Shades Palette
------------------------------------------------------------- */
-/* Primary Palette
------------------------------------------------------------- */
-/* Blues
------------------------------- */
-/* Grays
------------------------------- */
-/* Others
------------------------------- */
-/* Brands Palette
------------------------------------------------------------- */
-/* Font
------------------------------------------------------------- */
-/* Border Radii
------------------------------------------------------------- */
-/* Box Shadows
------------------------------------------------------------- */
-/* Animation
------------------------------------------------------------- */
-.navbar {
+.NavBar {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  position: fixed;
   z-index: 1;
   display: flex;
-  margin-bottom: 32px;
   padding: 0 16px;
   width: 100%;
   height: 64px;
   line-height: 64px;
   background-color: #fff;
   border-bottom: 1px solid #ced7df; }
+  .NavBar .bi {
+    margin-right: 8px; }
 
-.navbar-title {
+.NavBar__title {
   flex-grow: 0;
   margin-right: 50px;
   font-weight: 600;
   color: #323b43; }
 
-.navbar-menu-left,
-.navbar-menu-right {
+.NavBar__LeftMenu,
+.NavBar__RightMenu {
   flex-direction: row;
   display: flex;
   margin: 0;
   list-style: none; }
 
-.navbar-menu-left {
+.NavBar__LeftMenu {
   justify-content: flex-start;
   flex-grow: 1; }
 
-.navbar-menu-right {
+.NavBar__RightMenu {
   justify-content: flex-end;
   flex-grow: 0; }
 
-.navbar-menu-item {
+.NavBar__Menu__item {
   margin: 0 32px 0 0; }
-  .navbar-menu-item a {
+  .NavBar__Menu__item a {
     display: inline-block;
     color: #666c72; }
-    .navbar-menu-item a.navbar-menu-item--active {
+    .NavBar__Menu__item a.NavBar__Menu__item--active {
       margin-right: -8px;
       margin-left: -8px;
       padding-right: 8px;
       padding-left: 8px;
       color: #323b43;
       box-shadow: inset 0 -2px #168eea; }
+  .NavBar__Menu__item .ProfilePicture {
+    vertical-align: middle;
+    display: inline-block !important;
+    margin-right: 8px; }
 
-.navbar-menu-item--last {
+.NavBar__Menu__item--last {
   margin-right: 0; }
-
-.navbar-menu-item-profile-picture {
-  vertical-align: middle;
-  display: inline-block !important;
-  margin-right: 8px; }
 
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
@@ -1134,133 +979,30 @@ li {
 ------------------------------------------------------------ */
 /* Animation
 ------------------------------------------------------------ */
-.profile-picture {
+.ProfilePicture {
   display: block;
   width: 32px;
   height: 32px;
   border-radius: 256px; }
 
-.profile-picture--inactive {
-  filter: grayscale(1);
-  opacity: 0.5; }
-  .profile-picture--inactive .profile-picture-icon .bi {
-    color: #323b43; }
-
-.profile-picture--small {
+.ProfilePicture--small {
   width: 16px;
   height: 16px; }
 
-.profile-picture-with-icon {
-  position: relative; }
+.ProfilePicture--large {
+  width: 64px;
+  height: 64px; }
 
-.profile-picture-icon {
-  position: absolute;
-  top: 12px;
-  left: 16px;
-  margin-right: 0;
-  font-size: 16px; }
-
-/* Global Reset // We'll pull in a common reset here, perhaps in another file!
------------------------------------------------------------- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-/* Shades Palette
------------------------------------------------------------- */
-/* Primary Palette
------------------------------------------------------------- */
-/* Blues
------------------------------- */
-/* Grays
------------------------------- */
-/* Others
------------------------------- */
-/* Brands Palette
------------------------------------------------------------- */
-/* Font
------------------------------------------------------------- */
-/* Border Radii
------------------------------------------------------------- */
-/* Box Shadows
------------------------------------------------------------- */
-/* Animation
------------------------------------------------------------- */
-.sidebar {
-  flex-direction: column;
-  justify-content: flex-start;
-  position: fixed;
-  z-index: 1;
-  display: flex;
-  margin-top: 64px;
-  width: 256px;
-  min-height: 128vh;
-  order: -1; }
-  .sidebar .card {
-    margin-top: 16px;
-    margin-left: 16px; }
-
-.sidebar-app {
-  background-color: #f8f8f8;
-  border-right: 1px solid #ced7df; }
-
-.sidebar-app-search-profiles {
-  flex-grow: 0;
-  padding: 16px;
-  border-bottom: 1px solid #ced7df; }
-  .sidebar-app-search-profiles .input-with-icon-left,
-  .sidebar-app-search-profiles .input-with-icon-left input {
-    width: 100%; }
-
-.sidebar-app-accounts {
-  flex-grow: 0;
-  padding: 16px;
-  text-align: center;
-  border-bottom: 1px solid #ced7df; }
-  .sidebar-app-accounts .nbs-ia-button {
-    width: 100%; }
-
-.sidebar-app-connected-accounts {
-  flex-grow: 0; }
-
-.sidebar-app-connected-account {
-  flex-direction: row;
-  justify-content: flex-start;
-  display: flex;
-  padding: 16px;
-  border-bottom: 1px solid #ced7df; }
-
-.sidebar-app-connected-account-profile-picture {
-  flex-grow: 0;
-  align-self: center;
-  margin-right: 16px; }
-
-.sidebar-app-connected-account-name {
-  flex-grow: 1;
-  align-self: center;
-  margin-right: 16px;
-  overflow: hidden; }
-
-.sidebar-app-connected-account-tag {
-  align-self: center; }
-
-.sidebar-app-footer {
-  flex-grow: 1;
-  position: relative; }
-
-.sidebar-app-footer-list {
-  position: absolute;
-  bottom: 16px;
-  list-style: none; }
-
-.sidebar-app-footer-list-item {
-  display: inline-block;
-  margin-right: 16px; }
-
-.sidebar-app-connected-account--active {
-  margin-right: -1px;
-  background-color: #fff; }
+.ProfilePictureWithIcon {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  background: red; }
+  .ProfilePictureWithIcon .ProfilePictureWithIcon__icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #fff; }
 
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
@@ -1289,24 +1031,41 @@ li {
 ------------------------------------------------------------ */
 /* Animation
 ------------------------------------------------------------ */
-.block-hero {
-  padding-top: 96px;
-  padding-bottom: 96px;
+.Block {
+  padding: 64px 0; }
+  .Block .bi {
+    margin-right: 8px; }
+    .Block .bi.bi--shamrock {
+      color: #2fd566; }
+
+.Block_content--center {
+  text-align: center; }
+  .Block_content--center img {
+    margin: 0 auto; }
+
+.BlockHero {
+  padding-top: 128px;
+  padding-bottom: 128px;
   text-align: center;
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat; }
-  .block-hero h1 {
+  .BlockHero h1 {
     margin-top: 0;
     margin-bottom: 8px; }
-  .block-hero h2 {
+  .BlockHero h2 {
     margin-top: 0;
     margin-bottom: 0;
     font-size: 24px;
     font-weight: 300; }
 
-.block-hero--pricing {
+.BlockHero--pricing {
   background-image: url(/img/block-title-text--hero@2x.png); }
+
+.BlockFooter {
+  background-color: #f4f7f9; }
+  .BlockFooter h5 {
+    margin-bottom: 32px; }
 
 /* Global Reset // We'll pull in a common reset here, perhaps in another file!
 ------------------------------------------------------------ */
