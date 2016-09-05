@@ -1,11 +1,18 @@
 @import "variables";
 
-html {
-  font-size: $font-size;
+a {
+  color: $curious-blue;
+  text-decoration: none;
+
+  &:hover {
+    color: $tory-blue;
+  }
+
+  img {
+    outline: none;
+  }
 }
 
-/* Body
------------------------------------------------------------- */
 body {
   font-family: $font-family;
   font-size: $font-size;
@@ -15,16 +22,17 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Headings
------------------------------------------------------------- */
+code {
+  color: $black;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  margin: 32px 0 8px 0;
-
+  margin: 0;
   color: $outer-space;
 }
 
@@ -59,10 +67,22 @@ h6 {
   font-size: 16px;
 }
 
-/* Paragraphs
--------------------------------------------------- */
-code {
-  color: $black;
+html {
+  font-size: $font-size;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+ol,
+ul {
+  margin: 0 16px;
+
+  &.no-style {
+    margin: 0;
+    list-style: none;
+  }
 }
 
 p {
@@ -71,9 +91,4 @@ p {
 
 small {
   font-size: 11px;
-}
-
-li {
-  margin-top: 8px;
-  margin-bottom: 8px;
 }
