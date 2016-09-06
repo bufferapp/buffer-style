@@ -1,28 +1,16 @@
-/* Global Reset // We'll pull in a common reset here, perhaps in another file!
------------------------------------------------------------- */
-* {
-    margin: 0;
-    padding: 0;
+// See http://bufferapp.github.io/buffer-style/colors.html to see how, when, and where we
+// should use the below palettes.
 
-    box-sizing: border-box;
-}
-
-/* Shades Palette
------------------------------------------------------------- */
+// Shades
 $black: #000;
 $white: #fff;
 
-/* Primary Palette
------------------------------------------------------------- */
-
-/* Blues
------------------------------- */
+// Blues
 $curious-blue: #168eea;
 $denim: #137ac9;
 $tory-blue: mix($curious-blue, $black, 70%);
 
-/* Grays
------------------------------- */
+// Grays
 $outer-space: #323b43;
 $shuttle-gray: #59626a;
 $nevada: #666c72;
@@ -30,14 +18,12 @@ $geyser: #ced7df;
 $aqua-haze: #f4f7f9;
 $alabaster: #f8f8f8;
 
-/* Others
------------------------------- */
+// Others
 $shamrock: #2fd566;
 $saffron: #f1cb3a;
 $torch-red: #ff1e1e;
 
-/* Brands Palette
------------------------------------------------------------- */
+// Brands Palette
 $appdotnet: #4a484c;
 $facebook: #3b5998;
 $linkedin: #007bb6;
@@ -45,25 +31,20 @@ $twitter: #55acee;
 $googleplus: #dd4b39;
 $pinterest: #bd081c;
 
-/* Font
------------------------------------------------------------- */
-// $font-family: 'open sans', sans-serif;
+// Font
 $font-family: "Open Sans", sans-serif;
 $font-size: 14px;
 $font-weight: 400;
 $line-height: 1.5;
 
-/* Border Radii
------------------------------------------------------------- */
+// Border Radii
 $border-radius-level-1: 4px;
 $border-radius-level-2: 2px;
 $border-radius-level-3: 1px;
 
-/* Box Shadows
------------------------------------------------------------- */
+// Box Shadows
 $box-shadow-level-1: 0 1px 2px rgba($black, 0.5);
 
-/* Animation
------------------------------------------------------------- */
+// Animation
 $transition-animation-time: 0.1s;
 $transition-animation-type: linear;
