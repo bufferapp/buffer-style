@@ -5,60 +5,6 @@
  * consumed by other projects. Do not include SCSS meant for the presentation
  * of the style guide website itself.
  */
-/* Global Reset // We'll pull in a common reset here, perhaps in another file!
------------------------------------------------------------- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-/* Shades Palette
------------------------------------------------------------- */
-/* Primary Palette
------------------------------------------------------------- */
-/* Blues
------------------------------- */
-/* Grays
------------------------------- */
-/* Others
------------------------------- */
-/* Brands Palette
------------------------------------------------------------- */
-/* Font
------------------------------------------------------------- */
-/* Border Radii
------------------------------------------------------------- */
-/* Box Shadows
------------------------------------------------------------- */
-/* Animation
------------------------------------------------------------- */
-/* Global Reset // We'll pull in a common reset here, perhaps in another file!
------------------------------------------------------------- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-/* Shades Palette
------------------------------------------------------------- */
-/* Primary Palette
------------------------------------------------------------- */
-/* Blues
------------------------------- */
-/* Grays
------------------------------- */
-/* Others
------------------------------- */
-/* Brands Palette
------------------------------------------------------------- */
-/* Font
------------------------------------------------------------- */
-/* Border Radii
------------------------------------------------------------- */
-/* Box Shadows
------------------------------------------------------------- */
-/* Animation
------------------------------------------------------------- */
 a {
   color: #168eea;
   text-decoration: none; }
@@ -133,36 +79,7 @@ small {
 *, *:before, *:after {
   box-sizing: inherit; }
 
-/* Global Reset // We'll pull in a common reset here, perhaps in another file!
------------------------------------------------------------- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-/* Shades Palette
------------------------------------------------------------- */
-/* Primary Palette
------------------------------------------------------------- */
-/* Blues
------------------------------- */
-/* Grays
------------------------------- */
-/* Others
------------------------------- */
-/* Brands Palette
------------------------------------------------------------- */
-/* Font
------------------------------------------------------------- */
-/* Border Radii
------------------------------------------------------------- */
-/* Box Shadows
------------------------------------------------------------- */
-/* Animation
------------------------------------------------------------- */
-/* Base Object
------------------------------------------------------------- */
-.button {
+.Button {
   display: inline-block;
   padding: 8px 24px;
   font-family: "Open Sans", sans-serif;
@@ -174,148 +91,81 @@ small {
   cursor: pointer;
   outline: none;
   transition: background-color 0.1s linear; }
-  .button:active {
+  .Button:active {
     background-color: #0f63a4 !important; }
-    .button:active.button--inactive {
-      background-color: #168eea !important; }
-  .button:hover {
+  .Button:hover {
     color: #fff;
     background-color: #137ac9; }
-    .button:hover.button--inactive {
-      color: #fff;
-      background-color: #168eea; }
-  .button [class*=" bi-"]:before, .button [class^=bi-]:before {
+  .Button [class*=" bi-"]:before, .Button [class^=bi-]:before {
     vertical-align: baseline; }
-  .button.ia {
+  .Button.Button--in-app {
     padding: 4px 16px; }
+  .Button .bi {
+    color: #fff; }
 
-.button--active {
+.Button--active {
   background-color: #0f63a4; }
-  .button--active:active, .button--active:hover {
+  .Button--active:active, .Button--active:hover {
     background-color: #0f63a4 !important; }
 
-.button--inactive {
-  opacity: 0.5;
-  cursor: not-allowed; }
-
-.button--secondary {
+.Button--secondary {
   color: #168eea;
   background-color: #fff;
   border-color: #168eea; }
-  .button--secondary:active {
+  .Button--secondary:active {
     color: #168eea !important;
     background-color: rgba(22, 142, 234, 0.1) !important;
     border-color: #168eea !important; }
-    .button--secondary:active.button--inactive {
-      background-color: #fff !important; }
-  .button--secondary:hover {
+  .Button--secondary:hover {
     color: #137ac9;
     background-color: #fff;
     border-color: #137ac9; }
-    .button--secondary:hover.button--inactive {
-      color: #168eea;
-      background-color: #fff;
-      border-color: #168eea; }
-      .button--secondary:hover.button--inactive i.bi {
-        color: #137ac9; }
-  .button--secondary i.bi {
+  .Button--secondary i.bi {
     color: #168eea; }
 
-.button--tertiary {
+.Button--tertiary {
   color: #666c72;
   background-color: transparent;
   border-color: #ced7df; }
-  .button--tertiary:active {
+  .Button--tertiary:active {
     color: #323b43 !important;
     background-color: rgba(50, 59, 67, 0.1) !important;
     border-color: #323b43 !important; }
-    .button--tertiary:active.button--inactive {
-      color: #666c72 !important;
-      background-color: transparent !important;
-      border-color: #ced7df !important; }
-  .button--tertiary:hover {
+  .Button--tertiary:hover {
     color: #323b43;
     background-color: transparent;
     border-color: #323b43; }
-    .button--tertiary:hover.button--inactive {
-      color: #666c72;
-      background-color: transparent;
-      border-color: #ced7df; }
 
-.button--borderless {
+.Button--borderless {
   color: #168eea;
   background-color: transparent;
   border: 0; }
-  .button--borderless:hover {
+  .Button--borderless:hover {
     color: #137ac9;
     background-color: transparent; }
-    .button--borderless:hover.button--inactive {
-      color: #168eea;
-      background-color: transparent; }
-  .button--borderless:active {
+  .Button--borderless:active {
     color: #137ac9;
     background-color: transparent !important; }
-    .button--borderless:active .button--inactive {
-      color: #168eea;
-      background-color: transparent !important; }
 
-.button--warning {
+.Button--warning {
   color: #ff1e1e;
   background-color: #fff;
   border-color: #ff1e1e; }
-  .button--warning:active {
+  .Button--warning:active {
     color: #ff1e1e !important;
     background-color: rgba(255, 30, 30, 0.1) !important; }
-    .button--warning:active.button--inactive {
-      color: #ff1e1e !important;
-      background-color: #fff !important;
-      border-color: #ff1e1e !important; }
-  .button--warning:hover {
+  .Button--warning:hover {
     color: #ff1e1e !important;
     background-color: #fff; }
-    .button--warning:hover.button--inactive {
-      color: #ff1e1e;
-      background-color: #fff;
-      border-color: #ff1e1e; }
-    .button--warning:hover i.bi {
+    .Button--warning:hover i.bi {
       color: #fff; }
-  .button--warning i.bi {
+  .Button--warning i.bi {
     color: #ff1e1e; }
 
-.button--small {
+.Button--small {
   padding: 2px 10px;
   font-size: 11px; }
 
-.button .bi {
-  color: #fff; }
-
-/* Global Reset // We'll pull in a common reset here, perhaps in another file!
------------------------------------------------------------- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-/* Shades Palette
------------------------------------------------------------- */
-/* Primary Palette
------------------------------------------------------------- */
-/* Blues
------------------------------- */
-/* Grays
------------------------------- */
-/* Others
------------------------------- */
-/* Brands Palette
------------------------------------------------------------- */
-/* Font
------------------------------------------------------------- */
-/* Border Radii
------------------------------------------------------------- */
-/* Box Shadows
------------------------------------------------------------- */
-/* Animation
------------------------------------------------------------- */
 .Card {
   padding: 16px;
   background-color: #fff;
@@ -419,33 +269,42 @@ small {
   margin-right: 0;
   margin-left: 0; }
 
-/* Global Reset // We'll pull in a common reset here, perhaps in another file!
------------------------------------------------------------- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
+.Block {
+  padding: 64px 0; }
+  .Block .bi {
+    margin-right: 8px; }
+    .Block .bi.bi--shamrock {
+      color: #2fd566; }
 
-/* Shades Palette
------------------------------------------------------------- */
-/* Primary Palette
------------------------------------------------------------- */
-/* Blues
------------------------------- */
-/* Grays
------------------------------- */
-/* Others
------------------------------- */
-/* Brands Palette
------------------------------------------------------------- */
-/* Font
------------------------------------------------------------- */
-/* Border Radii
------------------------------------------------------------- */
-/* Box Shadows
------------------------------------------------------------- */
-/* Animation
------------------------------------------------------------- */
+.Block_content--center {
+  text-align: center; }
+  .Block_content--center img {
+    margin: 0 auto; }
+
+.BlockHero {
+  padding-top: 128px;
+  padding-bottom: 128px;
+  text-align: center;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .BlockHero h1 {
+    margin-top: 0;
+    margin-bottom: 8px; }
+  .BlockHero h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: 300; }
+
+.BlockHero--pricing {
+  background-image: url(../img/block-title-text--hero@2x.png); }
+
+.BlockFooter {
+  background-color: #f4f7f9; }
+  .BlockFooter h5 {
+    margin-bottom: 32px; }
+
 * {
   box-sizing: border-box; }
 
@@ -527,33 +386,6 @@ small {
   .TwelveColumns--large {
     width: 100%; } }
 
-/* Global Reset // We'll pull in a common reset here, perhaps in another file!
------------------------------------------------------------- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-/* Shades Palette
------------------------------------------------------------- */
-/* Primary Palette
------------------------------------------------------------- */
-/* Blues
------------------------------- */
-/* Grays
------------------------------- */
-/* Others
------------------------------- */
-/* Brands Palette
------------------------------------------------------------- */
-/* Font
------------------------------------------------------------- */
-/* Border Radii
------------------------------------------------------------- */
-/* Box Shadows
------------------------------------------------------------- */
-/* Animation
------------------------------------------------------------- */
 .input {
   margin: 0;
   padding: 8px;
@@ -603,33 +435,6 @@ small {
 .input-with-icon-right .bi {
   right: 8px; }
 
-/* Global Reset // We'll pull in a common reset here, perhaps in another file!
------------------------------------------------------------- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-/* Shades Palette
------------------------------------------------------------- */
-/* Primary Palette
------------------------------------------------------------- */
-/* Blues
------------------------------- */
-/* Grays
------------------------------- */
-/* Others
------------------------------- */
-/* Brands Palette
------------------------------------------------------------- */
-/* Font
------------------------------------------------------------- */
-/* Border Radii
------------------------------------------------------------- */
-/* Box Shadows
------------------------------------------------------------- */
-/* Animation
------------------------------------------------------------- */
 .metabar {
   flex-direction: row;
   justify-content: flex-start;
@@ -740,33 +545,6 @@ small {
 .metabar-metrics-item--last {
   border-right: 0; }
 
-/* Global Reset // We'll pull in a common reset here, perhaps in another file!
------------------------------------------------------------- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-/* Shades Palette
------------------------------------------------------------- */
-/* Primary Palette
------------------------------------------------------------- */
-/* Blues
------------------------------- */
-/* Grays
------------------------------- */
-/* Others
------------------------------- */
-/* Brands Palette
------------------------------------------------------------- */
-/* Font
------------------------------------------------------------- */
-/* Border Radii
------------------------------------------------------------- */
-/* Box Shadows
------------------------------------------------------------- */
-/* Animation
------------------------------------------------------------- */
 .NavBar {
   flex-direction: row;
   justify-content: flex-start;
@@ -823,33 +601,6 @@ small {
 .NavBar__Menu__item--last {
   margin-right: 0; }
 
-/* Global Reset // We'll pull in a common reset here, perhaps in another file!
------------------------------------------------------------- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-/* Shades Palette
------------------------------------------------------------- */
-/* Primary Palette
------------------------------------------------------------- */
-/* Blues
------------------------------- */
-/* Grays
------------------------------- */
-/* Others
------------------------------- */
-/* Brands Palette
------------------------------------------------------------- */
-/* Font
------------------------------------------------------------- */
-/* Border Radii
------------------------------------------------------------- */
-/* Box Shadows
------------------------------------------------------------- */
-/* Animation
------------------------------------------------------------- */
 .notification {
   flex-direction: row;
   justify-content: flex-start;
@@ -886,33 +637,6 @@ small {
   .notification--success a .bi {
     color: #2fd566; }
 
-/* Global Reset // We'll pull in a common reset here, perhaps in another file!
------------------------------------------------------------- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-/* Shades Palette
------------------------------------------------------------- */
-/* Primary Palette
------------------------------------------------------------- */
-/* Blues
------------------------------- */
-/* Grays
------------------------------- */
-/* Others
------------------------------- */
-/* Brands Palette
------------------------------------------------------------- */
-/* Font
------------------------------------------------------------- */
-/* Border Radii
------------------------------------------------------------- */
-/* Box Shadows
------------------------------------------------------------- */
-/* Animation
------------------------------------------------------------- */
 .post--failed .post-content {
   border-top: 1px solid #ff1e1e;
   border-right: 1px solid #ff1e1e;
@@ -952,33 +676,6 @@ small {
     max-width: 256px;
     max-height: 128px; }
 
-/* Global Reset // We'll pull in a common reset here, perhaps in another file!
------------------------------------------------------------- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-/* Shades Palette
------------------------------------------------------------- */
-/* Primary Palette
------------------------------------------------------------- */
-/* Blues
------------------------------- */
-/* Grays
------------------------------- */
-/* Others
------------------------------- */
-/* Brands Palette
------------------------------------------------------------- */
-/* Font
------------------------------------------------------------- */
-/* Border Radii
------------------------------------------------------------- */
-/* Box Shadows
------------------------------------------------------------- */
-/* Animation
------------------------------------------------------------- */
 .ProfilePicture {
   display: block;
   width: 32px;
@@ -1004,96 +701,6 @@ small {
     bottom: 0;
     background-color: #fff; }
 
-/* Global Reset // We'll pull in a common reset here, perhaps in another file!
------------------------------------------------------------- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-/* Shades Palette
------------------------------------------------------------- */
-/* Primary Palette
------------------------------------------------------------- */
-/* Blues
------------------------------- */
-/* Grays
------------------------------- */
-/* Others
------------------------------- */
-/* Brands Palette
------------------------------------------------------------- */
-/* Font
------------------------------------------------------------- */
-/* Border Radii
------------------------------------------------------------- */
-/* Box Shadows
------------------------------------------------------------- */
-/* Animation
------------------------------------------------------------- */
-.Block {
-  padding: 64px 0; }
-  .Block .bi {
-    margin-right: 8px; }
-    .Block .bi.bi--shamrock {
-      color: #2fd566; }
-
-.Block_content--center {
-  text-align: center; }
-  .Block_content--center img {
-    margin: 0 auto; }
-
-.BlockHero {
-  padding-top: 128px;
-  padding-bottom: 128px;
-  text-align: center;
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat; }
-  .BlockHero h1 {
-    margin-top: 0;
-    margin-bottom: 8px; }
-  .BlockHero h2 {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 24px;
-    font-weight: 300; }
-
-.BlockHero--pricing {
-  background-image: url(/img/block-title-text--hero@2x.png); }
-
-.BlockFooter {
-  background-color: #f4f7f9; }
-  .BlockFooter h5 {
-    margin-bottom: 32px; }
-
-/* Global Reset // We'll pull in a common reset here, perhaps in another file!
------------------------------------------------------------- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-/* Shades Palette
------------------------------------------------------------- */
-/* Primary Palette
------------------------------------------------------------- */
-/* Blues
------------------------------- */
-/* Grays
------------------------------- */
-/* Others
------------------------------- */
-/* Brands Palette
------------------------------------------------------------- */
-/* Font
------------------------------------------------------------- */
-/* Border Radii
------------------------------------------------------------- */
-/* Box Shadows
------------------------------------------------------------- */
-/* Animation
------------------------------------------------------------- */
 .tag {
   padding: 2px 8px;
   font-size: 11px;
