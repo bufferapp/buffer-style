@@ -6,13 +6,13 @@
     <title>Buffer Style Guide</title>
     <link href="css/style.css" rel="stylesheet">
     <link href="css/guide.css" rel="stylesheet">
-    <link href="//s3.amazonaws.com/buffer-icons/0.5.0/buffer-icons.css" type="text/css" rel="stylesheet" />
+    <link href="https://icons.buffer.com/0.11.1/buffer-icons.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700" rel="stylesheet" type="text/css">
   </head>
   <body class="app">
     <div class="NavBar">
       <div class="NavBar__title">
-        <i class="bi bi-buffer"></i>Style Guide
+        <a href="/"><i class="bi bi-buffer"></i>Style Guide</a>
       </div>
     </div>
     <div class="body">
@@ -25,11 +25,8 @@
             <li><a href="colors.html">Colors</a></li>
             <li><a href="external-pages.html">External Pages</a></li>
             <li><a href="grid-system.html">Grid System</a></li>
-            <li><a href="inputs.html">Inputs</a></li>
-            <li><a href="metabars.html">MetaBars</a></li>
             <li><a href="navbars.html">NavBars</a></li>
             <li><a href="notifications.html">Notifications</a></li>
-            <li><a href="posts.html">Posts</a></li>
             <li><a href="profile-pictures.html">Profile Pictures</a></li>
             <li><a href="tags.html">Tags</a></li>
             <li><a class="sidebar-style-guide-list--last" href="typography.html">Typography</a></li>
@@ -50,15 +47,15 @@
                 Example:
               </div>
               <div class="code-block-render">
-                <div class="notification">
+                <div class="Notification">
                   <p>This is a regular notification bar.</p>
-                  <a href="#"><i class="bi bi-x"></i></a>
+                  <button class="ButtonIcon"><i class="bi-x"></i></button>
                 </div>
               </div>
               <div class="code-block-code">
-                <pre>&lt;div class="notification">
+                <pre>&lt;div class="Notification">
   &lt;p>This is a regular notification bar.&lt;/p>
-  &lt;a href="#">&lt;i class="bi bi-x">&lt;/i>&lt;/a>
+  &lt;button class="ButtonIcon">&lt;i class="bi bi-x">&lt;/i>&lt;/button>
 &lt;/div></pre>
               </div>
             </div>
@@ -71,15 +68,15 @@
                 Example:
               </div>
               <div class="code-block-render">
-                <div class="notification notification--warning">
+                <div class="Notification Notification--warning">
                   <p>This is a warning notification bar. <a href="#">Action to Take</a></p>
-                  <a href="#"><i class="bi bi-x"></i></a>
+                  <button class="ButtonIcon"><i class="bi bi-x"></i></button>
                 </div>
               </div>
               <div class="code-block-code">
-                <pre>&lt;div class="notification notification--warning">
+                <pre>&lt;div class="Notification Notification--warning">
   &lt;p>This is a warning notification bar. &lt;a href="#">Action to Take&lt;/a>&lt;/p>
-  &lt;a href="#">&lt;i class="bi bi-x">&lt;/i>&lt;/a>
+  &lt;button class="ButtonIcon">&lt;i class="bi bi-x">&lt;/i>&lt;/button>
 &lt;/div></pre>
               </div>
             </div>
@@ -92,15 +89,15 @@
                 Example:
               </div>
               <div class="code-block-render">
-                <div class="notification notification--error">
+                <div class="Notification Notification--error">
                   <p>This is an error notification bar. <a href="#">Action to Take</a></p>
-                  <a href="#"><i class="bi bi-x"></i></a>
+                  <button class="ButtonIcon"><i class="bi bi-x"></i></button>
                 </div>
               </div>
               <div class="code-block-code">
                 <pre>&lt;div class="notification notification--error">
 &lt;p>This is an error notification bar. &lt;a href="#">Action to Take&lt;/a>&lt;/p>
-&lt;a href="#">&lt;i class="bi bi-x">&lt;/i>&lt;/a>
+&lt;button class="ButtonIcon">&lt;i class="bi bi-x">&lt;/i>&lt;/button>
 &lt;/div></pre>
               </div>
             </div>
@@ -113,15 +110,15 @@
                 Example:
               </div>
               <div class="code-block-render">
-                <div class="notification notification--success">
+                <div class="Notification Notification--success">
                   <p>This is a success notification bar.</p>
-                  <a href="#"><i class="bi bi-x"></i></a>
+                  <button class="ButtonIcon"><i class="bi bi-x"></i></button>
                 </div>
               </div>
               <div class="code-block-code">
                 <pre>&lt;div class="notification notification--success">
 &lt;p>This is a success notification bar.&lt;/p>
-&lt;a href="#">&lt;i class="bi bi-x">&lt;/i>&lt;/a>
+&lt;button class="ButtonIcon">&lt;i class="bi bi-x">&lt;/i>&lt;/button>
 &lt;/div></pre>
               </div>
             </div>
