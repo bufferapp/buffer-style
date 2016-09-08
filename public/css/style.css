@@ -166,6 +166,15 @@ small {
   padding: 2px 10px;
   font-size: 11px; }
 
+.ButtonIcon {
+  align-self: center;
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
+  line-height: 12px;
+  background-color: transparent;
+  border: 0; }
+
 .Card {
   padding: 16px;
   background-color: #fff;
@@ -386,165 +395,6 @@ small {
   .TwelveColumns--large {
     width: 100%; } }
 
-.input {
-  margin: 0;
-  padding: 8px;
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  color: #323b43;
-  border: 1px solid #ced7df;
-  border-radius: 2px;
-  outline: none;
-  transition: border-color 0.1s linear; }
-  .input:focus {
-    border-color: #168eea; }
-  .input::-webkit-input-placeholder {
-    color: #ced7df; }
-  .input::-moz-placeholder {
-    color: #ced7df; }
-  .input:-moz-placeholder {
-    color: #ced7df; }
-  .input:-ms-input-placeholder {
-    color: #ced7df; }
-
-.input--icon-left {
-  padding-left: 30px; }
-
-.input--icon-right {
-  padding-right: 30px; }
-
-.input-label {
-  display: block;
-  margin-bottom: 8px;
-  font-size: 12px;
-  color: #323b43; }
-
-.input-with-icon-left,
-.input-with-icon-right {
-  position: relative;
-  display: inline-block; }
-  .input-with-icon-left .bi,
-  .input-with-icon-right .bi {
-    position: absolute;
-    top: 6px;
-    margin: 0; }
-
-.input-with-icon-left .bi {
-  left: 8px; }
-
-.input-with-icon-right .bi {
-  right: 8px; }
-
-.metabar {
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  align-content: stretch;
-  display: flex;
-  margin-bottom: 16px;
-  padding: 8px;
-  font-size: 11px;
-  font-weight: 600;
-  background-color: #f4f7f9;
-  border-right: 1px solid #ced7df;
-  border-bottom: 1px solid #ced7df;
-  border-left: 1px solid #ced7df;
-  border-radius: 0 0 4px 4px; }
-  .metabar:hover .metabar-menu-item {
-    display: inherit; }
-  .metabar ul {
-    margin: 0;
-    padding: 0;
-    list-style: none; }
-  .metabar [class*=" bi-"]:before, .metabar [class^=bi-]:before {
-    vertical-align: baseline; }
-
-.metabar--analytics {
-  padding: 0; }
-
-.metabar-time {
-  flex-grow: 0; }
-
-.metabar-time-zone {
-  flex-grow: 0;
-  font-weight: normal; }
-
-.metabar-profile-picture {
-  flex-grow: 0;
-  margin-left: 16px;
-  border: 1px solid #ced7df;
-  border-radius: 128px; }
-
-.metabar-user-name {
-  flex-grow: 0;
-  margin-left: 8px; }
-
-.metabar-via {
-  flex-grow: 0;
-  margin-left: 16px; }
-
-.metabar-tag {
-  flex-grow: 0;
-  margin-left: 16px; }
-  .metabar-tag .tag {
-    border-radius: 2px; }
-
-.metabar-menu {
-  flex-direction: row;
-  justify-content: flex-end;
-  flex-grow: 1;
-  display: flex; }
-
-.metabar-menu-item {
-  display: none;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 16px;
-  padding: 0; }
-  .metabar-menu-item a {
-    display: block;
-    color: #59626a; }
-    .metabar-menu-item a:hover {
-      color: #168eea; }
-
-.metabar-metrics {
-  flex-direction: row;
-  justify-content: flex-start;
-  flex-grow: 1;
-  display: flex; }
-
-.metabar-metrics-item {
-  flex-grow: 1;
-  margin: 0;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  text-align: center;
-  border-right: 1px solid #ced7df; }
-
-.metabar-metrics-item-label {
-  margin-left: 2px;
-  font-weight: normal; }
-
-.metabar-time--pinned {
-  margin-left: -12px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  padding-left: 8px;
-  color: #fff;
-  background-color: #168eea;
-  border-radius: 1px 0 0 1px; }
-
-.metabar-time--pinned-arrow {
-  margin-right: -8px;
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 8px solid #168eea; }
-
-.metabar-metrics-item--last {
-  border-right: 0; }
-
 .NavBar {
   flex-direction: row;
   justify-content: flex-start;
@@ -559,6 +409,10 @@ small {
   border-bottom: 1px solid #ced7df; }
   .NavBar .bi {
     margin-right: 8px; }
+  .NavBar a {
+    color: #323b43; }
+    .NavBar a:hover {
+      color: #59626a; }
 
 .NavBar__title {
   flex-grow: 0;
@@ -601,80 +455,54 @@ small {
 .NavBar__Menu__item--last {
   margin-right: 0; }
 
-.notification {
+.Notification {
   flex-direction: row;
   justify-content: flex-start;
   align-content: stretch;
   display: flex;
-  padding: 20px;
+  padding: 16px;
   color: #fff;
   background-color: #168eea; }
-  .notification a .bi {
+  .Notification a .bi {
     color: #fff; }
-  .notification i {
+  .Notification i {
     flex-grow: 0;
     margin-right: 0; }
-  .notification p {
+  .Notification p {
     flex-grow: 1;
     align-self: center;
-    margin: 0 20px 0 0; }
+    margin: 0 16px 0 0; }
+  .Notification .ButtonIcon {
+    color: #fff; }
+    .Notification .ButtonIcon:hover {
+      color: #0f63a4; }
 
-.notification--warning {
+.Notification--error .ButtonIcon,
+.Notification--success .ButtonIcon,
+.Notification--warning .ButtonIcon {
+  color: #168eea; }
+  .Notification--error .ButtonIcon:hover,
+  .Notification--success .ButtonIcon:hover,
+  .Notification--warning .ButtonIcon:hover {
+    color: #0f63a4; }
+
+.Notification--warning {
   color: #323b43;
   background-color: rgba(241, 203, 58, 0.2); }
-  .notification--warning a .bi {
+  .Notification--warning a .bi {
     color: #f1cb3a; }
 
-.notification--error {
+.Notification--error {
   color: #323b43;
   background-color: rgba(255, 30, 30, 0.2); }
-  .notification--error a .bi {
+  .Notification--error a .bi {
     color: #ff1e1e; }
 
-.notification--success {
+.Notification--success {
   color: #323b43;
   background-color: rgba(47, 213, 102, 0.2); }
-  .notification--success a .bi {
+  .Notification--success a .bi {
     color: #2fd566; }
-
-.post--failed .post-content {
-  border-top: 1px solid #ff1e1e;
-  border-right: 1px solid #ff1e1e;
-  border-left: 1px solid #ff1e1e; }
-
-.post--failed .metabar {
-  border-right: 1px solid #ff1e1e;
-  border-bottom: 1px solid #ff1e1e;
-  border-left: 1px solid #ff1e1e; }
-
-.post-content {
-  flex-direction: row;
-  justify-content: flex-start;
-  align-content: stretch;
-  display: flex;
-  background-color: #fff;
-  border: 1px solid #ced7df;
-  border-radius: 4px 4px 0 0; }
-
-.post-content-text {
-  flex-grow: 1;
-  padding: 32px 16px; }
-
-.post-content-image {
-  flex-grow: 0;
-  padding: 16px 16px 16px 0; }
-  .post-content-image img {
-    display: block;
-    max-width: 256px;
-    max-height: 128px;
-    border-radius: 2px; }
-
-.post-content-video {
-  flex-grow: 0;
-  padding: 16px 16px 16px 0; }
-  .post-content-video iframe {
-    max-width: 256px;
-    max-height: 128px; }
 
 .ProfilePicture {
   display: block;

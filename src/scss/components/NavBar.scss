@@ -16,6 +16,14 @@
   .bi {
     margin-right: 8px;
   }
+
+  a {
+    color: $outer-space;
+
+    &:hover {
+      color: $shuttle-gray;
+    }
+  }
 }
 
 .NavBar__title {

@@ -1,11 +1,11 @@
 @import "../base/variables";
 
-.notification {
+.Notification {
   flex-direction: row;
   justify-content: flex-start;
   align-content: stretch;
   display: flex;
-  padding: 20px;
+  padding: 16px;
   color: $white;
   background-color: $curious-blue;
 
@@ -21,11 +21,31 @@
   p {
     flex-grow: 1;
     align-self: center;
-    margin: 0 20px 0 0;
+    margin: 0 16px 0 0;
+  }
+
+  .ButtonIcon {
+    color: $white;
+
+    &:hover {
+      color: $tory-blue;
+    }
   }
 }
 
-.notification--warning {
+.Notification--error,
+.Notification--success,
+.Notification--warning {
+  .ButtonIcon {
+    color: $curious-blue;
+
+    &:hover {
+      color: $tory-blue;
+    }
+  }
+}
+
+.Notification--warning {
   color: $outer-space;
   background-color: rgba($saffron, 0.2);
 
@@ -34,7 +54,7 @@
   }
 }
 
-.notification--error {
+.Notification--error {
   color: $outer-space;
   background-color: rgba($torch-red, 0.2);
 
@@ -43,7 +63,7 @@
   }
 }
 
-.notification--success {
+.Notification--success {
   color: $outer-space;
   background-color: rgba($shamrock, 0.2);
 
