@@ -1,0 +1,52 @@
+@import "../base/variables";
+
+.DropDown {
+  position: relative;
+
+  &:hover .DropDown__content {
+    display: block;
+  }
+}
+
+.DropDown__content {
+  position: absolute;
+  top: 32px;
+  right: 0;
+  z-index: 1;
+  display: none;
+  min-width: 192px;
+  white-space: nowrap;
+  background-color: $white;
+  border: 1px solid $geyser;
+  border-radius: $border-radius-level-1;
+  box-shadow: $box-shadow-level-1;
+  overflow: hidden;
+
+  a {
+    display: block;
+    padding: 8px 16px;
+    line-height: 32px;
+
+    &:hover {
+      text-decoration: none;
+      background-color: $aqua-haze;
+    }
+
+    &.DropDown__content__sign-out {
+      border-top: 1px solid $geyser;
+    }
+  }
+
+  form {
+    margin-bottom: 0;
+  }
+
+  li {
+    margin-bottom: 0;
+  }
+
+  ul {
+    margin: 0;
+    list-style: none;
+  }
+}

@@ -40,6 +40,7 @@
   }
 }
 
+// Only use this in `buffer-style`
 .BlockHero--pricing {
   background-image: url(../img/block-title-text--hero@2x.png);
 }
@@ -48,6 +49,7 @@
   background-color: $aqua-haze;
 
   h5 {
+    margin-top: 0;
     margin-bottom: 32px;
   }
 }

@@ -7,10 +7,11 @@
 }
 
 a {
-  color: $curious-blue;
   text-decoration: none;
+  color: $curious-blue;
 
   &:hover {
+    text-decoration: underline;;
     color: $tory-blue;
   }
 

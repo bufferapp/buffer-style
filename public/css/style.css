@@ -84,6 +84,7 @@ small {
   padding: 8px 24px;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
+  line-height: 1.5;
   color: #fff;
   background-color: #168eea;
   border: 1px solid transparent;
@@ -95,6 +96,7 @@ small {
     background-color: #0f63a4 !important; }
   .Button:hover {
     color: #fff;
+    text-decoration: none;
     background-color: #137ac9; }
   .Button [class*=" bi-"]:before, .Button [class^=bi-]:before {
     vertical-align: baseline; }
@@ -114,7 +116,7 @@ small {
   border-color: #168eea; }
   .Button--secondary:active {
     color: #168eea !important;
-    background-color: rgba(22, 142, 234, 0.1) !important;
+    background-color: fade(#168eea, 10%) !important;
     border-color: #168eea !important; }
   .Button--secondary:hover {
     color: #137ac9;
@@ -129,7 +131,7 @@ small {
   border-color: #ced7df; }
   .Button--tertiary:active {
     color: #323b43 !important;
-    background-color: rgba(50, 59, 67, 0.1) !important;
+    background-color: fade(#323b43, 10%) !important;
     border-color: #323b43 !important; }
   .Button--tertiary:hover {
     color: #323b43;
@@ -153,7 +155,7 @@ small {
   border-color: #ff1e1e; }
   .Button--warning:active {
     color: #ff1e1e !important;
-    background-color: rgba(255, 30, 30, 0.1) !important; }
+    background-color: fade(#ff1e1e, 10%) !important; }
   .Button--warning:hover {
     color: #ff1e1e !important;
     background-color: #fff; }
@@ -312,6 +314,7 @@ small {
 .BlockFooter {
   background-color: #f4f7f9; }
   .BlockFooter h5 {
+    margin-top: 0;
     margin-bottom: 32px; }
 
 * {
@@ -404,21 +407,22 @@ small {
   padding: 0 16px;
   width: 100%;
   height: 64px;
-  line-height: 64px;
   background-color: #fff;
   border-bottom: 1px solid #ced7df; }
   .NavBar .bi {
     margin-right: 8px; }
-  .NavBar a {
-    color: #323b43; }
-    .NavBar a:hover {
-      color: #59626a; }
 
 .NavBar__title {
   flex-grow: 0;
   margin-right: 50px;
+  font-size: 16px;
   font-weight: 600;
   color: #323b43; }
+  .NavBar__title a {
+    color: #323b43; }
+    .NavBar__title a:hover {
+      text-decoration: none;
+      color: #59626a; }
 
 .NavBar__LeftMenu,
 .NavBar__RightMenu {
