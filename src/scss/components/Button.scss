@@ -5,6 +5,7 @@
   padding: 8px 24px;
   font-family: $font-family;
   font-size: $font-size;
+  line-height: $line-height;
   color: $white;
   background-color: $curious-blue;
   border: 1px solid transparent;
@@ -19,6 +20,7 @@
 
   &:hover {
     color: $white;
+    text-decoration: none;
     background-color: $denim;
   }
 
@@ -51,7 +53,7 @@
 
   &:active {
     color: $curious-blue !important;
-    background-color: rgba($curious-blue, 0.1) !important;
+    background-color: fade($curious-blue, 10%) !important;
     border-color: $curious-blue !important;
   }
 
@@ -73,7 +75,7 @@
 
   &:active {
     color: $outer-space !important;
-    background-color: rgba($outer-space, 0.1) !important;
+    background-color: fade($outer-space, 10%) !important;
     border-color: $outer-space !important;
   }
 
@@ -107,7 +109,7 @@
 
   &:active {
     color: $torch-red !important;
-    background-color: rgba($torch-red, 0.1) !important;
+    background-color: fade($torch-red, 10%) !important;
   }
 
   &:hover {
