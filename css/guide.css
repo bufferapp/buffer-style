@@ -4,9 +4,10 @@
   box-sizing: border-box; }
 
 a {
-  color: #168eea;
-  text-decoration: none; }
+  text-decoration: none;
+  color: #168eea; }
   a:hover {
+    text-decoration: underline;
     color: #0f63a4; }
   a img {
     outline: none; }
