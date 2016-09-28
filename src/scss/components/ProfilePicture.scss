@@ -1,5 +1,6 @@
 @import "../base/variables";
 
+// ProfilePicture
 .ProfilePicture {
   display: block;
   width: 32px;
@@ -7,9 +8,10 @@
   border-radius: 256px;
 }
 
-.ProfilePicture--small {
-  width: 16px;
-  height: 16px;
+// ProfilePicture - Modifiers
+.ProfilePicture--extra-large {
+  width: 128px;
+  height: 128px;
 }
 
 .ProfilePicture--large {
@@ -17,16 +19,28 @@
   height: 64px;
 }
 
+.ProfilePicture--medium {
+  width: 48px;
+  height: 48px;
+}
+
+.ProfilePicture--small {
+  width: 16px;
+  height: 16px;
+}
+
+// ProfilePictureWithIcon
 .ProfilePictureWithIcon {
   position: relative;
   width: 32px;
   height: 32px;
   background: red;
+}
 
-  .ProfilePictureWithIcon__icon {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    background-color: $white;
-  }
+// ProfilePictureWithIcon - Elements
+.ProfilePictureWithIcon__icon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: $white;
 }

@@ -9,215 +9,256 @@
     <link href="https://icons.buffer.com/0.11.1/buffer-icons.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700" rel="stylesheet" type="text/css">
   </head>
-  <body class="app">
+  <body>
+    <!-- <div class="NavBar">
+      <div class="NavBar__title">
+        <a href="/"><i class="bi bi-buffer"></i>Style Guide</a>
+      </div>
+    </div> -->
     <div class="NavBar">
       <div class="NavBar__title">
         <a href="/"><i class="bi bi-buffer"></i>Style Guide</a>
       </div>
+      <ul class="NavBar__LeftMenu">
+        <li class="NavBar__Menu__item"><a class="NavBar__Menu__item--active" href="index.html">Introduction</a></li>
+        <li class="NavBar__Menu__item"><a href="buttons.html">Buttons</a></li>
+        <li class="NavBar__Menu__item"><a href="cards.html">Cards</a></li>
+        <li class="NavBar__Menu__item"><a href="colors.html">Colors</a></li>
+        <li class="NavBar__Menu__item"><a href="external-pages.html">External Pages</a></li>
+        <li class="NavBar__Menu__item"><a href="grid-system.html">Grid System</a></li>
+        <li class="NavBar__Menu__item"><a href="navbars.html">NavBars</a></li>
+        <li class="NavBar__Menu__item"><a href="profile-pictures.html">Profile Pictures</a></li>
+        <li class="NavBar__Menu__item"><a href="tags.html">Tags</a></li>
+        <li class="NavBar__Menu__item NavBar__Menu__item--last"><a href="typography.html">Typography</a></li>
+      </ul>
+      <ul class="NavBar__RightMenu">
+        <li class="NavBar__Menu__item NavBar__Menu__item--last"><a class="Button Button--secondary" href="https://buffer.com/">Sign up for Free</a></li>
+      </ul>
     </div>
-    <div class="body">
-      <div class="sidebar">
-        <div class="Card">
-          <ul class="sidebar-style-guide-list">
-            <li><a href="index.html">Introduction</a></li>
-            <li><a href="buttons.html">Buttons</a></li>
-            <li><a href="cards.html">Cards</a></li>
-            <li><a href="colors.html">Colors</a></li>
-            <li><a href="external-pages.html">External Pages</a></li>
-            <li><a href="grid-system.html">Grid System</a></li>
-            <li><a href="navbars.html">NavBars</a></li>
-            <li><a href="notifications.html">Notifications</a></li>
-            <li><a href="profile-pictures.html">Profile Pictures</a></li>
-            <li><a href="tags.html">Tags</a></li>
-            <li><a class="sidebar-style-guide-list--last" href="typography.html">Typography</a></li>
-          </ul>
+
+    <div class="BlockHero BlockHero--colors">
+      <div class="GridRow">
+        <div class="GridContainer">
+          <div class="TwelveColumns--large TwelveColumns--medium">
+            <h2>Colors</h2>
+            <h3>Each color Card has its Less variable and its hex value. Each Card contains current use cases for the color and in some cases, the opacity of that color.</h3>
+          </div>
         </div>
       </div>
-      <div class="content">
-        <div class="Card">
-          <div class="section">
-            <h1>Colors</h1>
-            <p>Each color Card has its Less variable and its hex value. Each Card contains current use cases for the color and in some cases, the opacity of that color.</p>
-          </div>
-          <div class="section">
+    </div>
+
+    <div class="Block">
+      <div class="GridRow GridRow--colors">
+        <div class="GridContainer">
+          <div class="TwelveColumns--large TwelveColumns--medium">
             <h2>Blues</h2>
             <p>Our blue color palette is used to signify a primary actionable item and its various states of interaction. The use of this color might be on a link that we want the user to focus on above others, or a button that we'd like to have more importance than another.</p>
-            <div class="CardColorSwatches">
-              <div class="Card">
-                <div class="CardWithColor CardWithColor--blue-1">
-                  <h3>@curious-blue</h3>
-                  <p>#168eea</p>
-                </div>
-                <div class="CardWithItem__content">
-                  <h4>Use for:</h4>
-                  <ul class="no-style">
-                    <li>Primary Actionable Item</li>
-                    <li><code>background-color</code></li>
-                  </ul>
-                  <ul class="no-style">
-                    <li>Secondary Actionable Item</li>
-                    <li><code>border-color</code></li>
-                    <li><code>color</code></li>
-                  </ul>
-                  <ul class="no-style">
-                    <li>Secondary Actionable Item -- Hover</li>
-                    <li><code>background-color (10%)</code></li>
-                  </ul>
-                  <ul class="no-style">
-                    <li>Primary Tag</li>
-                    <li><code>background-color</code></li>
-                  </ul>
-                </div>
+          </div>
+        </div>
+      </div>
+      <div class="GridRow GridRow--colors-last-row">
+        <div class="GridContainer">
+          <div class="FourColumns--large TwelveColumns--medium">
+            <div class="Card">
+              <div class="CardWithColor CardWithColor--blue-1">
+                <h3>@curious-blue</h3>
+                <p>#168eea</p>
               </div>
-              <div class="Card">
-                <div class="CardWithColor CardWithColor--blue-2">
-                  <h3>@denim</h3>
-                  <p>#137ac9</p>
-                </div>
-                <div class="CardWithItem__content">
-                  <h4>Use for:</h4>
-                  <ul class="no-style">
-                    <li>Primary Actionable Item - Hover State</li>
-                    <li><code>background-color</code></li>
-                  </ul>
-                  <ul class="no-style">
-                    <li>Secondary Actionable Item - Hover State</li>
-                    <li><code>border-color</code></li>
-                    <li><code>color</code></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="Card">
-                <div class="CardWithColor CardWithColor--blue-3">
-                  <h3>@tory-blue</h3>
-                  <p>#0f63a4</p>
-                </div>
-                <div class="CardWithItem__content">
-                  <h4>Use for:</h4>
-                    <ul class="no-style">
-                      <li>Primary Actionable Item - Action State</li>
-                      <li><code>background-color</code></li>
-                    </ul>
-                    <ul class="no-style">
-                      <li>Secondary Actionable Item - Action State</li>
-                      <li><code>border-color</code></li>
-                      <li><code>color</code></li>
-                    </ul>
-                </div>
+              <div class="CardWithColor__content">
+                <ul class="List--no-style">
+                  <li><h4>A primary actionable item's:</h4></li>
+                  <li><code>background-color</code></li>
+                </ul>
+                <ul class="List--no-style">
+                  <li><h4>A secondary actionable item's:</li>
+                  <li><code>border-color</code></li>
+                  <li><code>color</code></li>
+                </ul>
+                <ul class="List--no-style">
+                  <li><h4>A secondary actionable item hover state's:</h4></li>
+                  <li><code>background-color (10%)</code></li>
+                </ul>
+                <ul class="List--no-style List--no-margin-bottom">
+                  <li><h4>A primary <code>Tag</code> component's:</h4></li>
+                  <li><code>background-color</code></li>
+                </ul>
               </div>
             </div>
           </div>
-          <div class="section">
+          <div class="FourColumns--large TwelveColumns--medium">
+            <div class="Card">
+              <div class="CardWithColor CardWithColor--blue-2">
+                <h3>@denim</h3>
+                <p>#137ac9</p>
+              </div>
+              <div class="CardWithColor__content">
+                <h4>Use for:</h4>
+                <ul class="List--no-style">
+                  <li>Primary Actionable Item - Hover State</li>
+                  <li><code>background-color</code></li>
+                </ul>
+                <ul class="List--no-style">
+                  <li>Secondary Actionable Item - Hover State</li>
+                  <li><code>border-color</code></li>
+                  <li><code>color</code></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="FourColumns--large TwelveColumns--medium">
+            <div class="Card">
+              <div class="CardWithColor CardWithColor--blue-3">
+                <h3>@tory-blue</h3>
+                <p>#0f63a4</p>
+              </div>
+              <div class="CardWithColor__content">
+                <h4>Use for:</h4>
+                <ul class="List--no-style">
+                  <li>Primary Actionable Item - Action State</li>
+                  <li><code>background-color</code></li>
+                </ul>
+                <ul class="List--no-style">
+                  <li>Secondary Actionable Item - Action State</li>
+                  <li><code>border-color</code></li>
+                  <li><code>color</code></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="Block BlockAlternative">
+      <div class="GridRow GridRow--colors">
+        <div class="GridContainer">
+          <div class="TwelveColumns--large TwelveColumns--medium">
             <h2>Grays</h2>
             <p>We use our gray color palette in almost everything. Examples can be found everywhere, from text colors and borders to backgrounds and shadows.</p>
-            <div class="CardColorSwatches">
-              <div class="Card">
-                <div class="CardWithColor CardWithColor--gray-1">
-                  <h3>@outer-space</h3>
-                  <p>#323b43</p>
-                </div>
-                <div class="CardWithItem__content">
-                  <h4>Use for:</h4>
-                  <ul class="no-style">
-                    <li>Titles</li>
-                    <li><code>color</code></li>
-                  </ul>
-                  <ul class="no-style">
-                    <li>Tertiary Actionable Item - Hover</li>
-                    <li><code>color</code></li>
-                  </ul>
-                  <ul class="no-style">
-                    <li>Tertiary Actionable Item - Active</li>
-                    <li><code>background-color (10%)</code></li>
-                    <li><code>color</code></li>
-                  </ul>
-                  <ul class="no-style">
-                    <li>NavBar Menu Actionable Item - Active</li>
-                    <li><code>color</code></li>
-                  </ul>
-                  <ul class="no-style">
-                    <li>Input</li>
-                    <li><code>color</code></li>
-                  </ul>
-                  <ul class="no-style">
-                    <li>Input - Label</li>
-                    <li><code>color</code></li>
-                  </ul>
-                  <ul class="no-style">
-                    <li>UI Primary Actionable Item</li>
-                    <li><code>color</code></li>
-                  </ul>
-                  <ul class="no-style">
-                    <li>Notification -- Error</li>
-                    <li><code>color</code></li>
-                  </ul>
-                  <ul class="no-style">
-                    <li>Notification -- Success</li>
-                    <li><code>color</code></li>
-                  </ul>
-                  <ul class="no-style">
-                    <li>Notification - Warning</li>
-                    <li><code>color</code></li>
-                  </ul>
-                  <ul class="no-style">
-                    <li>Profile Picture Icon -- Inactive</li>
-                    <li><code>color</code></li>
-                  </ul>
-                </div>
+          </div>
+        </div>
+      </div>
+      <div class="GridRow">
+        <div class="GridContainer">
+          <div class="FourColumns--large TwelveColumns--medium">
+            <div class="Card">
+              <div class="CardWithColor CardWithColor--gray-1">
+                <h3>@outer-space</h3>
+                <p>#323b43</p>
               </div>
-              <div class="Card">
-                <div class="CardWithColor CardWithColor--gray-2">
-                  <h3>@shuttle-gray</h3>
-                  <p>#59626a</p>
-                </div>
-                <div class="CardWithItem__content">
-                  <h4>Use for:</h4>
-                  <ul class="no-style">
-                    <li>Body</li>
-                    <li><code>color</code></li>
-                  </ul>
-                  <ul class="no-style">
-                    <li>MetaBar Actionable Item</li>
-                    <li><code>color</code></li>
-                  </ul>
-                  <ul class="no-style">
-                    <li>Tag</li>
-                    <li><code>color</code></li>
-                  </ul>
-                </div>
+              <div class="CardWithColor__content">
+                <h4>Use for:</h4>
+                <ul class="List--no-style">
+                  <li>Titles</li>
+                  <li><code>color</code></li>
+                </ul>
+                <ul class="List--no-style">
+                  <li>Tertiary Actionable Item - Hover</li>
+                  <li><code>color</code></li>
+                </ul>
+                <ul class="List--no-style">
+                  <li>Tertiary Actionable Item - Active</li>
+                  <li><code>background-color (10%)</code></li>
+                  <li><code>color</code></li>
+                </ul>
+                <ul class="List--no-style">
+                  <li>NavBar Menu Actionable Item - Active</li>
+                  <li><code>color</code></li>
+                </ul>
+                <ul class="List--no-style">
+                  <li>Input</li>
+                  <li><code>color</code></li>
+                </ul>
+                <ul class="List--no-style">
+                  <li>Input - Label</li>
+                  <li><code>color</code></li>
+                </ul>
+                <ul class="List--no-style">
+                  <li>UI Primary Actionable Item</li>
+                  <li><code>color</code></li>
+                </ul>
+                <ul class="List--no-style">
+                  <li>Notification -- Error</li>
+                  <li><code>color</code></li>
+                </ul>
+                <ul class="List--no-style">
+                  <li>Notification -- Success</li>
+                  <li><code>color</code></li>
+                </ul>
+                <ul class="List--no-style">
+                  <li>Notification - Warning</li>
+                  <li><code>color</code></li>
+                </ul>
+                <ul class="List--no-style">
+                  <li>Profile Picture Icon -- Inactive</li>
+                  <li><code>color</code></li>
+                </ul>
               </div>
+            </div>
+          </div>
+          <div class="FourColumns--large TwelveColumns--medium">
+            <div class="Card">
+              <div class="CardWithColor CardWithColor--gray-2">
+                <h3>@shuttle-gray</h3>
+                <p>#59626a</p>
+              </div>
+              <div class="CardWithColor__content">
+                <h4>Use for:</h4>
+                <ul class="List--no-style">
+                  <li>Body</li>
+                  <li><code>color</code></li>
+                </ul>
+                <ul class="List--no-style">
+                  <li>MetaBar Actionable Item</li>
+                  <li><code>color</code></li>
+                </ul>
+                <ul class="List--no-style">
+                  <li>Tag</li>
+                  <li><code>color</code></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="FourColumns--large TwelveColumns--medium">
+            <div class="Card">
+              <div class="CardWithColor CardWithColor--gray-3">
+                <h3>@nevada</h3>
+                <p>#666c72</p>
+              </div>
+              <div class="CardWithColor__content">
+                <h4>Use for:</h4>
+                  <ul class="List--no-style">
+                    <li>Tertiary Actionable Item</li>
+                    <li><code>border-color</code></li>
+                    <li><code>color</code></li>
+                  </ul>
+                  <ul class="List--no-style">
+                    <li>Primary Actionable Item -- Inactive State</li>
+                    <li><code>border-color</code></li>
+                    <li><code>color</code></li>
+                  </ul>
+                  <ul class="List--no-style">
+                    <li>Secondary Actionable Item -- Inactive State</li>
+                    <li><code>border-color</code></li>
+                    <li><code>color</code></li>
+                  </ul>
+                  <ul class="List--no-style">
+                    <li>Tertiary Actionable Item -- Inactive State</li>
+                    <li><code>border-color</code></li>
+                    <li><code>color</code></li>
+                  </ul>
+                  <ul class="List--no-style">
+                    <li>NavBar Menu Actionable Item</li>
+                    <li><code>color</code></li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--
               <div class="Card">
-                <div class="CardWithColor CardWithColor--gray-3">
-                  <h3>@nevada</h3>
-                  <p>#666c72</p>
-                </div>
-                <div class="CardWithItem__content">
-                  <h4>Use for:</h4>
-                    <ul class="no-style">
-                      <li>Tertiary Actionable Item</li>
-                      <li><code>border-color</code></li>
-                      <li><code>color</code></li>
-                    </ul>
-                    <ul class="no-style">
-                      <li>Primary Actionable Item -- Inactive State</li>
-                      <li><code>border-color</code></li>
-                      <li><code>color</code></li>
-                    </ul>
-                    <ul class="no-style">
-                      <li>Secondary Actionable Item -- Inactive State</li>
-                      <li><code>border-color</code></li>
-                      <li><code>color</code></li>
-                    </ul>
-                    <ul class="no-style">
-                      <li>Tertiary Actionable Item -- Inactive State</li>
-                      <li><code>border-color</code></li>
-                      <li><code>color</code></li>
-                    </ul>
-                    <ul class="no-style">
-                      <li>NavBar Menu Actionable Item</li>
-                      <li><code>color</code></li>
-                    </ul>
-                </div>
               </div>
               <div class="Card">
                 <div class="CardWithColor CardWithColor--gray-4">
@@ -226,44 +267,44 @@
                 </div>
                 <div class="CardWithItem__content">
                   <h4>Use for:</h4>
-                  <ul class="no-style">
+                  <ul class="List--no-style">
                     <li>Tertiary Actionable Item</li>
                     <li><code>border-color</code></li>
                   </ul>
-                  <ul class="no-style">
+                  <ul class="List--no-style">
                     <li>Tertiary Actionable Item -- Inactive</li>
                     <li><code>border-color</code></li>
                   </ul>
-                  <ul class="no-style">
+                  <ul class="List--no-style">
                     <li>SideBar</li>
                     <li><code>border-color</code></li>
                   </ul>
-                  <ul class="no-style">
+                  <ul class="List--no-style">
                     <li>Card</li>
                     <li><code>border-color</code></li>
                   </ul>
-                  <ul class="no-style">
+                  <ul class="List--no-style">
                     <li>Post</li>
                     <li><code>border-color</code></li>
                   </ul>
-                  <ul class="no-style">
+                  <ul class="List--no-style">
                     <li>Input</li>
                     <li><code>color</code></li>
                     <li><code>border-color</code></li>
                   </ul>
-                  <ul class="no-style">
+                  <ul class="List--no-style">
                     <li>NavBar</li>
                     <li><code>border-color</code></li>
                   </ul>
-                  <ul class="no-style">
+                  <ul class="List--no-style">
                     <li>MetaBar</li>
                     <li><code>border-color</code></li>
                   </ul>
-                  <ul class="no-style">
+                  <ul class="List--no-style">
                     <li>MetaBar - Profile Picture</li>
                     <li><code>border-color</code></li>
                   </ul>
-                  <ul class="no-style">
+                  <ul class="List--no-style">
                     <li>Tag</li>
                     <li><code>background-color</code></li>
                   </ul>
@@ -276,7 +317,7 @@
                 </div>
                 <div class="CardWithItem__content">
                   <h4>Use for:</h4>
-                    <ul class="no-style">
+                    <ul class="List--no-style">
                       <li>MetaBar</li>
                       <li><code>background-color</code></li>
                     </ul>
@@ -289,7 +330,7 @@
                 </div>
                 <div class="CardWithItem__content">
                   <h4>Use for:</h4>
-                  <ul class="no-style">
+                  <ul class="List--no-style">
                     <li>SideBar - Individual Plan</li>
                     <li><code>background-color</code></li>
                   </ul>
@@ -308,11 +349,11 @@
                 </div>
                 <div class="CardWithItem__content">
                   <h4>Use for:</h4>
-                  <ul class="no-style">
+                  <ul class="List--no-style">
                     <li>Notification -- Success</li>
                     <li><code>background-color (20%)</code></li>
                   </ul>
-                  <ul class="no-style">
+                  <ul class="List--no-style">
                     <li>Notification -- Success - Icon</li>
                     <li><code>color</code></li>
                   </ul>
@@ -325,11 +366,11 @@
                 </div>
                 <div class="CardWithItem__content">
                   <h4>Use for:</h4>
-                  <ul class="no-style">
+                  <ul class="List--no-style">
                     <li>Notification -- Warning</li>
                     <li><code>background-color (20%)</code></li>
                   </ul>
-                  <ul class="no-style">
+                  <ul class="List--no-style">
                     <li>Notification -- Warning - Icon</li>
                     <li><code>color</code></li>
                   </ul>
@@ -342,24 +383,24 @@
                 </div>
                 <div class="CardWithItem__content">
                   <h4>Use for:</h4>
-                  <ul class="no-style">
+                  <ul class="List--no-style">
                     <li>Actionable Item -- Warning</li>
                     <li><code>color</code></li>
                     <li><code>border-color</code></li>
                   </ul>
-                  <ul class="no-style">
+                  <ul class="List--no-style">
                     <li>Post -- Failed</li>
                     <li><code>border-color</code></li>
                   </ul>
-                  <ul class="no-style">
+                  <ul class="List--no-style">
                     <li>Notification -- Error</li>
                     <li><code>background-color (20%)</code></li>
                   </ul>
-                  <ul class="no-style">
+                  <ul class="List--no-style">
                     <li>Notification -- Error - Icon</li>
                     <li><code>color</code></li>
                   </ul>
-                  <ul class="no-style">
+                  <ul class="List--no-style">
                     <li>Tag -- Error</li>
                     <li><code>background-color</code></li>
                   </ul>
@@ -369,7 +410,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="js/bundle.js"></script>
   </body>

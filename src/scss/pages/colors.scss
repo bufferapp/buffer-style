@@ -1,0 +1,82 @@
+@import "base/variables";
+
+// BlockHero - Modifier
+.BlockHero--colors {
+  background-color: $black;
+}
+
+// CardWithColor
+.CardWithColor {
+  margin: -17px -17px 16px -17px;
+  padding: 16px;
+  text-align: center;
+  border-radius: $border-radius-level-1 $border-radius-level-1 0 0;
+}
+
+.CardWithColor h3 {
+  margin-bottom: 0;
+}
+
+.CardWithColor p {
+  margin: 0;
+}
+
+// CardWithColor - Elements
+.CardWithColor__content ol,
+.CardWithColor__content ul {
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+// CardWithColor - Modifiers
+.CardWithColor--blue-1 {
+  background-color: $curious-blue;
+}
+
+.CardWithColor--blue-1 h3,
+.CardWithColor--blue-2 h3,
+.CardWithColor--blue-3 h3,
+.CardWithColor--gray-1 h3,
+.CardWithColor--gray-2 h3,
+.CardWithColor--gray-3 h3 {
+  color: $white;
+}
+
+.CardWithColor--blue-1 p,
+.CardWithColor--blue-2 p,
+.CardWithColor--blue-3 p,
+.CardWithColor--gray-1 p,
+.CardWithColor--gray-2 p,
+.CardWithColor--gray-3 p {
+  color: rgba($white, 0.75);
+}
+
+.CardWithColor--blue-2 {
+  background-color: $denim;
+}
+
+.CardWithColor--blue-3 {
+  background-color: $tory-blue;
+}
+
+.CardWithColor--gray-1 {
+  background-color: $outer-space;
+}
+
+.CardWithColor--gray-2 {
+  background-color: $shuttle-gray;
+}
+
+.CardWithColor--gray-3 {
+  background-color: $nevada;
+}
+
+// GridRow - Modifiers
+.GridRow--colors {
+  margin-bottom: 32px;
+}
+
+.GridRow--colors-last-row .Card {
+  margin-bottom: 0;
+}
