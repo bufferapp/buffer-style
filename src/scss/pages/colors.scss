@@ -38,24 +38,40 @@
   background-color: $curious-blue;
 }
 
+.CardWithColor--appdotnet h3,
 .CardWithColor--blue-1 h3,
 .CardWithColor--blue-2 h3,
 .CardWithColor--blue-3 h3,
+.CardWithColor--facebook h3,
+.CardWithColor--googleplus h3,
 .CardWithColor--gray-1 h3,
 .CardWithColor--gray-2 h3,
 .CardWithColor--gray-3 h3,
+.CardWithColor--linkedin h3,
+.CardWithColor--pinterest h3,
+.CardWithColor--twitter h3,
 .CardWithColor--red h3 {
   color: $white;
 }
 
+.CardWithColor--appdotnet p,
 .CardWithColor--blue-1 p,
 .CardWithColor--blue-2 p,
 .CardWithColor--blue-3 p,
+.CardWithColor--facebook p,
+.CardWithColor--googleplus p,
 .CardWithColor--gray-1 p,
 .CardWithColor--gray-2 p,
 .CardWithColor--gray-3 p,
+.CardWithColor--linkedin p,
+.CardWithColor--pinterest p,
+.CardWithColor--twitter p,
 .CardWithColor--red p {
   color: rgba($white, 0.75);
+}
+
+.CardWithColor--appdotnet {
+  background-color: $appdotnet;
 }
 
 .CardWithColor--blue-2 {
@@ -64,6 +80,14 @@
 
 .CardWithColor--blue-3 {
   background-color: $tory-blue;
+}
+
+.CardWithColor--facebook {
+  background-color: $facebook;
+}
+
+.CardWithColor--googleplus {
+  background-color: $googleplus;
 }
 
 .CardWithColor--gray-1 {
@@ -90,8 +114,20 @@
   background-color: $shamrock;
 }
 
+.CardWithColor--linkedin {
+  background-color: $linkedin;
+}
+
+.CardWithColor--pinterest {
+  background-color: $pinterest;
+}
+
 .CardWithColor--red {
   background-color: $torch-red;
+}
+
+.CardWithColor--twitter {
+  background-color: $twitter;
 }
 
 .CardWithColor--white {
