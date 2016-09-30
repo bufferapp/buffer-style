@@ -521,64 +521,6 @@ p {
 .NavBar__Menu__item--last {
   margin-right: 0; }
 
-.Notification {
-  flex-direction: row;
-  justify-content: flex-start;
-  align-content: stretch;
-  display: flex;
-  padding: 16px;
-  color: #fff;
-  background-color: #168eea; }
-
-.Notification:hover {
-  color: #0f63a4; }
-
-.Notification a .bi {
-  color: #fff; }
-
-.Notification i {
-  flex-grow: 0;
-  margin-right: 0; }
-
-.Notification p {
-  flex-grow: 1;
-  align-self: center;
-  margin: 0 16px 0 0; }
-
-.Notification .ButtonIcon {
-  color: #fff; }
-
-.Notification--error .ButtonIcon,
-.Notification--success .ButtonIcon,
-.Notification--warning .ButtonIcon {
-  color: #168eea; }
-
-.Notification--error .ButtonIcon:hover,
-.Notification--success .ButtonIcon:hover,
-.Notification--warning .ButtonIcon:hover {
-  color: #0f63a4; }
-
-.Notification--error {
-  color: #323b43;
-  background-color: rgba(255, 30, 30, 0.2); }
-
-.Notification--error a .bi {
-  color: #ff1e1e; }
-
-.Notification--success {
-  color: #323b43;
-  background-color: rgba(47, 213, 102, 0.2); }
-
-.Notification--success a .bi {
-  color: #2fd566; }
-
-.Notification--warning {
-  color: #323b43;
-  background-color: rgba(241, 203, 58, 0.2); }
-
-.Notification--warning a .bi {
-  color: #f1cb3a; }
-
 .ProfilePicture {
   display: block;
   width: 32px;
