@@ -9,45 +9,105 @@
     <link href="https://icons.buffer.com/0.11.1/buffer-icons.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700" rel="stylesheet" type="text/css">
   </head>
-  <body class="app">
+  <body>
     <div class="NavBar">
       <div class="NavBar__title">
         <a href="/"><i class="bi bi-buffer"></i>Style Guide</a>
       </div>
+      <ul class="NavBar__LeftMenu">
+        <li class="NavBar__Menu__item NavBar__Menu__item--active"><a class="NavBar__Menu__item__link" href="buttons.html">Buttons</a></li>
+        <li class="NavBar__Menu__item"><a class="NavBar__Menu__item__link" href="cards.html">Cards</a></li>
+        <li class="NavBar__Menu__item"><a class="NavBar__Menu__item__link" href="colors.html">Colors</a></li>
+        <li class="NavBar__Menu__item"><a class="NavBar__Menu__item__link" href="external-pages.html">External Pages</a></li>
+        <li class="NavBar__Menu__item"><a class="NavBar__Menu__item__link" href="grid-system.html">Grid System</a></li>
+        <li class="NavBar__Menu__item"><a class="NavBar__Menu__item__link" href="navbars.html">NavBars</a></li>
+        <li class="NavBar__Menu__item"><a class="NavBar__Menu__item__link" href="profile-pictures.html">Profile Pictures</a></li>
+        <li class="NavBar__Menu__item"><a class="NavBar__Menu__item__link" href="tags.html">Tags</a></li>
+        <li class="NavBar__Menu__item NavBar__Menu__item--last"><a class="NavBar__Menu__item__link" href="typography.html">Typography</a></li>
+      </ul>
+      <ul class="NavBar__RightMenu">
+        <li class="NavBar__Menu__item NavBar__Menu__item--last"><a class="Button Button--secondary" href="https://buffer.com/">Sign up for Free</a></li>
+      </ul>
     </div>
-    <div class="body">
-      <div class="sidebar">
-        <div class="Card">
-          <ul class="sidebar-style-guide-list">
-            <li><a href="index.html">Introduction</a></li>
-            <li><a href="buttons.html">Buttons</a></li>
-            <li><a href="cards.html">Cards</a></li>
-            <li><a href="colors.html">Colors</a></li>
-            <li><a href="external-pages.html">External Pages</a></li>
-            <li><a href="inputs.html">Inputs</a></li>
-            <li><a href="navbars.html">NavBars</a></li>
-            <li><a href="profile-pictures.html">Profile Pictures</a></li>
-            <li><a href="tags.html">Tags</a></li>
-            <li><a class="sidebar-style-guide-list--last" href="typography.html">Typography</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="content">
-        <div class="Card">
-          <div class="section">
-            <h1>Introduction</h1>
-            <p>This style guide is a work in progress. Our goal for the Buffer Style Guide is to provide a library of all atoms, molecules, organisms, templates, and pages that make up the Buffer web app and company website.</p>
-            <p>Our Style Guide was designed with these goals in mind:</p>
-            <ul>
-              <li>To be the point of truth for our user interface for the Buffer web app.</li>
-              <li>To enable us to move faster with design that has been tested by the Growth team.</li>
-              <li>To introduce a level of data-driven thinking when building and designing.</li>
-              <li>To help make software development easier.</li>
-            </ul>
+
+    <div class="BlockHero BlockHero--colors">
+      <div class="GridRow">
+        <div class="GridContainer">
+          <div class="TwelveColumns--large TwelveColumns--medium">
+            <h2>Buttons</h2>
+            <h3>We use buttons to initiate actions inside and outside of the Buffer app. <code>less/components/Button.less</code> provides a number of predefined button styles, which are documented below, for most use cases.</h3>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="Block">
+      <div class="GridRow">
+        <div class="GridContainer">
+          <div class="TwelveColumns--large TwelveColumns--medium">
+            <h2>Button</h2>
+            <p>We use buttons to initiate actions inside and outside of the Buffer app. <code>less/components/Button.less</code> provides a number of predefined button styles, which are documented below, for most use cases.</p>
+            <p>This is the default style of a button. To define it, assign a <code>button</code> or <code>a</code> node with a <code>class</code> of <code>Button</code>.</p>
+            <div class="Block__content-block">
+              <button class="Button">Button text</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="Block BlockAlternative">
+      <div class="GridRow">
+        <div class="GridContainer">
+          <div class="TwelveColumns--large TwelveColumns--medium">
+            <h2>Modifiers</h2>
+            <div class="Block__content-block">
+              <h3>Button--state-warning</h3>
+              <p>Use this modifier to communicate a destructive action to the user.</p>
+              <button class="Button Button--state-warning">Button text</button>
+            </div>
+            <div class="Block__content-block">
+              <h3>Button--type-borderless</h3>
+              <p>Use this modifier to communicate a non-primary action to the user.</p>
+              <button class="Button Button--type-borderless">Button text</button>
+            </div>
+            <div class="Block__content-block">
+              <h3>Button--type-in-app</h3>
+              <p>Use this modifier to communicate an in-app action to the user.</p>
+              <button class="Button Button--type-in-app">Button text</button>
+            </div>
+            <div class="Block__content-block">
+              <h3>Button--type-secondary</h3>
+              <p>Use this modifier to communicate a secondary action to the user.</p>
+              <button class="Button Button--type-secondary">Button text</button>
+            </div>
+            <div class="Block__content-block">
+              <h3>Button--type-small</h3>
+              <p>Use this modifier to communicate a primary action to the user when space is limited.</p>
+              <button class="Button Button--type-small">Button text</button>
+            </div>
+            <div class="Block__content-block">
+              <h3>Button--type-tertiary</h3>
+              <p>Use this modifier to communicate a tertiary action to the user.</p>
+              <button class="Button Button--type-tertiary">Button text</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="Block">
+      <div class="GridRow">
+        <div class="GridContainer">
+          <div class="TwelveColumns--large TwelveColumns--medium">
+            <h2>BlockIcon</h2>
+            <p>Use to communicate an action to the user using an icon only.</p>
+            <button class="ButtonIcon"><i class="bi bi-x"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="js/bundle.js"></script>
   </body>
