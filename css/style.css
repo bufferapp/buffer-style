@@ -240,8 +240,12 @@ p {
 .Block__content-block {
   margin-top: 32px; }
 
+.Block__content-block h2,
 .Block__content-block h3 {
   margin-bottom: 0; }
+
+.Block__content-block--top {
+  margin-top: 0; }
 
 .Block__content--center {
   text-align: center; }
