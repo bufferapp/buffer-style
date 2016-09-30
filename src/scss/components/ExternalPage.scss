@@ -18,6 +18,15 @@
   color: $shamrock;
 }
 
+// Block Elements
+.Block__content-block {
+  margin-top: 32px;
+}
+
+.Block__content-block h3 {
+  margin-bottom: 0;
+}
+
 // Block Element Modifiers
 .Block__content--center {
   text-align: center;
