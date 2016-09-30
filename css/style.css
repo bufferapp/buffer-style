@@ -652,29 +652,50 @@ p {
 .CardWithColor--blue-1 {
   background-color: #168eea; }
 
+.CardWithColor--appdotnet h3,
 .CardWithColor--blue-1 h3,
 .CardWithColor--blue-2 h3,
 .CardWithColor--blue-3 h3,
+.CardWithColor--facebook h3,
+.CardWithColor--googleplus h3,
 .CardWithColor--gray-1 h3,
 .CardWithColor--gray-2 h3,
 .CardWithColor--gray-3 h3,
+.CardWithColor--linkedin h3,
+.CardWithColor--pinterest h3,
+.CardWithColor--twitter h3,
 .CardWithColor--red h3 {
   color: #fff; }
 
+.CardWithColor--appdotnet p,
 .CardWithColor--blue-1 p,
 .CardWithColor--blue-2 p,
 .CardWithColor--blue-3 p,
+.CardWithColor--facebook p,
+.CardWithColor--googleplus p,
 .CardWithColor--gray-1 p,
 .CardWithColor--gray-2 p,
 .CardWithColor--gray-3 p,
+.CardWithColor--linkedin p,
+.CardWithColor--pinterest p,
+.CardWithColor--twitter p,
 .CardWithColor--red p {
   color: rgba(255, 255, 255, 0.75); }
+
+.CardWithColor--appdotnet {
+  background-color: #4a484c; }
 
 .CardWithColor--blue-2 {
   background-color: #137ac9; }
 
 .CardWithColor--blue-3 {
   background-color: #0f63a4; }
+
+.CardWithColor--facebook {
+  background-color: #3b5998; }
+
+.CardWithColor--googleplus {
+  background-color: #dd4b39; }
 
 .CardWithColor--gray-1 {
   background-color: #323b43; }
@@ -694,8 +715,17 @@ p {
 .CardWithColor--green {
   background-color: #2fd566; }
 
+.CardWithColor--linkedin {
+  background-color: #007bb6; }
+
+.CardWithColor--pinterest {
+  background-color: #bd081c; }
+
 .CardWithColor--red {
   background-color: #ff1e1e; }
+
+.CardWithColor--twitter {
+  background-color: #55acee; }
 
 .CardWithColor--white {
   background-color: #fff; }
