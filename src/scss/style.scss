@@ -1,15 +1,9 @@
-/**
- * Buffer style guide root file
- *
- * Only imports of SCSS files at this level. These files are meant to be
- * consumed by other projects. Do not include SCSS meant for the presentation
- * of the style guide website itself.
- */
-
+// Base
 @import "base/variables";
 @import "base/typography";
 @import "base/layout";
 
+// Components
 @import "components/Button";
 @import "components/Card";
 @import "components/ExternalPage";
@@ -17,4 +11,6 @@
 @import "components/NavBar";
 @import "components/ProfilePicture";
 @import "components/Tag";
+
+// Pages
 @import "pages/colors"
