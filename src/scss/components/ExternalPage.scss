@@ -18,16 +18,21 @@
   color: $shamrock;
 }
 
-// Block Elements
+// Block - Elements
 .Block__content-block {
   margin-top: 32px;
 }
 
+.Block__content-block h2,
 .Block__content-block h3 {
   margin-bottom: 0;
 }
 
-// Block Element Modifiers
+// Block - Element - Modifiers
+.Block__content-block--top {
+  margin-top: 0;
+}
+
 .Block__content--center {
   text-align: center;
 }
@@ -125,7 +130,7 @@
   margin-bottom: 0;
 }
 
-// BlockFooter Elements
+// BlockFooter - Elements
 .BlockFooter__copyright a {
   color: $shuttle-gray;
 }
@@ -141,7 +146,7 @@
   margin-top: 16px;
 }
 
-// BlockGrid Elements
+// BlockGrid - Elements
 .BlockGrid__title {
   margin-top: 32px;
 }
