@@ -2,7 +2,6 @@
 // should use the below palettes.
 
 // Shades
-$black: #000;
 $white: #fff;
 
 // Blues
@@ -16,7 +15,6 @@ $shuttle-gray: #59626a;
 $nevada: #666c72;
 $geyser: #ced7df;
 $aqua-haze: #f4f7f9;
-$alabaster: #f8f8f8;
 
 // Others
 $shamrock: #2fd566;
@@ -43,7 +41,7 @@ $border-radius-level-2: 2px;
 $border-radius-level-3: 1px;
 
 // Box Shadows
-$box-shadow-level-1: 0 1px 2px rgba($black, 0.5);
+$box-shadow-level-1: 0 1px 2px rgba($outer-space, 0.5);
 
 // Animation
 $transition-animation-time: 0.1s;

@@ -9,9 +9,9 @@ body {
 // Code
 code {
   padding: 2px 4px;
-  color: $nevada;
-  background-color: $aqua-haze;
-  border-radius: $border-radius-level-3;
+  color: $torch-red;
+  background-color: rgba($torch-red, 0.1);
+  border-radius: $border-radius-level-2;
 }
 
 // Headings
@@ -67,18 +67,18 @@ a:hover {
 // Ordered/Unordered Lists
 ol,
 ul {
-  margin: 32px 16px 32px 18px;
+  margin: 32px 16px 32px 34px;
 }
 
 li {
   margin-bottom: 8px;
 }
 
-.List--no-style {
+.List--style-none {
   list-style: none;
 }
 
-.List--no-margin-bottom {
+.List--margin-bottom-0 {
   margin-bottom: 0;
 }
 

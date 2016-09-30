@@ -2,15 +2,15 @@
 
 // BlockHero - Modifier
 .BlockHero--colors {
-  background-color: $black;
+  background-color: $outer-space;
 }
 
 // CardWithColor
 .CardWithColor {
-  margin: -17px -17px 16px -17px;
-  padding: 16px;
+  margin: -17px -17px -17px -17px;
+  padding: 64px 0;
   text-align: center;
-  border-radius: $border-radius-level-1 $border-radius-level-1 0 0;
+  border-radius: $border-radius-level-1;
 }
 
 .CardWithColor h3 {
@@ -30,6 +30,10 @@
 }
 
 // CardWithColor - Modifiers
+.CardWithColor--color-aqua-haze,
+.CardWithColor--color-white {
+  margin: -16px;
+}
 .CardWithColor--blue-1 {
   background-color: $curious-blue;
 }
@@ -39,7 +43,8 @@
 .CardWithColor--blue-3 h3,
 .CardWithColor--gray-1 h3,
 .CardWithColor--gray-2 h3,
-.CardWithColor--gray-3 h3 {
+.CardWithColor--gray-3 h3,
+.CardWithColor--red h3 {
   color: $white;
 }
 
@@ -48,7 +53,8 @@
 .CardWithColor--blue-3 p,
 .CardWithColor--gray-1 p,
 .CardWithColor--gray-2 p,
-.CardWithColor--gray-3 p {
+.CardWithColor--gray-3 p,
+.CardWithColor--red p {
   color: rgba($white, 0.75);
 }
 
@@ -72,11 +78,35 @@
   background-color: $nevada;
 }
 
-// GridRow - Modifiers
-.GridRow--colors {
-  margin-bottom: 32px;
+.CardWithColor--gray-4 {
+  background-color: $geyser;
 }
 
-.GridRow--colors-last-row .Card {
+.CardWithColor--gray-5 {
+  background-color: $aqua-haze;
+}
+
+.CardWithColor--green {
+  background-color: $shamrock;
+}
+
+.CardWithColor--red {
+  background-color: $torch-red;
+}
+
+.CardWithColor--white {
+  background-color: $white;
+}
+
+.CardWithColor--yellow {
+  background-color: $saffron;
+}
+
+// GridRow - Modifiers
+.GridRow--color-swatch {
+  margin-top: 32px;
+}
+
+.GridRow--color-swatch-last-row .Card {
   margin-bottom: 0;
 }

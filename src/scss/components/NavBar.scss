@@ -77,9 +77,14 @@
   margin-right: 8px;
 }
 
+.NavBar__Menu__item__link {
+  color: $shuttle-gray;
+}
+
 // NavBar - Element Modifiers
-.NavBar__Menu__item--active {
+.NavBar__Menu__item--active .NavBar__Menu__item__link {
   font-weight: 600;
+  color: $outer-space;
 }
 
 .NavBar__Menu__item--last {

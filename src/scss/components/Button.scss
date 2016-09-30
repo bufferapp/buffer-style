@@ -36,114 +36,105 @@
 }
 
 // Button - Modifiers
-.Button--active {
-  background-color: $tory-blue;
-}
-
-.Button--active:active,
-.Button--active:hover {
-  background-color: $tory-blue !important;
-}
-
-.Button--borderless {
-  color: $curious-blue;
-  background-color: transparent;
-  border: 0;
-}
-
-.Button--borderless:hover {
-  color: $denim;
-  background-color: transparent;
-}
-
-.Button--borderless:active {
-  color: $denim;
-  background-color: transparent !important;
-}
-
-.Button--in-app {
-  padding: 4px 16px;
-}
-
-.Button--secondary {
-  color: $curious-blue;
-  background-color: transparent;
-  border-color: $curious-blue;
-}
-
-.Button--secondary:active {
-  color: $curious-blue !important;
-  background-color: rgba($curious-blue, 0.1) !important;
-  border-color: $curious-blue !important;
-}
-
-.Button--secondary:hover {
-  color: $denim;
-  background-color: transparent;
-  border-color: $denim;
-}
-
-.Button--secondary i.bi {
-  color: $curious-blue;
-}
-
-.Button--small {
-  padding: 2px 10px;
-  font-size: 11px;
-}
-
-.Button--tertiary {
-  color: $nevada;
-  background-color: transparent;
-  border-color: $geyser;
-}
-
-.Button--tertiary i.bi {
-  color: $nevada;
-}
-
-.Button--tertiary:active {
-  color: $outer-space !important;
-  background-color: rgba($outer-space, 0.1) !important;
-  border-color: $outer-space !important;
-}
-
-.Button--tertiary:active i.bi {
-  color: $outer-space !important;
-}
-
-.Button--tertiary:hover {
-  color: $outer-space;
-  background-color: transparent;
-  border-color: $outer-space;
-}
-
-.Button--tertiary:hover i.bi {
-  color: $outer-space;
-}
-
-.Button--warning {
+.Button--state-warning {
   color: $torch-red;
   background-color: transparent;
   border-color: $torch-red;
 }
 
-.Button--warning:active {
+.Button--state-warning:active {
   color: $torch-red !important;
   background-color: rgba($torch-red, 0.1) !important;
 }
 
-.Button--warning:hover {
+.Button--state-warning:hover {
     color: $torch-red !important;
     background-color: transparent;
 }
 
-.Button--warning:hover i.bi {
+.Button--state-warning:hover i.bi {
   color: $white;
 }
 
-.Button--warning i.bi {
+.Button--state-warning i.bi {
   color: $torch-red;
+}
+
+.Button--type-borderless {
+  color: $curious-blue;
+  background-color: transparent;
+  border: 0;
+}
+
+.Button--type-borderless:hover {
+  color: $denim;
+  background-color: transparent;
+}
+
+.Button--type-borderless:active {
+  color: $denim;
+  background-color: transparent !important;
+}
+
+.Button--type-in-app {
+  padding: 4px 16px;
+}
+
+.Button--type-secondary {
+  color: $curious-blue;
+  background-color: transparent;
+  border-color: $curious-blue;
+}
+
+.Button--type-secondary:active {
+  color: $curious-blue !important;
+  background-color: rgba($curious-blue, 0.1) !important;
+  border-color: $curious-blue !important;
+}
+
+.Button--type-secondary:hover {
+  color: $denim;
+  background-color: transparent;
+  border-color: $denim;
+}
+
+.Button--type-secondary i.bi {
+  color: $curious-blue;
+}
+
+.Button--type-small {
+  padding: 2px 10px;
+  font-size: 11px;
+}
+
+.Button--type-tertiary {
+  color: $nevada;
+  background-color: transparent;
+  border-color: $geyser;
+}
+
+.Button--type-tertiary i.bi {
+  color: $nevada;
+}
+
+.Button--type-tertiary:active {
+  color: $outer-space !important;
+  background-color: rgba($outer-space, 0.1) !important;
+  border-color: $outer-space !important;
+}
+
+.Button--type-tertiary:active i.bi {
+  color: $outer-space !important;
+}
+
+.Button--type-tertiary:hover {
+  color: $outer-space;
+  background-color: transparent;
+  border-color: $outer-space;
+}
+
+.Button--type-tertiary:hover i.bi {
+  color: $outer-space;
 }
 
 // ButtonIcon
