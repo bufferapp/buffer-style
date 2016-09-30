@@ -11,9 +11,9 @@ body {
 
 code {
   padding: 2px 4px;
-  color: #666c72;
-  background-color: #f4f7f9;
-  border-radius: 1px; }
+  color: #ff1e1e;
+  background-color: rgba(255, 30, 30, 0.1);
+  border-radius: 2px; }
 
 h1,
 h2,
@@ -57,15 +57,15 @@ a:hover {
 
 ol,
 ul {
-  margin: 32px 16px 32px 18px; }
+  margin: 32px 16px 32px 34px; }
 
 li {
   margin-bottom: 8px; }
 
-.List--no-style {
+.List--style-none {
   list-style: none; }
 
-.List--no-margin-bottom {
+.List--margin-bottom-0 {
   margin-bottom: 0; }
 
 p {
@@ -109,93 +109,86 @@ p {
 .Button .bi {
   color: #fff; }
 
-.Button--active {
-  background-color: #0f63a4; }
-
-.Button--active:active,
-.Button--active:hover {
-  background-color: #0f63a4 !important; }
-
-.Button--borderless {
-  color: #168eea;
-  background-color: transparent;
-  border: 0; }
-
-.Button--borderless:hover {
-  color: #137ac9;
-  background-color: transparent; }
-
-.Button--borderless:active {
-  color: #137ac9;
-  background-color: transparent !important; }
-
-.Button--in-app {
-  padding: 4px 16px; }
-
-.Button--secondary {
-  color: #168eea;
-  background-color: transparent;
-  border-color: #168eea; }
-
-.Button--secondary:active {
-  color: #168eea !important;
-  background-color: rgba(22, 142, 234, 0.1) !important;
-  border-color: #168eea !important; }
-
-.Button--secondary:hover {
-  color: #137ac9;
-  background-color: transparent;
-  border-color: #137ac9; }
-
-.Button--secondary i.bi {
-  color: #168eea; }
-
-.Button--small {
-  padding: 2px 10px;
-  font-size: 11px; }
-
-.Button--tertiary {
-  color: #666c72;
-  background-color: transparent;
-  border-color: #ced7df; }
-
-.Button--tertiary i.bi {
-  color: #666c72; }
-
-.Button--tertiary:active {
-  color: #323b43 !important;
-  background-color: rgba(50, 59, 67, 0.1) !important;
-  border-color: #323b43 !important; }
-
-.Button--tertiary:active i.bi {
-  color: #323b43 !important; }
-
-.Button--tertiary:hover {
-  color: #323b43;
-  background-color: transparent;
-  border-color: #323b43; }
-
-.Button--tertiary:hover i.bi {
-  color: #323b43; }
-
-.Button--warning {
+.Button--state-warning {
   color: #ff1e1e;
   background-color: transparent;
   border-color: #ff1e1e; }
 
-.Button--warning:active {
+.Button--state-warning:active {
   color: #ff1e1e !important;
   background-color: rgba(255, 30, 30, 0.1) !important; }
 
-.Button--warning:hover {
+.Button--state-warning:hover {
   color: #ff1e1e !important;
   background-color: transparent; }
 
-.Button--warning:hover i.bi {
+.Button--state-warning:hover i.bi {
   color: #fff; }
 
-.Button--warning i.bi {
+.Button--state-warning i.bi {
   color: #ff1e1e; }
+
+.Button--type-borderless {
+  color: #168eea;
+  background-color: transparent;
+  border: 0; }
+
+.Button--type-borderless:hover {
+  color: #137ac9;
+  background-color: transparent; }
+
+.Button--type-borderless:active {
+  color: #137ac9;
+  background-color: transparent !important; }
+
+.Button--type-in-app {
+  padding: 4px 16px; }
+
+.Button--type-secondary {
+  color: #168eea;
+  background-color: transparent;
+  border-color: #168eea; }
+
+.Button--type-secondary:active {
+  color: #168eea !important;
+  background-color: rgba(22, 142, 234, 0.1) !important;
+  border-color: #168eea !important; }
+
+.Button--type-secondary:hover {
+  color: #137ac9;
+  background-color: transparent;
+  border-color: #137ac9; }
+
+.Button--type-secondary i.bi {
+  color: #168eea; }
+
+.Button--type-small {
+  padding: 2px 10px;
+  font-size: 11px; }
+
+.Button--type-tertiary {
+  color: #666c72;
+  background-color: transparent;
+  border-color: #ced7df; }
+
+.Button--type-tertiary i.bi {
+  color: #666c72; }
+
+.Button--type-tertiary:active {
+  color: #323b43 !important;
+  background-color: rgba(50, 59, 67, 0.1) !important;
+  border-color: #323b43 !important; }
+
+.Button--type-tertiary:active i.bi {
+  color: #323b43 !important; }
+
+.Button--type-tertiary:hover {
+  color: #323b43;
+  background-color: transparent;
+  border-color: #323b43; }
+
+.Button--type-tertiary:hover i.bi {
+  color: #323b43; }
 
 .ButtonIcon {
   align-self: center;
@@ -508,8 +501,12 @@ p {
   display: inline-block !important;
   margin-right: 8px; }
 
-.NavBar__Menu__item--active {
-  font-weight: 600; }
+.NavBar__Menu__item__link {
+  color: #59626a; }
+
+.NavBar__Menu__item--active .NavBar__Menu__item__link {
+  font-weight: 600;
+  color: #323b43; }
 
 .NavBar__Menu__item--last {
   margin-right: 0; }
@@ -628,13 +625,13 @@ p {
   background-color: #168eea; }
 
 .BlockHero--colors {
-  background-color: #000; }
+  background-color: #323b43; }
 
 .CardWithColor {
-  margin: -17px -17px 16px -17px;
-  padding: 16px;
+  margin: -17px -17px -17px -17px;
+  padding: 64px 0;
   text-align: center;
-  border-radius: 4px 4px 0 0; }
+  border-radius: 4px; }
 
 .CardWithColor h3 {
   margin-bottom: 0; }
@@ -648,6 +645,10 @@ p {
   margin-bottom: 0;
   margin-left: 0; }
 
+.CardWithColor--color-aqua-haze,
+.CardWithColor--color-white {
+  margin: -16px; }
+
 .CardWithColor--blue-1 {
   background-color: #168eea; }
 
@@ -656,7 +657,8 @@ p {
 .CardWithColor--blue-3 h3,
 .CardWithColor--gray-1 h3,
 .CardWithColor--gray-2 h3,
-.CardWithColor--gray-3 h3 {
+.CardWithColor--gray-3 h3,
+.CardWithColor--red h3 {
   color: #fff; }
 
 .CardWithColor--blue-1 p,
@@ -664,7 +666,8 @@ p {
 .CardWithColor--blue-3 p,
 .CardWithColor--gray-1 p,
 .CardWithColor--gray-2 p,
-.CardWithColor--gray-3 p {
+.CardWithColor--gray-3 p,
+.CardWithColor--red p {
   color: rgba(255, 255, 255, 0.75); }
 
 .CardWithColor--blue-2 {
@@ -682,8 +685,26 @@ p {
 .CardWithColor--gray-3 {
   background-color: #666c72; }
 
-.GridRow--colors {
-  margin-bottom: 32px; }
+.CardWithColor--gray-4 {
+  background-color: #ced7df; }
 
-.GridRow--colors-last-row .Card {
+.CardWithColor--gray-5 {
+  background-color: #f4f7f9; }
+
+.CardWithColor--green {
+  background-color: #2fd566; }
+
+.CardWithColor--red {
+  background-color: #ff1e1e; }
+
+.CardWithColor--white {
+  background-color: #fff; }
+
+.CardWithColor--yellow {
+  background-color: #f1cb3a; }
+
+.GridRow--color-swatch {
+  margin-top: 32px; }
+
+.GridRow--color-swatch-last-row .Card {
   margin-bottom: 0; }
