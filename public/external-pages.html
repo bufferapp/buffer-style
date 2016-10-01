@@ -9,39 +9,143 @@
     <link href="https://icons.buffer.com/0.11.1/buffer-icons.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700" rel="stylesheet" type="text/css">
   </head>
-  <body class="app">
+  <body>
     <div class="NavBar">
       <div class="NavBar__title">
         <a href="/"><i class="bi bi-buffer"></i>Style Guide</a>
       </div>
+      <ul class="NavBar__LeftMenu">
+        <li class="NavBar__Menu__item"><a class="NavBar__Menu__item__link" href="/">Buttons</a></li>
+        <li class="NavBar__Menu__item"><a class="NavBar__Menu__item__link" href="cards.html">Cards</a></li>
+        <li class="NavBar__Menu__item"><a class="NavBar__Menu__item__link" href="colors.html">Colors</a></li>
+        <li class="NavBar__Menu__item NavBar__Menu__item--active"><a class="NavBar__Menu__item__link" href="external-pages.html">External Pages</a></li>
+        <li class="NavBar__Menu__item"><a class="NavBar__Menu__item__link" href="grid-system.html">Grid System</a></li>
+        <li class="NavBar__Menu__item"><a class="NavBar__Menu__item__link" href="navbars.html">NavBars</a></li>
+        <li class="NavBar__Menu__item"><a class="NavBar__Menu__item__link" href="profile-pictures.html">Profile Pictures</a></li>
+        <li class="NavBar__Menu__item"><a class="NavBar__Menu__item__link" href="tags.html">Tags</a></li>
+        <li class="NavBar__Menu__item NavBar__Menu__item--last"><a class="NavBar__Menu__item__link" href="typography.html">Typography</a></li>
+      </ul>
+      <ul class="NavBar__RightMenu">
+        <li class="NavBar__Menu__item NavBar__Menu__item--last"><a class="Button Button--secondary" href="https://buffer.com/">Sign up for Free</a></li>
+      </ul>
     </div>
-    <div class="body">
-      <div class="sidebar">
-        <div class="Card">
-          <ul class="sidebar-style-guide-list">
-            <li><a href="index.html">Introduction</a></li>
-            <li><a href="buttons.html">Buttons</a></li>
-            <li><a href="cards.html">Cards</a></li>
-            <li><a href="colors.html">Colors</a></li>
-            <li><a href="external-pages.html">External Pages</a></li>
-            <li><a href="grid-system.html">Grid System</a></li>
-            <li><a href="navbars.html">NavBars</a></li>
-            <li><a href="profile-pictures.html">Profile Pictures</a></li>
-            <li><a href="tags.html">Tags</a></li>
-            <li><a class="sidebar-style-guide-list--last" href="typography.html">Typography</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="content">
-        <div class="Card">
-          <div class="section">
-            <h1>External pages</h1>
-            <p>External pages are built using a collection of <code>Block</code> components.</p>
-            <p><a class="Button" href="external-page-template.html">View an example page</a></p>
+
+    <div class="BlockHero BlockHero--colors">
+      <div class="GridRow">
+        <div class="GridContainer">
+          <div class="TwelveColumns--large TwelveColumns--medium">
+            <h2>External pages</h2>
+            <h3>External pages are built out of <code>Block</code> objects. <code>less/components/ExternalPage.less</code> provides a number of predefined block styles, which are documented below, for most use cases.</h3>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="Block">
+      <div class="GridRow">
+        <div class="GridContainer">
+          <div class="TwelveColumns--large TwelveColumns--medium">
+            <div class="Block__content-block--top">
+              <h2>Block</h2>
+              <p>This is the default style of a <code>Block</code> object.</p>
+              <p>It sets the <code>padding-top</code> and <code>padding-bottom</code> to <code>64px</code> and the <code>background-color</code> to <code>$white</code>.</p>
+              <p>To use it, give a <code>div</code> node a <code>class</code> of <code>Block</code>.</p>
+            </div>
+            <div class="Block__content-block">
+              <h3>Modifiers</h3>
+            </div>
+            <div class="Block__content-block">
+              <h4>Block--type-alternative</h4>
+              <p>This modifier sets the <code>background-color</code> of a <code>Block</code> to <code>$aqua-haze</code>.</p>
+            </div>
+            <div class="Block__content-block">
+              <h4>Block--type-dark</h4>
+              <p>This modifier sets the <code>text-align</code> of a <code>Block</code> to <code>center</code> and its <code>background-color</code> to <code>$outer-space</code>.</p>
+              <p>It sets the <code>margin-bottom</code> of <code>h2</code> and <code>h3</code> nodes to <code>0</code></p>
+              <p>It changes the <code>color</code> of a <code>h2</code> node to <code>$white</code>, the <code>color</code> of a <code>h3</code> node to <code>0.8</code> of <code>$white</code>, and the <code>color</code> of a <code>p</code> node to <code>0.6</code> of <code>$white</code>.</p>
+              <p>It sets the <code>margin-top</code> of a <code>Button</code> node to <code>32px</code>.</p>
+            </div>
+            <div class="Block__content-block">
+              <h4>Block--type-footer</h4>
+              <p>This modifier sets the <code>margin-top</code> of <code>h5</code> and <code>p</code> nodes to <code>0</code> and their <code>margin-bottom</code> to <code>16px</code> and the <code>margin</code> of <code>ul</code> nodes to <code>0 0 32px 0</code>.</p>
+            </div>
+            <div class="Block__content-block">
+              <h3>Elements</h3>
+            </div>
+            <div class="Block__content-block">
+              <h4>Block__content-block</h4>
+              <p>This element sets the <code>margin-top</code> of the node to <code>32px</code> and the <code>margin-bottom</code> of <code>h2</code> and <code>h3</code> nodes contained within it to <code>0</code>.</p>
+            </div>
+            <div class="Block__content-block">
+              <h4>Block__copyright</h4>
+              <p>This element sets the <code>color</code> of <code>a</code> nodes contained within it to <code>$shuttle-gray</code>.</p>
+            </div>
+            <div class="Block__content-block">
+              <h3>Element Modifiers</h3>
+            </div>
+            <div class="Block__content-block">
+              <h4>Block__content--center</h4>
+              <p>This modifier sets the <code>text-align</code> of the node to <code>center</code> and the <code>margin</code> of <code>img</code> nodes contained within it to <code>0 auto</code>.</p>
+            </div>
+            <div class="Block__content-block">
+              <h4>Block__content--margin-bottom-0</h4>
+              <p>This modifier sets the <code>margin-bottom</code> of <code>h1</code>, <code>h2</code>, <code>h3</code>, <code>h4</code>, <code>h5</code>, and <code>h6</code> nodes to <code>0</code>.</p>
+            </div>
+            <div class="Block__content-block">
+              <h4>Block__content-block--left</h4>
+              <p>This modifier sets the <code>text-align</code> of the node to <code>left</code>.</p>
+            </div>
+            <div class="Block__content-block">
+              <h4>Block__content-block--top</h4>
+              <p class="Paragraph--order-last">This modifier sets the <code>margin-top</code> of the node to <code>0</code>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="Block Block--type-alternative">
+      <div class="GridRow">
+        <div class="GridContainer">
+          <div class="TwelveColumns--large TwelveColumns--medium">
+            <div class="Block__content-block--top">
+              <h2>BlockContent</h2>
+              <p class="Paragraph--order-last">Add this class to a <code>Block</code> object to reduce the width of a <code>GridContainer</code> within it to <code>640px</code> on a desktop and <code>100%</code> on tablets and smartphones.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="Block">
+      <div class="GridRow">
+        <div class="GridContainer">
+          <div class="TwelveColumns--large TwelveColumns--medium">
+            <div class="Block__content-block--top">
+              <h2>BlockGrid</h2>
+              <p>Add this class to a <code>Block</code> object to set the <code>margin-bottom</code> of a <code>p</code> node contained within it to <code>0</code>.</p>
+              <p class="Paragraph--order-last">It sets the <code>margin-top</code> of a <code>ProfilePicture</code> object contained within it to <code>16px</code>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="Block Block--type-alternative">
+      <div class="GridRow">
+        <div class="GridContainer">
+          <div class="TwelveColumns--large TwelveColumns--medium">
+            <div class="Block__content-block--top">
+              <h2>BlockHero</h2>
+              <p>This is the default style of a <code>BlockHero</code> object. It sets the <code>padding-top</code> and <code>padding-bottom</code> to <code>128px</code>, <code>text-align</code> to <code>center</code>, <code>background-position</code> to <code>top</code>, <code>background-size</code> to <code>cover</code>, and its <code>background-repeat</code> to <code>no-repeat</code>.</p>
+              <p>It sets the <code>margin-bottom</code> of <code>h2</code>, <code>h3</code> and <code>p</code> nodes to <code>0</code>, the <code>color</code> of <code>h2</code> nodes to <code>$white</code>, and the <code>color</code> of <code>h3</code> nodes to <code>0.5</code> of <code>$white</code>.</p>
+              <p class="Paragraph--order-last">It sets the <code>margin-top</code> of a <code>Button</code> object contained within it to <code>32px</code>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="js/bundle.js"></script>
   </body>

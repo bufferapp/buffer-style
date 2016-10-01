@@ -3,6 +3,7 @@
 // Block
 .Block {
   padding: 64px 0;
+  background-color: $white;
 }
 
 .Block .bi {
@@ -18,59 +19,92 @@
   color: $shamrock;
 }
 
+// Block - Modifiers
+.Block--type-alternative {
+  background-color: $aqua-haze;
+}
+
+.Block--type-dark {
+  text-align: center;
+  background-color: $outer-space;
+}
+
+.Block--type-dark h2,
+.Block--type-dark h3 {
+  margin-bottom: 0;
+}
+
+.Block--type-dark h2 {
+  color: $white;
+}
+
+.Block--type-dark h3 {
+  color: rgba($white, 0.8);
+}
+
+.Block--type-dark p {
+  color: rgba($white, 0.6);
+}
+
+.Block--type-dark .Button {
+  margin-top: 32px;
+}
+
+.Block--type-footer h5,
+.Block--type-footer p {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.Block--type-footer ul {
+  margin: 0 0 32px 0;
+}
+
 // Block - Elements
 .Block__content-block {
   margin-top: 32px;
 }
 
 .Block__content-block h2,
-.Block__content-block h3 {
+.Block__content-block h3,
+.Block__content-block h4 {
   margin-bottom: 0;
 }
 
-// Block - Element - Modifiers
+.Block__copyright a {
+  color: $shuttle-gray;
+}
+
+// Block - Element Modifiers
+.Block__content--align-center {
+  text-align: center;
+}
+
+.Block__content--align-center img {
+  margin: 0 auto;
+}
+
+.Block__content--align-left {
+  text-align: left;
+}
+
+.Block__content--align-right {
+  text-align: right;
+}
+
+.Block__content--margin-bottom-0 h1,
+.Block__content--margin-bottom-0 h2,
+.Block__content--margin-bottom-0 h3,
+.Block__content--margin-bottom-0 h4,
+.Block__content--margin-bottom-0 h5,
+.Block__content--margin-bottom-0 h6 {
+  margin-bottom: 0;
+}
+
 .Block__content-block--top {
   margin-top: 0;
 }
 
-.Block__content--center {
-  text-align: center;
-}
-
-.Block__content--center img {
-  margin: 0 auto;
-}
-
-.Block__content--left {
-  text-align: left;
-}
-
-.Block__content--no-margin h1,
-.Block__content--no-margin h2,
-.Block__content--no-margin h3,
-.Block__content--no-margin h4,
-.Block__content--no-margin h5,
-.Block__content--no-margin h6 {
-  margin-bottom: 0;
-}
-
-.Block__content--right {
-  text-align: right;
-}
-
-// BlockAlternative
-.BlockAlternative {
-  background-color: $aqua-haze;
-}
-
-// BlockCaseStudies
-.BlockCaseStudies {
-  padding-bottom: 48px;
-}
-
-.BlockCaseStudies a:hover {
-  text-decoration: none;
-}
 
 // BlockContent
 .BlockContent .GridContainer {
@@ -85,70 +119,13 @@
   @media screen and (min-width: 1024px) { width: 640px; }
 }
 
-// BlockDark
-.BlockDark {
-  text-align: center;
-  background-color: $outer-space;
-}
-
-.BlockDark h2,
-.BlockDark h3 {
-  margin-bottom: 0;
-}
-
-.BlockDark h2 {
-  color: $white;
-}
-
-.BlockDark h3 {
-  color: rgba($white, 0.8);
-}
-
-.BlockDark p {
-  color: rgba($white, 0.6);
-}
-
-.BlockDark .Button {
-  margin-top: 32px;
-}
-
-// BlockFooter
-.BlockFooter {
-  background-color: $aqua-haze;
-}
-
-.BlockFooter h5 {
-  margin-top: 0;
-  margin-bottom: 16px;
-}
-
-.BlockFooter ul {
-  margin: 0 0 32px 0;
-}
-
-.BlockFooter p {
-  margin-bottom: 0;
-}
-
-// BlockFooter - Elements
-.BlockFooter__copyright a {
-  color: $shuttle-gray;
-}
-
 // BlockGrid
-.BlockGrid h3,
-.BlockGrid h4,
 .BlockGrid p {
   margin-bottom: 0;
 }
 
 .BlockGrid .ProfilePicture {
   margin-top: 16px;
-}
-
-// BlockGrid - Elements
-.BlockGrid__title {
-  margin-top: 32px;
 }
 
 // BlockHero
@@ -162,17 +139,17 @@
 }
 
 .BlockHero h2,
-.BlockHero h3 {
+.BlockHero h3,
+.BlockHero p {
   margin-bottom: 0;
+}
+
+.BlockHero h2 {
   color: $white;
 }
 
 .BlockHero h3 {
   color: rgba($white, 0.5);
-}
-
-.BlockHero p {
-  margin-bottom: 0;
 }
 
 .BlockHero .Button {

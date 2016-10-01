@@ -64,10 +64,10 @@ li {
 p {
   margin: 16px 0; }
 
-.Paragraph--first {
+.Paragraph--order-first {
   margin-top: 0; }
 
-.Paragraph--last {
+.Paragraph--order-last {
   margin-bottom: 0; }
 
 *, *:before, *:after {
@@ -218,7 +218,8 @@ p {
   padding: 0; }
 
 .Block {
-  padding: 64px 0; }
+  padding: 64px 0;
+  background-color: #fff; }
 
 .Block .bi {
   margin-right: 8px; }
@@ -230,44 +231,70 @@ p {
 .Block .bi.bi--shamrock {
   color: #2fd566; }
 
+.Block--type-alternative {
+  background-color: #f4f7f9; }
+
+.Block--type-dark {
+  text-align: center;
+  background-color: #323b43; }
+
+.Block--type-dark h2,
+.Block--type-dark h3 {
+  margin-bottom: 0; }
+
+.Block--type-dark h2 {
+  color: #fff; }
+
+.Block--type-dark h3 {
+  color: rgba(255, 255, 255, 0.8); }
+
+.Block--type-dark p {
+  color: rgba(255, 255, 255, 0.6); }
+
+.Block--type-dark .Button {
+  margin-top: 32px; }
+
+.Block--type-footer h5,
+.Block--type-footer p {
+  margin-top: 0;
+  margin-bottom: 16px; }
+
+.Block--type-footer ul {
+  margin: 0 0 32px 0; }
+
 .Block__content-block {
   margin-top: 32px; }
 
 .Block__content-block h2,
-.Block__content-block h3 {
+.Block__content-block h3,
+.Block__content-block h4 {
+  margin-bottom: 0; }
+
+.Block__copyright a {
+  color: #59626a; }
+
+.Block__content--align-center {
+  text-align: center; }
+
+.Block__content--align-center img {
+  margin: 0 auto; }
+
+.Block__content--align-left {
+  text-align: left; }
+
+.Block__content--align-right {
+  text-align: right; }
+
+.Block__content--margin-bottom-0 h1,
+.Block__content--margin-bottom-0 h2,
+.Block__content--margin-bottom-0 h3,
+.Block__content--margin-bottom-0 h4,
+.Block__content--margin-bottom-0 h5,
+.Block__content--margin-bottom-0 h6 {
   margin-bottom: 0; }
 
 .Block__content-block--top {
   margin-top: 0; }
-
-.Block__content--center {
-  text-align: center; }
-
-.Block__content--center img {
-  margin: 0 auto; }
-
-.Block__content--left {
-  text-align: left; }
-
-.Block__content--no-margin h1,
-.Block__content--no-margin h2,
-.Block__content--no-margin h3,
-.Block__content--no-margin h4,
-.Block__content--no-margin h5,
-.Block__content--no-margin h6 {
-  margin-bottom: 0; }
-
-.Block__content--right {
-  text-align: right; }
-
-.BlockAlternative {
-  background-color: #f4f7f9; }
-
-.BlockCaseStudies {
-  padding-bottom: 48px; }
-
-.BlockCaseStudies a:hover {
-  text-decoration: none; }
 
 @media screen and (max-width: 768px) {
   .BlockContent .GridContainer {
@@ -281,52 +308,11 @@ p {
   .BlockContent .GridContainer {
     width: 640px; } }
 
-.BlockDark {
-  text-align: center;
-  background-color: #323b43; }
-
-.BlockDark h2,
-.BlockDark h3 {
-  margin-bottom: 0; }
-
-.BlockDark h2 {
-  color: #fff; }
-
-.BlockDark h3 {
-  color: rgba(255, 255, 255, 0.8); }
-
-.BlockDark p {
-  color: rgba(255, 255, 255, 0.6); }
-
-.BlockDark .Button {
-  margin-top: 32px; }
-
-.BlockFooter {
-  background-color: #f4f7f9; }
-
-.BlockFooter h5 {
-  margin-top: 0;
-  margin-bottom: 16px; }
-
-.BlockFooter ul {
-  margin: 0 0 32px 0; }
-
-.BlockFooter p {
-  margin-bottom: 0; }
-
-.BlockFooter__copyright a {
-  color: #59626a; }
-
-.BlockGrid h3,
-.BlockGrid h4,
 .BlockGrid p {
   margin-bottom: 0; }
 
 .BlockGrid .ProfilePicture {
   margin-top: 16px; }
-
-.BlockGrid__title {
-  margin-top: 32px; }
 
 .BlockHero {
   padding-top: 128px;
@@ -337,15 +323,15 @@ p {
   background-repeat: no-repeat; }
 
 .BlockHero h2,
-.BlockHero h3 {
-  margin-bottom: 0;
+.BlockHero h3,
+.BlockHero p {
+  margin-bottom: 0; }
+
+.BlockHero h2 {
   color: #fff; }
 
 .BlockHero h3 {
   color: rgba(255, 255, 255, 0.5); }
-
-.BlockHero p {
-  margin-bottom: 0; }
 
 .BlockHero .Button {
   margin-top: 32px; }
