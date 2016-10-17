@@ -23,23 +23,6 @@
 }
 
 // NavBar - Elements
-.NavBar__title {
-  flex-grow: 0;
-  margin-right: 50px;
-  font-size: 16px;
-  font-weight: 600;
-  color: $outer-space;
-}
-
-.NavBar__title:hover {
-  text-decoration: none;
-  color: $shuttle-gray;
-}
-
-.NavBar__title a {
-  color: $outer-space;
-}
-
 .NavBar__left-menu,
 .NavBar__right-menu {
   flex-direction: row;
@@ -52,15 +35,6 @@
 .NavBar__left-menu {
   justify-content: flex-start;
   flex-grow: 1;
-}
-
-.NavBar__right-menu {
-  justify-content: flex-end;
-  flex-grow: 0;
-}
-
-.NavBar__right-menu .Button {
-  margin-right: 16px;
 }
 
 .NavBar__menu__item {
@@ -79,6 +53,32 @@
 
 .NavBar__menu__item__link {
   color: $shuttle-gray;
+}
+
+.NavBar__right-menu {
+  justify-content: flex-end;
+  flex-grow: 0;
+}
+
+.NavBar__right-menu .Button {
+  margin-right: 16px;
+}
+
+.NavBar__title {
+  flex-grow: 0;
+  margin-right: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  color: $outer-space;
+}
+
+.NavBar__title:hover {
+  text-decoration: none;
+  color: $shuttle-gray;
+}
+
+.NavBar__title a {
+  color: $outer-space;
 }
 
 // NavBar - Element Modifiers
