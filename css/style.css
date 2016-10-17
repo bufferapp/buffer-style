@@ -447,20 +447,6 @@ p {
 .NavBar .bi {
   margin-right: 8px; }
 
-.NavBar__title {
-  flex-grow: 0;
-  margin-right: 50px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #323b43; }
-
-.NavBar__title:hover {
-  text-decoration: none;
-  color: #59626a; }
-
-.NavBar__title a {
-  color: #323b43; }
-
 .NavBar__left-menu,
 .NavBar__right-menu {
   flex-direction: row;
@@ -472,13 +458,6 @@ p {
 .NavBar__left-menu {
   justify-content: flex-start;
   flex-grow: 1; }
-
-.NavBar__right-menu {
-  justify-content: flex-end;
-  flex-grow: 0; }
-
-.NavBar__right-menu .Button {
-  margin-right: 16px; }
 
 .NavBar__menu__item {
   margin: 0 32px 0 0; }
@@ -493,6 +472,27 @@ p {
 
 .NavBar__menu__item__link {
   color: #59626a; }
+
+.NavBar__right-menu {
+  justify-content: flex-end;
+  flex-grow: 0; }
+
+.NavBar__right-menu .Button {
+  margin-right: 16px; }
+
+.NavBar__title {
+  flex-grow: 0;
+  margin-right: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #323b43; }
+
+.NavBar__title:hover {
+  text-decoration: none;
+  color: #59626a; }
+
+.NavBar__title a {
+  color: #323b43; }
 
 .NavBar__menu__item--active .NavBar__menu__item__link {
   font-weight: 600;
