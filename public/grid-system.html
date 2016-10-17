@@ -9,258 +9,91 @@
     <link href="https://icons.buffer.com/0.11.1/buffer-icons.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700" rel="stylesheet" type="text/css">
   </head>
-  <body class="app">
+  <body>
     <div class="NavBar">
       <div class="NavBar__title">
         <a href="/"><i class="bi bi-buffer"></i>Style Guide</a>
       </div>
+      <ul class="NavBar__LeftMenu">
+        <li class="NavBar__Menu__item"><a class="NavBar__Menu__item__link" href="/">Buttons</a></li>
+        <li class="NavBar__Menu__item"><a class="NavBar__Menu__item__link" href="cards.html">Cards</a></li>
+        <li class="NavBar__Menu__item"><a class="NavBar__Menu__item__link" href="colors.html">Colors</a></li>
+        <li class="NavBar__Menu__item"><a class="NavBar__Menu__item__link" href="external-pages.html">External Pages</a></li>
+        <li class="NavBar__Menu__item NavBar__Menu__item--active"><a class="NavBar__Menu__item__link" href="grid-system.html">Grid System</a></li>
+        <li class="NavBar__Menu__item"><a class="NavBar__Menu__item__link" href="navbars.html">NavBars</a></li>
+        <li class="NavBar__Menu__item"><a class="NavBar__Menu__item__link" href="profile-pictures.html">Profile Pictures</a></li>
+        <li class="NavBar__Menu__item"><a class="NavBar__Menu__item__link" href="tags.html">Tags</a></li>
+        <li class="NavBar__Menu__item NavBar__Menu__item--last"><a class="NavBar__Menu__item__link" href="typography.html">Typography</a></li>
+      </ul>
+      <ul class="NavBar__RightMenu">
+        <li class="NavBar__Menu__item NavBar__Menu__item--last"><a class="Button Button--secondary" href="https://buffer.com/">Sign up for Free</a></li>
+      </ul>
     </div>
-    <div class="body">
-      <div class="sidebar">
-        <div class="Card">
-          <ul class="sidebar-style-guide-list">
-            <li><a href="index.html">Introduction</a></li>
-            <li><a href="buttons.html">Buttons</a></li>
-            <li><a href="cards.html">Cards</a></li>
-            <li><a href="colors.html">Colors</a></li>
-            <li><a href="external-pages.html">External Pages</a></li>
-            <li><a href="grid-system.html">Grid System</a></li>
-            <li><a href="navbars.html">NavBars</a></li>
-            <li><a href="profile-pictures.html">Profile Pictures</a></li>
-            <li><a href="tags.html">Tags</a></li>
-            <li><a class="sidebar-style-guide-list--last" href="typography.html">Typography</a></li>
-          </ul>
+
+    <div class="BlockHero BlockHero--colors">
+      <div class="GridRow">
+        <div class="GridContainer">
+          <div class="TwelveColumns--large TwelveColumns--medium">
+            <h2>GridSystem</h2>
+            <h3>Our grid system runs off of a 12-column grid with its container set to <code>960px</code>. <code>less/components/GridSystem.less</code> provides all column widths, which are documented below, for most use cases.</h3>
+          </div>
         </div>
       </div>
-      <div class="content">
-        <div class="Card">
-          <div class="section">
-            <h1>Grid System</h1>
-            <p>Our Grid System is a 100%-width responsive 12-column grid that helps structure our product and marketing pages. <strong>The borders shown on our columns in this Style Guide are limited to this Style Guide. These borders are not a part of our <code>GridSystem.scss</code></strong>. :)</p>
-          </div>
-          <div class="section">
-            <h2>GridRows</h2>
-            <p>The <code>GridRow</code> object groups rows of columns.</p>
-            <div class="code-block">
-              <div class="code-block-title">
-                Example:
-              </div>
-              <div class="code-block-code">
-                <pre>&lt;div class="GridRow">
-  Content
-&lt;/div></pre>
-              </div>
-            </div>
-          </div>
-          <div class="section">
-            <h2>Columns</h2>
-            <p>Columns are used to construct content within rows. Each collection of columns needs to add up to 12. Whether that's 12 single columns or three single columns, four single columns and six single columns grouped together on a single row.</p>
-            <h3>Examples</h3>
-            <h4>12 columns</h4>
-            <p>This is an example shows 12 columns taking up a single column each making a total of 12 columns.</p>
-            <div class="code-block">
-              <div class="code-block-title">
-                Example:
-              </div>
-              <div class="code-block-render">
-                <div class="GridRow">
-                  <div class="OneColumn--medium OneColumn--large">
-                    One column
-                  </div>
-                  <div class="OneColumn--medium OneColumn--large">
-                    One column
-                  </div>
-                  <div class="OneColumn--medium OneColumn--large">
-                    One column
-                  </div>
-                  <div class="OneColumn--medium OneColumn--large">
-                    One column
-                  </div>
-                  <div class="OneColumn--medium OneColumn--large">
-                    One column
-                  </div>
-                  <div class="OneColumn--medium OneColumn--large">
-                    One column
-                  </div>
-                  <div class="OneColumn--medium OneColumn--large">
-                    One column
-                  </div>
-                  <div class="OneColumn--medium OneColumn--large">
-                    One column
-                  </div>
-                  <div class="OneColumn--medium OneColumn--large">
-                    One column
-                  </div>
-                  <div class="OneColumn--medium OneColumn--large">
-                    One column
-                  </div>
-                  <div class="OneColumn--medium OneColumn--large">
-                    One column
-                  </div>
-                  <div class="OneColumn--medium OneColumn--large">
-                    One column
-                  </div>
-                </div>
-              </div>
-              <div class="code-block-code">
-<pre>&lt;div class="GridRow">
-  &lt;div class="OneColumn--medium OneColumn--large">
-    One column
-  &lt;/div>
-  &lt;div class="OneColumn--medium OneColumn--large">
-    One column
-  &lt;/div>
-  &lt;div class="OneColumn--medium OneColumn--large">
-    One column
-  &lt;/div>
-  &lt;div class="OneColumn--medium OneColumn--large">
-    One column
-  &lt;/div>
-  &lt;div class="OneColumn--medium OneColumn--large">
-    One column
-  &lt;/div>
-  &lt;div class="OneColumn--medium OneColumn--large">
-    One column
-  &lt;/div>
-  &lt;div class="OneColumn--medium OneColumn--large">
-    One column
-  &lt;/div>
-  &lt;div class="OneColumn--medium OneColumn--large">
-    One column
-  &lt;/div>
-  &lt;div class="OneColumn--medium OneColumn--large">
-    One column
-  &lt;/div>
-  &lt;div class="OneColumn--medium OneColumn--large">
-    One column
-  &lt;/div>
-  &lt;div class="OneColumn--medium OneColumn--large">
-    One column
-  &lt;/div>
-  &lt;div class="OneColumn--medium OneColumn--large">
-    One column
-  &lt;/div>
-&lt;/div></pre>
-              </div>
-            </div>
-            <h4>8 columns, 4 columns</h4>
-            <p>This example shows one block taking up 8 columns and a second block taking up 4 columns making a total of 12 columns.</p>
-            <div class="code-block">
-              <div class="code-block-title">
-                Example:
-              </div>
-              <div class="code-block-render">
-                <div class="GridRow">
-                  <div class="EightColumns--medium EightColumns--large">
-                    Eight columns
-                  </div>
-                  <div class="FourColumns--medium FourColumns--large">
-                    Four columns
-                  </div>
-                </div>
-              </div>
-              <div class="code-block-code">
-<pre>&lt;div class="GridRow">
-  &lt;div class="EightColumns--medium EightColumns--large">
-    Eight columns
-  &lt;/div>
-  &lt;div class="FourColumns--medium FourColumns--large">
-    Four columns
-  &lt;/div>
-&lt;/div></pre>
-              </div>
-            </div>
-            <h4>4 columns, 4 columns, 4 columns</h4>
-            <p>This example shows three blocks taking up 4 columns each making a total of 12 columns.</p>
-            <div class="code-block">
-              <div class="code-block-title">
-                Example:
-              </div>
-              <div class="code-block-render">
-                <div class="GridRow">
-                  <div class="FourColumns--medium FourColumns--large">
-                    Four columns
-                  </div>
-                  <div class="FourColumns--medium FourColumns--large">
-                    Four columns
-                  </div>
-                  <div class="FourColumns--medium FourColumns--large">
-                    Four columns
-                  </div>
-                </div>
-              </div>
-              <div class="code-block-code">
-<pre>&lt;div class="row">
-  &lt;div class="FourColumns--medium FourColumns--large">
-    Four columns
-  &lt;/div>
-  &lt;div class="FourColumns--medium FourColumns--large">
-    Four columns
-  &lt;/div>
-  &lt;div class="FourColumns--medium FourColumns--large">
-    Four columns
-  &lt;/div>
-&lt;/div></pre>
-              </div>
-            </div>
-            <h4>6 columns, 6 columns</h4>
-            <p>This example shows two blocks taking up 6 columns each making a total of 12 columns.</p>
-            <div class="code-block">
-              <div class="code-block-title">
-                Example:
-              </div>
-              <div class="code-block-render">
-                <div class="GridRow">
-                  <div class="SixColumns--medium SixColumns--large">
-                    Six columns
-                  </div>
-                  <div class="SixColumns--medium SixColumns--large">
-                    Six columns
-                  </div>
-                </div>
-              </div>
-              <div class="code-block-code">
-<pre>&lt;div class="GridRow">
-  &lt;div class="SixColumns--medium SixColumns--large">
-    Six columns
-  &lt;/div>
-  &lt;div class="SixColumns--medium SixColumns--large">
-    Six columns
-  &lt;/div>
-&lt;/div></pre>
-              </div>
-            </div>
-          </div>
-          <div class="section">
-            <h2>GridContainer</h2>
-            <p>A <code>GridContainer</code> allows us to create specific width wrappers that are centered to the display.</p>
-            <div class="code-block">
-              <div class="code-block-title">
-                Example:
-              </div>
-              <div class="code-block-render">
-                <div class="GridRow">
-                  <div class="GridContainer">
-                    <div class="TwelveColumns--medium TwelveColumns--large">
-                      Twelve columns, using <code>GridContainer</code>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="code-block-code">
-<pre>&lt;div class="GridRow">
-  &lt;div class="container">
-    &lt;div class="TwelveColumns--medium TwelveColumns--large">
-      Twelve columns
-    &lt;/div>
-  &lt;/div>
-&lt;/div></pre>
-              </div>
+    </div>
+
+    <div class="Block">
+      <div class="GridRow">
+        <div class="GridContainer">
+          <div class="TwelveColumns--large TwelveColumns--medium">
+            <div class="Block__content-block--top">
+              <h2>GridRow</h2>
+              <p>Each row of columns is wrapped within a <code>GridRow</code>. This keeps them organized and prevents a mosaic effect from occuring. <code>GridRow</code> has no defined properties but instead has a state rule for <code>::after</code>, which sets its <code>display</code> property value to <code>block</code>, its <code>clear</code> property value to <code>both</code>, and its <code>content</code> property value to <code>""</code>. Having this rule in place allows every instance of <code>GridRow</code> to fully contain any elements within it that may be floating.</p>
+              <p><code>GridRow</code> also updates any children <code>img</code> nodes to be responsive by setting their <code>max-width</code> property value to <code>100%</code> and their <code>height</code> property value to <code>auto</code>.</p> 
+              <p>To use it, give a <code>div</code> node a <code>class</code> of <code>GridRow</code> and place your content inside. A <code>GridRow</code> must go within a <code>Block</code>.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
+    
+    <div class="Block Block--type-alternative">
+      <div class="GridRow">
+        <div class="GridContainer">
+          <div class="TwelveColumns--large TwelveColumns--medium">
+            <div class="Block__content-block--top">
+              <h2>GridContainer</h2>
+              <p>The purpose of the <code>GridContainer</code> is to contain a pages content within a set width. This prevents a pages content from spanning 100% of the viewport. Viewports that have a minimum width of <code>1024px</code> have the <code>GridContainer</code> <code>width</code> property value set to <code>960px</code>. Viewports smaller than this have the <code>GridContainer</code> <code>width</code> property value set to </code>100%</code>. A <code>GridContainer</code> has a <code>margin</code> property value of <code>0 auto</code>. Like the <code>GridRow</code>, a <code>GridContainer</code> has a state rule for <code>::after</code>, which sets its <code>display</code> property value to <code>block</code>, its <code>clear</code> property value to <code>both</code>, and its <code>content</code> property value to <code>""</code>. Having this rule in place allows every instance of <code>GridRow</code> to fully contain any elements within it that may be floating.</p>
+              <p>To use it, give a <code>div</code> node a <code>class</code> of <code>GridContainer</code> and place your content inside. A <code>GridContainer</code> must go within a <code>GridRow</code>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="Block">
+      <div class="GridRow">
+        <div class="GridContainer">
+          <div class="TwelveColumns--large TwelveColumns--medium">
+            <div class="Block__content-block--top">
+              <h2>Columns</h2>
+              <p>Our grid contains 12 columns. Columns break up content into vertical groups. Depending on the design we're trying to build, depends on the arrangement of the widths of each column. Each <code>GridRow</code> must contain column widths that equate to <code>12</code>. For example:</p>
+              <div class="ColGroup">
+                <div class="ThreeColumns--large ThreeColumns--medium">3 columns</div>
+                <div class="SixColumns--large SixColumns--medium">6 columns</div>
+                <div class="ThreeColumns--large ThreeColumns--medium">3 columns</div>
+              </div>
+              <p>We've chosen to be super descriptive with our column nomenclature. To use a single column, give a <code>div</code> node a <code>class</code> of <code>OneColumn</code> followed by either the <code>--medium</code> or <code>--large</code> modifier. Columnds larger than a single column use <code>*Columns</code>, i.e. <code>ThreeColumns</code>, <code>EightColumns</code>, etc.</p> 
+              <h3>Modifiers</h3>
+              <h4>*--large</h4>
+              <p>Any column with a <code>--large</code> modifier will determine how many columns that node will use on a viewport with a width greater than or equal to <code>1024px</code>.</p>
+              <h4>*--medium</h4>
+              <p>Any column with a <code>--medium</code> modifier will determine how many columns that node will use on a viewport with a width less than <code>1024px</code>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="js/bundle.js"></script>
   </body>

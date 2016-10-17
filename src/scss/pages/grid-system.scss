@@ -1,0 +1,38 @@
+@import "base/variables";
+
+// ColumnsGroup
+.ColGroup {
+  margin: 32px 0;
+}
+
+.ColGroup::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.ColGroup .ThreeColumns--large:nth-child(1) {
+  border-right: 0;
+}
+
+.ColGroup .ThreeColumns--large:nth-child(3) {
+  border-left: 0;
+}
+
+.ColGroup .ThreeColumns--large,
+.ColGroup .ThreeColumns--medium,
+.ColGroup .SixColumns--large,
+.ColGroup .SixColumns--medium {
+  padding: 16px;
+  font-size: 12px;
+}
+
+.ColGroup .ThreeColumns--large,
+.ColGroup .ThreeColumns--medium {
+  border: 1px solid $geyser;
+}
+
+.ColGroup .SixColumns--large,
+.ColGroup .SixColumns--medium {
+  border: 1px solid $geyser;
+}
