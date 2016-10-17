@@ -461,44 +461,44 @@ p {
 .NavBar__title a {
   color: #323b43; }
 
-.NavBar__LeftMenu,
-.NavBar__RightMenu {
+.NavBar__left-menu,
+.NavBar__right-menu {
   flex-direction: row;
   align-items: center;
   display: flex;
   margin: 0;
   list-style: none; }
 
-.NavBar__LeftMenu {
+.NavBar__left-menu {
   justify-content: flex-start;
   flex-grow: 1; }
 
-.NavBar__RightMenu {
+.NavBar__right-menu {
   justify-content: flex-end;
   flex-grow: 0; }
 
-.NavBar__RightMenu .Button {
+.NavBar__right-menu .Button {
   margin-right: 16px; }
 
-.NavBar__Menu__item {
+.NavBar__menu__item {
   margin: 0 32px 0 0; }
 
-.NavBar__Menu__item a {
+.NavBar__menu__item a {
   display: inline-block; }
 
-.NavBar__Menu__item .ProfilePicture {
+.NavBar__menu__item .ProfilePicture {
   vertical-align: middle;
   display: inline-block !important;
   margin-right: 8px; }
 
-.NavBar__Menu__item__link {
+.NavBar__menu__item__link {
   color: #59626a; }
 
-.NavBar__Menu__item--active .NavBar__Menu__item__link {
+.NavBar__menu__item--active .NavBar__menu__item__link {
   font-weight: 600;
   color: #323b43; }
 
-.NavBar__Menu__item--last {
+.NavBar__menu__item--last {
   margin-right: 0; }
 
 .ProfilePicture {
