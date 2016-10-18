@@ -36,27 +36,27 @@
 }
 
 // Button - Modifiers
-.Button--state-warning {
+.Button--state-error {
   color: $torch-red;
   background-color: transparent;
   border-color: $torch-red;
 }
 
-.Button--state-warning:active {
+.Button--state-error:active {
   color: $torch-red !important;
   background-color: rgba($torch-red, 0.1) !important;
 }
 
-.Button--state-warning:hover {
+.Button--state-error:hover {
     color: $torch-red !important;
     background-color: transparent;
 }
 
-.Button--state-warning:hover i.bi {
+.Button--state-error:hover i.bi {
   color: $white;
 }
 
-.Button--state-warning i.bi {
+.Button--state-error i.bi {
   color: $torch-red;
 }
 
