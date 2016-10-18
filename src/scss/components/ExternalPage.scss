@@ -1,24 +1,134 @@
 @import "../base/variables";
 
+// Block
 .Block {
   padding: 64px 0;
-
-  .bi {
-    margin-right: 8px;
-
-    &.bi--shamrock {
-      color: $shamrock;
-    }
-  }
+  background-color: $white;
 }
 
-.Block_content--center {
+.Block .bi {
+  margin-right: 8px;
+}
+
+.Block .bi.bi--right {
+  margin-right: 0;
+  margin-left: 8px;
+}
+
+.Block .bi.bi--shamrock {
+  color: $shamrock;
+}
+
+// Block - Modifiers
+.Block--type-alternative {
+  background-color: $aqua-haze;
+}
+
+.Block--type-dark {
   text-align: center;
-  img {
-    margin: 0 auto;
-  }
+  background-color: $outer-space;
 }
 
+.Block--type-dark h2,
+.Block--type-dark h3 {
+  margin-bottom: 0;
+}
+
+.Block--type-dark h2 {
+  color: $white;
+}
+
+.Block--type-dark h3 {
+  color: rgba($white, 0.8);
+}
+
+.Block--type-dark p {
+  color: rgba($white, 0.6);
+}
+
+.Block--type-dark .Button {
+  margin-top: 32px;
+}
+
+.Block--type-footer h5,
+.Block--type-footer p {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.Block--type-footer ul {
+  margin: 0 0 32px 0;
+}
+
+// Block - Elements
+.Block__content-block {
+  margin-top: 32px;
+}
+
+.Block__content-block h2,
+.Block__content-block h3,
+.Block__content-block h4 {
+  margin-bottom: 0;
+}
+
+.Block__copyright a {
+  color: $shuttle-gray;
+}
+
+// Block - Element Modifiers
+.Block__content--align-center {
+  text-align: center;
+}
+
+.Block__content--align-center img {
+  margin: 0 auto;
+}
+
+.Block__content--align-left {
+  text-align: left;
+}
+
+.Block__content--align-right {
+  text-align: right;
+}
+
+.Block__content--margin-bottom-0 h1,
+.Block__content--margin-bottom-0 h2,
+.Block__content--margin-bottom-0 h3,
+.Block__content--margin-bottom-0 h4,
+.Block__content--margin-bottom-0 h5,
+.Block__content--margin-bottom-0 h6 {
+  margin-bottom: 0;
+}
+
+.Block__content-block--top {
+  margin-top: 0;
+}
+
+
+// BlockContent
+.BlockContent .GridContainer {
+  @media screen and (max-width: 768px) { width: 100%; }
+}
+
+.BlockContent .GridContainer {
+  @media screen and (min-width: 769px) and (max-width: 959px) { width: 100%; }
+}
+
+.BlockContent .GridContainer {
+  @media screen and (min-width: 1024px) { width: 640px; }
+}
+
+// BlockGrid
+.BlockGrid p {
+  margin-bottom: 0;
+}
+
+.BlockGrid .ProfilePicture {
+  margin-top: 16px;
+}
+
+// BlockHero
 .BlockHero {
   padding-top: 128px;
   padding-bottom: 128px;
@@ -26,30 +136,22 @@
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
-
-  h1 {
-    margin-top: 0;
-    margin-bottom: 8px;
-  }
-
-  h2 {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 24px;
-    font-weight: 300;
-  }
 }
 
-// Only use this in `buffer-style`
-.BlockHero--pricing {
-  background-image: url(../img/block-title-text--hero@2x.png);
+.BlockHero h2,
+.BlockHero h3,
+.BlockHero p {
+  margin-bottom: 0;
 }
 
-.BlockFooter {
-  background-color: $aqua-haze;
+.BlockHero h2 {
+  color: $white;
+}
 
-  h5 {
-    margin-top: 0;
-    margin-bottom: 32px;
-  }
+.BlockHero h3 {
+  color: rgba($white, 0.5);
+}
+
+.BlockHero .Button {
+  margin-top: 32px;
 }

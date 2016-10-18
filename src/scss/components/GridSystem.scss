@@ -1,33 +1,42 @@
 @import "../base/variables";
 
+// Globals
 * {
   box-sizing: border-box;
 }
 
+// Adds to all Columns
 [class*="Column"],
 [class*="Columns"] {
   float: left;
-  padding: 16px;
+  padding: 0 16px;
   width: 100%;
 }
 
-.GridRow {
-  &::after {
-    display: block;
-    clear: both;
-    content: "";
-  }
-
-  img {
-      max-width: 100%;
-      height: auto;
-  }
+// GridRow
+.GridRow::after {
+  display: block;
+  clear: both;
+  content: "";
 }
 
+.GridRow img {
+  max-width: 100%;
+  height: auto;
+}
+
+// GridContainer
 .GridContainer {
   margin: 0 auto;
 }
 
+.GridContainer::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+// Smartphones
 @media screen and (max-width: 768px) {
   .GridContainer {
     width: 100%;
@@ -80,14 +89,28 @@
   .TwelveColumns--medium {
     width: 100%;
   }
+
+  .Button--margin-top--medium {
+    margin-top: 16px;
+  }
+
+  .Image--margin-top--medium {
+    margin-top: 32px;
+  }
+
+  .Image--margin-bottom--medium {
+    margin-bottom: 32px;
+  }
 }
 
+// Tablets
 @media screen and (min-width: 769px) and (max-width: 959px) {
   .GridContainer {
     width: 100%;
   }
 }
 
+// Desktop
 @media screen and (min-width: 1024px) {
   .GridContainer {
     width: 960px;

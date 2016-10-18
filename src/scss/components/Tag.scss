@@ -1,6 +1,8 @@
 @import "../base/variables";
 
-.tag {
+// Tag
+.Tag {
+  display: inline-block;
   padding: 2px 8px;
   font-size: 11px;
   font-weight: 600;
@@ -9,15 +11,21 @@
   border-radius: $border-radius-level-1;
 }
 
-.tag--primary,
-.tag--error {
+// Tag - Modifiers
+.Tag--margin-right {
+  margin-right: 8px;
+}
+
+.Tag--state-error,
+.Tag--type-primary {
   color: $white;
 }
 
-.tag--primary {
-  background-color: $curious-blue;
+
+.Tag--state-error {
+  background-color: $torch-red;
 }
 
-.tag--error {
-  background-color: $torch-red;
+.Tag--type-primary {
+  background-color: $curious-blue;
 }

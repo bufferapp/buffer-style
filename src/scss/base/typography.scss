@@ -1,94 +1,97 @@
 @import "variables";
 
-a {
-  color: $curious-blue;
-  text-decoration: none;
-
-  &:hover {
-    color: $tory-blue;
-  }
-
-  img {
-    outline: none;
-  }
-}
-
+// Body
 body {
-  font-family: $font-family;
   font-size: $font-size;
-  font-weight: $font-weight;
   line-height: $line-height;
   color: $shuttle-gray;
-  -webkit-font-smoothing: antialiased;
 }
 
+// Code
 code {
-  color: $black;
+  padding: 2px 4px;
+  color: $torch-red;
+  background-color: rgba($torch-red, 0.1);
+  border-radius: $border-radius-level-2;
 }
 
+// Headings
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  margin: 0;
+  line-height: normal;
   color: $outer-space;
 }
 
 h1,
 h2,
 h3 {
-  .subtitle {
-    font-size: $font-size;
-    font-weight: $font-weight;
-    color: $shuttle-gray;
-  }
+  margin: 0 0 32px 0;
+  font-weight: 300;
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 48px;
+  line-height: 72px;
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 40px;
+  line-height: 60px;
 }
 
 h3 {
   font-size: 24px;
+  line-height: 36px;
 }
 
-h4 {
-  font-size: 20px;
-}
-
+h4,
 h5,
 h6 {
-  font-size: 16px;
+  margin: 0 0 16px 0;
+  font-size: $font-size;
+  line-height: $line-height;
 }
 
-html {
-  font-size: $font-size;
+// Links
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+// Ordered/Unordered Lists
+ol,
+ul {
+  margin: 32px 16px 32px 34px;
 }
 
 li {
   margin-bottom: 8px;
 }
 
-ol,
-ul {
-  margin: 0 16px;
-
-  &.no-style {
-    margin: 0;
-    list-style: none;
-  }
+.List--style-none {
+  list-style: none;
 }
 
+.List--margin-bottom-0 {
+  margin-bottom: 0;
+}
+
+// Paragraphs
 p {
-  margin-bottom: 16px;
+  margin: 16px 0;
 }
 
-small {
-  font-size: 11px;
+.Paragraph--order-first {
+  margin-top: 0;
+}
+
+.Paragraph--order-last {
+  margin-bottom: 0;
 }

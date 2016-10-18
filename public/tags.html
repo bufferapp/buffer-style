@@ -9,96 +9,71 @@
     <link href="https://icons.buffer.com/0.11.1/buffer-icons.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700" rel="stylesheet" type="text/css">
   </head>
-  <body class="app">
+  <body>
     <div class="NavBar">
       <div class="NavBar__title">
         <a href="/"><i class="bi bi-buffer"></i>Style Guide</a>
       </div>
+      <ul class="NavBar__left-menu">
+        <li class="NavBar__menu__item"><a class="NavBar__menu__item__link" href="/">Buttons</a></li>
+        <li class="NavBar__menu__item"><a class="NavBar__menu__item__link" href="cards.html">Cards</a></li>
+        <li class="NavBar__menu__item"><a class="NavBar__menu__item__link" href="colors.html">Colors</a></li>
+        <li class="NavBar__menu__item"><a class="NavBar__menu__item__link" href="external-pages.html">External Pages</a></li>
+        <li class="NavBar__menu__item"><a class="NavBar__menu__item__link" href="grid-system.html">Grid System</a></li>
+        <li class="NavBar__menu__item"><a class="NavBar__menu__item__link" href="navbar.html">NavBar</a></li>
+        <li class="NavBar__menu__item"><a class="NavBar__menu__item__link" href="profile-pictures.html">Profile Pictures</a></li>
+        <li class="NavBar__menu__item NavBar__menu__item--active"><a class="NavBar__menu__item__link" href="tags.html">Tags</a></li>
+        <li class="NavBar__menu__item NavBar__menu__item--last"><a class="NavBar__menu__item__link" href="typography.html">Typography</a></li>
+      </ul>
+      <ul class="NavBar__right-menu">
+        <li class="NavBar__menu__item NavBar__menu__item--last"><a class="Button Button--secondary" href="https://buffer.com/">Sign up for Free</a></li>
+      </ul>
     </div>
-    <div class="body">
-      <div class="sidebar">
-        <div class="Card">
-          <ul class="sidebar-style-guide-list">
-            <li><a href="index.html">Introduction</a></li>
-            <li><a href="buttons.html">Buttons</a></li>
-            <li><a href="cards.html">Cards</a></li>
-            <li><a href="colors.html">Colors</a></li>
-            <li><a href="external-pages.html">External Pages</a></li>
-            <li><a href="grid-system.html">Grid System</a></li>
-            <li><a href="navbars.html">NavBars</a></li>
-            <li><a href="notifications.html">Notifications</a></li>
-            <li><a href="profile-pictures.html">Profile Pictures</a></li>
-            <li><a href="tags.html">Tags</a></li>
-            <li><a class="sidebar-style-guide-list--last" href="typography.html">Typography</a></li>
-          </ul>
+
+    <div class="BlockHero BlockHero--colors">
+      <div class="GridRow">
+        <div class="GridContainer">
+          <div class="TwelveColumns--large TwelveColumns--medium">
+            <h2>Tags</h2>
+            <h3>Tags communicate a specific state of information to the user. For example, the amount of posts queued up within a user's connected account. <code>less/components/Tag.less</code> provides a number of predefined tag styles, which are documented below, for most use cases.</h3>
+          </div>
         </div>
       </div>
-      <div class="content">
-        <div class="Card">
-          <div class="section">
-            <h1>Tags</h1>
-            <p>Tags are atoms that communicate a specific state of information to the user. For example, the amount of posts queued up within a user's connected account.</p>
-          </div>
-          <div class="section">
-            <h2>Tag</h2>
-            <p>Use this tag to communicate a subtle state of information.</p>
-            <div class="code-block">
-              <div class="code-block-title">
-                Example:
-              </div>
-              <div class="code-block-render">
-                <div class="tag">
-                  Text Label
-                </div>
-              </div>
-              <div class="code-block-code">
-                <pre>&lt;div class="tag">
-  Text Label
-&lt;/div></pre>
-              </div>
+    </div>
+
+    <div class="Block">
+      <div class="GridRow">
+        <div class="GridContainer">
+          <div class="TwelveColumns--large TwelveColumns--medium">
+            <div class="Block__content-block--top">
+              <h2>Tag</h2>
+              <p>A <code>div</code> or <code>span</code> node with a class of <code>Tag</code> sets its <code>padding</code> property value to <code>2px 8px</code>, its <code>font-size</code> property value to <code>11px</code>, its <code>font-weight</code> property value to <code>600</code>, its <code>color</code> property value to <code>$shuttle-gray</code>, its <code>background-color</code> property value to <code>@geyser</code>, and its <code>border-radius</code> property value to <code>@border-radius-level-1</code>.</p>
+              <p>To use it, give a <code>div</code> or <code>span</code> node a class of <code>Tag</code>.</p>
+              <div class="Tag">Text label</div>
             </div>
-          </div>
-          <div class="section">
-            <h2>Tag <span class="subtitle">primary</span></h2>
-            <p>Use this tag to communicate a primary state of information.</p>
-            <div class="code-block">
-              <div class="code-block-title">
-                Example:
-              </div>
-              <div class="code-block-render">
-                <div class="tag tag--primary">
-                  Text Label
-                </div>
-              </div>
-              <div class="code-block-code">
-                <pre>&lt;div class="tag tag--primary">
-  Text Label
-&lt;/div></pre>
-              </div>
+            <div class="Block__content-block">
+              <h3>Modifiers</h3>
             </div>
-          </div>
-          <div class="section">
-            <h2>Tag <span class="subtitle">error</span></h2>
-            <p>Use this tag to communicate an error state of information.</p>
-            <div class="code-block">
-              <div class="code-block-title">
-                Example:
-              </div>
-              <div class="code-block-render">
-                <div class="tag tag--error">
-                  Text Label
-                </div>
-              </div>
-              <div class="code-block-code">
-                <pre>&lt;div class="tag tag--error">
-  Text Label
-&lt;/div></pre>
-              </div>
+            <div class="Block__content-block">
+              <h4>Tag--margin-right</h4>
+              <p>This modifies adds a <code>margin-right</code> property value of <code>8px</code>.</p>
+              <div class="Tag Tag--margin-right">Tag 1</div><div class="Tag">Tag 2</div>
+            </div>
+            <div class="Block__content-block">
+              <h4>Tag--state-error</h4>
+              <p>This modifies a the <code>color</code> property value to <code>@white</code> and the <code>background-color</code> property value to <code>@torch-red</code>.</p>
+              <div class="Tag Tag--state-error">Text label</div>
+            </div>
+            <div class="Block__content-block">
+              <h4>Tag--type-primary</h4>
+              <p>This modifies a the <code>color</code> property value to <code>@white</code> and the <code>background-color</code> property value to <code>@curious-blue</code>.</p>
+              <div class="Tag Tag--type-primary">Text label</div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="js/bundle.js"></script>
   </body>

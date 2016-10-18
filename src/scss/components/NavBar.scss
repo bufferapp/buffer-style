@@ -1,5 +1,6 @@
 @import "../base/variables";
 
+// NavBar
 .NavBar {
   flex-direction: row;
   justify-content: flex-start;
@@ -11,10 +12,56 @@
   height: 64px;
   background-color: $white;
   border-bottom: 1px solid $geyser;
+}
 
-  .bi {
-    margin-right: 8px;
-  }
+.NavBar a:hover {
+  text-decoration: none;
+}
+
+.NavBar .bi {
+  margin-right: 8px;
+}
+
+// NavBar - Elements
+.NavBar__left-menu,
+.NavBar__right-menu {
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+  margin: 0;
+  list-style: none;
+}
+
+.NavBar__left-menu {
+  justify-content: flex-start;
+  flex-grow: 1;
+}
+
+.NavBar__menu__item {
+  margin: 0 32px 0 0;
+}
+
+.NavBar__menu__item a {
+  display: inline-block;
+}
+
+.NavBar__menu__item .ProfilePicture {
+  vertical-align: middle;
+  display: inline-block !important;
+  margin-right: 8px;
+}
+
+.NavBar__menu__item__link {
+  color: $shuttle-gray;
+}
+
+.NavBar__right-menu {
+  justify-content: flex-end;
+  flex-grow: 0;
+}
+
+.NavBar__right-menu .Button {
+  margin-right: 16px;
 }
 
 .NavBar__title {
@@ -23,59 +70,23 @@
   font-size: 16px;
   font-weight: 600;
   color: $outer-space;
-
-  a {
-    color: $outer-space;
-
-    &:hover {
-      text-decoration: none;
-      color: $shuttle-gray;
-    }
-  }
 }
 
-.NavBar__LeftMenu,
-.NavBar__RightMenu {
-  flex-direction: row;
-  display: flex;
-  margin: 0;
-  list-style: none;
+.NavBar__title:hover {
+  text-decoration: none;
+  color: $shuttle-gray;
 }
 
-.NavBar__LeftMenu {
-  justify-content: flex-start;
-  flex-grow: 1;
+.NavBar__title a {
+  color: $outer-space;
 }
 
-.NavBar__RightMenu {
-  justify-content: flex-end;
-  flex-grow: 0;
+// NavBar - Element Modifiers
+.NavBar__menu__item--active .NavBar__menu__item__link {
+  font-weight: 600;
+  color: $outer-space;
 }
 
-.NavBar__Menu__item {
-  margin: 0 32px 0 0;
-
-  a {
-    display: inline-block;
-    color: $nevada;
-
-    &.NavBar__Menu__item--active {
-      margin-right: -8px;
-      margin-left: -8px;
-      padding-right: 8px;
-      padding-left: 8px;
-      color: $outer-space;
-      box-shadow: inset 0 -2px $curious-blue;
-    }
-  }
-
-  .ProfilePicture {
-    vertical-align: middle;
-    display: inline-block !important;
-    margin-right: 8px;
-  }
-}
-
-.NavBar__Menu__item--last {
+.NavBar__menu__item--last {
   margin-right: 0;
 }

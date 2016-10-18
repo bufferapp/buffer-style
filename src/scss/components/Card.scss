@@ -1,18 +1,25 @@
 @import "../base/variables";
 
+// Card
 .Card {
+  margin-bottom: 16px;
   padding: 16px;
   background-color: $white;
   border: 1px solid $geyser;
   border-radius: $border-radius-level-1;
+}
 
-  .Card {
-    border-radius: $border-radius-level-2;
+.Card .Card {
+  border-radius: $border-radius-level-2;
+}
 
-    .Card {
-      border-radius: $border-radius-level-3;
-    }
-  }
+.Card .Card .Card {
+  border-radius: $border-radius-level-3;
+}
+
+// Card - Modifiers
+.Card--double-padding {
+  padding: 32px;
 }
 
 .Card--empty {
@@ -23,110 +30,6 @@
   border: 0;
 }
 
-.Card--double-padding {
-  padding: 32px;
-}
-
-.CardColorSwatches {
-  justify-content: space-between;
-  flex-wrap: wrap;
-  display: flex;
+.Card--no-padding {
   padding: 0;
-}
-
-.CardColorSwatches .Card {
-  margin-bottom: 16px;
-  width: 32%;
-}
-
-.CardWithColor {
-  margin-top: -16px;
-  margin-right: -16px;
-  margin-left: -16px;
-  padding: 32px 16px;
-  text-align: center;
-  border-radius: $border-radius-level-3 $border-radius-level-3 0 0;
-
-  h3 {
-    margin-top: 0;
-  }
-
-  p {
-    margin-bottom: 0;
-  }
-}
-
-.CardWithColor--blue-1,
-.CardWithColor--blue-2,
-.CardWithColor--blue-3,
-.CardWithColor--gray-1,
-.CardWithColor--gray-2,
-.CardWithColor--gray-3,
-.CardWithColor--green,
-.CardWithColor--red {
-  color: $white;
-
-  h3 {
-    color: $white;
-  }
-}
-
-.CardWithColor--blue-1 {
-  background-color: $curious-blue;
-}
-
-.CardWithColor--blue-2 {
-  background-color: $denim;
-}
-
-.CardWithColor--blue-3 {
-  background-color: $tory-blue;
-}
-
-.CardWithColor--gray-1 {
-  background-color: $outer-space;
-}
-
-.CardWithColor--gray-2 {
-  background-color: $shuttle-gray;
-}
-
-.CardWithColor--gray-3 {
-  background-color: $nevada;
-}
-
-.CardWithColor--gray-4 {
-  background-color: $geyser;
-}
-
-.CardWithColor--gray-5 {
-  background-color: $aqua-haze;
-}
-
-.CardWithColor--gray-6 {
-  background-color: $alabaster;
-}
-
-.CardWithColor--green {
-  background-color: $shamrock;
-}
-
-.CardWithColor--yellow {
-  background-color: $saffron;
-}
-
-.CardWithColor--red {
-  background-color: $torch-red;
-}
-
-.CardWithItem__content {
-  h4 {
-    margin: 16px 0;
-  }
-
-  ul {
-    margin-right: 0;
-    margin-left: 0;
-    // list-style: none;
-  }
 }

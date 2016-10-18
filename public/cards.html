@@ -9,92 +9,75 @@
     <link href="https://icons.buffer.com/0.11.1/buffer-icons.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700" rel="stylesheet" type="text/css">
   </head>
-  <body class="app">
+  <body>
     <div class="NavBar">
       <div class="NavBar__title">
         <a href="/"><i class="bi bi-buffer"></i>Style Guide</a>
       </div>
+      <ul class="NavBar__left-menu">
+        <li class="NavBar__menu__item"><a class="NavBar__menu__item__link" href="/">Buttons</a></li>
+        <li class="NavBar__menu__item NavBar__menu__item--active"><a class="NavBar__menu__item__link" href="cards.html">Cards</a></li>
+        <li class="NavBar__menu__item"><a class="NavBar__menu__item__link" href="colors.html">Colors</a></li>
+        <li class="NavBar__menu__item"><a class="NavBar__menu__item__link" href="external-pages.html">External Pages</a></li>
+        <li class="NavBar__menu__item"><a class="NavBar__menu__item__link" href="grid-system.html">Grid System</a></li>
+        <li class="NavBar__menu__item"><a class="NavBar__menu__item__link" href="navbar.html">NavBar</a></li>
+        <li class="NavBar__menu__item"><a class="NavBar__menu__item__link" href="profile-pictures.html">Profile Pictures</a></li>
+        <li class="NavBar__menu__item"><a class="NavBar__menu__item__link" href="tags.html">Tags</a></li>
+        <li class="NavBar__menu__item NavBar__menu__item--last"><a class="NavBar__menu__item__link" href="typography.html">Typography</a></li>
+      </ul>
+      <ul class="NavBar__right-menu">
+        <li class="NavBar__menu__item NavBar__menu__item--last"><a class="Button Button--secondary" href="https://buffer.com/">Sign up for Free</a></li>
+      </ul>
     </div>
-    <div class="body">
-      <div class="sidebar">
-        <div class="Card">
-          <ul class="sidebar-style-guide-list">
-            <li><a href="index.html">Introduction</a></li>
-            <li><a href="buttons.html">Buttons</a></li>
-            <li><a href="cards.html">Cards</a></li>
-            <li><a href="colors.html">Colors</a></li>
-            <li><a href="external-pages.html">External Pages</a></li>
-            <li><a href="grid-system.html">Grid System</a></li>
-            <li><a href="navbars.html">NavBars</a></li>
-            <li><a href="notifications.html">Notifications</a></li>
-            <li><a href="profile-pictures.html">Profile Pictures</a></li>
-            <li><a href="tags.html">Tags</a></li>
-            <li><a class="sidebar-style-guide-list--last" href="typography.html">Typography</a></li>
-          </ul>
+
+    <div class="BlockHero BlockHero--colors">
+      <div class="GridRow">
+        <div class="GridContainer">
+          <div class="TwelveColumns--large TwelveColumns--medium">
+            <h2>Cards</h2>
+            <h3>Cards are objects that can be used to contain information. <code>less/components/Card.less</code> provides a number of predefined card styles, which are documented below, for most use cases.</h3>
+          </div>
         </div>
       </div>
-      <div class="content">
-        <div class="section section--last">
-          <div class="Card">
-            <div class="section">
-              <h1>Cards</h1>
-              <p>Cards can be atoms or organisms depending on their child elements. A card with a single <code>&lt;p>&lt;/p></code> remains an atom while a card with multiple atoms is an organism.</p>
-            </div>
-            <div class="section">
+    </div>
+
+    <div class="Block">
+      <div class="GridRow">
+        <div class="GridContainer">
+          <div class="TwelveColumns--large TwelveColumns--medium">
+            <div class="Block__content-block--top">
               <h2>Card</h2>
-              <p>Use this atom as a base for any UI that requires a container for its content.</p>
-              <div class="code-block">
-                <div class="code-block-title">
-                  Example:
-                </div>
-                <div class="code-block-render">
-                  <div class="Card code-block-render-example">
-                  </div>
-                </div>
-                <div class="code-block-code">
-                  <pre>&lt;div class="Card">
-&lt;/div></pre>
-                </div>
+              <p>This is the default style of a card. To use it, set the <code>class</code> property of a <code>div</code> node to <code>Card</code>.</p>
+              <div class="Card">Card content</div>
+              <div class="Block__content-block">
+                <h3>Modifiers</h3>
               </div>
-            </div>
-            <div class="section">
-              <h2>Card <span class="subtitle">within Content &rarr; Queue that is empty</span></h2>
-              <p>Use this modified atom to communicate an empty time slot with Content &rarr; Queue.</p>
-              <div class="code-block">
-                <div class="code-block-title">
-                  Example:
-                </div>
-                <div class="code-block-render">
-                  <div class="Card Card--empty code-block-render-example">
-                  </div>
-                </div>
-                <div class="code-block-code">
-                  <pre>&lt;div class="Card Card--empty">
-&lt;/div></pre>
-                </div>
+              <div class="Block__content-block">
+                <h4>Card--double-padding</h4>
+                <p>Use this modifier to set a cards <code>padding</code> value from <code>16px</code> to <code>32px</code>. To use it, give a <code>div</code> node an additional class of <code>Card--double-padding</code>.</p>
+                <div class="Card Card--double-padding">Card content</div>
               </div>
-            </div>
-            <div class="section">
-              <h2>Card <span class="subtitle">without a border</span></h2>
-              <p>Use this modified card atom for popups and modals.</p>
-              <div class="code-block">
-                <div class="code-block-title">
-                  Example:
-                </div>
-                <div class="code-block-render code-block-render--dark">
-                  <div class="Card Card--no-border code-block-render-example">
-                  </div>
-                </div>
-                <div class="code-block-code">
-                  <pre>&lt;div class="Card Card--no-border">
-&lt;/div></pre>
-                </div>
+              <div class="Block__content-block">
+                <h4>Card--empty</h4>
+                <p>Use this modifier to describe a card that has no initial content but is expected to in the future. To use it, give a <code>div</code> node an additional class of <code>Card--empty</code>.</p>
+                <div class="Card Card--empty">Card content</div>
+              </div>
+              <div class="Block__content-block">
+                <h4>Card--no-border</h4>
+                <p>Use this modifier when a card is displayed on a dark background. To use it, give a <code>div</code> node an additional class of <code>Card--no-border</code>.</p>
+                <div class="Card Card--no-border">Card content</div>
+              </div>
+              <div class="Block__content-block">
+                <h4>Card--no-padding</h4>
+                <p>Use this modifier to set a cards <code>padding</code> value to <code>0</code>. To use it, give a <code>div</code> node an additional class of <code>Card--no-padding</code>.</p>
+                <div class="Card Card--no-padding">Card content</div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="js/bundle.js"></script>
   </body>

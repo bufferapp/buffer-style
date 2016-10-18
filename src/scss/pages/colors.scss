@@ -1,0 +1,148 @@
+@import "base/variables";
+
+// BlockHero - Modifier
+.BlockHero--colors {
+  background-color: $outer-space;
+}
+
+// CardWithColor
+.CardWithColor {
+  margin: -17px -17px -17px -17px;
+  padding: 64px 0;
+  text-align: center;
+  border-radius: $border-radius-level-1;
+}
+
+.CardWithColor h3 {
+  margin-bottom: 0;
+}
+
+.CardWithColor p {
+  margin: 0;
+}
+
+// CardWithColor - Elements
+.CardWithColor__content ol,
+.CardWithColor__content ul {
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+// CardWithColor - Modifiers
+.CardWithColor--color-aqua-haze,
+.CardWithColor--color-white {
+  margin: -16px;
+}
+.CardWithColor--blue-1 {
+  background-color: $curious-blue;
+}
+
+.CardWithColor--appdotnet h3,
+.CardWithColor--blue-1 h3,
+.CardWithColor--blue-2 h3,
+.CardWithColor--blue-3 h3,
+.CardWithColor--facebook h3,
+.CardWithColor--googleplus h3,
+.CardWithColor--gray-1 h3,
+.CardWithColor--gray-2 h3,
+.CardWithColor--gray-3 h3,
+.CardWithColor--linkedin h3,
+.CardWithColor--pinterest h3,
+.CardWithColor--twitter h3,
+.CardWithColor--red h3 {
+  color: $white;
+}
+
+.CardWithColor--appdotnet p,
+.CardWithColor--blue-1 p,
+.CardWithColor--blue-2 p,
+.CardWithColor--blue-3 p,
+.CardWithColor--facebook p,
+.CardWithColor--googleplus p,
+.CardWithColor--gray-1 p,
+.CardWithColor--gray-2 p,
+.CardWithColor--gray-3 p,
+.CardWithColor--linkedin p,
+.CardWithColor--pinterest p,
+.CardWithColor--twitter p,
+.CardWithColor--red p {
+  color: rgba($white, 0.75);
+}
+
+.CardWithColor--appdotnet {
+  background-color: $appdotnet;
+}
+
+.CardWithColor--blue-2 {
+  background-color: $denim;
+}
+
+.CardWithColor--blue-3 {
+  background-color: $tory-blue;
+}
+
+.CardWithColor--facebook {
+  background-color: $facebook;
+}
+
+.CardWithColor--googleplus {
+  background-color: $googleplus;
+}
+
+.CardWithColor--gray-1 {
+  background-color: $outer-space;
+}
+
+.CardWithColor--gray-2 {
+  background-color: $shuttle-gray;
+}
+
+.CardWithColor--gray-3 {
+  background-color: $nevada;
+}
+
+.CardWithColor--gray-4 {
+  background-color: $geyser;
+}
+
+.CardWithColor--gray-5 {
+  background-color: $aqua-haze;
+}
+
+.CardWithColor--green {
+  background-color: $shamrock;
+}
+
+.CardWithColor--linkedin {
+  background-color: $linkedin;
+}
+
+.CardWithColor--pinterest {
+  background-color: $pinterest;
+}
+
+.CardWithColor--red {
+  background-color: $torch-red;
+}
+
+.CardWithColor--twitter {
+  background-color: $twitter;
+}
+
+.CardWithColor--white {
+  background-color: $white;
+}
+
+.CardWithColor--yellow {
+  background-color: $saffron;
+}
+
+// GridRow - Modifiers
+.GridRow--color-swatch {
+  margin-top: 32px;
+}
+
+.GridRow--color-swatch-last-row .Card {
+  margin-bottom: 0;
+}
