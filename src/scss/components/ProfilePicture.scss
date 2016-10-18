@@ -28,19 +28,3 @@
   width: 16px;
   height: 16px;
 }
-
-// ProfilePictureWithIcon
-.ProfilePictureWithIcon {
-  position: relative;
-  width: 32px;
-  height: 32px;
-  background: red;
-}
-
-// ProfilePictureWithIcon - Elements
-.ProfilePictureWithIcon__icon {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  background-color: $white;
-}

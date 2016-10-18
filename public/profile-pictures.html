@@ -9,77 +9,76 @@
     <link href="https://icons.buffer.com/0.11.1/buffer-icons.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700" rel="stylesheet" type="text/css">
   </head>
-  <body class="app">
+  <body>
     <div class="NavBar">
       <div class="NavBar__title">
         <a href="/"><i class="bi bi-buffer"></i>Style Guide</a>
       </div>
+      <ul class="NavBar__left-menu">
+        <li class="NavBar__menu__item"><a class="NavBar__menu__item__link" href="/">Buttons</a></li>
+        <li class="NavBar__menu__item"><a class="NavBar__menu__item__link" href="cards.html">Cards</a></li>
+        <li class="NavBar__menu__item"><a class="NavBar__menu__item__link" href="colors.html">Colors</a></li>
+        <li class="NavBar__menu__item"><a class="NavBar__menu__item__link" href="external-pages.html">External Pages</a></li>
+        <li class="NavBar__menu__item"><a class="NavBar__menu__item__link" href="grid-system.html">Grid System</a></li>
+        <li class="NavBar__menu__item"><a class="NavBar__menu__item__link" href="navbar.html">NavBar</a></li>
+        <li class="NavBar__menu__item NavBar__menu__item--active"><a class="NavBar__menu__item__link" href="profile-pictures.html">Profile Pictures</a></li>
+        <li class="NavBar__menu__item"><a class="NavBar__menu__item__link" href="tags.html">Tags</a></li>
+        <li class="NavBar__menu__item NavBar__menu__item--last"><a class="NavBar__menu__item__link" href="typography.html">Typography</a></li>
+      </ul>
+      <ul class="NavBar__right-menu">
+        <li class="NavBar__menu__item NavBar__menu__item--last"><a class="Button Button--secondary" href="https://buffer.com/">Sign up for Free</a></li>
+      </ul>
     </div>
-    <div class="body">
-      <div class="sidebar">
-        <div class="Card">
-          <ul class="sidebar-style-guide-list">
-            <li><a href="index.html">Introduction</a></li>
-            <li><a href="buttons.html">Buttons</a></li>
-            <li><a href="cards.html">Cards</a></li>
-            <li><a href="colors.html">Colors</a></li>
-            <li><a href="external-pages.html">External Pages</a></li>
-            <li><a href="grid-system.html">Grid System</a></li>
-            <li><a href="navbars.html">NavBars</a></li>
-            <li><a href="profile-pictures.html">Profile Pictures</a></li>
-            <li><a href="tags.html">Tags</a></li>
-            <li><a class="sidebar-style-guide-list--last" href="typography.html">Typography</a></li>
-          </ul>
+
+    <div class="BlockHero BlockHero--colors">
+      <div class="GridRow">
+        <div class="GridContainer">
+          <div class="TwelveColumns--large TwelveColumns--medium">
+            <h2>Profile Pictures</h2>
+            <h3>Profile pictures are objects that can be used to communicate a familiar connection to the user. <code>less/components/ProfilePicture.less</code> provides a number of predefined card styles, which are documented below, for most use cases.</h3>
+          </div>
         </div>
       </div>
-      <div class="content">
-        <div class="Card">
-          <div class="section">
-            <h1>Profile Pictures</h1>
-            <p>Profile pictures can be atoms or molecules depending on their child elements. A profile picture remains an atom while a profile picture with a social network icon is a molecule. A profile picture communicates a familar connection to the user.</p>
-          </div>
-          <div class="section">
-            <h2>Profile Picture</h2>
-            <p>Use the <code>ProfilePicture</code> atom to show a user's connected profile.</p>
-            <div class="code-block">
-              <div class="code-block-title">
-                Example:
-              </div>
-              <div class="code-block-render">
-                <img alt="A profile picture of Steve Dixon" class="ProfilePicture" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg" />
-              </div>
-              <div class="code-block-code">
-                <pre>&lt;img alt="A profile picture of Steve Dixon" class="ProfilePicture" src="#" /></pre>
-              </div>
+    </div>
+
+    <div class="Block">
+      <div class="GridRow">
+        <div class="GridContainer">
+          <div class="TwelveColumns--large TwelveColumns--medium">
+            <div class="Block__content-block--top">
+              <h2>ProfilePicture</h2>
+              <p>An <code>img</code> node with a class of <code>ProfilePicture</code> changes its <code>display</code> property value to <code>block</code>, its <code>width</code> property value to <code>32px</code>, its <code>height</code> property value to <code>32px</code>, and its <code>border-radius</code> property value to <code>256px</code>.</p>
+              <p>To use it, give an <code>img</code> node a class of <code>ProfilePicture</code>.</p>
+              <img alt="A profile picture of Steve Dixon" class="ProfilePicture" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg" />
             </div>
-            <p>A <code>ProfilePicture</code> atom using the <code>--small</code> modifier:</p>
-            <div class="code-block">
-              <div class="code-block-title">
-                Example:
-              </div>
-              <div class="code-block-render">
-                <img alt="A profile picture of Steve Dixon" class="ProfilePicture ProfilePicture--small code-block-render-example" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg" />
-              </div>
-              <div class="code-block-code">
-                <pre>&lt;img alt="A profile picture of Steve Dixon" class="ProfilePicture ProfilePicture--small" src="#" /></pre>
-              </div>
+            <div class="Block__content-block">
+              <h3>Modifiers</h3>
             </div>
-            <p>A <code>ProfilePicture</code> atom using the <code>--large</code> modifier:</p>
-            <div class="code-block">
-              <div class="code-block-title">
-                Example:
-              </div>
-              <div class="code-block-render">
-                <img alt="A profile picture of Steve Dixon" class="ProfilePicture ProfilePicture--large code-block-render-example" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg" />
-              </div>
-              <div class="code-block-code">
-                <pre>&lt;img alt="A profile picture of Steve Dixon" class="ProfilePicture ProfilePicture--large" src="#" /></pre>
-              </div>
+            <div class="Block__content-block">
+              <h4>ProfilePicture--extra-large</h4>
+              <p>This modifies a the <code>width</code> and <code>height</code> to <code>128px</code>.</p>
+              <img alt="A profile picture of Steve Dixon" class="ProfilePicture ProfilePicture--extra-large" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg" />
+            </div>
+            <div class="Block__content-block">
+              <h4>ProfilePicture--large</h4>
+              <p>This modifies a the <code>width</code> and <code>height</code> to <code>64px</code>.</p>
+              <img alt="A profile picture of Steve Dixon" class="ProfilePicture ProfilePicture--large" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg" />
+            </div>
+            <div class="Block__content-block">
+              <h4>ProfilePicture--medium</h4>
+              <p>This modifies a the <code>width</code> and <code>height</code> to <code>48px</code>.</p>
+              <img alt="A profile picture of Steve Dixon" class="ProfilePicture ProfilePicture--medium" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg" />
+            </div>
+            <div class="Block__content-block">
+              <h4>ProfilePicture--small</h4>
+              <p>This modifies a the <code>width</code> and <code>height</code> to <code>16px</code>.</p>
+              <img alt="A profile picture of Steve Dixon" class="ProfilePicture ProfilePicture--small" src="https://pbs.twimg.com/profile_images/694861974564409344/WpVYdDTj_bigger.jpg" />
             </div>
           </div>
         </div>
       </div>
     </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="js/bundle.js"></script>
   </body>
