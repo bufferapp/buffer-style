@@ -545,6 +545,9 @@ p {
 .Tag--type-primary {
   background-color: #168eea; }
 
+.Card--no-padding {
+  margin-bottom: 0; }
+
 .BlockHero--colors {
   background-color: #323b43; }
 

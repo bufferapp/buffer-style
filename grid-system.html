@@ -49,7 +49,7 @@
               <h2>GridRow</h2>
               <p>Each row of columns is wrapped within a <code>GridRow</code>. This keeps them organized and prevents a mosaic effect from occuring. <code>GridRow</code> has no defined properties but instead has a state rule for <code>::after</code>, which sets its <code>display</code> property value to <code>block</code>, its <code>clear</code> property value to <code>both</code>, and its <code>content</code> property value to <code>""</code>. Having this rule in place allows every instance of <code>GridRow</code> to fully contain any elements within it that may be floating.</p>
               <p><code>GridRow</code> also updates any children <code>img</code> nodes to be responsive by setting their <code>max-width</code> property value to <code>100%</code> and their <code>height</code> property value to <code>auto</code>.</p> 
-              <p>To use it, give a <code>div</code> node a <code>class</code> of <code>GridRow</code> and place your content inside. A <code>GridRow</code> must go within a <code>Block</code>.</p>
+              <p class="Paragraph--order-last">To use it, give a <code>div</code> node a <code>class</code> of <code>GridRow</code> and place your content inside. A <code>GridRow</code> must go within a <code>Block</code>.</p>
             </div>
           </div>
         </div>
@@ -63,7 +63,7 @@
             <div class="Block__content-block--top">
               <h2>GridContainer</h2>
               <p>The purpose of the <code>GridContainer</code> is to contain a pages content within a set width. This prevents a pages content from spanning 100% of the viewport. Viewports that have a minimum width of <code>1024px</code> have the <code>GridContainer</code> <code>width</code> property value set to <code>960px</code>. Viewports smaller than this have the <code>GridContainer</code> <code>width</code> property value set to </code>100%</code>. A <code>GridContainer</code> has a <code>margin</code> property value of <code>0 auto</code>. Like the <code>GridRow</code>, a <code>GridContainer</code> has a state rule for <code>::after</code>, which sets its <code>display</code> property value to <code>block</code>, its <code>clear</code> property value to <code>both</code>, and its <code>content</code> property value to <code>""</code>. Having this rule in place allows every instance of <code>GridRow</code> to fully contain any elements within it that may be floating.</p>
-              <p>To use it, give a <code>div</code> node a <code>class</code> of <code>GridContainer</code> and place your content inside. A <code>GridContainer</code> must go within a <code>GridRow</code>.</p>
+              <p class="Paragraph--order-last">To use it, give a <code>div</code> node a <code>class</code> of <code>GridContainer</code> and place your content inside. A <code>GridContainer</code> must go within a <code>GridRow</code>.</p>
             </div>
           </div>
         </div>
@@ -87,7 +87,7 @@
               <h4>*--large</h4>
               <p>Any column with a <code>--large</code> modifier will determine how many columns that node will use on a viewport with a width greater than or equal to <code>1024px</code>.</p>
               <h4>*--medium</h4>
-              <p>Any column with a <code>--medium</code> modifier will determine how many columns that node will use on a viewport with a width less than <code>1024px</code>.</p>
+              <p class="Paragraph--order-last">Any column with a <code>--medium</code> modifier will determine how many columns that node will use on a viewport with a width less than <code>1024px</code>.</p>
             </div>
           </div>
         </div>
